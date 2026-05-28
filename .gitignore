@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+.DS_Store
+
+# Cached LLM proposals and Lean execution results.
+.cache/
+data/traces/*.jsonl
+!data/traces/.gitkeep
+
+# LeanDojo workspace.
+.lean_dojo_cache/
+
+pytest-cache-files-*/

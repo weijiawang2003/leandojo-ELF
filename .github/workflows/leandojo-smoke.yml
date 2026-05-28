@@ -1,0 +1,98 @@
+# Optional, opt-in CI for the REAL LeanDojo smoke test.
+#
+# It runs ONLY when manually dispatched (workflow_dispatch) — never on push — so
+# it never slows down normal development and never burns CI minutes on the heavy
+# LeanDojo stack unless you ask for it.
+#
+# It always runs the normal test suite (which works without LeanDojo). The real
+# LeanDojo smoke step runs only if BOTH:
+#   - the `GH_PAT_FOR_LEANDOJO` repo secret is set (a GitHub token LeanDojo uses
+#     to fetch/trace the mini repo), and
+#   - the `repo_url` + `commit` inputs point at your published leandojo_mini_repo
+#     (see docs/LEANDOJO_SETUP.md §2).
+# Otherwise that step prints why it skipped and the job still succeeds — it never
+# fakes LeanDojo success, and it never prints the token.
+
+name: leandojo-smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo_url:
+        description: "Git URL of your traced leandojo_mini_repo (blank = skip live test)"
+        required: false
+        default: ""
+      commit:
+        description: "Commit SHA of that repo to trace (blank = skip live test)"
+        required: false
+        default: ""
+      theorem:
+        description: "Theorem full_name to smoke-test"
+        required: false
+        default: "id_of_p"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install project (mock/lean-cli deps)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: Cache elan / Lean toolchain
+        uses: actions/cache@v4
+        with:
+          path: ~/.elan
+          key: elan-${{ runner.os }}-${{ hashFiles('examples/leandojo_mini_repo/lean-toolchain') }}
+
+      - name: Install elan (Lean + Lake)
+        run: |
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Lean / Lake versions
+        run: |
+          lean --version
+          lake --version
+
+      - name: Run normal test suite (no LeanDojo required)
+        run: pytest -q
+
+      - name: Install lean-dojo
+        run: pip install lean-dojo
+
+      - name: Real LeanDojo smoke test (opt-in; skips honestly if unconfigured)
+        env:
+          # Mapped from a secret; LeanDojo reads GITHUB_ACCESS_TOKEN. Never echoed.
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GH_PAT_FOR_LEANDOJO }}
+          REPO_URL: ${{ github.event.inputs.repo_url }}
+          COMMIT: ${{ github.event.inputs.commit }}
+          THEOREM: ${{ github.event.inputs.theorem }}
+        run: |
+          if [ -z "$GITHUB_ACCESS_TOKEN" ]; then
+            echo "::notice::Secret GH_PAT_FOR_LEANDOJO not set -> skipping real LeanDojo smoke test (this is not a failure)."
+            exit 0
+          fi
+          if [ -z "$REPO_URL" ] || [ -z "$COMMIT" ]; then
+            echo "::notice::repo_url/commit inputs not provided -> skipping real LeanDojo smoke test (this is not a failure)."
+            exit 0
+          fi
+          # Build a seed file with the real coordinates (read from env, not the
+          # shell, so no quoting/injection issues; no secrets written to disk).
+          python -c "import json,os; print(json.dumps({'theorem_name':os.environ['THEOREM'],'theorem_statement':'(p : Prop) (h : p) : p','full_name':os.environ['THEOREM'],'repo_url':os.environ['REPO_URL'],'commit':os.environ['COMMIT'],'file_path':'MiniDojo.lean'}))" > /tmp/leandojo_seed.jsonl
+          export MINI_ELF_LEANDOJO_SMOKE=1
+          export MINI_ELF_LEANDOJO_SEEDS=/tmp/leandojo_seed.jsonl
+          export MINI_ELF_LEANDOJO_THEOREM="$THEOREM"
+          pytest tests/test_leandojo_smoke_real.py -q -rs
