@@ -1,0 +1,7 @@
+# Manual candidates for the leandojo mini-repo seeds. Proposals only — LeanDojo
+# verifies them. No state_before, so matching is by theorem_name (one record per
+# theorem => unambiguous). Each record mixes correct tactics with a deliberately
+# bogus one so the failed-attempt path (--failed-out) is exercised.
+{"theorem_name": "id_of_p", "candidates": ["exact h", "assumption", "this_is_not_a_tactic"], "source": "claude_code_agent", "prompt_style": "diverse"}
+{"theorem_name": "and_comm_toy", "candidates": ["exact ⟨h.2, h.1⟩", "constructor", "exact h"], "source": "claude_code_agent", "prompt_style": "diverse"}
+{"theorem_name": "nat_refl", "candidates": ["rfl", "exact rfl", "omega"], "source": "claude_code_agent", "prompt_style": "diverse"}

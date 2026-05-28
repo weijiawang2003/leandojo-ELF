@@ -1,0 +1,10 @@
+# Toy seeds for the LeanCliRunner backend. Each row carries a self-contained
+# Lean 4 template that closes with `__TACTIC__`; LeanCliRunner substitutes the
+# candidate tactic in and asks `lean` whether the file typechecks.
+#
+# These deliberately avoid Mathlib so they work with a plain elan install.
+{"theorem_name": "nat_add_zero", "theorem_statement": "(n : Nat) : n + 0 = n", "initial_state": "n : Nat\n⊢ n + 0 = n", "imports": [], "template": "example (n : Nat) : n + 0 = n := by\n  __TACTIC__", "placeholder": "__TACTIC__"}
+{"theorem_name": "hyp_p", "theorem_statement": "(p : Prop) (h : p) : p", "initial_state": "p : Prop\nh : p\n⊢ p", "imports": [], "template": "example (p : Prop) (h : p) : p := by\n  __TACTIC__", "placeholder": "__TACTIC__"}
+{"theorem_name": "weaken_p", "theorem_statement": "(p q : Prop) (h : p) : p", "initial_state": "p q : Prop\nh : p\n⊢ p", "imports": [], "template": "example (p q : Prop) (h : p) : p := by\n  __TACTIC__", "placeholder": "__TACTIC__"}
+{"theorem_name": "trivial_true", "theorem_statement": ": True", "initial_state": "⊢ True", "imports": [], "template": "example : True := by\n  __TACTIC__", "placeholder": "__TACTIC__"}
+{"theorem_name": "nat_refl", "theorem_statement": "(n : Nat) : n = n", "initial_state": "n : Nat\n⊢ n = n", "imports": [], "template": "example (n : Nat) : n = n := by\n  __TACTIC__", "placeholder": "__TACTIC__"}

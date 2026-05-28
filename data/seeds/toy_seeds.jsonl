@@ -1,0 +1,6 @@
+# Toy seed file for the MockLeanRunner. Lines starting with '#' are ignored
+# by read_jsonl(). Each line is a TheoremSeed.
+{"theorem_name": "refl_nat", "theorem_statement": "1 + 1 = 2", "initial_state": "⊢ 1 + 1 = 2"}
+{"theorem_name": "id_implication", "theorem_statement": "∀ (p : Prop), p → p", "initial_state": "⊢ ∀ (p : Prop), p → p"}
+{"theorem_name": "trivial_true", "theorem_statement": "True", "initial_state": "⊢ True"}
+{"theorem_name": "simp_double", "theorem_statement": "n + 0 = n", "initial_state": "n : ℕ\n\n⊢ n + 0 = n"}

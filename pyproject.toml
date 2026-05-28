@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-elf-lean"
+version = "0.1.0"
+description = "LLM-proposed, Lean-verified tactic trace collector for a Mini-ELF embedded-flow research prototype."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "PinkToasitisme" }]
+license = { text = "MIT" }
+dependencies = [
+    "pydantic>=2.5",
+    "python-dotenv>=1.0",
+    "anthropic>=0.40",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+]
+openai = [
+    # Optional OpenAI-compatible candidate source.
+    "openai>=1.0",
+]
+ar = [
+    # Optional: the generative AR seq2seq tactic model (ar_model/ar_train/ar_decode,
+    # scripts/train_ar_model.py, scripts/evaluate_ar_model.py). The CPU build is
+    # fine: pip install torch --index-url https://download.pytorch.org/whl/cpu
+    "torch>=2.0",
+]
+lean = [
+    # LeanDojo brings heavy native deps; opt-in only.
+    # "lean-dojo>=2.0",
+]
+
+[project.scripts]
+mini-elf-collect = "mini_elf_lean.collector:main"
+mini-elf-eval = "mini_elf_lean.evaluate_traces:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"

@@ -1,0 +1,1 @@
+{"theorem_name":"id_of_p","theorem_statement":"(p : Prop) (h : p) : p","file_path":"MiniDojo.lean","full_name":"id_of_p","repo_url":"https://github.com/weijiawang2003/leandojo-ELF","commit":"15c35996a68b986e599ffd42375eef0b17fe292f"}

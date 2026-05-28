@@ -1,0 +1,20 @@
+# Manual / agent-authored candidate tactics for data/seeds/toy_lean_cli_seeds.jsonl.
+#
+# These are PROPOSALS ONLY. Nothing here is a positive label until Lean accepts
+# it. `state_before` is set to each seed's `initial_state` so the
+# ManualFileLLMClient can match exactly. A few deliberately-wrong candidates are
+# included so the failed-attempt output (--failed-out) is exercised.
+#
+# Run:
+#   python scripts/collect_traces.py \
+#     --seeds data/seeds/toy_lean_cli_seeds.jsonl \
+#     --out data/traces/manual_verified.jsonl \
+#     --failed-out data/traces/manual_failed.jsonl \
+#     --llm-backend manual-file \
+#     --manual-candidates data/manual/example_manual_candidates.jsonl \
+#     --lean-backend mock   # or lean-cli if Lean is installed
+{"theorem_name": "nat_add_zero", "state_before": "n : Nat\n⊢ n + 0 = n", "candidates": ["rfl", "simp", "omega", "exact h"], "source": "claude_code_agent", "prompt_style": "diverse"}
+{"theorem_name": "hyp_p", "state_before": "p : Prop\nh : p\n⊢ p", "candidates": ["exact h", "assumption", "trivial"], "source": "claude_code_agent", "prompt_style": "diverse"}
+{"theorem_name": "weaken_p", "state_before": "p q : Prop\nh : p\n⊢ p", "candidates": ["exact h", "assumption", "exact q"], "source": "claude_code_agent", "prompt_style": "diverse"}
+{"theorem_name": "trivial_true", "state_before": "⊢ True", "candidates": ["trivial", "exact True.intro", "constructor"], "source": "claude_code_agent", "prompt_style": "diverse"}
+{"theorem_name": "nat_refl", "state_before": "n : Nat\n⊢ n = n", "candidates": ["rfl", "exact rfl", "simp"], "source": "claude_code_agent", "prompt_style": "diverse"}
