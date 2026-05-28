@@ -1,0 +1,19 @@
+{
+  "dim": 8192,
+  "epochs": 80,
+  "framework": "pure-python",
+  "l2": 1e-05,
+  "lr": 1.0,
+  "model": "softmax_logreg_char_ngram",
+  "n_classes": 55,
+  "n_train_examples": 254,
+  "ngram_orders": [
+    2,
+    3,
+    4
+  ],
+  "seed": 0,
+  "train_seconds": 28.31,
+  "train_top1_accuracy": 0.4015748031496063,
+  "uses_state_after": false
+}

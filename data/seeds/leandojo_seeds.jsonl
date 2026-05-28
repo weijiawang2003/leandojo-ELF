@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Real-LeanDojo seeds for examples/leandojo_mini_repo.
 #
 # Fill in repo_url + commit AFTER you have pushed examples/leandojo_mini_repo to
@@ -13,3 +14,6 @@
 {"theorem_name": "id_of_p", "theorem_statement": "(p : Prop) (h : p) : p", "full_name": "id_of_p", "repo_url": "https://github.com/<YOU>/leandojo_mini_repo", "commit": "<COMMIT_SHA>", "file_path": "MiniDojo.lean", "initial_state": "p : Prop\nh : p\n⊢ p"}
 {"theorem_name": "and_comm_toy", "theorem_statement": "(p q : Prop) (h : p ∧ q) : q ∧ p", "full_name": "and_comm_toy", "repo_url": "https://github.com/<YOU>/leandojo_mini_repo", "commit": "<COMMIT_SHA>", "file_path": "MiniDojo.lean", "initial_state": "p q : Prop\nh : p ∧ q\n⊢ q ∧ p"}
 {"theorem_name": "nat_refl", "theorem_statement": "(n : Nat) : n = n", "full_name": "nat_refl", "repo_url": "https://github.com/<YOU>/leandojo_mini_repo", "commit": "<COMMIT_SHA>", "file_path": "MiniDojo.lean", "initial_state": "n : Nat\n⊢ n = n"}
+=======
+{"theorem_name":"id_of_p","theorem_statement":"(p : Prop) (h : p) : p","file_path":"MiniDojo.lean","full_name":"id_of_p","repo_url":"https://github.com/weijiawang2003/leandojo-ELF","commit":"15c35996a68b986e599ffd42375eef0b17fe292f"}
+>>>>>>> a691b63 (Add Mini-ELF v0 prototype and results)

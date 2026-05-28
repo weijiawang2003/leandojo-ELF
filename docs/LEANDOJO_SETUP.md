@@ -297,3 +297,111 @@ Caveat: LeanDojo tracing on hosted runners can be slow and version-sensitive; th
 workflow is best-effort and may need toolchain tweaks (§7) on first use. It has
 **not** been executed from this environment — treat its first green run as the
 real validation.
+
+---
+
+## 8. Known limitation: elaboration-time stdin (2026-05-27, WSL2 Ubuntu)
+
+We got **one step further** than the §0 snapshot: lean-dojo 4.20.0 installed
+cleanly in a WSL2 venv, the mini repo at `weijiawang2003/leandojo-ELF`
+(commit `15c3599…`) traced successfully, and `runner.start(seed)` returns a
+**real** initial tactic state for `id_of_p`:
+
+```
+TacticState(pp='p : Prop\nh : p\n⊢ p', id=0, message=None)  num_goals=1
+```
+
+The very first `runner.run_tactic(state0, "assumption")` then raises
+`DojoCrashError: Unexpected EOF`. The runner is **not** at fault. Direct probes
+in `scripts/` pin the cause inside Lean itself, two layers below the Python:
+
+### Symptom (faithful pexpect repro of LeanDojo's exact REPL launch)
+`scripts/debug_leandojo_pexpect.py` spawns `lake env lean --threads=1 …` on
+LeanDojo's modified file and dumps the raw bytes. Before *any* request is sent:
+
+```
+init match : 'REPL> {"tacticState": "p : Prop\nh : p\n⊢ p", "sid": 0, "error": null}'
+init before: 'MiniDojoPexpectRepl.lean:7:2: error: [fatal] failed to parse JSON
+              offset 0: unexpected end of input'
+post-send  : ''         # process already gone
+exitstatus : 1
+```
+
+The `[fatal] failed to parse JSON offset 0: unexpected end of input` comes from
+`Lean4Repl.lean`'s `loop`:
+
+```lean
+let line := (← (← IO.getStdin).getLine).trim
+match (Json.parse line) with
+| .error err => throwError s!"[fatal] failed to parse JSON {err}"
+```
+
+Reading offset 0 of an empty string means `getLine` returned `""`, i.e. EOF.
+The REPL prints the init state, then dies on its very first `getLine` — long
+before our code can call `dojo.run_tac`. `Dojo._read_next_line` happens to
+scrape the printed `REPL>` line (treating the error line as a "message"), so
+`start()` looks successful.
+
+### Root cause (verified across Lean toolchains)
+`scripts/probe_async.sh` runs a minimal custom **elab tactic** (not `#eval`,
+which is documented to lack stdin) that does
+`let line ← (← IO.getStdin).getLine` and prints it. With piped/`<`-redirected
+input and a pty, on Lean **4.20.0** *and* **4.30.0**, with `Elab.async` on *and*
+off, the result is always:
+
+```
+PROBE_GOT[] len=0
+```
+
+i.e. `getLine` returns immediately with EOF — `IO.getStdin` during file
+elaboration is **not** the process stdin in either toolchain. This is the same
+limitation the Lean docs call out for `#eval` ("reading from standard input
+simply returns empty input"), now confirmed to apply to elab tactics in
+`lean file.lean` batch mode too. LeanDojo's `Lean4Repl` interactive design
+depends on that channel.
+
+### What it means for this repo
+
+- The mock and lean-cli backends are unaffected and remain the default.
+- `LeanDojoRunner` is API-correct: `Dojo.run_tac(state: TacticState, tactic:
+  str)` matches `inspect.signature`, `ProofFinished.tactic_state_id` is now
+  captured in metadata (previously only `.id` was tried — see
+  `tests/test_leandojo_runner_real_api.py::test_proof_finished_captures_real_tactic_state_id`),
+  and `DojoCrashError("Unexpected EOF")` gets an actionable hint appended
+  without swallowing the original message.
+- `tests/test_leandojo_smoke_real.py` is marked `xfail(strict=True)` so it
+  still runs end-to-end against the real LeanDojo (when `MINI_ELF_LEANDOJO_SMOKE=1`)
+  but documents the toolchain gap. If a future Lean release restores
+  elaboration-time stdin, the test will XPASS and fail loudly — that's our
+  signal to flip the marker back to a hard assertion.
+
+### Things we ruled out
+- `--memory` flag (already removed from the installed `dojo.py`): unrelated;
+  `--memory=N` *is* a valid `lean` flag, but its removal made init succeed and
+  isn't tied to the per-tactic crash (probes without `--memory` show the same EOF).
+- Wrong `run_tac` argument order / wrong state object: signature is
+  `(state: TacticState, tactic: str)`, runner stores the live TacticState in
+  its registry and retrieves it (test: `test_initial_state_pp_and_id_round_trip`,
+  `test_run_tac_called_with_object_not_pp_string`).
+- Tactic payload format: `run_tac(state, "assumption")` with the real state
+  hits the same EOF — the JSON request never gets read because the REPL is
+  already gone.
+- `Elab.async`: setting it `false` via `set_option` *or* CLI `-D Elab.async=false`
+  does not restore stdin (`probe_async.sh` step 1 and 2 still get `len=0`).
+- Lean version: same EOF on 4.20.0 (repo toolchain via `lake env`) and 4.30.0
+  (default PATH).
+
+### Reproducers (all in `scripts/`)
+- `debug_leandojo_direct.py` — minimal `Dojo(theorem)` + `dojo.run_tac` with
+  the real seed, with `dojo.proc.logfile_read = sys.stdout`. Shows the
+  `DojoCrashError: Unexpected EOF` exactly as the runner sees it.
+- `debug_leandojo_pexpect.py` — spawns LeanDojo's exact command directly via
+  `pexpect`, reads init, then drains everything until EOF so you can see
+  Lean's pre-crash output (the `[fatal] failed to parse JSON` line above).
+- `debug_leandojo_manual_repl.py` — copies the modified file to a persistent
+  location and runs `lake env lean` on it via `subprocess`, with stdout and
+  stderr captured separately, confirming the crash is independent of `pexpect`.
+- `probe.lean` + `probe_versions.sh` — self-contained elab-tactic stdin probe
+  run across Lean 4.20.0 / 4.30.0 via `elan run`.
+- `probe_async.sh` — same probe with `set_option Elab.async false` and
+  `-D Elab.async=false` to rule out async elaboration.

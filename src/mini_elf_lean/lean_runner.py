@@ -449,7 +449,19 @@ class LeanDojoRunner:
             result = self._dojo.run_tac(before, tactic)
         except Exception as exc:  # noqa: BLE001 - never let a backend error kill the loop
             logger.debug("leandojo run_tac raised for %r: %r", tactic[:60], exc)
-            return self._fail(t0, f"{type(exc).__name__}: {exc}", before=before, state=state)
+            msg = f"{type(exc).__name__}: {exc}"
+            # Specific hint for the well-understood "REPL died before responding"
+            # crash. We append context, never replace the original message.
+            if type(exc).__name__ == "DojoCrashError" and (
+                "Unexpected EOF" in str(exc) or "Unexpected exit" in str(exc)
+            ):
+                msg += (
+                    " | hint: the Lean REPL process exited without responding. "
+                    "In Lean 4.20+ batch mode, elaboration-time IO has no stdin, "
+                    "so LeanDojo's Lean4Repl tactic crashes on its first getLine. "
+                    "See docs/LEANDOJO_SETUP.md."
+                )
+            return self._fail(t0, msg, before=before, state=state)
 
         return self._map_result(result, before=before, state_before=state, t0=t0)
 
@@ -473,7 +485,12 @@ class LeanDojoRunner:
         meta: Dict[str, Any] = {"result_type": name}
         if before_goals is not None:
             meta["num_goals_before"] = before_goals
-        sid = getattr(result, "id", None)
+        # Real LeanDojo: ProofFinished uses `.tactic_state_id`; TacticState uses
+        # `.id`. Prefer the former so finished-proof records still carry the sid;
+        # `None`-aware so id=0 (the initial state) is preserved.
+        sid = getattr(result, "tactic_state_id", None)
+        if sid is None:
+            sid = getattr(result, "id", None)
         if sid is not None:
             meta["tactic_state_id"] = sid
 

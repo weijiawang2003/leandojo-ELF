@@ -1,0 +1,57 @@
+{
+  "seed": 42,
+  "split_fractions": {
+    "test": 0.1,
+    "train": 0.8,
+    "val": 0.1
+  },
+  "test": [
+    "eq_symm_alpha",
+    "exists_witness_two"
+  ],
+  "train": [
+    "and_assoc_fwd",
+    "and_comm_dir",
+    "and_drop_q",
+    "and_elim_left",
+    "and_elim_right",
+    "and_intro",
+    "const_p",
+    "eq_refl_alpha",
+    "eq_refl_nat",
+    "exists_self_witness",
+    "false_elim",
+    "forall_p_implies_p",
+    "forall_pass_through",
+    "forall_refl_nat",
+    "id_p_hyp",
+    "iff_mp",
+    "iff_mpr",
+    "iff_refl",
+    "impl_trans",
+    "modus_ponens",
+    "nat_add_zero",
+    "nat_one_eq_one",
+    "nat_succ_eq_add_one",
+    "nat_three_eq_two_plus_one",
+    "nat_two_eq_one_plus_one",
+    "nat_zero_add",
+    "nat_zero_zero",
+    "not_intro_from_arrow",
+    "not_not_intro",
+    "or_comm_dir",
+    "or_inl_from_p",
+    "or_inr_from_q",
+    "or_self_elim",
+    "true_const",
+    "true_intro",
+    "weaken_two_left",
+    "weaken_two_right"
+  ],
+  "val": [
+    "eq_trans_alpha",
+    "exists_refl_zero_nat",
+    "id_p_arrow",
+    "iff_intro"
+  ]
+}

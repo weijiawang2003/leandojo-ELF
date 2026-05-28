@@ -21,5 +21,21 @@ data/traces/*.jsonl
 
 # LeanDojo workspace.
 .lean_dojo_cache/
+<<<<<<< HEAD
 
 pytest-cache-files-*/
+=======
+.tmp/
+
+# Stray pytest temp dirs.
+pytest-cache-files-*/
+
+# Regenerable lean-cli verification caches (results live in metrics.json).
+verification_cache.json
+
+# Local-only Claude Code settings (agents/skills are tracked).
+.claude/settings.local.json
+
+# External example repo (its own git repo; manage/clone separately).
+examples/leandojo_mini_repo/
+>>>>>>> a691b63 (Add Mini-ELF v0 prototype and results)

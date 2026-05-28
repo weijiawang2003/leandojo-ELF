@@ -25,6 +25,12 @@ openai = [
     # Optional OpenAI-compatible candidate source.
     "openai>=1.0",
 ]
+ar = [
+    # Optional: the generative AR seq2seq tactic model (ar_model/ar_train/ar_decode,
+    # scripts/train_ar_model.py, scripts/evaluate_ar_model.py). The CPU build is
+    # fine: pip install torch --index-url https://download.pytorch.org/whl/cpu
+    "torch>=2.0",
+]
 lean = [
     # LeanDojo brings heavy native deps; opt-in only.
     # "lean-dojo>=2.0",
