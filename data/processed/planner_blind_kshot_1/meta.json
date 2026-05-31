@@ -1,0 +1,11 @@
+{
+  "strategy": "k_shot_family",
+  "k": 1,
+  "description": "each family keeps 1 train donor theorem(s); rest -> test",
+  "n_rows": 157,
+  "n_train_rows": 26,
+  "n_test_rows": 131,
+  "n_theorems": 61,
+  "n_train_theorems": 10,
+  "n_test_theorems": 51
+}

@@ -1,0 +1,49 @@
+{
+  "config": "v24_broad_plus_residual",
+  "n_total": 3410,
+  "by_corpus_source": {
+    "basic": 329,
+    "hard": 204,
+    "planner_blind": 155,
+    "redundancy_corpus": 39,
+    "v16_contrapositive_corpus": 287,
+    "v17_arrow_false_elim_corpus": 137,
+    "v20_implication_corpus": 759,
+    "v20_bool_corpus": 189,
+    "v21_forall_corpus": 677,
+    "v22_exists_corpus": 471,
+    "v24_residual_shape_corpus": 163
+  },
+  "by_category": {
+    "unknown": 464,
+    "project_conjunction": 84,
+    "intro_negation": 327,
+    "contradiction": 186,
+    "destruct_exists": 34,
+    "instantiate_forall": 12,
+    "rewrite": 20,
+    "rewrite_eq": 5,
+    "exists_elim": 5,
+    "implication_chain": 5,
+    "conjunction_projection": 5,
+    "disjunction_cases": 4,
+    "implication": 759,
+    "bool": 189,
+    "forall": 677,
+    "exists": 491,
+    "disjunction": 40,
+    "conjunction": 20,
+    "negation": 20,
+    "nat_succ": 38,
+    "list": 25
+  },
+  "ingest_stats": {
+    "n_base": 3247,
+    "n_residual": 163,
+    "dropped_v18_name": 0,
+    "dropped_v18_triple": 0,
+    "dropped_dedup": 0
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

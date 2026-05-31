@@ -1,0 +1,39 @@
+{
+  "config": "B_oversample",
+  "n_total": 6417,
+  "by_operation": {
+    "conjunction_projection": 400,
+    "unknown": 464,
+    "instantiate_forall": 689,
+    "implication_chain": 400,
+    "implication": 759,
+    "destruct_exists": 505,
+    "rewrite_eq": 400,
+    "intro_negation": 400,
+    "project_conjunction": 400,
+    "rewrite": 400,
+    "disjunction_cases": 400,
+    "contradiction": 400,
+    "bool_cases": 400,
+    "exists_elim": 400
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "oversample_cap": 400,
+  "by_operation_before": {
+    "unknown": 464,
+    "project_conjunction": 84,
+    "intro_negation": 327,
+    "contradiction": 186,
+    "destruct_exists": 505,
+    "instantiate_forall": 689,
+    "rewrite": 20,
+    "rewrite_eq": 5,
+    "exists_elim": 5,
+    "implication_chain": 5,
+    "conjunction_projection": 5,
+    "disjunction_cases": 4,
+    "implication": 759,
+    "bool_cases": 189
+  }
+}

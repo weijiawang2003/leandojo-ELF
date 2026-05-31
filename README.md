@@ -32,10 +32,527 @@ never a positive label until Lean accepts it.
 - [x] **Mini-ELF v0**: tactic-autoencoder latent + conditional rectified-flow
       generator — beats AR on `pass@5` (recall) via stochastic candidate diversity
 - [x] **Mini-ELF v1**: structure-aware encoder + denoising AE + **verifier-aware
-      reranker** + **witness-copy** — test `pass@1` 0.89, `pass@5` 0.95, with
-      verifiable *novel* generation and the first model to crack `and_elim`
+      reranker** + **witness-copy** — test `pass@1` 0.89, `pass@5` 0.95 on the
+      *basic* corpus, the first model to crack `and_elim`
+- [x] **Mini-ELF v2 (generalization study)**: a harder 94-theorem corpus +
+      adversarial/family/difficulty splits show v1's basic numbers **do not
+      transfer** (`pass@5` 0.95 → 0.00–0.23 under shift); retraining on
+      combined data recovers in-distribution-hard (`pass@5` 1.00) but **not**
+      compositional holdout — [`docs/V2_GENERALIZATION_REPORT.md`](docs/V2_GENERALIZATION_REPORT.md)
+- [x] **Mini-ELF v3 (structured proof-block planner)**: a symbolic planner that
+      *constructs* proofs (chains / projections / case splits / iff·eq
+      composition) fused with the v2 model — takes the compositional
+      `difficulty_holdout` `pass@5` **0.06 → 1.00** (ablation: planner off =
+      0.08) and recovers basic to 1.00. **Engineered symbolic coverage, not
+      learned generalization** — [`docs/V3_PROOF_PLANNER_REPORT.md`](docs/V3_PROOF_PLANNER_REPORT.md)
+- [x] **Mini-ELF v4 (planner-blind benchmark)**: a 61-theorem corpus of proof
+      shapes the planner cannot construct (negation, contrapositive, ∃-elim,
+      ∀-inst, rewrite). Unchanged v3 **collapses** to `pass@5` 0.096; a
+      controlled template-addition ablation recovers only the *targeted* families
+      (whack-a-mole), leaving `forall_inst`/`rewrite_succ` at 0.00 —
+      [`docs/V4_PLANNER_BLIND_REPORT.md`](docs/V4_PLANNER_BLIND_REPORT.md)
+- [x] **Mini-ELF v5 (data-driven candidate proposers)**: a common proposer
+      interface + a **retrieval** proof-block proposer (example reuse + numeric
+      adaptation, no per-shape template) takes the two families *no* v4 template
+      recovered — `forall_inst` and `rewrite_succ` — to **pass@5 1.00** on a
+      within-family split, the first escape from whack-a-mole. Honest limit: it
+      is example reuse, not reasoning, and char-similarity still confuses negation
+      siblings; LLM pilot gated on a key — [`docs/V5_RESULTS_SUMMARY.md`](docs/V5_RESULTS_SUMMARY.md)
+- [x] **Mini-ELF v6 (structure-aware retrieval)**: re-ranks the same retrieval
+      candidates by heuristic **structural** features (goal/hypothesis shape,
+      required-operation guess, conjunct position) + an adapted-candidate
+      preference — fixes all four v5 ranking failures. Retrieval-alone reaches
+      planner-blind-split `pass@1 = pass@5 = 1.00` (`forall_inst` pass@1
+      **0.00 → 1.00**, `neg_exfalso`/`exists_elim_conj` 0.00 → 1.00) — ranking, not
+      reasoning — [`docs/V6_STRUCTURE_AWARE_RETRIEVAL_REPORT.md`](docs/V6_STRUCTURE_AWARE_RETRIEVAL_REPORT.md)
+- [x] **Mini-ELF v7 (retrieval under donor scarcity)**: a graded donor-scarcity
+      benchmark (interpolation → k-shot → literal-holdout → family-holdout →
+      operation-holdout → 0-shot) + a template-free operation-**abstraction**
+      re-ranker. Shows v6's 1.00 was **same-family interpolation** (forbid
+      same-family → 0.00) and that genuine family/operation holdout collapses
+      *every* config to **0.00** (`cross_family_verified = 0`): the determinant is
+      donor *presence vs. absence*, not quantity. Abstraction helps only the scarce
+      1-shot regime (pass@1 0.832 → 0.924). The wall is donor coverage, not ranking
+      — [`docs/V7_RETRIEVAL_HOLDOUT_REPORT.md`](docs/V7_RETRIEVAL_HOLDOUT_REPORT.md)
+- [x] **Mini-ELF v8 (generative donorless proposer)**: CPU char-seq2seq
+      trained on a 690-row pooled corpus (basic + hard + planner-blind) under
+      `interpolation` / `family_holdout` × 10 / `operation_holdout` × 7 /
+      `donorless_eval` regimes (18 models). **5 non-zero donorless cells,
+      15 verified candidates, 13 novel** — `family_holdout/neg_exfalso`
+      pass@5 **0.625** (9 novel; the project's first non-zero
+      `cross_family_verified` on a v7 holdout) and
+      `operation_holdout/intro_negation` pass@5 **0.125**
+      (`cross_operation_verified = 3`). Negative control `forall_inst` stays
+      0/7 — the mechanism is sibling-family token composition, not abstract
+      synthesis — [`docs/V8_GENERATIVE_PROPOSER_REPORT.md`](docs/V8_GENERATIVE_PROPOSER_REPORT.md) ·
+      matrix [`docs/V8_FULL_EVAL_MATRIX.md`](docs/V8_FULL_EVAL_MATRIX.md)
+- [x] **Mini-ELF v9 (data-scaling plan, no new pass@k)**: matrix
+      consolidation + LLM pilot SKIPPED honestly + a 10-cell
+      proof-of-concept redundancy corpus (2 operations × 5 sibling
+      families; all 10 lean-cli verified before commit) staging the v10
+      experiment — [`docs/V9_DATA_SCALING_PLAN.md`](docs/V9_DATA_SCALING_PLAN.md)
+- [x] **Mini-ELF v10 (operation×surface-family redundancy corpus + scaling)**:
+      a **40-cell** verified corpus over 8 proof operations × 5 sibling
+      surface families (`scripts/generate_redundancy_corpus.py`; the 8 cells
+      previously refused as WSL cold-start timeouts all verified at a
+      longer timeout cap, leaving `redundancy_lean_cli_failed.jsonl`
+      empty). Found and **corrected a major leakage bug**: the legacy
+      `combined_v10` (interpolation-trained) had 36 of 40 holdout test
+      theorems in its train pool; the prior "5/8 op-holdout wins"
+      headline was in-distribution memorisation, not generalisation. The
+      correction: 8 per-operation LOFO models
+      (`scripts/build_combined_v10_per_op.py` + train script; inline +
+      `tests/test_v10_no_leakage.py` invariants enforce zero leakage),
+      evaluated cleanly at `data/baselines/v10_eval_clean/per_op/<op>/`.
+      **Honest clean signal (16/16 cells)**: mean pass@5 **0.600** vs
+      baseline_v8 zero-shot 0.575 (Δ +0.025); per-fold 2 wins / 1 loss
+      / 5 ties; total `cross_operation_verified` 39 vs 34 (+5). Small,
+      mixed, occasionally useful — not the dramatic uniform lift the
+      leaked draft claimed. **Data scaling only**: same architecture, no
+      `state_after`, no Mathlib, no manual oracle counted — [`docs/V10_REDUNDANCY_CORPUS_REPORT.md`](docs/V10_REDUNDANCY_CORPUS_REPORT.md) ·
+      [`docs/V10_SEQ2SEQ_SCALING_REPORT.md`](docs/V10_SEQ2SEQ_SCALING_REPORT.md)
+- [x] **Mini-ELF v11 (clean per-family LOFO with v10 redundancy)**: directly
+      tests whether v10 redundancy unblocks the v8/v9 negative-control
+      families `forall_inst` and `rewrite_succ`. Train per held family =
+      v8 family-LOFO train + 40 v10 cells minus any held-test
+      `(theorem_name, state_before, tactic)` duplicate. 5 per-family
+      seq2seq models trained (`scripts/build_v11_family_lofo.py`,
+      `scripts/train_v11_family_lofo.sh`); 5 leakage-guard tests
+      ([`tests/test_v11_family_lofo_no_leakage.py`](tests/test_v11_family_lofo_no_leakage.py)).
+      Headline (vs the same-test-row v8 LOFO baseline): **`rewrite_succ` 0/5 → 4/5 pass@5 (+0.800)**,
+      **`forall_inst` 0/7 → 1/7 (+0.143)**, `exists_reconstruct` 2/5 → 4/5 (+0.400),
+      `neg_exfalso` precision lift (pass@1 0.125 → 0.625) with unchanged
+      recall, `neg_imp_exfalso` unmoved (v10 has no contrapositive shape).
+      `novel_verified = 0` on every win — v11 copies the right tactic
+      from v10 siblings, it does not synthesise novel strings.
+      **The 5th `rewrite_succ` row also emitted `rw [h]` at rank 0 but the
+      lean-cli verifier timed out**; reported honestly as 0.800 (not
+      retconned). Same architecture, no `state_after`, no manual oracle,
+      no Mathlib — [`docs/V11_FAMILY_LOFO_REDUNDANCY_REPORT.md`](docs/V11_FAMILY_LOFO_REDUNDANCY_REPORT.md) ·
+      [`docs/V11_FAILURE_EXAMPLES.md`](docs/V11_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v12 (literal-aware decode + rule-based reranker)**:
+      post-generation processing on the v11 model's beam output — no new
+      training, no model changes, no `state_after` access. The literal-
+      adapt module ([`src/mini_elf_lean/literal_aware_decode.py`](src/mini_elf_lean/literal_aware_decode.py))
+      detects `exact <h> <num>` / `exact ⟨<num>, rfl⟩` schemas and
+      substitutes the first goal literal in. The rule-based reranker
+      ([`src/mini_elf_lean/proof_block_reranker.py`](src/mini_elf_lean/proof_block_reranker.py))
+      scores candidates on goal-literal match, stale-literal penalty,
+      malformed penalty, schema match, and source priority. Clean v11
+      family-LOFO eval reused. Headline: **`forall_inst` 1/7 → 3/7
+      pass@5 (+0.286)** via literal-adapt+rerank combined (one v12 win is
+      `novel_verified` against the LOFO train pool); **`exists_reconstruct`
+      4/5 → 5/5 (+0.200)** via the ⟨N, rfl⟩ witness shape;
+      **`rewrite_succ` preserved at 0.800** (brief floor); `neg_exfalso`,
+      `neg_imp_exfalso` unchanged. **3 of the 4 remaining `forall_inst`
+      failures emit the correct adapted candidate at rank 0 but the
+      lean-cli cold-start timed out** — reported as FAIL, honest lower
+      bound. Char-level truncation deferred to v13 (see
+      [`docs/V12_TOKENIZATION_NOTE.md`](docs/V12_TOKENIZATION_NOTE.md)) —
+      [`docs/V12_LITERAL_RERANK_REPORT.md`](docs/V12_LITERAL_RERANK_REPORT.md) ·
+      [`docs/V12_FAILURE_EXAMPLES.md`](docs/V12_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v13 (warm-verifier rerun + tactic-token tokenizer prototype)**:
+      no model retraining and no v12 metric overwrites — the v12 weights, the
+      v12 literal-adapt module and the v12 reranker are byte-for-byte
+      unchanged. v13 (a) reruns every v12 timeout candidate with a 120-second
+      lean-cli timeout and a one-shot warm-up theorem, removing the 20-s
+      cold-start noise floor; and (b) ships a token-level Lean-tactic
+      tokenizer ([`src/mini_elf_lean/tactic_tokenizer.py`](src/mini_elf_lean/tactic_tokenizer.py))
+      + unit tests so a future v14 trainer cannot produce the mid-token
+      truncations (`rcases h wi`, `refintro hn`, `rwexact h`) the v12
+      char-level decoder still emits. The token-level seq2seq retrain
+      itself is deferred to v14. Warm-verifier headline: **`forall_inst`
+      3/7 → 6/7 pass@5 (+0.428)** as `exact h 5` / `exact h 13` / `exact h 8`
+      flip from `timeout` to verified; **`rewrite_succ` 4/5 → 5/5 (+0.200)**
+      as `rw [h]` on `rewrite_succ_ij` flips; everything else unchanged. This
+      is an **evaluation-reliability gain, not a model improvement** — v12
+      lower-bound metrics on disk are untouched, the corrected numbers live
+      at `data/baselines/v13_timeout_rerun/metrics_rerun.json`, and a single
+      residual `forall_inst_var_m` failure remains as a char-truncation +
+      schema-gate case targeted at v14 —
+      [`docs/V13_TIMEOUT_RERUN_REPORT.md`](docs/V13_TIMEOUT_RERUN_REPORT.md) ·
+      [`docs/V13_TOKENIZATION_DECISION.md`](docs/V13_TOKENIZATION_DECISION.md)
+- [x] **Mini-ELF v14 (token-level seq2seq)**: a real model change —
+      the v13 char-level seq2seq is replaced by a token-level one
+      trained on the v13 `tactic_tokenizer`. Same (bi)GRU+attention
+      architecture (~484k params), same v11 family-LOFO folds, same
+      v12 literal-adapt + reranker, same v13 warm verifier
+      (`timeout=120 s` initial + `180 s` rerun for v14 timeouts). The
+      headline target (`forall_inst_var_m` — v13's char-truncation
+      residual) is **solved**, taking forall_inst to **7/7 = 1.000**
+      pass@5 (+0.143 vs v13). Bigger surprise: the token model
+      **cracks `neg_imp_exfalso`** — v13's 0/5 contrapositive floor
+      — at **raw pass@5 = 12/15 = 0.800** by composing
+      `intro hp\n  exact absurd hp hnp` from sibling-family training
+      tokens (`novel_verified=12`). The headline +LA configuration's
+      pass@5 drops to 0.200 there because the v12 reranker
+      mis-calibrates on the contrapositive shape, but **pass@10 =
+      1.000** — the candidate is in the beam, the reranker just
+      doesn't promote it. Token-level invariant: **zero fused-keyword
+      tokens** (`refintro`/`rwexact`/`refin rfl⟩`) across all 5
+      families × beam=10. v12 and v13 metrics on disk untouched;
+      corrected v14 numbers live at
+      `data/baselines/v14_timeout_rerun/metrics_rerun.json`; 124 new
+      tests pin the structure —
+      [`docs/V14_TOKEN_SEQ2SEQ_REPORT.md`](docs/V14_TOKEN_SEQ2SEQ_REPORT.md) ·
+      [`docs/V14_CHAR_VS_TOKEN_REPORT.md`](docs/V14_CHAR_VS_TOKEN_REPORT.md) ·
+      [`docs/V14_FAILURE_EXAMPLES.md`](docs/V14_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v15 (learned reranker + operation-aware policy)**:
+      ranker-only change — no new candidates, no generation work, no
+      new proof templates. A pure-Python logistic regression
+      ([`src/mini_elf_lean/learned_reranker.py`](src/mini_elf_lean/learned_reranker.py))
+      is trained per-family-LOFO on 1779 candidate rows
+      (155 verified positives = 8.7%) drawn from v11/v12/v13/v14
+      predictions + warm-rerun corrections. Features = 33 named
+      pattern bits (intro / absurd / rw / cases / ⟨ / etc) +
+      hashed char-3-grams + tactic-head one-hots + source bucket.
+      The v15 audit shows that **rule and learned win disjoint
+      operations** (rule dominates pass@1 on `instantiate_forall`/
+      `rewrite`; learned dominates on `intro_negation` /
+      exists-reconstruct's `unknown`). The v15 *policy*
+      ([`src/mini_elf_lean/v15_rerank_policy.py`](src/mini_elf_lean/v15_rerank_policy.py))
+      is an operation-aware router (with a learned-confidence
+      fallback) that picks the right sub-scorer per row:
+      **`neg_imp_exfalso` pass@5 0.200 → 0.800 (+0.600)** by
+      routing `intro_negation` to the learned reranker; mean
+      pass@5 lifts **0.765 → 0.885 (+0.120)**, mean pass@1
+      **0.514 → 0.725 (+0.211)**, pass@10 preserved at the v14
+      generator's ceiling 0.925. The residual
+      `neg_imp_exfalso_ab` row stays at rank 6 — generator-bound,
+      not reranker-bound. v12/v13/v14 metrics on disk untouched —
+      [`docs/V15_LEARNED_RERANKER_REPORT.md`](docs/V15_LEARNED_RERANKER_REPORT.md) ·
+      [`docs/V15_NEG_IMP_EXFALSO_RERANK_ANALYSIS.md`](docs/V15_NEG_IMP_EXFALSO_RERANK_ANALYSIS.md) ·
+      [`docs/V15_FAILURE_EXAMPLES.md`](docs/V15_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v16 (contrapositive corpus augmentation + token
+      seq2seq retrain)**: generator-side change — the v14 token
+      architecture is retrained on +287 lean-cli-verified
+      contrapositive examples (3 surface families:
+      `contrapositive_classic`, `contrapositive_neg_imp`,
+      `contrapositive_false_target`), produced by
+      [`scripts/generate_v16_contrapositive_corpus.py`](scripts/generate_v16_contrapositive_corpus.py)
+      with disjoint variable names and per-fold leakage guards.
+      The v15 reranker / policy / learned model are unchanged.
+      **Headline target hit:** `neg_imp_exfalso_ab` first-verified
+      rank **6 → 0** (three verified candidates in top-5), taking
+      `neg_imp_exfalso` pass@5 **0.200 → 1.000** (+0.800). Collateral
+      gain on `neg_exfalso` pass@5 **0.625 → 0.875** as the model
+      generalised the `(h hp).elim` form from the contrapositive
+      corpus to a neighbouring shape. **Mean pass@5 0.765 → 0.975
+      (+0.210); mean pass@1 0.514 → 0.875 (+0.361); mean pass@10
+      0.925 → 0.975 (+0.050)** — the pass@10 lift is the strongest
+      evidence v16 is a real generator change. All v15 wins
+      preserved (forall_inst / rewrite_succ / exists_reconstruct
+      stay at 1.000). v12 / v13 / v14 / v15 metrics on disk
+      untouched; v16 publishes at parallel paths under
+      `data/baselines/v16_token_seq2seq/` and
+      `data/baselines/v16_policy_eval/` —
+      [`docs/V16_GENERATOR_BOUND_FAILURE_AUDIT.md`](docs/V16_GENERATOR_BOUND_FAILURE_AUDIT.md) ·
+      [`docs/V16_CONTRAPOSITIVE_AUGMENTATION_REPORT.md`](docs/V16_CONTRAPOSITIVE_AUGMENTATION_REPORT.md) ·
+      [`docs/V16_FAILURE_EXAMPLES.md`](docs/V16_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v17 (arrow_false_elim corpus + policy edit)**:
+      two targeted changes closing the final v16 pass@5 gap.
+      (1) One-line policy edit moves `contradiction` from
+      `USE_DEFAULT_RULE` to `USE_LEARNED` in
+      [`src/mini_elf_lean/v15_rerank_policy.py`](src/mini_elf_lean/v15_rerank_policy.py) —
+      under the v16 candidate distribution the learned reranker
+      beats rule on `neg_exfalso` (the v15 tie broke), and under
+      v17 candidates the gap widens further. (2) 137-row
+      lean-cli-verified `arrow_false_elim` corpus
+      ([`scripts/generate_v17_arrow_false_elim_corpus.py`](scripts/generate_v17_arrow_false_elim_corpus.py))
+      teaches the `(h hp).elim` False-elimination shape, retrained
+      v17 token model for `neg_exfalso` only (other folds use v16
+      token model unchanged). **Headline result on the templated
+      v11 family-LOFO benchmark**: `neg_exfalso_arrow_pq` first
+      verified rank **— (no top-10) → 1** (verified candidate
+      `exact absurd hp h` at rank 1; v17 corpus also taught the
+      canonical `exact (h hp).elim` at rank 2). `neg_exfalso` pass@5
+      **0.875 → 1.000**; mean pass@1 **0.875 → 0.950 (+0.075)**;
+      **mean pass@5 0.975 → 1.000** and **mean pass@10 0.975 →
+      1.000** on the templated benchmark. All v16 wins preserved.
+      v12-v16 on-disk metrics untouched (v15/v16 policy-eval
+      regenerated with the v17 routing; pass@5 pinned values
+      unchanged). 96 new tests pin the headline +
+      no-regression —
+      [`docs/V17_RESIDUAL_FAILURE_AUDIT.md`](docs/V17_RESIDUAL_FAILURE_AUDIT.md) ·
+      [`docs/V17_ARROW_FALSE_ELIM_REPORT.md`](docs/V17_ARROW_FALSE_ELIM_REPORT.md) ·
+      [`docs/V17_FAILURE_EXAMPLES.md`](docs/V17_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v18 (broad-core transfer test)**: deliberately
+      moves off the templated v11 LOFO corpus to measure how much
+      of v17 transfers. 48-theorem hand-authored core-Lean
+      benchmark spanning **10 categories** (implication /
+      conjunction / disjunction / negation / equality_rewrite /
+      exists / forall / nat_succ / bool / list); 109/115
+      candidates lean-cli verified; Mathlib tier skipped honestly
+      (env doesn't have Mathlib). **Honest headline: ~half of v17
+      transfers.** v17 5-family panel + v17 policy reaches
+      **pass@5 = 0.500**, **pass@10 = 0.583** on v18 (vs 1.000 on
+      v17 templated). A single broad-synthetic token seq2seq
+      (trained on the union of v11+v16+v17 corpora, 1151 rows)
+      **beats the v17 panel** at every metric: **pass@1
+      0.292→0.500**, **pass@5 0.500→0.583**, **pass@10
+      0.583→0.604** — the v17 family-LOFO specialists were
+      over-fit; broader training generalises better even on the
+      same data. The wall is **categorical, not gradient**:
+      `equality_rewrite` 1.000 / `conjunction` 0.833 / `negation`
+      0.800 transfer cleanly; `implication` 0.000 and `bool` 0.000
+      are **total misses** (no synthetic training for those
+      shapes). Dominant failure class: **`unknown_identifier`**
+      (~28 % of all candidates) — v17 references names that aren't
+      bound in v18's diverse local contexts. v12–v17 metrics on
+      disk untouched. **Not retconning v17**: v17 still closed the
+      *templated* benchmark; v18 is the next wall —
+      [`docs/V18_BENCHMARK_DESIGN.md`](docs/V18_BENCHMARK_DESIGN.md) ·
+      [`docs/V18_BROAD_CORE_REPORT.md`](docs/V18_BROAD_CORE_REPORT.md) ·
+      [`docs/V18_ZERO_SHOT_TRANSFER_REPORT.md`](docs/V18_ZERO_SHOT_TRANSFER_REPORT.md) ·
+      [`docs/V18_FAILURE_EXAMPLES.md`](docs/V18_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v19 (state-aware identifier abstraction — honest
+      negative result)**: hypothesised that replacing local
+      identifier names with placeholders (`<HYP_IMP_0>`,
+      `<HYP_PROP_0>`, etc.) would reduce v18's dominant
+      `unknown_identifier` failure class. Implemented the full
+      pipeline ([`src/mini_elf_lean/local_context.py`](src/mini_elf_lean/local_context.py)
+      parser, [`src/mini_elf_lean/identifier_abstraction.py`](src/mini_elf_lean/identifier_abstraction.py)
+      abstract/concretise with word-boundary + keyword protection,
+      v19 abstract dataset from v11+v16+v17 corpora with 0
+      round-trip failures, abstract token seq2seq trained to
+      val_exact=0.26 vs v18 broad's 0.15). **Result: pass@k drops
+      on v18.** v18 broad-synthetic+policy pass@5 = 0.583;
+      v19 abstract-only+policy pass@5 = **0.208**;
+      v19+broad ensemble pass@5 = **0.312**. The
+      `unknown_identifier` class dropped (127 → ~30 slots), but a
+      new `unresolved_placeholder` class arose at **210 / 480
+      slots (44 %)** — worse exchange. Conjunction (0.83→0.17) and
+      list (0.80→0.20) regressed sharply. Three root causes:
+      (a) placeholder dropout against v18's local-context shapes,
+      (b) dedup over-aggressive (3984 → 1111 rows), (c)
+      abstraction is state-only, can't track tactic-introduced
+      binders (`intro h` collapses with pre-existing `h`). v17 /
+      v18 metrics on disk untouched. **Honest negative finding
+      logged per the v19 brief's escape hatch.** Infrastructure is
+      reusable for v20 (ranker-time abstraction) —
+      [`docs/V19_IDENTIFIER_ABSTRACTION_REPORT.md`](docs/V19_IDENTIFIER_ABSTRACTION_REPORT.md) ·
+      [`docs/V19_IMPLICATION_IDENTIFIER_ANALYSIS.md`](docs/V19_IMPLICATION_IDENTIFIER_ANALYSIS.md) ·
+      [`docs/V19_BOOL_GAP_NOTE.md`](docs/V19_BOOL_GAP_NOTE.md) ·
+      [`docs/V19_FAILURE_EXAMPLES.md`](docs/V19_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v20 (data-shape-gap closure + ranker-time
+      abstraction)**: closed the two confirmed v18 data-shape gaps
+      without v19's generation-time placeholder cliff. A shape-gap
+      audit ([`scripts/audit_v20_shape_gaps.py`](scripts/audit_v20_shape_gaps.py))
+      confirmed `bool` has **zero** training support (0 rows with
+      `cases b`/`Bool`/`decide` across v11+v16+v17) and `implication`
+      fails on **rank** not shape (the v17 contradiction pattern
+      `exact (hpfalse hp).elim` displaces the bare `exact hp`). Two
+      lean-cli-verified core-Lean corpora — **759/760** implication
+      candidates (7 families) and **189/239** bool candidates (7
+      families incl. `cases b <;> simp`) — feed a single **raw-name**
+      broad-plus token seq2seq (same v14/v18 arch, 2099 rows, no
+      placeholders). A **ranker-time** abstract-pattern reranker
+      ([`src/mini_elf_lean/abstract_pattern_reranker.py`](src/mini_elf_lean/abstract_pattern_reranker.py))
+      scores raw candidates by abstract-pattern frequency and
+      penalises unbound identifiers — **never emitting placeholders**.
+      **Result (timeout-corrected best config): implication
+      0.000 → 1.000, bool 0.000 → 1.000, mean pass@1 0.500 → 0.625,
+      pass@5 0.583 → 0.729, pass@10 0.604 → 0.729.** The pass@10 lift
+      proves a real generator change; the abstract reranker is the
+      single best config (pass@1 0.500 → 0.625) with **0
+      unresolved-placeholder errors** (vs v19's 44 %). Honest negative:
+      **forall regressed 0.667 → 0.000** (single-model capacity
+      tradeoff from the implication-heavy corpus). A warm timeout-rerun
+      ([`scripts/rerun_v20_timeouts.py`](scripts/rerun_v20_timeouts.py),
+      v13/v14 precedent) flipped 9 spurious WSL timeouts to success;
+      original metrics on disk untouched, corrected metrics in
+      parallel. v18/v19 metrics unchanged. No state_after, no manual
+      oracle, no Mathlib —
+      [`docs/V20_SHAPE_GAP_AUDIT.md`](docs/V20_SHAPE_GAP_AUDIT.md) ·
+      [`docs/V20_IMPLICATION_BOOL_CORPUS_REPORT.md`](docs/V20_IMPLICATION_BOOL_CORPUS_REPORT.md) ·
+      [`docs/V20_BROAD_TRANSFER_REPORT.md`](docs/V20_BROAD_TRANSFER_REPORT.md) ·
+      [`docs/V20_RANKER_TIME_ABSTRACTION_REPORT.md`](docs/V20_RANKER_TIME_ABSTRACTION_REPORT.md) ·
+      [`docs/V20_FAILURE_EXAMPLES.md`](docs/V20_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v21 (forall-regression recovery via model routing)**:
+      recovered the v20 forall regression (0.667 → 0.000 → **1.000**)
+      while preserving every v20 gain. A regression audit
+      ([`scripts/audit_v21_forall_regression.py`](scripts/audit_v21_forall_regression.py))
+      proved the cause was a **single-model capacity tradeoff**: the
+      948 implication+bool rows (45 % of the v20 pool) crowded the
+      `exact h <arg>` instantiation schema **out of generation** (it
+      was absent from the beam, not merely demoted — so no reranker
+      could recover it). Built a 677/680 lean-cli-verified forall
+      corpus (5 families) and compared four fixes: **A** v20 baseline,
+      **B** single-retrain on v20+forall, **C** category **routing**
+      (v20 broad-plus + a forall specialist via
+      [`src/mini_elf_lean/v21_model_router.py`](src/mini_elf_lean/v21_model_router.py)),
+      **D** higher-capacity (embed 128 / hidden 192). **All three fixes
+      recover forall to 1.000 and keep implication/bool at 1.000**, but
+      only **routing has zero collateral**: B relocated the tradeoff
+      (disjunction 0.60→0.40, negation 0.80→0.60, exists 0.25→0.00),
+      D mitigated it but still lost exists (→0.00). **Routing (C) is
+      the winner: mean pass@1 0.625 → 0.688, pass@5 0.729 → 0.792,
+      pass@10 0.729 → 0.792, every non-forall category identical to
+      v20.** Conclusion: **routing > capacity > single-retrain**.
+      Honest caveat: routing is composition-of-specialists (an
+      engineering win on a category-separable benchmark), not a single
+      model that generalizes across shapes. A safe non-destructive repo
+      checkpoint was taken first (the repo is mid-paused-rebase;
+      untouched). v18/v20 metrics unchanged; no state_after, no manual
+      oracle, no Mathlib —
+      [`docs/V21_REPO_CHECKPOINT.md`](docs/V21_REPO_CHECKPOINT.md) ·
+      [`docs/V21_FORALL_REGRESSION_AUDIT.md`](docs/V21_FORALL_REGRESSION_AUDIT.md) ·
+      [`docs/V21_FORALL_RECOVERY_REPORT.md`](docs/V21_FORALL_RECOVERY_REPORT.md) ·
+      [`docs/V21_CAPACITY_TRADEOFF_ANALYSIS.md`](docs/V21_CAPACITY_TRADEOFF_ANALYSIS.md) ·
+      [`docs/V21_FAILURE_EXAMPLES.md`](docs/V21_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v22 (single general model vs routing — the
+      general-model question)**: answered v21's open question — **can ONE
+      model serve all broad-core categories without the tradeoff?**
+      **Yes.** Folded a **471/471 lean-cli-verified exists corpus** (6
+      shape families) into the v21 pool and trained four single models
+      (pool × capacity). The base model
+      **`v22_general_plus_exists`** (one decoder, **no router**) **beats
+      v21 routed** on every mean metric — pass@5 **0.792 → 0.812**,
+      pass@10 **0.792 → 0.833**, MRR 0.728 → 0.774, no_verify 10 → 8 —
+      while holding forall=implication=bool=1.000 and recovering **exists
+      0.250 → 0.750**. Crucially, **oversampling and larger capacity did
+      NOT help** (both regressed minor categories): the residual gap was a
+      **data-shape coverage gap** (missing exists/forall shapes), not
+      imbalance or capacity, so **routing is no longer necessary** — it
+      was a proxy for that missing coverage. Honest residual: `negation`
+      0.600 under the `abstract` reranker (0.800 under `raw`; pass@10
+      confirms the candidate is in the beam; `v21_single_retrain` has the
+      same 0.600 — not caused by exists). No state_after, no manual oracle,
+      no Mathlib, no v10-leakage revival; v18/v20/v21 metrics unchanged —
+      [`docs/V22_GENERAL_MODEL_REPORT.md`](docs/V22_GENERAL_MODEL_REPORT.md) ·
+      [`docs/V22_CATEGORY_INTERFERENCE_ANALYSIS.md`](docs/V22_CATEGORY_INTERFERENCE_ANALYSIS.md) ·
+      [`docs/V22_EXISTS_FAILURE_AUDIT.md`](docs/V22_EXISTS_FAILURE_AUDIT.md) ·
+      [`docs/V22_FAILURE_EXAMPLES.md`](docs/V22_FAILURE_EXAMPLES.md) ·
+      [`docs/V22_REPO_STATUS.md`](docs/V22_REPO_STATUS.md)
+- [x] **Mini-ELF v23 (reranker refresh — ranking-only; honest negative
+      vs raw)**: refreshed the reranker on a pooled 6,011-row v16–v22
+      candidate-outcome dataset (new **grounding** features: unbound-
+      identifier penalty + locally-bound-name awareness, abstract-pattern
+      feature, category cues), **generator unchanged**, offline on the
+      fixed v22 plus_exists pool, leave-one-theorem-out. Result: **no
+      reranker beats `raw`** — the v22 generator's beam (pass@1 0.792,
+      pass@5 0.833) is already best; the learned LR over-demotes (pass@1
+      → 0.688), and the conservative **hybrid** recovers to 0.771 (net
+      −1). v23 *does* beat the v22 `abstract` headline (hybrid pass@1
+      0.729→0.771, pass@5 0.812→0.833, **negation 0.600→0.800**) — the
+      negation regression was purely the abstract reranker, so **retire
+      it**. The decisive finding: the residual gap is **generator-bound**
+      (39/48 solved@1, **1** ranking-bound & feature-unfixable, **8**
+      generator-bound with no verified candidate in the top-10) → **v24 =
+      corpus augmentation**, not ranking. Ranker-time abstraction is
+      scoring-only (never emits a placeholder); no state_after, no manual
+      oracle, no Mathlib, no v10-leakage; v22 metrics unchanged —
+      [`docs/V23_LEARNED_RERANKER_REFRESH_REPORT.md`](docs/V23_LEARNED_RERANKER_REFRESH_REPORT.md) ·
+      [`docs/V23_NEGATION_RERANK_ANALYSIS.md`](docs/V23_NEGATION_RERANK_ANALYSIS.md) ·
+      [`docs/V23_GENERATOR_BOUND_AUDIT.md`](docs/V23_GENERATOR_BOUND_AUDIT.md) ·
+      [`docs/V23_RERANKER_DATA_AUDIT.md`](docs/V23_RERANKER_DATA_AUDIT.md) ·
+      [`docs/V23_FAILURE_EXAMPLES.md`](docs/V23_FAILURE_EXAMPLES.md) ·
+      [`docs/V23_REPO_STATUS.md`](docs/V23_REPO_STATUS.md)
+- [x] **Mini-ELF v24 (residual shape augmentation — generator-bound
+      fix)**: v23 proved the broad-core residual was generator-bound (8
+      theorems with no verified candidate in the top-10). v24 added a
+      **163/163 lean-verified core-Lean shape corpus** (8 families, one
+      per failure) to the v22 pool and retrained the broad generator
+      (no ranking work, no Mathlib). **Closed 5 of 8 generator-bound
+      failures**: pass@10 **0.833 → 0.938** (no_verify **8 → 3**),
+      pass@5 (abstract) **0.812 → 0.917**, pass@1 0.729 → **0.792**.
+      Per-category (abstract): **negation 0.600 → 1.000, exists 0.750 →
+      1.000, list 0.800 → 1.000, nat_succ 0.600 → 0.800**;
+      forall/implication/bool/equality_rewrite stay 1.000; **zero category
+      regressions**. The `abstract` reranker — *harmful* in v22 — is now
+      v24's *best* config and recovers `neg_not_intro` (v23's
+      ranking-unfixable theorem), because v24's candidates are grounded.
+      3 disjunction/conjunction shapes remain (insufficient shape
+      diversity → v25). core Lean only, no state_after, no manual oracle,
+      no v10-leakage; v18/v22/v23 metrics unchanged —
+      [`docs/V24_BROAD_GENERATOR_REPORT.md`](docs/V24_BROAD_GENERATOR_REPORT.md) ·
+      [`docs/V24_RESIDUAL_ROW_RESULTS.md`](docs/V24_RESIDUAL_ROW_RESULTS.md) ·
+      [`docs/V24_REGRESSION_ANALYSIS.md`](docs/V24_REGRESSION_ANALYSIS.md) ·
+      [`docs/V24_RESIDUAL_CORPUS_REPORT.md`](docs/V24_RESIDUAL_CORPUS_REPORT.md) ·
+      [`docs/V24_GENERATOR_BOUND_ROWS.md`](docs/V24_GENERATOR_BOUND_ROWS.md) ·
+      [`docs/V24_FAILURE_EXAMPLES.md`](docs/V24_FAILURE_EXAMPLES.md) ·
+      [`docs/V24_REPO_STATUS.md`](docs/V24_REPO_STATUS.md)
+- [x] **Mini-ELF v25 (first Mathlib tier-C probe)**: Mathlib **v4.30.0**
+      installs cleanly (external scratch project + olean cache auto-fetch,
+      7.4 G) and imports — **no environment wall** (0 import-class failures).
+      Built a **36-theorem / 103-candidate Mathlib-verified** tier-C benchmark
+      (`lake env lean`, `import Mathlib`; 0 timeouts, 0 zero-success). **v24
+      zero-shot transfer is bimodal**: pass@10 0.556 overall, but **0.812 on
+      core-shaped** Mathlib goals vs **0.350 on Mathlib-lemma-needing** ones
+      (all 5 Set goals unreachable). Wall = **generator coverage**
+      (164 `unknown_identifier` + theorem-shape gaps), not tooling. A **tiny
+      68-row verified Mathlib augmentation improves held-out transfer**
+      (pass@10 0.571 → **0.786**, +3 theorems, 0 lost) **but regresses v18
+      broad-core** (pass@10 0.938 → 0.833, protected `bool` 1.000 → 0.667) →
+      **honest tradeoff; v24 stays the broad-core model, augmented model not
+      adopted.** No state_after / manual oracle / v10-leakage; no
+      full-theorem-proving claim; v24 metrics unchanged —
+      [`docs/V25_MATHLIB_ENV_REPORT.md`](docs/V25_MATHLIB_ENV_REPORT.md) ·
+      [`docs/V25_TIERC_CORPUS_REPORT.md`](docs/V25_TIERC_CORPUS_REPORT.md) ·
+      [`docs/V25_ZERO_SHOT_TIERC_REPORT.md`](docs/V25_ZERO_SHOT_TIERC_REPORT.md) ·
+      [`docs/V25_TIERC_AUGMENTATION_REPORT.md`](docs/V25_TIERC_AUGMENTATION_REPORT.md) ·
+      [`docs/V25_BROADCORE_REGRESSION_REPORT.md`](docs/V25_BROADCORE_REGRESSION_REPORT.md) ·
+      [`docs/V25_FAILURE_EXAMPLES.md`](docs/V25_FAILURE_EXAMPLES.md) ·
+      [`docs/V25_REPO_STATUS.md`](docs/V25_REPO_STATUS.md)
+- [x] **Mini-ELF v26 (Mathlib specialist + router — no broad-core
+      cannibalisation)**: v25 established Mathlib availability + partial transfer
+      and showed co-training **regresses broad-core**; v26 fixes this with a
+      **separate Mathlib specialist + router**. Built a **237-row Mathlib-verified
+      specialist corpus** (93 theorems, 6 categories, **54 Set / 37 order rows**)
+      with a new **batched `import Mathlib` verifier** (direct v4.30.0 binary +
+      precomputed `LEAN_PATH`, ~60× faster than v25; **gold-tested 0 mismatches
+      vs one-example-per-file**). The **Mathlib-only specialist (`v26_base`)**
+      lifts v25 held-out tier-C **pass@10 0.786 → 0.929** (fresh holdout 0.909);
+      **Set goals (v24 = 0.00) → 0.50–1.00**, mathlib-lemma transfer 0.20 → 0.87.
+      `plus_core` was *worse* (adopt pure-Mathlib); `large` unneeded. The
+      **router** (`import Mathlib`/flag → specialist, else v24) **preserves
+      broad-core** (routed p@5/p@10 = 0.938/0.958, `bool` 1.0) while lifting
+      tier-C to 0.917 — vs v25 co-training's regressed 0.833. A **Set-shape
+      widening pass** lifted held-out Set **0.50 → 0.75** with no other-category
+      regression. Mathlib is real & external; no state_after / manual-oracle /
+      v10-leakage; no full-proving claim; v24 model untouched —
+      [`docs/V26_REPO_STATUS.md`](docs/V26_REPO_STATUS.md) ·
+      [`docs/V26_MATHLIB_FAILURE_AUDIT.md`](docs/V26_MATHLIB_FAILURE_AUDIT.md) ·
+      [`docs/V26_MATHLIB_SPECIALIST_CORPUS_REPORT.md`](docs/V26_MATHLIB_SPECIALIST_CORPUS_REPORT.md) ·
+      [`docs/V26_MATHLIB_SPECIALIST_DATASET_REPORT.md`](docs/V26_MATHLIB_SPECIALIST_DATASET_REPORT.md) ·
+      [`docs/V26_MATHLIB_SPECIALIST_EVAL_REPORT.md`](docs/V26_MATHLIB_SPECIALIST_EVAL_REPORT.md) ·
+      [`docs/V26_ROUTED_SYSTEM_REPORT.md`](docs/V26_ROUTED_SYSTEM_REPORT.md) ·
+      [`docs/V26_MATHLIB_CATEGORY_ANALYSIS.md`](docs/V26_MATHLIB_CATEGORY_ANALYSIS.md) ·
+      [`docs/V26_FAILURE_EXAMPLES.md`](docs/V26_FAILURE_EXAMPLES.md)
+- [x] **Mini-ELF v27 (scaled Mathlib specialist + hardened verifier)**: made the
+      corrected verifier the trusted default and scaled the corpus. The canonical
+      `TrustedMathlibVerifier` (sentinel + iterative success-confirmation +
+      isolation **rescue**) is **sound *and* complete** vs a gold
+      one-declaration-per-file reference — **0 false positives, matches gold
+      exactly** (incl. 20 real candidates 14/14) — while a deliberately-unsafe
+      **naive batched verifier shows 3 false positives** (reproduced with an
+      unterminated block comment that makes the lexer skip a declaration). A
+      corrected-metric re-audit showed every reported v25/v26 number reproduces
+      **exactly**, and that the naive path *would have inflated* a weak baseline
+      (v25_aug v26-holdout **0.636 → 0.727** via 8 gold-confirmed garbage proofs —
+      gold agrees with trusted 8/8, naive 0/8). Added **181 verified rows** (87
+      theorems; **Set 53, order 40 now first-class**); the
+      **`v27_set_heavy`** specialist takes v25 held-out tier-C **pass@10 →
+      1.000**, v26 holdout → **0.955**, **closes the Set residual 0.75 → 1.00**,
+      order **1.00** (with training) / **0.90** (pure transfer). **Category
+      balancing is harmful** for the gap category (Set → 0.50). The routed system
+      keeps broad-core **bit-identical** (0.9375/0.9583, `bool` 1.0; v24 untouched)
+      with tier-C **0.907** over 43 combined held-out theorems. Residuals are
+      data-coverage-bound (lemma-vocabulary / API-arity), not architecture- or
+      planning-bound. Mathlib real & external; no state_after / manual-oracle /
+      v10-leakage; no full-proving claim; v24 model untouched; old naive verifier
+      never used for headline metrics —
+      [`docs/V27_REPO_STATUS.md`](docs/V27_REPO_STATUS.md) ·
+      [`docs/V27_VERIFIER_SOUNDNESS_AUDIT.md`](docs/V27_VERIFIER_SOUNDNESS_AUDIT.md) ·
+      [`docs/V27_CORRECTED_METRICS_AUDIT.md`](docs/V27_CORRECTED_METRICS_AUDIT.md) ·
+      [`docs/V27_MATHLIB_CATEGORY_GAP_AUDIT.md`](docs/V27_MATHLIB_CATEGORY_GAP_AUDIT.md) ·
+      [`docs/V27_MATHLIB_EXPANDED_CORPUS_REPORT.md`](docs/V27_MATHLIB_EXPANDED_CORPUS_REPORT.md) ·
+      [`docs/V27_MATHLIB_SPECIALIST_DATASET_REPORT.md`](docs/V27_MATHLIB_SPECIALIST_DATASET_REPORT.md) ·
+      [`docs/V27_MATHLIB_SPECIALIST_EVAL_REPORT.md`](docs/V27_MATHLIB_SPECIALIST_EVAL_REPORT.md) ·
+      [`docs/V27_ROUTED_SYSTEM_REPORT.md`](docs/V27_ROUTED_SYSTEM_REPORT.md) ·
+      [`docs/V27_DATA_SCALING_ANALYSIS.md`](docs/V27_DATA_SCALING_ANALYSIS.md) ·
+      [`docs/V27_FAILURE_EXAMPLES.md`](docs/V27_FAILURE_EXAMPLES.md)
 - [ ] Real next-state supervision (needs LeanDojo `run_tac` unblock)
-- [ ] `or_self_elim` (multi-step case split) + true open-vocab beyond witnesses
 - [ ] Full ELF embedded-flow research target (v0/v1 are small prototypes, not the method)
 
 ## Headline result
@@ -74,6 +591,171 @@ witness-copy is **symbolic** augmentation (copying literals into a template),
 `exists_witness` is solved at `pass@5` not `pass@1`, and 16–17 eval
 theorems/split makes this directional, not statistically powered — see the
 [project report](docs/PROJECT_REPORT.md).
+
+> **Mini-ELF v2 reality check (generalization).** Those v1 numbers are on a small,
+> **templated** corpus. v2 builds a harder 94-theorem corpus + adversarial /
+> family / difficulty splits and finds v1 **does not transfer**: under
+> distribution shift the learned generator+reranker collapse to `pass@5`
+> 0.00–0.23 (only the *symbolic* witness-copy survives). Retraining on the
+> combined corpus (v2) recovers in-distribution-hard (`pass@5` 0.23 → **1.00**)
+> and partially recovers adversarial siblings (0.11 → 0.53), but achieves **no**
+> compositional generalization (difficulty-holdout stuck at 0.06) and **regresses**
+> the basic corpus (0.95 → 0.82). Full study:
+> [`docs/V2_GENERALIZATION_REPORT.md`](docs/V2_GENERALIZATION_REPORT.md).
+
+> **Mini-ELF v3 (structured proof-block planner).** v3 adds a deterministic
+> *symbolic* planner that parses the goal and **constructs** proof blocks
+> (implication chains `h3 (h2 (h1 h))`, nested conjunction projection `h.2.2`,
+> `cases`/`rcases` splits, iff `.mp/.mpr` and equality `.trans/.symm` chains),
+> fused above the v2 flow generator + reranker + witness-copy. It moves the
+> compositional `difficulty_holdout` `pass@5` **0.06 → 1.00**, recovers
+> adversarial siblings (0.53 → **1.00**), keeps hash at 1.00, and **recovers the
+> basic regression** (0.82 → **1.00**) — a uniform win. A `--no-planner`
+> ablation on the same split/model stays at **0.083**, attributing the entire
+> lift to the planner. **Honesty:** this is *engineered symbolic coverage* of
+> the corpus's proof shapes, **not** learned generalization — on a proof shape
+> with no matching template the planner would fail like v1/v2; every planner
+> candidate that reached the top-5 verified. Full report:
+> [`docs/V3_PROOF_PLANNER_REPORT.md`](docs/V3_PROOF_PLANNER_REPORT.md).
+>
+> | split | v1-transfer | v2 | **v3** pass@5 |
+> | --- | --- | --- | --- |
+> | hard difficulty_holdout (compositional) | 0.06 | 0.06 | **1.00** |
+> | hard adversarial_sibling | 0.11 | 0.53 | **1.00** |
+> | hard hash | 0.23 | 1.00 | **1.00** |
+> | basic test | 0.95 | 0.82 | **1.00** |
+
+> **Mini-ELF v4 (planner-blind benchmark) — the saturation is not robustness.**
+> v3's wins are *engineered symbolic coverage*, so v4 builds a 61-theorem corpus
+> of proof shapes the planner provably cannot construct (negation/contradiction,
+> contrapositive, ∃-elimination, ∀-instantiation, rewrite). On it, **every
+> unchanged system collapses**: AR `pass@5` 0.00, v1/v2/v3 all **0.096** (the v3
+> planner verifies *0* candidates; only the witness-copy shortcut survives, on
+> one family). A controlled, explicitly-labelled template-addition ablation then
+> shows pure **whack-a-mole**: adding negation templates → those 5 families jump
+> to 1.00 (global 0.61), adding ∃-elim → those 2 jump to 1.00 (global 0.31), both
+> → 0.83 — but `forall_inst` and `rewrite_succ`, for which **no** template was
+> added, stay at **0.00**. Symbolic coverage is per-shape and never complete.
+> Full report: [`docs/V4_PLANNER_BLIND_REPORT.md`](docs/V4_PLANNER_BLIND_REPORT.md).
+
+> **Mini-ELF v5 (data-driven proposers) — off whack-a-mole, on the targets.**
+> v4 left `forall_inst` / `rewrite_succ` at 0.00 even with both hand-written
+> template sets. v5 adds a common candidate-**proposer** interface and a
+> train-free **retrieval** proposer (retrieve verified blocks by char-n-gram
+> similarity, then *lightly adapt* — numeric-literal substitution for
+> ∀-instantiation, verbatim reuse for the rest). On a within-family split
+> (`family_interpolation`: each family has held-out test theorems + same-family
+> donors, no leakage), retrieval takes **`forall_inst` and `rewrite_succ` to
+> pass@5 1.00 with no template** — the exact families templates could not reach —
+> while v3 stays at 0.107 and v4-templates at 0.821 (still 0.00 on the targets).
+> Combining them (`v3 + v4-tmpl ⊕ retrieval`) reaches **pass@5 1.00** overall:
+> the template and the proposer are *complementary*. **Honesty:** retrieval is
+> example reuse + adaptation, **not** reasoning; it needs same-family donors, and
+> char-similarity still confuses the negation siblings (`neg_exfalso` 0.00) — the
+> v1 sibling-confusion problem at the retrieval layer. The **LLM** pilot is
+> implemented but **gated on an API key** (skipped here, not faked); a learned
+> seq2seq proposer is deferred to v6. Full report:
+> [`docs/V5_RESULTS_SUMMARY.md`](docs/V5_RESULTS_SUMMARY.md) ·
+> [`docs/V5_TARGET_FAMILIES.md`](docs/V5_TARGET_FAMILIES.md) ·
+> [`docs/V5_FAILURE_EXAMPLES.md`](docs/V5_FAILURE_EXAMPLES.md).
+>
+> | config (split test, n=32) | pass@5 | forall_inst@5 | rewrite_succ@5 |
+> | --- | --- | --- | --- |
+> | v3 (unchanged) | 0.107 | 0.00 | 0.00 |
+> | v4 templates (both, labelled) | 0.821 | **0.00** | **0.00** |
+> | **retrieval (alone, no template)** | 0.595 | **1.00** | **1.00** |
+> | v3 + v4-tmpl ⊕ retrieval | **1.00** | 1.00 | 1.00 |
+
+> **Mini-ELF v6 (structure-aware retrieval) — fixing v5's ranking, not its
+> reasoning.** v5 retrieval solved the targets at `pass@5` but ranked by
+> char-similarity alone, mis-ranking siblings (`forall_inst` pass@1 0.00,
+> `neg_exfalso` 0.00, `exists_elim_conj` 0.25). v6 adds heuristic **structural**
+> features (`retrieval_features.py`: goal shape, hypothesis shapes, a guessed
+> `required_operation`, left/right conjunct position, connective overlap) and
+> re-scores the *same* retrieved candidates — plus an adapted-candidate
+> preference (rank `exact h 13` above the stale verbatim `exact h 3`, goal-LHS
+> first). On the same split, **retrieval-alone goes from pass@1 0.357 → 1.000 and
+> pass@5 0.595 → 1.000**, fixing all four v5 failures (`forall_inst` pass@1
+> **0.00 → 1.00**; `exists_elim_conj` `pass@5` 0.25 → 1.00; `neg_exfalso` /
+> `neg_imp_exfalso` 0.00 → 1.00). A `no-structural` ablation collapses back to
+> ~v5, isolating the structural terms as the cause. **Honesty:** v6 changes
+> *ranking only* — no proof templates, no `state_after`, no LLM; it is still
+> example reuse, and in *fusion* v3's unfixed `∃, ∧` planner mis-parse still drags
+> `exists_elim_conj` top-1 (retrieval-alone is the cleaner source). Report:
+> [`docs/V6_STRUCTURE_AWARE_RETRIEVAL_REPORT.md`](docs/V6_STRUCTURE_AWARE_RETRIEVAL_REPORT.md) ·
+> [`docs/V6_RETRIEVAL_FAILURE_ANALYSIS.md`](docs/V6_RETRIEVAL_FAILURE_ANALYSIS.md) ·
+> [`docs/V6_FAILURE_EXAMPLES.md`](docs/V6_FAILURE_EXAMPLES.md).
+>
+> | config (split test, n=32) | pass@1 | pass@5 | forall_inst@1 | neg_exfalso@5 |
+> | --- | --- | --- | --- | --- |
+> | v5 retrieval (char-sim) | 0.357 | 0.595 | 0.00 | 0.00 |
+> | **v6 retrieval (structure-aware)** | **1.000** | **1.000** | **1.00** | **1.00** |
+> | v6 retrieval — no structural (ablation) | 0.393 | 0.595 | 1.00 | 0.00 |
+
+> **Mini-ELF v7 (retrieval under donor scarcity) — what v6's 1.00 actually
+> measured.** v6's split is `family_interpolation`: every test family also has
+> members in train, so retrieval reuses a *same-family* donor. v7 builds a graded
+> donor-scarcity benchmark and re-measures with real lean-cli. ⚠️ **These holdout
+> numbers are not comparable to v6's interpolation 1.00 — a harder regime by
+> design.** Findings: (1) v6's rank-0 donor is same-family **100%** of the time and
+> forbidding same-family donors on the *same* split drops pass@5 **1.00 → 0.00**;
+> (2) genuine `family_holdout` and `operation_holdout` collapse **every** config
+> (v5, v6, and a template-free abstraction re-ranker) to **0.00**, with
+> `cross_family_verified = 0` everywhere — the wall is **donor coverage**, not
+> ranking; (3) the determinant is the *presence vs. absence* of a same-family
+> donor, not its quantity (1-shot `kshot_1` ≈ 0.91; 0-shot = 0.00); (4) role-based
+> **re-concretisation** (abstract a donor tactic to hypothesis roles, re-bind to
+> the target) helps only the scarce regime (`kshot_1` pass@1 0.832 → **0.924**),
+> all *same-family*. Tiny learned scorer **skipped** (no learnable headroom).
+> Report: [`docs/V7_RETRIEVAL_HOLDOUT_REPORT.md`](docs/V7_RETRIEVAL_HOLDOUT_REPORT.md) ·
+> audit [`docs/V7_DONOR_AVAILABILITY_AUDIT.md`](docs/V7_DONOR_AVAILABILITY_AUDIT.md) ·
+> examples [`docs/V7_FAILURE_EXAMPLES.md`](docs/V7_FAILURE_EXAMPLES.md).
+>
+> | split (lean-cli pass@5) | donor condition | v5 | v6 | v7_abstract |
+> | --- | --- | --- | --- | --- |
+> | `current` (interpolation) | abundant same-family | 0.595 | **1.000** | 1.000 |
+> | `kshot_1` | 1 same-family donor | — | 0.908 | **0.939** |
+> | `family_holdout` | **no same-family donor** | 0.000 | **0.000** | 0.000 |
+> | `operation_holdout` | **no same-operation donor** | 0.000 | **0.000** | 0.000 |
+
+> **Mini-ELF v8 (generative donorless proposer) — first non-zero on the v7 wall.**
+> v7 showed retrieval *cannot* clear donorless rows. v8 trains a CPU-only
+> char-level seq2seq proposer on a pooled basic + hard + planner_blind corpus
+> (690 verified rows, theorem-level lean-cli only, no `state_after`) and
+> re-measures on the v7 donorless target sets. **On `family_holdout/neg_exfalso`
+> the seq2seq verifies 5 of 8 held theorems** (pass@5 = **0.625** vs v7's 0.00),
+> emitting **9 novel verified tactic strings** (e.g. `exact absurd hp hnp`,
+> `exact (hnp hp).elim`) that are *not* in the train tactic pool — the model
+> composes the token `absurd` and the hypothesis names `hp` / `hnp` from
+> sibling negation families in train. **This is the project's first non-zero
+> `cross_family_verified` on a v7 holdout regime — v7's wall is broken when
+> sibling families share tokens in train.** Negative control:
+> `family_holdout/forall_inst`, whose flat tactic `exact h N` is unique to its
+> family with no shape-compatible cousin in train, stays at **0/7** — the
+> mechanism is *composing tokens learned from sibling families*, not abstract
+> generalisation. On the harder `donorless_eval` regime (no PB families in train
+> at all) the model verifies 3 of 61 via training-distribution slot fill in
+> `exists_reconstruct` (the only family whose `⟨N, rfl⟩` shape overlaps the
+> basic-corpus `exists_witness` set). The **LLM** pilot is implemented but
+> **skipped honestly** (no `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` in env) —
+> written up in `docs/V8_LLM_DONORLESS_PILOT_SKIPPED.md`, not faked as a zero.
+> Full details: [`docs/V8_GENERATIVE_PROPOSER_REPORT.md`](docs/V8_GENERATIVE_PROPOSER_REPORT.md) ·
+> targets [`docs/V8_DONORLESS_TARGETS.md`](docs/V8_DONORLESS_TARGETS.md) ·
+> failure examples [`docs/V8_FAILURE_EXAMPLES.md`](docs/V8_FAILURE_EXAMPLES.md).
+>
+> | regime (lean-cli pass@5) | donor / sibling condition | v7 retrieval | **v8 seq2seq** | novel | xfam | xop |
+> | --- | --- | ---: | ---: | ---: | ---: | ---: |
+> | `family_holdout/neg_exfalso` | siblings (other neg_*) in train | 0.00 | **0.625** | **9** | **9** | 0 |
+> | `family_holdout/exists_reconstruct` | basic exists_witness in train | 0.00 | 0.400 | 0 | 2 | 0 |
+> | `operation_holdout/intro_negation` | *operation* absent, sibling-op tokens present | 0.00 | **0.125** (pass@10 = 0.188) | **3** | 3 | **3** |
+> | `operation_holdout/contradiction` | operation absent, sibling-op tokens present | 0.00 | 0.000 (pass@10 = 0.071) | 1 | 1 | 1 |
+> | `family_holdout/forall_inst` | no shape-compatible sibling | 0.00 | 0.000 | 0 | 0 | 0 |
+> | `donorless_eval` (basic+hard only) | no PB family in train | (n/a) | 0.033 | 0 | 3 | 0 |
+>
+> Final v8 eval matrix: 5 regimes verified at least one cross-family/cross-operation candidate
+> (15 verified candidates total, 13 novel); 10 regimes confirmed at 0/n where the held shape
+> has no token-compatible cousin in train. `operation_holdout/project_conjunction` (84 test rows)
+> hit the 15-min per-fold timeout and is marked `—` in the matrix doc, not faked as `0.000`.
 
 ## Backend status
 

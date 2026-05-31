@@ -1,0 +1,59 @@
+2026-05-30 20:45:49,295 INFO v20 bool plan: 77 theorems
+2026-05-30 20:45:49,900 INFO warmup: success=True elapsed_ms=604.0
+2026-05-30 20:49:38,246 INFO   FAIL v20_bool_taut_tf_b :: 'by_cases h : b = true\n  · exact Or.inl h\n  · cases b\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=timeout
+2026-05-30 20:49:39,879 INFO   FAIL v20_bool_taut_tf_x :: 'by_cases h : x = true\n  · exact Or.inl h\n  · cases x\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=/tmp/mini_elf_lean_yivgdawh.lean:5:19: error: Application type mismatch: The arg
+2026-05-30 20:49:41,526 INFO   FAIL v20_bool_taut_tf_y :: 'by_cases h : y = true\n  · exact Or.inl h\n  · cases y\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=/tmp/mini_elf_lean_a35ojxl6.lean:5:19: error: Application type mismatch: The arg
+2026-05-30 20:51:12,931 INFO   FAIL v20_bool_taut_tf_c :: 'by_cases h : c = true\n  · exact Or.inl h\n  · cases c\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=timeout
+2026-05-30 20:51:44,567 INFO   FAIL v20_bool_taut_tf_d :: 'by_cases h : d = true\n  · exact Or.inl h\n  · cases d\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=/tmp/mini_elf_lean_nsyarvje.lean:5:19: error: Application type mismatch: The arg
+2026-05-30 20:52:16,308 INFO   FAIL v20_bool_taut_tf_bb :: 'by_cases h : bb = true\n  · exact Or.inl h\n  · cases bb\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=/tmp/mini_elf_lean__a5egd_b.lean:5:19: error: Application type mismatch: The arg
+2026-05-30 20:52:18,033 INFO   FAIL v20_bool_taut_tf_bb1 :: 'by_cases h : bb1 = true\n  · exact Or.inl h\n  · cases bb1\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=/tmp/mini_elf_lean_02ve_a2d.lean:5:19: error: Application type mismatch: The arg
+2026-05-30 20:52:49,540 INFO   FAIL v20_bool_taut_tf_ok :: 'by_cases h : ok = true\n  · exact Or.inl h\n  · cases ok\n    · exact Or.inl rfl\n    · exact Or.inr rfl'  err=/tmp/mini_elf_lean_qwoygs2h.lean:5:19: error: Application type mismatch: The arg
+2026-05-30 20:52:50,476 INFO   FAIL v20_bool_taut_ft_b :: 'cases b\n  · exact Or.inr rfl\n  · exact Or.inl rfl'  err=/tmp/mini_elf_lean_ak2731vd.lean:3:17: error: Application type mismatch: The arg
+2026-05-30 20:53:50,536 INFO   FAIL v20_bool_taut_ft_b :: 'cases b with\n  | true => exact Or.inr rfl\n  | false => exact Or.inl rfl'  err=timeout
+2026-05-30 20:53:51,493 INFO   FAIL v20_bool_taut_ft_x :: 'cases x\n  · exact Or.inr rfl\n  · exact Or.inl rfl'  err=/tmp/mini_elf_lean_nk_42byx.lean:3:17: error: Application type mismatch: The arg
+2026-05-30 20:54:22,713 INFO   FAIL v20_bool_taut_ft_y :: 'cases y\n  · exact Or.inr rfl\n  · exact Or.inl rfl'  err=/tmp/mini_elf_lean__2novib1.lean:3:17: error: Application type mismatch: The arg
+2026-05-30 20:54:53,850 INFO   FAIL v20_bool_taut_ft_c :: 'cases c\n  · exact Or.inr rfl\n  · exact Or.inl rfl'  err=/tmp/mini_elf_lean_teq11eqt.lean:3:17: error: Application type mismatch: The arg
+2026-05-30 20:55:54,727 INFO   FAIL v20_bool_taut_ft_d :: 'cases d\n  · exact Or.inr rfl\n  · exact Or.inl rfl'  err=timeout
+2026-05-30 20:55:55,878 INFO   FAIL v20_bool_taut_ft_bb :: 'cases bb\n  · exact Or.inr rfl\n  · exact Or.inl rfl'  err=/tmp/mini_elf_lean_bzem5u4q.lean:3:17: error: Application type mismatch: The arg
+2026-05-30 20:56:27,343 INFO   FAIL v20_bool_if_id_b :: 'by cases b <;> rfl'  err=/tmp/mini_elf_lean_spv_6t8m.lean:1:58: error: unexpected token 'by'; expected '{
+2026-05-30 20:56:58,407 INFO   FAIL v20_bool_if_id_x :: 'by cases x <;> rfl'  err=timeout
+2026-05-30 20:57:58,470 INFO   FAIL v20_bool_if_id_y :: 'cases y <;> rfl'  err=timeout
+2026-05-30 20:57:59,509 INFO   FAIL v20_bool_if_id_y :: 'by cases y <;> rfl'  err=/tmp/mini_elf_lean_uefhsbmq.lean:1:58: error: unexpected token 'by'; expected '{
+2026-05-30 20:58:30,747 INFO   FAIL v20_bool_if_id_c :: 'by cases c <;> rfl'  err=/tmp/mini_elf_lean_pkv57fzj.lean:1:58: error: unexpected token 'by'; expected '{
+2026-05-30 20:59:02,088 INFO   FAIL v20_bool_if_id_d :: 'by cases d <;> rfl'  err=timeout
+2026-05-30 20:59:33,530 INFO   FAIL v20_bool_if_id_bb :: 'by cases bb <;> rfl'  err=/tmp/mini_elf_lean_fq85hmkr.lean:1:61: error: unexpected token 'by'; expected '{
+2026-05-30 21:00:35,610 INFO   FAIL v20_bool_eq_rw_b_h1 :: 'rw [h1]'  err=timeout
+2026-05-30 21:01:35,644 INFO   FAIL v20_bool_eq_rw_b_heq :: 'exact heq'  err=timeout
+2026-05-30 21:02:35,707 INFO   FAIL v20_bool_eq_rw_b_heq :: 'assumption'  err=timeout
+2026-05-30 21:04:37,690 INFO   FAIL v20_bool_eq_rw_b_hh :: 'exact hh'  err=timeout
+2026-05-30 21:06:40,870 INFO   FAIL v20_bool_eq_rw_x_h1 :: 'rw [h1]'  err=timeout
+2026-05-30 21:11:54,782 INFO   FAIL v20_bool_eq_rw_c_hp :: 'assumption'  err=timeout
+2026-05-30 21:13:27,653 INFO   FAIL v20_bool_eq_rw_d_h1 :: 'exact h1'  err=timeout
+2026-05-30 21:18:10,159 INFO   FAIL v20_bool_dneg_bb :: 'cases bb\n  · rfl\n  · rfl'  err=timeout
+2026-05-30 21:18:41,124 INFO   FAIL v20_bool_and_rw_b_h :: 'exact h'  err=/tmp/mini_elf_lean_stzstddz.lean:2:2: error: Type mismatch
+2026-05-30 21:19:12,349 INFO   FAIL v20_bool_and_rw_b_h1 :: 'exact h1'  err=timeout
+2026-05-30 21:20:12,413 INFO   FAIL v20_bool_and_rw_b_h1 :: 'rw [Bool.and_true] at h1\n  exact h1'  err=timeout
+2026-05-30 21:20:43,220 INFO   FAIL v20_bool_and_rw_b_heq :: 'exact heq'  err=/tmp/mini_elf_lean_3uca205f.lean:2:2: error: Type mismatch
+2026-05-30 21:21:44,430 INFO   FAIL v20_bool_and_rw_x_h :: 'exact h'  err=/tmp/mini_elf_lean__31zt_0c.lean:2:2: error: Type mismatch
+2026-05-30 21:21:45,530 INFO   FAIL v20_bool_and_rw_x_h1 :: 'exact h1'  err=/tmp/mini_elf_lean_il_jj_eh.lean:2:2: error: Type mismatch
+2026-05-30 21:22:47,011 INFO   FAIL v20_bool_and_rw_x_heq :: 'exact heq'  err=/tmp/mini_elf_lean_914koz6_.lean:2:2: error: Type mismatch
+2026-05-30 21:23:18,242 INFO   FAIL v20_bool_and_rw_y_h :: 'exact h'  err=/tmp/mini_elf_lean_1lisjw7l.lean:2:2: error: Type mismatch
+2026-05-30 21:24:18,698 INFO   FAIL v20_bool_and_rw_y_h :: 'simpa using h'  err=timeout
+2026-05-30 21:24:49,133 INFO   FAIL v20_bool_and_rw_y_h1 :: 'exact h1'  err=timeout
+2026-05-30 21:25:49,197 INFO   FAIL v20_bool_and_rw_y_h1 :: 'rw [Bool.and_true] at h1\n  exact h1'  err=timeout
+2026-05-30 21:25:50,105 INFO   FAIL v20_bool_and_rw_y_heq :: 'exact heq'  err=/tmp/mini_elf_lean_44de3agt.lean:2:2: error: Type mismatch
+2026-05-30 21:25:51,239 INFO   FAIL v20_bool_and_rw_c_h :: 'exact h'  err=/tmp/mini_elf_lean_q4vk61v8.lean:2:2: error: Type mismatch
+2026-05-30 21:25:52,372 INFO   FAIL v20_bool_and_rw_c_h1 :: 'exact h1'  err=/tmp/mini_elf_lean_4y7l8oe7.lean:2:2: error: Type mismatch
+2026-05-30 21:26:23,669 INFO   FAIL v20_bool_and_rw_c_heq :: 'exact heq'  err=/tmp/mini_elf_lean_amxfznwy.lean:2:2: error: Type mismatch
+2026-05-30 21:26:24,952 INFO   FAIL v20_bool_and_rw_d_h :: 'exact h'  err=/tmp/mini_elf_lean_6k4s3pko.lean:2:2: error: Type mismatch
+2026-05-30 21:27:25,015 INFO   FAIL v20_bool_and_rw_d_h :: 'rw [Bool.and_true] at h\n  exact h'  err=timeout
+2026-05-30 21:27:25,794 INFO   FAIL v20_bool_and_rw_d_h1 :: 'exact h1'  err=/tmp/mini_elf_lean_dq3ojwtv.lean:2:2: error: Type mismatch
+2026-05-30 21:28:57,211 INFO   FAIL v20_bool_and_rw_d_heq :: 'exact heq'  err=timeout
+2026-05-30 21:29:28,158 INFO v20 bool corpus: planned=77 verified=189/239 name_drops=0 triple_drops=1
+2026-05-30 21:29:28,158 INFO   bool_refl theorems=11 verified=33/33
+2026-05-30 21:29:28,158 INFO   bool_cases_taut theorems=8 verified=24/32
+2026-05-30 21:29:28,158 INFO   bool_no_conf theorems=6 verified=11/18
+2026-05-30 21:29:28,158 INFO   bool_if_id theorems=6 verified=11/18
+2026-05-30 21:29:28,158 INFO   bool_eq_rw theorems=25 verified=68/75
+2026-05-30 21:29:28,158 INFO   bool_double_neg theorems=6 verified=16/18
+2026-05-30 21:29:28,158 INFO   bool_and_rw theorems=15 verified=26/45

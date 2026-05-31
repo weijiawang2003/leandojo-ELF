@@ -36,6 +36,11 @@ from mini_elf_lean.dataset_builder import (  # noqa: E402
     build_dataset,
     expand_inputs,
 )
+from mini_elf_lean.splits import (  # noqa: E402
+    SPLIT_STRATEGIES,
+    assign_splits,
+    load_theorem_metadata,
+)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -72,6 +77,18 @@ def _build_parser() -> argparse.ArgumentParser:
     p.add_argument("--val-frac", type=float, default=0.1)
     p.add_argument("--test-frac", type=float, default=0.1)
     p.add_argument("--seed", type=int, default=42, help="Split-assignment seed (stable across runs).")
+    p.add_argument("--split-strategy", choices=SPLIT_STRATEGIES, default="hash",
+                   help="hash (default) | family_holdout | difficulty_holdout | adversarial_sibling. "
+                        "Non-hash strategies require --seeds for theorem metadata.")
+    p.add_argument("--seeds", type=Path, default=None,
+                   help="Seeds JSONL with metadata.pattern_family/difficulty; enables non-hash "
+                        "split strategies and attaches per-row metadata.")
+    p.add_argument("--corpus-source", default=None,
+                   help="Tag each row's metadata with this corpus source (e.g. basic|hard).")
+    p.add_argument("--all-test", action="store_true",
+                   help="Assign every theorem to the 'test' split (for a held-out, "
+                        "eval-only benchmark corpus that no model trains on). "
+                        "Overrides --split-strategy.")
     p.add_argument("-v", "--verbose", action="store_true")
     return p
 
@@ -106,7 +123,26 @@ def main(argv: list[str] | None = None) -> int:
         train=args.train_frac, val=args.val_frac, test=args.test_frac, seed=args.seed,
     )
 
-    summary = build_dataset(inputs, args.output_dir, filters=filters, splits=splits)
+    theorem_meta = load_theorem_metadata(args.seeds) if args.seeds else {}
+    split_override = None
+    if args.all_test:
+        # Held-out, eval-only benchmark: every theorem -> test. No model trains
+        # on it, so there is no train/val to carve out.
+        split_override = {name: "test" for name in theorem_meta} if theorem_meta else {}
+    elif args.split_strategy != "hash" or args.seeds:
+        if not theorem_meta and args.split_strategy != "hash":
+            print(f"error: --split-strategy {args.split_strategy} requires --seeds", file=sys.stderr)
+            return 2
+        split_override = assign_splits(
+            theorem_meta.keys(), theorem_meta, args.split_strategy,
+            train=args.train_frac, val=args.val_frac, test=args.test_frac, seed=args.seed,
+        )
+
+    summary = build_dataset(
+        inputs, args.output_dir, filters=filters, splits=splits,
+        split_override=split_override, split_strategy=args.split_strategy,
+        theorem_meta=theorem_meta or None, corpus_source=args.corpus_source,
+    )
     print(json.dumps(summary.to_dict(), indent=2, sort_keys=True, ensure_ascii=False))
     return 0
 

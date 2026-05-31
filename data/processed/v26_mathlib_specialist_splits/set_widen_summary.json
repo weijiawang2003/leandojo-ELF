@@ -1,0 +1,21 @@
+{
+  "n_theorems": 24,
+  "n_candidates": 52,
+  "n_verified": 47,
+  "n_lean_rejected": 0,
+  "dropped_benchmark_triple": 5,
+  "n_added_to_train": 47,
+  "widened_train_total": 196,
+  "proof_heads": {
+    "exact": 30,
+    "constructor": 1,
+    "intro": 11,
+    "left": 1,
+    "right": 1,
+    "rcases": 1,
+    "cases": 1,
+    "apply": 1
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

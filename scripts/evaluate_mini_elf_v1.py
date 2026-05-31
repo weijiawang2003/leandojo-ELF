@@ -154,6 +154,41 @@ def _v1_generation_stats(
     return stats
 
 
+def _load_difficulty_map(seeds_path: Path) -> Dict[str, str]:
+    """theorem_name -> difficulty from seeds metadata (empty if absent)."""
+    from mini_elf_lean.io_utils import read_jsonl
+    out: Dict[str, str] = {}
+    for row in read_jsonl(seeds_path):
+        name = row.get("theorem_name")
+        diff = (row.get("metadata") or {}).get("difficulty")
+        if name and diff:
+            out[name] = diff
+    return out
+
+
+def _per_difficulty_pass_at_k(predictions, thm2diff: Dict[str, str],
+                              k_values=(1, 3, 5)) -> Dict[str, Any]:
+    """pass@k grouped by theorem difficulty (rows must carry lean_pass_at_k)."""
+    by: Dict[str, Dict[str, Any]] = {}
+    for row in predictions:
+        diff = thm2diff.get(row.get("theorem_name", ""))
+        if not diff:
+            continue
+        e = by.setdefault(diff, {"n_rows": 0, "pass_at_k": {str(k): 0 for k in k_values}})
+        e["n_rows"] += 1
+        pk = row.get("lean_pass_at_k", {})
+        for k in k_values:
+            if pk.get(str(k)):
+                e["pass_at_k"][str(k)] += 1
+    out: Dict[str, Any] = {}
+    for diff, e in sorted(by.items()):
+        n = e["n_rows"]
+        out[diff] = {"n_rows": n,
+                     "pass_at_k": {k: {"rate": c / n if n else 0.0, "count": c}
+                                   for k, c in e["pass_at_k"].items()}}
+    return out
+
+
 def _family_focus(per_family: Dict[str, Any]) -> Dict[str, Any]:
     """Pull the families v1 specifically targets for an at-a-glance summary."""
     focus = {}
@@ -243,6 +278,11 @@ def main(argv=None) -> int:
             pf = per_family_pass_at_k(result.predictions, thm2fam, DEFAULT_KS)
             result.metrics["per_family_pass_at_k"] = pf
             result.metrics["family_focus"] = _family_focus(pf)
+            thm2diff = _load_difficulty_map(args.seeds)
+            if thm2diff:
+                result.metrics["per_difficulty_pass_at_k"] = _per_difficulty_pass_at_k(
+                    result.predictions, thm2diff, DEFAULT_KS
+                )
         result.metrics["sibling_confusion"] = sibling_confusion(result.predictions, thm2fam, tac2fams)
 
     _write_outputs(args.output_dir, result, cache, args.cache,

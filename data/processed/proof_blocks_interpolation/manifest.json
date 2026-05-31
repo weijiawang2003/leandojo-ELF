@@ -1,0 +1,11 @@
+{
+  "regime": "interpolation",
+  "counts": {
+    "train": 553,
+    "val": 52,
+    "test": 85
+  },
+  "n_total": 690,
+  "n_unique_theorems": 289,
+  "n_families": 24
+}

@@ -1,0 +1,10 @@
+{
+  "family": "exists_reconstruct",
+  "n_train": 715,
+  "n_test": 15,
+  "vocab_size": 140,
+  "n_train_lossless": 715,
+  "n_test_lossless": 15,
+  "train_tactic_unique": 166,
+  "test_tactic_unique": 7
+}

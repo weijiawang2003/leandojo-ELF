@@ -1,0 +1,42 @@
+{
+  "n_theorems_planned": 432,
+  "n_candidates_proposed": 680,
+  "n_candidates_verified": 677,
+  "n_candidates_failed": 3,
+  "n_dropped_by_v18_name_guard": 0,
+  "n_dropped_by_v18_triple_guard": 0,
+  "by_surface_family": {
+    "forall_inst_literal": {
+      "theorems": 200,
+      "proposed": 200,
+      "verified": 200,
+      "failed": 0
+    },
+    "forall_inst_var": {
+      "theorems": 100,
+      "proposed": 200,
+      "verified": 200,
+      "failed": 0
+    },
+    "forall_prop": {
+      "theorems": 20,
+      "proposed": 40,
+      "verified": 40,
+      "failed": 0
+    },
+    "forall_arrow_inst": {
+      "theorems": 48,
+      "proposed": 48,
+      "verified": 48,
+      "failed": 0
+    },
+    "forall_inst_compose": {
+      "theorems": 64,
+      "proposed": 192,
+      "verified": 189,
+      "failed": 3
+    }
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

@@ -1,0 +1,23 @@
+{
+  "regime": "v11_family_lofo/rewrite_succ",
+  "held_family": "rewrite_succ",
+  "held_operation": "rewrite",
+  "n_train_rows": 710,
+  "n_test_rows": 20,
+  "n_train_theorems": 324,
+  "n_test_theorems": 5,
+  "v8_lofo_train_rows": 670,
+  "v10_rows_kept_in_train": 40,
+  "v10_rows_kept_same_operation_as_held": 0,
+  "v10_rows_dropped_by_theorem_name": 0,
+  "v10_rows_dropped_by_state_tactic_pair": 0,
+  "descriptive_same_operation_rows_in_train": 0,
+  "descriptive_same_tactic_skeleton_rows_in_train": 5,
+  "test_tactic_skeletons": [
+    "exact congrArg Nat.succ h",
+    "exact h \u25b8 rfl",
+    "rw [h]",
+    "subst h\n  rfl"
+  ],
+  "leakage_assertions": "passed"
+}

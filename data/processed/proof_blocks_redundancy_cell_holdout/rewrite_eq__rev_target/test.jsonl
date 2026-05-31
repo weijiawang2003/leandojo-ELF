@@ -1,0 +1,1 @@
+{"theorem_name": "v10_rewrite_eq_rev_target", "theorem_statement": "(u v : Nat) (h : u = v) : v = u", "state_before": "u v : Nat\nh : u = v\n⊢ v = u", "tactic": "rw [h]", "family": "rev_target", "required_operation": "rewrite_eq", "corpus_source": "redundancy_corpus", "tactic_source": "verified", "split": "test", "regime": "redundancy_cell_holdout/rewrite_eq__rev_target"}

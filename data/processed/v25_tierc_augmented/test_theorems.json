@@ -1,0 +1,42 @@
+{
+  "test_theorems": [
+    "v25_bool_and_true",
+    "v25_bool_true_and",
+    "v25_list_append_nil",
+    "v25_list_map_id",
+    "v25_list_reverse_nil",
+    "v25_logic_and_imp",
+    "v25_logic_iff_refl",
+    "v25_logic_not_intro",
+    "v25_nat_add_assoc",
+    "v25_nat_add_zero",
+    "v25_nat_mul_one",
+    "v25_nat_zero_add",
+    "v25_set_empty_subset",
+    "v25_set_mem_univ"
+  ],
+  "train_theorems": [
+    "v25_bool_decide_true",
+    "v25_bool_not_not",
+    "v25_list_length_append",
+    "v25_list_length_reverse",
+    "v25_list_mem_cons_self",
+    "v25_list_nil_append",
+    "v25_logic_and_symm",
+    "v25_logic_em",
+    "v25_logic_imp_self",
+    "v25_logic_modus_ponens",
+    "v25_logic_or_symm",
+    "v25_nat_add_comm",
+    "v25_nat_add_one_eq",
+    "v25_nat_le_refl",
+    "v25_nat_le_succ",
+    "v25_nat_mul_zero",
+    "v25_nat_succ_eq",
+    "v25_option_map_id",
+    "v25_option_some_isSome",
+    "v25_set_inter_subset_left",
+    "v25_set_mem_singleton",
+    "v25_set_subset_refl"
+  ]
+}

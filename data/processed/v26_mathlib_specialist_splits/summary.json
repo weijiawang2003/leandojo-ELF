@@ -1,0 +1,63 @@
+{
+  "pool_rows": 305,
+  "pool_theorems": 101,
+  "pool_by_category": {
+    "nat": 26,
+    "set": 20,
+    "list": 16,
+    "function": 5,
+    "logic": 20,
+    "bool_option": 14
+  },
+  "v25_test_theorems_excluded": [
+    "v25_bool_and_true",
+    "v25_bool_true_and",
+    "v25_list_append_nil",
+    "v25_list_map_id",
+    "v25_list_reverse_nil",
+    "v25_logic_and_imp",
+    "v25_logic_iff_refl",
+    "v25_logic_not_intro",
+    "v25_nat_add_assoc",
+    "v25_nat_add_zero",
+    "v25_nat_mul_one",
+    "v25_nat_zero_add",
+    "v25_set_empty_subset",
+    "v25_set_mem_univ"
+  ],
+  "splits": {
+    "theorem_holdout": {
+      "n_train": 149,
+      "n_val": 61,
+      "n_test": 67,
+      "n_test_theorems": 22,
+      "n_core_added": 58,
+      "dropped_train_triple_overlap": 28,
+      "test_by_category": {
+        "nat": 20,
+        "set": 13,
+        "logic": 13,
+        "bool_option": 10,
+        "list": 9,
+        "function": 2
+      }
+    },
+    "category_holdout_set": {
+      "n_train": 240,
+      "n_test": 65,
+      "n_test_theorems": 20,
+      "dropped_train_triple_overlap": 0
+    },
+    "category_holdout_order": {
+      "n_train": 261,
+      "n_test": 37,
+      "n_test_theorems": 11,
+      "dropped_train_triple_overlap": 7
+    },
+    "v25_heldout_benchmark": {
+      "n_theorems": 14
+    }
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

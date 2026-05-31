@@ -1,0 +1,13 @@
+{
+  "config": "C_forall_only_specialist",
+  "n_total_kept": 689,
+  "ingest_stats": {
+    "dropped_by_v18_name_guard": 0,
+    "dropped_by_v18_triple_guard": 0,
+    "dropped_by_dedup": 0,
+    "n_v21_forall": 677,
+    "n_v20_forall": 12
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

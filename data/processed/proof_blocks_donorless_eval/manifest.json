@@ -1,0 +1,10 @@
+{
+  "regime": "donorless_eval",
+  "counts": {
+    "train": 533,
+    "test": 157
+  },
+  "n_total": 690,
+  "n_unique_theorems": 289,
+  "n_families": 24
+}

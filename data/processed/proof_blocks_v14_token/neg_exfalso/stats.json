@@ -1,0 +1,10 @@
+{
+  "family": "neg_exfalso",
+  "n_train": 697,
+  "n_test": 32,
+  "vocab_size": 142,
+  "n_train_lossless": 697,
+  "n_test_lossless": 32,
+  "train_tactic_unique": 165,
+  "test_tactic_unique": 7
+}

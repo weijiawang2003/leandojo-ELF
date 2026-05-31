@@ -1,0 +1,10 @@
+{
+  "regime": "family_holdout/exists_elim_prop",
+  "counts": {
+    "train": 672,
+    "test": 18
+  },
+  "n_total": 690,
+  "n_unique_theorems": 289,
+  "n_families": 24
+}

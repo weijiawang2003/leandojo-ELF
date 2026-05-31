@@ -1,0 +1,54 @@
+{
+  "folds": [
+    {
+      "family": "forall_inst",
+      "n_train": 1147,
+      "n_test": 7,
+      "vocab_size": 156,
+      "n_train_lossless": 1147,
+      "n_test_lossless": 7,
+      "train_tactic_unique": 195,
+      "test_tactic_unique": 6
+    },
+    {
+      "family": "rewrite_succ",
+      "n_train": 1134,
+      "n_test": 20,
+      "vocab_size": 152,
+      "n_train_lossless": 1134,
+      "n_test_lossless": 20,
+      "train_tactic_unique": 195,
+      "test_tactic_unique": 4
+    },
+    {
+      "family": "neg_exfalso",
+      "n_train": 1121,
+      "n_test": 32,
+      "vocab_size": 156,
+      "n_train_lossless": 1121,
+      "n_test_lossless": 32,
+      "train_tactic_unique": 196,
+      "test_tactic_unique": 7
+    },
+    {
+      "family": "exists_reconstruct",
+      "n_train": 1139,
+      "n_test": 15,
+      "vocab_size": 154,
+      "n_train_lossless": 1139,
+      "n_test_lossless": 15,
+      "train_tactic_unique": 194,
+      "test_tactic_unique": 7
+    },
+    {
+      "family": "neg_imp_exfalso",
+      "n_train": 1139,
+      "n_test": 15,
+      "vocab_size": 156,
+      "n_train_lossless": 1139,
+      "n_test_lossless": 15,
+      "train_tactic_unique": 198,
+      "test_tactic_unique": 3
+    }
+  ]
+}

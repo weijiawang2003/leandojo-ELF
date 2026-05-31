@@ -1,0 +1,180 @@
+# v20 failure examples
+v20 broad-plus policy: 48 theorems, 13 unverified at top-10.
+
+## Failure-class tally
+- `type_mismatch`: 8
+- `no_schema_in_beam`: 2
+- `wrong_var_name`: 1
+- `other`: 1
+- `tactic_failed`: 1
+
+## Per-theorem detail
+
+### `v18_and_assoc_one` — conjunction — `type_mismatch`
+- statement: `(p q r : Prop) (h : p ∧ q ∧ r) : (p ∧ q) ∧ r`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'exact ⟨h.2, h.1⟩'`
+  - `'exact h.1.1'`
+  - `'exact h.1.2'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application type mismatch: The argument`
+  - `/tmp/mini_elf_lean_aonnv283.lean:2:8: error: Invalid projection: Projection operates on types of the form 'C ...' where C is a constant. The`
+  - `/tmp/mini_elf_lean_eftcerwg.lean:2:8: error: Invalid projection: Projection operates on types of the form 'C ...' where C is a constant. The`
+
+### `v18_or_inr` — disjunction — `type_mismatch`
+- statement: `(p q : Prop) (hq : q) : p ∨ q`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'constructor\n  exact hq\n  exact hq'`
+  - `'exact And.intro hq hq'`
+  - `'constructor\n  exact And.intro hq'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_vgs1joc8.lean:3:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_j51y2y3s.lean:2:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_z062knqn.lean:3:2: error: Type mismatch`
+
+### `v18_or_elim_to_common` — disjunction — `type_mismatch`
+- statement: `(p q r : Prop) (h : p ∨ q) (hpr : p → r) (hqr : q → r) : r`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'cases h with\n  | inl hp => exact absurd hp =>'`
+  - `'cases h with\n  | inl hp => exact hq => exact'`
+  - `'cases h with\n  | inl hp => exact hpq hp'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_8n5s_hb4.lean:3:14: error: Type mismatch`
+  - `/tmp/mini_elf_lean_up5pnrm_.lean:3:20: error(lean.unknownIdentifier): Unknown identifier 'hq'`
+  - `/tmp/mini_elf_lean_fifw3nnu.lean:3:20: error(lean.unknownIdentifier): Unknown identifier 'hpq'`
+
+### `v18_neg_or_left` — negation — `type_mismatch`
+- statement: `(p q : Prop) (h : ¬(p ∨ q)) : ¬p`
+- expected head: `intro`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'exact fun hp => absurd hp h'`
+  - `'exact fun hp => absurd hp hnp'`
+  - `'exact fun hp => absurd hp hnp\n  | inr hp => exact (h hp)'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_j9vl5ofg.lean:2:28: error: Application type mismatch: The argument`
+  - `/tmp/mini_elf_lean_ffgggk47.lean:2:28: error(lean.unknownIdentifier): Unknown identifier 'hnp'`
+  - `/tmp/mini_elf_lean_f1tovs8y.lean:2:28: error(lean.unknownIdentifier): Unknown identifier 'hnp'`
+
+### `v18_exists_intro_nat` — exists — `wrong_var_name`
+- statement: `(p : Nat → Prop) (h : p 3) : ∃ n, p n`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'refine ⟨n, ?_⟩\n  rfl'`
+  - `'refine ⟨n, ?_⟩\n  | ⟨n, ?_⟩'`
+  - `'rcases h with ⟨hp, hq⟩\n  exact hq'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_so5trlb7.lean:2:10: error(lean.unknownIdentifier): Unknown identifier 'n'`
+  - `/tmp/mini_elf_lean_hoy1ea0u.lean:2:10: error(lean.unknownIdentifier): Unknown identifier 'n'`
+  - `/tmp/mini_elf_lean_uwyvm1ji.lean:2:16: error: Tactic 'rcases' failed: 'h : p 3' is not an inductive datatype`
+
+### `v18_exists_relabel` — exists — `no_schema_in_beam`
+- statement: `(p : Nat → Prop) (h : ∃ n, p n) : ∃ m, p m`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'rcases h with ⟨n, hp⟩\n  exact hp'`
+  - `'rcases h with ⟨n, hp, hq⟩\n  exact hq'`
+  - `'rcases h with ⟨n, hp, hq⟩\n  exact hp'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_nvymtvhl.lean:3:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_thb092yy.lean:2:16: error: Tactic 'rcases' failed: 'h✝ : p n' is not an inductive datatype`
+  - `/tmp/mini_elf_lean_a0t_onyf.lean:2:16: error: Tactic 'rcases' failed: 'h✝ : p n' is not an inductive datatype`
+
+### `v18_exists_compose` — exists — `no_schema_in_beam`
+- statement: `(p q : Nat → Prop) (h : ∃ n, p n) (hpq : ∀ n, p n → q n) : ∃ n, q n`
+- expected head: `cases`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'rcases h with ⟨n, hpq⟩\n  exact hpq'`
+  - `'rcases h with ⟨n, hpq⟩\n  exact hq'`
+  - `'rcases h with ⟨n, hpq⟩ => exact ⟨n,'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_r5mqomez.lean:3:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_ta9w552g.lean:3:8: error(lean.unknownIdentifier): Unknown identifier 'hq'`
+  - `/tmp/mini_elf_lean_98j3wcot.lean:1:79: error: unsolved goals`
+
+### `v18_forall_inst_at_7` — forall — `type_mismatch`
+- statement: `(p : Nat → Prop) (h : ∀ n, p n) : p 7`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'exact h with ⟨n, hp⟩'`
+  - `'exact h with ⟨n, hq⟩'`
+  - `'exact h with ⟨hp, hq⟩'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_ym_zk3ni.lean:2:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_wg39dp5w.lean:2:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_2piyei_h.lean:2:2: error: Type mismatch`
+
+### `v18_forall_inst_compose` — forall — `type_mismatch`
+- statement: `(p q : Nat → Prop) (h : ∀ n, p n → q n) (hp : p 5) : q 5`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'exact h p'`
+  - `'exact h hp hq'`
+  - `'exact h with ⟨n, hp⟩'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_9_xlbunw.lean:2:10: error: Application type mismatch: The argument`
+  - `/tmp/mini_elf_lean_2zs721xf.lean:2:10: error: Application type mismatch: The argument`
+  - `/tmp/mini_elf_lean_tzyeuapf.lean:2:2: error: Type mismatch`
+
+### `v18_forall_to_arrow` — forall — `other`
+- statement: `(p q : Nat → Prop) (h : ∀ n, p n → q n) : p 3 → q 3`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'intro h\n  exact h ⟨ha, hb⟩'`
+  - `'exact h ⟨ha, hb⟩'`
+  - `'exact fun _ => h ⟨ha, hb⟩'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_ypaxegda.lean:3:8: error: Function expected at`
+  - `/tmp/mini_elf_lean_xk_dnbjq.lean:2:10: error: Invalid '⟨...⟩' notation: The expected type 'Nat' has more than one constructor`
+  - `/tmp/mini_elf_lean_fmxkpf95.lean:2:19: error: Invalid '⟨...⟩' notation: The expected type 'Nat' has more than one constructor`
+
+### `v18_nat_zero_add` — nat_succ — `type_mismatch`
+- statement: `(n : Nat) : 0 + n = n`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'exact rfl'`
+  - `'rfl'`
+  - `'refine rfl'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_rwu272dh.lean:2:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_kxc7h6qf.lean:2:2: error: Tactic 'rfl' failed: The left-hand side`
+  - `/tmp/mini_elf_lean_g3wqxib7.lean:2:2: error: Type mismatch`
+
+### `v18_nat_succ_inj` — nat_succ — `tactic_failed`
+- statement: `(n m : Nat) (h : n.succ = m.succ) : n = m`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'rw [h]'`
+  - `'exact h ▸ rfl'`
+  - `'subst h\n  rfl'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_i_3iky_0.lean:2:6: error: Tactic 'rewrite' failed: Did not find an occurrence of the pattern`
+  - `/tmp/mini_elf_lean_qw1zgho4.lean:2:8: error: invalid '▸' notation, expected result type of cast is `
+  - `/tmp/mini_elf_lean_326atd3o.lean:2:2: error: Tactic 'subst' failed: invalid equality proof, it is not of the form (x = t) or (t = x)`
+
+### `v18_list_append_nil` — list — `type_mismatch`
+- statement: `(α : Type) (xs : List α) : xs ++ [] = xs`
+- expected head: `exact`
+- alt-config first-verified rank: {'policy_abstract': None, 'raw': None}
+- top-3 candidates:
+  - `'exact rfl'`
+  - `'rfl'`
+  - `'exact Eq.refl _'`
+- top-3 errors:
+  - `/tmp/mini_elf_lean_nnnb7fmy.lean:2:2: error: Type mismatch`
+  - `/tmp/mini_elf_lean_r0yfg6s_.lean:2:2: error: Tactic 'rfl' failed: The left-hand side`
+  - `/tmp/mini_elf_lean_up6ol2ke.lean:2:2: error: Type mismatch`

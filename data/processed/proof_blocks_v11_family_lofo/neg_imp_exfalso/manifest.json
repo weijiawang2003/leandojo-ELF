@@ -1,0 +1,22 @@
+{
+  "regime": "v11_family_lofo/neg_imp_exfalso",
+  "held_family": "neg_imp_exfalso",
+  "held_operation": "intro_negation",
+  "n_train_rows": 715,
+  "n_test_rows": 15,
+  "n_train_theorems": 324,
+  "n_test_theorems": 5,
+  "v8_lofo_train_rows": 675,
+  "v10_rows_kept_in_train": 40,
+  "v10_rows_kept_same_operation_as_held": 5,
+  "v10_rows_dropped_by_theorem_name": 0,
+  "v10_rows_dropped_by_state_tactic_pair": 0,
+  "descriptive_same_operation_rows_in_train": 27,
+  "descriptive_same_tactic_skeleton_rows_in_train": 0,
+  "test_tactic_skeletons": [
+    "exact fun hp => (hnp hp).elim",
+    "intro hp\n  exact (hnp hp).elim",
+    "intro hp\n  exact absurd hp hnp"
+  ],
+  "leakage_assertions": "passed"
+}

@@ -21,10 +21,6 @@ data/traces/*.jsonl
 
 # LeanDojo workspace.
 .lean_dojo_cache/
-<<<<<<< HEAD
-
-pytest-cache-files-*/
-=======
 .tmp/
 
 # Stray pytest temp dirs.
@@ -38,4 +34,3 @@ verification_cache.json
 
 # External example repo (its own git repo; manage/clone separately).
 examples/leandojo_mini_repo/
->>>>>>> a691b63 (Add Mini-ELF v0 prototype and results)

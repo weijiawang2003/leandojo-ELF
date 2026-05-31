@@ -1,0 +1,10 @@
+{
+  "family": "neg_imp_exfalso",
+  "n_train_total": 1139,
+  "n_train_v16_carry": 1002,
+  "n_train_v17_added": 137,
+  "n_test": 15,
+  "v17_dropped_by_name_leakage_guard": 0,
+  "v17_dropped_by_triple_leakage_guard": 0,
+  "uses_state_after": false
+}

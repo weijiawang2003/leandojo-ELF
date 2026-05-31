@@ -1,0 +1,64 @@
+{
+  "n_total": 1779,
+  "n_verified": 155,
+  "n_failed": 1624,
+  "positive_fraction": 0.08712759977515458,
+  "by_family": {
+    "forall_inst": {
+      "n": 420,
+      "verified": 19
+    },
+    "rewrite_succ": {
+      "n": 291,
+      "verified": 30
+    },
+    "neg_exfalso": {
+      "n": 473,
+      "verified": 54
+    },
+    "exists_reconstruct": {
+      "n": 297,
+      "verified": 42
+    },
+    "neg_imp_exfalso": {
+      "n": 298,
+      "verified": 10
+    }
+  },
+  "by_source_run": {
+    "v12_raw": {
+      "n": 300,
+      "verified": 23
+    },
+    "v12_literal_adapt": {
+      "n": 293,
+      "verified": 21
+    },
+    "v12_rerank": {
+      "n": 300,
+      "verified": 23
+    },
+    "v12_literal_adapt_rerank": {
+      "n": 293,
+      "verified": 26
+    },
+    "v14_raw": {
+      "n": 300,
+      "verified": 29
+    },
+    "v14_literal_adapt_rerank": {
+      "n": 293,
+      "verified": 33
+    }
+  },
+  "by_error_class": {
+    "ok": 155,
+    "parse_error": 334,
+    "unsolved_goals": 12,
+    "type_mismatch": 486,
+    "other": 272,
+    "unknown_identifier": 446,
+    "unknown_tactic": 70,
+    "timeout": 4
+  }
+}

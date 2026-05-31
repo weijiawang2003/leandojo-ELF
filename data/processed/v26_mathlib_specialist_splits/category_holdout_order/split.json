@@ -1,0 +1,25 @@
+{
+  "split": "category_holdout_order",
+  "held_out_category": "order",
+  "n_train": 261,
+  "n_test": 37,
+  "n_test_theorems": 11,
+  "test_theorems": [
+    "v26_nat_le_add_left2",
+    "v26_nat_le_add_right2",
+    "v26_nat_le_max_left2",
+    "v26_nat_le_of_eq2",
+    "v26_nat_le_refl2",
+    "v26_nat_le_succ2",
+    "v26_nat_le_trans2",
+    "v26_nat_lt_succ_self2",
+    "v26_nat_min_le_left2",
+    "v26_nat_succ_pos2",
+    "v26_nat_zero_le"
+  ],
+  "n_test_seeds": 11,
+  "leakage": {
+    "dropped_train_triple_overlap": 7
+  },
+  "uses_state_after": false
+}

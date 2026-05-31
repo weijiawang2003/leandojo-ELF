@@ -1,0 +1,10 @@
+{
+  "regime": "family_holdout/rewrite_succ",
+  "counts": {
+    "train": 670,
+    "test": 20
+  },
+  "n_total": 690,
+  "n_unique_theorems": 289,
+  "n_families": 24
+}

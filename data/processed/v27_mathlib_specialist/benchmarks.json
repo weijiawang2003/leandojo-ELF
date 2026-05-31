@@ -1,0 +1,20 @@
+{
+  "v25_heldout": {
+    "seeds": "/home/wangw/code/ELFMath/data/seeds/v25_mathlib_tierc_test_seeds.jsonl",
+    "note": "preserved unchanged"
+  },
+  "v26_holdout": {
+    "seeds": "/home/wangw/code/ELFMath/data/processed/v26_mathlib_specialist_splits/theorem_holdout/test_seeds.jsonl",
+    "note": "preserved unchanged"
+  },
+  "v27_theorem_holdout": {
+    "seeds": "/home/wangw/code/ELFMath/data/processed/v27_mathlib_specialist/theorem_holdout/test_seeds.jsonl",
+    "n_theorems": 7
+  },
+  "category_holdout_set": {
+    "seeds": "/home/wangw/code/ELFMath/data/processed/v27_mathlib_specialist/category_holdout_set/test_seeds.jsonl"
+  },
+  "category_holdout_order": {
+    "seeds": "/home/wangw/code/ELFMath/data/processed/v27_mathlib_specialist/category_holdout_order/test_seeds.jsonl"
+  }
+}

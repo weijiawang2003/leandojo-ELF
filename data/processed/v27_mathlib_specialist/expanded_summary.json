@@ -1,0 +1,126 @@
+{
+  "config": "v27_mathlib_expanded",
+  "mathlib_available": true,
+  "lean_verifier": "TrustedMathlibVerifier (sentinel+confirm+rescue, import Mathlib)",
+  "imports_used": [
+    "import Mathlib"
+  ],
+  "n_theorems": 87,
+  "n_candidates_proposed": 268,
+  "n_candidates_verified": 181,
+  "n_candidates_lean_rejected": 5,
+  "n_candidates_failed": 5,
+  "n_timeout": 0,
+  "n_theorems_with_training_rows": 60,
+  "n_zero_lean_success_theorems": 0,
+  "zero_lean_success_theorems": [],
+  "n_theorems_stripped_to_zero_by_guards": 27,
+  "theorems_stripped_to_zero_by_guards": [
+    "v27_bool_and_true",
+    "v27_bool_dichotomy",
+    "v27_bool_or_self",
+    "v27_bool_true_and",
+    "v27_fun_comp_assoc",
+    "v27_list_append_nil",
+    "v27_list_length_append",
+    "v27_list_map_id",
+    "v27_list_map_map",
+    "v27_list_reverse_reverse",
+    "v27_logic_and_symm",
+    "v27_logic_curry",
+    "v27_logic_iff_refl",
+    "v27_nat_add_assoc",
+    "v27_nat_add_comm",
+    "v27_nat_add_zero",
+    "v27_nat_mul_one",
+    "v27_nat_one_mul",
+    "v27_nat_succ_eq",
+    "v27_nat_zero_add",
+    "v27_ord_le_trans",
+    "v27_set_empty_subset",
+    "v27_set_inter_comm_subset",
+    "v27_set_inter_subset_left",
+    "v27_set_mem_inter_left",
+    "v27_set_mem_univ",
+    "v27_set_subset_refl"
+  ],
+  "dropped_v18_name": 0,
+  "dropped_v18_triple": 8,
+  "dropped_heldout": 74,
+  "by_category": {
+    "set": {
+      "theorems": 23,
+      "proposed": 72,
+      "verified": 53,
+      "failed": 0
+    },
+    "order": {
+      "theorems": 13,
+      "proposed": 43,
+      "verified": 40,
+      "failed": 0
+    },
+    "nat": {
+      "theorems": 12,
+      "proposed": 39,
+      "verified": 14,
+      "failed": 1
+    },
+    "list": {
+      "theorems": 12,
+      "proposed": 31,
+      "verified": 15,
+      "failed": 3
+    },
+    "logic": {
+      "theorems": 12,
+      "proposed": 41,
+      "verified": 31,
+      "failed": 0
+    },
+    "bool_option": {
+      "theorems": 10,
+      "proposed": 27,
+      "verified": 16,
+      "failed": 0
+    },
+    "function": {
+      "theorems": 5,
+      "proposed": 15,
+      "verified": 12,
+      "failed": 1
+    }
+  },
+  "categories": [
+    "bool_option",
+    "function",
+    "list",
+    "logic",
+    "nat",
+    "order",
+    "set"
+  ],
+  "verified_proof_heads": {
+    "exact": 72,
+    "simp": 37,
+    "intro": 17,
+    "omega": 15,
+    "rfl": 12,
+    "tauto": 9,
+    "cases": 6,
+    "ring": 3,
+    "rw": 2,
+    "funext": 2,
+    "constructor": 1,
+    "left": 1,
+    "right": 1,
+    "ac_rfl": 1,
+    "aesop": 1,
+    "by_cases": 1
+  },
+  "n_lean_invocations": 10,
+  "total_lean_seconds": 43.9,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

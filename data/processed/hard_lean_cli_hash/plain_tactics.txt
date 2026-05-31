@@ -1,0 +1,57 @@
+cases h with\n  | inl hp => exact hp\n  | inr hp => exact hp
+cases h with\n  | inl hx => exact hp hx\n  | inr hx => exact hq hx
+constructor\n  exact hp\n  exact hr
+exact (h1.trans h2).trans h3
+exact And.intro (And.intro hp hq) hr
+exact Eq.trans h1 (Eq.symm h2)
+exact Eq.trans h1 (Eq.trans h2 h3)
+exact Or.elim h hp hq
+exact fun h => h3 (h2 (h1 h))
+exact fun ha hb => h ⟨ha, hb⟩
+exact fun hp => h2.mp (h1.mp hp)
+exact fun hq => h.mpr hq
+exact h.1 hp
+exact h.1.1
+exact h.1.2
+exact h.2.1
+exact h.2.2
+exact h.left.left
+exact h.left.right
+exact h.mp hp
+exact h.mpr
+exact h.right.left
+exact h.right.right
+exact h1.trans (h2.trans h3)
+exact h1.trans h2.symm
+exact h2 (h1 h3.1)
+exact h2 (h1 h3.left)
+exact ⟨10, rfl⟩
+exact ⟨100, rfl⟩
+exact ⟨13, rfl⟩
+exact ⟨3, rfl⟩
+exact ⟨4, rfl⟩
+exact ⟨42, rfl⟩
+exact ⟨6, rfl⟩
+exact ⟨8, rfl⟩
+exact ⟨9, rfl⟩
+exact ⟨hp, hq, hr⟩
+exact ⟨hp, hr⟩
+exact ⟨hp, ⟨hq, hr⟩⟩
+exact ⟨m, rfl⟩
+exact ⟨⟨hp, hq⟩, hr⟩
+intro h\n  exact h3 (h2 (h1 h))
+intro ha hb\n  exact h ⟨ha, hb⟩
+intro hp\n  exact h2.mp (h1.mp hp)
+intro hq\n  exact h.mpr hq
+rcases h with hp | hp\n  exact hp\n  exact hp
+rcases h with hx | hx\n  exact hp hx\n  exact hq hx
+refine ⟨10, ?_⟩\n  rfl
+refine ⟨100, ?_⟩\n  rfl
+refine ⟨13, ?_⟩\n  rfl
+refine ⟨3, ?_⟩\n  rfl
+refine ⟨4, ?_⟩\n  rfl
+refine ⟨42, ?_⟩\n  rfl
+refine ⟨6, ?_⟩\n  rfl
+refine ⟨8, ?_⟩\n  rfl
+refine ⟨9, ?_⟩\n  rfl
+refine ⟨m, ?_⟩\n  rfl

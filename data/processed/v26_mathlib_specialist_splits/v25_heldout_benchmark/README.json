@@ -1,0 +1,5 @@
+{
+  "note": "v25 held-out tier-C benchmark, preserved unchanged for v24/v25/v26 comparison.",
+  "n_theorems": 14,
+  "source": "data/seeds/v25_mathlib_tierc_test_seeds.jsonl"
+}

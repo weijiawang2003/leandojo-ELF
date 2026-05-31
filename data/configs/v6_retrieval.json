@@ -1,0 +1,16 @@
+{
+  "alpha_char": 1.0,
+  "beta_goal_shape": 1.0,
+  "gamma_operation": 1.0,
+  "delta_connective": 0.5,
+  "epsilon_numeric": 0.5,
+  "zeta_hyp_shape": 0.75,
+  "eta_token": 0.25,
+  "theta_conjunct_match": 1.0,
+  "pen_operation_mismatch": 1.0,
+  "pen_projection_mismatch": 1.5,
+  "pen_stale_literal": 2.0,
+  "pen_missing_intro": 1.5,
+  "pen_contradiction_noproof": 0.75,
+  "bonus_adapted": 0.25
+}

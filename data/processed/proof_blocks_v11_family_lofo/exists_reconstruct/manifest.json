@@ -1,0 +1,22 @@
+{
+  "regime": "v11_family_lofo/exists_reconstruct",
+  "held_family": "exists_reconstruct",
+  "held_operation": "unknown",
+  "n_train_rows": 715,
+  "n_test_rows": 15,
+  "n_train_theorems": 324,
+  "n_test_theorems": 5,
+  "v8_lofo_train_rows": 675,
+  "v10_rows_kept_in_train": 40,
+  "v10_rows_kept_same_operation_as_held": 0,
+  "v10_rows_dropped_by_theorem_name": 0,
+  "v10_rows_dropped_by_state_tactic_pair": 0,
+  "descriptive_same_operation_rows_in_train": 449,
+  "descriptive_same_tactic_skeleton_rows_in_train": 16,
+  "test_tactic_skeletons": [
+    "exact h",
+    "exact \u27e8<num>, rfl\u27e9",
+    "rcases h with \u27e8n, hn\u27e9\n  exact \u27e8n, hn\u27e9"
+  ],
+  "leakage_assertions": "passed"
+}

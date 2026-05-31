@@ -1,0 +1,13 @@
+2026-05-30 16:10:06,134 INFO warmup: success=True elapsed_ms=1391.7
+2026-05-30 16:10:51,901 INFO v18 corpus done: theorems=48 candidates=115 verified=109 failed=6 timeout=0 zero_success_theorems=0
+2026-05-30 16:10:51,902 INFO   cat=bool                   theorems=3   verified_cands=5   (theorems_with_verified=3)
+2026-05-30 16:10:51,902 INFO   cat=conjunction            theorems=6   verified_cands=18  (theorems_with_verified=6)
+2026-05-30 16:10:51,902 INFO   cat=disjunction            theorems=5   verified_cands=12  (theorems_with_verified=5)
+2026-05-30 16:10:51,902 INFO   cat=equality_rewrite       theorems=6   verified_cands=17  (theorems_with_verified=6)
+2026-05-30 16:10:51,902 INFO   cat=exists                 theorems=4   verified_cands=7   (theorems_with_verified=4)
+2026-05-30 16:10:51,902 INFO   cat=forall                 theorems=3   verified_cands=6   (theorems_with_verified=3)
+2026-05-30 16:10:51,902 INFO   cat=implication            theorems=6   verified_cands=15  (theorems_with_verified=6)
+2026-05-30 16:10:51,902 INFO   cat=list                   theorems=5   verified_cands=7   (theorems_with_verified=5)
+2026-05-30 16:10:51,902 INFO   cat=nat_succ               theorems=5   verified_cands=10  (theorems_with_verified=5)
+2026-05-30 16:10:51,902 INFO   cat=negation               theorems=5   verified_cands=12  (theorems_with_verified=5)
+2026-05-30 16:10:51,902 INFO error classes: {'invalid': 1, 'ok': 109, 'other': 1, 'type_mismatch': 1, 'unknown_tactic': 3}

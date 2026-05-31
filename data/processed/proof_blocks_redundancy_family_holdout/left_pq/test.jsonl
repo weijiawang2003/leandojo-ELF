@@ -1,0 +1,1 @@
+{"theorem_name": "v10_conjunction_projection_left_pq", "theorem_statement": "(p q : Prop) (h : p ∧ q) : p", "state_before": "p q : Prop\nh : p ∧ q\n⊢ p", "tactic": "exact h.left", "family": "left_pq", "required_operation": "conjunction_projection", "corpus_source": "redundancy_corpus", "tactic_source": "verified", "split": "test", "regime": "redundancy_family_holdout/left_pq"}

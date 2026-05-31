@@ -1,0 +1,1 @@
+{"theorem_name": "v10_conjunction_projection_left_ab", "theorem_statement": "(a b : Prop) (h : a ∧ b) : a", "state_before": "a b : Prop\nh : a ∧ b\n⊢ a", "tactic": "exact h.left", "family": "left_ab", "required_operation": "conjunction_projection", "corpus_source": "redundancy_corpus", "tactic_source": "verified", "split": "test", "regime": "redundancy_family_holdout/left_ab"}

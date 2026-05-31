@@ -1,0 +1,10 @@
+{
+  "regime": "family_holdout/neg_contrapositive",
+  "counts": {
+    "train": 678,
+    "test": 12
+  },
+  "n_total": 690,
+  "n_unique_theorems": 289,
+  "n_families": 24
+}

@@ -238,6 +238,10 @@ def build_dataset(
     *,
     filters: BuildFilters = BuildFilters(),
     splits: SplitConfig = SplitConfig(),
+    split_override: Optional[Dict[str, str]] = None,
+    split_strategy: str = "hash",
+    theorem_meta: Optional[Dict[str, Dict[str, Any]]] = None,
+    corpus_source: Optional[str] = None,
 ) -> BuildSummary:
     """Build dataset artifacts from one or more trace JSONL files.
 
@@ -247,10 +251,18 @@ def build_dataset(
       - ``output_dir/plain_tactics.txt``
       - ``output_dir/theorem_splits.json``
       - ``output_dir/summary.json``
+
+    ``split_override`` (``theorem_name -> split``) replaces the default hash split
+    when provided (used by the v2 split strategies); theorems absent from it fall
+    back to the hash. ``theorem_meta`` / ``corpus_source`` are attached to each row
+    under a ``metadata`` key so the combined corpus and per-difficulty metrics are
+    self-describing.
     """
 
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    split_override = split_override or {}
+    theorem_meta = theorem_meta or {}
 
     summary = BuildSummary(
         inputs=[str(p) for p in inputs],
@@ -266,6 +278,7 @@ def build_dataset(
         },
         split_config={
             "train": splits.train, "val": splits.val, "test": splits.test, "seed": splits.seed,
+            "strategy": split_strategy,
         },
     )
 
@@ -293,9 +306,12 @@ def build_dataset(
                 continue
             seen_keys.add(fp)
 
-            split = theorem_split.setdefault(
-                rec.theorem_name, _theorem_split(rec.theorem_name, splits)
-            )
+            if rec.theorem_name not in theorem_split:
+                theorem_split[rec.theorem_name] = (
+                    split_override.get(rec.theorem_name)
+                    or _theorem_split(rec.theorem_name, splits)
+                )
+            split = theorem_split[rec.theorem_name]
 
             # state_after_is_real captures whether downstream training can
             # treat state_after as an actual proof state. It is the most
@@ -318,6 +334,11 @@ def build_dataset(
                 "split": split,
                 "source_record_hash": fp,
             }
+            if theorem_meta or corpus_source is not None:
+                tm = dict(theorem_meta.get(rec.theorem_name, {}))
+                if corpus_source is not None:
+                    tm["corpus_source"] = corpus_source
+                row["metadata"] = tm
             rows.append(row)
             summary.records_included += 1
             summary.by_backend[rec.backend] = summary.by_backend.get(rec.backend, 0) + 1
@@ -358,6 +379,7 @@ def build_dataset(
         **split_lists,
         "seed": splits.seed,
         "split_fractions": {"train": splits.train, "val": splits.val, "test": splits.test},
+        "strategy": split_strategy,
     }
     with splits_path.open("w", encoding="utf-8") as fh:
         json.dump(splits_payload, fh, indent=2, sort_keys=True, ensure_ascii=False)

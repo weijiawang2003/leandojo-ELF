@@ -1,0 +1,40 @@
+cases h with\n  | inl hp => exact absurd hp hnp\n  | inr hq => exact hq
+contradiction
+exact (h hp).elim
+exact (hnp hp).elim
+exact False.elim (h hp)
+exact False.elim (hnp hp)
+exact absurd hp h
+exact absurd hp hnp
+exact congrArg Nat.succ h
+exact fun hnp => hnp hp
+exact fun hp => (hnp hp).elim
+exact fun hp => hnq (h hp)
+exact h
+exact h 13
+exact h 3
+exact h 5
+exact h 7
+exact h 8
+exact h 9
+exact h ▸ rfl
+exact h.elim fun _ hp => hp
+exact ⟨100, rfl⟩
+exact ⟨11, rfl⟩
+exact ⟨20, rfl⟩
+exact ⟨3, rfl⟩
+exact ⟨7, rfl⟩
+intro hnp\n  exact hnp hp
+intro hp\n  exact (hnp hp).elim
+intro hp\n  exact absurd hp hnp
+intro hp\n  exact hnq (h hp)
+obtain ⟨n, hpq⟩ := h\n  exact hpq.1
+obtain ⟨n, hpq⟩ := h\n  exact hpq.2
+obtain ⟨n, hp⟩ := h\n  exact hp
+rcases h with hp | hq\n  exact absurd hp hnp\n  exact hq
+rcases h with ⟨n, hn⟩\n  exact ⟨n, hn⟩
+rcases h with ⟨n, hp, hq⟩\n  exact hp
+rcases h with ⟨n, hp, hq⟩\n  exact hq
+rcases h with ⟨n, hp⟩\n  exact hp
+rw [h]
+subst h\n  rfl

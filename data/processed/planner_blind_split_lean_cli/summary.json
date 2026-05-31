@@ -1,0 +1,47 @@
+{
+  "by_backend": {
+    "lean-cli": 157
+  },
+  "by_verification_quality": {
+    "theorem-level": 157
+  },
+  "excluded": {},
+  "filters": {
+    "allow_mock": false,
+    "backends": [
+      "lean-cli"
+    ],
+    "dedup": true,
+    "include_failed": false,
+    "include_proof_finished": true,
+    "max_state_len": null,
+    "max_tactic_len": null
+  },
+  "inputs": [
+    "data/traces/planner_blind_lean_cli_verified.jsonl"
+  ],
+  "output_dir": "data/processed/planner_blind_split_lean_cli",
+  "outputs": {
+    "next_tactic": "data/processed/planner_blind_split_lean_cli/next_tactic.jsonl",
+    "plain_tactics": "data/processed/planner_blind_split_lean_cli/plain_tactics.txt",
+    "summary": "data/processed/planner_blind_split_lean_cli/summary.json",
+    "theorem_splits": "data/processed/planner_blind_split_lean_cli/theorem_splits.json"
+  },
+  "records_included": 157,
+  "records_invalid": 0,
+  "records_read": 157,
+  "split_config": {
+    "seed": 42,
+    "strategy": "family_interpolation",
+    "test": 0.5,
+    "train": 0.5,
+    "val": 0.0
+  },
+  "splits": {
+    "test": 32,
+    "train": 29,
+    "val": 0
+  },
+  "unique_tactics": 40,
+  "unique_theorems": 61
+}
