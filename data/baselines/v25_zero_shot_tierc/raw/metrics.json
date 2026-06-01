@@ -1,0 +1,85 @@
+{
+  "n_test_theorems": 36,
+  "pass@1": 0.3333333333333333,
+  "pass@5": 0.4722222222222222,
+  "pass@10": 0.5555555555555556,
+  "MRR": 0.4040454144620811,
+  "n_no_candidate_verified": 16,
+  "no_verify_reason": {
+    "v25_nat_mul_one": "type_mismatch",
+    "v25_nat_le_refl": "parse_error",
+    "v25_nat_le_succ": "type_mismatch",
+    "v25_list_length_reverse": "unknown_identifier",
+    "v25_list_map_id": "unknown_identifier",
+    "v25_list_mem_cons_self": "unknown_identifier",
+    "v25_bool_true_and": "unknown_identifier",
+    "v25_option_map_id": "unknown_identifier",
+    "v25_bool_decide_true": "unknown_identifier",
+    "v25_set_mem_singleton": "unknown_identifier",
+    "v25_set_subset_refl": "unknown_identifier",
+    "v25_set_mem_univ": "unknown_identifier",
+    "v25_set_empty_subset": "unknown_identifier",
+    "v25_set_inter_subset_left": "parse_error",
+    "v25_logic_em": "parse_error",
+    "v25_logic_iff_refl": "unknown_identifier"
+  },
+  "failure_taxonomy": {
+    "parse_error": 57,
+    "type_mismatch": 70,
+    "other": 23,
+    "unknown_identifier": 164,
+    "unknown_tactic": 4,
+    "shape_miss": 2
+  },
+  "per_category": {
+    "nat": {
+      "n": 10,
+      "pass@1": 0.4,
+      "pass@5": 0.7,
+      "pass@10": 0.7
+    },
+    "list": {
+      "n": 7,
+      "pass@1": 0.2857142857142857,
+      "pass@5": 0.42857142857142855,
+      "pass@10": 0.5714285714285714
+    },
+    "bool_option": {
+      "n": 6,
+      "pass@1": 0.16666666666666666,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 0.5
+    },
+    "set": {
+      "n": 5,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "logic": {
+      "n": 8,
+      "pass@1": 0.625,
+      "pass@5": 0.625,
+      "pass@10": 0.75
+    }
+  },
+  "per_transfer": {
+    "core": {
+      "n": 16,
+      "pass@1": 0.625,
+      "pass@5": 0.6875,
+      "pass@10": 0.8125
+    },
+    "mathlib": {
+      "n": 20,
+      "pass@1": 0.1,
+      "pass@5": 0.3,
+      "pass@10": 0.35
+    }
+  },
+  "config": "raw",
+  "model": "v24_broad_residual",
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

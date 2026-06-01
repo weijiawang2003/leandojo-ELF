@@ -1,0 +1,92 @@
+{
+  "config": "raw",
+  "n_test_theorems": 46,
+  "pass@1": 0.7608695652173914,
+  "pass@5": 0.8913043478260869,
+  "pass@10": 0.8913043478260869,
+  "MRR": 0.8260869565217391,
+  "n_no_candidate_verified": 5,
+  "no_verify_reason": {
+    "v32stress_set_inter_left_2": "unknown_identifier",
+    "v32stress_set_inter_right_2": "unknown_identifier",
+    "v32stress_set_union_left_2": "unknown_identifier",
+    "v32stress_fs_inter_left_2": "parse_error",
+    "v32stress_fs_union_right_2": "parse_error"
+  },
+  "per_category": {
+    "set": {
+      "n": 15,
+      "pass@10": 0.8
+    },
+    "finset": {
+      "n": 10,
+      "pass@10": 0.8
+    },
+    "order": {
+      "n": 9,
+      "pass@10": 1.0
+    },
+    "function": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "set::mem_inter_proj": {
+      "n": 10,
+      "pass@10": 0.8
+    },
+    "set::mem_union_intro": {
+      "n": 5,
+      "pass@10": 0.8
+    },
+    "finset::mem_inter_proj": {
+      "n": 5,
+      "pass@10": 0.8
+    },
+    "finset::mem_union_intro": {
+      "n": 5,
+      "pass@10": 0.8
+    },
+    "order::le_refl": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::le_trans": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::antisymm": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "function::comp_assoc": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat::add_assoc": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list::append_nil": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "logic::and_symm": {
+      "n": 3,
+      "pass@10": 1.0
+    }
+  }
+}

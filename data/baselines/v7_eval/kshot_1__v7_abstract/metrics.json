@@ -1,0 +1,119 @@
+{
+  "adapted_verified": 29,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "donorless_pass@5": 0.0,
+  "donorless_same_family_rows": 0,
+  "failure_taxonomy": {
+    "same_family_present_but_failed": 8
+  },
+  "invalid@1": 0.0763,
+  "n_rows": 131,
+  "n_theorems": 51,
+  "pass@1": 0.9237,
+  "pass@3": 0.9237,
+  "pass@5": 0.9389,
+  "per_family_pass_at_k": {
+    "exists_elim_conj": {
+      "n": 14,
+      "pass@1": 0.4286,
+      "pass@3": 0.4286,
+      "pass@5": 0.4286
+    },
+    "exists_elim_prop": {
+      "n": 15,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "exists_reconstruct": {
+      "n": 12,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "forall_inst": {
+      "n": 6,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "neg_contrapositive": {
+      "n": 10,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "neg_double_intro": {
+      "n": 8,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "neg_exfalso": {
+      "n": 28,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "neg_imp_exfalso": {
+      "n": 12,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "neg_or_cases": {
+      "n": 10,
+      "pass@1": 0.8,
+      "pass@3": 0.8,
+      "pass@5": 1.0
+    },
+    "rewrite_succ": {
+      "n": 16,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    }
+  },
+  "per_operation_pass_at_k": {
+    "contradiction": {
+      "n": 38,
+      "pass@1": 0.9474,
+      "pass@3": 0.9474,
+      "pass@5": 1.0
+    },
+    "destruct_exists": {
+      "n": 29,
+      "pass@1": 0.7241,
+      "pass@3": 0.7241,
+      "pass@5": 0.7241
+    },
+    "instantiate_forall": {
+      "n": 6,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "intro_negation": {
+      "n": 30,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "rewrite": {
+      "n": 16,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "unknown": {
+      "n": 12,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    }
+  },
+  "rows_same_family_in_train": 131,
+  "rows_same_operation_in_train": 119,
+  "same_family_donor_rate": 0.9237
+}

@@ -1,0 +1,100 @@
+{
+  "n_total_theorems": 48,
+  "n_failed_top10_policy": 3,
+  "failure_class_tally": {
+    "type_mismatch": 2,
+    "wrong_var_name": 1
+  },
+  "per_failure": [
+    {
+      "theorem_name": "v18_and_assoc_one",
+      "category": "conjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q r : Prop) (h : p ∧ q ∧ r) : (p ∧ q) ∧ r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∧ q ∧ r\n⊢ (p ∧ q) ∧ r",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact ⟨h.2, h.1⟩",
+        "exact ⟨⟨h.1, h.1⟩",
+        "exact ⟨⟨h.2, h.1⟩",
+        "exact ⟨⟨h.1, h.1⟩,",
+        "exact ⟨⟨h.1, h.2⟩",
+        "exact h.right.left",
+        "exact h.right.right",
+        "exact ⟨⟨h.right, h.right⟩",
+        "cases h with\n  | intro hp hq",
+        "exact ⟨⟨h.left, h.right.left"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application type mismatch: The argument",
+        "/tmp/claude-1000/mini_elf_lean_ql_obqkh.lean:3:0: error: unexpected end of input; expected '⟩'",
+        "/tmp/claude-1000/mini_elf_lean_22fsxmaj.lean:3:0: error: unexpected end of input; expected '⟩'",
+        "/tmp/claude-1000/mini_elf_lean_d85btyu1.lean:3:0: error: unexpected end of input; expected '⟩'",
+        "/tmp/claude-1000/mini_elf_lean_8ajgg8yq.lean:3:0: error: unexpected end of input; expected '⟩'"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_or_inr",
+      "category": "disjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q : Prop) (hq : q) : p ∨ q",
+      "state_before": "p : Prop\nq : Prop\nhq : q\n⊢ p ∨ q",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact Or.inl hq",
+        "exact Or.inr hq",
+        "exact Or.intro hq",
+        "exact Or.inr h",
+        "exact Or.left hq",
+        "exact Or.inr hp",
+        "exact Or.right hq",
+        "exact Or.intro hp",
+        "exact Or.inr hyp",
+        "exact Or.elim h"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_w584wep6.lean:2:15: error: Application type mismatch: The argument",
+        "timeout",
+        "/tmp/claude-1000/mini_elf_lean_em9d5uu5.lean:2:8: error(lean.unknownIdentifier): Unknown constant `Or.intro`",
+        "/tmp/claude-1000/mini_elf_lean_bbs5s35j.lean:2:15: error(lean.unknownIdentifier): Unknown identifier `h`",
+        "/tmp/mini_elf_lean_35d1dza6.lean:2:8: error(lean.unknownIdentifier): Unknown constant `Or.left`"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_or_elim_to_common",
+      "category": "disjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q r : Prop) (h : p ∨ q) (hpr : p → r) (hqr : q → r) : r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∨ q\nhpr : p → r\nhqr : q → r\n⊢ r",
+      "failure_class": "wrong_var_name",
+      "top10": [
+        "cases h with | inl hp => exact f hp hx",
+        "cases h with | inl hp => exact f hp | inr hq => exact Or.inl hq",
+        "cases h with | inl hp => exact f hp | inr hq => exact (h hp)",
+        "cases h with | inl hp => exact f hp | inr hq => exact hq hx",
+        "cases h with | inl hp => exact f hp | inr hq => exact (h hp) hq",
+        "cases h with | inl hp => exact f hp | inr hq => exact hq => exact hq hx",
+        "cases h with | inl hp => exact f hp | inr hq => exact ⟨n, hb => exact hq => exact hq => exact",
+        "cases h with | inl hp => exact f hp | inr hq => exact ⟨n, hx => exact hq => exact hq => exact",
+        "cases h with | inl hp => exact f hp | inr hq => exact ⟨n, hq => exact hq => exact hq => exact",
+        "cases h with | inl hp => exact f hp | inr hq => exact hq => exact hq => exact hq hx"
+      ],
+      "top5_errors": [
+        "/tmp/claude-1000/mini_elf_lean_jvne7gjt.lean:2:33: error(lean.unknownIdentifier): Unknown identifier `f`",
+        "/tmp/claude-1000/mini_elf_lean_4a2vb0_a.lean:2:33: error(lean.unknownIdentifier): Unknown identifier `f`",
+        "/tmp/claude-1000/mini_elf_lean_gpx7z20l.lean:2:33: error(lean.unknownIdentifier): Unknown identifier `f`",
+        "/tmp/claude-1000/mini_elf_lean_gw30ktoi.lean:2:33: error(lean.unknownIdentifier): Unknown identifier `f`",
+        "/tmp/claude-1000/mini_elf_lean_x3413fd5.lean:2:33: error(lean.unknownIdentifier): Unknown identifier `f`"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    }
+  ]
+}

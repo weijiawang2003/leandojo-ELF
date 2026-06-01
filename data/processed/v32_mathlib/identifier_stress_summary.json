@@ -1,0 +1,22 @@
+{
+  "config": "v32_identifier_stress",
+  "n_theorems": 46,
+  "n_solvable_theorems": 46,
+  "n_verified_candidates": 85,
+  "n_zero_success_theorems": 0,
+  "zero_success_theorems": [],
+  "by_category": {
+    "set": 15,
+    "finset": 10,
+    "order": 9,
+    "function": 3,
+    "nat": 3,
+    "list": 3,
+    "logic": 3
+  },
+  "verifier": "TrustedMathlibVerifier",
+  "total_lean_seconds": 26.4,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "note": "EVAL benchmark; gold proofs are references, never model predictions"
+}

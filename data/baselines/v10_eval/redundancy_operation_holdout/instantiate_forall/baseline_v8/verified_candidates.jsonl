@@ -1,0 +1,2 @@
+{"theorem_name": "v10_instantiate_forall_nat_eq_3", "family": "nat_eq_3", "required_operation": "instantiate_forall", "rank": 7, "tactic": "exact h 3", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": true}
+{"theorem_name": "v10_instantiate_forall_nat_eq_7", "family": "nat_eq_7", "required_operation": "instantiate_forall", "rank": 0, "tactic": "exact h 7", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": true}

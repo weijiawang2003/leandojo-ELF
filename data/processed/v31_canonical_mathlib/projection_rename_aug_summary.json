@@ -1,0 +1,24 @@
+{
+  "config": "v31_projection_rename_aug",
+  "n_theorems": 70,
+  "n_proposed": 140,
+  "n_verified": 140,
+  "n_failed": 0,
+  "n_dropped_guard": 0,
+  "by_family": {
+    "mem_inter_proj": 80,
+    "mem_union_intro": 60
+  },
+  "by_renamed_identifier": {
+    "hw": 28,
+    "hm": 28,
+    "hg": 28,
+    "h3": 28,
+    "hmem": 28
+  },
+  "verifier": "TrustedMathlibVerifier (sentinel+confirm+rescue)",
+  "total_lean_seconds": 26.2,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

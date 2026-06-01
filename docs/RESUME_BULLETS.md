@@ -6,6 +6,83 @@ next-state) when space allows.
 
 ## Short (one line each)
 
+- **Packaged a multi-month research effort into a reproducible artifact and safely
+  recovered a corrupted git state.** Diagnosed a stale interactive-rebase that had been
+  orphaned mid-conflict (`git pull --rebase` stopped, work then continued on another
+  branch), reconstructed exactly what happened from the reflog, and cleared it with the
+  *non-destructive* `git rebase --quit` — after a full `.git` backup and a written
+  recovery plan — preserving HEAD, the protected model, and all artifacts. Then wrote a
+  consolidated paper-style report of the full arc, an artifact inventory, a
+  reproducibility guide (exact commands + expected metrics), and a consistency audit that
+  programmatically re-checks the project's honesty constraints (no `state_after`, no
+  full-proving claim, trusted verifier only).
+- **Drove a verified-tactic generation pipeline to measured saturation and made the
+  disciplined call to stop modeling.** Closed the last failure class by (a) tracing
+  ~9 % of adversarial-identifier failures to a one-line parser-coverage bug (Unicode
+  subscripts weren't recognized as identifiers) — fixing it lifted adversarial-stress
+  pass@10 **0.89 → 1.00 across every model with zero retraining** — and (b) adding 83
+  verified coverage rows. The result: **pass@10 = 1.00 on every single-tactic
+  benchmark** (including adversarial-identifier and fresh-shape held-outs), **routed
+  tier 0.992 over 244 theorems**, protected core model **bit-for-bit**, **0 remaining
+  multi-step failures** — and a saturation analysis recommending **packaging over more
+  modeling or premature RL/next-state work.**
+- **Built an adversarial stress test that distinguished genuine generalization from
+  memorization, and used it to make a disciplined "is this saturated?" decision.**
+  To check whether an identifier-normalization fix truly generalized, generated a
+  held-out benchmark of theorems with **never-seen identifiers** (Greek, subscripts,
+  underscores). The normalization scored **0.89** there vs **0.26** for the raw model
+  and **0.28** for a data-augmentation alternative — proving the normalization
+  generalized while augmentation had only memorized specific cases. Confirmed the
+  routed system preserved its protected core model bit-for-bit (0.9375/0.9583) and held
+  **0.95 pass@10 on the hardest 202-theorem benchmark**, then ran a saturation analysis
+  showing **every remaining failure was single-tactic (0 multi-step)** — and on that
+  evidence **recommended against** premature next-state/RL work, scoping one more
+  coverage pass instead.
+- **Diagnosed a model's last failure class as identifier memorization and removed it
+  with a safe, valid-identifier normalization — learning from a prior negative result.**
+  Showed the remaining ~15 % of failures were *surface-token* out-of-distribution (the
+  proof shape was learned; only the local identifier was unseen). Designed an
+  identifier-canonicalization scheme that avoided an earlier project attempt's failure
+  mode (placeholder abstraction had *replaced* one error class with a worse one and
+  halved pass@k) by using **valid identifiers**, **unioning with the raw model
+  (fallback, never replacement)**, and **rejecting unresolved tokens before the
+  verifier**. Lifted the held-out residual benchmark **0.00 → 0.92** and routed tier
+  **0.921 → 0.985 pass@10** with **zero new training data** and zero unresolved-token
+  failures, while preserving the protected core model **bit-for-bit**. Distilled the
+  result into a two-axis coverage law (family density × surface-token coverage).
+- **Turned a measured scaling law into a surgical fix — recovered a regression with 155
+  verified rows.** When a release traded 2/14 on a micro-benchmark, audited it to
+  *beam-absence + zero training siblings*, then used the density law as a construction
+  rule: added 4–6 verified siblings to only the flagged families (no broad expansion,
+  no balancing). **Recovered the benchmark to 1.000 with zero regression**, lifted the
+  general model to match the specialized one, and kept the protected core model
+  **bit-for-bit** — while honestly reporting the one repair that *didn't* work
+  (held-out members with identifiers absent from training), refining the law into a
+  **token-coverage** condition.
+- **Derived a quantitative "density law" for verified-data scaling and shipped it.**
+  Showed that a tactic model's held-out success is a function of **within-family
+  training siblings**, not category breadth: pass@10 rises **0.68 → 0.83 → 0.94** for
+  0 → 1–3 → 4–6 siblings (507 held-out evaluations), and the *same* hard families jump
+  **0.16–0.26 → 0.70** from density 0 to ~6 with difficulty held fixed. Used the law
+  to densify residual families (**+492 Lean-verified rows, 0 coverage gaps**,
+  gold-audited **0 false positives across all 7 categories**), lifting a **fresh
+  held-out 0.867 → 0.933/0.967**, a new holdout to **1.000**, and the routed Mathlib
+  tier to **0.921** over 140 theorems — while keeping the protected core benchmark
+  **bit-for-bit** (0.938/0.958). Reported the one honest cost transparently (a
+  recoverable 2/14 micro-benchmark regression) and showed cross-category transfer does
+  **not** scale, so density must be spent *within* each family.
+- **Diagnosed a held-out plateau as a data problem and fixed it with verified
+  data.** Audited a stalled fresh-holdout (pass@10 **0.714**) and showed the model
+  proposes the right neighbourhood but **mis-binds identifiers when a proof family
+  has too few siblings** — a coverage limit, not an architecture wall. Densified each
+  residual family with alpha-renamed, independently Lean-verified siblings and added
+  new categories (Finset with `[DecidableEq]`, polymorphic order over
+  `[Preorder]`/`[Lattice]`): **+350 verified rows, 0 coverage gaps**, gold-audited **0
+  false positives across all 7 categories**. Lifted the **fresh holdout 0.714 →
+  0.857** (best config **1.000**), took a **new 30-theorem holdout to 0.867**, added a
+  Finset category at **0.833** held-out — while keeping the protected core benchmark
+  **bit-identical** (0.938/0.958) and confirming the next wall is still coverage, not
+  proof-state supervision (only 1/5 residuals multi-step).
 - **Scaled a verified-data specialist and proved the evaluator sound.** Hardened
   a batched Lean verifier into a **sound-and-complete** checker (sentinel +
   iterative success-confirmation + isolation rescue), gold-tested **0 false

@@ -1,0 +1,31 @@
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-31 01:02:23,895 INFO === v22_general_plus_exists: 3247 rows (embed 96 / hidden 128) ===
+2026-05-31 01:02:40,778 INFO   epoch=0 train_loss=2.2062 val_loss=1.2484 val_exact=0.0000
+2026-05-31 01:03:53,944 INFO   epoch=5 train_loss=0.1677 val_loss=0.1761 val_exact=0.2896
+2026-05-31 01:05:10,239 INFO   epoch=10 train_loss=0.1323 val_loss=0.1495 val_exact=0.3166
+2026-05-31 01:06:27,650 INFO   epoch=15 train_loss=0.1289 val_loss=0.1511 val_exact=0.2934
+2026-05-31 01:07:28,365 INFO   epoch=19 train_loss=0.1207 val_loss=0.1560 val_exact=0.2780
+2026-05-31 01:07:33,968 INFO   DONE v22_general_plus_exists in 309.7s -> /home/wangw/code/ELFMath/data/models/v22_general_plus_exists
+2026-05-31 01:07:33,995 INFO === v22_general_balanced: 6417 rows (embed 96 / hidden 128) ===
+2026-05-31 01:08:11,043 INFO   epoch=0 train_loss=1.3862 val_loss=0.4099 val_exact=0.3645
+2026-05-31 01:11:10,407 INFO   epoch=5 train_loss=0.0888 val_loss=0.0986 val_exact=0.5302
+2026-05-31 01:14:08,620 INFO   epoch=10 train_loss=0.0804 val_loss=0.0909 val_exact=0.5322
+2026-05-31 01:17:35,588 INFO   epoch=15 train_loss=0.0746 val_loss=0.0904 val_exact=0.5361
+2026-05-31 01:20:31,121 INFO   epoch=19 train_loss=0.0807 val_loss=0.0927 val_exact=0.5575
+2026-05-31 01:20:45,904 INFO   DONE v22_general_balanced in 791.1s -> /home/wangw/code/ELFMath/data/models/v22_general_balanced
+2026-05-31 01:20:45,923 INFO === v22_general_large: 3247 rows (embed 128 / hidden 192) ===
+2026-05-31 01:21:16,152 INFO   epoch=0 train_loss=1.9290 val_loss=0.8505 val_exact=0.0232
+2026-05-31 01:23:29,284 INFO   epoch=5 train_loss=0.1490 val_loss=0.1650 val_exact=0.3089
+2026-05-31 01:25:26,143 INFO   epoch=10 train_loss=0.1317 val_loss=0.1512 val_exact=0.3552
+2026-05-31 01:27:17,345 INFO   epoch=15 train_loss=0.1306 val_loss=0.1618 val_exact=0.2780
+2026-05-31 01:28:48,127 INFO   epoch=19 train_loss=0.1227 val_loss=0.1655 val_exact=0.2548
+2026-05-31 01:28:54,664 INFO   DONE v22_general_large in 488.3s -> /home/wangw/code/ELFMath/data/models/v22_general_large
+2026-05-31 01:28:54,695 INFO === v22_general_balanced_large: 6417 rows (embed 128 / hidden 192) ===
+2026-05-31 01:29:47,166 INFO   epoch=0 train_loss=1.0459 val_loss=0.2896 val_exact=0.3801
+2026-05-31 01:34:03,458 INFO   epoch=5 train_loss=0.0881 val_loss=0.1021 val_exact=0.5263
+2026-05-31 01:38:17,563 INFO   epoch=10 train_loss=0.0843 val_loss=0.0978 val_exact=0.5556
+2026-05-31 01:42:36,552 INFO   epoch=15 train_loss=0.0769 val_loss=0.0943 val_exact=0.5439
+2026-05-31 01:46:16,610 INFO   epoch=19 train_loss=0.0797 val_loss=0.0982 val_exact=0.5497
+2026-05-31 01:46:31,945 INFO   DONE v22_general_balanced_large in 1056.4s -> /home/wangw/code/ELFMath/data/models/v22_general_balanced_large
+2026-05-31 01:46:31,950 INFO ALL v22 GENERAL TRAINING DONE in 2648.1s; manifest -> /home/wangw/code/ELFMath/data/models/v22_general_manifest.json

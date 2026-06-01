@@ -1,0 +1,288 @@
+{
+  "config": "abstract",
+  "v24_mean": {
+    "pass@1": 0.7916666666666666,
+    "pass@5": 0.9166666666666666,
+    "pass@10": 0.9375,
+    "MRR": 0.8505208333333334,
+    "n_no_candidate_verified": 3
+  },
+  "v22_mean": {
+    "pass@1": 0.7291666666666666,
+    "pass@5": 0.8125,
+    "pass@10": 0.8333333333333334,
+    "MRR": 0.7743055555555555,
+    "n_no_candidate_verified": 8
+  },
+  "n_residual_fixed": 5,
+  "n_residual_total": 8,
+  "per_category": {
+    "implication": {
+      "v22": {
+        "n": 6,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "v24": {
+        "n": 6,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0
+      }
+    },
+    "conjunction": {
+      "v22": {
+        "n": 6,
+        "pass@1": 0.6666666666666666,
+        "pass@5": 0.8333333333333334,
+        "pass@10": 0.8333333333333334
+      },
+      "v24": {
+        "n": 6,
+        "pass@1": 0.5,
+        "pass@5": 0.8333333333333334,
+        "pass@10": 0.8333333333333334
+      },
+      "delta": {
+        "pass@1": -0.167,
+        "pass@5": 0.0,
+        "pass@10": 0.0
+      }
+    },
+    "disjunction": {
+      "v22": {
+        "n": 5,
+        "pass@1": 0.6,
+        "pass@5": 0.6,
+        "pass@10": 0.6
+      },
+      "v24": {
+        "n": 5,
+        "pass@1": 0.4,
+        "pass@5": 0.6,
+        "pass@10": 0.6
+      },
+      "delta": {
+        "pass@1": -0.2,
+        "pass@5": 0.0,
+        "pass@10": 0.0
+      }
+    },
+    "negation": {
+      "v22": {
+        "n": 5,
+        "pass@1": 0.6,
+        "pass@5": 0.6,
+        "pass@10": 0.8
+      },
+      "v24": {
+        "n": 5,
+        "pass@1": 0.8,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.2,
+        "pass@5": 0.4,
+        "pass@10": 0.2
+      }
+    },
+    "equality_rewrite": {
+      "v22": {
+        "n": 6,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "v24": {
+        "n": 6,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0
+      }
+    },
+    "exists": {
+      "v22": {
+        "n": 4,
+        "pass@1": 0.75,
+        "pass@5": 0.75,
+        "pass@10": 0.75
+      },
+      "v24": {
+        "n": 4,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.25,
+        "pass@5": 0.25,
+        "pass@10": 0.25
+      }
+    },
+    "forall": {
+      "v22": {
+        "n": 3,
+        "pass@1": 0.6666666666666666,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "v24": {
+        "n": 3,
+        "pass@1": 0.6666666666666666,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0
+      }
+    },
+    "nat_succ": {
+      "v22": {
+        "n": 5,
+        "pass@1": 0.6,
+        "pass@5": 0.6,
+        "pass@10": 0.6
+      },
+      "v24": {
+        "n": 5,
+        "pass@1": 0.6,
+        "pass@5": 0.8,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.0,
+        "pass@5": 0.2,
+        "pass@10": 0.4
+      }
+    },
+    "bool": {
+      "v22": {
+        "n": 3,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "v24": {
+        "n": 3,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0
+      }
+    },
+    "list": {
+      "v22": {
+        "n": 5,
+        "pass@1": 0.4,
+        "pass@5": 0.8,
+        "pass@10": 0.8
+      },
+      "v24": {
+        "n": 5,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0
+      },
+      "delta": {
+        "pass@1": 0.6,
+        "pass@5": 0.2,
+        "pass@10": 0.2
+      }
+    }
+  },
+  "regressions": [],
+  "row_results": [
+    {
+      "theorem": "v18_and_assoc_one",
+      "category": "conjunction",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": null,
+      "verifying_candidate": null,
+      "expected_family": "conj_reassoc",
+      "still_failing_reason": "no verified candidate in v24 top-10"
+    },
+    {
+      "theorem": "v18_or_inr",
+      "category": "disjunction",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": null,
+      "verifying_candidate": null,
+      "expected_family": "or_intro",
+      "still_failing_reason": "no verified candidate in v24 top-10"
+    },
+    {
+      "theorem": "v18_or_elim_to_common",
+      "category": "disjunction",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": null,
+      "verifying_candidate": null,
+      "expected_family": "or_elim",
+      "still_failing_reason": "no verified candidate in v24 top-10"
+    },
+    {
+      "theorem": "v18_neg_or_left",
+      "category": "negation",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": 0,
+      "verifying_candidate": "intro hgoal\n  exact h (Or.inl hgoal)",
+      "expected_family": "neg_of_or",
+      "still_failing_reason": null
+    },
+    {
+      "theorem": "v18_exists_intro_eq",
+      "category": "exists",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": 8,
+      "verifying_candidate": "exact ⟨n, rfl⟩",
+      "expected_family": "exists_eq_rev",
+      "still_failing_reason": null
+    },
+    {
+      "theorem": "v18_nat_zero_add",
+      "category": "nat_succ",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": 2,
+      "verifying_candidate": "simp",
+      "expected_family": "nat_zero_add",
+      "still_failing_reason": null
+    },
+    {
+      "theorem": "v18_nat_succ_inj",
+      "category": "nat_succ",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": 3,
+      "verifying_candidate": "exact Nat.succ.inj h",
+      "expected_family": "nat_succ_inj",
+      "still_failing_reason": null
+    },
+    {
+      "theorem": "v18_list_append_nil",
+      "category": "list",
+      "old_first_verified_rank": null,
+      "new_first_verified_rank": 0,
+      "verifying_candidate": "simp",
+      "expected_family": "list_append_nil",
+      "still_failing_reason": null
+    }
+  ],
+  "protected_held": true,
+  "uses_state_after": false
+}

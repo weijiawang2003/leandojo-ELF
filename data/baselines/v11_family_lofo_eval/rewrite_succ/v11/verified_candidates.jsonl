@@ -1,0 +1,4 @@
+{"theorem_name": "rewrite_succ_nm", "family": "rewrite_succ", "required_operation": "rewrite", "rank": 0, "tactic": "rw [h]", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": false}
+{"theorem_name": "rewrite_succ_ab", "family": "rewrite_succ", "required_operation": "rewrite", "rank": 2, "tactic": "rw [h]", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": false}
+{"theorem_name": "rewrite_succ_xy", "family": "rewrite_succ", "required_operation": "rewrite", "rank": 0, "tactic": "rw [h]", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": false}
+{"theorem_name": "rewrite_succ_kl", "family": "rewrite_succ", "required_operation": "rewrite", "rank": 0, "tactic": "rw [h]", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": false}

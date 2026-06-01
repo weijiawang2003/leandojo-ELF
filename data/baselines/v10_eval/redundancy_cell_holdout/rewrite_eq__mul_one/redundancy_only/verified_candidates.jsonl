@@ -1,0 +1,1 @@
+{"theorem_name": "v10_rewrite_eq_mul_one", "family": "mul_one", "required_operation": "rewrite_eq", "rank": 1, "tactic": "rw [h]", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": false}

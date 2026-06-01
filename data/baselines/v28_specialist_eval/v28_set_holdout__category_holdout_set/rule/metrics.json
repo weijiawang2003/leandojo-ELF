@@ -1,0 +1,59 @@
+{
+  "config": "rule",
+  "n_test_theorems": 38,
+  "pass@1": 0.15789473684210525,
+  "pass@5": 0.15789473684210525,
+  "pass@10": 0.23684210526315788,
+  "MRR": 0.16739766081871343,
+  "n_no_candidate_verified": 29,
+  "no_verify_reason": {
+    "v28_set_diff_subset": "type_mismatch",
+    "v28_set_diff_subset2": "parse_error",
+    "v28_set_inter_comm_subset_1": "unknown_identifier",
+    "v28_set_inter_comm_subset_2": "unknown_identifier",
+    "v28_set_inter_self_subset2": "unknown_tactic",
+    "v28_set_inter_subset_left_2": "unknown_identifier",
+    "v28_set_inter_subset_right_0": "other",
+    "v28_set_inter_subset_right_1": "unknown_identifier",
+    "v28_set_inter_subset_right_2": "parse_error",
+    "v28_set_mem_inter_iff_2": "parse_error",
+    "v28_set_mem_inter_left_1": "unknown_identifier",
+    "v28_set_mem_inter_left_2": "parse_error",
+    "v28_set_mem_inter_right_0": "type_mismatch",
+    "v28_set_mem_inter_right_2": "unknown_identifier",
+    "v28_set_mem_union_iff_1": "unknown_identifier",
+    "v28_set_mem_union_iff_2": "unknown_identifier",
+    "v28_set_mem_union_of_left_2": "unknown_identifier",
+    "v28_set_mem_union_of_right_1": "unknown_identifier",
+    "v28_set_mem_union_of_right_2": "unknown_identifier",
+    "v28_set_subset_inter_0": "unknown_identifier",
+    "v28_set_subset_inter_2": "parse_error",
+    "v28_set_subset_inter_self2": "parse_error",
+    "v28_set_subset_union_left_0": "parse_error",
+    "v28_set_subset_union_left_1": "parse_error",
+    "v28_set_subset_union_right_0": "parse_error",
+    "v28_set_union_comm_subset_0": "parse_error",
+    "v28_set_union_comm_subset_1": "unknown_identifier",
+    "v28_set_union_subset_1": "unknown_identifier",
+    "v28_set_union_subset_2": "type_mismatch"
+  },
+  "failure_taxonomy": {
+    "other": 54,
+    "type_mismatch": 80,
+    "unknown_identifier": 107,
+    "parse_error": 117,
+    "unknown_tactic": 7,
+    "shape_miss": 2
+  },
+  "per_category": {
+    "set": {
+      "n": 38,
+      "pass@1": 0.15789473684210525,
+      "pass@5": 0.15789473684210525,
+      "pass@10": 0.23684210526315788
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

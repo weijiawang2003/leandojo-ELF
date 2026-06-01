@@ -1,0 +1,120 @@
+{
+  "config": "abstract",
+  "n_test_theorems": 46,
+  "pass@1": 0.13043478260869565,
+  "pass@5": 0.2826086956521739,
+  "pass@10": 0.2826086956521739,
+  "MRR": 0.20652173913043478,
+  "n_no_candidate_verified": 33,
+  "no_verify_reason": {
+    "v32stress_set_inter_left_0": "unknown_identifier",
+    "v32stress_set_inter_right_0": "unknown_identifier",
+    "v32stress_set_union_left_0": "unknown_identifier",
+    "v32stress_fs_inter_left_0": "unknown_identifier",
+    "v32stress_fs_union_right_0": "unknown_identifier",
+    "v32stress_set_inter_left_1": "unknown_identifier",
+    "v32stress_set_inter_right_1": "unknown_identifier",
+    "v32stress_set_union_left_1": "unknown_identifier",
+    "v32stress_fs_inter_left_1": "unknown_identifier",
+    "v32stress_fs_union_right_1": "unknown_identifier",
+    "v32stress_set_inter_left_2": "unknown_identifier",
+    "v32stress_set_inter_right_2": "unknown_identifier",
+    "v32stress_set_union_left_2": "unknown_identifier",
+    "v32stress_fs_inter_left_2": "unknown_identifier",
+    "v32stress_fs_union_right_2": "unknown_identifier",
+    "v32stress_set_inter_left_3": "unknown_identifier",
+    "v32stress_set_inter_right_3": "unknown_identifier",
+    "v32stress_set_union_left_3": "unknown_identifier",
+    "v32stress_fs_inter_left_3": "unknown_identifier",
+    "v32stress_fs_union_right_3": "unknown_identifier",
+    "v32stress_set_inter_left_4": "other",
+    "v32stress_set_inter_right_4": "other",
+    "v32stress_set_union_left_4": "unknown_identifier",
+    "v32stress_fs_inter_left_4": "unknown_identifier",
+    "v32stress_fs_union_right_4": "unknown_identifier",
+    "v32stress_ord_trans_0": "unknown_identifier",
+    "v32stress_ord_antisymm_0": "unknown_identifier",
+    "v32stress_ord_trans_1": "unknown_identifier",
+    "v32stress_ord_antisymm_1": "unknown_identifier",
+    "v32stress_ord_trans_2": "unknown_identifier",
+    "v32stress_ord_antisymm_2": "unknown_identifier",
+    "v32stress_logic_and_symm_0": "type_mismatch",
+    "v32stress_logic_and_symm_1": "type_mismatch"
+  },
+  "per_category": {
+    "set": {
+      "n": 15,
+      "pass@10": 0.0
+    },
+    "finset": {
+      "n": 10,
+      "pass@10": 0.0
+    },
+    "order": {
+      "n": 9,
+      "pass@10": 0.3333333333333333
+    },
+    "function": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@10": 0.3333333333333333
+    }
+  },
+  "per_family": {
+    "set::mem_inter_proj": {
+      "n": 10,
+      "pass@10": 0.0
+    },
+    "set::mem_union_intro": {
+      "n": 5,
+      "pass@10": 0.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 5,
+      "pass@10": 0.0
+    },
+    "finset::mem_union_intro": {
+      "n": 5,
+      "pass@10": 0.0
+    },
+    "order::le_refl": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::le_trans": {
+      "n": 3,
+      "pass@10": 0.0
+    },
+    "order::antisymm": {
+      "n": 3,
+      "pass@10": 0.0
+    },
+    "function::comp_assoc": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat::add_assoc": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list::append_nil": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "logic::and_symm": {
+      "n": 3,
+      "pass@10": 0.3333333333333333
+    }
+  }
+}

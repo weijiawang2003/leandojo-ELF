@@ -1,0 +1,2039 @@
+{
+  "runs": {
+    "current::v5_retrieval": {
+      "adapted_verified": 3,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {
+        "same_family_present_but_failed": 34
+      },
+      "invalid@1": 0.6429,
+      "n_rows": 84,
+      "n_theorems": 32,
+      "pass@1": 0.3571,
+      "pass@3": 0.5238,
+      "pass@5": 0.5952,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 8,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.25
+        },
+        "exists_elim_prop": {
+          "n": 9,
+          "pass@1": 0.3333,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 3,
+          "pass@1": 0.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 6,
+          "pass@1": 0.3333,
+          "pass@3": 0.6667,
+          "pass@5": 0.6667
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 0.6667,
+          "pass@3": 0.6667,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.3333,
+          "pass@5": 0.3333
+        },
+        "neg_or_cases": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.3333
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 22,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0909
+        },
+        "destruct_exists": {
+          "n": 17,
+          "pass@1": 0.1765,
+          "pass@3": 0.5294,
+          "pass@5": 0.6471
+        },
+        "instantiate_forall": {
+          "n": 3,
+          "pass@1": 0.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 21,
+          "pass@1": 0.2857,
+          "pass@3": 0.5238,
+          "pass@5": 0.619
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 84,
+      "rows_same_operation_in_train": 75,
+      "same_family_donor_rate": 0.4405
+    },
+    "current::v6_no_same_family": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {
+        "same_family_present_but_failed": 84
+      },
+      "invalid@1": 1.0,
+      "n_rows": 84,
+      "n_theorems": 32,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 8,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 3,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 22,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 17,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 3,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 21,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 84,
+      "rows_same_operation_in_train": 75,
+      "same_family_donor_rate": 0.0
+    },
+    "current::v6_no_same_operation": {
+      "adapted_verified": 9,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {
+        "same_family_present_but_failed": 75
+      },
+      "invalid@1": 0.8929,
+      "n_rows": 84,
+      "n_theorems": 32,
+      "pass@1": 0.1071,
+      "pass@3": 0.1071,
+      "pass@5": 0.1071,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 8,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 3,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 6,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 22,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 17,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 3,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 21,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 84,
+      "rows_same_operation_in_train": 75,
+      "same_family_donor_rate": 0.1071
+    },
+    "current::v6_retrieval": {
+      "adapted_verified": 11,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.0,
+      "n_rows": 84,
+      "n_theorems": 32,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_elim_prop": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 16,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_or_cases": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 22,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "destruct_exists": {
+          "n": 17,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "instantiate_forall": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 21,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 84,
+      "rows_same_operation_in_train": 75,
+      "same_family_donor_rate": 1.0
+    },
+    "current::v7_abstract": {
+      "adapted_verified": 11,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.0,
+      "n_rows": 84,
+      "n_theorems": 32,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_elim_prop": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 16,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_or_cases": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 22,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "destruct_exists": {
+          "n": 17,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "instantiate_forall": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 21,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 84,
+      "rows_same_operation_in_train": 75,
+      "same_family_donor_rate": 1.0
+    },
+    "family_holdout::v5_retrieval": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "cross_family_same_operation_donor_only": 115,
+        "no_same_operation_donor": 42
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 115,
+      "same_family_donor_rate": 0.0
+    },
+    "family_holdout::v6_retrieval": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "cross_family_same_operation_donor_only": 115,
+        "no_same_operation_donor": 42
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 115,
+      "same_family_donor_rate": 0.0
+    },
+    "family_holdout::v7_abstract": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "cross_family_same_operation_donor_only": 115,
+        "no_same_operation_donor": 42
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 115,
+      "same_family_donor_rate": 0.0
+    },
+    "kshot_0::v6_retrieval": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "no_candidates": 157
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 0,
+      "same_family_donor_rate": 0.0
+    },
+    "kshot_1::v6_retrieval": {
+      "adapted_verified": 17,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {
+        "same_family_present_but_failed": 12
+      },
+      "invalid@1": 0.1679,
+      "n_rows": 131,
+      "n_theorems": 51,
+      "pass@1": 0.8321,
+      "pass@3": 0.8321,
+      "pass@5": 0.9084,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 14,
+          "pass@1": 0.4286,
+          "pass@3": 0.4286,
+          "pass@5": 0.4286
+        },
+        "exists_elim_prop": {
+          "n": 15,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 10,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_double_intro": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 28,
+          "pass@1": 0.5714,
+          "pass@3": 0.5714,
+          "pass@5": 0.8571
+        },
+        "neg_imp_exfalso": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_or_cases": {
+          "n": 10,
+          "pass@1": 0.8,
+          "pass@3": 0.8,
+          "pass@5": 1.0
+        },
+        "rewrite_succ": {
+          "n": 16,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 38,
+          "pass@1": 0.6316,
+          "pass@3": 0.6316,
+          "pass@5": 0.8947
+        },
+        "destruct_exists": {
+          "n": 29,
+          "pass@1": 0.7241,
+          "pass@3": 0.7241,
+          "pass@5": 0.7241
+        },
+        "instantiate_forall": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 30,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite": {
+          "n": 16,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 131,
+      "rows_same_operation_in_train": 119,
+      "same_family_donor_rate": 0.8931
+    },
+    "kshot_1::v7_abstract": {
+      "adapted_verified": 29,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {
+        "same_family_present_but_failed": 8
+      },
+      "invalid@1": 0.0763,
+      "n_rows": 131,
+      "n_theorems": 51,
+      "pass@1": 0.9237,
+      "pass@3": 0.9237,
+      "pass@5": 0.9389,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 14,
+          "pass@1": 0.4286,
+          "pass@3": 0.4286,
+          "pass@5": 0.4286
+        },
+        "exists_elim_prop": {
+          "n": 15,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 10,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_double_intro": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 28,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_imp_exfalso": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_or_cases": {
+          "n": 10,
+          "pass@1": 0.8,
+          "pass@3": 0.8,
+          "pass@5": 1.0
+        },
+        "rewrite_succ": {
+          "n": 16,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 38,
+          "pass@1": 0.9474,
+          "pass@3": 0.9474,
+          "pass@5": 1.0
+        },
+        "destruct_exists": {
+          "n": 29,
+          "pass@1": 0.7241,
+          "pass@3": 0.7241,
+          "pass@5": 0.7241
+        },
+        "instantiate_forall": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 30,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite": {
+          "n": 16,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 131,
+      "rows_same_operation_in_train": 119,
+      "same_family_donor_rate": 0.9237
+    },
+    "kshot_2::v6_retrieval": {
+      "adapted_verified": 13,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.0,
+      "n_rows": 105,
+      "n_theorems": 41,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_elim_prop": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 24,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_or_cases": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 32,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "destruct_exists": {
+          "n": 24,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "instantiate_forall": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 23,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 105,
+      "rows_same_operation_in_train": 96,
+      "same_family_donor_rate": 1.0
+    },
+    "kshot_2::v7_abstract": {
+      "adapted_verified": 13,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.0,
+      "n_rows": 105,
+      "n_theorems": 41,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_elim_prop": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "exists_reconstruct": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_contrapositive": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_double_intro": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_exfalso": {
+          "n": 24,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_imp_exfalso": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "neg_or_cases": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite_succ": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 32,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "destruct_exists": {
+          "n": 24,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "instantiate_forall": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "intro_negation": {
+          "n": 23,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "rewrite": {
+          "n": 12,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 105,
+      "rows_same_operation_in_train": 96,
+      "same_family_donor_rate": 1.0
+    },
+    "literal_holdout::v5_retrieval": {
+      "adapted_verified": 2,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.25,
+      "n_rows": 8,
+      "n_theorems": 4,
+      "pass@1": 0.75,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_reconstruct": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "instantiate_forall": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 8,
+      "rows_same_operation_in_train": 2,
+      "same_family_donor_rate": 1.0
+    },
+    "literal_holdout::v6_retrieval": {
+      "adapted_verified": 8,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.0,
+      "n_rows": 8,
+      "n_theorems": 4,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_reconstruct": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 2,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "instantiate_forall": {
+          "n": 2,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 8,
+      "rows_same_operation_in_train": 2,
+      "same_family_donor_rate": 1.0
+    },
+    "literal_holdout::v7_abstract": {
+      "adapted_verified": 8,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 0,
+      "failure_taxonomy": {},
+      "invalid@1": 0.0,
+      "n_rows": 8,
+      "n_theorems": 4,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0,
+      "per_family_pass_at_k": {
+        "exists_reconstruct": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "forall_inst": {
+          "n": 2,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "instantiate_forall": {
+          "n": 2,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        },
+        "unknown": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0
+        }
+      },
+      "rows_same_family_in_train": 8,
+      "rows_same_operation_in_train": 2,
+      "same_family_donor_rate": 1.0
+    },
+    "operation_holdout::v5_retrieval": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "no_same_operation_donor": 157
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 0,
+      "same_family_donor_rate": 0.0
+    },
+    "operation_holdout::v6_retrieval": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "no_same_operation_donor": 157
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 0,
+      "same_family_donor_rate": 0.0
+    },
+    "operation_holdout::v7_abstract": {
+      "adapted_verified": 0,
+      "cross_family_verified": 0,
+      "cross_operation_verified": 0,
+      "donorless_pass@5": 0.0,
+      "donorless_same_family_rows": 157,
+      "failure_taxonomy": {
+        "no_same_operation_donor": 157
+      },
+      "invalid@1": 1.0,
+      "n_rows": 157,
+      "n_theorems": 61,
+      "pass@1": 0.0,
+      "pass@3": 0.0,
+      "pass@5": 0.0,
+      "per_family_pass_at_k": {
+        "exists_elim_conj": {
+          "n": 16,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_elim_prop": {
+          "n": 18,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "exists_reconstruct": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "forall_inst": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_contrapositive": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_double_intro": {
+          "n": 10,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_exfalso": {
+          "n": 32,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_imp_exfalso": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "neg_or_cases": {
+          "n": 12,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite_succ": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "per_operation_pass_at_k": {
+        "contradiction": {
+          "n": 44,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "destruct_exists": {
+          "n": 34,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "instantiate_forall": {
+          "n": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "intro_negation": {
+          "n": 37,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "rewrite": {
+          "n": 20,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        },
+        "unknown": {
+          "n": 15,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0
+        }
+      },
+      "rows_same_family_in_train": 0,
+      "rows_same_operation_in_train": 0,
+      "same_family_donor_rate": 0.0
+    }
+  },
+  "top_k": 5
+}

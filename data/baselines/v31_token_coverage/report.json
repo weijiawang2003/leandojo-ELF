@@ -1,0 +1,598 @@
+{
+  "config": "v31_token_coverage_audit",
+  "source": "v30 remaining failures + v30 train patterns + verified corpora (no Lean run)",
+  "n_residuals": 13,
+  "classification_counts": {
+    "identifier_surface_OOD": 3,
+    "projection_token_OOD": 10
+  },
+  "n_surface_token_fixable": 13,
+  "audits": [
+    {
+      "theorem": "v28_ord_le_max_right_1",
+      "family": "order::min_max",
+      "category": "order",
+      "expected_proofs": [
+        "exact le_max_right x y"
+      ],
+      "top10": [
+        "exact le_max_left x y",
+        "exact le_total x y",
+        "exact le_max_left a",
+        "exact le_max_left x hy",
+        "exact le_max_left x hx",
+        "exact le_max_left y"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "unknown_identifier"
+      ],
+      "expected_identifiers": [
+        "le_max_right",
+        "x",
+        "y"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "b",
+        "le_max_left",
+        "le_max_right",
+        "min_le_left",
+        "min_le_right",
+        "x",
+        "y"
+      ],
+      "identifiers_missing_from_train": [],
+      "uses_projection_tokens": false,
+      "expected_patterns": [
+        "exact ID ID ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "identifier_surface_OOD"
+    },
+    {
+      "theorem": "v29_fs_mem_union_right_3",
+      "family": "finset::mem_union_intro",
+      "category": "finset",
+      "expected_proofs": [
+        "exact Finset.mem_union.mpr (Or.inr hw)",
+        "exact Finset.mem_union_right u hw",
+        "simp [hw]"
+      ],
+      "top10": [
+        "exact Finset.mem_union.mpr (Or.inl h)",
+        "exact Finset.mem_union_right u hk",
+        "exact Finset.mem_union_right u w",
+        "simp [Finset.mem_union.mpr (Or.inr h)",
+        "exact Finset.mem_union_left v w",
+        "exact Finset.mem_union.mpr (Or.inr h)"
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "type_mismatch",
+        "parse_error"
+      ],
+      "expected_identifiers": [
+        "hw",
+        "u"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "b",
+        "d",
+        "h",
+        "he",
+        "hy",
+        "t"
+      ],
+      "identifiers_missing_from_train": [
+        "hw",
+        "u"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact Finset.mem_union.mpr (Or.inr ID)",
+        "exact Finset.mem_union_right ID ID",
+        "simp [ID]"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v29_ord_min_le_left_2",
+      "family": "order::min_max",
+      "category": "order",
+      "expected_proofs": [
+        "exact min_le_left p q"
+      ],
+      "top10": [
+        "exact min_le_left x hx",
+        "exact min_le_right a b",
+        "exact min_le_left x hp",
+        "exact min_le_right p",
+        "exact min_le_left x =>",
+        "exact h1.trans h2"
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "type_mismatch",
+        "other"
+      ],
+      "expected_identifiers": [
+        "min_le_left",
+        "p",
+        "q"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "b",
+        "le_max_left",
+        "le_max_right",
+        "min_le_left",
+        "min_le_right",
+        "x",
+        "y"
+      ],
+      "identifiers_missing_from_train": [
+        "p",
+        "q"
+      ],
+      "uses_projection_tokens": false,
+      "expected_patterns": [
+        "exact ID ID ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "identifier_surface_OOD"
+    },
+    {
+      "theorem": "v29_set_mem_inter_left_3",
+      "family": "set::mem_inter_proj",
+      "category": "set",
+      "expected_proofs": [
+        "exact hw.1",
+        "exact hw.left"
+      ],
+      "top10": [
+        "exact hk.1",
+        "exact he.1",
+        "exact Finset.mem_of_mem_inter_left",
+        "exact Finset.inter_subset_left",
+        "exact Finset.mem_inter.",
+        "simp [h.1"
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "other",
+        "parse_error",
+        "type_mismatch"
+      ],
+      "expected_identifiers": [
+        "hw"
+      ],
+      "train_identifiers_in_family": [
+        "h",
+        "he",
+        "hk",
+        "hy",
+        "hz"
+      ],
+      "identifiers_missing_from_train": [
+        "hw"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact ID.1",
+        "exact ID.left"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v29_set_mem_inter_right_3",
+      "family": "set::mem_inter_proj",
+      "category": "set",
+      "expected_proofs": [
+        "exact hw.2",
+        "exact hw.right"
+      ],
+      "top10": [
+        "exact hk.2",
+        "exact Finset.mem_of_mem_inter_right",
+        "exact he.2",
+        "exact Finset.mem_inter",
+        "exact Set.mem_of_mem_inter_right",
+        "exact Finset.mem_inter."
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "other",
+        "type_mismatch",
+        "parse_error"
+      ],
+      "expected_identifiers": [
+        "hw"
+      ],
+      "train_identifiers_in_family": [
+        "h",
+        "he",
+        "hk",
+        "hy",
+        "hz"
+      ],
+      "identifiers_missing_from_train": [
+        "hw"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact ID.2",
+        "exact ID.right"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v29_set_mem_union_of_left_3",
+      "family": "set::mem_union_intro",
+      "category": "set",
+      "expected_proofs": [
+        "exact Or.inl hw",
+        "left; exact hw",
+        "exact Set.mem_union_left v hw"
+      ],
+      "top10": [
+        "exact Set.mem_union_left v w",
+        "exact Set.mem_union_left v hk",
+        "exact Or.inl hk",
+        "exact Set.mem_union_left v hy",
+        "exact Set.mem_union_left v v",
+        "exact Set.mem_union_left v b"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "unknown_identifier"
+      ],
+      "expected_identifiers": [
+        "hw",
+        "v"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "b",
+        "h",
+        "hk",
+        "hm",
+        "hy",
+        "hz",
+        "q",
+        "s",
+        "t",
+        "u",
+        "v"
+      ],
+      "identifiers_missing_from_train": [
+        "hw"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact Or.inl ID",
+        "exact Set.mem_union_left ID ID",
+        "left; exact ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v29_set_mem_union_of_right_3",
+      "family": "set::mem_union_intro",
+      "category": "set",
+      "expected_proofs": [
+        "exact Or.inr hw",
+        "right; exact hw",
+        "exact Set.mem_union_right u hw"
+      ],
+      "top10": [
+        "exact Set.mem_union_right u hk",
+        "exact Or.inr hk",
+        "exact Set.mem_union_right u Or.",
+        "exact Set.mem_union_right u h",
+        "exact Set.mem_union_right u v",
+        "exact Set.mem_union_right u Or"
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "other",
+        "type_mismatch",
+        "parse_error"
+      ],
+      "expected_identifiers": [
+        "hw",
+        "u"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "b",
+        "h",
+        "hk",
+        "hm",
+        "hy",
+        "hz",
+        "q",
+        "s",
+        "t",
+        "u",
+        "v"
+      ],
+      "identifiers_missing_from_train": [
+        "hw"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact Or.inr ID",
+        "exact Set.mem_union_right ID ID",
+        "right; exact ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v30_set_empty_inter_subset",
+      "family": "set::empty_subset",
+      "category": "set",
+      "expected_proofs": [
+        "intro x hx; cases hx.1",
+        "simp"
+      ],
+      "top10": [
+        "exact fun x",
+        "intro x hx;",
+        "intro x h;",
+        "exact Set.inter_subset_left",
+        "exact Set.empty_subset",
+        "exact Set.inter_subset_right"
+      ],
+      "error_classes": [
+        "parse_error",
+        "shape_miss",
+        "type_mismatch",
+        "other"
+      ],
+      "expected_identifiers": [
+        "hx",
+        "x"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "hx",
+        "t",
+        "x"
+      ],
+      "identifiers_missing_from_train": [],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "intro ID ID; cases ID.1",
+        "simp"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v30_set_mem_inter_left_mgh",
+      "family": "set::mem_inter_proj",
+      "category": "set",
+      "expected_proofs": [
+        "exact hm.1"
+      ],
+      "top10": [
+        "exact h.elim",
+        "exact h.1",
+        "exact Or.inl",
+        "exact h.hm",
+        "exact h.2",
+        "exact h.left"
+      ],
+      "error_classes": [
+        "other",
+        "type_mismatch",
+        "unknown_identifier"
+      ],
+      "expected_identifiers": [
+        "hm"
+      ],
+      "train_identifiers_in_family": [
+        "h",
+        "he",
+        "hk",
+        "hy",
+        "hz"
+      ],
+      "identifiers_missing_from_train": [
+        "hm"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact ID.1"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v30_fs_mem_inter_right_mgh",
+      "family": "finset::mem_inter_proj",
+      "category": "finset",
+      "expected_proofs": [
+        "exact (Finset.mem_inter.mp hm).2",
+        "exact Finset.mem_of_mem_inter_right hm"
+      ],
+      "top10": [
+        "exact Finset.mem_of_mem_inter_right h",
+        "exact Finset.mem_union_left h hm",
+        "exact Finset.mem_union_left h h",
+        "exact Finset.mem_of_mem_inter_left h",
+        "exact Finset.mem_inter.mp h",
+        "exact Finset.mem_union.mpr (Or"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "parse_error",
+        "unknown_identifier"
+      ],
+      "expected_identifiers": [
+        "hm"
+      ],
+      "train_identifiers_in_family": [
+        "h",
+        "he",
+        "hk",
+        "hy",
+        "hz"
+      ],
+      "identifiers_missing_from_train": [
+        "hm"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact (Finset.mem_inter.mp ID).2",
+        "exact Finset.mem_of_mem_inter_right ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v30_set_mem_inter_right_mgh",
+      "family": "set::mem_inter_proj",
+      "category": "set",
+      "expected_proofs": [
+        "exact hm.2"
+      ],
+      "top10": [
+        "exact h.2",
+        "exact Or.inl",
+        "exact h.right",
+        "exact h.1",
+        "exact Set.mem_union_left",
+        "exact h.left"
+      ],
+      "error_classes": [
+        "other",
+        "type_mismatch",
+        "unknown_identifier"
+      ],
+      "expected_identifiers": [
+        "hm"
+      ],
+      "train_identifiers_in_family": [
+        "h",
+        "he",
+        "hk",
+        "hy",
+        "hz"
+      ],
+      "identifiers_missing_from_train": [
+        "hm"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact ID.2"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v30_set_mem_union_right_mgh",
+      "family": "set::mem_union_intro",
+      "category": "set",
+      "expected_proofs": [
+        "exact Or.inr hm",
+        "exact Set.mem_union_right g hm"
+      ],
+      "top10": [
+        "simp [h]",
+        "exact Or.inl hm",
+        "exact Or.inl h",
+        "exact Set.mem_union_left h hm",
+        "exact Set.union_subset h hm",
+        "exact h.elim Or.inl"
+      ],
+      "error_classes": [
+        "other",
+        "type_mismatch"
+      ],
+      "expected_identifiers": [
+        "g",
+        "hm"
+      ],
+      "train_identifiers_in_family": [
+        "a",
+        "b",
+        "h",
+        "hk",
+        "hm",
+        "hy",
+        "hz",
+        "q",
+        "s",
+        "t",
+        "u",
+        "v"
+      ],
+      "identifiers_missing_from_train": [
+        "g"
+      ],
+      "uses_projection_tokens": true,
+      "expected_patterns": [
+        "exact Or.inr ID",
+        "exact Set.mem_union_right ID ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "projection_token_OOD"
+    },
+    {
+      "theorem": "v30_set_union_subset_rsw",
+      "family": "set::union_subset",
+      "category": "set",
+      "expected_proofs": [
+        "exact Set.union_subset hs ht",
+        "rintro x (h | h); exact hs h; exact ht h"
+      ],
+      "top10": [
+        "intro x hx; exact hx.elim (fun h => hs h)",
+        "exact Set.Subset.trans h1 h2",
+        "intro x hx; exact hx.elim (fun h => hs h) (fun h => ht",
+        "intro x hx; exact hx.elim (fun h => hs h) (fun h => h2",
+        "intro x hx; exact hx.elim (fun h => hx.elim Or.inl h",
+        "intro x hx; exact hx.elim (fun h => hs h) (fun h => hs"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "unknown_identifier",
+        "parse_error"
+      ],
+      "expected_identifiers": [
+        "h",
+        "hs",
+        "ht",
+        "x"
+      ],
+      "train_identifiers_in_family": [
+        "fun",
+        "h",
+        "h1",
+        "h2",
+        "hs",
+        "ht",
+        "hx",
+        "x"
+      ],
+      "identifiers_missing_from_train": [],
+      "uses_projection_tokens": false,
+      "expected_patterns": [
+        "exact Set.union_subset ID ID",
+        "rintro ID (ID | ID); exact ID ID; exact ID ID"
+      ],
+      "pattern_present_in_train": true,
+      "classification": "identifier_surface_OOD"
+    }
+  ],
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

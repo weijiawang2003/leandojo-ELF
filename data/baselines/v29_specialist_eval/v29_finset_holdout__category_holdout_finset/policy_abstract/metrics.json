@@ -1,0 +1,129 @@
+{
+  "config": "policy_abstract",
+  "n_test_theorems": 44,
+  "pass@1": 0.0,
+  "pass@5": 0.045454545454545456,
+  "pass@10": 0.13636363636363635,
+  "MRR": 0.036931818181818184,
+  "n_no_candidate_verified": 38,
+  "no_verify_reason": {
+    "v29_fs_inter_comm_0": "other",
+    "v29_fs_inter_comm_1": "other",
+    "v29_fs_inter_comm_2": "other",
+    "v29_fs_inter_subset_left_0": "other",
+    "v29_fs_inter_subset_left_1": "other",
+    "v29_fs_inter_subset_left_3": "other",
+    "v29_fs_inter_subset_right_1": "other",
+    "v29_fs_inter_subset_right_2": "other",
+    "v29_fs_inter_subset_right_3": "other",
+    "v29_fs_mem_inter_iff_0": "parse_error",
+    "v29_fs_mem_inter_left_1": "other",
+    "v29_fs_mem_inter_left_2": "other",
+    "v29_fs_mem_inter_left_3": "parse_error",
+    "v29_fs_mem_inter_right_0": "other",
+    "v29_fs_mem_inter_right_2": "other",
+    "v29_fs_mem_inter_right_3": "parse_error",
+    "v29_fs_mem_union_left_1": "type_mismatch",
+    "v29_fs_mem_union_left_2": "type_mismatch",
+    "v29_fs_mem_union_right_1": "type_mismatch",
+    "v29_fs_mem_union_right_2": "type_mismatch",
+    "v29_fs_mem_union_right_3": "unknown_identifier",
+    "v29_fs_subset_inter_0": "parse_error",
+    "v29_fs_subset_inter_1": "parse_error",
+    "v29_fs_subset_inter_2": "parse_error",
+    "v29_fs_subset_refl_0": "type_mismatch",
+    "v29_fs_subset_refl_2": "type_mismatch",
+    "v29_fs_subset_union_left_0": "shape_miss",
+    "v29_fs_subset_union_left_2": "type_mismatch",
+    "v29_fs_subset_union_left_3": "type_mismatch",
+    "v29_fs_subset_union_right_0": "type_mismatch",
+    "v29_fs_subset_union_right_1": "type_mismatch",
+    "v29_fs_subset_union_right_2": "type_mismatch",
+    "v29_fs_subset_union_right_3": "type_mismatch",
+    "v29_fs_union_comm_0": "type_mismatch",
+    "v29_fs_union_comm_2": "other",
+    "v29_fs_union_subset_0": "type_mismatch",
+    "v29_fs_union_subset_1": "parse_error",
+    "v29_fs_union_subset_2": "other"
+  },
+  "failure_taxonomy": {
+    "unknown_identifier": 55,
+    "other": 175,
+    "parse_error": 62,
+    "type_mismatch": 128,
+    "shape_miss": 8
+  },
+  "per_category": {
+    "finset": {
+      "n": 44,
+      "pass@1": 0.0,
+      "pass@5": 0.045454545454545456,
+      "pass@10": 0.13636363636363635
+    }
+  },
+  "per_family": {
+    "finset::inter_comm": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::inter_subset": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::mem_iff": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.16666666666666666,
+      "pass@10": 0.8333333333333334
+    },
+    "finset::mem_inter_proj": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::mem_union_intro": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.16666666666666666,
+      "pass@10": 0.16666666666666666
+    },
+    "finset::subset_inter": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::subset_refl": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::subset_union": {
+      "n": 7,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::union_comm": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::union_subset": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

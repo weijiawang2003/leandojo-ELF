@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_family_holdout/neg_exfalso",
+  "model_dir": "data/models/proof_block_seq2seq_family_holdout_neg_exfalso",
+  "n_test_theorems": 8,
+  "n_train_rows": 658,
+  "n_train_theorems": 281,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.125,
+  "pass@5": 0.625,
+  "pass@10": 0.625,
+  "total_verified_candidates": 9,
+  "novel_verified": 9,
+  "donorless_verified": 9,
+  "cross_family_verified": 9,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "neg_exfalso": {
+      "n": 8,
+      "pass@5": 0.625,
+      "pass@10": 0.625
+    }
+  },
+  "per_operation": {
+    "contradiction": {
+      "n": 8,
+      "pass@5": 0.625,
+      "pass@10": 0.625
+    }
+  },
+  "elapsed_seconds": 511.30807389100664
+}

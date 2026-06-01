@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/rewrite_eq",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.4,
+  "pass@5": 0.4,
+  "pass@10": 0.4,
+  "total_verified_candidates": 2,
+  "novel_verified": 0,
+  "donorless_verified": 2,
+  "cross_family_verified": 2,
+  "cross_operation_verified": 2,
+  "per_family": {
+    "add_zero": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "mul_one": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "rev_target": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "succ_eq": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "swap_under_z": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "rewrite_eq": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    }
+  },
+  "elapsed_seconds": 59.33108265901683
+}

@@ -1,0 +1,10 @@
+{
+  "n_examples": 137,
+  "greedy_exact_top1": 0.24817518248175183,
+  "beam_top10_contains_gold": 0.5766423357664233,
+  "avg_generated_length": 13.124087591240876,
+  "empty_generation_rate": 0.0,
+  "uses_state_after": false,
+  "selected_by": "val_greedy_exact_top1 (tie: lower val_loss)",
+  "best_epoch": 10
+}

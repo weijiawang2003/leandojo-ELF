@@ -1,0 +1,329 @@
+{
+  "systems_present": [
+    "v18_broad_only",
+    "v20_broad_plus",
+    "v21_single_retrain",
+    "v21_capacity",
+    "v21_routed",
+    "v22_general_plus_exists",
+    "v22_general_balanced",
+    "v22_general_large",
+    "v22_general_balanced_large"
+  ],
+  "means": {
+    "v18_broad_only": {
+      "pass@1": 0.5,
+      "pass@5": 0.583,
+      "pass@10": 0.604,
+      "MRR": 0.537,
+      "no_verified_top10": 19
+    },
+    "v20_broad_plus": {
+      "pass@1": 0.625,
+      "pass@5": 0.729,
+      "pass@10": 0.729,
+      "MRR": 0.666,
+      "no_verified_top10": 13
+    },
+    "v21_single_retrain": {
+      "pass@1": 0.667,
+      "pass@5": 0.729,
+      "pass@10": 0.75,
+      "MRR": 0.698,
+      "no_verified_top10": 12
+    },
+    "v21_capacity": {
+      "pass@1": 0.708,
+      "pass@5": 0.771,
+      "pass@10": 0.771,
+      "MRR": 0.734,
+      "no_verified_top10": 11
+    },
+    "v21_routed": {
+      "pass@1": 0.688,
+      "pass@5": 0.792,
+      "pass@10": 0.792,
+      "MRR": 0.728,
+      "no_verified_top10": 10
+    },
+    "v22_general_plus_exists": {
+      "pass@1": 0.729,
+      "pass@5": 0.812,
+      "pass@10": 0.833,
+      "MRR": 0.774,
+      "no_verified_top10": 8
+    },
+    "v22_general_balanced": {
+      "pass@1": 0.625,
+      "pass@5": 0.792,
+      "pass@10": 0.792,
+      "MRR": 0.705,
+      "no_verified_top10": 10
+    },
+    "v22_general_large": {
+      "pass@1": 0.667,
+      "pass@5": 0.771,
+      "pass@10": 0.812,
+      "MRR": 0.725,
+      "no_verified_top10": 9
+    },
+    "v22_general_balanced_large": {
+      "pass@1": 0.625,
+      "pass@5": 0.792,
+      "pass@10": 0.792,
+      "MRR": 0.7,
+      "no_verified_top10": 10
+    }
+  },
+  "per_category_pass5": {
+    "implication": {
+      "v18_broad_only": 0.0,
+      "v20_broad_plus": 1.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0,
+      "v22_general_plus_exists": 1.0,
+      "v22_general_balanced": 1.0,
+      "v22_general_large": 1.0,
+      "v22_general_balanced_large": 0.833
+    },
+    "conjunction": {
+      "v18_broad_only": 0.833,
+      "v20_broad_plus": 0.833,
+      "v21_single_retrain": 0.833,
+      "v21_capacity": 0.833,
+      "v21_routed": 0.833,
+      "v22_general_plus_exists": 0.833,
+      "v22_general_balanced": 0.833,
+      "v22_general_large": 0.833,
+      "v22_general_balanced_large": 0.833
+    },
+    "disjunction": {
+      "v18_broad_only": 0.6,
+      "v20_broad_plus": 0.6,
+      "v21_single_retrain": 0.4,
+      "v21_capacity": 0.6,
+      "v21_routed": 0.6,
+      "v22_general_plus_exists": 0.6,
+      "v22_general_balanced": 0.6,
+      "v22_general_large": 0.6,
+      "v22_general_balanced_large": 0.4
+    },
+    "negation": {
+      "v18_broad_only": 0.8,
+      "v20_broad_plus": 0.8,
+      "v21_single_retrain": 0.6,
+      "v21_capacity": 0.8,
+      "v21_routed": 0.8,
+      "v22_general_plus_exists": 0.6,
+      "v22_general_balanced": 0.6,
+      "v22_general_large": 0.6,
+      "v22_general_balanced_large": 0.6
+    },
+    "equality_rewrite": {
+      "v18_broad_only": 1.0,
+      "v20_broad_plus": 1.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0,
+      "v22_general_plus_exists": 1.0,
+      "v22_general_balanced": 1.0,
+      "v22_general_large": 1.0,
+      "v22_general_balanced_large": 1.0
+    },
+    "exists": {
+      "v18_broad_only": 0.25,
+      "v20_broad_plus": 0.25,
+      "v21_single_retrain": 0.0,
+      "v21_capacity": 0.0,
+      "v21_routed": 0.25,
+      "v22_general_plus_exists": 0.75,
+      "v22_general_balanced": 0.75,
+      "v22_general_large": 0.75,
+      "v22_general_balanced_large": 1.0
+    },
+    "forall": {
+      "v18_broad_only": 0.667,
+      "v20_broad_plus": 0.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0,
+      "v22_general_plus_exists": 1.0,
+      "v22_general_balanced": 1.0,
+      "v22_general_large": 1.0,
+      "v22_general_balanced_large": 1.0
+    },
+    "nat_succ": {
+      "v18_broad_only": 0.6,
+      "v20_broad_plus": 0.6,
+      "v21_single_retrain": 0.6,
+      "v21_capacity": 0.6,
+      "v21_routed": 0.6,
+      "v22_general_plus_exists": 0.6,
+      "v22_general_balanced": 0.4,
+      "v22_general_large": 0.4,
+      "v22_general_balanced_large": 0.6
+    },
+    "bool": {
+      "v18_broad_only": 0.0,
+      "v20_broad_plus": 1.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0,
+      "v22_general_plus_exists": 1.0,
+      "v22_general_balanced": 1.0,
+      "v22_general_large": 1.0,
+      "v22_general_balanced_large": 1.0
+    },
+    "list": {
+      "v18_broad_only": 0.8,
+      "v20_broad_plus": 0.8,
+      "v21_single_retrain": 0.8,
+      "v21_capacity": 0.8,
+      "v21_routed": 0.8,
+      "v22_general_plus_exists": 0.8,
+      "v22_general_balanced": 0.8,
+      "v22_general_large": 0.6,
+      "v22_general_balanced_large": 0.8
+    }
+  },
+  "training_volume_by_category": {
+    "v18_broad_only": {},
+    "v20_broad_plus": {},
+    "v21_single_retrain": {},
+    "v21_capacity": {},
+    "v21_routed": {},
+    "v22_general_plus_exists": {
+      "(unmapped)": 489,
+      "conjunction": 89,
+      "negation": 513,
+      "exists": 510,
+      "forall": 689,
+      "implication": 764,
+      "disjunction": 4,
+      "bool": 189
+    },
+    "v22_general_balanced": {
+      "conjunction": 800,
+      "(unmapped)": 1264,
+      "forall": 689,
+      "implication": 1159,
+      "exists": 905,
+      "negation": 800,
+      "disjunction": 400,
+      "bool": 400
+    },
+    "v22_general_large": {
+      "(unmapped)": 489,
+      "conjunction": 89,
+      "negation": 513,
+      "exists": 510,
+      "forall": 689,
+      "implication": 764,
+      "disjunction": 4,
+      "bool": 189
+    },
+    "v22_general_balanced_large": {
+      "conjunction": 800,
+      "(unmapped)": 1264,
+      "forall": 689,
+      "implication": 1159,
+      "exists": 905,
+      "negation": 800,
+      "disjunction": 400,
+      "bool": 400
+    }
+  },
+  "single_axis_effects": {
+    "+exists (plus_exists − v21_single_retrain)": {
+      "implication": 0.0,
+      "conjunction": 0.0,
+      "disjunction": 0.2,
+      "negation": 0.0,
+      "equality_rewrite": 0.0,
+      "exists": 0.75,
+      "forall": 0.0,
+      "nat_succ": 0.0,
+      "bool": 0.0,
+      "list": 0.0
+    },
+    "+balance (balanced − plus_exists)": {
+      "implication": 0.0,
+      "conjunction": 0.0,
+      "disjunction": 0.0,
+      "negation": 0.0,
+      "equality_rewrite": 0.0,
+      "exists": 0.0,
+      "forall": 0.0,
+      "nat_succ": -0.2,
+      "bool": 0.0,
+      "list": 0.0
+    },
+    "+capacity (large − plus_exists)": {
+      "implication": 0.0,
+      "conjunction": 0.0,
+      "disjunction": 0.0,
+      "negation": 0.0,
+      "equality_rewrite": 0.0,
+      "exists": 0.0,
+      "forall": 0.0,
+      "nat_succ": -0.2,
+      "bool": 0.0,
+      "list": -0.2
+    },
+    "+capacity (v21_capacity − v21_single_retrain)": {
+      "implication": 0.0,
+      "conjunction": 0.0,
+      "disjunction": 0.2,
+      "negation": 0.2,
+      "equality_rewrite": 0.0,
+      "exists": 0.0,
+      "forall": 0.0,
+      "nat_succ": 0.0,
+      "bool": 0.0,
+      "list": 0.0
+    },
+    "+balance+capacity (balanced_large − plus_exists)": {
+      "implication": -0.167,
+      "conjunction": 0.0,
+      "disjunction": -0.2,
+      "negation": 0.0,
+      "equality_rewrite": 0.0,
+      "exists": 0.25,
+      "forall": 0.0,
+      "nat_succ": 0.0,
+      "bool": 0.0,
+      "list": 0.0
+    }
+  },
+  "exists_interference": {
+    "dropped": [],
+    "improved": [
+      "disjunction",
+      "exists"
+    ],
+    "stable": [
+      "implication",
+      "conjunction",
+      "negation",
+      "equality_rewrite",
+      "forall",
+      "nat_succ",
+      "bool",
+      "list"
+    ]
+  },
+  "verdicts": {
+    "best_single": "v22_general_plus_exists",
+    "best_single_pass5": 0.812,
+    "routed_pass5": 0.792,
+    "routed_minus_best_single": -0.02,
+    "single_matches_routing": true,
+    "best_single_forall_pass5": 1.0,
+    "best_single_exists_pass5": 0.75,
+    "best_single_holds_forall_impl_bool": true
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "note": "Pass@10 is rerank-invariant; pass@1/5 use the abstract reranker. Training volume is by required_operation mapped to the v18 category taxonomy; ambiguous ops counted as (unmapped)."
+}

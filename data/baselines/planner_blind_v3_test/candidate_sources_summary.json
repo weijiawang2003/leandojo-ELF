@@ -1,0 +1,14 @@
+{
+  "flow_decoder": {
+    "attempted": 642,
+    "verified": 0
+  },
+  "planner_projection": {
+    "attempted": 16,
+    "verified": 0
+  },
+  "witness_copy": {
+    "attempted": 30,
+    "verified": 30
+  }
+}

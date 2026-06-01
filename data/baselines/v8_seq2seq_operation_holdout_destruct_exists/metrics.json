@@ -1,0 +1,37 @@
+{
+  "regime_dir": "data/processed/proof_blocks_operation_holdout/destruct_exists",
+  "model_dir": "data/models/proof_block_seq2seq_operation_holdout_destruct_exists",
+  "n_test_theorems": 14,
+  "n_train_rows": 656,
+  "n_train_theorems": 275,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "total_verified_candidates": 0,
+  "novel_verified": 0,
+  "donorless_verified": 0,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "exists_elim_conj": {
+      "n": 8,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "exists_elim_prop": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "destruct_exists": {
+      "n": 14,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "elapsed_seconds": 165.21894053198048
+}

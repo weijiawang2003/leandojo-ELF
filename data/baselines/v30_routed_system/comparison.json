@@ -1,0 +1,44 @@
+{
+  "router": "V30MathlibRouter (imports/mathlib-flag -> v30 specialist; else v24 broad-core)",
+  "specialist_model": "/home/wangw/code/ELFMath/data/models/token_seq2seq_v30_general_targeted",
+  "routing": {
+    "broad_to_core": "48/48",
+    "tierc_to_specialist": "165/165"
+  },
+  "routed": {
+    "broad_core": {
+      "n": 48,
+      "best_config": "policy_abstract",
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334
+    },
+    "tierc": {
+      "n": 165,
+      "best_config": "learned",
+      "pass@1": 0.6727272727272727,
+      "pass@5": 0.9030303030303031,
+      "pass@10": 0.9212121212121213
+    }
+  },
+  "v27_routed_bar": {
+    "pass@5": 0.9375,
+    "pass@10": 0.9583
+  },
+  "preserves_v27_routed_bar": true,
+  "adopt_router": true,
+  "broad_core_preserved": {
+    "routed_pass@5": 0.9375,
+    "v24_pass@5": 0.9166666666666666,
+    "routed_pass@10": 0.9583333333333334,
+    "v24_pass@10": 0.9375,
+    "no_regression": true
+  },
+  "vs_v29_routed_tierc": {
+    "v29_best_config": "learned",
+    "v29_pass@5": 0.9142857142857143,
+    "v29_pass@10": 0.9214285714285714,
+    "v30_pass@5": 0.9030303030303031,
+    "v30_pass@10": 0.9212121212121213
+  }
+}

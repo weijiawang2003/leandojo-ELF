@@ -1,0 +1,396 @@
+{
+  "n": 43,
+  "best_config": "abstract",
+  "by_config": {
+    "raw": {
+      "pass@1": 0.7209302325581395,
+      "pass@5": 0.8837209302325582,
+      "pass@10": 0.9069767441860465,
+      "MRR": 0.7804540420819491,
+      "n_no_candidate_verified": 4,
+      "per_category": {
+        "nat": {
+          "n": 11,
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091
+        },
+        "list": {
+          "n": 8,
+          "pass@1": 0.875,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 8,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "logic": {
+          "n": 8,
+          "pass@1": 0.75,
+          "pass@5": 0.875,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 1,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 2,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "other": 109,
+        "parse_error": 69,
+        "shape_miss": 9,
+        "type_mismatch": 88,
+        "unknown_identifier": 62,
+        "unknown_tactic": 5
+      },
+      "no_verify_reason": {
+        "v25_nat_add_assoc": "unknown_identifier",
+        "v26_fun_comp_assoc2": "type_mismatch",
+        "v27_set_mem_inter_iff": "unknown_identifier",
+        "v27_set_union_subset": "type_mismatch"
+      }
+    },
+    "rule": {
+      "pass@1": 0.5813953488372093,
+      "pass@5": 0.6744186046511628,
+      "pass@10": 0.9069767441860465,
+      "MRR": 0.6440845330380215,
+      "n_no_candidate_verified": 4,
+      "per_category": {
+        "nat": {
+          "n": 11,
+          "pass@1": 0.5454545454545454,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9090909090909091
+        },
+        "list": {
+          "n": 8,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 8,
+          "pass@1": 0.625,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "logic": {
+          "n": 8,
+          "pass@1": 0.125,
+          "pass@5": 0.125,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 1,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 2,
+          "pass@1": 0.5,
+          "pass@5": 0.5,
+          "pass@10": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "parse_error": 69,
+        "shape_miss": 9,
+        "other": 109,
+        "unknown_identifier": 62,
+        "type_mismatch": 88,
+        "unknown_tactic": 5
+      },
+      "no_verify_reason": {
+        "v25_nat_add_assoc": "unknown_identifier",
+        "v26_fun_comp_assoc2": "type_mismatch",
+        "v27_set_mem_inter_iff": "unknown_identifier",
+        "v27_set_union_subset": "type_mismatch"
+      }
+    },
+    "learned": {
+      "pass@1": 0.7209302325581395,
+      "pass@5": 0.8837209302325582,
+      "pass@10": 0.9069767441860465,
+      "MRR": 0.7978959025470653,
+      "n_no_candidate_verified": 4,
+      "per_category": {
+        "nat": {
+          "n": 11,
+          "pass@1": 0.7272727272727273,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091
+        },
+        "list": {
+          "n": 8,
+          "pass@1": 0.625,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 8,
+          "pass@1": 0.625,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "logic": {
+          "n": 8,
+          "pass@1": 0.875,
+          "pass@5": 0.875,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 1,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 2,
+          "pass@1": 0.5,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "parse_error": 69,
+        "other": 109,
+        "shape_miss": 9,
+        "unknown_identifier": 62,
+        "type_mismatch": 88,
+        "unknown_tactic": 5
+      },
+      "no_verify_reason": {
+        "v25_nat_add_assoc": "unknown_identifier",
+        "v26_fun_comp_assoc2": "type_mismatch",
+        "v27_set_mem_inter_iff": "unknown_identifier",
+        "v27_set_union_subset": "type_mismatch"
+      }
+    },
+    "policy": {
+      "pass@1": 0.5581395348837209,
+      "pass@5": 0.6744186046511628,
+      "pass@10": 0.9069767441860465,
+      "MRR": 0.6334533038021412,
+      "n_no_candidate_verified": 4,
+      "per_category": {
+        "nat": {
+          "n": 11,
+          "pass@1": 0.5454545454545454,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9090909090909091
+        },
+        "list": {
+          "n": 8,
+          "pass@1": 0.875,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 8,
+          "pass@1": 0.625,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "logic": {
+          "n": 8,
+          "pass@1": 0.125,
+          "pass@5": 0.125,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 1,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 2,
+          "pass@1": 0.5,
+          "pass@5": 0.5,
+          "pass@10": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "parse_error": 69,
+        "shape_miss": 9,
+        "other": 109,
+        "unknown_identifier": 62,
+        "type_mismatch": 88,
+        "unknown_tactic": 5
+      },
+      "no_verify_reason": {
+        "v25_nat_add_assoc": "unknown_identifier",
+        "v26_fun_comp_assoc2": "type_mismatch",
+        "v27_set_mem_inter_iff": "unknown_identifier",
+        "v27_set_union_subset": "type_mismatch"
+      }
+    },
+    "abstract": {
+      "pass@1": 0.627906976744186,
+      "pass@5": 0.9069767441860465,
+      "pass@10": 0.9069767441860465,
+      "MRR": 0.7635658914728681,
+      "n_no_candidate_verified": 4,
+      "per_category": {
+        "nat": {
+          "n": 11,
+          "pass@1": 0.36363636363636365,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091
+        },
+        "list": {
+          "n": 8,
+          "pass@1": 0.875,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 8,
+          "pass@1": 0.375,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "logic": {
+          "n": 8,
+          "pass@1": 0.875,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 1,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 2,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "other": 109,
+        "parse_error": 69,
+        "shape_miss": 9,
+        "type_mismatch": 88,
+        "unknown_identifier": 62,
+        "unknown_tactic": 5
+      },
+      "no_verify_reason": {
+        "v25_nat_add_assoc": "unknown_identifier",
+        "v26_fun_comp_assoc2": "type_mismatch",
+        "v27_set_mem_inter_iff": "unknown_identifier",
+        "v27_set_union_subset": "type_mismatch"
+      }
+    },
+    "policy_abstract": {
+      "pass@1": 0.5116279069767442,
+      "pass@5": 0.8604651162790697,
+      "pass@10": 0.9069767441860465,
+      "MRR": 0.6841085271317829,
+      "n_no_candidate_verified": 4,
+      "per_category": {
+        "nat": {
+          "n": 11,
+          "pass@1": 0.2727272727272727,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091
+        },
+        "list": {
+          "n": 8,
+          "pass@1": 0.875,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 8,
+          "pass@1": 0.375,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "logic": {
+          "n": 8,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 1,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 2,
+          "pass@1": 0.5,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "parse_error": 69,
+        "shape_miss": 9,
+        "other": 109,
+        "unknown_identifier": 62,
+        "type_mismatch": 88,
+        "unknown_tactic": 5
+      },
+      "no_verify_reason": {
+        "v25_nat_add_assoc": "unknown_identifier",
+        "v26_fun_comp_assoc2": "type_mismatch",
+        "v27_set_mem_inter_iff": "unknown_identifier",
+        "v27_set_union_subset": "type_mismatch"
+      }
+    }
+  }
+}

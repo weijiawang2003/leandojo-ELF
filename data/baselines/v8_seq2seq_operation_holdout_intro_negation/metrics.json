@@ -1,0 +1,42 @@
+{
+  "regime_dir": "data/processed/proof_blocks_operation_holdout/intro_negation",
+  "model_dir": "data/models/proof_block_seq2seq_operation_holdout_intro_negation",
+  "n_test_theorems": 16,
+  "n_train_rows": 653,
+  "n_train_theorems": 273,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.125,
+  "pass@10": 0.1875,
+  "total_verified_candidates": 3,
+  "novel_verified": 3,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 3,
+  "per_family": {
+    "neg_contrapositive": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "neg_double_intro": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.6
+    },
+    "neg_imp_exfalso": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "intro_negation": {
+      "n": 16,
+      "pass@5": 0.125,
+      "pass@10": 0.1875
+    }
+  },
+  "elapsed_seconds": 106.66981786201359
+}

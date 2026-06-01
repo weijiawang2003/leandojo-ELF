@@ -1,0 +1,86 @@
+{
+  "config": "raw",
+  "n_test_theorems": 46,
+  "pass@1": 1.0,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "MRR": 1.0,
+  "n_no_candidate_verified": 0,
+  "no_verify_reason": {},
+  "per_category": {
+    "set": {
+      "n": 15,
+      "pass@10": 1.0
+    },
+    "finset": {
+      "n": 10,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 9,
+      "pass@10": 1.0
+    },
+    "function": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "set::mem_inter_proj": {
+      "n": 10,
+      "pass@10": 1.0
+    },
+    "set::mem_union_intro": {
+      "n": 5,
+      "pass@10": 1.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 5,
+      "pass@10": 1.0
+    },
+    "finset::mem_union_intro": {
+      "n": 5,
+      "pass@10": 1.0
+    },
+    "order::le_refl": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::le_trans": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::antisymm": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "function::comp_assoc": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat::add_assoc": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list::append_nil": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "logic::and_symm": {
+      "n": 3,
+      "pass@10": 1.0
+    }
+  }
+}

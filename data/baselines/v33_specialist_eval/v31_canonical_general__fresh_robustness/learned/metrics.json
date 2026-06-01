@@ -1,0 +1,94 @@
+{
+  "config": "learned",
+  "n_test_theorems": 42,
+  "pass@1": 0.8809523809523809,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "MRR": 0.9404761904761905,
+  "n_no_candidate_verified": 0,
+  "no_verify_reason": {},
+  "per_category": {
+    "set": {
+      "n": 16,
+      "pass@10": 1.0
+    },
+    "finset": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 9,
+      "pass@10": 1.0
+    },
+    "function": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 6,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 4,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "set::mem_inter_proj": {
+      "n": 8,
+      "pass@10": 1.0
+    },
+    "set::mem_union_intro": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "set::inter_subset": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "order::le_trans": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::le_refl": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::antisymm": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "function::comp_assoc": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::add_comm": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat::add_zero": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list::append_nil": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "logic::or_symm": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "logic::and_symm": {
+      "n": 2,
+      "pass@10": 1.0
+    }
+  }
+}

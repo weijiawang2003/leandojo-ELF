@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/conjunction_projection",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.6,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 10,
+  "novel_verified": 1,
+  "donorless_verified": 10,
+  "cross_family_verified": 10,
+  "cross_operation_verified": 10,
+  "per_family": {
+    "left_ab": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "left_pq": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nested_left_left": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "right_then_left": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "right_xy": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "conjunction_projection": {
+      "n": 5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "elapsed_seconds": 267.0769056729914
+}

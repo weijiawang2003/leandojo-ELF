@@ -1,0 +1,338 @@
+{
+  "forall_inst": {
+    "literal_adapt": {
+      "n": 7,
+      "pass@1_original_lower_bound": 0.14285714285714285,
+      "pass@5_original_lower_bound": 0.14285714285714285,
+      "pass@10_original_lower_bound": 0.14285714285714285,
+      "pass@1_warm_rerun": 0.14285714285714285,
+      "pass@5_warm_rerun": 0.14285714285714285,
+      "pass@10_warm_rerun": 0.2857142857142857,
+      "row_flips": [
+        {
+          "theorem_name": "forall_inst_13_6",
+          "config": "literal_adapt",
+          "family": "forall_inst",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": true
+          }
+        }
+      ]
+    },
+    "literal_adapt_rerank": {
+      "n": 7,
+      "pass@1_original_lower_bound": 0.42857142857142855,
+      "pass@5_original_lower_bound": 0.42857142857142855,
+      "pass@10_original_lower_bound": 0.42857142857142855,
+      "pass@1_warm_rerun": 0.8571428571428571,
+      "pass@5_warm_rerun": 0.8571428571428571,
+      "pass@10_warm_rerun": 0.8571428571428571,
+      "row_flips": [
+        {
+          "theorem_name": "forall_inst_5_2",
+          "config": "literal_adapt_rerank",
+          "family": "forall_inst",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        },
+        {
+          "theorem_name": "forall_inst_13_6",
+          "config": "literal_adapt_rerank",
+          "family": "forall_inst",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        },
+        {
+          "theorem_name": "forall_inst_var_k",
+          "config": "literal_adapt_rerank",
+          "family": "forall_inst",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        }
+      ]
+    },
+    "raw": {
+      "n": 7,
+      "pass@1_original_lower_bound": 0.14285714285714285,
+      "pass@5_original_lower_bound": 0.14285714285714285,
+      "pass@10_original_lower_bound": 0.14285714285714285,
+      "pass@1_warm_rerun": 0.14285714285714285,
+      "pass@5_warm_rerun": 0.14285714285714285,
+      "pass@10_warm_rerun": 0.14285714285714285,
+      "row_flips": []
+    },
+    "rerank": {
+      "n": 7,
+      "pass@1_original_lower_bound": 0.14285714285714285,
+      "pass@5_original_lower_bound": 0.14285714285714285,
+      "pass@10_original_lower_bound": 0.14285714285714285,
+      "pass@1_warm_rerun": 0.14285714285714285,
+      "pass@5_warm_rerun": 0.14285714285714285,
+      "pass@10_warm_rerun": 0.14285714285714285,
+      "row_flips": []
+    }
+  },
+  "rewrite_succ": {
+    "literal_adapt": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.6,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.8,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "rewrite_succ_ij",
+          "config": "literal_adapt",
+          "family": "rewrite_succ",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        }
+      ]
+    },
+    "literal_adapt_rerank": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.6,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.8,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "rewrite_succ_ij",
+          "config": "literal_adapt_rerank",
+          "family": "rewrite_succ",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        }
+      ]
+    },
+    "raw": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.6,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.8,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "rewrite_succ_ij",
+          "config": "raw",
+          "family": "rewrite_succ",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        }
+      ]
+    },
+    "rerank": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.6,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.8,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "rewrite_succ_ij",
+          "config": "rerank",
+          "family": "rewrite_succ",
+          "original": {
+            "pass@1": false,
+            "pass@5": false,
+            "pass@10": false
+          },
+          "rerun": {
+            "pass@1": true,
+            "pass@5": true,
+            "pass@10": true
+          }
+        }
+      ]
+    }
+  },
+  "exists_reconstruct": {
+    "literal_adapt": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.4,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.4,
+      "pass@5_warm_rerun": 0.8,
+      "pass@10_warm_rerun": 0.8,
+      "row_flips": []
+    },
+    "literal_adapt_rerank": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.6,
+      "pass@5_original_lower_bound": 1.0,
+      "pass@10_original_lower_bound": 1.0,
+      "pass@1_warm_rerun": 0.6,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": []
+    },
+    "raw": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.4,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.4,
+      "pass@5_warm_rerun": 0.8,
+      "pass@10_warm_rerun": 0.8,
+      "row_flips": []
+    },
+    "rerank": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.4,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.4,
+      "pass@5_warm_rerun": 0.8,
+      "pass@10_warm_rerun": 0.8,
+      "row_flips": []
+    }
+  },
+  "neg_exfalso": {
+    "literal_adapt": {
+      "n": 8,
+      "pass@1_original_lower_bound": 0.625,
+      "pass@5_original_lower_bound": 0.625,
+      "pass@10_original_lower_bound": 0.625,
+      "pass@1_warm_rerun": 0.625,
+      "pass@5_warm_rerun": 0.625,
+      "pass@10_warm_rerun": 0.625,
+      "row_flips": []
+    },
+    "literal_adapt_rerank": {
+      "n": 8,
+      "pass@1_original_lower_bound": 0.625,
+      "pass@5_original_lower_bound": 0.625,
+      "pass@10_original_lower_bound": 0.625,
+      "pass@1_warm_rerun": 0.625,
+      "pass@5_warm_rerun": 0.625,
+      "pass@10_warm_rerun": 0.625,
+      "row_flips": []
+    },
+    "raw": {
+      "n": 8,
+      "pass@1_original_lower_bound": 0.625,
+      "pass@5_original_lower_bound": 0.625,
+      "pass@10_original_lower_bound": 0.625,
+      "pass@1_warm_rerun": 0.625,
+      "pass@5_warm_rerun": 0.625,
+      "pass@10_warm_rerun": 0.625,
+      "row_flips": []
+    },
+    "rerank": {
+      "n": 8,
+      "pass@1_original_lower_bound": 0.625,
+      "pass@5_original_lower_bound": 0.625,
+      "pass@10_original_lower_bound": 0.625,
+      "pass@1_warm_rerun": 0.625,
+      "pass@5_warm_rerun": 0.625,
+      "pass@10_warm_rerun": 0.625,
+      "row_flips": []
+    }
+  },
+  "neg_imp_exfalso": {
+    "literal_adapt": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.0,
+      "pass@10_original_lower_bound": 0.0,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.0,
+      "pass@10_warm_rerun": 0.0,
+      "row_flips": []
+    },
+    "literal_adapt_rerank": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.0,
+      "pass@10_original_lower_bound": 0.0,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.0,
+      "pass@10_warm_rerun": 0.0,
+      "row_flips": []
+    },
+    "raw": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.0,
+      "pass@10_original_lower_bound": 0.0,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.0,
+      "pass@10_warm_rerun": 0.0,
+      "row_flips": []
+    },
+    "rerank": {
+      "n": 5,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.0,
+      "pass@10_original_lower_bound": 0.0,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.0,
+      "pass@10_warm_rerun": 0.0,
+      "row_flips": []
+    }
+  }
+}

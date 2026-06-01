@@ -1,0 +1,73 @@
+{
+  "failure_taxonomy": {
+    "wrong_witness": 4
+  },
+  "failure_taxonomy_examples": {
+    "wrong_witness": {
+      "goal": "⊢ ∃ n : Nat, n = 6",
+      "theorem": "exists_hard_nat_6",
+      "top1": "refine ⟨42, ?_⟩\n  rfl"
+    }
+  },
+  "reranker_calibration": {
+    "mean_score_failed": 0.562,
+    "mean_score_verified": 0.9557,
+    "n_failed_scored": 52,
+    "n_verified_scored": 52,
+    "top1_false_negatives": [
+      {
+        "candidate": "refine ⟨6, ?_⟩\n  rfl",
+        "rank": 3,
+        "score": 1.0,
+        "theorem": "exists_hard_nat_6"
+      },
+      {
+        "candidate": "refine ⟨6, ?_⟩\n  rfl",
+        "rank": 3,
+        "score": 1.0,
+        "theorem": "exists_hard_nat_6"
+      },
+      {
+        "candidate": "exact ⟨9, rfl⟩",
+        "rank": 4,
+        "score": 1.0,
+        "theorem": "exists_hard_nat_9"
+      },
+      {
+        "candidate": "exact ⟨9, rfl⟩",
+        "rank": 4,
+        "score": 1.0,
+        "theorem": "exists_hard_nat_9"
+      }
+    ],
+    "top1_false_positives": [
+      {
+        "candidate": "refine ⟨42, ?_⟩\n  rfl",
+        "score": 0.995,
+        "theorem": "exists_hard_nat_6"
+      },
+      {
+        "candidate": "refine ⟨42, ?_⟩\n  rfl",
+        "score": 0.995,
+        "theorem": "exists_hard_nat_6"
+      },
+      {
+        "candidate": "exact ⟨1, rfl⟩",
+        "score": 0.896,
+        "theorem": "exists_hard_nat_9"
+      },
+      {
+        "candidate": "exact ⟨1, rfl⟩",
+        "score": 0.896,
+        "theorem": "exists_hard_nat_9"
+      }
+    ]
+  },
+  "source_effectiveness": {
+    "rows_reranker_rescued_top1": 4,
+    "verified_by_source": {
+      "flow_decoder": 44,
+      "witness_copy": 8
+    }
+  }
+}

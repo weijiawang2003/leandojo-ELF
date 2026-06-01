@@ -1,0 +1,150 @@
+{
+  "config": "v27_verifier_soundness",
+  "verifier_inventory": {
+    "n_scripts": 10,
+    "paths": [
+      {
+        "script": "audit_v27_verifier_soundness.py",
+        "verifier": "trusted (corrected, confirm forced)"
+      },
+      {
+        "script": "debug_leandojo_manual_repl.py",
+        "verifier": "v25 one-candidate-per-file (lake env lean) — isolated, sound but slow"
+      },
+      {
+        "script": "debug_leandojo_pexpect.py",
+        "verifier": "v25 one-candidate-per-file (lake env lean) — isolated, sound but slow"
+      },
+      {
+        "script": "evaluate_v25_tierc.py",
+        "verifier": "v25 one-candidate-per-file (lake env lean) — isolated, sound but slow"
+      },
+      {
+        "script": "evaluate_v26_routed_system.py",
+        "verifier": "batched corrected (confirm=True default)"
+      },
+      {
+        "script": "evaluate_v26_specialist.py",
+        "verifier": "batched corrected (confirm=True default)"
+      },
+      {
+        "script": "generate_v25_mathlib_tierc_corpus.py",
+        "verifier": "v25 one-candidate-per-file (lake env lean) — isolated, sound but slow"
+      },
+      {
+        "script": "generate_v26_mathlib_specialist_corpus.py",
+        "verifier": "batched corrected (confirm=True default)"
+      },
+      {
+        "script": "probe_v25_mathlib_env.py",
+        "verifier": "v25 one-candidate-per-file (lake env lean) — isolated, sound but slow"
+      },
+      {
+        "script": "widen_v26_set_corpus.py",
+        "verifier": "batched corrected (confirm=True default)"
+      }
+    ]
+  },
+  "core_skip_repro": {
+    "n_candidates": 2,
+    "core": true,
+    "gold_verified": 0,
+    "trusted_verified": 0,
+    "trusted_vs_gold_mismatches": [],
+    "trusted_false_positives": 0,
+    "trusted_sound": true,
+    "naive_verified": 1,
+    "naive_vs_gold_mismatches": [
+      {
+        "theorem_name": "v27_repro_unterminated_comment",
+        "statement": "(p : Prop) (h : p) : p",
+        "tactic": "exact h /- not closed",
+        "gold_success": false,
+        "naive_success": true,
+        "kind": "false_positive"
+      }
+    ],
+    "naive_false_positives": 1,
+    "naive_sound": false
+  },
+  "core_mixed": {
+    "n_candidates": 6,
+    "core": true,
+    "gold_verified": 3,
+    "trusted_verified": 3,
+    "trusted_vs_gold_mismatches": [],
+    "trusted_false_positives": 0,
+    "trusted_sound": true,
+    "naive_verified": 3,
+    "naive_vs_gold_mismatches": [
+      {
+        "theorem_name": "v27_core_parse_err",
+        "statement": "(p : Prop) (h : p) : p",
+        "tactic": "exact h /- open",
+        "gold_success": false,
+        "naive_success": true,
+        "kind": "false_positive"
+      },
+      {
+        "theorem_name": "v27_core_ok_after_err",
+        "statement": "(p q : Prop) (h : p) : p",
+        "tactic": "exact h",
+        "gold_success": true,
+        "naive_success": false,
+        "kind": "false_negative"
+      }
+    ],
+    "naive_false_positives": 1,
+    "naive_sound": false
+  },
+  "mathlib_mixed": {
+    "n_items": 20,
+    "n_candidates": 20,
+    "core": false,
+    "gold_verified": 14,
+    "trusted_verified": 14,
+    "trusted_vs_gold_mismatches": [],
+    "trusted_false_positives": 0,
+    "trusted_sound": true,
+    "naive_verified": 14,
+    "naive_vs_gold_mismatches": [],
+    "naive_false_positives": 0,
+    "naive_sound": true
+  },
+  "mathlib_skip_repro": {
+    "n_candidates": 2,
+    "core": false,
+    "gold_verified": 0,
+    "trusted_verified": 0,
+    "trusted_vs_gold_mismatches": [],
+    "trusted_false_positives": 0,
+    "trusted_sound": true,
+    "naive_verified": 1,
+    "naive_vs_gold_mismatches": [
+      {
+        "theorem_name": "v27_repro_unterminated_comment",
+        "statement": "(p : Prop) (h : p) : p",
+        "tactic": "exact h /- not closed",
+        "gold_success": false,
+        "naive_success": true,
+        "kind": "false_positive"
+      }
+    ],
+    "naive_false_positives": 1,
+    "naive_sound": false
+  },
+  "summary": {
+    "sections": [
+      "core_skip_repro",
+      "core_mixed",
+      "mathlib_mixed",
+      "mathlib_skip_repro"
+    ],
+    "trusted_false_positives_total": 0,
+    "naive_false_positives_total": 3,
+    "trusted_sound": true,
+    "naive_demonstrated_unsound": true,
+    "uses_state_after": false,
+    "uses_manual_oracle": false
+  }
+}

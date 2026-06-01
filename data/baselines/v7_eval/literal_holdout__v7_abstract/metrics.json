@@ -1,0 +1,45 @@
+{
+  "adapted_verified": 8,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "donorless_pass@5": 0.0,
+  "donorless_same_family_rows": 0,
+  "failure_taxonomy": {},
+  "invalid@1": 0.0,
+  "n_rows": 8,
+  "n_theorems": 4,
+  "pass@1": 1.0,
+  "pass@3": 1.0,
+  "pass@5": 1.0,
+  "per_family_pass_at_k": {
+    "exists_reconstruct": {
+      "n": 6,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "forall_inst": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    }
+  },
+  "per_operation_pass_at_k": {
+    "instantiate_forall": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    },
+    "unknown": {
+      "n": 6,
+      "pass@1": 1.0,
+      "pass@3": 1.0,
+      "pass@5": 1.0
+    }
+  },
+  "rows_same_family_in_train": 8,
+  "rows_same_operation_in_train": 2,
+  "same_family_donor_rate": 1.0
+}

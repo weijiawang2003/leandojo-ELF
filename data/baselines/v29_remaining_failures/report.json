@@ -1,0 +1,367 @@
+{
+  "config": "v29_remaining_failures",
+  "model": "v29_general",
+  "n_residuals": 8,
+  "fail_class_counts": {
+    "api_syntax": 2,
+    "lemma_vocabulary": 6
+  },
+  "by_bench": {
+    "v28_holdout": 2,
+    "family_density_holdout": 6
+  },
+  "by_category": {
+    "finset": 3,
+    "order": 1,
+    "set": 4
+  },
+  "residuals": [
+    {
+      "bench": "v28_holdout",
+      "theorem": "v28_fs_empty_subset",
+      "category": "finset",
+      "family": "finset::empty_subset",
+      "statement": "(α : Type) [DecidableEq α] (s : Finset α) : (∅ : Finset α) ⊆ s",
+      "expected_proofs": [
+        "exact Finset.empty_subset s",
+        "simp"
+      ],
+      "top10": [
+        "exact Finset.Subset.refl s",
+        "exact Finset.Subset.mpr (Or.",
+        "intro x hx; exact hx",
+        "exact subset_refl s",
+        "exact Finset.Subset.mpr (Finset.",
+        "intro x hx; exact hx)",
+        "intro x hx; exact (Finset",
+        "exact Finset.Subset.mpr s",
+        "exact Finset.Subset.mpr (h1",
+        "intro x h; exact (Finset"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "parse_error",
+        "type_mismatch",
+        "type_mismatch",
+        "parse_error",
+        "type_mismatch",
+        "parse_error",
+        "unknown_identifier",
+        "parse_error",
+        "parse_error"
+      ],
+      "error_counts": {
+        "type_mismatch": 4,
+        "parse_error": 5,
+        "unknown_identifier": 1
+      },
+      "fail_class": "api_syntax"
+    },
+    {
+      "bench": "v28_holdout",
+      "theorem": "v28_ord_le_refl_pre_1",
+      "category": "order",
+      "family": "order::le_refl",
+      "statement": "(α : Type) [Preorder α] (x : α) : x ≤ x",
+      "expected_proofs": [
+        "exact le_refl x",
+        "exact le_rfl"
+      ],
+      "top10": [
+        "exact min_le_left x h",
+        "exact min_le_left x y",
+        "exact le_sup_left",
+        "exact min_le_left x hx",
+        "exact le_total x y",
+        "exact min_le_left x x",
+        "exact min_le_left x hs",
+        "exact le_total x hx",
+        "exact le_total x h",
+        "exact min_le_left x rfl"
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "unknown_identifier",
+        "other",
+        "unknown_identifier",
+        "unknown_identifier",
+        "other",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "type_mismatch"
+      ],
+      "error_counts": {
+        "unknown_identifier": 7,
+        "other": 2,
+        "type_mismatch": 1
+      },
+      "fail_class": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_fs_mem_inter_right_3",
+      "category": "finset",
+      "family": "finset::mem_inter_proj",
+      "statement": "(α : Type) [DecidableEq α] (u v : Finset α) (w : α) (hw : w ∈ u ∩ v) : w ∈ v",
+      "expected_proofs": [
+        "exact (Finset.mem_inter.mp hw).2",
+        "exact Finset.mem_of_mem_inter_right hw",
+        "exact (Finset.mem_inter.1 hw).2"
+      ],
+      "top10": [
+        "exact Finset.mem_of_mem_inter_left hw",
+        "exact (Finset.mem_inter.mp hw",
+        "exact (Finset.mem_inter.1 hw",
+        "simp [Finset.mem_inter]",
+        "simp [Finset.mem_inter.mp hw",
+        "exact (Finset.mem_inter.mp hy",
+        "exact (Finset.mem_inter.1 hy",
+        "exact (Finset.mem_inter.mp hz",
+        "exact Finset.mem_of_mem_inter_left hy",
+        "exact Finset.mem_inter.1 hy)"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "parse_error",
+        "parse_error",
+        "other",
+        "parse_error",
+        "parse_error",
+        "parse_error",
+        "parse_error",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "type_mismatch": 1,
+        "parse_error": 6,
+        "other": 1,
+        "unknown_identifier": 2
+      },
+      "fail_class": "api_syntax"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_fs_mem_union_right_3",
+      "category": "finset",
+      "family": "finset::mem_union_intro",
+      "statement": "(α : Type) [DecidableEq α] (u v : Finset α) (w : α) (hw : w ∈ v) : w ∈ u ∪ v",
+      "expected_proofs": [
+        "exact Finset.mem_union.mpr (Or.inr hw)",
+        "exact Finset.mem_union_right u hw",
+        "simp [hw]"
+      ],
+      "top10": [
+        "exact Finset.mem_union.mpr (Or.inl hw)",
+        "simp [Finset.mem_union.mpr (Or.inl hw)",
+        "exact Finset.mem_union.mpr (Or.inl hy)",
+        "exact Finset.mem_union.mpr (Or.inl h)",
+        "exact Finset.mem_union.mpr (Or.inl hz)",
+        "exact Finset.mem_union.mpr (Or.inr h)",
+        "exact Finset.mem_union.mpr (Or.inr hy)",
+        "simp [Finset.mem_union.mpr (Or.inl hy)",
+        "simp [Finset.mem_union.mpr (Or.inl hz)",
+        "simp [Finset.mem_union.mpr (Or.inl hx)"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "parse_error",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "parse_error",
+        "parse_error",
+        "parse_error"
+      ],
+      "error_counts": {
+        "type_mismatch": 1,
+        "parse_error": 4,
+        "unknown_identifier": 5
+      },
+      "fail_class": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_inter_left_3",
+      "category": "set",
+      "family": "set::mem_inter_proj",
+      "statement": "(α : Type) (u v : Set α) (w : α) (hw : w ∈ u ∩ v) : w ∈ u",
+      "expected_proofs": [
+        "exact hw.1",
+        "exact hw.left"
+      ],
+      "top10": [
+        "exact Iff.2",
+        "exact (...1",
+        "exact Iff.right",
+        "exact hy.1",
+        "exact Or.inl h.",
+        "exact Or.inl hy.",
+        "exact h.1",
+        "exact hy.2",
+        "exact hy.left",
+        "exact Set.mem_of_mem_inter_left hy"
+      ],
+      "error_classes": [
+        "other",
+        "parse_error",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 1,
+        "parse_error": 1,
+        "unknown_identifier": 8
+      },
+      "fail_class": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_inter_right_3",
+      "category": "set",
+      "family": "set::mem_inter_proj",
+      "statement": "(α : Type) (u v : Set α) (w : α) (hw : w ∈ u ∩ v) : w ∈ v",
+      "expected_proofs": [
+        "exact hw.2",
+        "exact hw.right"
+      ],
+      "top10": [
+        "exact Iff.2",
+        "exact Iff.right",
+        "exact And.right",
+        "exact Or.inl hy",
+        "exact Or.inl hy.1",
+        "exact Or.inl h.1",
+        "exact hy.2",
+        "exact hy.right",
+        "exact Set.mem_of_mem_inter_left hy",
+        "exact Set.mem_inter_iff a hy"
+      ],
+      "error_classes": [
+        "other",
+        "unknown_identifier",
+        "type_mismatch",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 1,
+        "unknown_identifier": 8,
+        "type_mismatch": 1
+      },
+      "fail_class": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_union_of_left_3",
+      "category": "set",
+      "family": "set::mem_union_intro",
+      "statement": "(α : Type) (u v : Set α) (w : α) (hw : w ∈ u) : w ∈ u ∪ v",
+      "expected_proofs": [
+        "exact Or.inl hw",
+        "left; exact hw",
+        "exact Set.mem_union_left v hw"
+      ],
+      "top10": [
+        "exact Or.inr Or.",
+        "exact Or.inr hy",
+        "exact Or.inr h",
+        "exact Or.inr hx",
+        "exact Or.inl hy",
+        "simp [h]",
+        "exact Or.inl h",
+        "exact Or.inr hz",
+        "exact Set.mem_union_right a",
+        "exact Set.mem_union_right s"
+      ],
+      "error_classes": [
+        "other",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 1,
+        "unknown_identifier": 9
+      },
+      "fail_class": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_union_of_right_3",
+      "category": "set",
+      "family": "set::mem_union_intro",
+      "statement": "(α : Type) (u v : Set α) (w : α) (hw : w ∈ v) : w ∈ u ∪ v",
+      "expected_proofs": [
+        "exact Or.inr hw",
+        "right; exact hw",
+        "exact Set.mem_union_right u hw"
+      ],
+      "top10": [
+        "exact Or.inr Or.",
+        "exact Or.inr hy",
+        "exact Or.inr h",
+        "exact Or.inr hz",
+        "exact Or.inr hx",
+        "exact Or.inr b",
+        "simp [h]",
+        "right; exact Or.inl",
+        "exact Set.mem_union_right s",
+        "exact Set.mem_union_right a"
+      ],
+      "error_classes": [
+        "other",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "type_mismatch",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 1,
+        "unknown_identifier": 8,
+        "type_mismatch": 1
+      },
+      "fail_class": "lemma_vocabulary"
+    }
+  ],
+  "leandojo_next_state_relevant": false,
+  "verdict": "remaining failures still single-tactic data/vocab-bound -> keep scaling siblings; LeanDojo next-state premature",
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "v24_cleanup": {
+    "audited": true,
+    "retrained": false,
+    "n_old_core_residuals": 3,
+    "old_core_residuals": [
+      "v18_and_assoc_one",
+      "v18_or_elim_to_common",
+      "v18_or_inr"
+    ],
+    "recommendation": "audited only; v24 broad-core model is protected (never retrained). Old core residuals are few and orthogonal to the Mathlib tier; defer to a dedicated core-residual corpus pass."
+  }
+}

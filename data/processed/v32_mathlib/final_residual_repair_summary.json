@@ -1,0 +1,17 @@
+{
+  "config": "v32_final_residual_repair",
+  "n_theorems": 16,
+  "n_proposed": 40,
+  "n_verified": 37,
+  "n_failed": 0,
+  "n_dropped_guard": 3,
+  "by_family": {
+    "empty_subset": 29,
+    "inter_subset": 8
+  },
+  "verifier": "TrustedMathlibVerifier",
+  "total_lean_seconds": 17.4,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

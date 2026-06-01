@@ -1,0 +1,1 @@
+{"theorem_name": "forall_inst_7_0", "family": "forall_inst", "required_operation": "instantiate_forall", "rank": 0, "tactic": "exact h 7", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": false}

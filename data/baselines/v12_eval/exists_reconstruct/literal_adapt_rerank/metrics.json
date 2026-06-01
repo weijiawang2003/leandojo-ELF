@@ -1,0 +1,14 @@
+{
+  "n_test_theorems": 5,
+  "pass@1": 0.6,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 5,
+  "novel_verified": 1,
+  "cross_family_verified": 5,
+  "cross_operation_verified": 0,
+  "literal_adapt_verified": 1,
+  "stale_literal_count": 17,
+  "rank_failure_fixes": 0,
+  "malformed_count": 2
+}

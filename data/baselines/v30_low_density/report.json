@@ -1,0 +1,176 @@
+{
+  "config": "v30_low_density_residual_audit",
+  "source": "v29 family census + v29 residuals + v30 v25-regression audit (no Lean run)",
+  "n_target_families": 10,
+  "n_below_threshold": 5,
+  "n_token_diversity": 4,
+  "targets": [
+    {
+      "family": "nat::add_assoc",
+      "category": "nat",
+      "v29_corpus_density": 3,
+      "v29_train_density": 0,
+      "has_v29_residual": false,
+      "repair_kind": "v25_regression+count",
+      "below_threshold": true,
+      "target_density": 6,
+      "proposed_shape": "(x y z : Nat) : x + y + z = x + (y + z)",
+      "expected_proof_heads": [
+        "exact Nat.add_assoc x y z",
+        "omega",
+        "ring",
+        "simp [Nat.add_assoc]"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "set::empty_subset",
+      "category": "set",
+      "v29_corpus_density": 1,
+      "v29_train_density": 0,
+      "has_v29_residual": false,
+      "repair_kind": "v25_regression+count",
+      "below_threshold": true,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) (s : Set α) : (∅ : Set α) ⊆ s",
+      "expected_proof_heads": [
+        "exact Set.empty_subset s",
+        "simp",
+        "intro x hx; cases hx"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "finset::empty_subset",
+      "category": "finset",
+      "v29_corpus_density": 1,
+      "v29_train_density": 0,
+      "has_v29_residual": true,
+      "repair_kind": "residual+count",
+      "below_threshold": true,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) [DecidableEq α] (s : Finset α) : (∅ : Finset α) ⊆ s",
+      "expected_proof_heads": [
+        "exact Finset.empty_subset s",
+        "simp"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "order::le_refl",
+      "category": "order",
+      "v29_corpus_density": 3,
+      "v29_train_density": 3,
+      "has_v29_residual": true,
+      "repair_kind": "residual+count",
+      "below_threshold": true,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) [Preorder α] (a : α) : a ≤ a",
+      "expected_proof_heads": [
+        "exact le_rfl",
+        "exact le_refl a"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "set::mem_inter_proj",
+      "category": "set",
+      "v29_corpus_density": 6,
+      "v29_train_density": 8,
+      "has_v29_residual": true,
+      "repair_kind": "residual+token_diversity",
+      "below_threshold": false,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) (s t : Set α) (w : α) (hw : w ∈ s ∩ t) : w ∈ s",
+      "expected_proof_heads": [
+        "exact hw.1",
+        "exact hw.2",
+        "exact (Set.mem_inter_iff.mp hw).1"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "set::mem_union_intro",
+      "category": "set",
+      "v29_corpus_density": 6,
+      "v29_train_density": 9,
+      "has_v29_residual": true,
+      "repair_kind": "residual+token_diversity",
+      "below_threshold": false,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) (s t : Set α) (w : α) (hw : w ∈ s) : w ∈ s ∪ t",
+      "expected_proof_heads": [
+        "exact Or.inl hw",
+        "exact Set.mem_union_left t hw"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "finset::mem_inter_proj",
+      "category": "finset",
+      "v29_corpus_density": 4,
+      "v29_train_density": 5,
+      "has_v29_residual": true,
+      "repair_kind": "residual+token_diversity",
+      "below_threshold": false,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) [DecidableEq α] (s t : Finset α) (w : α) (hw : w ∈ s ∩ t) : w ∈ s",
+      "expected_proof_heads": [
+        "exact (Finset.mem_inter.mp hw).1",
+        "exact Finset.mem_of_mem_inter_left hw"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "finset::mem_union_intro",
+      "category": "finset",
+      "v29_corpus_density": 4,
+      "v29_train_density": 5,
+      "has_v29_residual": true,
+      "repair_kind": "residual+token_diversity",
+      "below_threshold": false,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) [DecidableEq α] (s t : Finset α) (w : α) (hw : w ∈ s) : w ∈ s ∪ t",
+      "expected_proof_heads": [
+        "exact Finset.mem_union.mpr (Or.inl hw)",
+        "exact Finset.mem_union_left t hw"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "set::union_subset",
+      "category": "set",
+      "v29_corpus_density": 3,
+      "v29_train_density": 4,
+      "has_v29_residual": false,
+      "repair_kind": "low_density",
+      "below_threshold": false,
+      "target_density": 6,
+      "proposed_shape": "(α : Type) (s t u : Set α) (hs : s ⊆ u) (ht : t ⊆ u) : s ∪ t ⊆ u",
+      "expected_proof_heads": [
+        "exact Set.union_subset hs ht",
+        "rintro x (h | h)"
+      ],
+      "single_tactic_solvable": true
+    },
+    {
+      "family": "function::comp_assoc",
+      "category": "function",
+      "v29_corpus_density": 1,
+      "v29_train_density": 3,
+      "has_v29_residual": false,
+      "repair_kind": "low_density",
+      "below_threshold": true,
+      "target_density": 6,
+      "proposed_shape": "(α β γ δ : Type) (φ ψ χ : _) : (χ ∘ ψ) ∘ φ = χ ∘ (ψ ∘ φ)",
+      "expected_proof_heads": [
+        "rfl",
+        "funext x; rfl"
+      ],
+      "single_tactic_solvable": true
+    }
+  ],
+  "note": "families tagged token_diversity already have >=4 siblings by count but their held-out _3 members use surface tokens (u,v sets, element w, hyp hw) absent from training siblings -> repair = more token variety, not just more rows",
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

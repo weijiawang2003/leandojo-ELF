@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_family_holdout/neg_contrapositive",
+  "model_dir": "data/models/proof_block_seq2seq_family_holdout_neg_contrapositive",
+  "n_test_theorems": 6,
+  "n_train_rows": 678,
+  "n_train_theorems": 283,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "total_verified_candidates": 0,
+  "novel_verified": 0,
+  "donorless_verified": 0,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "neg_contrapositive": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "intro_negation": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "elapsed_seconds": 559.8944845460064
+}

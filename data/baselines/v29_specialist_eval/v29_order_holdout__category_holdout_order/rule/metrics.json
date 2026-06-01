@@ -1,0 +1,95 @@
+{
+  "config": "rule",
+  "n_test_theorems": 36,
+  "pass@1": 0.19444444444444445,
+  "pass@5": 0.4444444444444444,
+  "pass@10": 0.5555555555555556,
+  "MRR": 0.307716049382716,
+  "n_no_candidate_verified": 16,
+  "no_verify_reason": {
+    "v29_ord_antisymm_1": "unknown_identifier",
+    "v29_ord_antisymm_3": "type_mismatch",
+    "v29_ord_antisymm_4": "type_mismatch",
+    "v29_ord_antisymm_5": "unknown_identifier",
+    "v29_ord_antisymm_7": "type_mismatch",
+    "v29_ord_antisymm_8": "type_mismatch",
+    "v29_ord_ge_of_eq_pre_0": "type_mismatch",
+    "v29_ord_ge_of_eq_pre_2": "type_mismatch",
+    "v29_ord_inf_le_left_0": "type_mismatch",
+    "v29_ord_inf_le_left_2": "other",
+    "v29_ord_le_max_right_2": "unknown_identifier",
+    "v29_ord_le_of_eq_pre_3": "type_mismatch",
+    "v29_ord_le_sup_right_2": "parse_error",
+    "v29_ord_le_total_0": "type_mismatch",
+    "v29_ord_le_total_1": "other",
+    "v29_ord_min_le_left_2": "other"
+  },
+  "failure_taxonomy": {
+    "other": 70,
+    "type_mismatch": 122,
+    "unknown_identifier": 93,
+    "parse_error": 35,
+    "shape_miss": 1
+  },
+  "per_category": {
+    "order": {
+      "n": 36,
+      "pass@1": 0.19444444444444445,
+      "pass@5": 0.4444444444444444,
+      "pass@10": 0.5555555555555556
+    }
+  },
+  "per_family": {
+    "order::antisymm": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order::le_of_eq": {
+      "n": 9,
+      "pass@1": 0.2222222222222222,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    },
+    "order::lattice_inf_sup": {
+      "n": 5,
+      "pass@1": 0.0,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    },
+    "order::min_max": {
+      "n": 5,
+      "pass@1": 0.0,
+      "pass@5": 0.4,
+      "pass@10": 0.6
+    },
+    "order::le_refl": {
+      "n": 2,
+      "pass@1": 0.5,
+      "pass@5": 0.5,
+      "pass@10": 1.0
+    },
+    "order::le_total": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order::le_trans": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order::nat_le": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 1.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

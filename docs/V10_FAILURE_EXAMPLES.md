@@ -1,5 +1,12 @@
 # Mini-ELF v10 — failure examples
 
+> **⚠️ Leakage caveat.** `combined_v10` is the **leakage-affected legacy**
+> checkpoint (trained on the v10 interpolation split; holdout cells were in its
+> training pool). Its successes here are example-level and **not** evidence of
+> generalisation; the corrected per-operation LOFO signal is at
+> `data/baselines/v10_eval_clean/per_op/` and the leakage is pinned by
+> `tests/test_v10_no_leakage.py`.
+
 A scratchpad of concrete model-output failures on the v10 redundancy
 holdout cells, surfaced from
 `data/baselines/v10_eval/<regime>/<fold>/<model>/predictions.jsonl`. The

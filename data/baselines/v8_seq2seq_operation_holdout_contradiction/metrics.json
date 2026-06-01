@@ -1,0 +1,37 @@
+{
+  "regime_dir": "data/processed/proof_blocks_operation_holdout/contradiction",
+  "model_dir": "data/models/proof_block_seq2seq_operation_holdout_contradiction",
+  "n_test_theorems": 14,
+  "n_train_rows": 646,
+  "n_train_theorems": 275,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.07142857142857142,
+  "total_verified_candidates": 1,
+  "novel_verified": 1,
+  "donorless_verified": 1,
+  "cross_family_verified": 1,
+  "cross_operation_verified": 1,
+  "per_family": {
+    "neg_exfalso": {
+      "n": 8,
+      "pass@5": 0.0,
+      "pass@10": 0.125
+    },
+    "neg_or_cases": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "contradiction": {
+      "n": 14,
+      "pass@5": 0.0,
+      "pass@10": 0.07142857142857142
+    }
+  },
+  "elapsed_seconds": 45.361159927997505
+}

@@ -1,0 +1,136 @@
+{
+  "config": "policy",
+  "n_test_theorems": 14,
+  "pass@1": 0.7142857142857143,
+  "pass@5": 0.9285714285714286,
+  "pass@10": 1.0,
+  "MRR": 0.8174603174603173,
+  "n_no_candidate_verified": 0,
+  "no_verify_reason": {},
+  "failure_taxonomy": {
+    "other": 25,
+    "parse_error": 19,
+    "type_mismatch": 40,
+    "unknown_identifier": 22,
+    "shape_miss": 1,
+    "unknown_tactic": 2
+  },
+  "per_category": {
+    "nat": {
+      "n": 4,
+      "pass@1": 0.25,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "bool_option": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "nat::nat_add_zero": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat::nat_zero_add": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat::nat_add_assoc": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat::nat_mul_one": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::list_append_nil": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::list_reverse_nil": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::list_map_id": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "bool_option::bool_true_and": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "bool_option::bool_and_true": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set::set_mem_univ": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set::set_empty_subset": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic::logic_and_imp": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 1.0
+    },
+    "logic::logic_iff_refl": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic::logic_not_intro": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  }
+}

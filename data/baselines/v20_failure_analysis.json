@@ -1,0 +1,414 @@
+{
+  "n_total_theorems": 48,
+  "n_failed_top10_policy": 13,
+  "failure_class_tally": {
+    "type_mismatch": 8,
+    "wrong_var_name": 1,
+    "no_schema_in_beam": 2,
+    "other": 1,
+    "tactic_failed": 1
+  },
+  "per_failure": [
+    {
+      "theorem_name": "v18_and_assoc_one",
+      "category": "conjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q r : Prop) (h : p ∧ q ∧ r) : (p ∧ q) ∧ r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∧ q ∧ r\n⊢ (p ∧ q) ∧ r",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact ⟨h.2, h.1⟩",
+        "exact h.1.1",
+        "exact h.1.2",
+        "exact h.2.1",
+        "exact h.2.2",
+        "cases h with\n  | intro h",
+        "cases h with\n  | intro hp",
+        "exact And.intro h ⟨hq,",
+        "exact And.right h.1.1",
+        "exact And.right h ⟨hq,"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_aonnv283.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The",
+        "/tmp/mini_elf_lean_eftcerwg.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The",
+        "/tmp/mini_elf_lean_5g5noqz5.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_bue9rsp8.lean:2:2: error: Type mismatch"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_or_inr",
+      "category": "disjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q : Prop) (hq : q) : p ∨ q",
+      "state_before": "p : Prop\nq : Prop\nhq : q\n⊢ p ∨ q",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "constructor\n  exact hq\n  exact hq",
+        "exact And.intro hq hq",
+        "constructor\n  exact And.intro hq",
+        "exact And.intro hp hq",
+        "constructor\n  exact hp\n  exact hq",
+        "constructor\n  exact And.intro hp",
+        "exact Or.intro hp hq",
+        "exact Iff.intro hp hq",
+        "exact And.intro hq hp"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_vgs1joc8.lean:3:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_j51y2y3s.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_z062knqn.lean:3:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_lbl8ns98.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hp`",
+        "/tmp/mini_elf_lean_wxd6u_lw.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hp`"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_or_elim_to_common",
+      "category": "disjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q r : Prop) (h : p ∨ q) (hpr : p → r) (hqr : q → r) : r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∨ q\nhpr : p → r\nhqr : q → r\n⊢ r",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "cases h with\n  | inl hp => exact absurd hp =>",
+        "cases h with\n  | inl hp => exact hq => exact",
+        "cases h with\n  | inl hp => exact hpq hp",
+        "cases h with\n  | inl hp => exact hpq hq",
+        "cases h with\n  | inl hx => exact hpq hp",
+        "cases h with\n  | inl hp => exact hp hx\n  |",
+        "cases h with\n  | inl hp => exact absurd hp hq",
+        "cases h with\n  | inl hp => exact hq hx",
+        "cases h with\n  | inl hp => exact absurd hp hx",
+        "rcases h with hx | hx\n  exact hpq hp => exact"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_8n5s_hb4.lean:3:14: error: Type mismatch",
+        "/tmp/mini_elf_lean_up5pnrm_.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hq`",
+        "/tmp/mini_elf_lean_fifw3nnu.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "/tmp/mini_elf_lean_ch24rt5h.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "/tmp/mini_elf_lean_9i4l9l58.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_neg_or_left",
+      "category": "negation",
+      "expected_tactic_head": "intro",
+      "theorem_statement": "(p q : Prop) (h : ¬(p ∨ q)) : ¬p",
+      "state_before": "p : Prop\nq : Prop\nh : ¬(p ∨ q)\n⊢ ¬p",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact fun hp => absurd hp h",
+        "exact fun hp => absurd hp hnp",
+        "exact fun hp => absurd hp hnp\n  | inr hp => exact (h hp)",
+        "cases h with\n  | inl hp => exact absurd hp hnp\n  | inr hp => exact hp",
+        "intro hp\n  exact absurd hp hnp\n  | inr hp => exact (h hp)",
+        "exact fun hp => absurd hp hnp\n  | inr hp => exact hp",
+        "rcases h with hp | hp\n  exact absurd hp hnp\n  | inr hp => exact hp",
+        "exact fun hp => absurd hp hnp\n  | inr hp => absurd hp hnp\n  | inr hp => exact",
+        "exact fun hp => absurd hp hnp\n  | inr hp => absurd hp hnp\n  | inr hp => absurd",
+        "intro hp\n  exact absurd hp hnp\n  | inr hp => absurd hp hnp\n  | inr hp => absurd hp"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_j9vl5ofg.lean:2:28: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_ffgggk47.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+        "/tmp/mini_elf_lean_f1tovs8y.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+        "/tmp/mini_elf_lean__98lrrf7.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type",
+        "/tmp/mini_elf_lean_e_62fcbn.lean:3:18: error(lean.unknownIdentifier): Unknown identifier `hnp`"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_exists_intro_nat",
+      "category": "exists",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p : Nat → Prop) (h : p 3) : ∃ n, p n",
+      "state_before": "p : Nat → Prop\nh : p 3\n⊢ ∃ n, p n",
+      "failure_class": "wrong_var_name",
+      "top10": [
+        "refine ⟨n, ?_⟩\n  rfl",
+        "refine ⟨n, ?_⟩\n  | ⟨n, ?_⟩",
+        "rcases h with ⟨hp, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hp⟩\n  exact hq",
+        "cases h with\n  | ⟨n, hq⟩\n  exact hq",
+        "cases h with\n  | ⟨n, hp⟩\n  exact hq",
+        "rcases h with ⟨n, hq⟩\n  exact hp",
+        "refine ⟨n, ?_⟩\n  exact ⟨hp, hq⟩",
+        "refine ⟨n, ?_⟩\n  exact ⟨hq, hq⟩"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_so5trlb7.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`",
+        "/tmp/mini_elf_lean_hoy1ea0u.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`",
+        "/tmp/mini_elf_lean_uwyvm1ji.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype",
+        "/tmp/mini_elf_lean_g9ufhjvi.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype",
+        "/tmp/mini_elf_lean_7iwtlnmt.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_exists_relabel",
+      "category": "exists",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p : Nat → Prop) (h : ∃ n, p n) : ∃ m, p m",
+      "state_before": "p : Nat → Prop\nh : ∃ n, p n\n⊢ ∃ m, p m",
+      "failure_class": "no_schema_in_beam",
+      "top10": [
+        "rcases h with ⟨n, hp⟩\n  exact hp",
+        "rcases h with ⟨n, hp, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hp, hq⟩\n  exact hp",
+        "obtain ⟨n, hpq⟩ := h\n  exact hpq.2",
+        "obtain ⟨n, hpq⟩ := h\n  exact hpq.1",
+        "rcases h with ⟨n, hp⟩\n  exact hq",
+        "rcases h with ⟨n, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hq⟩\n  exact hp",
+        "cases h with ⟨n, hp, hq⟩\n  exact hq",
+        "obtain ⟨n, hpq⟩ := h\n  exact ⟨n,"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_nvymtvhl.lean:3:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_thb092yy.lean:2:16: error: Tactic `rcases` failed: `h✝ : p n` is not an inductive datatype",
+        "/tmp/mini_elf_lean_a0t_onyf.lean:2:16: error: Tactic `rcases` failed: `h✝ : p n` is not an inductive datatype",
+        "/tmp/mini_elf_lean_egixqr_b.lean:3:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The",
+        "/tmp/mini_elf_lean_z1rwu8w6.lean:3:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_exists_compose",
+      "category": "exists",
+      "expected_tactic_head": "cases",
+      "theorem_statement": "(p q : Nat → Prop) (h : ∃ n, p n) (hpq : ∀ n, p n → q n) : ∃ n, q n",
+      "state_before": "p : Nat → Prop\nq : Nat → Prop\nh : ∃ n, p n\nhpq : ∀ n, p n → q n\n⊢ ∃ n, q n",
+      "failure_class": "no_schema_in_beam",
+      "top10": [
+        "rcases h with ⟨n, hpq⟩\n  exact hpq",
+        "rcases h with ⟨n, hpq⟩\n  exact hq",
+        "rcases h with ⟨n, hpq⟩ => exact ⟨n,",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨n, hpq⟩",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨hq, hpq⟩",
+        "rcases h with ⟨n, hpq⟩\n  exact hq => exact",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨n, hq⟩",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨ha, hb⟩",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨n, hn⟩",
+        "rcases h with ⟨n, hn⟩\n  exact ⟨n, hq⟩"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_r5mqomez.lean:3:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_ta9w552g.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hq`",
+        "/tmp/mini_elf_lean_98j3wcot.lean:1:79: error: unsolved goals",
+        "/tmp/mini_elf_lean__dfkvgxn.lean:3:12: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_jypuo7_e.lean:3:9: error(lean.unknownIdentifier): Unknown identifier `hq`"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_forall_inst_at_7",
+      "category": "forall",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p : Nat → Prop) (h : ∀ n, p n) : p 7",
+      "state_before": "p : Nat → Prop\nh : ∀ n, p n\n⊢ p 7",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact h with ⟨n, hp⟩",
+        "exact h with ⟨n, hq⟩",
+        "exact h with ⟨hp, hq⟩",
+        "cases h with\n  | intro hp => exact hp =",
+        "rcases h with ⟨n, hp⟩\n  exact hq",
+        "rcases h with ⟨n, hp⟩\n  exact hp",
+        "cases h with\n  | intro hp hq => exact hp",
+        "rcases h with ⟨hp, hq⟩\n  exact hq",
+        "cases h with\n  | intro hp hb => exact hp",
+        "rcases h with ⟨n, hp, hq⟩\n  exact hq"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_ym_zk3ni.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_wg39dp5w.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_2piyei_h.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_3pxu19_l.lean:4:0: error: unexpected end of input",
+        "/tmp/mini_elf_lean_fs0c747k.lean:2:16: error: Tactic `rcases` failed: `h : ∀ (n : Nat), p n` is not an inductive datatype"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_forall_inst_compose",
+      "category": "forall",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q : Nat → Prop) (h : ∀ n, p n → q n) (hp : p 5) : q 5",
+      "state_before": "p : Nat → Prop\nq : Nat → Prop\nh : ∀ n, p n → q n\nhp : p 5\n⊢ q 5",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact h p",
+        "exact h hp hq",
+        "exact h with ⟨n, hp⟩",
+        "exact h with hx => exact",
+        "apply h\n  exact hpq hp",
+        "exact h with ⟨n, hp)",
+        "exact h ⟨ha, hb⟩",
+        "exact h with ⟨n, hq⟩",
+        "exact h with ⟨ha, hb⟩",
+        "exact h ⟨ha, hq⟩"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_9_xlbunw.lean:2:10: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_2zs721xf.lean:2:10: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_tzyeuapf.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_k9ymi_5o.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_dontzhmt.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_forall_to_arrow",
+      "category": "forall",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q : Nat → Prop) (h : ∀ n, p n → q n) : p 3 → q 3",
+      "state_before": "p : Nat → Prop\nq : Nat → Prop\nh : ∀ n, p n → q n\n⊢ p 3 → q 3",
+      "failure_class": "other",
+      "top10": [
+        "intro h\n  exact h ⟨ha, hb⟩",
+        "exact h ⟨ha, hb⟩",
+        "exact fun _ => h ⟨ha, hb⟩",
+        "intro ha hb\n  exact h p",
+        "exact fun h => h ⟨ha, hb⟩",
+        "exact fun ha hb => h ⟨ha,",
+        "intro ha\n  exact h ⟨ha, hb⟩",
+        "exact fun ha => h ⟨ha, hb⟩",
+        "intro ha hb\n  exact h ⟨ha, hb⟩",
+        "intro ha hb\n  exact h ha hb"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_ypaxegda.lean:3:8: error: Function expected at",
+        "/tmp/mini_elf_lean_xk_dnbjq.lean:2:10: error: Invalid `⟨...⟩` notation: The expected type `Nat` has more than one constructor",
+        "/tmp/mini_elf_lean_fmxkpf95.lean:2:19: error: Invalid `⟨...⟩` notation: The expected type `Nat` has more than one constructor",
+        "/tmp/mini_elf_lean_eayeiaet.lean:2:11: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to intro",
+        "/tmp/mini_elf_lean_rqu3l265.lean:2:17: error: Function expected at"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_nat_zero_add",
+      "category": "nat_succ",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(n : Nat) : 0 + n = n",
+      "state_before": "n : Nat\n⊢ 0 + n = n",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact rfl",
+        "rfl",
+        "refine rfl",
+        "rw [\n  rfl",
+        "exact ⟨_,",
+        "refine rfl\n  rfl",
+        "exact Eq.refl",
+        "cases b\n  rfl",
+        "refine ⟨m,",
+        "exact ⟨a,"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_rwu272dh.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_kxc7h6qf.lean:2:2: error: Tactic `rfl` failed: The left-hand side",
+        "/tmp/mini_elf_lean_g3wqxib7.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_muf5fz__.lean:4:0: error: unexpected end of input; expected ']'",
+        "/tmp/mini_elf_lean_rbh4e6nw.lean:3:0: error: unexpected end of input; expected '⟩'"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_nat_succ_inj",
+      "category": "nat_succ",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(n m : Nat) (h : n.succ = m.succ) : n = m",
+      "state_before": "n : Nat\nm : Nat\nh : n.succ = m.succ\n⊢ n = m",
+      "failure_class": "tactic_failed",
+      "top10": [
+        "rw [h]",
+        "exact h ▸ rfl",
+        "subst h\n  rfl",
+        "cases h with\n  |",
+        "cases h <;>",
+        "exact h 3",
+        "exact congrArg Nat rfl",
+        "exact congrArg Nat Nat",
+        "exact congrArg Nat ▸",
+        "exact congrArg Nat.succ"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_i_3iky_0.lean:2:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern",
+        "/tmp/mini_elf_lean_qw1zgho4.lean:2:8: error: invalid `▸` notation, expected result type of cast is ",
+        "/tmp/mini_elf_lean_326atd3o.lean:2:2: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t = x)",
+        "/tmp/mini_elf_lean_3p45c6xe.lean:4:0: error: unexpected end of input; expected '_' or identifier",
+        "/tmp/mini_elf_lean_2b95zeji.lean:3:0: error: unexpected end of input"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_list_append_nil",
+      "category": "list",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(α : Type) (xs : List α) : xs ++ [] = xs",
+      "state_before": "α : Type\nxs : List α\n⊢ xs ++ [] = xs",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact rfl",
+        "rfl",
+        "exact Eq.refl _",
+        "exact Eq.trans rfl",
+        "exact Eq.refl rfl",
+        "exact Eq.trans a",
+        "cases x <;>",
+        "exact Eq.refl a",
+        "exact (Eq.refl a"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_nnnb7fmy.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_r0yfg6s_.lean:2:2: error: Tactic `rfl` failed: The left-hand side",
+        "/tmp/mini_elf_lean_up6ol2ke.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_yettd6f9.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_xhomx3nj.lean:2:2: error: Type mismatch"
+      ],
+      "alt_configs": {
+        "policy_abstract": null,
+        "raw": null
+      }
+    }
+  ]
+}

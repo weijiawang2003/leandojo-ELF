@@ -1,0 +1,13 @@
+{
+  "n_test_theorems": 7,
+  "pass@1": 0.14285714285714285,
+  "pass@3": 0.2857142857142857,
+  "pass@5": 0.42857142857142855,
+  "pass@10": 1.0,
+  "MRR": 0.2761904761904762,
+  "n_malformed_top1": 0,
+  "n_false_top1": 6,
+  "verified_ceiling_match_rows": 7,
+  "config": "raw",
+  "uses_state_after": false
+}

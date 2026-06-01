@@ -1,0 +1,76 @@
+{
+  "model": "v24",
+  "benchmark": "v26_holdout",
+  "config": "policy_abstract",
+  "n_test_theorems": 22,
+  "pass@1": 0.22727272727272727,
+  "pass@5": 0.3181818181818182,
+  "pass@10": 0.3181818181818182,
+  "MRR": 0.2727272727272727,
+  "n_no_candidate_verified": 15,
+  "no_verify_reason": {
+    "v25_bool_decide_true": "unknown_identifier",
+    "v25_set_inter_subset_left": "parse_error",
+    "v26_bool_or_self2": "parse_error",
+    "v26_fun_comp_assoc2": "unknown_identifier",
+    "v26_list_cons_ne_nil2": "unknown_identifier",
+    "v26_list_map_map2": "unknown_identifier",
+    "v26_list_reverse_reverse2": "unknown_identifier",
+    "v26_logic_curry2": "type_mismatch",
+    "v26_nat_le_add_right2": "unknown_identifier",
+    "v26_nat_le_trans2": "other",
+    "v26_nat_one_mul_l": "unknown_identifier",
+    "v26_nat_zero_mul_l": "other",
+    "v26_set_inter_comm_subset": "parse_error",
+    "v26_set_mem_inter_left": "other",
+    "v26_set_subset_refl2": "unknown_identifier"
+  },
+  "failure_taxonomy": {
+    "other": 52,
+    "unknown_identifier": 74,
+    "parse_error": 34,
+    "type_mismatch": 48,
+    "unknown_tactic": 1
+  },
+  "per_category": {
+    "bool_option": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 0.3333333333333333
+    },
+    "list": {
+      "n": 4,
+      "pass@1": 0.0,
+      "pass@5": 0.25,
+      "pass@10": 0.25
+    },
+    "logic": {
+      "n": 4,
+      "pass@1": 0.75,
+      "pass@5": 0.75,
+      "pass@10": 0.75
+    },
+    "nat": {
+      "n": 6,
+      "pass@1": 0.16666666666666666,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 0.3333333333333333
+    },
+    "set": {
+      "n": 4,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

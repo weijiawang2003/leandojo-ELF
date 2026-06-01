@@ -1,0 +1,81 @@
+{
+  "failure_taxonomy": {
+    "wrong_conjunct": 3,
+    "wrong_disjunct": 4,
+    "wrong_iff_direction": 2,
+    "wrong_witness": 2
+  },
+  "failure_taxonomy_examples": {
+    "wrong_conjunct": {
+      "goal": "⊢ r",
+      "theorem": "and_left_rs",
+      "top1": "exact h.right.right"
+    },
+    "wrong_disjunct": {
+      "goal": "⊢ r ∨ s",
+      "theorem": "or_inl_rs",
+      "top1": "exact Or.inr h"
+    },
+    "wrong_iff_direction": {
+      "goal": "⊢ r",
+      "theorem": "iff_mpr_rs",
+      "top1": "exact h.mp hp"
+    },
+    "wrong_witness": {
+      "goal": "⊢ ∃ n : Nat, n = 0",
+      "theorem": "exists_nat_0",
+      "top1": "refine ⟨100, ?_⟩\n  rfl"
+    }
+  },
+  "reranker_calibration": {
+    "mean_score_failed": 0.13,
+    "mean_score_verified": 0.9749,
+    "n_failed_scored": 83,
+    "n_verified_scored": 78,
+    "top1_false_negatives": [
+      {
+        "candidate": "exact h.mpr hq",
+        "rank": 2,
+        "score": 0.033,
+        "theorem": "iff_mpr_rs"
+      },
+      {
+        "candidate": "exact h.mpr hq",
+        "rank": 2,
+        "score": 0.033,
+        "theorem": "iff_mpr_rs"
+      },
+      {
+        "candidate": "refine ⟨0, ?_⟩\n  rfl",
+        "rank": 3,
+        "score": 1.0,
+        "theorem": "exists_nat_0"
+      },
+      {
+        "candidate": "refine ⟨0, ?_⟩\n  rfl",
+        "rank": 3,
+        "score": 1.0,
+        "theorem": "exists_nat_0"
+      }
+    ],
+    "top1_false_positives": [
+      {
+        "candidate": "refine ⟨100, ?_⟩\n  rfl",
+        "score": 0.979,
+        "theorem": "exists_nat_0"
+      },
+      {
+        "candidate": "refine ⟨100, ?_⟩\n  rfl",
+        "score": 0.979,
+        "theorem": "exists_nat_0"
+      }
+    ]
+  },
+  "source_effectiveness": {
+    "rows_reranker_rescued_top1": 0,
+    "verified_by_source": {
+      "flow_decoder": 74,
+      "witness_copy": 4
+    }
+  }
+}

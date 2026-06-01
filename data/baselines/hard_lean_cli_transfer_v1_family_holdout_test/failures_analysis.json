@@ -1,0 +1,71 @@
+{
+  "failure_taxonomy": {
+    "missing_multistep": 15,
+    "unknown": 24
+  },
+  "failure_taxonomy_examples": {
+    "missing_multistep": {
+      "goal": "⊢ r",
+      "theorem": "or_elim_pqr",
+      "top1": "exact h.mp hp"
+    },
+    "unknown": {
+      "goal": "⊢ p ∧ r",
+      "theorem": "nested_and_intro_skip_pqr",
+      "top1": "constructor\n  exact hp\n  exact hq"
+    }
+  },
+  "reranker_calibration": {
+    "mean_score_failed": 0.594,
+    "mean_score_verified": null,
+    "n_failed_scored": 195,
+    "n_verified_scored": 0,
+    "top1_false_negatives": [],
+    "top1_false_positives": [
+      {
+        "candidate": "constructor\n  exact hp\n  exact hq",
+        "score": 1.0,
+        "theorem": "nested_and_intro_skip_pqr"
+      },
+      {
+        "candidate": "constructor\n  exact hp\n  exact hq",
+        "score": 1.0,
+        "theorem": "nested_and_intro_skip_pqr"
+      },
+      {
+        "candidate": "exact ⟨hp, hq⟩",
+        "score": 1.0,
+        "theorem": "nested_and_intro_ll_pqr"
+      },
+      {
+        "candidate": "exact ⟨hp, hq⟩",
+        "score": 1.0,
+        "theorem": "nested_and_intro_ll_pqr"
+      },
+      {
+        "candidate": "exact ⟨hp, hq⟩",
+        "score": 1.0,
+        "theorem": "nested_and_intro_rr_pqr"
+      },
+      {
+        "candidate": "exact ⟨hp, hq⟩",
+        "score": 1.0,
+        "theorem": "nested_and_intro_rr_pqr"
+      },
+      {
+        "candidate": "exact And.intro hp hq",
+        "score": 1.0,
+        "theorem": "nested_and_intro_skip_abc"
+      },
+      {
+        "candidate": "exact And.intro hp hq",
+        "score": 1.0,
+        "theorem": "nested_and_intro_skip_abc"
+      }
+    ]
+  },
+  "source_effectiveness": {
+    "rows_reranker_rescued_top1": 0,
+    "verified_by_source": {}
+  }
+}

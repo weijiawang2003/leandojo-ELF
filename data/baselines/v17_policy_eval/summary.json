@@ -1,0 +1,63 @@
+{
+  "folds": [
+    {
+      "fam": "neg_exfalso",
+      "n_test_theorems": 8,
+      "configs": {
+        "raw": {
+          "n_test_theorems": 8,
+          "pass@1": 0.375,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.6666666666666667,
+          "n_malformed_top1": 0,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 8,
+          "config": "raw",
+          "uses_state_after": false
+        },
+        "rule": {
+          "n_test_theorems": 8,
+          "pass@1": 0.5,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.75,
+          "n_malformed_top1": 0,
+          "n_false_top1": 4,
+          "verified_ceiling_match_rows": 8,
+          "config": "rule",
+          "uses_state_after": false
+        },
+        "learned": {
+          "n_test_theorems": 8,
+          "pass@1": 0.75,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8541666666666667,
+          "n_malformed_top1": 0,
+          "n_false_top1": 2,
+          "verified_ceiling_match_rows": 8,
+          "config": "learned",
+          "uses_state_after": false
+        },
+        "policy": {
+          "n_test_theorems": 8,
+          "pass@1": 0.75,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8541666666666667,
+          "n_malformed_top1": 0,
+          "n_false_top1": 2,
+          "verified_ceiling_match_rows": 8,
+          "config": "policy",
+          "uses_state_after": false
+        }
+      }
+    }
+  ],
+  "uses_state_after": false
+}

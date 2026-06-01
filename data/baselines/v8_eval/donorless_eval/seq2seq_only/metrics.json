@@ -1,0 +1,102 @@
+{
+  "regime": "donorless_eval",
+  "config": "seq2seq_only",
+  "n_test_theorems": 61,
+  "top_k": 10,
+  "pass@1": 0.0,
+  "pass@5": 0.03278688524590164,
+  "pass@10": 0.03278688524590164,
+  "total_verified_candidates": 3,
+  "novel_verified": 0,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 0,
+  "candidates_by_source": {
+    "proof_block_seq2seq": 582
+  },
+  "per_family": {
+    "exists_elim_conj": {
+      "n": 8,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "exists_elim_prop": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "exists_reconstruct": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    },
+    "forall_inst": {
+      "n": 7,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "neg_contrapositive": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "neg_double_intro": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "neg_exfalso": {
+      "n": 8,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "neg_imp_exfalso": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "neg_or_cases": {
+      "n": 6,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "rewrite_succ": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "contradiction": {
+      "n": 14,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "destruct_exists": {
+      "n": 14,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "instantiate_forall": {
+      "n": 7,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "intro_negation": {
+      "n": 16,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "rewrite": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "unknown": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    }
+  },
+  "elapsed_seconds": 934.9588405880204
+}

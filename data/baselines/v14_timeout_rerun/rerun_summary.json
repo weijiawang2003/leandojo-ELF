@@ -1,0 +1,14 @@
+{
+  "n_targets": 17,
+  "n_verified_after_rerun": 4,
+  "n_still_timeout": 0,
+  "n_other_fail": 13,
+  "timeout_seconds_used": 180.0,
+  "families": [
+    "forall_inst",
+    "rewrite_succ",
+    "neg_exfalso",
+    "exists_reconstruct",
+    "neg_imp_exfalso"
+  ]
+}

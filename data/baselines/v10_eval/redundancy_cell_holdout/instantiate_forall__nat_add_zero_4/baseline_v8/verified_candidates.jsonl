@@ -1,0 +1,1 @@
+{"theorem_name": "v10_instantiate_forall_nat_add_zero_4", "family": "nat_add_zero_4", "required_operation": "instantiate_forall", "rank": 8, "tactic": "exact rfl", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": true}

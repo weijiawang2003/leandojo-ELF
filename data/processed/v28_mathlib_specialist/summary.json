@@ -1,0 +1,62 @@
+{
+  "config": "v28_mathlib_specialist_dataset",
+  "pools": {
+    "v27_widened_pool": 343,
+    "v27_val": 68,
+    "v28_rows": 350
+  },
+  "v28_theorem_holdout": {
+    "novel_v28_theorems": 116,
+    "nonnovel_v28_theorems": 25,
+    "n_train_theorems": 57,
+    "n_val_theorems": 29,
+    "n_test_theorems": 30,
+    "n_test_rows": 70,
+    "n_test_seeds": 30,
+    "test_by_category": {
+      "set": 24,
+      "finset": 13,
+      "nat": 10,
+      "order": 15,
+      "list": 2,
+      "function": 2,
+      "logic": 4
+    },
+    "dropped_v28_train_overlap": 0,
+    "dropped_v27_pool_overlap": 0
+  },
+  "configs": {
+    "v28_general": 554,
+    "v28_set_order_heavy": 816,
+    "v28_category_balanced": 442,
+    "v28_finset_specialist": 606,
+    "shared_val": 137,
+    "balance_cap_per_category": 90
+  },
+  "category_holdout_set": {
+    "n_train": 352,
+    "n_test_rows": 226,
+    "n_test_theorems": 84,
+    "n_test_seeds": 38
+  },
+  "category_holdout_order": {
+    "n_train": 469,
+    "n_test_rows": 75,
+    "n_test_theorems": 35,
+    "n_test_seeds": 27
+  },
+  "category_holdout_finset": {
+    "n_train": 528,
+    "n_test_rows": 39,
+    "n_test_theorems": 18,
+    "n_test_seeds": 18
+  },
+  "benchmarks_preserved": [
+    "v25_heldout",
+    "v26_holdout",
+    "v27_holdout"
+  ],
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "leakage_guard": "statement-level vs v28 holdout + v25/v26/v27 benchmarks"
+}

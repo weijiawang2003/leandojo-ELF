@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_family_holdout/forall_inst",
+  "model_dir": "data/models/proof_block_seq2seq_redundancy",
+  "n_test_theorems": 7,
+  "n_train_rows": 683,
+  "n_train_theorems": 282,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "total_verified_candidates": 0,
+  "novel_verified": 0,
+  "donorless_verified": 0,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "forall_inst": {
+      "n": 7,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "instantiate_forall": {
+      "n": 7,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "elapsed_seconds": 111.0030887349858
+}

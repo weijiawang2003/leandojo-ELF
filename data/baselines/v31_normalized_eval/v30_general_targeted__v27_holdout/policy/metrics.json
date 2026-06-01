@@ -1,0 +1,62 @@
+{
+  "config": "policy",
+  "n_test_theorems": 7,
+  "pass@1": 0.2857142857142857,
+  "pass@5": 0.7142857142857143,
+  "pass@10": 1.0,
+  "MRR": 0.4861111111111111,
+  "n_no_candidate_verified": 0,
+  "no_verify_reason": {},
+  "per_category": {
+    "list": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 2,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "list::length_cons": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "logic::contrapose": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::add_assoc": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::le_add": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::le_succ_of_le": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::mem_iff": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::union_subset": {
+      "n": 1,
+      "pass@10": 1.0
+    }
+  }
+}

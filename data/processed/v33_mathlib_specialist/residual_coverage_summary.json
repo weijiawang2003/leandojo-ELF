@@ -1,0 +1,28 @@
+{
+  "config": "v33_residual_coverage",
+  "n_theorems": 74,
+  "n_proposed": 94,
+  "n_verified": 83,
+  "n_failed": 0,
+  "n_dropped_guard": 11,
+  "by_family": {
+    "lattice": 17,
+    "min_max": 16,
+    "le_trans": 12,
+    "union_assoc": 6,
+    "inter_assoc": 7,
+    "empty_subset": 10,
+    "mem_inter_proj": 9,
+    "mem_union_intro": 6
+  },
+  "by_repair_type": {
+    "vocabulary": 33,
+    "density": 35,
+    "token_surface": 15
+  },
+  "verifier": "TrustedMathlibVerifier",
+  "total_lean_seconds": 26.7,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

@@ -1,0 +1,7 @@
+{
+  "n_train_rows": 6011,
+  "n_features": 387,
+  "positive_fraction": 0.15704541673598402,
+  "category_features": true,
+  "uses_state_after": false
+}

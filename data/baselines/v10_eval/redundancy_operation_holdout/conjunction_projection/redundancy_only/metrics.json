@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/conjunction_projection",
+  "model_dir": "data/models/proof_block_seq2seq_redundancy",
+  "n_test_theorems": 5,
+  "n_train_rows": 27,
+  "n_train_theorems": 27,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.4,
+  "pass@5": 0.4,
+  "pass@10": 0.6,
+  "total_verified_candidates": 3,
+  "novel_verified": 3,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 3,
+  "per_family": {
+    "left_ab": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "left_pq": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nested_left_left": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 1.0
+    },
+    "right_then_left": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "right_xy": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "conjunction_projection": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.6
+    }
+  },
+  "elapsed_seconds": 14.31965238598059
+}

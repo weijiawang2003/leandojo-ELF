@@ -1,0 +1,95 @@
+{
+  "config": "raw",
+  "n_test_theorems": 7,
+  "pass@1": 0.42857142857142855,
+  "pass@5": 0.5714285714285714,
+  "pass@10": 0.7142857142857143,
+  "MRR": 0.48214285714285715,
+  "n_no_candidate_verified": 2,
+  "no_verify_reason": {
+    "v27_set_mem_inter_iff": "unknown_identifier",
+    "v27_set_union_subset": "type_mismatch"
+  },
+  "failure_taxonomy": {
+    "type_mismatch": 17,
+    "parse_error": 13,
+    "unknown_identifier": 18,
+    "other": 15
+  },
+  "per_category": {
+    "list": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 2,
+      "pass@1": 0.5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_family": {
+    "list::length_cons": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic::contrapose": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat::add_assoc": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 1.0
+    },
+    "order::le_add": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order::le_succ_of_le": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set::mem_iff": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::union_subset": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "1_no_state_after": {
+    "ok": true,
+    "n_files": 129,
+    "n_rows": 42023,
+    "offenders": []
+  },
+  "2_full_theorem_proving_disclaimed": {
+    "ok": true,
+    "n_hits": 74,
+    "violations": [],
+    "sample_hits": [
+      {
+        "file": "MINI_ELF_MATHLIB_FINAL_REPORT.md",
+        "line": 27,
+        "disclaimer": true,
+        "text": "yet justified. We make **no full-theorem-proving claim**: the system predicts one"
+      },
+      {
+        "file": "MINI_ELF_MATHLIB_FINAL_REPORT.md",
+        "line": 41,
+        "disclaimer": true,
+        "text": "- **Not full theorem proving.** We do **not** perform multi-step proof search,"
+      },
+      {
+        "file": "MINI_ELF_MATHLIB_FINAL_REPORT.md",
+        "line": 192,
+        "disclaimer": true,
+        "text": "balancing; no full-theorem-proving claim; no v19 placeholder decoding._"
+      },
+      {
+        "file": "NEXT_STEPS.md",
+        "line": 28,
+        "disclaimer": true,
+        "text": "**trusted verifier** behind a **specialist + router**; **no** full-theorem-proving"
+      },
+      {
+        "file": "PROJECT_REPORT.md",
+        "line": 783,
+        "disclaimer": true,
+        "text": "- **No full theorem proving.** v8 is theorem-level tactic prediction."
+      },
+      {
+        "file": "PROJECT_REPORT.md",
+        "line": 906,
+        "disclaimer": true,
+        "text": "- **No claim of full theorem proving.** The headline is the mechanism"
+      },
+      {
+        "file": "PROJECT_REPORT.md",
+        "line": 1016,
+        "disclaimer": true,
+        "text": "* v11 does **not** claim full theorem proving, novel cross-operation"
+      },
+      {
+        "file": "PROJECT_REPORT.md",
+        "line": 1298,
+        "disclaimer": true,
+        "text": "* Not full theorem proving — verified rows are 30 / 30 across a"
+      }
+    ]
+  },
+  "3_v10_leakage_guarded": {
+    "ok": true,
+    "guard_test_present": true,
+    "docs_citing_combined_v10_without_leakage_framing": []
+  },
+  "4_naive_verifier_not_headline": {
+    "ok": true,
+    "headline_scripts_checked": 6,
+    "bad": [],
+    "naive_appears_in": [
+      "scripts/recompute_v27_mathlib_metrics_corrected.py",
+      "scripts/v34_consistency_audit.py",
+      "tests/test_v27_verifier_soundness.py"
+    ]
+  },
+  "5_metric_agreement": {
+    "ok": true,
+    "by_file": {
+      "README.md": {
+        "broad_core_0.9375/0.9583": true,
+        "tierc_0.992": true,
+        "n_244": true
+      },
+      "RESULTS_SUMMARY.md": {
+        "broad_core_0.9375/0.9583": true,
+        "tierc_0.992": true,
+        "n_244": true
+      },
+      "NEXT_STEPS.md": {
+        "broad_core_0.9375/0.9583": true,
+        "tierc_0.992": true,
+        "n_244": true
+      },
+      "MINI_ELF_MATHLIB_FINAL_REPORT.md": {
+        "broad_core_0.9375/0.9583": true,
+        "tierc_0.992": true,
+        "n_244": true
+      }
+    }
+  },
+  "all_ok": true
+}

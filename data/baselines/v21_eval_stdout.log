@@ -1,0 +1,40 @@
+=== EVAL B (single broad-plus+forall) ===
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-30 23:35:31,543 INFO single-model mode: data/models/token_seq2seq_v21_broad_plus_forall
+2026-05-30 23:35:31,757 INFO pattern bag: 2776 rows, 219 patterns
+2026-05-30 23:35:32,241 INFO warmup success=True
+2026-05-31 00:04:21,671 INFO   raw pass@1=0.625 pass@5=0.750 pass@10=0.750 no_verify=12
+2026-05-31 00:04:21,673 INFO   rule pass@1=0.604 pass@5=0.729 pass@10=0.750 no_verify=12
+2026-05-31 00:04:21,674 INFO   learned pass@1=0.583 pass@5=0.750 pass@10=0.750 no_verify=12
+2026-05-31 00:04:21,675 INFO   policy pass@1=0.625 pass@5=0.750 pass@10=0.750 no_verify=12
+2026-05-31 00:04:21,677 INFO   abstract pass@1=0.667 pass@5=0.729 pass@10=0.750 no_verify=12
+2026-05-31 00:04:21,678 INFO   policy_abstract pass@1=0.667 pass@5=0.729 pass@10=0.750 no_verify=12
+2026-05-31 00:04:21,682 INFO V21 eval DONE -> data/baselines/v21_broad_plus_forall_eval
+=== EVAL C (routed: broad-plus + forall specialist) ===
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-31 00:04:23,081 INFO routed mode: broad=data/models/token_seq2seq_v20_broad_plus forall=data/models/token_seq2seq_v21_forall_specialist
+2026-05-31 00:04:23,235 INFO pattern bag: 2099 rows, 204 patterns
+2026-05-31 00:04:23,621 INFO warmup success=True
+2026-05-31 00:06:05,807 INFO   raw pass@1=0.562 pass@5=0.771 pass@10=0.792 no_verify=10
+2026-05-31 00:06:05,809 INFO   rule pass@1=0.625 pass@5=0.771 pass@10=0.792 no_verify=10
+2026-05-31 00:06:05,810 INFO   learned pass@1=0.604 pass@5=0.771 pass@10=0.792 no_verify=10
+2026-05-31 00:06:05,811 INFO   policy pass@1=0.604 pass@5=0.771 pass@10=0.792 no_verify=10
+2026-05-31 00:06:05,813 INFO   abstract pass@1=0.688 pass@5=0.792 pass@10=0.792 no_verify=10
+2026-05-31 00:06:05,814 INFO   policy_abstract pass@1=0.688 pass@5=0.792 pass@10=0.792 no_verify=10
+2026-05-31 00:06:05,818 INFO V21 eval DONE -> data/baselines/v21_routed_eval
+=== EVAL D (higher capacity) ===
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-31 00:06:07,208 INFO single-model mode: data/models/token_seq2seq_v21_capacity
+2026-05-31 00:06:07,405 INFO pattern bag: 2776 rows, 219 patterns
+2026-05-31 00:06:07,824 INFO warmup success=True
+2026-05-31 00:08:18,819 INFO   raw pass@1=0.667 pass@5=0.750 pass@10=0.771 no_verify=11
+2026-05-31 00:08:18,820 INFO   rule pass@1=0.646 pass@5=0.750 pass@10=0.771 no_verify=11
+2026-05-31 00:08:18,822 INFO   learned pass@1=0.458 pass@5=0.750 pass@10=0.771 no_verify=11
+2026-05-31 00:08:18,823 INFO   policy pass@1=0.542 pass@5=0.750 pass@10=0.771 no_verify=11
+2026-05-31 00:08:18,824 INFO   abstract pass@1=0.708 pass@5=0.771 pass@10=0.771 no_verify=11
+2026-05-31 00:08:18,826 INFO   policy_abstract pass@1=0.708 pass@5=0.771 pass@10=0.771 no_verify=11
+2026-05-31 00:08:18,831 INFO V21 eval DONE -> data/baselines/v21_capacity_eval
+ALL_V21_EVAL_DONE

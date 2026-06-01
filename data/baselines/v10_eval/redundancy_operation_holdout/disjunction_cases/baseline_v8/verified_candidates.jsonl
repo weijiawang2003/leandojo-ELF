@@ -1,0 +1,3 @@
+{"theorem_name": "v10_disjunction_cases_or_self", "family": "or_self", "required_operation": "disjunction_cases", "rank": 0, "tactic": "cases h with\n  | inl hp => exact hp\n  | inr hp => exact hp", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": true}
+{"theorem_name": "v10_disjunction_cases_or_true_lhs", "family": "or_true_lhs", "required_operation": "disjunction_cases", "rank": 6, "tactic": "exact True.intro", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": true}
+{"theorem_name": "v10_disjunction_cases_or_true_lhs", "family": "or_true_lhs", "required_operation": "disjunction_cases", "rank": 8, "tactic": "trivial", "family_absent_from_train": true, "operation_absent_from_train": true, "novel": true}

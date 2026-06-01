@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_v11_family_lofo/neg_imp_exfalso",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 5,
+  "n_train_rows": 715,
+  "n_train_theorems": 324,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 1.0,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 20,
+  "novel_verified": 20,
+  "donorless_verified": 20,
+  "cross_family_verified": 20,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "neg_imp_exfalso": {
+      "n": 5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "intro_negation": {
+      "n": 5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "elapsed_seconds": 17.883104715991067
+}

@@ -1,0 +1,40 @@
+{
+  "config": "v31_train",
+  "configs": {
+    "canonical_general": {
+      "config": "v31_canonical_general",
+      "out_dir": "/home/wangw/code/ELFMath/data/models/token_seq2seq_v31_canonical_general",
+      "n_train_rows": 905,
+      "vocab_size": 207,
+      "n_parameters": 515759,
+      "best_epoch": 14,
+      "val_greedy_exact_top1": 0.3671497584541063,
+      "runtime_seconds": 214.6
+    },
+    "raw_canonical_mixture": {
+      "config": "v31_raw_canonical_mixture",
+      "out_dir": "/home/wangw/code/ELFMath/data/models/token_seq2seq_v31_raw_canonical_mixture",
+      "n_train_rows": 897,
+      "vocab_size": 248,
+      "n_parameters": 535480,
+      "best_epoch": 26,
+      "val_greedy_exact_top1": 0.32608695652173914,
+      "runtime_seconds": 256.4
+    },
+    "raw_plus_projection_aug": {
+      "config": "v31_raw_plus_projection_aug",
+      "out_dir": "/home/wangw/code/ELFMath/data/models/token_seq2seq_v31_raw_plus_projection_aug",
+      "n_train_rows": 1045,
+      "vocab_size": 245,
+      "n_parameters": 534037,
+      "best_epoch": 27,
+      "val_greedy_exact_top1": 0.33816425120772947,
+      "runtime_seconds": 234.5
+    }
+  },
+  "epochs": 40,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "not_v19_placeholders": true,
+  "note": "v24 broad-core and v30 specialists never overwritten; no capacity probe."
+}

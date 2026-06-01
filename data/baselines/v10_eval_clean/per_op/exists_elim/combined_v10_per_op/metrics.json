@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/exists_elim",
+  "model_dir": "data/models/proof_block_seq2seq_combined_v10_per_op/exists_elim",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 1.0,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 18,
+  "novel_verified": 0,
+  "donorless_verified": 18,
+  "cross_family_verified": 18,
+  "cross_operation_verified": 18,
+  "per_family": {
+    "drop_witness_prop": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_addzero": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_witness_3": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_witness_5": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_witness_7": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "exists_elim": {
+      "n": 5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "elapsed_seconds": 18.49120300001232
+}

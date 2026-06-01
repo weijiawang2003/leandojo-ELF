@@ -1,0 +1,50 @@
+[
+  {
+    "regime": "donorless_eval",
+    "config": "seq2seq_only",
+    "n": 61,
+    "pass@1": 0.0,
+    "pass@5": 0.03278688524590164,
+    "pass@10": 0.03278688524590164,
+    "novel_verified": 0,
+    "donorless_verified": 3,
+    "cross_family_verified": 3,
+    "cross_operation_verified": 0
+  },
+  {
+    "regime": "family_holdout_forall_inst",
+    "config": "seq2seq_direct",
+    "n": 7,
+    "pass@1": 0.0,
+    "pass@5": 0.0,
+    "pass@10": 0.0,
+    "novel_verified": 0,
+    "donorless_verified": 0,
+    "cross_family_verified": 0,
+    "cross_operation_verified": 0
+  },
+  {
+    "regime": "family_holdout_neg_exfalso",
+    "config": "seq2seq_direct",
+    "n": 8,
+    "pass@1": 0.125,
+    "pass@5": 0.625,
+    "pass@10": 0.625,
+    "novel_verified": 9,
+    "donorless_verified": 9,
+    "cross_family_verified": 9,
+    "cross_operation_verified": 0
+  },
+  {
+    "regime": "family_holdout_neg_imp_exfalso",
+    "config": "seq2seq_direct",
+    "n": 5,
+    "pass@1": 0.0,
+    "pass@5": 0.0,
+    "pass@10": 0.0,
+    "novel_verified": 0,
+    "donorless_verified": 0,
+    "cross_family_verified": 0,
+    "cross_operation_verified": 0
+  }
+]

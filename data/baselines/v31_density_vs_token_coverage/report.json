@@ -1,0 +1,86 @@
+{
+  "config": "v31_density_vs_token_coverage",
+  "model_x_bench_pass10": {
+    "v30_general_targeted": {
+      "v25_heldout": 1.0,
+      "v26_holdout": 1.0,
+      "v27_holdout": 1.0,
+      "v28_holdout": 0.9666666666666667,
+      "v29_holdout": 1.0,
+      "v30_targeted_family": 0.6,
+      "token_diversity": 0.0
+    },
+    "v31_raw_plus_projection_aug": {
+      "v25_heldout": 1.0,
+      "v26_holdout": 1.0,
+      "v27_holdout": 1.0,
+      "v28_holdout": 1.0,
+      "v29_holdout": 1.0,
+      "v30_targeted_family": 0.7,
+      "token_diversity": 0.7692307692307693
+    },
+    "v31_canonical_general": {
+      "v25_heldout": 1.0,
+      "v26_holdout": 1.0,
+      "v27_holdout": 1.0,
+      "v28_holdout": 1.0,
+      "v29_holdout": 1.0,
+      "v30_targeted_family": 1.0,
+      "token_diversity": 0.9230769230769231
+    },
+    "v31_raw_canonical_mixture": {
+      "v25_heldout": 1.0,
+      "v26_holdout": 0.9545454545454546,
+      "v27_holdout": 1.0,
+      "v28_holdout": 0.9666666666666667,
+      "v29_holdout": 1.0,
+      "v30_targeted_family": 0.9,
+      "token_diversity": 0.9230769230769231
+    }
+  },
+  "token_coverage_result": {
+    "v30_baseline": 0.0,
+    "canonical_A": 0.9230769230769231,
+    "rename_aug_B": 0.7692307692307693,
+    "mixture": 0.9230769230769231
+  },
+  "standard_holdout_floor": {
+    "v30_general_targeted": 0.9666666666666667,
+    "v31_raw_plus_projection_aug": 1.0,
+    "v31_canonical_general": 1.0,
+    "v31_raw_canonical_mixture": 0.9545454545454546
+  },
+  "pool_stats_token_diversity": {
+    "v30_general_targeted": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_canonical_general": {
+      "n_canonical_generated": 130,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 130,
+      "n_from_raw_fallback": 123
+    },
+    "v31_raw_canonical_mixture": {
+      "n_canonical_generated": 129,
+      "n_unresolved_rejected": 10,
+      "n_from_canonical": 118,
+      "n_from_raw_fallback": 96
+    }
+  },
+  "verdict": {
+    "canonical_improves": true,
+    "augmentation_improves": true,
+    "augmentation_beats_canonical": false,
+    "summary": "v30 token_diversity=0.0; canonical(A)=0.9230769230769231; rename_aug(B)=0.7692307692307693"
+  },
+  "density_law_second_axis": "v29/v30 showed family density (siblings) is necessary; v30 found it is not sufficient when the held-out member's identifiers are OOD. v31 result: the ceiling is a TOKEN-COVERAGE axis. Requirement = >=4-6 family siblings AND identifier/projection surface coverage of the held-out member's tokens. Verified rename augmentation supplies that coverage directly; input-side canonicalization supplies it by making the model identifier-invariant."
+}

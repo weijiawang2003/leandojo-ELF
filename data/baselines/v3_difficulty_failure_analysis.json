@@ -1,0 +1,266 @@
+{
+  "v1-transfer (no retraining)": {
+    "category_counts_unsolved_at_5": {
+      "malformed proof block": 0,
+      "missing case split": 8,
+      "missing implication chain composition": 26,
+      "missing nested conjunction projection": 30,
+      "other": 0,
+      "wrong equality direction": 22,
+      "wrong iff direction": 4,
+      "wrong witness": 0
+    },
+    "examples": {
+      "missing case split": [
+        {
+          "family": "or_elim",
+          "goal": "z",
+          "theorem_name": "or_elim_xyz",
+          "top1": "exact h.1 hp"
+        },
+        {
+          "family": "or_elim",
+          "goal": "z",
+          "theorem_name": "or_elim_xyz",
+          "top1": "exact h.1 hp"
+        },
+        {
+          "family": "or_elim",
+          "goal": "z",
+          "theorem_name": "or_elim_xyz",
+          "top1": "exact h.1 hp"
+        }
+      ],
+      "missing implication chain composition": [
+        {
+          "family": "imp_chain3",
+          "goal": "p → s",
+          "theorem_name": "imp_chain3_pqrs",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "imp_chain3",
+          "goal": "p → s",
+          "theorem_name": "imp_chain3_pqrs",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "imp_chain3",
+          "goal": "a → d",
+          "theorem_name": "imp_chain3_abcd",
+          "top1": "exact fun hp => h2 (h1 hp)"
+        }
+      ],
+      "missing nested conjunction projection": [
+        {
+          "family": "nested_and_elim_r",
+          "goal": "r",
+          "theorem_name": "nested_and_r_last_pqr",
+          "top1": "exact h.r"
+        },
+        {
+          "family": "nested_and_elim_r",
+          "goal": "r",
+          "theorem_name": "nested_and_r_last_pqr",
+          "top1": "exact h.r"
+        },
+        {
+          "family": "nested_and_elim_r",
+          "goal": "c",
+          "theorem_name": "nested_and_r_last_abc",
+          "top1": "exact h.right"
+        }
+      ],
+      "wrong equality direction": [
+        {
+          "family": "eq_chain3",
+          "goal": "a = d",
+          "theorem_name": "eq_chain3_nat",
+          "top1": "exact ⟨h1, h2⟩"
+        },
+        {
+          "family": "eq_chain3",
+          "goal": "a = d",
+          "theorem_name": "eq_chain3_nat",
+          "top1": "exact ⟨h1, h2⟩"
+        },
+        {
+          "family": "eq_chain3",
+          "goal": "a = d",
+          "theorem_name": "eq_chain3_nat",
+          "top1": "exact ⟨h1, h2⟩"
+        }
+      ],
+      "wrong iff direction": [
+        {
+          "family": "iff_chain",
+          "goal": "p → r",
+          "theorem_name": "iff_chain_pqr",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "iff_chain",
+          "goal": "p → r",
+          "theorem_name": "iff_chain_pqr",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "iff_chain",
+          "goal": "p → s",
+          "theorem_name": "iff_chain_pqs",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        }
+      ]
+    },
+    "n_rows": 96,
+    "n_unsolved_at_5": 90,
+    "pass_at_1": 0.041666666666666664,
+    "pass_at_5": 0.0625
+  },
+  "v2 (combined-corpus training)": {
+    "category_counts_unsolved_at_5": {
+      "malformed proof block": 2,
+      "missing case split": 6,
+      "missing implication chain composition": 24,
+      "missing nested conjunction projection": 30,
+      "other": 0,
+      "wrong equality direction": 22,
+      "wrong iff direction": 4,
+      "wrong witness": 2
+    },
+    "examples": {
+      "malformed proof block": [
+        {
+          "family": "imp_chain_mixed",
+          "goal": "e",
+          "theorem_name": "imp_chain_mixed_abef",
+          "top1": "decintradiction"
+        },
+        {
+          "family": "imp_chain_mixed",
+          "goal": "e",
+          "theorem_name": "imp_chain_mixed_abef",
+          "top1": "decintradiction"
+        }
+      ],
+      "missing case split": [
+        {
+          "family": "or_elim",
+          "goal": "z",
+          "theorem_name": "or_elim_xyz",
+          "top1": "exact h.1 hp"
+        },
+        {
+          "family": "or_elim",
+          "goal": "z",
+          "theorem_name": "or_elim_xyz",
+          "top1": "exact h.1 hp"
+        },
+        {
+          "family": "or_elim",
+          "goal": "z",
+          "theorem_name": "or_elim_xyz",
+          "top1": "exact h.1 hp"
+        }
+      ],
+      "missing implication chain composition": [
+        {
+          "family": "imp_chain3",
+          "goal": "p → s",
+          "theorem_name": "imp_chain3_pqrs",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "imp_chain3",
+          "goal": "p → s",
+          "theorem_name": "imp_chain3_pqrs",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "imp_chain3",
+          "goal": "a → d",
+          "theorem_name": "imp_chain3_abcd",
+          "top1": "exact fun hp => h2 (h1 hp)"
+        }
+      ],
+      "missing nested conjunction projection": [
+        {
+          "family": "nested_and_elim_r",
+          "goal": "r",
+          "theorem_name": "nested_and_r_last_pqr",
+          "top1": "exact fun h. exact h"
+        },
+        {
+          "family": "nested_and_elim_r",
+          "goal": "r",
+          "theorem_name": "nested_and_r_last_pqr",
+          "top1": "exact fun h. exact h"
+        },
+        {
+          "family": "nested_and_elim_r",
+          "goal": "c",
+          "theorem_name": "nested_and_r_last_abc",
+          "top1": "exact h.2"
+        }
+      ],
+      "wrong equality direction": [
+        {
+          "family": "eq_chain3",
+          "goal": "a = d",
+          "theorem_name": "eq_chain3_nat",
+          "top1": "exact Iff.intro h1 h2"
+        },
+        {
+          "family": "eq_chain3",
+          "goal": "a = d",
+          "theorem_name": "eq_chain3_nat",
+          "top1": "exact Iff.intro h1 h2"
+        },
+        {
+          "family": "eq_chain3",
+          "goal": "a = d",
+          "theorem_name": "eq_chain3_nat",
+          "top1": "exact Iff.intro h1 h2"
+        }
+      ],
+      "wrong iff direction": [
+        {
+          "family": "iff_chain",
+          "goal": "p → r",
+          "theorem_name": "iff_chain_pqr",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "iff_chain",
+          "goal": "p → r",
+          "theorem_name": "iff_chain_pqr",
+          "top1": "intro hp\\n  exact h2 (h1 hp)"
+        },
+        {
+          "family": "iff_chain",
+          "goal": "p → s",
+          "theorem_name": "iff_chain_pqs",
+          "top1": "exact fun hp => h2 (h1 hp)"
+        }
+      ],
+      "wrong witness": [
+        {
+          "family": "exists_witness",
+          "goal": "∃ n : Nat, n = m",
+          "theorem_name": "exists_hyp_copy_12",
+          "top1": "exact ⟨12, rfl⟩"
+        },
+        {
+          "family": "exists_witness",
+          "goal": "∃ n : Nat, n = m",
+          "theorem_name": "exists_hyp_copy_12",
+          "top1": "exact ⟨12, rfl⟩"
+        }
+      ]
+    },
+    "n_rows": 96,
+    "n_unsolved_at_5": 90,
+    "pass_at_1": 0.0625,
+    "pass_at_5": 0.0625
+  }
+}

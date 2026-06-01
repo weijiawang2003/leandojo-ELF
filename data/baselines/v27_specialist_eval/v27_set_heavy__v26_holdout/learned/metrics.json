@@ -1,0 +1,63 @@
+{
+  "model": "v27_set_heavy",
+  "benchmark": "v26_holdout",
+  "config": "learned",
+  "n_test_theorems": 22,
+  "pass@1": 0.8636363636363636,
+  "pass@5": 0.9545454545454546,
+  "pass@10": 0.9545454545454546,
+  "MRR": 0.9090909090909091,
+  "n_no_candidate_verified": 1,
+  "no_verify_reason": {
+    "v26_fun_comp_assoc2": "type_mismatch"
+  },
+  "failure_taxonomy": {
+    "other": 62,
+    "unknown_identifier": 27,
+    "shape_miss": 4,
+    "parse_error": 31,
+    "type_mismatch": 43,
+    "unknown_tactic": 4
+  },
+  "per_category": {
+    "bool_option": {
+      "n": 3,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 4,
+      "pass@1": 0.75,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 6,
+      "pass@1": 0.8333333333333334,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

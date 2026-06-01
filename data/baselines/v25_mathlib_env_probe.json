@@ -1,0 +1,85 @@
+{
+  "paths": {
+    "lean_version": {
+      "cmd": "/home/wangw/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean --version",
+      "cwd": null,
+      "returncode": 0,
+      "stdout_tail": "Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+      "stderr_tail": "",
+      "ok": true,
+      "elapsed_s": 0.03
+    },
+    "lake_version": {
+      "cmd": "lake --version",
+      "cwd": null,
+      "returncode": 0,
+      "stdout_tail": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)",
+      "stderr_tail": "",
+      "ok": true,
+      "elapsed_s": 0.29
+    },
+    "A_repo": {
+      "project": "/home/wangw/code/ELFMath/examples/leandojo_mini_repo",
+      "lake_env_version": {
+        "cmd": "lake env lean --version",
+        "cwd": "/home/wangw/code/ELFMath/examples/leandojo_mini_repo",
+        "returncode": 0,
+        "stdout_tail": "Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+        "stderr_tail": "",
+        "ok": true,
+        "elapsed_s": 0.44
+      },
+      "import_mathlib": {
+        "cmd": "lake env lean _v25_probe_repo_mathlib.lean",
+        "cwd": "/home/wangw/code/ELFMath/examples/leandojo_mini_repo",
+        "returncode": 1,
+        "stdout_tail": "_v25_probe_repo_mathlib.lean:1:0: error: unknown module prefix 'Mathlib'\n\nNo directory 'Mathlib' or file 'Mathlib.olean' in the search path entries:\n/home/wangw/code/ELFMath/examples/leandojo_mini_repo/.lake/build/lib/lean\n/home/wangw/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean\n/home/wangw/.elan/toolchains/leanprover--lean4---v4.30.0/lib/lean",
+        "stderr_tail": "",
+        "ok": false,
+        "elapsed_s": 0.43,
+        "snippet": "import Mathlib\n#check Nat\n"
+      },
+      "mathlib_importable": false
+    },
+    "B_scratch": {
+      "scratch_dir": "/home/wangw/code/mini_elf_mathlib_probe",
+      "exists": true,
+      "mathlib_package_cloned": true,
+      "manifest_present": true,
+      "lake_env_version": {
+        "cmd": "lake env lean --version",
+        "cwd": "/home/wangw/code/mini_elf_mathlib_probe",
+        "returncode": 0,
+        "stdout_tail": "Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+        "stderr_tail": "",
+        "ok": true,
+        "elapsed_s": 0.73
+      },
+      "import_mathlib": {
+        "cmd": "lake env lean _v25_probe_scratch_mathlib.lean",
+        "cwd": "/home/wangw/code/mini_elf_mathlib_probe",
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "ok": true,
+        "elapsed_s": 5.54,
+        "snippet": "import Mathlib\nexample (n : Nat) : n + 0 = n := by simp\n"
+      },
+      "mathlib_importable": true,
+      "import_mathlib_logic": {
+        "cmd": "lake env lean _v25_probe_scratch_logic.lean",
+        "cwd": "/home/wangw/code/mini_elf_mathlib_probe",
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "ok": true,
+        "elapsed_s": 1.25,
+        "snippet": "import Mathlib.Logic.Basic\nexample (p : Prop) (h : p) : p := h\n"
+      }
+    }
+  },
+  "mathlib_available": true,
+  "pinned_lean": "/home/wangw/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+  "mathlib_url": "https://github.com/leanprover-community/mathlib4",
+  "mathlib_rev": "v4.30.0"
+}

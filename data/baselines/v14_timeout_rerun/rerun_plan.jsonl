@@ -1,0 +1,17 @@
+{"family": "forall_inst", "theorem_name": "forall_inst_7_0", "rank_in_cfg": 0, "candidate": "exact h 5", "config_seen": "raw"}
+{"family": "forall_inst", "theorem_name": "forall_inst_5_2", "rank_in_cfg": 1, "candidate": "exact h 4", "config_seen": "raw"}
+{"family": "forall_inst", "theorem_name": "forall_inst_5_2", "rank_in_cfg": 6, "candidate": "rcases h with ⟨n, ", "config_seen": "raw"}
+{"family": "forall_inst", "theorem_name": "forall_inst_13_6", "rank_in_cfg": 9, "candidate": "exact h ⟨4, ", "config_seen": "raw"}
+{"family": "forall_inst", "theorem_name": "forall_inst_3_0", "rank_in_cfg": 0, "candidate": "exact h 3", "config_seen": "literal_adapt_rerank"}
+{"family": "forall_inst", "theorem_name": "forall_inst_var_k", "rank_in_cfg": 0, "candidate": "exact h 8", "config_seen": "literal_adapt_rerank"}
+{"family": "exists_reconstruct", "theorem_name": "exists_reconstruct_20", "rank_in_cfg": 0, "candidate": "cases h with | intro n hn => exact ⟨n, hn⟩", "config_seen": "raw"}
+{"family": "exists_reconstruct", "theorem_name": "exists_reconstruct_20", "rank_in_cfg": 6, "candidate": "exact h ⟨n, hn⟩", "config_seen": "raw"}
+{"family": "exists_reconstruct", "theorem_name": "exists_reconstruct_100", "rank_in_cfg": 1, "candidate": "rcases h with | intro n hn => exact ⟨n, hn⟩", "config_seen": "raw"}
+{"family": "exists_reconstruct", "theorem_name": "exists_reconstruct_100", "rank_in_cfg": 2, "candidate": "cases h with | intro hn => exact ⟨n, hn⟩", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_pq", "rank_in_cfg": 2, "candidate": "exact fun hp => hnq (h1 ", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_pq", "rank_in_cfg": 6, "candidate": "intro hp\n  exact (h hp)", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_pq", "rank_in_cfg": 8, "candidate": "exact fun hp => hnp hp", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_ab", "rank_in_cfg": 3, "candidate": "exact fun hp => hnq (h ", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_xy", "rank_in_cfg": 2, "candidate": "intro hp\n  exact h2 (h1 hp)", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_xy", "rank_in_cfg": 4, "candidate": "intro hp\n  exact absurd hp hnp", "config_seen": "raw"}
+{"family": "neg_imp_exfalso", "theorem_name": "neg_imp_exfalso_ps", "rank_in_cfg": 9, "candidate": "exact fun hp => hnp hp)", "config_seen": "raw"}

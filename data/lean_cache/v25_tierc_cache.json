@@ -1,0 +1,2342 @@
+{
+  "005e8dbbae586a75cd5bf51165530c5605bef2ed505a35390a49f1fe4b265f21": {
+    "elapsed_ms": 5102.638147000107,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_au3qb2lo.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_au3qb2lo.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `\u2200 \u2983a : \u03b1\u2984, a \u2208 s \u2229 t \u2192 a \u2208 s` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "01413f8b3bd3d081f558e261cf86cd3eeaa3eb1cfddc69774de42f9da43449b0": {
+    "elapsed_ms": 4932.816681999611,
+    "error": null,
+    "success": true
+  },
+  "01835147451b715436e34f6b1a40d372ae2c4329efc274b5835a995877ff9fec": {
+    "elapsed_ms": 5123.657677000665,
+    "error": null,
+    "success": true
+  },
+  "01c2f7838889701d32db929e3991c47d17323528400f147e389ae519ffb06774": {
+    "elapsed_ms": 5045.444789000612,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6tx_zzqf.lean:4:10: error: Invalid field notation: Identifier or numeral expected\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6tx_zzqf.lean:3:27: error: unsolved goals\n\u22a2 true = true",
+    "success": false
+  },
+  "02ac2a918d5dc3d44dacf3a2713e55df164c59caad3ae49f09c570300f7f2407": {
+    "elapsed_ms": 5126.738663000651,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5m4nv68k.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "037ac3eb950fb80feec08d6f8ea1aba0993e1cd577d7e54fd57af7fc61fc00e1": {
+    "elapsed_ms": 5000.212258000829,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fsiak9sg.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Or.refl`",
+    "success": false
+  },
+  "03d33ed4152f44b445d97fc2035656b34a2c1b7bfe0aee9b7160805a5774eded": {
+    "elapsed_ms": 5155.736618999072,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_odn8kaob.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `\u00abusing\u00bb.heq`",
+    "success": false
+  },
+  "04d1474fec966e3faa23227444e93a9f691d284c689a0fb23cdfb960c3f4eac3": {
+    "elapsed_ms": 5038.9701330004755,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d01uzssq.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d01uzssq.lean:4:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "05c5afdd00fce8d043b7e73ccdc5fd429bc9ec44d2e1f5cfa2696a6ce55cfcce": {
+    "elapsed_ms": 4874.664421999114,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4nkynihp.lean:4:22: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "05e275e529d90ba8cc9a1cd37c6a03b37b413155612744454b241cfe11291b6f": {
+    "elapsed_ms": 5336.248085999614,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ufuvmi1x.lean:4:2: error: Type mismatch\n  Eq.refl ?m.5\nhas type\n  ?m.5 = ?m.5\nbut is expected to have type\n  s \u2286 s",
+    "success": false
+  },
+  "065020fa7254ea01faf2305fe501e5cf3b8cddaab5cd332a4ea89fe6c2bb49ee": {
+    "elapsed_ms": 5059.023082998465,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xtygik7k.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xtygik7k.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `\u2200 \u2983a : \u03b1\u2984, a \u2208 s \u2229 t \u2192 a \u2208 s` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "06580107ec02e17a68d1320458c56e9042f1d3ad32a47abb4903141d4a922217": {
+    "elapsed_ms": 4867.753742999412,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_48kfwwx0.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "0848bd15bbf3f38ee5d0981f1f8c7a37324c73e00aaf989a31c17c6aeb139c46": {
+    "elapsed_ms": 5120.474579000074,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1e7tqezf.lean:4:2: error: Type mismatch\n  List\nhas type\n  Type ?u.93 \u2192 Type ?u.93\nof sort `Type (?u.93 + 1)` but is expected to have type\n  [] ++ xs = xs\nof sort `Prop`",
+    "success": false
+  },
+  "08c32092e6a27068b53b058c24534a288f5cbde51b8c92b77aa572830dd44c62": {
+    "elapsed_ms": 5341.509965999649,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_f_m8erhg.lean:5:2: error: Invalid alternative name `intro`: Expected `inl`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_f_m8erhg.lean:4:2: error: Alternative `inl` has not been provided",
+    "success": false
+  },
+  "092ca43ff2c6651c6c152a28334d31adf26128a438bf7c0621fd4fe3e9adaf83": {
+    "elapsed_ms": 5092.183540999031,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_t4lgjr5v.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.10 = ?m.10\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "09a1dc044f69f2ba2840cd003d681d8f16ac8fc6ca7038b46753e674ee71e1fd": {
+    "elapsed_ms": 5108.4952849996625,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yhpz39o_.lean:5:2: error: Type mismatch\n  id\nhas type\n  ?m.4 \u2192 ?m.4\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "09ba2757f77751c717f09d75bfe8cdac3b32e7314c6d1ebf35e9e113e68b729c": {
+    "elapsed_ms": 4868.44851999922,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qa7z78s2.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `l`",
+    "success": false
+  },
+  "09c7fcf343d887bf07c4013ce2696f4696d51c7b3908aff68f2110fc72c4e669": {
+    "elapsed_ms": 4898.150711998824,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9rdutdzl.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `ys`",
+    "success": false
+  },
+  "09f3d46541af71ec44312452ae71c74468f24509d96c6776fe4798614462bd63": {
+    "elapsed_ms": 4880.978721001156,
+    "error": null,
+    "success": true
+  },
+  "0af9dcccd752b186732c0a84b596fade5d0e48b074554d7de9cfa9b67e4a54aa": {
+    "elapsed_ms": 5168.756753999332,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_nl8_kfg3.lean:4:21: error: Application type mismatch: The argument\n  h\nhas type\n  a = b\nof sort `Prop` but is expected to have type\n  \u2115\nof sort `Type` in the application\n  Nat.add_comm h",
+    "success": false
+  },
+  "0b2c0b4e6b01126a4cb4567c94b96b0a1db4b3252d45014516b2c8813e4ccc1f": {
+    "elapsed_ms": 4889.947018000385,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_t7qnuszw.lean:4:13: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "0b7241e037bb11c9a81df64342408e108cbe030dbe0452e76b0772be960f82c0": {
+    "elapsed_ms": 5117.959191999034,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wl5c6j2l.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wl5c6j2l.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "0c8d575539cceb08f507d837a96285f44ea4c280900f3028b9f1f617bc882433": {
+    "elapsed_ms": 5078.18384300117,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ccsdd9ay.lean:6:27: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "0d0c7c27afe7a7ebe4b21c3891aa673649d50780d948bd69195fa5ddd50a849c": {
+    "elapsed_ms": 5208.867078999901,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7qqn067z.lean:4:23: error: unexpected token 'at'; expected '*', '|', '\u22a2' or term",
+    "success": false
+  },
+  "0d12112355949aeeb43c502255fb93021be1f397805c90fa24a21b7dae332f20": {
+    "elapsed_ms": 5147.4510339994595,
+    "error": null,
+    "success": true
+  },
+  "0d9a9ed3033146cd6534ffcb52e18d4aeef54bb58d674749319dd56532970c55": {
+    "elapsed_ms": 5077.875867998955,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n_ub61xv.lean:4:2: error: Type mismatch\n  Set \u2191s\nhas type\n  Type\nof sort `Type 1` but is expected to have type\n  \u2205 \u2286 s\nof sort `Prop`",
+    "success": false
+  },
+  "0e3823f6ef3359a67f68e082d887f569a657dc0984a078c8bcf91982b31c11c2": {
+    "elapsed_ms": 5160.817440999381,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_kol04kur.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_kol04kur.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "0e9740975673ceb290995a3528d1fdb60803f1f8c5e8c1e8352b3b49586cf169": {
+    "elapsed_ms": 5407.792670999697,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_k47fcrsk.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hAll`",
+    "success": false
+  },
+  "0eaaaa6b3688deec1b742236e7e72265a48aa9023a5bd3298f25c4dab2fe7786": {
+    "elapsed_ms": 5110.4684740002995,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_feicqfhg.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_feicqfhg.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `\u2200 \u2983a : \u03b1\u2984, a \u2208 s \u2229 t \u2192 a \u2208 s` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "1085d4570446f8ca0900708e1d69c2c33baef4645b660b44b9208fa96a713183": {
+    "elapsed_ms": 5080.695295999249,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_jd_nmhg6.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "10ba238c06d296d29a015c4b680d8c44f801ddb5a052e3e73c5f9cf5cfcd1318": {
+    "elapsed_ms": 5096.129235000262,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xeodndo8.lean:4:21: error: Application type mismatch: The argument\n  h\nhas type\n  a = b\nof sort `Prop` but is expected to have type\n  \u2115\nof sort `Type` in the application\n  Nat.zero_add h",
+    "success": false
+  },
+  "11beb3432d80e1bdd74cd7c7fe2c3427c6c7501d02d22c922e486580045f368d": {
+    "elapsed_ms": 5091.737584998555,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_y6tdlc4n.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "12913d005880542777ea0e6658a5c9413e4c00f6e9e4a45f1cd8d715c757e1c0": {
+    "elapsed_ms": 5252.824041999702,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_goo0vg2i.lean:5:2: error: Invalid alternative name `inl`: Expected `intro`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_goo0vg2i.lean:4:2: error: Alternative `intro` has not been provided",
+    "success": false
+  },
+  "12cdf3f94fd60e39a62d3312d53e9fbd78a50dac23e286cc4867d2422fdbe593": {
+    "elapsed_ms": 4973.317410000163,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_iufs88ep.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "1322e0f09818f136b0f0ccfeefff6337fe4d841d7dc7b3d78fcdfe14a8943532": {
+    "elapsed_ms": 5351.498531999823,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3bd8_3u2.lean:4:12: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "132401d1090e5330c76949dc01692e62ecdb04ffa7e2e9e3a2f940e4f3cf5356": {
+    "elapsed_ms": 5067.08031999915,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d1sp1j02.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "14190924702f412dd768b412a60d0a9e89e8ac58a3e7fa7b8553b552ccff43a3": {
+    "elapsed_ms": 5096.359733999634,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u6902q94.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u6902q94.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.trans`",
+    "success": false
+  },
+  "1502763c5f9dac6315dcea976ec31d4297c0880cd2cfef847cfea553432c428a": {
+    "elapsed_ms": 5014.433272999668,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hw9ogxfc.lean:4:2: error: Type mismatch\n  Eq.trans\nhas type\n  ?m.6 = ?m.7 \u2192 ?m.7 = ?m.8 \u2192 ?m.6 = ?m.8\nbut is expected to have type\n  (some a).isSome = true",
+    "success": false
+  },
+  "15c94f437704181d7a7d0d3a5da9f9108930edf4e4db5d011a7050a7adaa71db": {
+    "elapsed_ms": 5138.72056999935,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0bx7mob6.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "168f6d204146934d94c5f374fcc43088cae4a51c76a76736d0f30bd878782bbe": {
+    "elapsed_ms": 4856.488831999741,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7n463g6t.lean:4:8: error: Invalid projection: Projections cannot be used on functions, and\n  id\nhas function type `?m.2 \u2192 ?m.2`",
+    "success": false
+  },
+  "16fb1f03c896209d5904f45923002a5a5ed7fa754fa42b9bc8f77a5bf9c8c639": {
+    "elapsed_ms": 5146.899919000134,
+    "error": null,
+    "success": true
+  },
+  "175b1bdc270e60fa6caa567e7ab6a282a31c42a07519315d6bf6a6250d0cc337": {
+    "elapsed_ms": 5151.872675998675,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_paoob9k4.lean:4:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "17df89bd36fa67064db952ba136caa07b7d6cd4a19f1a6bc7be39e22f2a6fae7": {
+    "elapsed_ms": 5238.677559998905,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3h3u625c.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.refl`",
+    "success": false
+  },
+  "18944efebcc639b00da026670714777b022646af6861e6ffd026c6a22edae742": {
+    "elapsed_ms": 5026.0717070013925,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_np76l8n5.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h1`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_np76l8n5.lean:4:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "18a95b28ac29dc1758e9f80c6f0639d75d4982da663de80dd6f27509f38ec2a0": {
+    "elapsed_ms": 5068.589345000873,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_l6ft25hu.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_l6ft25hu.lean:4:11: error: unexpected token '\u27e9'; expected command",
+    "success": false
+  },
+  "18ea97d072f77a6a465fa24f50229671b9e5ffdff00623ee0ec3fb9adf6b6e94": {
+    "elapsed_ms": 5079.1394540010515,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vbz6w5f0.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "1915206d7a13817c98150afe40289d87d21672b78089ad8582a3a556faf99302": {
+    "elapsed_ms": 5094.853659000364,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_g0vtrt5q.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.intro`",
+    "success": false
+  },
+  "1a80d3af9edcbd56c90961e15539a116349d6c801f7c08df1894d5f600f4e416": {
+    "elapsed_ms": 5297.036058000231,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_a3btlblc.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "1a8619132648e5c35841942f529cda11567cb0ddfd60634c6d4da91ad3405ba9": {
+    "elapsed_ms": 5077.910354000778,
+    "error": null,
+    "success": true
+  },
+  "1a943e1c10e8caf4284b7337f589fe981c3516402845b0c673daf01fdbe19252": {
+    "elapsed_ms": 4972.609714999635,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_v4oh3rhb.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "1b507a9ce81b8f673b65ac2759a27bd3d4569b4b98edd67c4ca35a9c768a4f3f": {
+    "elapsed_ms": 5200.701799001763,
+    "error": null,
+    "success": true
+  },
+  "1bb2deb6528c0da754fe6f8e4649d5cba84a1d1f419882b34c5add61af01ce85": {
+    "elapsed_ms": 4987.486775000434,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_twq94vx5.lean:4:13: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.10 = ?m.10\nof sort `Prop` but is expected to have type\n  Type ?u.102\nof sort `Type (?u.102 + 1)` in the application\n  List \u22ef",
+    "success": false
+  },
+  "1bdc2280d5acafc55e534bf75e81f8f5a6230093a40ce08b326d390166cd1205": {
+    "elapsed_ms": 4952.415292998921,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1gdlo3g5.lean:4:2: error: Type mismatch\n  Nat.mul_zero\nhas type\n  \u2200 (n : \u2115), n * 0 = 0\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "1c155111f1980babb37f376248cd874bee56d5a6532d5def8d0f1d828e5620c1": {
+    "elapsed_ms": 5056.351704000917,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tn5faa31.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "1ecd59129c6080d2eaae46e0b7628f18c976d14e73d18aed5f9bb1783e519ead": {
+    "elapsed_ms": 4930.032798998582,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qwuye55q.lean:4:2: error: Type mismatch\n  Eq.refl a\nhas type\n  a = a\nbut is expected to have type\n  a \u2208 Set.univ",
+    "success": false
+  },
+  "1fc3839d9b34af1e17a8a216f6fdf526a8f86e899118de31d33e6e3836ebd1dd": {
+    "elapsed_ms": 5144.048699999985,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7faywczx.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "1ffc448558927061db0c44f57c42554843fbc2fabf8fe51308c1bab588a77381": {
+    "elapsed_ms": 5103.751552000176,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_h5puh2pe.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `simpa`",
+    "success": false
+  },
+  "20709dabd0d69d86f7b0947919e923cf3af71be38aba278888234c11f1fa66c0": {
+    "elapsed_ms": 5138.29074000023,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__mtla__g.lean:4:2: error: Type mismatch\n  id\nhas type\n  ?m.6 \u2192 ?m.6\nbut is expected to have type\n  s \u2229 t \u2286 s",
+    "success": false
+  },
+  "20809e8fc55de828cc1b234284689957204d968630cada38dde47e63fd57a5b9": {
+    "elapsed_ms": 4867.025389999981,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_92l6l01w.lean:6:0: error: unexpected end of input",
+    "success": false
+  },
+  "20e1d1c0aea810bf3f0019aecb49757197ffe7ca6a8150120ddfc43fff8e3a62": {
+    "elapsed_ms": 5255.799198999739,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fenuzbbi.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.a`",
+    "success": false
+  },
+  "212948d0c155fd4aed49199f3cdf61cb9b2dd5711e3f3f838d97dd6118624442": {
+    "elapsed_ms": 4960.875005001071,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_agojr6xq.lean:4:2: error: Type mismatch\n  Nat.add_comm 1 n\nhas type\n  1 + n = n + 1\nbut is expected to have type\n  n.succ = n + 1",
+    "success": false
+  },
+  "21345e83340b1b6e8ccb807e54dbe9a91964bcea2377a63edb0437d2c587f047": {
+    "elapsed_ms": 4843.322389000605,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_x4ejfe1y.lean:4:2: error: Type mismatch\n  List.nil_append xs\nhas type\n  [] ++ xs = xs\nbut is expected to have type\n  List.map id xs = xs",
+    "success": false
+  },
+  "218e3bb09dd4b450941c02878c57c7faf2210fba66a2f610ce3373598098822c": {
+    "elapsed_ms": 5256.675107000774,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n0kr80jc.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hh`",
+    "success": false
+  },
+  "227796f60c5f1cd1d23e76c3bec3be4bf51cb3dcfccc0092e67f683ce361334a": {
+    "elapsed_ms": 4867.345747999934,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_iq0vcxo1.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Bool.Bool`",
+    "success": false
+  },
+  "22c580a87cbd777c4008f3259d1447fe6fba94a84b66aaffed79014812305ef0": {
+    "elapsed_ms": 5151.09810300055,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ixk9e5xz.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ixk9e5xz.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "2341c7f9f120ab8aeb40f6ad9d7acaa1200c7c39be185ab0f797407b01c96ed4": {
+    "elapsed_ms": 5075.7744279999315,
+    "error": null,
+    "success": true
+  },
+  "234d2dc31e407a6cea5886f658d6497155de3c2b573b3edb44d52e4da20947c3": {
+    "elapsed_ms": 4936.443577000318,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_eifv4ocu.lean:4:2: error: Type mismatch\n  Nat.le_refl\nhas type\n  \u2200 (n : \u2115), n \u2264 n\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "23a5e4a838c0e65b6d65346e60c9f646dc225301909c9eed46650c8cf32ee507": {
+    "elapsed_ms": 5261.219058000279,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_92otvvoz.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_92otvvoz.lean:4:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "2401d5f162178c4c3ebf65ad8b934b8e9f4e49b55239168d6e1df89ab19058ef": {
+    "elapsed_ms": 5096.754886999406,
+    "error": null,
+    "success": true
+  },
+  "241f7f440ab12219fc9eb324a9616f3a22ec72abebeec26caae97e13045cb1ed": {
+    "elapsed_ms": 5028.912923999087,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__la597sy.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `vs`",
+    "success": false
+  },
+  "24783bf0cf0a6cdd87d26d3164d3f5d158d84058a6c034ee9d0c5efa883d0929": {
+    "elapsed_ms": 5342.084341998998,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_70to7ys9.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `l`",
+    "success": false
+  },
+  "247a2df8206bf74ccf16d72c704ff4217dab6dcb9c39feecebcf18c9f48164be": {
+    "elapsed_ms": 5080.654204999519,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yz3f0_6n.lean:4:18: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "25f203f8c69679bbcd2b498b7e7321a5828c1691b3e30e1a93aedcfcbc3e4b04": {
+    "elapsed_ms": 4959.605927000666,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sg15gvtc.lean:4:2: error: Type mismatch\n  List.nil_append xs\nhas type\n  [] ++ xs = xs\nbut is expected to have type\n  xs ++ [] = xs",
+    "success": false
+  },
+  "265bfcca17646f67406b6286ba885d4b159afb3c5151b3c4fd6261a795a7b88c": {
+    "elapsed_ms": 4959.132679001414,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n6jun38_.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n6jun38_.lean:4:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "2674d127065fff98793e509c8043ae7949734ec03d25f3783f083cfd2da6dc0c": {
+    "elapsed_ms": 4959.357436999198,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2wgrzttp.lean:4:2: error: Type mismatch\n  Nat.le_refl\nhas type\n  \u2200 (n : \u2115), n \u2264 n\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "28e29f2c80bb138e9c2e3c6d0f833627a618110f2d53dd02909ef443615ddf08": {
+    "elapsed_ms": 4896.6670089994295,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_bmhbxqnn.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_bmhbxqnn.lean:4:13: error(lean.unknownIdentifier): Unknown identifier `fab`",
+    "success": false
+  },
+  "293416bc5eb6704eb8ef06944826e434bb4ae9c5590aba0ad8939a8e735706f4": {
+    "elapsed_ms": 5146.261885000058,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mw1gw9by.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mw1gw9by.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "2b45f5a40dcb12f3219b01388d606e6e306af8ff3ab3534a886f025cff787d88": {
+    "elapsed_ms": 4952.1285019982315,
+    "error": null,
+    "success": true
+  },
+  "2b8921bb10dceab0ae04f4b84efe9c4a975581a633d91090fd30eec4f5df7a5c": {
+    "elapsed_ms": 5127.216675000454,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fi6u4egh.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.a`",
+    "success": false
+  },
+  "2dd77186aba79f87ea234a68dab3195e2fcc3af248c1ecc49f55db0c849b5d6c": {
+    "elapsed_ms": 5120.221674000277,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rzok6igd.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "2de7d9c121e009d8c9298afccd780fefffacd9d189e7d19a621a3bd8b631aa09": {
+    "elapsed_ms": 5144.625896000434,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_384tifxs.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `f`",
+    "success": false
+  },
+  "2e7cb0b5adb57e74c9ca2285c45c083af570b408c29405eac2f1382fad02cbd5": {
+    "elapsed_ms": 5169.3292380005005,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9vrxfw30.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hqr`",
+    "success": false
+  },
+  "2f767d7e205fd09a801ca37204d0644b2bf97221f036327f699f33ca88cc9224": {
+    "elapsed_ms": 4906.518317000518,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_g7jgg8rl.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "2fc4ab05037b4c42deecb3d4ecb18930572ec2f3ed94c18a8446c50e25e4ce92": {
+    "elapsed_ms": 5075.382364999314,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ptafuanp.lean:4:13: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "2fcd741c7dcde843e06c62db4616bafb6cf317e3da1131169e235b7429add973": {
+    "elapsed_ms": 5174.834125000416,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gmnunwyb.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "3065e108837fe1dc0fa62b1094efaf07f9009cf2548dcd8406a70b36ba9b50d5": {
+    "elapsed_ms": 5038.29498199957,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vbc5iq9g.lean:4:2: error: Type mismatch\n  Nat.add_comm 1 1\nhas type\n  1 + 1 = 1 + 1\nbut is expected to have type\n  n.succ = n + 1",
+    "success": false
+  },
+  "311b0a1ab2507d6316c1174fa7a0532d6e8c99fb53c1990e6a139ee31054f7df": {
+    "elapsed_ms": 4966.407624000567,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yy7c_qmu.lean:4:28: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "3131db56ce8ecf1a5cac2f13a7486f786a09cd3d253f7226b89e3f7db4f93820": {
+    "elapsed_ms": 5075.30946100087,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_bkge8hpm.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.intro`",
+    "success": false
+  },
+  "3209d39036fac0d2476f2846cec04d24cf1db5be9f430645cd59fb1bfd686a3b": {
+    "elapsed_ms": 4878.642943000159,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_50nf5i82.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h1.trans`",
+    "success": false
+  },
+  "32348fe3307a889f461c83d6f8558625c70686f71e681f3fb8bf5b28acc87e1f": {
+    "elapsed_ms": 5083.346768999036,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_nh71_k9o.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_nh71_k9o.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "32710cd19c0faca809c17c19fc7599808a856fc46c45fd5407d60974dcdac97e": {
+    "elapsed_ms": 5191.256935999263,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5e635fjd.lean:4:2: error: Type mismatch\n  Eq.trans rfl\nhas type\n  ?m.11 = ?m.9 \u2192 ?m.11 = ?m.9\nbut is expected to have type\n  List.map id xs = xs",
+    "success": false
+  },
+  "329d3a85b51db2d11f6143dcb556ad581dad77379a906b3d2430c493f23415b8": {
+    "elapsed_ms": 5150.261049000619,
+    "error": null,
+    "success": true
+  },
+  "33cbadd99b5f626d02b837175c041dfddc7f12fa0f5ee6b556e9ecf652ed913c": {
+    "elapsed_ms": 5148.114231000363,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ikisw437.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `f`",
+    "success": false
+  },
+  "33ceeedae09998587804a66b8e33b5b596595abda3b93b86d08119360da56391": {
+    "elapsed_ms": 5049.072296998929,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_feyry6_8.lean:4:3: error: unknown tactic\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_feyry6_8.lean:3:51: error: unsolved goals\np q : Prop\nhpq : p \u2192 q\nhp : p\n\u22a2 q",
+    "success": false
+  },
+  "341736ba8124e3db4e208abf1e685c423a3861dd66dbc3e3147fb3f7cf92c59b": {
+    "elapsed_ms": 5131.619120000323,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_e0ur8_tu.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.zero_add`",
+    "success": false
+  },
+  "347c80b1c4a5f4dd62a62f6ac9f7a6ad19d2ee78e4dd3fac30565bb62bb2adfe": {
+    "elapsed_ms": 5207.742890999725,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tt0tm7zh.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.15 = ?m.15\nbut is expected to have type\n  (xs ++ ys).length = xs.length + ys.length",
+    "success": false
+  },
+  "34b3e65602134b7df09894105922f61aeb4a87408893a7d9c554dfb7ac05dcb8": {
+    "elapsed_ms": 5409.537751000244,
+    "error": null,
+    "success": true
+  },
+  "356e49971452f60f17f87f4d10abaa7bd2cd94e0e3f620bd1547b8d83163eb0a": {
+    "elapsed_ms": 4947.082172999217,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s0vyz_8d.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "35d1d9515c375bafa2a236313bd05452bf0942928b1ba0ef8dffcf5a924263d0": {
+    "elapsed_ms": 5028.476174000389,
+    "error": null,
+    "success": true
+  },
+  "36eaf7352ce9870c8dbfd56e6eeda5bfc18574deb664bac40d53f554ff0f1d7a": {
+    "elapsed_ms": 5134.223641000062,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_oguf0v9i.lean:4:16: error: unknown tactic\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_oguf0v9i.lean:3:34: error: unsolved goals\ncase false\n\u22a2 (!!false) = false\n\ncase true\n\u22a2 (!!true) = true",
+    "success": false
+  },
+  "376137950d594d47a0a9bb3789b365f796f2cf558324d98c1a12dd933700fd00": {
+    "elapsed_ms": 5044.0141599992785,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ou3x0tog.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "378ad963e62789b31fa727dc2173258797b6cc3b3b5c39d4c2f3af2d4cb00f1d": {
+    "elapsed_ms": 5112.4411159999,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_e44grinw.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hAll`",
+    "success": false
+  },
+  "37a2914a2a59cb3f4f804f21ee61e30cca63cc0314a9e694f1854bd519c65b65": {
+    "elapsed_ms": 5152.901670999199,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s07opjgp.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "385590841b11ab1e026a1adf88c7b6b82282a5b124fd29231054d840c8e15473": {
+    "elapsed_ms": 5458.365930999207,
+    "error": null,
+    "success": true
+  },
+  "38712103b89325a545d07cc9532d05c5abc77c674d76ad032a96f72281fd320a": {
+    "elapsed_ms": 5249.865996000153,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8xl9z1m5.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8xl9z1m5.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "39f1b9f1fe5dfc055315ef6653e6bdb1988afd5798dc1aa3fc7081b681e958c2": {
+    "elapsed_ms": 5149.3872989995,
+    "error": null,
+    "success": true
+  },
+  "39f5e4dc324cf23105ae6e35d8ee19912ec70b2300ea6bbfeee55b1cffade624": {
+    "elapsed_ms": 4940.755477000494,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s5sn_11m.lean:4:2: error: Type mismatch\n  le_refl 0\nhas type\n  0 \u2264 0\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "3a62add5031e276374dc057befbb5a3c17cd3f1818306070e0e23faf1b9f0858": {
+    "elapsed_ms": 5277.2840350007755,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_65t6ovzf.lean:7:0: error: unexpected end of input",
+    "success": false
+  },
+  "3bcb2ec5a627486e80a4145ede2c1d07da0b0e07dc5fcaf0152ec03ef715e3ae": {
+    "elapsed_ms": 5024.315771999682,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yhaj6bog.lean:4:2: error: Tactic `apply` failed: could not unify the type of `Nat.zero_add a`\n  0 + a = a\nwith the goal\n  a + b = b + a\n\na b : \u2115\n\u22a2 a + b = b + a",
+    "success": false
+  },
+  "3c67b85c6e21d071588222127cd0be45b0d4a156ede28483d4a1c304112e0557": {
+    "elapsed_ms": 5061.286504000236,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9u_9jii2.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `d`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9u_9jii2.lean:4:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.3\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.3\n\u22a2 (!!b) = b",
+    "success": false
+  },
+  "3d1ec2c18b0787b132c126db57644dabfa06f1d6aeebb3022e275d3d0f2c0f22": {
+    "elapsed_ms": 5351.157869999952,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_nt0sjlou.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hpqhpq`",
+    "success": false
+  },
+  "3d9e474ee0e77209cab7376c08e32e36edce776d9f0dab4ab14437c3e8e70c22": {
+    "elapsed_ms": 5073.140120999597,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ayjpuz1e.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ayjpuz1e.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "3dffa068397df93b2d62a3c1bb03921631857e6fc4f5f1cfcbfdc98b9139022c": {
+    "elapsed_ms": 5048.304370999176,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_t5upz_72.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `l`",
+    "success": false
+  },
+  "3e54641b23e2584508c2cbba0b5822e96e778368536e0abea9bf275bd35d35c9": {
+    "elapsed_ms": 5091.916294000839,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_71ecsyeq.lean:6:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_71ecsyeq.lean:4:14: error: Function expected at\n  hq\nbut this term has type\n  q\n\nNote: Expected a function because this term is being applied to the argument\n  exact",
+    "success": false
+  },
+  "3e80848b3650ab894f7e9d9e997acc900863abc8e5498aa46830a2a1f327741f": {
+    "elapsed_ms": 5122.551005999412,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xlox4clf.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.elim`",
+    "success": false
+  },
+  "3e8abb47955a3e09d4b5608e713b227b62906e070f999657db91ce2741c11714": {
+    "elapsed_ms": 5176.892060999307,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ii_w8979.lean:4:2: error: Type mismatch\n  Nat.mul_zero\nhas type\n  \u2200 (n : \u2115), n * 0 = 0\nbut is expected to have type\n  n + 0 = n",
+    "success": false
+  },
+  "3f6f819bd3356327ba0841f0c06630e9423ef76b1ddb6016bcd2a986c610287b": {
+    "elapsed_ms": 5047.717933999593,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_63kok5pe.lean:4:2: error: Type mismatch\n  Eq.trans\nhas type\n  ?m.10 = ?m.11 \u2192 ?m.11 = ?m.12 \u2192 ?m.10 = ?m.12\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "4000aeb86106a8aa57246f2e8569a41448d8af55ced82f0d85dc41c34fcc7102": {
+    "elapsed_ms": 5029.887520999182,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sr02bvs0.lean:7:0: error: unexpected end of input",
+    "success": false
+  },
+  "400173eb4eb51e12f8e777420093be3013e2ea50108b98ac42b59c2b1a770d61": {
+    "elapsed_ms": 5144.5162990003155,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wehvc7pn.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Or.refl`",
+    "success": false
+  },
+  "40bd864e640aba80fde6ebd43a0fb6b1e2cf0dfcc14238d29517fe93662c36f6": {
+    "elapsed_ms": 5152.958919999946,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_js6vfd0i.lean:4:2: error: Type mismatch\n  le_refl 13\nhas type\n  13 \u2264 13\nbut is expected to have type\n  n + 0 = n",
+    "success": false
+  },
+  "40d5ba3aa49e535362f9dffca4ce9b1eae098657adadbe318b3119425eb85aaa": {
+    "elapsed_ms": 5011.528467000971,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u3dbbsh6.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u3dbbsh6.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Iff.intro` has 2 explicit field, but only 1 was provided\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u3dbbsh6.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "410b58e654649f9c932d64fc8da3519de4ceeeb5ffafe587def27f26388b6a26": {
+    "elapsed_ms": 5188.725250000061,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gf67_dtq.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "41232a67d892e6f1a7457c85d0e9f55e9e2de63c5af661cdae618c1d68cbc062": {
+    "elapsed_ms": 5057.011054001123,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xicbrg5l.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hAll`",
+    "success": false
+  },
+  "4194793c74d5a40bb1e541f735d3bf49f0db643c44a66140aa7142a8de41b8dd": {
+    "elapsed_ms": 5265.419055000166,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gz_ns_m6.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gz_ns_m6.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "4391cb9c0f948d5ef261298a1bdbf76e5d5036d8e622f9316a9f96cf8d02bb5e": {
+    "elapsed_ms": 5112.70721999972,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qvgw4a0q.lean:5:23: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "43aa9bdd76c41c004b85369a780ccc1cd5e63780f5fc88738844dd60a32bd055": {
+    "elapsed_ms": 5236.859182999979,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_j3i09pta.lean:4:23: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "441447b27ba093a8557c2c97accecf15e7498ba517348457c437441193c0dd16": {
+    "elapsed_ms": 5227.226880000671,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2zu0urrl.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2zu0urrl.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "44a618e151e8d6fc340ac5a0c90ad8a2d3119f368d8fb09e4883addb387ca3c9": {
+    "elapsed_ms": 4947.851098999308,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_en9lkiew.lean:4:8: error: Function expected at\n  Nat.zero_add a\nbut this term has type\n  0 + a = a\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "464368bc0c14e330b2e4b1e1806545246ae4e81ccb73618334c2e5a54f081d20": {
+    "elapsed_ms": 5147.862637999424,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cp6n645a.lean:5:15: error(lean.unknownIdentifier): Unknown identifier `hq`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cp6n645a.lean:3:44: error: unsolved goals\ncase inr\np q : Prop\nhq : q\n\u22a2 q \u2228 p",
+    "success": false
+  },
+  "46f4b5d50c44d0d16bb0b25da8f37f561e108eb1745c112e4f6ce8fe7602610c": {
+    "elapsed_ms": 5164.238375000423,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vcj5mdwk.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `fab`",
+    "success": false
+  },
+  "471a5fe21cf3ef10e03a5fba05042db326912455c94eae557064d5e4dee2d101": {
+    "elapsed_ms": 4984.868059998917,
+    "error": null,
+    "success": true
+  },
+  "476d1a9a1172d037b662a8390ef5d4225156ce6a508a506aaf374a7bbd359ccb": {
+    "elapsed_ms": 4932.2813090002455,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_avq4quwv.lean:5:0: error: unexpected end of input; expected '\u21a6', '=>'",
+    "success": false
+  },
+  "4775b49c6b364fae7d09a2fd11532cd14d2ceeb7c9cad7106d91909e716e4fd3": {
+    "elapsed_ms": 5319.744952999827,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_glm17pzf.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "4808560c536dd28018a83def8d09414c32147e7782512ee3ba612c5ec2aab8e5": {
+    "elapsed_ms": 4884.024065999256,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tk169ldq.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "49ba8e9b532ca47cc66dd9a16e2b4bb7f1792964c8a02079ce3bd87011636c05": {
+    "elapsed_ms": 5089.759555001365,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7hppsz6s.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `c`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7hppsz6s.lean:4:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.3\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.3\n\u22a2 (!!b) = b",
+    "success": false
+  },
+  "4a21369082fed8ce6165640d8d79d1881e2c258506caef879a953d05ebb94351": {
+    "elapsed_ms": 5166.417512999033,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_iiz4xhc0.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "4a64736c2a9d661146a133844d94f4b5c26dd37dc5c80f2a643f3d73f044719a": {
+    "elapsed_ms": 5060.63130199982,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wjsj1wrr.lean:4:2: error: Tactic `apply` failed: could not unify the conclusion of `@rfl`\n  ?a = ?a\nwith the goal\n  Option.map id o = o\n\nNote: The full type of `@rfl` is\n  \u2200 {\u03b1 : Sort ?u.26} {a : \u03b1}, a = a\n\n\u03b1 : Type\no : Option \u03b1\n\u22a2 Option.map id o = o",
+    "success": false
+  },
+  "4adc72c1d08f64fbd0cf957777cdc384b48a512f31d87d4381c5470d04a6c33b": {
+    "elapsed_ms": 5096.66522200132,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1b_kr6_q.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1b_kr6_q.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "4b02be11ea9dc608da7d69aac46e3ce4e81f220a5a744db99521d1823119dc2c": {
+    "elapsed_ms": 5141.021904000809,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5pazm80c.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5pazm80c.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "4b0a41486331dc5c975676434e03e74b82a6900c0f76073d4bb0d5f7c7ddba88": {
+    "elapsed_ms": 5060.241528000915,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zpblemzy.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zpblemzy.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "4b3389e024eacd8a935d6fece2db07b71003c118231fea5d592d9953c20dc917": {
+    "elapsed_ms": 5099.435803000233,
+    "error": null,
+    "success": true
+  },
+  "4bc45dd8fcc19372375336a92983cf0d1d387f57d1d08d5016bb5999bc639ad2": {
+    "elapsed_ms": 5070.378600999902,
+    "error": null,
+    "success": true
+  },
+  "4c71b81cf944b3a008384a1ff1742e5ae53c00d7657e42fb238bac5f48d4fe62": {
+    "elapsed_ms": 4819.124547999309,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n3q7c0y0.lean:4:18: error: Application type mismatch: The argument\n  hq\nhas type\n  q\nbut is expected to have type\n  p\nin the application\n  And.intro hq",
+    "success": false
+  },
+  "4d697e89ccb70604f2b072c69a3f475f695d9e350a3aa353968e1c47b05f4e96": {
+    "elapsed_ms": 5282.838636001543,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qdfeyac9.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qdfeyac9.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `\u2200 \u2983a : \u03b1\u2984, a \u2208 s \u2229 t \u2192 a \u2208 s` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "4dcada29f12eacd0a71ac74581a06066c4ca499a64029cf1699ce5b63c87da2e": {
+    "elapsed_ms": 5147.760342999391,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xacq7lga.lean:6:0: error: unexpected end of input",
+    "success": false
+  },
+  "4e3eefff977a9388da9996955e722e9488ced56fe06e4cda5a276efc528c4f00": {
+    "elapsed_ms": 5027.607739999439,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mgg9spky.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "4e5cf7d70465c1908a689c7b46dfb82cc4449e4dd63b49f1e25f480a647b6aff": {
+    "elapsed_ms": 5093.9035629999125,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tuvak2zi.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le (n + 1)` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "505e415ce3d47feb6161e5ffbaa3021469c679b0c57ad49c7b0a4d0f1cca4777": {
+    "elapsed_ms": 4899.248461000752,
+    "error": null,
+    "success": true
+  },
+  "50fe67f65cc475c3a63eddd99102ab4d64c172d32f80989625288ebf69cbaf29": {
+    "elapsed_ms": 5020.921481998812,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_t82rb5re.lean:4:2: error: Type mismatch\n  le_refl 13\nhas type\n  13 \u2264 13\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "512a4ed82e11eecb81e9345110d9094a78aae560cd794519a04abbd0ecb078ce": {
+    "elapsed_ms": 5157.362436999392,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7kwt8fqx.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Or.refl`",
+    "success": false
+  },
+  "51645e669f9770b923ada6cada401c8ad24fb7401078a87897a629270cc3d6e4": {
+    "elapsed_ms": 5139.211540999895,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9xrs817k.lean:4:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} xs.reverse.length xs.length",
+    "success": false
+  },
+  "52ac9ebbbdcd8cffb520573243661b9c2fc9c9ea59853ae7c10f9730f1cd7446": {
+    "elapsed_ms": 4907.24083799978,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_egfxbcel.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `True.intro` does not have explicit fields, but 2 were provided",
+    "success": false
+  },
+  "53047af5a927366174bd7fb6fc22012c6155e609c68d50c094b2a3c347ace00e": {
+    "elapsed_ms": 5163.973947999693,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1k7rcnwr.lean:4:6: error: Invalid rewrite argument: Expected an equality or iff proof or definition name, but `Bool` is a value of type\n  Type",
+    "success": false
+  },
+  "531787c0f0fb5b3e143042370b3997816124fcb2d1c1c915ee8919a43165f757": {
+    "elapsed_ms": 5091.671764999774,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_y5p2srn7.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.10 = ?m.10\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "531b625d2d4af01bc3c5fb5511a55e9a4d4face6ea0e2abfcd72276e737d6239": {
+    "elapsed_ms": 5224.168952998298,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pub_5mgo.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.rfl`",
+    "success": false
+  },
+  "533f68f52ee855ca61dc83b468c9abf6866b7c3a059d3d02603ec254a6ad094f": {
+    "elapsed_ms": 5194.027057001222,
+    "error": null,
+    "success": true
+  },
+  "53e1e947832cce5b4f6d467ed23739024e717c5c573e2a5b544bcd5703e04dfa": {
+    "elapsed_ms": 4962.630297999567,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2yska8q3.lean:4:2: error: Type mismatch\n  le_refl 13\nhas type\n  13 \u2264 13\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "53f4c8860aabd5c2c844ef1e4dadd91f29a2f51bca7abec7c8abac6648bcbb9b": {
+    "elapsed_ms": 4873.676723998869,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lb3o2x06.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lb3o2x06.lean:4:13: error(lean.unknownIdentifier): Unknown constant `Eq.intro`",
+    "success": false
+  },
+  "545be1558cdd854930b0ad71509da57e0d99a480e87c650af7f91c11b5f5faf6": {
+    "elapsed_ms": 5157.604105001155,
+    "error": null,
+    "success": true
+  },
+  "54d37ae317bab4de3c3e93869fd3b06402ef06399f25e7aaaa9b411cdc838490": {
+    "elapsed_ms": 5042.5604169995495,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ya1t8gbn.lean:5:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "55334bc35ef76b2d3b4c7c1f28f3b96787ad42fccefe57c8fb7c795a912c1fd2": {
+    "elapsed_ms": 5282.522847999644,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_c_j5nq9w.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_c_j5nq9w.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "554426e4c680e148aedf68e76f9d166c770a20db8c245f31c67b6d45d60ba5ae": {
+    "elapsed_ms": 5096.565562998876,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_csrf6a5z.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.nil_append`",
+    "success": false
+  },
+  "56e6208337f49fa87a78d85bb6a521cbe238d22acc17a8661d4aeeea6333d639": {
+    "elapsed_ms": 5056.439137999405,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__ahyt172.lean:4:13: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "5727756d86d44dbb87e2802e751eb522461c47cff0e99a2a5a707d75f4cdfb6c": {
+    "elapsed_ms": 5119.4754840016685,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u1dv3ysr.lean:4:8: error(lean.unknownIdentifier): Unknown constant `List.refl`",
+    "success": false
+  },
+  "598dfd6c572ccecfb2be1bc8a2155f7406fa6e2a5e2eb9064072ecde2f36014f": {
+    "elapsed_ms": 5170.722773998932,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8xm1cue8.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8xm1cue8.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `\u2200 \u2983a : \u03b1\u2984, a \u2208 s \u2229 t \u2192 a \u2208 s` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "5a13f335e2ffa5a21b3b2f4862777bd0db0d0dd8b0839ee22ad3365e127c54c0": {
+    "elapsed_ms": 5068.545658001312,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d84y7fl0.lean:4:3: error: unknown tactic\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d84y7fl0.lean:3:52: error: unsolved goals\n\u03b1 : Type\nxs : List \u03b1\n\u22a2 [] ++ xs = xs",
+    "success": false
+  },
+  "5a510361b7862afdc9359c5ee78bbc496eaf435dd14a0e3be2dc256854d0787c": {
+    "elapsed_ms": 5112.367368999912,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_54qrhxcl.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "5b87d57eb55cd1e4be3c5ef2d54a30b5f04c27a596d4aeefd10d912a71a24fcf": {
+    "elapsed_ms": 5179.553850999582,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__go2bmd8.lean:4:23: error: unexpected token '<;>'; expected '*', '|', '\u22a2' or term",
+    "success": false
+  },
+  "5b8d75cf0c6772d5457f14e4c0e8f9911c1ee4f01251420533dc19fa3691398a": {
+    "elapsed_ms": 5103.049823001129,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6rnlcx3r.lean:5:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "5becc0ef22b55f4ab22db01842142b85f477e6e01fb442926718028ec00f08a4": {
+    "elapsed_ms": 4919.696531000227,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_p7o5i1kq.lean:4:2: error: Type mismatch\n  le_refl 1\nhas type\n  1 \u2264 1\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "5ca51cffefc38ab03f04c59d3c4f12d3fc7975e462decf4ef041dce366de5264": {
+    "elapsed_ms": 5070.047383000201,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lp8y7qnp.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "5d42e00ff78a330c88f9ae589585ba0a516e6f0b190586487503a769c9f26919": {
+    "elapsed_ms": 5131.331791999401,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_b73eui15.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "5dcb7da0261792c0115b021a68b671feb7902ee18b41fb9437a2d81e1a97d7d8": {
+    "elapsed_ms": 4903.398078999089,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s12u4f0b.lean:4:18: error: Type mismatch\n  h\nhas type\n  p \u2192 False\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "5dd1c5ced67a89d0bd4a1365d9153bfc7e1656898b42516a12c049c27d9e150d": {
+    "elapsed_ms": 5297.765831001016,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cdn6in1j.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Or.refl`",
+    "success": false
+  },
+  "5e06bd6bf87c25a31eea8aa8b2bf5c80b4557cc4c43965e84150d8483f7a9c1c": {
+    "elapsed_ms": 5287.015407999206,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_x9lbzdqd.lean:4:2: error: Type mismatch\n  Nat.add_comm 1\nhas type\n  \u2200 (m : \u2115), 1 + m = m + 1\nbut is expected to have type\n  n.succ = n + 1",
+    "success": false
+  },
+  "5f1b61a26efdadf205a5f6376a4c14d399d5b3f08b400631dc17a207589ca708": {
+    "elapsed_ms": 5193.733637999685,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n2xdyl10.lean:5:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "5f3ed41ab0a0b8a797a5aae4aa78492b94554cf0efc6c5b73971832d8ea331e4": {
+    "elapsed_ms": 5030.580637998355,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4wyhf61v.lean:5:10: error: Application type mismatch: The argument\n  h hp\nhas type\n  False\nbut is expected to have type\n  p\nin the application\n  h (h hp)",
+    "success": false
+  },
+  "5f750c425cfa9bf6a59bb8dfbc09e9585b1e469b473ae6633e3292d3721fdf14": {
+    "elapsed_ms": 5062.741788999119,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_brq8olzf.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_brq8olzf.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "5f88162fe03ee3b892c10731f6be54534b002431f2cad5d2a7dc983d10b80ede": {
+    "elapsed_ms": 5025.758137999219,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ea2g054q.lean:4:8: error: Function expected at\n  Nat.zero_add b\nbut this term has type\n  0 + b = b\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "5fa17d6717c162df4d54341f99b56446c83f852aea9d360afec74f1f8dc17c32": {
+    "elapsed_ms": 5190.473515000122,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_a4j1lmzr.lean:4:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  \u2115\nhas type `Type` which does not have the necessary form.",
+    "success": false
+  },
+  "5fab7b4c63fc478ed46b4e8f4cd52754fb7797a0a217bd2219ea810c3f1e1650": {
+    "elapsed_ms": 5128.402267999263,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tvt2dom2.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "5fd1f2ffebf9ecc653d1434a23ff399e5a4aed8acc584fc454ddda35b418238f": {
+    "elapsed_ms": 4871.210611998322,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_j8bdrxh8.lean:4:8: error(lean.unknownIdentifier): Unknown constant `id.mpr`",
+    "success": false
+  },
+  "5fd91838f952242447c9da0b1027a5a20b34bc7097b2fb351ee96a1564fade8a": {
+    "elapsed_ms": 5022.580629000004,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_enoti8kq.lean:4:23: error(lean.unknownIdentifier): Unknown identifier `j`",
+    "success": false
+  },
+  "5fe5a24dede4e4480928ffce5aac88c7641e8a5f3ce6a997096e10394f1a788d": {
+    "elapsed_ms": 5134.968364000088,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wy4bl16x.lean:4:2: error: Alternative `inr` has not been provided\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wy4bl16x.lean:6:2: error: No goals to be solved",
+    "success": false
+  },
+  "61267fed2e1859e24f350cdd5178405bbe9cc0f5d3fcfef6d822481b2ab65e82": {
+    "elapsed_ms": 5118.019547000586,
+    "error": null,
+    "success": true
+  },
+  "6209398bcc767f5b16c4b0a55a4e3247e470917fced9e960ecdb05107c8999a6": {
+    "elapsed_ms": 5181.377998000244,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yactn5wq.lean:4:2: error: Type mismatch\n  Nat.add_comm ?m.16\nhas type\n  \u2200 (m : \u2115), ?m.16 + m = m + ?m.16\nbut is expected to have type\n  a + 1 = b + 1",
+    "success": false
+  },
+  "62172123ef863c1f8df19bba506107034356e5f2c039b5eee35d5f700865440b": {
+    "elapsed_ms": 5075.308707999284,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_aze1zhpx.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.refl`",
+    "success": false
+  },
+  "62ab82db9f581764d9c7274fcac25344196345f85eb0eb36afc420ae94357f87": {
+    "elapsed_ms": 5110.557762998724,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_z3b2gzx9.lean:4:2: error: Type mismatch\n  Nat.add_comm\nhas type\n  \u2200 (n m : \u2115), n + m = m + n\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "62f9d5757ebf82414d61c94227d32db075baf5be8661be3355d8bc6ebbce9ae5": {
+    "elapsed_ms": 5147.988045000602,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ga_gm2lg.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ga_gm2lg.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "636d927be687a935e0d023de2343b4c11849adaabf6caccf295f65c4d8cc7b3c": {
+    "elapsed_ms": 5190.698630000043,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_m3ohnxh4.lean:4:2: error: Tactic `apply` failed: could not unify the type of `Nat.zero_add a`\n  0 + a = a\nwith the goal\n  a + b + c = a + (b + c)\n\na b c : \u2115\n\u22a2 a + b + c = a + (b + c)",
+    "success": false
+  },
+  "643b781cb53920bab7d144029d8a64835bec05d1cf4622ebdb64c984846899dd": {
+    "elapsed_ms": 5075.520046000747,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cla0bqea.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "64e8d8d0c7ab1dbcbadd2078c6e8902deeb60511c98e4d49019ac95eabc55095": {
+    "elapsed_ms": 5192.142882999178,
+    "error": null,
+    "success": true
+  },
+  "6515060e88d1624aaa18971e8c9dcf513186fe35433cd0084672366f4527fda1": {
+    "elapsed_ms": 5194.379516999106,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_uk6ls7al.lean:4:2: error: Type mismatch\n  Nat.zero_add\nhas type\n  \u2200 (n : \u2115), 0 + n = n\nbut is expected to have type\n  (some a).isSome = true",
+    "success": false
+  },
+  "6540e7d01239ee421886080e4297752fd469e0f5d4ee0a56e9513ef99d37bf9e": {
+    "elapsed_ms": 4904.891509000663,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2pwkulvh.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "660a1927e08e0a849926b41c07c950746813ef58f40fb88260a48e3f25c3552a": {
+    "elapsed_ms": 5067.684711999391,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sodrn8uy.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sodrn8uy.lean:4:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "6668ded335dd985e7b8bf27fc420faa7601a8f25c91d2b9b29d7bfed6c78f707": {
+    "elapsed_ms": 5174.973473000136,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_57qnloty.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_57qnloty.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "66b29a9edde306a066d59a9877171b79fd1ca299b047b4900d1746cca09ddfc4": {
+    "elapsed_ms": 4951.796899998953,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_up_i218k.lean:4:2: error: Type mismatch\n  Nat.zero_add a\nhas type\n  0 + a = a\nbut is expected to have type\n  a + b = b + a",
+    "success": false
+  },
+  "6726cbd499563c7a4d2f9cb77da1b2f3a80f151d23a3922e897e6fdb20b97fb9": {
+    "elapsed_ms": 5081.719851999878,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_31l93_zb.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h1.trans`",
+    "success": false
+  },
+  "676e52d87a41c8ce2c13340f2833594879986fdee276ad3f6c04eeb041ab980f": {
+    "elapsed_ms": 5140.275702000508,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rakxt6zd.lean:7:0: error: unexpected end of input",
+    "success": false
+  },
+  "678679ecbeb42f0eaa48aa7ba0badedbd29f45635422072e6ac643b9735eed1c": {
+    "elapsed_ms": 5109.598373999688,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9ky_32mm.lean:4:18: error: Type mismatch\n  absurd \u22ef\nhas type\n  \u00ac?m.5 \u2192 ?m.4\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "6812fdb914c7db11ce90ad045df2d06215f466b442df9d2271a0bb03d32a034d": {
+    "elapsed_ms": 5144.123640999169,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_oi30ynb_.lean:4:2: error: Type mismatch\n  Nat.zero_add\nhas type\n  \u2200 (n : \u2115), 0 + n = n\nbut is expected to have type\n  n * 0 = 0",
+    "success": false
+  },
+  "683df641663cdaf4842bfc535aceb9230606f8d3a47e480992d6a6186f5f063d": {
+    "elapsed_ms": 5083.19440500054,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vwjz35b6.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `\u00abusing\u00bb.trans`",
+    "success": false
+  },
+  "6850e4a4d9dbd6e36c8c26b34219939300fe32beff63ca350ad183cb9c857a08": {
+    "elapsed_ms": 5352.575272998365,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n3d4urq6.lean:4:8: error: Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression\n  h\nhas type `a = b` which has no fields.",
+    "success": false
+  },
+  "6941638c472cad111014e9cfc8451b5ba658ad2309588b4d1435451a5fb17300": {
+    "elapsed_ms": 5074.876097000015,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_dms98ncw.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "6b453ee897fccc3b6b30e6b2bf67306637fa5794f6468543b269a29bb0e79623": {
+    "elapsed_ms": 4920.680093999181,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_p170tdyb.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `ys`",
+    "success": false
+  },
+  "6b709574cd79f7b04e64e83830b96d03050cff6eece25484d8df3dfa1cadeb91": {
+    "elapsed_ms": 5048.032106000392,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8n0guauh.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "6ba4aadfaa868b738db9a97892e48fd5a655a3bea395c6616c35f1edf0ae296f": {
+    "elapsed_ms": 4881.03734699871,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5uz1hgbi.lean:4:7: error: unexpected token 'using'; expected term",
+    "success": false
+  },
+  "6bc38a046038a3d2702cbc7ea81c4036d39b40d28ec027c2ddb509bd7483bc04": {
+    "elapsed_ms": 4893.929636999019,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qpj8q5dw.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `True.intro` does not have explicit fields, but 2 were provided",
+    "success": false
+  },
+  "6d5328b8a7bdaf53b9c3df7751ef63c06b624c0f49e4f54875beebb7fb328741": {
+    "elapsed_ms": 4919.421300999602,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_g_z5fx53.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `xs`",
+    "success": false
+  },
+  "6e2799966c1db07b7f9b9e943eec812d9ba31bf1ec4d608ebde1cbefa6573d67": {
+    "elapsed_ms": 4835.7945019997715,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fzpye8cr.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "6e3b21a2c57ff1225b1cadbed96eff6c2d717d30f551b111aa90b26180e95b36": {
+    "elapsed_ms": 4940.885045998584,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_39tgs5td.lean:4:2: error: Tactic `rfl` failed: The left-hand side\n  n * 1\nis not definitionally equal to the right-hand side\n  n\n\nn : \u2115\n\u22a2 n * 1 = n",
+    "success": false
+  },
+  "6e934542f65b4e43c506a3f7edcb04593ff5dd58d16af1a3d3300370b0c1f7da": {
+    "elapsed_ms": 5106.098119000308,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xhxcufmn.lean:6:8: error(lean.unknownIdentifier): Unknown identifier `hr`",
+    "success": false
+  },
+  "6ea6d10206402a8fc1e17f61c1d5a2f0804bdc2402d8cbe318684e8f5d296e54": {
+    "elapsed_ms": 5297.937610999725,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6tvalln0.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `vs`",
+    "success": false
+  },
+  "6eecb65b1d95b764cce18ea4a2777cf54d1fd4f955903194a62d4b6490bda7b6": {
+    "elapsed_ms": 5092.215680999288,
+    "error": null,
+    "success": true
+  },
+  "6f0dd3ee769eca7d4b1f5c276c383251bd48bd161bd244ffc7ba2b84656e7671": {
+    "elapsed_ms": 5264.129966000837,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fsdsvjc5.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `f`",
+    "success": false
+  },
+  "6ffaf37f8fd3afee90aa0c47722b1dc206f7ebd9ec05a3ae035ace2648e8d685": {
+    "elapsed_ms": 5059.825166999872,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rztgw4wu.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rztgw4wu.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "702185a5803cb40dae45d4a697ad806446ffd51a0f811208154d1c4ec2b211ec": {
+    "elapsed_ms": 5214.912152998295,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0i3b6y9t.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.zero_add`",
+    "success": false
+  },
+  "7025c89455ae6f6576ded3b4bb2b1b2e2e8a6432995d84919e7409387d93a00f": {
+    "elapsed_ms": 5157.894788999329,
+    "error": null,
+    "success": true
+  },
+  "70bf7cb7314c5ee99d57926a8d526b462dde90f0179642b9c9bfc472b64dda03": {
+    "elapsed_ms": 5106.595807999838,
+    "error": null,
+    "success": true
+  },
+  "71ba8a530a6c38117a5bcab52cf05b446550345a1a7c3e7a5f284d4f9c3260d6": {
+    "elapsed_ms": 4984.282192999672,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wc3sjwt_.lean:4:24: error: Application type mismatch: The argument\n  List\nhas type\n  Type ?u.95 \u2192 Type ?u.95\nbut is expected to have type\n  List ?m.10\nin the application\n  List.append_nil List",
+    "success": false
+  },
+  "7270f9f893605ba5d9fa1a36b43febfc27f005977c06a3df4abe79c7e7770824": {
+    "elapsed_ms": 5075.784811000631,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_f_9fjjs7.lean:4:2: error: Type mismatch\n  Bool.and_true\nhas type\n  \u2200 (b : Bool), (b && true) = b\nbut is expected to have type\n  (b && true) = b\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_f_9fjjs7.lean:4:21: error: unexpected token ']'; expected command",
+    "success": false
+  },
+  "72c0c68bb53fede4c75807f7201baeac43462569d3b7f84d52b26cd957d2d9a7": {
+    "elapsed_ms": 5050.671981998676,
+    "error": null,
+    "success": true
+  },
+  "737d0b6c5becab2450d43f191067a9551be5fcf7fa2878f2a31ee9ed3187e82f": {
+    "elapsed_ms": 5146.9492230007745,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_izw2x8cu.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "74bbdbf9421905c2925c5a8cddea7c27b5dbd147b7fe4e0cbc0d2b82841d7165": {
+    "elapsed_ms": 5116.3146199996845,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gnr2pe02.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "74ec5954b4f5738c9c24e7b40cb6ed3be4289e5cb96eab118786ad436c3e42fb": {
+    "elapsed_ms": 5112.185003999912,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gk720ubl.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "755e1e3287ed9ddadb24a5e7b180fbcee8594768ea007be3b10c711f0de5ac56": {
+    "elapsed_ms": 5105.153098000301,
+    "error": null,
+    "success": true
+  },
+  "76f23f6860764abf5d2a3fa13e5b649c17097c187935d68d73d02be26b879d8b": {
+    "elapsed_ms": 5112.207984999259,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fuuao7pz.lean:4:23: error: unexpected token '<;>'; expected '*', '|', '\u22a2' or term",
+    "success": false
+  },
+  "774ef8fc2037ddc7e8c7e4b4d16035a5ae9cb1b6d943215e9aaadacad2fc8c68": {
+    "elapsed_ms": 5162.268035001034,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_oe1tr54r.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `l`",
+    "success": false
+  },
+  "77714f9d936c9caef7a4602fa9b71c6278ac6313a70fc6fca13ab813442efbb4": {
+    "elapsed_ms": 5103.339995999704,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4ubnt0i5.lean:4:2: error: Type mismatch\n  Nat.add_comm 1\nhas type\n  \u2200 (m : \u2115), 1 + m = m + 1\nbut is expected to have type\n  a + 1 = b + 1",
+    "success": false
+  },
+  "777c858049691e1e79cf67b9c9ce619ac4bb576fb71b0b19945a99fb6884757f": {
+    "elapsed_ms": 5143.456761999914,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lziakafl.lean:6:14: error: Type mismatch\n  hq\nhas type\n  q\nbut is expected to have type\n  q \u2228 p",
+    "success": false
+  },
+  "78a608cdbf11a388858d936cf519bcf55ca9f932666b2fb67c15d4f17f15e080": {
+    "elapsed_ms": 5069.10755699937,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0gqykr5_.lean:4:24: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.16 = ?m.16\nof sort `Prop` but is expected to have type\n  List ?m.14\nof sort `Type ?u.107` in the application\n  List.append_nil rfl",
+    "success": false
+  },
+  "791ac0a11cec34a928f4a152de688c090f612c4b2478637ca5fd6fe953404fff": {
+    "elapsed_ms": 5134.096562000195,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_197rl_q8.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "7933f92090f38d9dd54693025b8e4fc9c6cd1813e3bfb3dea85e20d9bca62c6f": {
+    "elapsed_ms": 5307.578111000112,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__b31trdp.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.add_comm`",
+    "success": false
+  },
+  "79d1caf58861b0ade7f9390d96eaf0701ea2ed14ebbe2ac624677c1bf4228773": {
+    "elapsed_ms": 4859.719206000591,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1_2nuf9l.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Nat.Nat`",
+    "success": false
+  },
+  "7a06e320017c93e651e38b55a6303631ae299612fa14bb7f8af7edf0b698396b": {
+    "elapsed_ms": 5094.42398399915,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_moj0c4pb.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.nil_append`",
+    "success": false
+  },
+  "7c05d841adff8159a8c0916712ea4563a65da73928090e6abda9f6b9f6ecfb33": {
+    "elapsed_ms": 5030.399170998862,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8drk75gw.lean:4:8: error: Function expected at\n  \u2115\nbut this term has type\n  Type\n\nNote: Expected a function because this term is being applied to the argument\n  j",
+    "success": false
+  },
+  "7dc57b98e5d50da6fc459c910bb577832e8fc8660ca269cc66ec2167bab3a3a3": {
+    "elapsed_ms": 4959.4934710003145,
+    "error": null,
+    "success": true
+  },
+  "7e178ccd48b3ed0d42e3eb96c5e600c1ce0d384bf64afe64886529f333c728f7": {
+    "elapsed_ms": 4980.0138940008765,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_em_kn1gz.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `ys`",
+    "success": false
+  },
+  "7f6cddce8a97e6b5bd3b25805c678d5ae7c540727404990de7c11a83b3f1d1d5": {
+    "elapsed_ms": 5140.356982999947,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_jb696yc7.lean:5:23: error: Application type mismatch: The argument\n  hq\nhas type\n  p\nbut is expected to have type\n  q\nin the application\n  And.intro hq\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_jb696yc7.lean:5:27: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "7fa87db505fd9718697a3c483ff509e8c4f3b489cc8d8e6dea6bd5d5c6877ba5": {
+    "elapsed_ms": 5219.417981999868,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_o0isqgov.lean:4:17: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "7ffd5dc46c6880b534c84e093a375e8c3160c269de8d94c45777af7c46c628a1": {
+    "elapsed_ms": 5112.164868000036,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wpqgtfho.lean:4:2: error: Type mismatch\n  Nat.zero_add a\nhas type\n  0 + a = a\nbut is expected to have type\n  a + b + c = a + (b + c)",
+    "success": false
+  },
+  "8008024e77e4061b722cf531259c1b176a4450a8e23ba8d55937b7197b33593c": {
+    "elapsed_ms": 5002.242045999083,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1xwqv742.lean:4:23: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.12 = ?m.12\nof sort `Prop` but is expected to have type\n  \u2115\nof sort `Type` in the application\n  Nat.add_comm 1 rfl",
+    "success": false
+  },
+  "80983ee393d8263773215d210d8262fd904a4042b35f040923e6f3b1f85fb081": {
+    "elapsed_ms": 5114.969516998826,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6aj480n_.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Iff.intro` has 2 explicit field, but only 1 was provided\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6aj480n_.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "814880a9f4e2d80e01cd0646078c40a12e287fb82729a45f8a4091dd4dc60258": {
+    "elapsed_ms": 5066.894571999001,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rmtvmjge.lean:4:9: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hq\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rmtvmjge.lean:4:2: error: Tactic `rcases` failed: `x\u271d : ?m.3` is not an inductive datatype",
+    "success": false
+  },
+  "82200efcf6714033da1bb67d81cfe1a6d547f039e624590032ccc2d2b6edc07f": {
+    "elapsed_ms": 5113.432973999807,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_awgfymmq.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "82c38fb0a86085778e851689fa4f3f953f451c32f03dbd6c220987d458267feb": {
+    "elapsed_ms": 4870.4492559991195,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_u2z4n28s.lean:4:28: error: Application type mismatch: The argument\n  absurd\nhas type\n  ?m.5 \u2192 \u00ac?m.5 \u2192 ?m.6\nbut is expected to have type\n  \u00acp\nin the application\n  absurd hp absurd",
+    "success": false
+  },
+  "82c3eb19bcb76fefe7eb4710e52ad2214ba3c8aff2aade02c73a9ac5e7aa8d5b": {
+    "elapsed_ms": 5168.349702998967,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zhd1w4zy.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "82d46da1cf1d86227027c4782400947740feb64f8016aac9675e1c257f1452c0": {
+    "elapsed_ms": 4841.910077999273,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ca2m5c8v.lean:4:2: error: Type mismatch\n  le_refl s\nhas type\n  s \u2264 s\nbut is expected to have type\n  \u2205 \u2286 s",
+    "success": false
+  },
+  "82f75846074448b9e7b27f417cc98c1f4e2a18ef4ca640ca94607338f8cf56f9": {
+    "elapsed_ms": 5053.288214998247,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1kuqbogi.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Nat.mem_singleton`",
+    "success": false
+  },
+  "84acee90e80f1ad4e468be43596f8bd6a1851c18de2fff361374d236ac7a0deb": {
+    "elapsed_ms": 5069.569182000123,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wh8glllc.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wh8glllc.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "84bccb907d71310d2ebc443653de8be803eb4668982a3b6728064d85c90e4716": {
+    "elapsed_ms": 4890.603791000103,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6mxpc39b.lean:5:0: error: unexpected end of input; expected '\u21a6', '=>'",
+    "success": false
+  },
+  "84f2d3e6f847e019060c54d234fcc35d6e6c12e87f6ce0facf87a7062fe9455b": {
+    "elapsed_ms": 5127.834696999344,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_munkwck9.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "87043e14c2bc72e809e67c525aa93981e3d6cd0803bbaf38b881549583496a0c": {
+    "elapsed_ms": 4964.427814998999,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8custf6g.lean:4:2: error: Type mismatch\n  Nat.zero_add\nhas type\n  \u2200 (n : \u2115), 0 + n = n\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "8712da399136d44772899378f3f23120297c80c76f1b3dbace2ca9a1e97d2254": {
+    "elapsed_ms": 5171.896301999368,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3vbc8yee.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.refl`",
+    "success": false
+  },
+  "87762c5a650f6bc1dc9f96b40ad9b1304bf6181d81a810630ecc4efe0ae505b3": {
+    "elapsed_ms": 5158.939303000807,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3i5w1_3y.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "87a006f254e5063b115a4194e3c76d7e09b92f1b86b5269549117dd76a6f64f9": {
+    "elapsed_ms": 5172.658204000982,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lo217fgi.lean:4:2: error: Type mismatch\n  Nat.add_comm 1\nhas type\n  \u2200 (m : \u2115), 1 + m = m + 1\nbut is expected to have type\n  n \u2264 n + 1",
+    "success": false
+  },
+  "8842a5d1486f4d90af108c56741cd7b26071ed96a950f9d6fb81ba9f0ce2724f": {
+    "elapsed_ms": 5099.550480999824,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4w45prqm.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4w45prqm.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4w45prqm.lean:4:12: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "88696a848ddf08151dfa8860eb3e1b9cbe7be47bd3c5ea6b07ab57132767df56": {
+    "elapsed_ms": 4877.316121999684,
+    "error": null,
+    "success": true
+  },
+  "89af038ba25d133c5edc8d8644713808a74eef61e01403d6623c5ad40fde437c": {
+    "elapsed_ms": 5156.867386998783,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ytzylrsl.lean:4:23: error(lean.unknownIdentifier): Unknown identifier `k`",
+    "success": false
+  },
+  "89c387ac87d8d5233892e08129b22db441af022a3135a66512d5b51c879cc293": {
+    "elapsed_ms": 4925.610152000445,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_p_mgduaq.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "89c3fa7a412d5500b85fa24a4675528b29dff878c18ce0011cde3f5326f30268": {
+    "elapsed_ms": 5087.064540000938,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d9930u4z.lean:4:6: error(lean.unknownIdentifier): Unknown identifier `heq`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d9930u4z.lean:3:27: error: unsolved goals\n\u22a2 true = true",
+    "success": false
+  },
+  "89c91ab6f4e2f00ee44ef348222d17a4f109605ad459ccf51769a49e21da345b": {
+    "elapsed_ms": 5170.049438998831,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_awpznqby.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `ws`",
+    "success": false
+  },
+  "8b4c5e7faa354013272b8cb59dda868d8f3681ba7ecb97f7e37d5d8da71ecb1c": {
+    "elapsed_ms": 5153.175177001685,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__tb9qce6.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hAll`",
+    "success": false
+  },
+  "8ba8b73f184ee0d45fab5d3a47f802c30e695534ce496006ce48cb62d7e28efa": {
+    "elapsed_ms": 5137.5342100000125,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pljnhql8.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pljnhql8.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "8bfecafe95e952bc7739fdb48672314262a44d88a737598725c29d01716bb614": {
+    "elapsed_ms": 5327.377930001603,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_jwmlz2sf.lean:4:2: error: Type mismatch\n  Nat.add_comm\nhas type\n  \u2200 (n m : \u2115), n + m = m + n\nbut is expected to have type\n  n + 0 = n",
+    "success": false
+  },
+  "8cfbd08e3bfa332bba49cf60e87658a206bb9bc1656e41be1f4b7d2a21ae41b5": {
+    "elapsed_ms": 5035.697348999747,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1z858pg2.lean:4:13: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.10 = ?m.10\nof sort `Prop` but is expected to have type\n  Type ?u.102\nof sort `Type (?u.102 + 1)` in the application\n  List \u22ef",
+    "success": false
+  },
+  "8d67d7c1f48d19feb96d4fdac3df5e184fbb93e5dde9905b5438285c8dbdfbe4": {
+    "elapsed_ms": 5136.1567309995735,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7k53gx3k.lean:5:2: error: Invalid alternative name `inl`: Expected `intro`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7k53gx3k.lean:4:2: error: Alternative `intro` has not been provided",
+    "success": false
+  },
+  "8e17c05126191293b351cda3e7c9fd88943eeae218b686e756fcaf9499aa0c6e": {
+    "elapsed_ms": 5154.749755998637,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_i8d1wg2g.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `l`",
+    "success": false
+  },
+  "8e29a1ebdc3d8f82371c355dd22d78a1dbadd4aed0e24a9edea7bf5848715ec0": {
+    "elapsed_ms": 4999.886252000579,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_b5uy28o9.lean:4:2: error: Type mismatch\n  \u2115\nhas type\n  Type\nof sort `Type 1` but is expected to have type\n  0 + n = n\nof sort `Prop`",
+    "success": false
+  },
+  "8e668b08bcc1cf309a1e5c2444b07d60bebecab61908f471457340ac7857c9ae": {
+    "elapsed_ms": 5137.011445000098,
+    "error": null,
+    "success": true
+  },
+  "902d7e0206b88d81f884058dc6da26a6c514da651a6383c93aa0ed04239abe1d": {
+    "elapsed_ms": 5235.889035000582,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pke0csdg.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pke0csdg.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "905c59aed57a386bf6cb9490989409e91fd5a8187408ae52e1e53cd988bbc584": {
+    "elapsed_ms": 5137.055062999934,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ghagb6hp.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "9153f531a0ed22b9a1083f58dbf2106f45630a5de2cc9aee257328e16daa363a": {
+    "elapsed_ms": 5048.635691000527,
+    "error": null,
+    "success": true
+  },
+  "922d573be5d660563df7ec12049c8ae856b28e2531c5285a27fc69a56aa251c4": {
+    "elapsed_ms": 5146.243840001262,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_b1epl72t.lean:4:2: error: Type mismatch\n  Eq.refl ?m.7\nhas type\n  ?m.7 = ?m.7\nbut is expected to have type\n  xs.reverse.length = xs.length",
+    "success": false
+  },
+  "927dee93e590e3dcef4fbb6381e80989231dd6033cf520a8a678ec782b43fc81": {
+    "elapsed_ms": 4840.894969000146,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8xbv1ju3.lean:4:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?b && true\nin the target expression\n  (true && b) = b\n\nb : Bool\n\u22a2 (true && b) = b\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8xbv1ju3.lean:4:21: error: unexpected token '['; expected command",
+    "success": false
+  },
+  "93ac864f28352b220bf2458d21355831388df0fedfad9a65c72e459ccb065866": {
+    "elapsed_ms": 5039.520452999568,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1re3nt5t.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `y`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1re3nt5t.lean:4:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.3\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.3\n\u22a2 (!!b) = b",
+    "success": false
+  },
+  "9421114db769a2946245e43bd2fbc038db43cf36f2413f0748bbf6ab27e53c47": {
+    "elapsed_ms": 5027.050110000346,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_31zzc3y_.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_31zzc3y_.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Iff.intro` has 2 explicit field, but only 1 was provided\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_31zzc3y_.lean:4:9: error: Invalid `\u27e8...\u27e9` notation: The expected type `p \u2192 p` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "9475c81b57c899e1ee8597cecb3d6fabbce9acdc9ef94a9fb4e2814408fac3d3": {
+    "elapsed_ms": 4878.772773998207,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xs5hrlua.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "94d00b917ab9f27aff4073e37561c232073b7a1ca64698e35c54a0b50c747ebe": {
+    "elapsed_ms": 5039.023543999065,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_o1sjyobp.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_o1sjyobp.lean:4:12: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "953746adbf7045a865b0749feb24ae720985d347063051e3023dc52926cf7252": {
+    "elapsed_ms": 5300.497122998422,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_x3dz8dhl.lean:4:18: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "95cae4542b28c84d36a046b2da39c826ea535aa070d9125e7ab5f447f075cfe8": {
+    "elapsed_ms": 4916.152318000968,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_k6ep75nv.lean:4:8: error: Function expected at\n  Set \u2191s\nbut this term has type\n  Type\n\nNote: Expected a function because this term is being applied to the argument\n  x",
+    "success": false
+  },
+  "96093553a9568d23780eec39f6e3744b14de2bad064e6127dd8954a8888ba7db": {
+    "elapsed_ms": 5251.067868000973,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hctqtrgj.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Or.refl`",
+    "success": false
+  },
+  "96c3c48d19999e96f1ab79680fee22352b07ce52f38392850bb5c90730891082": {
+    "elapsed_ms": 4940.149358000781,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_j_4asb5j.lean:4:2: error: Type mismatch\n  Nat.add_comm 1 a\nhas type\n  1 + a = a + 1\nbut is expected to have type\n  a + b + c = a + (b + c)",
+    "success": false
+  },
+  "96c527e44a8d21c54b16538e34b992d1cdfd9a89970989e73f39bab54fba66e7": {
+    "elapsed_ms": 5079.746822000743,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__ey_tv_w.lean:4:2: error: Type mismatch\n  Nat.zero_add\nhas type\n  \u2200 (n : \u2115), 0 + n = n\nbut is expected to have type\n  n + 0 = n",
+    "success": false
+  },
+  "9716752e140d4aa71128b46a5dc0309a36b2c306636bbe0b929573e247bb8ed9": {
+    "elapsed_ms": 5382.656403999135,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_aegck1qj.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "97589107ce644aff0f679f0c91c76b6cf0665258a5dce09d9a2dbbc476aa94d0": {
+    "elapsed_ms": 5055.399131999366,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wha4viwe.lean:6:0: error: unexpected end of input",
+    "success": false
+  },
+  "97eb1346c39a508b710eb230d9e501f01325a66cec4c856be444e5b47a7be180": {
+    "elapsed_ms": 5209.4376149998425,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gpcr82k5.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gpcr82k5.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h1`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gpcr82k5.lean:4:13: error(lean.unknownIdentifier): Unknown identifier `h`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gpcr82k5.lean:4:14: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "98049f49a7c85553b500b4935c8fe390972e7c759bbb89cae0a428c47f76172d": {
+    "elapsed_ms": 4862.823916000707,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5xmgywf1.lean:4:8: error: Function expected at\n  Eq.refl a\nbut this term has type\n  a = a\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "99d491a771574851947cd0d109285a519124cf5935ecd54fc5c6ccb4dc3f9ee0": {
+    "elapsed_ms": 4971.4646709999215,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__y6rsfvn.lean:4:2: error: Type mismatch\n  Nat.mul_zero\nhas type\n  \u2200 (n : \u2115), n * 0 = 0\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "9b0b605e7835c88300ea08676c18b900a9a6dd41acc431cdcbea064146680f56": {
+    "elapsed_ms": 5273.15758000077,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_iapeo5b1.lean:4:2: error: Tactic `assumption` failed\n\n\u22a2 true = true",
+    "success": false
+  },
+  "9b5618992eba2e6fe986a59d0c519521ad2cff6332bc1c20a5e35a948f6da8c9": {
+    "elapsed_ms": 5239.409157000409,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pweibjjw.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pweibjjw.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "9b6988cb6b2f3a7ee5250ce00d94c37fec59564ea35530584c3669093d61b24f": {
+    "elapsed_ms": 5155.625154000518,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xnc1_v7n.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.intro`",
+    "success": false
+  },
+  "9c96760b4bb597cd4710fc957eef8eaf88898c722b22659534ac504ccbde534d": {
+    "elapsed_ms": 5253.0659989988635,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hh_5_f5_.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.trans`",
+    "success": false
+  },
+  "9dc22d9a113987e13aca26f6b9045e63bc17d0cf586569caebfcc08025cf0c2e": {
+    "elapsed_ms": 5019.891469000868,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_f28_lgiq.lean:4:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} [].reverse []",
+    "success": false
+  },
+  "9e348e33ec5f399fcffa7451e8f65eb8be6d8e581003e6339821454a831884dc": {
+    "elapsed_ms": 5151.758194000649,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vt0g1p52.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vt0g1p52.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "9e6bfcfcbc799c9c9f8e351209b05936a615066f14c9d1a102d34aaaae2fa0b0": {
+    "elapsed_ms": 5041.178619001585,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s9bxoaga.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `heq`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s9bxoaga.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "a080888ac765518a7c701200fa431d0e39a6e79add297e1606bf591c9ca24a28": {
+    "elapsed_ms": 5428.972171001078,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mjc018w1.lean:4:24: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.12 = ?m.12\nof sort `Prop` but is expected to have type\n  List ?m.10\nof sort `Type ?u.93` in the application\n  List.append_nil rfl",
+    "success": false
+  },
+  "a37babf9b63fdf8b7053266cfefab4d1d1cb4f8deec1bbe503df5de8b98b123c": {
+    "elapsed_ms": 4877.01268300043,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_s800u7jh.lean:5:0: error: unexpected end of input; expected '\u21a6', '=>'",
+    "success": false
+  },
+  "a39390fb479dc63768da3d8c184f12ba2b94aa63bed9534820be29d272ee6236": {
+    "elapsed_ms": 5109.372081999027,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_art7sr_e.lean:4:6: error(lean.unknownIdentifier): Unknown identifier `heq`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_art7sr_e.lean:3:55: error: unsolved goals\n\u03b1 : Type\na : \u03b1\n\u22a2 (some a).isSome = true",
+    "success": false
+  },
+  "a45c23b642c00f7ae12b95b68256f9da1438508446168a1b32fde4c08a3ef579": {
+    "elapsed_ms": 5133.753812000577,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5coeogc0.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "a5aaa49ea48af037e76e9db20f12f1483ed9966d23698e4625a19aa29f4ce4ca": {
+    "elapsed_ms": 5023.479489000238,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n3au9km3.lean:4:2: error: Type mismatch\n  Eq.refl ?m.7\nhas type\n  ?m.7 = ?m.7\nbut is expected to have type\n  List.map id xs = xs",
+    "success": false
+  },
+  "a6484212e403f61779fad03e6f8829245d8ee57b74ebc3186d8c4e583253eae9": {
+    "elapsed_ms": 4909.617324999999,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0vm4523t.lean:5:0: error: unexpected end of input; expected '['\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0vm4523t.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `simp`",
+    "success": false
+  },
+  "a79ac9856b63c5ee395abac1ac27e11efc57da4c72d9dbdfb020f366391c13d0": {
+    "elapsed_ms": 5005.442792000395,
+    "error": null,
+    "success": true
+  },
+  "a8426abf0ae144a767f7f9ad869543d8832954735cc193703423c2dd672ab5c2": {
+    "elapsed_ms": 4921.855477999998,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_x5tz7x5q.lean:4:8: error: Invalid projection: Projections cannot be used on functions, and\n  Set\nhas function type `Type ?u.144 \u2192 Type ?u.144`",
+    "success": false
+  },
+  "a8d67ea2434580e76cb100db89f5802bcc91f7510ada3cbecafec1c7ef7b6a07": {
+    "elapsed_ms": 4969.536753000284,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0nwj1irr.lean:4:8: error: Function expected at\n  Nat.zero_add a\nbut this term has type\n  0 + a = a\n\nNote: Expected a function because this term is being applied to the argument\n  b",
+    "success": false
+  },
+  "a8db86579c2701e46cf7a5f82e242a5b862512b93298a5c7f7d6543940d284ed": {
+    "elapsed_ms": 4937.680340000952,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fc1fxxhc.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "a98ea15c9e6a8a9d276d4ed9b6b70edd2428f7935a006222f361807c92902d9f": {
+    "elapsed_ms": 5115.438273000109,
+    "error": null,
+    "success": true
+  },
+  "a9a919e284db1c3a88b39e8bc4adb7a56b1366342016ee69402af27a7dd77e36": {
+    "elapsed_ms": 4968.405220999557,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_rfsuzft5.lean:4:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  \u2115\nhas type `Type` which does not have the necessary form.",
+    "success": false
+  },
+  "ab346371f36c85fbb419a585a9daeda2dc95f81d4e0d5024e64303dad7ad2d18": {
+    "elapsed_ms": 5095.707713999218,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_l5f1ezyq.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "ae57a7a9802a501d2b23a62880f33a1b94249cf4207373c0319fecb3e150ba70": {
+    "elapsed_ms": 4845.476988999508,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_4lisfb4l.lean:5:0: error: unexpected end of input; expected '\u21a6', '=>'",
+    "success": false
+  },
+  "ae5812423d3c5fa57ee170e4ad0d2f086791f3ca6cb2f8ea5e95b62e60c0027a": {
+    "elapsed_ms": 4869.760319001216,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ba4h9p_k.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ba4h9p_k.lean:4:18: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "b01bfeacb850db5db0263bb23c175833a903078b168b70ec5c62e9ec85a607f6": {
+    "elapsed_ms": 5113.153067999519,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zejriay4.lean:4:2: error: Type mismatch\n  Eq.trans\nhas type\n  ?m.7 = ?m.8 \u2192 ?m.8 = ?m.9 \u2192 ?m.7 = ?m.9\nbut is expected to have type\n  Option.map id o = o",
+    "success": false
+  },
+  "b01d156b061d2c1defc5a512d90e51e7a83b167ebdf6437b10a445287f1f489f": {
+    "elapsed_ms": 5217.903389999265,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__diwib_i.lean:4:2: error: Type mismatch\n  Nat.add_comm 1 1\nhas type\n  1 + 1 = 1 + 1\nbut is expected to have type\n  n \u2264 n + 1",
+    "success": false
+  },
+  "b080234be65da02380af869b46f23df92d2d59eba3892df8d1733612b045f3dc": {
+    "elapsed_ms": 5179.651431999446,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lnon76kg.lean:4:2: error: Type mismatch\n  Eq.symm\nhas type\n  ?m.7 = ?m.8 \u2192 ?m.8 = ?m.7\nbut is expected to have type\n  Option.map id o = o",
+    "success": false
+  },
+  "b0bc9d042956f2f5148ed98a7eabafab74e0e73af6fdfac7c7a91d17b5d5f566": {
+    "elapsed_ms": 5054.1824659994745,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hyg95zin.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "b170c344e4623b7e4348733768ae6201a4ce87c4a83e33a5378962fa2513164d": {
+    "elapsed_ms": 5353.0077719988185,
+    "error": null,
+    "success": true
+  },
+  "b1eb98285904dfa6c09145d079ea355f26033bde22e7069b5ea33739c5ef9405": {
+    "elapsed_ms": 5046.908828999221,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_kea3lwnh.lean:4:12: error: Type mismatch\n  absurd \u22ef\nhas type\n  \u00ac?m.6 \u2192 ?m.5\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "b2d34af24fd7b5721d67e3d064a22af477b289ad6ad65c2037d20b5fb6e8ac38": {
+    "elapsed_ms": 5062.012542000957,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1cr1rs7j.lean:5:27: error(lean.unknownIdentifier): Unknown identifier `hq`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1cr1rs7j.lean:4:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "b34bba87b7e2289bdb3c503e4446ebceb786336e6748f6ce2c640b919b7ad65b": {
+    "elapsed_ms": 5147.974656998485,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ke0dcdpp.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "b35910e40cfae7d3bcf9dc4ae60418effb3cdfc5ce10424d9fccd75aa3783d28": {
+    "elapsed_ms": 5208.779743999912,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0gj95rcr.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "b3c1fad903c47ca9c5677d7490b867d5b2d71eb3acd502504dd3e0ff79968805": {
+    "elapsed_ms": 5012.906841999211,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_x7ujr0wy.lean:4:23: error(lean.unknownIdentifier): Unknown identifier `k`",
+    "success": false
+  },
+  "b3ca04030ec13e18fe1502c0cc899fefb5ffeaa0ffbdafc50bdf3a345046ae9b": {
+    "elapsed_ms": 5142.561692000527,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hp0z8yk5.lean:4:24: error: Unexpected term `Bool`; expected single reference to variable",
+    "success": false
+  },
+  "b56d11c34df0591074c802c9515b919839403019c07a1b47383c11491a17c895": {
+    "elapsed_ms": 4849.470391000068,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hrsru1ys.lean:4:15: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "b5b9140f7002bd0ec2237b2bdc5cd210c1fcefd577b736530f1c3eeec9caed77": {
+    "elapsed_ms": 5186.83601200064,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cz393boh.lean:4:16: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.10 = ?m.10\nbut is expected to have type\n  xs = List.map id xs\nin the application\n  Eq.symm rfl",
+    "success": false
+  },
+  "b5dc115cada378ed83005e380dc8fcc2c313b6068377515308dafacfe977ef2d": {
+    "elapsed_ms": 5118.275337001251,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7vy8vk1k.lean:4:2: error: Type mismatch\n  Nat.add_comm 1 n\nhas type\n  1 + n = n + 1\nbut is expected to have type\n  n \u2264 n + 1",
+    "success": false
+  },
+  "b7ada82c01a45d36eaffa63f88669f6bae3129b699163ce5a3132b5ebdccad6f": {
+    "elapsed_ms": 5180.595393001568,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0c4q5sxh.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "b89e870fdd2840d496902daddbc779311d369ee7355f106aa3f6b3d9675078ac": {
+    "elapsed_ms": 5032.428677999633,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fum7x6so.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "b95dd2721e04132d4df66bd68b3a1385d38bf4732d3defc6d2e226e3bb0f591e": {
+    "elapsed_ms": 5167.556694999803,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_h09kf0bz.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `ys`",
+    "success": false
+  },
+  "b9dd3c0c1378cde23a74370f728400831fb97067f8385b81d85791d4f3a5144f": {
+    "elapsed_ms": 5260.153397999602,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gdxi06fy.lean:4:2: error: Type mismatch\n  Nat.zero_add b\nhas type\n  0 + b = b\nbut is expected to have type\n  a + b = b + a",
+    "success": false
+  },
+  "ba8b3a5a2ea34eb251a01a90810dd80bd35321496f37982e031f8c435f0ce321": {
+    "elapsed_ms": 5081.649451998601,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_a97nuw8s.lean:4:18: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "bb220c5f1893a1311cf148c4b86b9e3459ce9f96c622bf3427e3784daeb27d58": {
+    "elapsed_ms": 4969.499250999434,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hxyo95rp.lean:4:2: error: Type mismatch\n  le_refl 0\nhas type\n  0 \u2264 0\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "bb3a61d7370eb1adc4478e5b32b687ca12245ca32508d32641a25af6fb4eca91": {
+    "elapsed_ms": 5148.284790000616,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_svx3r_xn.lean:4:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.9), a = a\nbut is expected to have type\n  n * 1 = n",
+    "success": false
+  },
+  "bc6a697e58b554ec4657806f8c130445713d79b29b4dc0791806bf5d662d8d2c": {
+    "elapsed_ms": 5150.639403000241,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gukk4n93.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gukk4n93.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "bca3cebbeefc09f385bb320f17abdaf1eccdf76966ec3ef2dc4305571e9e3fed": {
+    "elapsed_ms": 4959.08920599868,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qac2qj2r.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.le_refl`",
+    "success": false
+  },
+  "bd172feee56e65ebb636759d89498259ce94e2b4901f64ba02f29b9a3cacf7b8": {
+    "elapsed_ms": 5109.709132999342,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wt_7mkru.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "bd928d3ff6e292a2d3ce9afca8355090e4a5465d9f17a003ad72295d69afef31": {
+    "elapsed_ms": 5107.191305000015,
+    "error": null,
+    "success": true
+  },
+  "be753f759d29c6d1b7eb547ebe876953bfb06005cad90da59a34e19365771265": {
+    "elapsed_ms": 4937.638326999149,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qxudbmmj.lean:4:2: error: Type mismatch\n  Nat.add_comm a a\nhas type\n  a + a = a + a\nbut is expected to have type\n  a + b + c = a + (b + c)",
+    "success": false
+  },
+  "c11145febf78e39ad826f98171fa9a7f403967dfe43319376d382e2910e0d494": {
+    "elapsed_ms": 5067.984830999194,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ornppfdj.lean:5:26: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  q\nin the application\n  And.intro hp",
+    "success": false
+  },
+  "c1c42dbcaada533a78121e8193fa82c51e1a315dd5bb2c20740dc5cbb4613dd9": {
+    "elapsed_ms": 5050.745829999869,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mbl_0h2_.lean:7:0: error: unexpected end of input",
+    "success": false
+  },
+  "c1cb2f52ef9fb1d070096dcd0ed8ccff6a626e0c1895d3a604d86b4689902a79": {
+    "elapsed_ms": 4938.878992999889,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gvp3l2ds.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "c1edb56e6314e37015363d5974e6f60d8b10eae9554844ee7c91b178c670d358": {
+    "elapsed_ms": 5130.105827000079,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_p7y6co8n.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_p7y6co8n.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "c1f022f3bca8a9f285b6de8f2059cb2e28dbdd843c8cab4faaa2968cc36c5184": {
+    "elapsed_ms": 5028.536411000459,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7dlyeyev.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7dlyeyev.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `q` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "c24831926feb7863803799cacf0904e849ca7bcd0d2c2bb3c0340e1fee1f0bc0": {
+    "elapsed_ms": 5178.813626000192,
+    "error": null,
+    "success": true
+  },
+  "c2980ab68f92ddc0ca69158e12b9889976d9106b41c09eb15f754a3e64d3ccb3": {
+    "elapsed_ms": 4881.859315000838,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7bti2cdj.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "c29ed0f619b2ed2ff2904a16fbd17e01f9ecd28f109695d394c3a3acf448218b": {
+    "elapsed_ms": 5128.8555360006285,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wq3v7unp.lean:5:30: error: Application type mismatch: The last\n  hq\nargument has type\n  q\nbut is expected to have type\n  p\nin the application\n  \u27e8hq, hq\u27e9",
+    "success": false
+  },
+  "c2e7292b54e9ab759a999252d601424d52623438e9b92b55509421884e9b4672": {
+    "elapsed_ms": 4870.528702000229,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_b1x561rn.lean:6:2: error: Type mismatch\n  hp\nhas type\n  p\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "c3f4a4c8985e4dde7580708e7437f7b4049de3e1603f9b2d4adabbed923509cc": {
+    "elapsed_ms": 4947.379028999421,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_88mj_nbb.lean:4:24: error: Application type mismatch: The argument\n  List\nhas type\n  Type ?u.47 \u2192 Type ?u.47\nbut is expected to have type\n  List ?m.6\nin the application\n  List.append_nil List",
+    "success": false
+  },
+  "c4dc78cc638d42d833dd0fb47183ab4e50092357d188827b9ba2f0e5a67e3531": {
+    "elapsed_ms": 4988.984683999661,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0pdbmlmx.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0pdbmlmx.lean:4:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "c55f26f5100e822e6b1798a9926c07973123ae031236669508866939b8d9a625": {
+    "elapsed_ms": 5169.689505999486,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1x6icfgw.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "c5af65a8cbb95fb59b8fe78a3046fcfdee47a67b077fee6a5b8c32cffe4f0a12": {
+    "elapsed_ms": 5299.093229999926,
+    "error": null,
+    "success": true
+  },
+  "c5f31493ebce2cffb97a9e06a76b9f7b3d2ae90de279eb5f07e5c796c6203271": {
+    "elapsed_ms": 4843.212936000782,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yubtu5n4.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Nat.refl`",
+    "success": false
+  },
+  "c60572b03733768b941d0f830bab7ffbdb42c2743d45fb3e4d8f1c4aa4f8f263": {
+    "elapsed_ms": 4938.06328699975,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__b_2_wea.lean:4:2: error: `simp` made no progress",
+    "success": false
+  },
+  "c616faead09ff325cf1269b54a2234808d43f874748a84b78c40547f902d613e": {
+    "elapsed_ms": 5263.85652800127,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_txnfuhgw.lean:6:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "c6a53f84a8de5bbe9148ce22440c394050be6e36df511ec47cfc536a9ae2ea0c": {
+    "elapsed_ms": 5109.925635000764,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1nwu__pa.lean:4:2: error: Type mismatch\n  Nat.add_comm a b\nhas type\n  a + b = b + a\nbut is expected to have type\n  a + b + c = a + (b + c)",
+    "success": false
+  },
+  "c6dd897f5cd574c4dfb3d3c0e6ba6f890530ce8f2d96acf10d2d100b59ae2825": {
+    "elapsed_ms": 5135.25067700175,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mffu1pd9.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hAll`",
+    "success": false
+  },
+  "c6f48c2b0a46b4f633c8ef5ab47d3da81f3230a9404513a10ee1337a20cc0596": {
+    "elapsed_ms": 5016.094405998956,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_qf_k5nqp.lean:4:23: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "c75bd1fe6a74a8a93abc230f041772bee38f879fcfc5f2c97bc5481f68b0e44c": {
+    "elapsed_ms": 4831.971113999316,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2_16u7k9.lean:5:0: error: unexpected end of input; expected '['\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2_16u7k9.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `c`",
+    "success": false
+  },
+  "c7c2fc77fe026151493ab71217444556f593e5cecf1642880a6691b83d0cc433": {
+    "elapsed_ms": 5272.569750000912,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_e22qxm1g.lean:4:2: error: Tactic `rcases` failed: `x\u271d : q` is not an inductive datatype",
+    "success": false
+  },
+  "c903b0fcef90139dd96d335adabb0b85257d17f36dcf0a6da8fe85de979b1850": {
+    "elapsed_ms": 5102.7733529990655,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_km157zgz.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_km157zgz.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "ca5b38087b0a256a91ba286491a2ca850b3aa87c19eae529044d812605e509be": {
+    "elapsed_ms": 5175.547123000797,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_o72zt0fz.lean:4:2: error: Type mismatch\n  le_refl 0\nhas type\n  0 \u2264 0\nbut is expected to have type\n  n + 0 = n",
+    "success": false
+  },
+  "ca5fe2597916c0ca52004aa8eb8b0daa544f1425295c47c0c3ef6c7d1cea37d4": {
+    "elapsed_ms": 5217.689438999514,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wzjkr9w5.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "cb261122d92519c37801956b6d1a8e3ce273060e83091fa0c8252bd0a142d582": {
+    "elapsed_ms": 5060.598975000175,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ngoyckbw.lean:4:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.5), a = a\nbut is expected to have type\n  (some a).isSome = true",
+    "success": false
+  },
+  "cbec7b0584048efafd4d6d0aa1c70a5568c216760a251e26f960fb69b32847e5": {
+    "elapsed_ms": 5209.131672001604,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_m64mhr7s.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `h1.trans`",
+    "success": false
+  },
+  "cdb19bf79a3a1f8bfbf81a6c5a9c9dc50efbf39b1349d2f6004391c53d427c07": {
+    "elapsed_ms": 5029.229166000732,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_c2bq3769.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "ce40b6d4fd813a8a91b5abfe5842c3febc65b0110802f0cd2b9c520e889747c4": {
+    "elapsed_ms": 5269.334530999913,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_j598qvv4.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "ce4527b08341e4823f79282983c014323ec722e3c71050f88eb7a84187fc95d9": {
+    "elapsed_ms": 5134.661280999353,
+    "error": null,
+    "success": true
+  },
+  "ce883be3aa93e0e09e31ca6a20e02f5468e29472b0f88d0a2a97414bad3549f0": {
+    "elapsed_ms": 5434.264819999953,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zr8wl_32.lean:7:0: error: unexpected end of input",
+    "success": false
+  },
+  "cebbb6b8ec121ef0eafacc3317ce3676216acd4e82d504bad1ad42da78653cbc": {
+    "elapsed_ms": 5202.432354999473,
+    "error": null,
+    "success": true
+  },
+  "ceee5211d762c75dd7dc34a586b1b470992801521c7ae92e4ffb682c1dda1ef0": {
+    "elapsed_ms": 5104.5416010001645,
+    "error": null,
+    "success": true
+  },
+  "cf36f6bd5f55f25007276b3795919a1ab8a80c331ee5f460f18287fee48a41b2": {
+    "elapsed_ms": 5053.786969001521,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2wnf6jlp.lean:4:2: error: `simp` made no progress",
+    "success": false
+  },
+  "d15a62cf7fdd120d459e127a2619788be89149692f406bd14cad9edb98c06fab": {
+    "elapsed_ms": 5140.450089000296,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7zlill5g.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7zlill5g.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided",
+    "success": false
+  },
+  "d1a81d4015b08ed730cab20bd28e68cc88a69788b6760ea7000f648edcfc0d39": {
+    "elapsed_ms": 5048.796541999764,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ypk8aaj0.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ypk8aaj0.lean:4:9: error: invalid binder name `h1.trans`, it must be atomic",
+    "success": false
+  },
+  "d2125cc12cb15eb28554f2ef1e6663aacb69d258bf60a18c982903177916a414": {
+    "elapsed_ms": 4893.150994001189,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_p_qs60rj.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "d26c0cf796e7f980d04441bd36e84341f392d9b2e93291c74befbcc763306fee": {
+    "elapsed_ms": 5285.108968999339,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cwjcjk17.lean:4:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.6), a = a\nbut is expected to have type\n  Option.map id o = o",
+    "success": false
+  },
+  "d278c0525a263422c916409108fe3d88b3ab3b9f8c66c1adc827e34aa57ea68a": {
+    "elapsed_ms": 5485.946177999722,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__w3vkmog.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__w3vkmog.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "d3a02bfd88584713a43cde4dc4c39730349207def555410cd4e47a074ca4f349": {
+    "elapsed_ms": 5042.126360000111,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean__ux_kkg4.lean:4:21: error: Application type mismatch: The argument\n  \u2115\nhas type\n  Type\nof sort `Type 1` but is expected to have type\n  \u2115\nof sort `Type` in the application\n  Nat.zero_add \u2115",
+    "success": false
+  },
+  "d46f94ecc643691ee72d51f776a9139e1a5022ea78f1de839faf898698fddfdf": {
+    "elapsed_ms": 4821.5323940003145,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3kseac2j.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `\u2200 \u2983a : \u03b1\u2984, a \u2208 \u2205 \u2192 a \u2208 s` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "d48e571dd18a52650fb29b658d36107ba5577243dd0ca98b4562a700f983f927": {
+    "elapsed_ms": 4942.849294000553,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_1h3qmqww.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `ws`",
+    "success": false
+  },
+  "d517f416a7c064581f630f0292ba38bec1d5b50ce89302010dafb31147f802cd": {
+    "elapsed_ms": 5143.721317999734,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_jnu8pjvx.lean:4:2: error: Type mismatch\n  Eq.trans\nhas type\n  ?m.12 = ?m.13 \u2192 ?m.13 = ?m.14 \u2192 ?m.12 = ?m.14\nbut is expected to have type\n  n * 0 = 0",
+    "success": false
+  },
+  "d55f7367a328711354d8230921daefca46f6e51be51c739202e646b4a8fcc6db": {
+    "elapsed_ms": 5167.772879998665,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xl29mkmi.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.7 = ?m.7\nbut is expected to have type\n  Option.map id o = o",
+    "success": false
+  },
+  "d5b35332bb3ac597f19fccfe0d22f306804dd7e0b18dbf6a7699f5b48266bdac": {
+    "elapsed_ms": 5604.560381001647,
+    "error": null,
+    "success": true
+  },
+  "d699f8d8729cee917b0bd44463a83cab1e189202dbbcc9c5cff12d2b9b87a32e": {
+    "elapsed_ms": 4886.908562000826,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_igwui_wc.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_igwui_wc.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `True.intro` does not have explicit fields, but 2 were provided",
+    "success": false
+  },
+  "d7c0faa6d2c871c3b14ef279d9ab7114a46c16984992f326d50c8a9be14f14a7": {
+    "elapsed_ms": 5067.533438999817,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sbsb_liy.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sbsb_liy.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "d7cfd724e354fac0052d1794547dead8592ca8385318ae70126224c6954ea6cb": {
+    "elapsed_ms": 5194.838818999415,
+    "error": null,
+    "success": true
+  },
+  "d80ba8fd66585460c659dbd0ee8165c990d054fbbb63c76bbabd6e383d75d841": {
+    "elapsed_ms": 5076.474416000565,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_k4cfmfl1.lean:4:2: error: Type mismatch\n  \u2115\nhas type\n  Type\nof sort `Type 1` but is expected to have type\n  n * 0 = 0\nof sort `Prop`",
+    "success": false
+  },
+  "d82ae3b5c7573b0b8afab4ea19203dd2eac199650ffab8d22c9ed45a79529e37": {
+    "elapsed_ms": 5364.175190999958,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gpg2p0j5.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "d923d48353e866640e0c8a598cc95e246ca0b048344793f3b1362651c1771a3c": {
+    "elapsed_ms": 4947.295900999961,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_mp0ghq5n.lean:4:13: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  OfNat (Type ?u.102) 0\nnumerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is\n  Type ?u.102\ndue to the absence of the instance above\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.",
+    "success": false
+  },
+  "d9828e4512b92104114a2af1e8a8dc91e7371a292f10ee8662a84d15a283dd43": {
+    "elapsed_ms": 5109.647174000202,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_abcuo47b.lean:4:8: error: Invalid projection: Projections cannot be used on functions, and\n  Or\nhas function type `Prop \u2192 Prop \u2192 Prop`",
+    "success": false
+  },
+  "d9f665ad631b19d815e4c6b9cdbd88c7de7569ead883a6d5cc2a1897e6a1af10": {
+    "elapsed_ms": 5092.821393000122,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_wwf09iqy.lean:4:2: error: Type mismatch\n  Nat.zero_add a\nhas type\n  0 + a = a\nbut is expected to have type\n  a + b = b + a",
+    "success": false
+  },
+  "da0ca812fdc11afcfeac7fd0d551b4ef489adad3cff316f9e9ca5093d855d9a3": {
+    "elapsed_ms": 5049.186315000043,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3hnfvy0x.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "da8263716e8bd781658cef1a47c7b816d418af12a7aad36016da54ca4c4ca598": {
+    "elapsed_ms": 5085.7187250003335,
+    "error": null,
+    "success": true
+  },
+  "db60ec0a6a9c97763044e8980e23f0b093e1b7f183ea19d4e35b3abe3fa896b2": {
+    "elapsed_ms": 5182.200052999178,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_a1fn9821.lean:4:2: error: Type mismatch\n  Nat.add_comm 1\nhas type\n  \u2200 (m : \u2115), 1 + m = m + 1\nbut is expected to have type\n  n \u2264 n + 1\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_a1fn9821.lean:4:23: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "db829772d4c5df246f6dbe6c80005edfb991badc60d892bc040862d46ab954dc": {
+    "elapsed_ms": 5112.661438000941,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_los3sacq.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "dbce4f9ace3862b044c2f208af0d82ee8526d9c8e0fbe1b4b8f6b3ced63fffc9": {
+    "elapsed_ms": 5292.167460000201,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_luzaqn3v.lean:4:2: error: Type mismatch\n  Nat.zero_add b\nhas type\n  0 + b = b\nbut is expected to have type\n  a + b + c = a + (b + c)",
+    "success": false
+  },
+  "dbd9b66eb61cb44b50df819b943d4aabe05951303fd60b0932319c16aac8e264": {
+    "elapsed_ms": 5108.347208999476,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2wieaupc.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2wieaupc.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "dcfa6fa74d5bf8b52eb3fefc7f1f4ad6531bfe8a42a89966c142d571a45c5998": {
+    "elapsed_ms": 4996.932055999423,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9hof8uyc.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9hof8uyc.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "dd7da85b84f5fb19fac9db56240345a368301b43ef7da3e250d352391cb7e76d": {
+    "elapsed_ms": 5070.848117000423,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_q_cmj4xh.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "dd819192c4903c5e88cf5728deb5581188f5220a3cf70a63c85ad9a28b48a313": {
+    "elapsed_ms": 5122.343643999557,
+    "error": null,
+    "success": true
+  },
+  "df2ff5426c674facc600d66cd7d3fcfeaaa0e511a71edb5b3bb594beab7dc577": {
+    "elapsed_ms": 5191.824251000071,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_giphxmfw.lean:4:4: error: unexpected identifier; expected '['\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_giphxmfw.lean:3:52: error: unsolved goals\n\u03b1 : Type\nxs : List \u03b1\n\u22a2 [] ++ xs = xs",
+    "success": false
+  },
+  "df6852c438ada9998967a1c41363365092e4a88f842b0b7f5b3618054f066924": {
+    "elapsed_ms": 5186.471600000004,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_3n49visu.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "e048c593ef611ac612cdd90079ea32e8d352c2c1e22c08489365b9d132f3f5e9": {
+    "elapsed_ms": 4854.958121000891,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_v9arwfw2.lean:4:2: error: Type mismatch\n  Set.mem_singleton a\nhas type\n  a \u2208 {a}\nbut is expected to have type\n  a \u2208 Set.univ",
+    "success": false
+  },
+  "e068021f007e4866d24549b7a3c6c75dbf79d6553282f3f67603467e7ffcda69": {
+    "elapsed_ms": 4823.265220000394,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_trfq4cok.lean:4:21: error: Application type mismatch: The last\n  hp\nargument has type\n  p\nbut is expected to have type\n  q\nin the application\n  \u27e8hp, hp\u27e9",
+    "success": false
+  },
+  "e06f8b2158a11db759234f4b59ff1b43479a6d76523fe1d521b54b9107b93828": {
+    "elapsed_ms": 5121.29087699941,
+    "error": null,
+    "success": true
+  },
+  "e0a170072d9cdac2cb01fea6b940eb71d0c8daaf1d50a9f0312c43248897cebc": {
+    "elapsed_ms": 5090.462329000729,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2pvq624z.lean:4:24: error: Unexpected term `Bool`; expected single reference to variable",
+    "success": false
+  },
+  "e1633cd90198a30a517f481db3b1b3fd644839b960072bd747a6fafe380554f1": {
+    "elapsed_ms": 4846.418840001206,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_nyqodi5z.lean:4:13: error: Application type mismatch: The last\n  hp\nargument has type\n  p\nbut is expected to have type\n  q\nin the application\n  \u27e8hp, hp\u27e9",
+    "success": false
+  },
+  "e17e388bf3cfda49f61138d7b552848c639aaf2dfdcb3c6fd0b8c824f95bc0e6": {
+    "elapsed_ms": 4894.820511999569,
+    "error": null,
+    "success": true
+  },
+  "e259f47cee4a305e5b2dbac37715a9878b3ba7cd1fbeea461038c20711a8271c": {
+    "elapsed_ms": 5111.6572199989605,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xqt_30kq.lean:4:2: error: Type mismatch\n  Nat.add_comm\nhas type\n  \u2200 (n m : \u2115), n + m = m + n\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "e292b6002ceddb3c3d30625e8f52d987efe6186d1665f64b013ca5a7b4dec88a": {
+    "elapsed_ms": 5139.272644000812,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_reehh3gz.lean:4:2: error: Type mismatch\n  Exists.intro 42\nhas type\n  ?m.5 42 \u2192 Exists ?m.5\nbut is expected to have type\n  n \u2264 n",
+    "success": false
+  },
+  "e2d008cc714f13baf07ff84c4c3f553ee23b6c6106745d44ffdcb6781fc673a2": {
+    "elapsed_ms": 5329.380430999663,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zghh6l0e.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.add_comm`",
+    "success": false
+  },
+  "e3b435bcca99a44e072a508e21be13e0017c78b4296adffe01b256928a69f506": {
+    "elapsed_ms": 5075.5150340010005,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2w3xusos.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "e3e1658252b284467455bd86569b4beceb163757ba922fc48d2056ecbf19dd18": {
+    "elapsed_ms": 5162.317921000067,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_caovl2sh.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_caovl2sh.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "e49830e69b5696e770a9aa5e3029557a521db1a1a40e51f2b7f94caf5606029f": {
+    "elapsed_ms": 5154.470212000888,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_w7f0fdyz.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_w7f0fdyz.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "e4a3bbf9b90677be1a9abe74bebb4033efe127151d1c5526fc2286efbaf9ec8b": {
+    "elapsed_ms": 5329.357409000295,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2pgvi8qv.lean:4:3: error: unknown tactic\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2pgvi8qv.lean:3:52: error: unsolved goals\n\u03b1 : Type\nxs : List \u03b1\n\u22a2 [] ++ xs = xs",
+    "success": false
+  },
+  "e4dab2dc6a35d6204a5c540620478b7908640688417a6fbf5b5b8576b171f422": {
+    "elapsed_ms": 5104.904969999552,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_lsk3d47a.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "e5877694ce3b4cb84651aa12c693211629942cbb2d9d9d96c1607af2e14d6909": {
+    "elapsed_ms": 5242.568994999601,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_c05_zr5k.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_c05_zr5k.lean:4:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "e64c36d1c169c63a31cae486220501c9c0a2f3e29292e4c82d53abb937c84cc8": {
+    "elapsed_ms": 5077.21832399875,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_5nlesq2g.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `l`",
+    "success": false
+  },
+  "e664853d58c4279862e434673d1191a048d3554a80d4df91bccc34dc643e556b": {
+    "elapsed_ms": 5238.735118999102,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_xtikadf8.lean:4:21: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "e66dea46bc393f088c1f539dd4da1773540e66335ccc0865ba7c6c552f2c035c": {
+    "elapsed_ms": 4955.603922000591,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_bguiv8n2.lean:4:2: error: Type mismatch\n  Nat.add_comm a\nhas type\n  \u2200 (m : \u2115), a + m = m + a\nbut is expected to have type\n  a + b = b + a",
+    "success": false
+  },
+  "e6ff0092c70e06adfbe29c45b43862e7fd55a88dfa8702b75b1a6f7c8e229001": {
+    "elapsed_ms": 5142.186655999467,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_bpae7cmk.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.7 = ?m.7\nbut is expected to have type\n  List.map id xs = xs",
+    "success": false
+  },
+  "e7be2c2bca09383539e49485cc708b8dae3e360e5d8a796b75d21ce1e8ca7732": {
+    "elapsed_ms": 4867.7950389992475,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gv7ubp2y.lean:5:0: error: unexpected end of input; expected '['\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_gv7ubp2y.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "e7f3df5073d07f9fd0373b1ad81dc795105ffa733a5789b668dbe49af640bf3f": {
+    "elapsed_ms": 5272.553087001143,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n4guahk7.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "e858bcfe0da72f215f19cfe24404f8c59436431eff290182c48bca42f13a8444": {
+    "elapsed_ms": 5161.887829000989,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8bbvpg0a.lean:4:6: error(lean.unknownIdentifier): Unknown identifier `hh`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_8bbvpg0a.lean:3:27: error: unsolved goals\n\u22a2 true = true",
+    "success": false
+  },
+  "e94c16335aea4b2ed67a3067a051bbbb31cdcd5fbc8da1af4021c26270ca6c36": {
+    "elapsed_ms": 4860.1359669992235,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tdfm9anv.lean:4:28: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+    "success": false
+  },
+  "e9700f295877b27b419cec348efc1012da206e37e20a8bacf706cd5a4aae8641": {
+    "elapsed_ms": 5069.515523000518,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fshtwbh_.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fshtwbh_.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "e999aded1354e20cfc818181456c6e12e2946cf15dc8cac5389324f551ae926d": {
+    "elapsed_ms": 5318.7096920009935,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2a5ffn1g.lean:4:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "e9ce64478a81d7b22f1f0c898522aabc1c8d4c548c95e775993a219640eb2c1f": {
+    "elapsed_ms": 5105.635792999237,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_yga53ksm.lean:4:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} (List.map id xs) xs",
+    "success": false
+  },
+  "ea8d266c11843b03b934fba48276afe7c74b08cd84254d721a153af46122c1be": {
+    "elapsed_ms": 5145.380960000693,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tit57uvq.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_tit57uvq.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "eae2a21b679ca18a2358da4680c24ba90dcfb6e10ed0e3f4d414bf087dd3cc43": {
+    "elapsed_ms": 5049.979067000095,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_im2vorrt.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_im2vorrt.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "ebe4c7606094b2eb2b898166169bc2a5a5cd3f136854241f5582c4c10e76b898": {
+    "elapsed_ms": 5264.335723999466,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_d1sombp0.lean:4:2: error: Type mismatch\n  Nat.succ.inj\nhas type\n  Nat.succ ?m.6 = Nat.succ ?m.7 \u2192 ?m.6 = ?m.7\nbut is expected to have type\n  xs.reverse.length = xs.length",
+    "success": false
+  },
+  "ec4195a0b456476dfe23d391b938d8ef54d2345541427a102dfd0226de473114": {
+    "elapsed_ms": 4867.174738999893,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_sjckhfps.lean:4:13: error(lean.unknownIdentifier): Unknown identifier `hr`",
+    "success": false
+  },
+  "ec93d7408dd6d0ae3a4c0624290f788c76a39637e9c460f6ff95557af30284ca": {
+    "elapsed_ms": 5111.480049999955,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_jaxr8bom.lean:4:18: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "ed2513069adc8964e30d4f0fc7789ca3d8799267e69a68b39aabf651fa949189": {
+    "elapsed_ms": 5035.663951999595,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ti3sj83q.lean:4:9: error(lean.unknownIdentifier): Unknown identifier `heq`",
+    "success": false
+  },
+  "ee85a67c30282fddf8f943cdff1e18bb536acedfebb897e4b2b1ead7289b03d0": {
+    "elapsed_ms": 5109.160116999192,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_7bngwffb.lean:5:2: error: Type mismatch\n  absurd \u22ef\nhas type\n  \u00ac?m.6 \u2192 ?m.5\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "ee9fc6801027d74b86583ffe40e0a687f9cfb10027c73d64e0277e73d2000a83": {
+    "elapsed_ms": 5048.248762001094,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_j20quwxh.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_j20quwxh.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.trans`",
+    "success": false
+  },
+  "eed0d5341ab501a928c78c1026fe2e2136d8c7ce00a5439bd3d0a74305563188": {
+    "elapsed_ms": 5345.333527999173,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cc5lrjyw.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.7 = ?m.7\nbut is expected to have type\n  xs.reverse.length = xs.length",
+    "success": false
+  },
+  "eed6dbc2f586898f86bfb11e3a308d00bf95867b9ea940ede590ae9164c8ebef": {
+    "elapsed_ms": 5232.166965999568,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_m87ua3os.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "eef9180a9f829a4922f8ac97e89f018fa821aff8b0440c6a88f204ad0b18d3f0": {
+    "elapsed_ms": 4862.979319999795,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_54dya6df.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`",
+    "success": false
+  },
+  "ef28f26c86be1cbe786afcb8ccce1ffa47631f4b6acf7d07b2175736101650eb": {
+    "elapsed_ms": 5275.380221999512,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_0dd94r3r.lean:5:8: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "f0596a9d3abf246ff2c9c089df9d93b9160e85b50ab9a89ed2c18a012089f765": {
+    "elapsed_ms": 4957.8978450008435,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_60ev08lw.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `nil_append`",
+    "success": false
+  },
+  "f083ded9e59603ede1fff1b8568b572886de831ad243d63a6a1c82f84bb6d1a6": {
+    "elapsed_ms": 4867.539629000021,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_23i8blss.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Bool.trans`",
+    "success": false
+  },
+  "f097f9519dd80248e0bd68c901bc2f56b11265257874f54fa8ebce3654346699": {
+    "elapsed_ms": 5226.0228659997665,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_r7dm3mjl.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `fbc`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_r7dm3mjl.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "f24a35975e2ddbd1536855c5f3e09b8af6e01c09d2da147a6646402d5d4da71f": {
+    "elapsed_ms": 4903.940361000423,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_278di5xg.lean:4:2: error: Type mismatch\n  Bool.and_true\nhas type\n  \u2200 (b : Bool), (b && true) = b\nbut is expected to have type\n  (b && true) = b",
+    "success": false
+  },
+  "f2560bfd3c2791b79251543773068041f6e9531e995a6d34482bde160eee6274": {
+    "elapsed_ms": 5218.148707001092,
+    "error": null,
+    "success": true
+  },
+  "f28de9609d923de6639a09bcd85f65c2e8a3fb3383f10d43dd726317735f9c1e": {
+    "elapsed_ms": 5066.506608000054,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_65hwnbqz.lean:4:16: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "f2cca2bb710612ba7286ab8e1e6d9e556ee833d12f7b932b619a2c2b9c169aeb": {
+    "elapsed_ms": 5157.849244998943,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_dmjhu6sz.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g`\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_dmjhu6sz.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "f36a0ed517898ff295b0551325c3d586345d5d5d23d151b6b94ec83ac0fdfa18": {
+    "elapsed_ms": 5114.136022999446,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_a_b99lo0.lean:4:20: error: Application type mismatch: The argument\n  h hp\nhas type\n  False\nbut is expected to have type\n  p\nin the application\n  h (h hp)",
+    "success": false
+  },
+  "f3a279379d259336a651c12e2407a4827dc5b5e4f5b50ff9e624206e7e714e1d": {
+    "elapsed_ms": 5265.079565999258,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_013i1pw2.lean:5:0: error: unexpected end of input; expected '\u27e9'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_013i1pw2.lean:4:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `n.le n` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "f40a2896ed8a3b5f44b24b95afc98911929c008d359bde7b50aa2a1d1390ad70": {
+    "elapsed_ms": 5166.028748000826,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_fod4gv0a.lean:4:2: error: Type mismatch\n  Eq.trans rfl\nhas type\n  ?m.11 = ?m.9 \u2192 ?m.11 = ?m.9\nbut is expected to have type\n  xs.reverse.length = xs.length",
+    "success": false
+  },
+  "f42d7b09a14c006e852ce43ff6b55ef3c2b5ac7c79db527681fd659b7326b955": {
+    "elapsed_ms": 5065.595427000517,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_v0bumzfp.lean:4:24: error: Application type mismatch: The argument\n  hq\nhas type\n  q\nbut is expected to have type\n  ?m.3 hp\nin the application\n  Exists.intro hp hq",
+    "success": false
+  },
+  "f44e44c067ea985a4e988ef243985ce54caa95e5c64a9df96e51ccf651a4457d": {
+    "elapsed_ms": 5020.423408999704,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_vx1_ew5f.lean:4:23: error: unexpected identifier; expected '\u27e9'",
+    "success": false
+  },
+  "f454ed9391f6d0cf1c4a8f6075937750d42b99124d386a8e463a114e24eb167d": {
+    "elapsed_ms": 5077.014533000693,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_9czm7dbw.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.refl`",
+    "success": false
+  },
+  "f4a93d80031aa83111ae78188b761f0f4a33d69a7595331288fa673fa21fc9ad": {
+    "elapsed_ms": 5126.263858001039,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_l9kywp4p.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Eq.succ`",
+    "success": false
+  },
+  "f4baf03b59c451155a77bed50068273cb373e7418fa9bb92d69d178364b87c7b": {
+    "elapsed_ms": 5303.298412000004,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_h1v7z9if.lean:4:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.11), a = a\nbut is expected to have type\n  n * 0 = 0",
+    "success": false
+  },
+  "f54c14cff1b6208a05ecf466275d83ec78f0ebee0105a47903c17410c6324f6a": {
+    "elapsed_ms": 5085.780891999093,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_pqmjgqj9.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "f589fb3ff630c9ec3119cb6c30634e3f7ac16f5591b272df43062e64e20f12ff": {
+    "elapsed_ms": 5085.771238000234,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ruzktx1z.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "f5ca3f01aacb8114146f214c5fac9d5f6ef30ac04509e8ef85ca565b9fe76673": {
+    "elapsed_ms": 5097.694501999285,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_e2s9usw6.lean:5:0: error: unexpected end of input; expected ')', ',' or ':'\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_e2s9usw6.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `g.intro`",
+    "success": false
+  },
+  "f71b8b68ed27447cf1e1ce7ebc717ca0353ef1bf58f4078ce491f6a81cc03249": {
+    "elapsed_ms": 5077.739884000039,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_zrqgn4lq.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "f84639652e5bf5db8a50f1e0cb692b6e63a3f6daadfc633bd0e321bc5d5f90f9": {
+    "elapsed_ms": 5213.221158999659,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2y754zjt.lean:4:2: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\n\u22a2 p \u2228 \u00acp\n/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2y754zjt.lean:4:8: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "f92091760b46727062967d29d87f795591ac93c4eff05f18b6511f6c566c18c3": {
+    "elapsed_ms": 5331.066131000625,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_6is03ogu.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `zs`",
+    "success": false
+  },
+  "f949ba3ae2831c415c2c3a3a2bf2f938033b685f41c5940ca6ad5ce56140baf7": {
+    "elapsed_ms": 4878.498563000903,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_hbg8cl5z.lean:4:2: error: Type mismatch\n  rfl\nhas type\n  ?m.7 = ?m.7\nbut is expected to have type\n  a \u2208 Set.univ",
+    "success": false
+  },
+  "f9bfe717277ab994e4919f02db8b7b2f49f9db496b20ab0ea529186541d5614c": {
+    "elapsed_ms": 5132.165778000854,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_n_sg87e9.lean:4:24: error(lean.unknownIdentifier): Unknown identifier `vs`",
+    "success": false
+  },
+  "fb25c2bb934f95cf6170afd8d31717036e80e2706eb290a14623678162788ca7": {
+    "elapsed_ms": 5173.421864999909,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_kl6gs4jm.lean:4:2: error: Tactic `rfl` failed: The left-hand side\n  Option.map id o\nis not definitionally equal to the right-hand side\n  o\n\n\u03b1 : Type\no : Option \u03b1\n\u22a2 Option.map id o = o",
+    "success": false
+  },
+  "fc3ca8b971b44240c6bdc9520abf811b6d25a8f30bf6f94bef116d3f612d4924": {
+    "elapsed_ms": 5116.321900999537,
+    "error": null,
+    "success": true
+  },
+  "fcecfa2de3ae003b99ddfbc395dde042cdc5cc7be9baf7edcf03d9334ff8d6c7": {
+    "elapsed_ms": 5129.947688999891,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_w2iuuvu9.lean:4:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  \u2115\nhas type `Type` which does not have the necessary form.",
+    "success": false
+  },
+  "fe04a430dab9ac2dc58928a4bddf325ff03df25aaefbf20aef7b199f6bbf7580": {
+    "elapsed_ms": 5171.4127989998815,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_2x0sim4k.lean:4:24: error: Application type mismatch: The argument\n  List\nhas type\n  Type ?u.28 \u2192 Type ?u.28\nbut is expected to have type\n  List ?m.6\nin the application\n  List.append_nil List",
+    "success": false
+  },
+  "fec3abb089c1db1cdc2f261dec9ea61b0a52c6f6ca036d3121f03a58fefa66f1": {
+    "elapsed_ms": 5185.023665999324,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_f7a09rlm.lean:4:8: error(lean.unknownIdentifier): Unknown constant `Or.refl`",
+    "success": false
+  },
+  "ff67e09777c26e3400650d85390962936e5acd27d98cf329d49dc01d3cbcc8f5": {
+    "elapsed_ms": 5088.909074000185,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_cxb6gwe5.lean:4:2: error: Type mismatch\n  Nat.zero_add\nhas type\n  \u2200 (n : \u2115), 0 + n = n\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "ff7b2183f980d0a009be326c3bef9b35bb2b047872036dcac816622ee047eadb": {
+    "elapsed_ms": 5576.203223999983,
+    "error": "/home/wangw/code/mini_elf_mathlib_probe/mini_elf_lean_ok16_sp0.lean:4:2: error: Type mismatch\n  Nat.le_refl\nhas type\n  \u2200 (n : \u2115), n \u2264 n\nbut is expected to have type\n  n + 0 = n",
+    "success": false
+  }
+}

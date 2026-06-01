@@ -1,0 +1,16 @@
+{
+  "n_targets": 13,
+  "n_verified_after_rerun": 4,
+  "n_still_timeout": 0,
+  "n_other_fail": 9,
+  "timeout_seconds_used": 120.0,
+  "warmup_used": true,
+  "families": [
+    "forall_inst",
+    "rewrite_succ",
+    "exists_reconstruct",
+    "neg_exfalso",
+    "neg_imp_exfalso"
+  ],
+  "config_enumerated": "literal_adapt_rerank"
+}

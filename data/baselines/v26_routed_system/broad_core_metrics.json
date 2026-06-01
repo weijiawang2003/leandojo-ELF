@@ -1,0 +1,492 @@
+{
+  "n": 48,
+  "best_config": "policy_abstract",
+  "by_config": {
+    "raw": {
+      "pass@1": 0.6041666666666666,
+      "pass@5": 0.8958333333333334,
+      "pass@10": 0.9583333333333334,
+      "MRR": 0.740244708994709,
+      "n_no_candidate_verified": 2,
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@10": 0.8333333333333334,
+          "pass@5": 0.8333333333333334,
+          "pass@1": 0.6666666666666666
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@10": 0.8,
+          "pass@5": 0.8,
+          "pass@1": 0.6
+        },
+        "negation": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@10": 1.0,
+          "pass@5": 0.75,
+          "pass@1": 0.25
+        },
+        "forall": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6
+        },
+        "bool": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        }
+      },
+      "failure_taxonomy": {
+        "unknown_identifier": 96,
+        "other": 104,
+        "type_mismatch": 100,
+        "parse_error": 80,
+        "shape_miss": 1,
+        "unknown_tactic": 7
+      },
+      "no_verify_reason": {
+        "v18_and_assoc_one": "parse_error",
+        "v18_or_elim_to_common": "unknown_identifier"
+      }
+    },
+    "rule": {
+      "pass@1": 0.6041666666666666,
+      "pass@5": 0.8541666666666666,
+      "pass@10": 0.9583333333333334,
+      "MRR": 0.724156746031746,
+      "n_no_candidate_verified": 2,
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@10": 0.8333333333333334,
+          "pass@5": 0.8333333333333334,
+          "pass@1": 0.6666666666666666
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@10": 0.8,
+          "pass@5": 0.8,
+          "pass@1": 0.2
+        },
+        "negation": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@10": 1.0,
+          "pass@5": 0.75,
+          "pass@1": 0.25
+        },
+        "forall": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.6,
+          "pass@1": 0.2
+        },
+        "bool": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.6
+        }
+      },
+      "failure_taxonomy": {
+        "unknown_identifier": 96,
+        "other": 104,
+        "type_mismatch": 100,
+        "parse_error": 80,
+        "shape_miss": 1,
+        "unknown_tactic": 7
+      },
+      "no_verify_reason": {
+        "v18_and_assoc_one": "parse_error",
+        "v18_or_elim_to_common": "unknown_identifier"
+      }
+    },
+    "learned": {
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.9166666666666666,
+      "pass@10": 0.9583333333333334,
+      "MRR": 0.7876157407407408,
+      "n_no_candidate_verified": 2,
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.8333333333333334
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@10": 0.8333333333333334,
+          "pass@5": 0.8333333333333334,
+          "pass@1": 0.3333333333333333
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@10": 0.8,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@10": 1.0,
+          "pass@5": 0.75,
+          "pass@1": 0.5
+        },
+        "forall": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6
+        },
+        "bool": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "list": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.8
+        }
+      },
+      "failure_taxonomy": {
+        "unknown_identifier": 96,
+        "other": 104,
+        "type_mismatch": 100,
+        "parse_error": 80,
+        "shape_miss": 1,
+        "unknown_tactic": 7
+      },
+      "no_verify_reason": {
+        "v18_and_assoc_one": "parse_error",
+        "v18_or_elim_to_common": "unknown_identifier"
+      }
+    },
+    "policy": {
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.9166666666666666,
+      "pass@10": 0.9583333333333334,
+      "MRR": 0.7876157407407408,
+      "n_no_candidate_verified": 2,
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.8333333333333334
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@10": 0.8333333333333334,
+          "pass@5": 0.8333333333333334,
+          "pass@1": 0.3333333333333333
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@10": 0.8,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@10": 1.0,
+          "pass@5": 0.75,
+          "pass@1": 0.5
+        },
+        "forall": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6
+        },
+        "bool": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "list": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.8
+        }
+      },
+      "failure_taxonomy": {
+        "unknown_identifier": 96,
+        "other": 104,
+        "type_mismatch": 100,
+        "parse_error": 80,
+        "shape_miss": 1,
+        "unknown_tactic": 7
+      },
+      "no_verify_reason": {
+        "v18_and_assoc_one": "parse_error",
+        "v18_or_elim_to_common": "unknown_identifier"
+      }
+    },
+    "abstract": {
+      "pass@1": 0.6875,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334,
+      "MRR": 0.8088541666666668,
+      "n_no_candidate_verified": 2,
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.8333333333333334
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@10": 0.8333333333333334,
+          "pass@5": 0.8333333333333334,
+          "pass@1": 0.5
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@10": 0.8,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.4
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.5
+        },
+        "forall": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.6
+        },
+        "bool": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "list": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "other": 104,
+        "unknown_identifier": 96,
+        "type_mismatch": 100,
+        "parse_error": 80,
+        "shape_miss": 1,
+        "unknown_tactic": 7
+      },
+      "no_verify_reason": {
+        "v18_and_assoc_one": "parse_error",
+        "v18_or_elim_to_common": "unknown_identifier"
+      }
+    },
+    "policy_abstract": {
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334,
+      "MRR": 0.8567708333333334,
+      "n_no_candidate_verified": 2,
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@10": 0.8333333333333334,
+          "pass@5": 0.8333333333333334,
+          "pass@1": 0.5
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@10": 0.8,
+          "pass@5": 0.8,
+          "pass@1": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 0.6666666666666666
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 0.8,
+          "pass@1": 0.6
+        },
+        "bool": {
+          "n": 3,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        },
+        "list": {
+          "n": 5,
+          "pass@10": 1.0,
+          "pass@5": 1.0,
+          "pass@1": 1.0
+        }
+      },
+      "failure_taxonomy": {
+        "other": 104,
+        "unknown_identifier": 96,
+        "type_mismatch": 100,
+        "parse_error": 80,
+        "shape_miss": 1,
+        "unknown_tactic": 7
+      },
+      "no_verify_reason": {
+        "v18_and_assoc_one": "parse_error",
+        "v18_or_elim_to_common": "unknown_identifier"
+      }
+    }
+  }
+}

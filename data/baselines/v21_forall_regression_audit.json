@@ -1,0 +1,119 @@
+{
+  "n_forall_theorems": 3,
+  "n_regressed_vs_v18": 2,
+  "n_schema_lost": 2,
+  "diagnosis": "schema_lost dominates: the instantiate-forall schema (`exact h <literal>` / `exact h <var>`) present in the v18 beam is ABSENT from the v20 beam. This is a single-model capacity / distribution tradeoff — the 948 implication+bool rows (45% of the 2099-row v20 pool) shifted the model's forall-goal output onto destructuring shapes (`exact h with ⟨..⟩`, `exact h ⟨..⟩`). It is NOT a ranking problem, so ranker-time abstraction cannot recover it; the fix is corpus rebalancing, higher capacity, or routing.",
+  "per_theorem": [
+    {
+      "theorem_name": "v18_forall_inst_at_7",
+      "split": "test",
+      "theorem_statement": "(p : Nat → Prop) (h : ∀ n, p n) : p 7",
+      "expected_tactic_head": "exact",
+      "v18_broad_only_first_rank": 0,
+      "v18_panel_first_rank": 0,
+      "v20_first_rank": null,
+      "v18_broad_only_inst_schema_candidates": [
+        "exact h 7",
+        "exact h p",
+        "exact h 5",
+        "exact h 3",
+        "exact h 4",
+        "exact h 13",
+        "exact h 8",
+        "exact h 9"
+      ],
+      "v20_inst_schema_candidates": [],
+      "v20_top10": [
+        "exact h with ⟨n, hp⟩",
+        "exact h with ⟨n, hq⟩",
+        "exact h with ⟨hp, hq⟩",
+        "cases h with\n  | intro hp => exact hp =",
+        "rcases h with ⟨n, hp⟩\n  exact hq",
+        "rcases h with ⟨n, hp⟩\n  exact hp",
+        "cases h with\n  | intro hp hq => exact hp",
+        "rcases h with ⟨hp, hq⟩\n  exact hq",
+        "cases h with\n  | intro hp hb => exact hp",
+        "rcases h with ⟨n, hp, hq⟩\n  exact hq"
+      ],
+      "v20_top3_errors": [
+        "/tmp/mini_elf_lean_ym_zk3ni.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_wg39dp5w.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_2piyei_h.lean:2:2: error: Type mismatch"
+      ],
+      "v20_failure_class": "schema_lost"
+    },
+    {
+      "theorem_name": "v18_forall_inst_compose",
+      "split": "train",
+      "theorem_statement": "(p q : Nat → Prop) (h : ∀ n, p n → q n) (hp : p 5) : q 5",
+      "expected_tactic_head": "exact",
+      "v18_broad_only_first_rank": null,
+      "v18_panel_first_rank": null,
+      "v20_first_rank": null,
+      "v18_broad_only_inst_schema_candidates": [
+        "exact h 5",
+        "exact h p",
+        "exact h 3",
+        "exact h 4",
+        "exact h 8",
+        "exact h 9",
+        "exact h 13",
+        "exact h 7"
+      ],
+      "v20_inst_schema_candidates": [
+        "exact h p"
+      ],
+      "v20_top10": [
+        "exact h p",
+        "exact h hp hq",
+        "exact h with ⟨n, hp⟩",
+        "exact h with hx => exact",
+        "apply h\n  exact hpq hp",
+        "exact h with ⟨n, hp)",
+        "exact h ⟨ha, hb⟩",
+        "exact h with ⟨n, hq⟩",
+        "exact h with ⟨ha, hb⟩",
+        "exact h ⟨ha, hq⟩"
+      ],
+      "v20_top3_errors": [
+        "/tmp/mini_elf_lean_9_xlbunw.lean:2:10: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_2zs721xf.lean:2:10: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_tzyeuapf.lean:2:2: error: Type mismatch"
+      ],
+      "v20_failure_class": "still_unsolved_in_v18"
+    },
+    {
+      "theorem_name": "v18_forall_to_arrow",
+      "split": "val",
+      "theorem_statement": "(p q : Nat → Prop) (h : ∀ n, p n → q n) : p 3 → q 3",
+      "expected_tactic_head": "exact",
+      "v18_broad_only_first_rank": 0,
+      "v18_panel_first_rank": 1,
+      "v20_first_rank": null,
+      "v18_broad_only_inst_schema_candidates": [
+        "exact h 3",
+        "exact h p"
+      ],
+      "v20_inst_schema_candidates": [],
+      "v20_top10": [
+        "intro h\n  exact h ⟨ha, hb⟩",
+        "exact h ⟨ha, hb⟩",
+        "exact fun _ => h ⟨ha, hb⟩",
+        "intro ha hb\n  exact h p",
+        "exact fun h => h ⟨ha, hb⟩",
+        "exact fun ha hb => h ⟨ha,",
+        "intro ha\n  exact h ⟨ha, hb⟩",
+        "exact fun ha => h ⟨ha, hb⟩",
+        "intro ha hb\n  exact h ⟨ha, hb⟩",
+        "intro ha hb\n  exact h ha hb"
+      ],
+      "v20_top3_errors": [
+        "/tmp/mini_elf_lean_ypaxegda.lean:3:8: error: Function expected at",
+        "/tmp/mini_elf_lean_xk_dnbjq.lean:2:10: error: Invalid `⟨...⟩` notation: The expected type `Nat` has more than one constr",
+        "/tmp/mini_elf_lean_fmxkpf95.lean:2:19: error: Invalid `⟨...⟩` notation: The expected type `Nat` has more than one constr"
+      ],
+      "v20_failure_class": "schema_lost"
+    }
+  ],
+  "uses_state_after": false
+}

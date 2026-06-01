@@ -1,0 +1,76 @@
+{
+  "config": "policy_abstract",
+  "n_test_theorems": 30,
+  "pass@1": 0.5,
+  "pass@5": 0.6333333333333333,
+  "pass@10": 0.6666666666666666,
+  "MRR": 0.5652777777777778,
+  "n_no_candidate_verified": 10,
+  "no_verify_reason": {
+    "v28_fs_inter_subset_right_0": "other",
+    "v28_fs_mem_inter_left_0": "other",
+    "v28_fs_mem_union_iff_0": "unknown_identifier",
+    "v28_fun_comp_assoc3": "other",
+    "v28_logic_and_symm_1": "type_mismatch",
+    "v28_ord_antisymm": "other",
+    "v28_ord_le_trans_pre_1": "unknown_identifier",
+    "v28_set_inter_subset_right_2": "type_mismatch",
+    "v28_set_mem_inter_left_2": "unknown_identifier",
+    "v28_set_mem_union_iff_2": "other"
+  },
+  "failure_taxonomy": {
+    "type_mismatch": 69,
+    "other": 66,
+    "parse_error": 22,
+    "unknown_identifier": 101,
+    "shape_miss": 3,
+    "unknown_tactic": 1
+  },
+  "per_category": {
+    "finset": {
+      "n": 6,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.5,
+      "pass@10": 0.5
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "list": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 9,
+      "pass@1": 0.7777777777777778,
+      "pass@5": 0.7777777777777778,
+      "pass@10": 0.7777777777777778
+    },
+    "set": {
+      "n": 9,
+      "pass@1": 0.5555555555555556,
+      "pass@5": 0.5555555555555556,
+      "pass@10": 0.6666666666666666
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

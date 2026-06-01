@@ -1,0 +1,44 @@
+{
+  "attention_dim": 64,
+  "bidirectional_encoder": true,
+  "bos_id": 1,
+  "dropout": 0.1,
+  "embedding_dim": 64,
+  "eos_id": 2,
+  "hidden_dim": 128,
+  "max_input_len": 160,
+  "max_output_len": 80,
+  "num_layers": 1,
+  "pad_id": 0,
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/disjunction_cases",
+  "regime_name": "disjunction_cases",
+  "summary": {
+    "best_epoch": 28,
+    "n_parameters": 415248,
+    "n_train_examples": 507,
+    "n_train_theorems": 232,
+    "n_val_examples": 81,
+    "n_val_theorems": 36,
+    "truncation": {
+      "source_truncated": 0,
+      "target_truncated": 0
+    },
+    "uses_state_after": false,
+    "vocab_size": 80
+  },
+  "training": {
+    "batch_size": 32,
+    "beam_width": 10,
+    "device": "cpu",
+    "epochs": 30,
+    "framework": "torch-2.12.0+cpu",
+    "grad_clip": 1.0,
+    "length_penalty": 0.7,
+    "lr": 0.003,
+    "optimizer": "adam",
+    "seed": 0,
+    "weight_decay": 0.0
+  },
+  "val_source": "synthetic_from_train",
+  "vocab_size": 80
+}

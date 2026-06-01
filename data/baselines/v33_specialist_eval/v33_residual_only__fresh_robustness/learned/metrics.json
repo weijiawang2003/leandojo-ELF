@@ -1,0 +1,114 @@
+{
+  "config": "learned",
+  "n_test_theorems": 42,
+  "pass@1": 0.47619047619047616,
+  "pass@5": 0.5476190476190477,
+  "pass@10": 0.5476190476190477,
+  "MRR": 0.5,
+  "n_no_candidate_verified": 19,
+  "no_verify_reason": {
+    "v33rob_set_union_r_0": "parse_error",
+    "v33rob_fs_inter_r_0": "parse_error",
+    "v33rob_set_inter_sub_0": "type_mismatch",
+    "v33rob_set_union_r_1": "parse_error",
+    "v33rob_fs_inter_r_1": "parse_error",
+    "v33rob_set_inter_sub_1": "type_mismatch",
+    "v33rob_set_union_r_2": "parse_error",
+    "v33rob_fs_inter_r_2": "parse_error",
+    "v33rob_set_inter_sub_2": "type_mismatch",
+    "v33rob_set_union_r_3": "parse_error",
+    "v33rob_fs_inter_r_3": "parse_error",
+    "v33rob_set_inter_sub_3": "type_mismatch",
+    "v33rob_ord_anti_0": "other",
+    "v33rob_ord_anti_1": "other",
+    "v33rob_ord_anti_2": "other",
+    "v33rob_logic_or_symm_0": "type_mismatch",
+    "v33rob_logic_and_symm_0": "type_mismatch",
+    "v33rob_logic_or_symm_1": "type_mismatch",
+    "v33rob_logic_and_symm_1": "type_mismatch"
+  },
+  "per_category": {
+    "set": {
+      "n": 16,
+      "pass@10": 0.5
+    },
+    "finset": {
+      "n": 4,
+      "pass@10": 0.0
+    },
+    "order": {
+      "n": 9,
+      "pass@10": 0.6666666666666666
+    },
+    "function": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 6,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 4,
+      "pass@10": 0.0
+    }
+  },
+  "per_family": {
+    "set::mem_inter_proj": {
+      "n": 8,
+      "pass@10": 1.0
+    },
+    "set::mem_union_intro": {
+      "n": 4,
+      "pass@10": 0.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 4,
+      "pass@10": 0.0
+    },
+    "set::inter_subset": {
+      "n": 4,
+      "pass@10": 0.0
+    },
+    "order::le_trans": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::le_refl": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order::antisymm": {
+      "n": 3,
+      "pass@10": 0.0
+    },
+    "function::comp_assoc": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::add_comm": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "nat::add_zero": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "list::append_nil": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "logic::or_symm": {
+      "n": 2,
+      "pass@10": 0.0
+    },
+    "logic::and_symm": {
+      "n": 2,
+      "pass@10": 0.0
+    }
+  }
+}

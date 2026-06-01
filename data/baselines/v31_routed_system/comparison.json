@@ -1,0 +1,52 @@
+{
+  "router": "V31MathlibRouter (imports/mathlib-flag -> v31 specialist; else v24 broad-core)",
+  "specialist_model": "data/models/token_seq2seq_v31_canonical_general",
+  "specialist_mode": "canonical",
+  "routing": {
+    "broad_to_core": "48/48",
+    "tierc_to_specialist": "131/131"
+  },
+  "tierc_pool_stats": {
+    "n_canonical_generated": 1267,
+    "n_unresolved_rejected": 11,
+    "n_from_canonical": 1254,
+    "n_from_raw_fallback": 968
+  },
+  "routed": {
+    "broad_core": {
+      "n": 48,
+      "best_config": "policy_abstract",
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334
+    },
+    "tierc": {
+      "n": 131,
+      "best_config": "abstract",
+      "pass@1": 0.6641221374045801,
+      "pass@5": 0.9618320610687023,
+      "pass@10": 0.9847328244274809
+    }
+  },
+  "v27_routed_bar": {
+    "pass@5": 0.9375,
+    "pass@10": 0.9583
+  },
+  "preserves_v27_routed_bar": true,
+  "adopt_router": true,
+  "not_v19_placeholders": true,
+  "broad_core_preserved": {
+    "routed_pass@5": 0.9375,
+    "v24_pass@5": 0.9166666666666666,
+    "routed_pass@10": 0.9583333333333334,
+    "v24_pass@10": 0.9375,
+    "no_regression": true
+  },
+  "vs_v30_routed_tierc": {
+    "v30_best_config": "learned",
+    "v30_pass@5": 0.9030303030303031,
+    "v30_pass@10": 0.9212121212121213,
+    "v31_pass@5": 0.9618320610687023,
+    "v31_pass@10": 0.9847328244274809
+  }
+}

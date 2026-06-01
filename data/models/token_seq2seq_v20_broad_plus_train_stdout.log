@@ -1,0 +1,19 @@
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-30 21:30:23,159 INFO training rows: 2099
+2026-05-30 21:30:23,422 INFO vocab size: 214
+2026-05-30 21:30:23,425 INFO train=1932 val=167
+2026-05-30 21:30:34,046 INFO   epoch=0 train_loss=2.5783 val_loss=1.6465 val_exact=0.0060
+2026-05-30 21:30:55,551 INFO   epoch=2 train_loss=0.6753 val_loss=0.5290 val_exact=0.1377
+2026-05-30 21:31:16,522 INFO   epoch=4 train_loss=0.2931 val_loss=0.2959 val_exact=0.2455
+2026-05-30 21:31:36,562 INFO   epoch=6 train_loss=0.1966 val_loss=0.2374 val_exact=0.2455
+2026-05-30 21:31:55,008 INFO   epoch=8 train_loss=0.1726 val_loss=0.2194 val_exact=0.2635
+2026-05-30 21:32:13,514 INFO   epoch=10 train_loss=0.1565 val_loss=0.2039 val_exact=0.1976
+2026-05-30 21:32:32,814 INFO   epoch=12 train_loss=0.1447 val_loss=0.2189 val_exact=0.1916
+2026-05-30 21:32:52,365 INFO   epoch=14 train_loss=0.1483 val_loss=0.2233 val_exact=0.2036
+2026-05-30 21:33:10,898 INFO   epoch=16 train_loss=0.1407 val_loss=0.2130 val_exact=0.1916
+2026-05-30 21:33:29,522 INFO   epoch=18 train_loss=0.1380 val_loss=0.2165 val_exact=0.1677
+2026-05-30 21:33:49,221 INFO   epoch=20 train_loss=0.1359 val_loss=0.2196 val_exact=0.1796
+2026-05-30 21:34:07,787 INFO   epoch=22 train_loss=0.1340 val_loss=0.2132 val_exact=0.1557
+2026-05-30 21:34:26,495 INFO   epoch=24 train_loss=0.1361 val_loss=0.2308 val_exact=0.1557
+2026-05-30 21:34:30,478 INFO V20 BROAD-PLUS MODEL TRAINING DONE; saved to /home/wangw/code/ELFMath/data/models/token_seq2seq_v20_broad_plus

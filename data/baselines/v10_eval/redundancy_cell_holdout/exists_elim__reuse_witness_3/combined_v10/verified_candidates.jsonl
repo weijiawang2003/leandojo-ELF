@@ -1,0 +1,2 @@
+{"theorem_name": "v10_exists_elim_reuse_witness_3", "family": "reuse_witness_3", "required_operation": "exists_elim", "rank": 1, "tactic": "exact h", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": true}
+{"theorem_name": "v10_exists_elim_reuse_witness_3", "family": "reuse_witness_3", "required_operation": "exists_elim", "rank": 3, "tactic": "exact ⟨3, rfl⟩", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": true}

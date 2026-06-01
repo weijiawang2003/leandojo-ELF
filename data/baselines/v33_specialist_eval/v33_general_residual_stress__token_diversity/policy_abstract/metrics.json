@@ -1,0 +1,54 @@
+{
+  "config": "policy_abstract",
+  "n_test_theorems": 13,
+  "pass@1": 0.5384615384615384,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "MRR": 0.7307692307692307,
+  "n_no_candidate_verified": 0,
+  "no_verify_reason": {},
+  "per_category": {
+    "finset": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 9,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "finset::mem_union_intro": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::min_max": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "set::mem_inter_proj": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "set::mem_union_intro": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "set::empty_subset": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::union_subset": {
+      "n": 1,
+      "pass@10": 1.0
+    }
+  }
+}

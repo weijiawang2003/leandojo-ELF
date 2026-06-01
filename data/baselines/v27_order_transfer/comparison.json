@@ -1,0 +1,73 @@
+{
+  "models": {
+    "v27_order_holdout": "data/models/token_seq2seq_v27_order_holdout"
+  },
+  "benchmarks": {
+    "category_holdout_order": "data/processed/v27_mathlib_specialist/category_holdout_order/test_seeds.jsonl"
+  },
+  "verifier": "TrustedMathlibVerifier",
+  "results": {
+    "v27_order_holdout__category_holdout_order": {
+      "n_test_theorems": 10,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.6,
+        "pass@5": 0.9,
+        "pass@10": 0.9,
+        "MRR": 0.7083333333333333,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.2,
+        "pass@5": 0.8,
+        "pass@10": 0.9,
+        "MRR": 0.4683333333333334,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.2,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.4683333333333334,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.7666666666666666,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.7,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.7433333333333333,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.7666666666666666,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.6,
+          "pass@5": 0.9,
+          "pass@10": 0.9,
+          "MRR": 0.7083333333333333,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.6,
+          "pass@5": 0.9,
+          "pass@10": 0.9,
+          "MRR": 0.7083333333333333,
+          "n_no_candidate_verified": 1
+        }
+      }
+    }
+  }
+}

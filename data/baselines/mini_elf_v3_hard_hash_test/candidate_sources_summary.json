@@ -1,0 +1,26 @@
+{
+  "flow_decoder": {
+    "attempted": 52,
+    "verified": 14
+  },
+  "planner_chain": {
+    "attempted": 12,
+    "verified": 12
+  },
+  "planner_iff": {
+    "attempted": 12,
+    "verified": 12
+  },
+  "planner_projection": {
+    "attempted": 16,
+    "verified": 16
+  },
+  "planner_template": {
+    "attempted": 20,
+    "verified": 20
+  },
+  "witness_copy": {
+    "attempted": 8,
+    "verified": 8
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "router": "V33MathlibRouter (mathlib -> v33 canonical specialist; else v24 broad-core)",
+  "specialist_model": "/home/wangw/code/ELFMath/data/models/token_seq2seq_v33_general_residual",
+  "specialist_mode": "canonical",
+  "routing": {
+    "broad_to_core": "48/48",
+    "tierc_to_specialist": "244/244"
+  },
+  "tierc_pool_stats": {
+    "n_canonical_generated": 2401,
+    "n_unresolved_rejected": 64,
+    "n_from_canonical": 2337,
+    "n_from_raw_fallback": 2019
+  },
+  "routed": {
+    "broad_core": {
+      "n": 48,
+      "best_config": "policy_abstract",
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334
+    },
+    "tierc": {
+      "n": 244,
+      "best_config": "raw",
+      "pass@1": 0.8811475409836066,
+      "pass@5": 0.9795081967213115,
+      "pass@10": 0.9918032786885246
+    }
+  },
+  "tierc_per_category": {
+    "nat": {
+      "n": 32,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 17,
+      "pass@10": 0.9411764705882353
+    },
+    "bool_option": {
+      "n": 5,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 78,
+      "pass@10": 0.9871794871794872
+    },
+    "logic": {
+      "n": 18,
+      "pass@10": 1.0
+    },
+    "function": {
+      "n": 11,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 45,
+      "pass@10": 1.0
+    },
+    "finset": {
+      "n": 38,
+      "pass@10": 1.0
+    }
+  },
+  "v27_routed_bar": {
+    "pass@5": 0.9375,
+    "pass@10": 0.9583
+  },
+  "preserves_v27_routed_bar": true,
+  "adopt_router": true,
+  "not_v19_placeholders": true,
+  "broad_core_preserved": {
+    "routed_pass@5": 0.9375,
+    "v24_pass@5": 0.9166666666666666,
+    "routed_pass@10": 0.9583333333333334,
+    "v24_pass@10": 0.9375,
+    "no_regression": true
+  },
+  "vs_v32_routed_tierc": {
+    "v32_best_config": "learned",
+    "v32_pass@10": 0.9504950495049505,
+    "v33_pass@10": 0.9918032786885246,
+    "v33_n": 244,
+    "note": "v33 tier-C adds the v33 fresh robustness holdout"
+  }
+}

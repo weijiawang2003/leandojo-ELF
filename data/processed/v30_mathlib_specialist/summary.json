@@ -1,0 +1,77 @@
+{
+  "config": "v30_mathlib_specialist_dataset",
+  "pools": {
+    "v29_general": 839,
+    "v29_best": 1330,
+    "v30_rows": 155
+  },
+  "novel_v30_theorems": 59,
+  "nonnovel_v30_theorems": 5,
+  "configs": {
+    "v30_general_targeted": 905,
+    "v30_v29best_plus": 1396,
+    "v30_targeted_only": 66,
+    "v30_targeted_upsample": 971,
+    "shared_val": 207
+  },
+  "theorem_holdout": {
+    "n_train": 905,
+    "n_test_rows": 38,
+    "n_test_theorems": 15,
+    "n_test_seeds": 15,
+    "by_category": {
+      "order": 2,
+      "set": 6,
+      "function": 1,
+      "nat": 3,
+      "finset": 3
+    }
+  },
+  "targeted_family_holdout": {
+    "n_train": 905,
+    "n_test_rows": 21,
+    "n_test_theorems": 10,
+    "n_test_seeds": 10,
+    "family_train_density": {
+      "set::union_subset": 5,
+      "order::le_refl": 7,
+      "finset::mem_inter_proj": 8,
+      "set::mem_union_intro": 12,
+      "finset::empty_subset": 0,
+      "set::subset_inter": 7,
+      "finset::mem_union_intro": 6,
+      "set::empty_subset": 3,
+      "nat::add_assoc": 5,
+      "set::mem_inter_proj": 12
+    },
+    "by_family": {
+      "nat::add_assoc": 1,
+      "finset::mem_union_intro": 1,
+      "order::le_refl": 1,
+      "set::mem_inter_proj": 1,
+      "finset::mem_inter_proj": 1,
+      "set::mem_union_intro": 1,
+      "set::union_subset": 1,
+      "finset::empty_subset": 1,
+      "set::empty_subset": 1,
+      "set::subset_inter": 1
+    }
+  },
+  "dropped_overlap": {
+    "v29_general": 0,
+    "v29_best": 0
+  },
+  "benchmarks_preserved": [
+    "v25",
+    "v26",
+    "v27",
+    "v28",
+    "v29",
+    "v29_family_density",
+    "v29_low_density"
+  ],
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "leakage_guard": "name + statement + triple vs all v30 splits and v25-v29 benchmarks",
+  "category_balanced": "NOT built (v29 confirmed harmful negative control)"
+}

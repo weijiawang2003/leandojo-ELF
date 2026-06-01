@@ -1,0 +1,32 @@
+{
+  "n_test_theorems": 32,
+  "n_candidates_total": 320,
+  "pass@1": 0.375,
+  "pass@5": 0.875,
+  "pass@10": 0.875,
+  "verified_total": 36,
+  "novel_verified": 16,
+  "n_with_fused_token": 0,
+  "fused_token_rate": 0.0,
+  "verified_with_fused_token": 0,
+  "n_malformed": 4,
+  "malformed_rate": 0.0125,
+  "n_truncated_shape": 0,
+  "truncated_shape_rate": 0.0,
+  "n_schema_exact_h_num": 0,
+  "schema_exact_h_num_rate": 0.0,
+  "n_schema_rw_h": 0,
+  "schema_rw_h_rate": 0.0,
+  "error_taxonomy": {
+    "type_mismatch": 140,
+    "parse_error": 76,
+    "other": 48,
+    "unknown_identifier": 12
+  },
+  "literal_adapt_verified": 0,
+  "forall_inst_var_m_pass@5": null,
+  "k_max": 10,
+  "beam_width": 10,
+  "config": "literal_adapt_rerank",
+  "uses_state_after": false
+}

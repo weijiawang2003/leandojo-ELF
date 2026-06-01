@@ -1,0 +1,402 @@
+{
+  "pool": "v22_general_plus_exists_eval",
+  "n_theorems": 48,
+  "counts": {
+    "solved@1": 39,
+    "generator_bound": 8,
+    "ranking_bound": 1
+  },
+  "generator_bound_by_error_class": {
+    "type_mismatch": 1,
+    "unknown_identifier": 4,
+    "other": 3
+  },
+  "theorems": [
+    {
+      "theorem": "v18_imp_p_self",
+      "category": "implication",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_imp_intro_basic",
+      "category": "implication",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_imp_chain",
+      "category": "implication",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_imp_swap_args",
+      "category": "implication",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_imp_compose",
+      "category": "implication",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_imp_arrow_arrow",
+      "category": "implication",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_and_intro",
+      "category": "conjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_and_left",
+      "category": "conjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_and_right",
+      "category": "conjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_and_swap",
+      "category": "conjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_and_assoc_one",
+      "category": "conjunction",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "type_mismatch"
+    },
+    {
+      "theorem": "v18_and_proj_3rd",
+      "category": "conjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_or_inl",
+      "category": "disjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_or_inr",
+      "category": "disjunction",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "unknown_identifier"
+    },
+    {
+      "theorem": "v18_or_swap",
+      "category": "disjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_or_elim_to_common",
+      "category": "disjunction",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "unknown_identifier"
+    },
+    {
+      "theorem": "v18_or_constant",
+      "category": "disjunction",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_neg_not_intro",
+      "category": "negation",
+      "class": "ranking_bound",
+      "raw_first_verified_rank": 3,
+      "best_v23_first_verified_rank": 3,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_neg_absurd",
+      "category": "negation",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_neg_double_in",
+      "category": "negation",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_neg_modus_tollens",
+      "category": "negation",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_neg_or_left",
+      "category": "negation",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "unknown_identifier"
+    },
+    {
+      "theorem": "v18_eq_refl_nat",
+      "category": "equality_rewrite",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_eq_symm",
+      "category": "equality_rewrite",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_eq_trans",
+      "category": "equality_rewrite",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_eq_subst_lhs",
+      "category": "equality_rewrite",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_eq_subst_rhs",
+      "category": "equality_rewrite",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_eq_double_apply",
+      "category": "equality_rewrite",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_exists_intro_nat",
+      "category": "exists",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_exists_intro_eq",
+      "category": "exists",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "unknown_identifier"
+    },
+    {
+      "theorem": "v18_exists_relabel",
+      "category": "exists",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_exists_compose",
+      "category": "exists",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_forall_inst_at_7",
+      "category": "forall",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_forall_inst_compose",
+      "category": "forall",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_forall_to_arrow",
+      "category": "forall",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_nat_succ_unfold",
+      "category": "nat_succ",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_nat_zero_add",
+      "category": "nat_succ",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "other"
+    },
+    {
+      "theorem": "v18_nat_add_zero",
+      "category": "nat_succ",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_nat_succ_inj",
+      "category": "nat_succ",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "other"
+    },
+    {
+      "theorem": "v18_nat_add_one_eq_succ",
+      "category": "nat_succ",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_bool_true_or_false",
+      "category": "bool",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_bool_and_left",
+      "category": "bool",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_bool_not_not",
+      "category": "bool",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_list_append_nil",
+      "category": "list",
+      "class": "generator_bound",
+      "raw_first_verified_rank": null,
+      "best_v23_first_verified_rank": null,
+      "dominant_error": "other"
+    },
+    {
+      "theorem": "v18_list_nil_append",
+      "category": "list",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_list_length_cons",
+      "category": "list",
+      "class": "solved@1",
+      "raw_first_verified_rank": 2,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_list_singleton_len",
+      "category": "list",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    },
+    {
+      "theorem": "v18_list_head_some",
+      "category": "list",
+      "class": "solved@1",
+      "raw_first_verified_rank": 0,
+      "best_v23_first_verified_rank": 0,
+      "dominant_error": "ok"
+    }
+  ],
+  "v24_direction": "generator/corpus-bound",
+  "uses_state_after": false
+}

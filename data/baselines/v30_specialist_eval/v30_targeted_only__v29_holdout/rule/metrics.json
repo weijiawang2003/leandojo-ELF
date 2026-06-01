@@ -1,0 +1,195 @@
+{
+  "config": "rule",
+  "n_test_theorems": 20,
+  "pass@1": 0.1,
+  "pass@5": 0.2,
+  "pass@10": 0.2,
+  "MRR": 0.14166666666666666,
+  "n_no_candidate_verified": 16,
+  "no_verify_reason": {
+    "v29_fs_inter_comm_1": "unknown_identifier",
+    "v29_fs_mem_inter_iff_2": "unknown_identifier",
+    "v29_fs_mem_inter_left_3": "unknown_identifier",
+    "v29_fs_mem_union_left_2": "unknown_identifier",
+    "v29_fs_subset_inter_1": "unknown_identifier",
+    "v29_fs_subset_union_left_3": "unknown_identifier",
+    "v29_fs_union_subset_1": "unknown_identifier",
+    "v29_fun_comp_app_0": "unknown_tactic",
+    "v29_logic_false_elim_1": "type_mismatch",
+    "v29_nat_mul_comm_2": "unknown_identifier",
+    "v29_ord_antisymm_1": "unknown_identifier",
+    "v29_ord_antisymm_5": "parse_error",
+    "v29_ord_ge_of_eq_pre_2": "unknown_identifier",
+    "v29_ord_le_trans_pre_4": "type_mismatch",
+    "v29_set_inter_comm_subset_3": "unknown_identifier",
+    "v29_set_union_subset_3": "unknown_identifier"
+  },
+  "failure_taxonomy": {
+    "other": 29,
+    "unknown_identifier": 88,
+    "type_mismatch": 24,
+    "unknown_tactic": 13,
+    "parse_error": 37,
+    "shape_miss": 1
+  },
+  "per_category": {
+    "finset": {
+      "n": 7,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    },
+    "list": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order": {
+      "n": 5,
+      "pass@1": 0.2,
+      "pass@5": 0.2,
+      "pass@10": 0.2
+    },
+    "set": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_family": {
+    "finset::inter_comm": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::mem_iff": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::mem_union_intro": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::subset_inter": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::subset_union": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::union_subset": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function::comp_app": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function::comp_assoc": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "function::comp_id": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::nil_append": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic::false_elim": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat::mul_comm": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order::antisymm": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order::le_of_eq": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order::le_refl": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order::le_trans": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::inter_comm": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::union_subset": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  }
+}

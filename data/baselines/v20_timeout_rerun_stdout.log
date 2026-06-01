@@ -1,0 +1,39 @@
+2026-05-30 21:58:37,246 INFO found 35 distinct timeout (theorem,candidate) pairs
+2026-05-30 21:58:39,580 INFO warmup: success=True elapsed_ms=2333.1
+2026-05-30 21:58:39,960 INFO   →real-error v18_and_assoc_one :: 'cases h with\n  | intro hp'  (/tmp/mini_elf_lean_byfyk5pl.lean:1:56: error: unsolved goals)
+2026-05-30 21:59:40,457 INFO   →real-error v18_and_assoc_one :: 'exact And.right h.1.1'  (/tmp/mini_elf_lean_txd1fdzt.lean:2:18: error: Invalid projec)
+2026-05-30 21:59:40,876 INFO   →real-error v18_and_assoc_one :: 'exact ⟨h.2, h.1⟩'  (/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application typ)
+2026-05-30 21:59:41,223 INFO   →real-error v18_and_intro :: 'constructor\n  exact hp\n  exact hp'  (/tmp/mini_elf_lean_ngkkfzjr.lean:4:2: error: Type mismatch)
+2026-05-30 21:59:41,599 INFO   FLIP→success v18_and_intro :: 'constructor\n  exact hp\n  exact hq'
+2026-05-30 21:59:41,937 INFO   →real-error v18_and_intro :: 'constructor\n  exact hp hq'  (/tmp/mini_elf_lean_1ugd_a__.lean:3:8: error: Function expect)
+2026-05-30 21:59:42,273 INFO   FLIP→success v18_and_intro :: 'exact And.intro hp hq'
+2026-05-30 21:59:42,639 INFO   →real-error v18_and_intro :: 'exact ⟨hp, hq, hr'  (/tmp/mini_elf_lean_p2_stskq.lean:3:0: error: unexpected end )
+2026-05-30 21:59:42,971 INFO   →real-error v18_and_left :: 'exact And.2 h'  (/tmp/mini_elf_lean_1xvcx6ym.lean:2:8: error: Invalid project)
+2026-05-30 21:59:43,294 INFO   →real-error v18_and_left :: 'exact And.And h'  (/tmp/mini_elf_lean_j0oaei51.lean:2:8: error(lean.unknownIden)
+2026-05-30 21:59:43,652 INFO   FLIP→success v18_and_proj_3rd :: 'exact h.2.2'
+2026-05-30 21:59:43,969 INFO   →real-error v18_and_proj_3rd :: 'exact h.right.1'  (/tmp/mini_elf_lean_r_ur53nh.lean:2:2: error: Type mismatch)
+2026-05-30 21:59:44,337 INFO   →real-error v18_and_right :: 'exact And.2 h'  (/tmp/mini_elf_lean_2bek887m.lean:2:8: error: Invalid project)
+2026-05-30 21:59:44,713 INFO   →real-error v18_and_right :: 'exact And.intro h'  (/tmp/mini_elf_lean_n24bxtve.lean:2:2: error: Type mismatch)
+2026-05-30 21:59:45,053 INFO   →real-error v18_and_right :: 'exact And.left h'  (/tmp/mini_elf_lean_7t7rytns.lean:2:17: error: Application ty)
+2026-05-30 21:59:45,374 INFO   FLIP→success v18_and_right :: 'exact And.right h'
+2026-05-30 21:59:45,705 INFO   →real-error v18_and_right :: 'exact h.1'  (/tmp/mini_elf_lean_ay9rjja0.lean:2:2: error: Type mismatch)
+2026-05-30 21:59:46,102 INFO   →real-error v18_and_swap :: 'cases h with\n  | h with ⟨hp, hq⟩\n  exact'  (/tmp/mini_elf_lean_uxrw_vd_.lean:3:2: error: Invalid alterna)
+2026-05-30 21:59:46,501 INFO   FLIP→success v18_and_swap :: 'rcases h with ⟨hp, hq⟩\n  exact ⟨hq, hp⟩'
+2026-05-30 21:59:46,818 INFO   →real-error v18_imp_arrow_arrow :: 'apply hpq\n  exact'  (/tmp/mini_elf_lean_vnx9wjnb.lean:4:0: error: unexpected end )
+2026-05-30 21:59:47,131 INFO   →real-error v18_imp_arrow_arrow :: 'exact h hp'  (/tmp/mini_elf_lean__luwa05v.lean:2:10: error(lean.unknownIde)
+2026-05-30 21:59:47,474 INFO   →real-error v18_imp_arrow_arrow :: 'exact h p'  (/tmp/mini_elf_lean_17kxszpf.lean:2:10: error: Application ty)
+2026-05-30 21:59:47,900 INFO   →real-error v18_imp_chain :: 'apply hqr\n  exact hp hp'  (/tmp/mini_elf_lean_74wnc1f7.lean:3:8: error: Function expect)
+2026-05-30 21:59:48,269 INFO   →real-error v18_imp_chain :: 'exact hpq hp'  (/tmp/mini_elf_lean_em9sp9l7.lean:2:2: error: Type mismatch)
+2026-05-30 21:59:48,597 INFO   FLIP→success v18_imp_chain :: 'exact hqr (hpq hp)'
+2026-05-30 21:59:48,909 INFO   →real-error v18_imp_chain :: 'exact hqr hpq hp'  (/tmp/mini_elf_lean_2jnorjvb.lean:2:12: error: Application ty)
+2026-05-30 21:59:49,216 INFO   FLIP→success v18_imp_compose :: 'apply g\n  exact f a'
+2026-05-30 21:59:49,550 INFO   FLIP→success v18_imp_compose :: 'exact g (f a)'
+2026-05-30 21:59:49,859 INFO   →real-error v18_imp_p_self :: 'apply hp\n  exact'  (/tmp/mini_elf_lean_sg0fa28f.lean:4:0: error: unexpected end )
+2026-05-30 21:59:50,197 INFO   →real-error v18_imp_p_self :: 'exact False.hp'  (/tmp/mini_elf_lean_2gewnnvt.lean:2:8: error(lean.unknownIden)
+2026-05-30 21:59:50,536 INFO   →real-error v18_imp_p_self :: 'exact Falsehphp'  (/tmp/mini_elf_lean_9oypuabu.lean:2:8: error(lean.unknownIden)
+2026-05-30 21:59:50,869 INFO   FLIP→success v18_imp_p_self :: 'exact hp'
+2026-05-30 21:59:51,185 INFO   →real-error v18_imp_swap_args :: 'apply h\n  exact hp\n  exact'  (/tmp/mini_elf_lean_di_kj04i.lean:5:0: error: unexpected end )
+2026-05-30 21:59:51,510 INFO   →real-error v18_imp_swap_args :: 'apply h\n  exact hp hq'  (/tmp/mini_elf_lean_9t2rvmj0.lean:3:8: error: Function expect)
+2026-05-30 21:59:51,873 INFO   →real-error v18_imp_swap_args :: 'exact h hp hx'  (/tmp/mini_elf_lean_byii3yxg.lean:2:13: error(lean.unknownIde)
+2026-05-30 21:59:51,877 INFO timeout rerun: 9→success, 26→real-error, 0 still-timeout (of 35)
+2026-05-30 21:59:51,877 INFO cache patched at /home/wangw/code/ELFMath/data/lean_cache/v20_broad_plus_cache.json; now re-run evaluate_v20_broad_core.py with --out-root .../v20_broad_plus_eval_timeout_rerun and the SAME --cache to publish corrected metrics.

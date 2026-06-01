@@ -1,0 +1,174 @@
+{
+  "config": "v27_corrected_metrics",
+  "cells": {
+    "v24__v25_heldout": {
+      "tier": "mathlib",
+      "n": 14,
+      "n_candidates": 140,
+      "corrected": {
+        "best_config": "learned",
+        "pass@1": 0.42857142857142855,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.5714285714285714
+      },
+      "naive": {
+        "best_config": "learned",
+        "pass@1": 0.42857142857142855,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.5714285714285714
+      },
+      "delta_pass@10": 0.0,
+      "naive_candidate_false_positives": 0,
+      "naive_inflates": false
+    },
+    "v24__v26_holdout": {
+      "tier": "mathlib",
+      "n": 22,
+      "n_candidates": 219,
+      "corrected": {
+        "best_config": "learned",
+        "pass@1": 0.2727272727272727,
+        "pass@5": 0.3181818181818182,
+        "pass@10": 0.3181818181818182
+      },
+      "naive": {
+        "best_config": "abstract",
+        "pass@1": 0.2727272727272727,
+        "pass@5": 0.36363636363636365,
+        "pass@10": 0.36363636363636365
+      },
+      "delta_pass@10": 0.0455,
+      "naive_candidate_false_positives": 4,
+      "naive_inflates": true
+    },
+    "v25_aug__v25_heldout": {
+      "tier": "mathlib",
+      "n": 14,
+      "n_candidates": 135,
+      "corrected": {
+        "best_config": "raw",
+        "pass@1": 0.6428571428571429,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7857142857142857
+      },
+      "naive": {
+        "best_config": "raw",
+        "pass@1": 0.6428571428571429,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7857142857142857
+      },
+      "delta_pass@10": 0.0,
+      "naive_candidate_false_positives": 0,
+      "naive_inflates": false
+    },
+    "v25_aug__v26_holdout": {
+      "tier": "mathlib",
+      "n": 22,
+      "n_candidates": 216,
+      "corrected": {
+        "best_config": "raw",
+        "pass@1": 0.45454545454545453,
+        "pass@5": 0.5909090909090909,
+        "pass@10": 0.6363636363636364
+      },
+      "naive": {
+        "best_config": "raw",
+        "pass@1": 0.5,
+        "pass@5": 0.6818181818181818,
+        "pass@10": 0.7272727272727273
+      },
+      "delta_pass@10": 0.0909,
+      "naive_candidate_false_positives": 8,
+      "naive_inflates": true
+    },
+    "v26_base__v25_heldout": {
+      "tier": "mathlib",
+      "n": 14,
+      "n_candidates": 135,
+      "corrected": {
+        "best_config": "learned",
+        "pass@1": 0.8571428571428571,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286
+      },
+      "naive": {
+        "best_config": "learned",
+        "pass@1": 0.8571428571428571,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286
+      },
+      "delta_pass@10": 0.0,
+      "naive_candidate_false_positives": 0,
+      "naive_inflates": false
+    },
+    "v26_base__v26_holdout": {
+      "tier": "mathlib",
+      "n": 22,
+      "n_candidates": 215,
+      "corrected": {
+        "best_config": "abstract",
+        "pass@1": 0.5,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.9090909090909091
+      },
+      "naive": {
+        "best_config": "abstract",
+        "pass@1": 0.5,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.9090909090909091
+      },
+      "delta_pass@10": 0.0,
+      "naive_candidate_false_positives": 0,
+      "naive_inflates": false
+    },
+    "v26_widened__v25_heldout": {
+      "tier": "mathlib",
+      "n": 14,
+      "n_candidates": 140,
+      "corrected": {
+        "best_config": "learned",
+        "pass@1": 0.9285714285714286,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286
+      },
+      "naive": {
+        "best_config": "learned",
+        "pass@1": 0.9285714285714286,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286
+      },
+      "delta_pass@10": 0.0,
+      "naive_candidate_false_positives": 0,
+      "naive_inflates": false
+    },
+    "v26_widened__v26_holdout": {
+      "tier": "mathlib",
+      "n": 22,
+      "n_candidates": 218,
+      "corrected": {
+        "best_config": "learned",
+        "pass@1": 0.7727272727272727,
+        "pass@5": 0.9090909090909091,
+        "pass@10": 0.9090909090909091
+      },
+      "naive": {
+        "best_config": "learned",
+        "pass@1": 0.7727272727272727,
+        "pass@5": 0.9090909090909091,
+        "pass@10": 0.9090909090909091
+      },
+      "delta_pass@10": 0.0,
+      "naive_candidate_false_positives": 0,
+      "naive_inflates": false
+    }
+  },
+  "k_max": 10,
+  "summary": {
+    "n_cells": 8,
+    "any_naive_inflation": true,
+    "total_naive_candidate_false_positives": 12,
+    "conclusion": "naive path would inflate >=1 metric — corrected verifier materially changes results",
+    "uses_state_after": false,
+    "uses_manual_oracle": false
+  }
+}

@@ -1,0 +1,707 @@
+{
+  "family_coverage": {
+    "and_comm": {
+      "covered": 6,
+      "total": 6
+    },
+    "and_elim_left": {
+      "covered": 7,
+      "total": 7
+    },
+    "and_elim_right": {
+      "covered": 7,
+      "total": 7
+    },
+    "and_intro": {
+      "covered": 7,
+      "total": 7
+    },
+    "eq_chain3": {
+      "covered": 5,
+      "total": 5
+    },
+    "eq_refl": {
+      "covered": 0,
+      "total": 6
+    },
+    "eq_symm": {
+      "covered": 6,
+      "total": 6
+    },
+    "eq_symm_trans": {
+      "covered": 5,
+      "total": 5
+    },
+    "eq_trans": {
+      "covered": 6,
+      "total": 6
+    },
+    "exists_witness": {
+      "covered": 0,
+      "total": 20
+    },
+    "false_elim": {
+      "covered": 0,
+      "total": 5
+    },
+    "iff_apply": {
+      "covered": 6,
+      "total": 6
+    },
+    "iff_chain": {
+      "covered": 5,
+      "total": 5
+    },
+    "iff_flip": {
+      "covered": 6,
+      "total": 6
+    },
+    "iff_intro": {
+      "covered": 0,
+      "total": 6
+    },
+    "iff_mp": {
+      "covered": 6,
+      "total": 6
+    },
+    "iff_mpr": {
+      "covered": 6,
+      "total": 6
+    },
+    "imp_chain3": {
+      "covered": 6,
+      "total": 6
+    },
+    "imp_chain_mixed": {
+      "covered": 5,
+      "total": 5
+    },
+    "imp_compose": {
+      "covered": 6,
+      "total": 6
+    },
+    "imp_identity": {
+      "covered": 8,
+      "total": 8
+    },
+    "imp_uncurry": {
+      "covered": 6,
+      "total": 6
+    },
+    "modus_ponens": {
+      "covered": 6,
+      "total": 6
+    },
+    "nat_rfl": {
+      "covered": 0,
+      "total": 9
+    },
+    "nested_and_elim_l": {
+      "covered": 8,
+      "total": 8
+    },
+    "nested_and_elim_r": {
+      "covered": 8,
+      "total": 8
+    },
+    "nested_and_intro": {
+      "covered": 12,
+      "total": 12
+    },
+    "or_comm": {
+      "covered": 0,
+      "total": 5
+    },
+    "or_elim": {
+      "covered": 5,
+      "total": 5
+    },
+    "or_intro_left": {
+      "covered": 7,
+      "total": 7
+    },
+    "or_intro_right": {
+      "covered": 7,
+      "total": 7
+    },
+    "or_self_elim": {
+      "covered": 10,
+      "total": 10
+    },
+    "true_intro": {
+      "covered": 0,
+      "total": 5
+    }
+  },
+  "shape_catalog": [
+    {
+      "expected_supported": true,
+      "planner_candidates": 4,
+      "sample": "exact h.2.2",
+      "sample_source": "planner_projection",
+      "shape": "conjunction projection (nested)"
+    },
+    {
+      "expected_supported": true,
+      "planner_candidates": 2,
+      "sample": "intro ha\\n  exact h3 (h2 (h1 ha))",
+      "sample_source": "planner_chain",
+      "shape": "implication chain"
+    },
+    {
+      "expected_supported": true,
+      "planner_candidates": 2,
+      "sample": "intro ha\\n  exact h2.mp (h1.mp ha)",
+      "sample_source": "planner_iff",
+      "shape": "iff direction composition"
+    },
+    {
+      "expected_supported": true,
+      "planner_candidates": 2,
+      "sample": "exact h1.trans (h2.trans h3)",
+      "sample_source": "planner_eq",
+      "shape": "equality trans/symm chain"
+    },
+    {
+      "expected_supported": true,
+      "planner_candidates": 3,
+      "sample": "cases h with\\n  | inl hx => exact hp hx\\n  | inr hx => exact hq hx",
+      "sample_source": "planner_cases",
+      "shape": "∨-elimination case split"
+    },
+    {
+      "expected_supported": true,
+      "planner_candidates": 3,
+      "sample": "exact ⟨hp, hq⟩",
+      "sample_source": "planner_template",
+      "shape": "∧/∨ introduction"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "∃-witness (deferred to witness-copy)"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "negation: ¬p + p ⊢ q (ex falso)"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "contrapositive ⊢ ¬p"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "∃-elimination (h : ∃ _, p ⊢ p)"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "∀-instantiation (h : ∀ x, x = 0 ⊢ 7 = 0)"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "rewrite/substitution (h : n = m ⊢ n.succ = m.succ)"
+    },
+    {
+      "expected_supported": false,
+      "planner_candidates": 0,
+      "sample": null,
+      "sample_source": null,
+      "shape": "negation inside cases (h : p ∨ q, ¬p ⊢ q)"
+    }
+  ],
+  "v3_attribution": {
+    "basic": {
+      "n_planner_only_theorems": 7,
+      "planner_only_examples": [
+        "and_intro_ab",
+        "and_left_rs",
+        "iff_mpr_rs",
+        "or_inl_pq",
+        "or_inl_qt",
+        "or_inl_rs",
+        "or_inr_ab"
+      ],
+      "reranker_misrank_examples": [
+        {
+          "family": "and_elim_left",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1",
+          "theorem": "and_left_rs"
+        },
+        {
+          "family": "and_elim_left",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1",
+          "theorem": "and_left_rs"
+        },
+        {
+          "family": "and_elim_left",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1",
+          "theorem": "and_left_rs"
+        },
+        {
+          "family": "or_self_elim",
+          "reranker_score": 0.001,
+          "tactic": "cases h with\\n  | inl hx => exact hx\\n  | inr hx => exact hx",
+          "theorem": "or_self_q"
+        },
+        {
+          "family": "or_self_elim",
+          "reranker_score": 0.0,
+          "tactic": "rcases h with hx | hx\\n  exact hx\\n  exact hx",
+          "theorem": "or_self_q"
+        },
+        {
+          "family": "or_self_elim",
+          "reranker_score": 0.001,
+          "tactic": "cases h with\\n  | inl hx => exact hx\\n  | inr hx => exact hx",
+          "theorem": "or_self_q"
+        },
+        {
+          "family": "or_self_elim",
+          "reranker_score": 0.0,
+          "tactic": "rcases h with hx | hx\\n  exact hx\\n  exact hx",
+          "theorem": "or_self_q"
+        },
+        {
+          "family": "iff_mpr",
+          "reranker_score": 0.033,
+          "tactic": "exact h.mpr hq",
+          "theorem": "iff_mpr_rs"
+        },
+        {
+          "family": "iff_mpr",
+          "reranker_score": 0.033,
+          "tactic": "exact h.mpr hq",
+          "theorem": "iff_mpr_rs"
+        }
+      ],
+      "verified_by_source_by_family": {
+        "and_elim_left": {
+          "planner_projection": 6
+        },
+        "and_intro": {
+          "planner_template": 9
+        },
+        "eq_symm": {
+          "flow_decoder": 4,
+          "planner_eq": 4
+        },
+        "exists_witness": {
+          "witness_copy": 4
+        },
+        "iff_intro": {
+          "flow_decoder": 18
+        },
+        "iff_mpr": {
+          "planner_iff": 4
+        },
+        "modus_ponens": {
+          "flow_decoder": 2,
+          "planner_chain": 2
+        },
+        "nat_rfl": {
+          "flow_decoder": 21
+        },
+        "or_intro_left": {
+          "planner_template": 12
+        },
+        "or_intro_right": {
+          "planner_template": 4
+        },
+        "or_self_elim": {
+          "flow_decoder": 4,
+          "planner_cases": 4
+        }
+      }
+    },
+    "hard adversarial_sibling": {
+      "n_planner_only_theorems": 26,
+      "planner_only_examples": [
+        "and_intro_ab",
+        "and_right_pq",
+        "and_right_pr",
+        "and_right_qt",
+        "and_right_rs",
+        "iff_chain_pqr",
+        "iff_flip_pq",
+        "iff_flip_pr",
+        "iff_mpr_ab",
+        "iff_mpr_pq",
+        "iff_mpr_rs",
+        "imp_chain_mixed_xyzw"
+      ],
+      "reranker_misrank_examples": [
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.001,
+          "tactic": "exact h.2",
+          "theorem": "and_right_pq"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.0,
+          "tactic": "exact h.right",
+          "theorem": "and_right_pq"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.001,
+          "tactic": "exact h.2",
+          "theorem": "and_right_pq"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.0,
+          "tactic": "exact h.right",
+          "theorem": "and_right_pq"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.001,
+          "tactic": "exact h.2",
+          "theorem": "and_right_pq"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.0,
+          "tactic": "exact h.right",
+          "theorem": "and_right_pq"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.144,
+          "tactic": "exact h.2",
+          "theorem": "and_right_rs"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.0,
+          "tactic": "exact h.right",
+          "theorem": "and_right_rs"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.144,
+          "tactic": "exact h.2",
+          "theorem": "and_right_rs"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.0,
+          "tactic": "exact h.right",
+          "theorem": "and_right_rs"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.144,
+          "tactic": "exact h.2",
+          "theorem": "and_right_rs"
+        },
+        {
+          "family": "and_elim_right",
+          "reranker_score": 0.0,
+          "tactic": "exact h.right",
+          "theorem": "and_right_rs"
+        }
+      ],
+      "verified_by_source_by_family": {
+        "and_elim_right": {
+          "planner_projection": 24
+        },
+        "and_intro": {
+          "planner_template": 9
+        },
+        "eq_symm": {
+          "flow_decoder": 4,
+          "planner_eq": 4
+        },
+        "exists_witness": {
+          "witness_copy": 12
+        },
+        "iff_chain": {
+          "flow_decoder": 4,
+          "planner_iff": 8
+        },
+        "iff_flip": {
+          "planner_iff": 12
+        },
+        "iff_intro": {
+          "flow_decoder": 18
+        },
+        "iff_mpr": {
+          "planner_iff": 12
+        },
+        "imp_chain3": {
+          "flow_decoder": 4,
+          "planner_chain": 4
+        },
+        "imp_chain_mixed": {
+          "planner_chain": 4
+        },
+        "imp_uncurry": {
+          "planner_chain": 4
+        },
+        "modus_ponens": {
+          "flow_decoder": 2,
+          "planner_chain": 2
+        },
+        "nat_rfl": {
+          "flow_decoder": 24
+        },
+        "nested_and_elim_l": {
+          "planner_projection": 48
+        },
+        "nested_and_intro": {
+          "planner_template": 20
+        },
+        "or_intro_right": {
+          "planner_template": 16
+        },
+        "or_self_elim": {
+          "flow_decoder": 4,
+          "planner_cases": 4
+        }
+      }
+    },
+    "hard difficulty_holdout": {
+      "n_planner_only_theorems": 41,
+      "planner_only_examples": [
+        "eq_chain3_alpha",
+        "eq_chain3_beta",
+        "eq_chain3_bool",
+        "eq_chain3_nat",
+        "eq_symm_trans_alpha",
+        "eq_symm_trans_beta",
+        "eq_symm_trans_bool",
+        "eq_symm_trans_gamma",
+        "eq_symm_trans_nat",
+        "iff_chain_pqr",
+        "iff_chain_pqs",
+        "imp_chain3_abcd"
+      ],
+      "reranker_misrank_examples": [
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.001,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_abcd"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.001,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_abcd"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.051,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_pqrt"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.051,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_pqrt"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.12,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_abde"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.12,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_abde"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.0,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_mnou"
+        },
+        {
+          "family": "imp_chain3",
+          "reranker_score": 0.0,
+          "tactic": "intro ha\\n  exact h3 (h2 (h1 ha))",
+          "theorem": "imp_chain3_mnou"
+        },
+        {
+          "family": "imp_uncurry",
+          "reranker_score": 0.406,
+          "tactic": "exact fun ha hb => h ⟨ha, hb⟩",
+          "theorem": "imp_uncurry_mno"
+        },
+        {
+          "family": "imp_uncurry",
+          "reranker_score": 0.406,
+          "tactic": "exact fun ha hb => h ⟨ha, hb⟩",
+          "theorem": "imp_uncurry_mno"
+        },
+        {
+          "family": "nested_and_elim_r",
+          "reranker_score": 0.002,
+          "tactic": "exact h.right.right",
+          "theorem": "nested_and_r_last_pqr"
+        },
+        {
+          "family": "nested_and_elim_r",
+          "reranker_score": 0.002,
+          "tactic": "exact h.2.right",
+          "theorem": "nested_and_r_last_pqr"
+        }
+      ],
+      "verified_by_source_by_family": {
+        "eq_chain3": {
+          "planner_eq": 24
+        },
+        "eq_symm_trans": {
+          "planner_eq": 10
+        },
+        "exists_witness": {
+          "witness_copy": 4
+        },
+        "iff_chain": {
+          "planner_iff": 8
+        },
+        "imp_chain3": {
+          "planner_chain": 20
+        },
+        "imp_chain_mixed": {
+          "planner_chain": 16
+        },
+        "imp_uncurry": {
+          "planner_chain": 16
+        },
+        "nested_and_elim_l": {
+          "planner_projection": 48
+        },
+        "nested_and_elim_r": {
+          "planner_projection": 32
+        },
+        "nested_and_intro": {
+          "planner_template": 36
+        },
+        "or_elim": {
+          "planner_cases": 18
+        },
+        "or_self_elim": {
+          "flow_decoder": 8,
+          "planner_cases": 12
+        }
+      }
+    },
+    "hard hash": {
+      "n_planner_only_theorems": 7,
+      "planner_only_examples": [
+        "imp_chain_mixed_xyzw",
+        "imp_uncurry_acd",
+        "nested_and_intro_ll_pqr",
+        "nested_and_intro_rr_abc",
+        "nested_and_intro_skip_pqr",
+        "nested_and_l_first_abc",
+        "nested_and_l_mid_xyz"
+      ],
+      "reranker_misrank_examples": [
+        {
+          "family": "nested_and_elim_l",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1.1",
+          "theorem": "nested_and_l_first_abc"
+        },
+        {
+          "family": "nested_and_elim_l",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1.1",
+          "theorem": "nested_and_l_first_abc"
+        },
+        {
+          "family": "nested_and_elim_l",
+          "reranker_score": 0.093,
+          "tactic": "exact h.left.2",
+          "theorem": "nested_and_l_mid_xyz"
+        },
+        {
+          "family": "nested_and_elim_l",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1.right",
+          "theorem": "nested_and_l_mid_xyz"
+        },
+        {
+          "family": "nested_and_elim_l",
+          "reranker_score": 0.093,
+          "tactic": "exact h.left.2",
+          "theorem": "nested_and_l_mid_xyz"
+        },
+        {
+          "family": "nested_and_elim_l",
+          "reranker_score": 0.0,
+          "tactic": "exact h.1.right",
+          "theorem": "nested_and_l_mid_xyz"
+        },
+        {
+          "family": "nested_and_intro",
+          "reranker_score": 0.0,
+          "tactic": "exact And.intro hp (And.intro hq hr)",
+          "theorem": "nested_and_intro_rr_abc"
+        },
+        {
+          "family": "nested_and_intro",
+          "reranker_score": 0.0,
+          "tactic": "exact And.intro hp (And.intro hq hr)",
+          "theorem": "nested_and_intro_rr_abc"
+        }
+      ],
+      "verified_by_source_by_family": {
+        "exists_witness": {
+          "witness_copy": 8
+        },
+        "iff_apply": {
+          "flow_decoder": 2,
+          "planner_iff": 4
+        },
+        "iff_chain": {
+          "flow_decoder": 8,
+          "planner_iff": 8
+        },
+        "imp_chain3": {
+          "flow_decoder": 4,
+          "planner_chain": 4
+        },
+        "imp_chain_mixed": {
+          "planner_chain": 4
+        },
+        "imp_uncurry": {
+          "planner_chain": 4
+        },
+        "nested_and_elim_l": {
+          "planner_projection": 16
+        },
+        "nested_and_intro": {
+          "planner_template": 20
+        }
+      }
+    }
+  }
+}

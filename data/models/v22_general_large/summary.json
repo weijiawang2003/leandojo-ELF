@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "n_train_examples": 2988,
+    "n_val_examples": 259,
+    "n_train_theorems": 1372,
+    "n_val_theorems": 239,
+    "vocab_size": 229,
+    "n_parameters": 1049893,
+    "best_epoch": 10,
+    "truncation": {
+      "source_truncated": 0,
+      "target_truncated": 0
+    },
+    "uses_state_after": false,
+    "source": "token_seq2seq"
+  },
+  "train_config": {
+    "epochs": 20,
+    "batch_size": 64,
+    "lr": 0.003,
+    "embedding_dim": 128,
+    "hidden_dim": 192,
+    "num_layers": 1,
+    "bidirectional_encoder": true,
+    "attention_dim": 64,
+    "dropout": 0.1,
+    "max_input_len": 160,
+    "max_output_len": 80,
+    "seed": 0,
+    "grad_clip": 1.0,
+    "weight_decay": 0.0,
+    "beam_width": 10,
+    "length_penalty": 0.7
+  },
+  "extra": {
+    "corpus": "A_mixed (v21+exists, no rebalance)",
+    "v22_config": "v22_general_large"
+  }
+}

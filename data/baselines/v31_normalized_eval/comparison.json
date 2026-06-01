@@ -1,0 +1,1884 @@
+{
+  "verifier": "TrustedMathlibVerifier",
+  "results": {
+    "v30_general_targeted__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.9285714285714286,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.9642857142857143,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9166666666666667,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 1.0,
+          "MRR": 0.7539682539682538,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.9285714285714286,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9642857142857143,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 1.0,
+          "MRR": 0.8174603174603173,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.880952380952381,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8595238095238095,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v30_general_targeted__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.8636363636363636,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.912878787878788,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7727272727272727,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8651515151515151,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.6818181818181818,
+          "pass@10": 1.0,
+          "MRR": 0.6675505050505051,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.8636363636363636,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.912878787878788,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.6818181818181818,
+          "pass@10": 1.0,
+          "MRR": 0.6675505050505051,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.7272727272727273,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8333333333333335,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.5,
+          "pass@5": 0.9545454545454546,
+          "pass@10": 1.0,
+          "MRR": 0.6602272727272728,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v30_general_targeted__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 1.0,
+          "MRR": 0.4861111111111111,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9285714285714286,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 1.0,
+          "MRR": 0.4861111111111111,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8333333333333333,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.6904761904761905,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v30_general_targeted__v28_holdout": {
+      "n_test_theorems": 30,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.6666666666666666,
+        "pass@5": 0.9666666666666667,
+        "pass@10": 0.9666666666666667,
+        "MRR": 0.7972222222222223,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.7972222222222223,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.5,
+          "pass@5": 0.9333333333333333,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.6698148148148149,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.6333333333333333,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.7483333333333333,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.5,
+          "pass@5": 0.9333333333333333,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.6698148148148149,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.4666666666666667,
+          "pass@5": 0.9333333333333333,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.65,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.43333333333333335,
+          "pass@5": 0.9,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.6050000000000001,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v30_general_targeted__v29_holdout": {
+      "n_test_theorems": 20,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.55,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.7166666666666667,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.8,
+          "pass@5": 0.95,
+          "pass@10": 1.0,
+          "MRR": 0.875,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.7,
+          "pass@5": 0.95,
+          "pass@10": 1.0,
+          "MRR": 0.825,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.65,
+          "pass@5": 0.95,
+          "pass@10": 1.0,
+          "MRR": 0.8,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.7,
+          "pass@5": 0.95,
+          "pass@10": 1.0,
+          "MRR": 0.825,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.55,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7166666666666667,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.55,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7166666666666667,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v30_general_targeted__v30_targeted_family": {
+      "n_test_theorems": 10,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.3,
+        "pass@5": 0.6,
+        "pass@10": 0.6,
+        "MRR": 0.4333333333333334,
+        "n_no_candidate_verified": 4
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.2,
+          "pass@5": 0.5,
+          "pass@10": 0.6,
+          "MRR": 0.3458333333333333,
+          "n_no_candidate_verified": 4
+        },
+        "rule": {
+          "pass@1": 0.2,
+          "pass@5": 0.6,
+          "pass@10": 0.6,
+          "MRR": 0.36666666666666664,
+          "n_no_candidate_verified": 4
+        },
+        "learned": {
+          "pass@1": 0.3,
+          "pass@5": 0.6,
+          "pass@10": 0.6,
+          "MRR": 0.4333333333333334,
+          "n_no_candidate_verified": 4
+        },
+        "policy": {
+          "pass@1": 0.2,
+          "pass@5": 0.6,
+          "pass@10": 0.6,
+          "MRR": 0.36666666666666664,
+          "n_no_candidate_verified": 4
+        },
+        "abstract": {
+          "pass@1": 0.2,
+          "pass@5": 0.5,
+          "pass@10": 0.6,
+          "MRR": 0.36428571428571427,
+          "n_no_candidate_verified": 4
+        },
+        "policy_abstract": {
+          "pass@1": 0.2,
+          "pass@5": 0.5,
+          "pass@10": 0.6,
+          "MRR": 0.36428571428571427,
+          "n_no_candidate_verified": 4
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v30_general_targeted__token_diversity": {
+      "n_test_theorems": 13,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "MRR": 0.0,
+        "n_no_candidate_verified": 13
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0,
+          "MRR": 0.0,
+          "n_no_candidate_verified": 13
+        },
+        "rule": {
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0,
+          "MRR": 0.0,
+          "n_no_candidate_verified": 13
+        },
+        "learned": {
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0,
+          "MRR": 0.0,
+          "n_no_candidate_verified": 13
+        },
+        "policy": {
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0,
+          "MRR": 0.0,
+          "n_no_candidate_verified": 13
+        },
+        "abstract": {
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0,
+          "MRR": 0.0,
+          "n_no_candidate_verified": 13
+        },
+        "policy_abstract": {
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0,
+          "MRR": 0.0,
+          "n_no_candidate_verified": 13
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.880952380952381,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 1.0,
+          "MRR": 0.8375,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 1.0,
+          "MRR": 0.9017857142857143,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.9285714285714286,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9642857142857143,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.9285714285714286,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9642857142857143,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7727272727272727,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8674242424242425,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 1.0,
+          "MRR": 0.6805555555555555,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 1.0,
+          "MRR": 0.6805555555555555,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.8181818181818182,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8878787878787878,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 1.0,
+          "MRR": 0.7025252525252526,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7857142857142857,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 1.0,
+          "MRR": 0.5297619047619048,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 1.0,
+          "MRR": 0.5297619047619048,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8857142857142858,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8142857142857143,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__v28_holdout": {
+      "n_test_theorems": 30,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.7,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.8305555555555555,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6333333333333333,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.5666666666666667,
+          "pass@5": 0.9333333333333333,
+          "pass@10": 1.0,
+          "MRR": 0.738095238095238,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.7,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8305555555555555,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.5666666666666667,
+          "pass@5": 0.9333333333333333,
+          "pass@10": 1.0,
+          "MRR": 0.738095238095238,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.6333333333333333,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7805555555555556,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.5333333333333333,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7138888888888888,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__v29_holdout": {
+      "n_test_theorems": 20,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.9,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.9416666666666667,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.9,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9416666666666667,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8916666666666666,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.9,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.95,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8916666666666666,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.6,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7708333333333334,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.6,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7708333333333334,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__v30_targeted_family": {
+      "n_test_theorems": 10,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.3,
+        "pass@5": 0.7,
+        "pass@10": 0.7,
+        "MRR": 0.4833333333333333,
+        "n_no_candidate_verified": 3
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.2,
+          "pass@5": 0.5,
+          "pass@10": 0.7,
+          "MRR": 0.37916666666666665,
+          "n_no_candidate_verified": 3
+        },
+        "rule": {
+          "pass@1": 0.2,
+          "pass@5": 0.7,
+          "pass@10": 0.7,
+          "MRR": 0.42000000000000004,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.3,
+          "pass@5": 0.7,
+          "pass@10": 0.7,
+          "MRR": 0.4833333333333333,
+          "n_no_candidate_verified": 3
+        },
+        "policy": {
+          "pass@1": 0.2,
+          "pass@5": 0.7,
+          "pass@10": 0.7,
+          "MRR": 0.42000000000000004,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.3,
+          "pass@5": 0.7,
+          "pass@10": 0.7,
+          "MRR": 0.4416666666666666,
+          "n_no_candidate_verified": 3
+        },
+        "policy_abstract": {
+          "pass@1": 0.3,
+          "pass@5": 0.7,
+          "pass@10": 0.7,
+          "MRR": 0.42833333333333334,
+          "n_no_candidate_verified": 3
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_raw_plus_projection_aug__token_diversity": {
+      "n_test_theorems": 13,
+      "best_config": "rule",
+      "best": {
+        "pass@1": 0.46153846153846156,
+        "pass@5": 0.7692307692307693,
+        "pass@10": 0.7692307692307693,
+        "MRR": 0.5923076923076923,
+        "n_no_candidate_verified": 3
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.38461538461538464,
+          "pass@5": 0.6923076923076923,
+          "pass@10": 0.7692307692307693,
+          "MRR": 0.5384615384615384,
+          "n_no_candidate_verified": 3
+        },
+        "rule": {
+          "pass@1": 0.46153846153846156,
+          "pass@5": 0.7692307692307693,
+          "pass@10": 0.7692307692307693,
+          "MRR": 0.5923076923076923,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.38461538461538464,
+          "pass@5": 0.7692307692307693,
+          "pass@10": 0.7692307692307693,
+          "MRR": 0.5512820512820512,
+          "n_no_candidate_verified": 3
+        },
+        "policy": {
+          "pass@1": 0.46153846153846156,
+          "pass@5": 0.7692307692307693,
+          "pass@10": 0.7692307692307693,
+          "MRR": 0.5923076923076923,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.38461538461538464,
+          "pass@5": 0.7692307692307693,
+          "pass@10": 0.7692307692307693,
+          "MRR": 0.5384615384615384,
+          "n_no_candidate_verified": 3
+        },
+        "policy_abstract": {
+          "pass@1": 0.23076923076923078,
+          "pass@5": 0.7692307692307693,
+          "pass@10": 0.7692307692307693,
+          "MRR": 0.432051282051282,
+          "n_no_candidate_verified": 3
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 0,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 0,
+        "n_from_raw_fallback": 0
+      }
+    },
+    "v31_canonical_general__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.8571428571428571,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 1.0,
+        "MRR": 0.9007936507936508,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 1.0,
+          "MRR": 0.865079365079365,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.8571428571428571,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 1.0,
+          "MRR": 0.9007936507936508,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8928571428571429,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 1.0,
+          "MRR": 0.8541666666666667,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8095238095238095,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 135,
+        "n_unresolved_rejected": 4,
+        "n_from_canonical": 130,
+        "n_from_raw_fallback": 81
+      }
+    },
+    "v31_canonical_general__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5909090909090909,
+        "pass@5": 0.9545454545454546,
+        "pass@10": 1.0,
+        "MRR": 0.746969696969697,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7727272727272727,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 1.0,
+          "MRR": 0.8272727272727273,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.696969696969697,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.7727272727272727,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 1.0,
+          "MRR": 0.85,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.696969696969697,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.9545454545454546,
+          "pass@10": 1.0,
+          "MRR": 0.746969696969697,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.5454545454545454,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.6833333333333333,
+          "n_no_candidate_verified": 2
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 205,
+        "n_unresolved_rejected": 1,
+        "n_from_canonical": 203,
+        "n_from_raw_fallback": 165
+      }
+    },
+    "v31_canonical_general__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9285714285714286,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.8571428571428571,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.8571428571428571,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8333333333333333,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.6666666666666666,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 68,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 68,
+        "n_from_raw_fallback": 51
+      }
+    },
+    "v31_canonical_general__v28_holdout": {
+      "n_test_theorems": 30,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.9666666666666667,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 1.0,
+          "MRR": 0.9714285714285714,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.9,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.95,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.9666666666666667,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 1.0,
+          "MRR": 0.9714285714285714,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.5,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 1.0,
+          "MRR": 0.6877777777777779,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.43333333333333335,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 1.0,
+          "MRR": 0.64,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 292,
+        "n_unresolved_rejected": 2,
+        "n_from_canonical": 290,
+        "n_from_raw_fallback": 199
+      }
+    },
+    "v31_canonical_general__v29_holdout": {
+      "n_test_theorems": 20,
+      "best_config": "rule",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.95,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9666666666666666,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.95,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.975,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.6,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7516666666666667,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.6,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7516666666666667,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 189,
+        "n_unresolved_rejected": 4,
+        "n_from_canonical": 185,
+        "n_from_raw_fallback": 149
+      }
+    },
+    "v31_canonical_general__v30_targeted_family": {
+      "n_test_theorems": 10,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.9,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.95,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.9,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.9111111111111111,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.9,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.9142857142857143,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.9,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.9111111111111111,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.9,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.9142857142857143,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.9,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.95,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.7,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.85,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 99,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 99,
+        "n_from_raw_fallback": 87
+      }
+    },
+    "v31_canonical_general__token_diversity": {
+      "n_test_theorems": 13,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.9230769230769231,
+        "pass@5": 0.9230769230769231,
+        "pass@10": 0.9230769230769231,
+        "MRR": 0.9230769230769231,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.9230769230769231,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.9230769230769231,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.9230769230769231,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.9230769230769231,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.9230769230769231,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.9230769230769231,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.9230769230769231,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.9230769230769231,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.7692307692307693,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.8461538461538461,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.46153846153846156,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.6602564102564101,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 130,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 130,
+        "n_from_raw_fallback": 123
+      }
+    },
+    "v31_raw_canonical_mixture__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.7857142857142857,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.8595238095238095,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7404761904761904,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.8214285714285714,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8571428571428571,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.8214285714285714,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8595238095238095,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8095238095238095,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 136,
+        "n_unresolved_rejected": 6,
+        "n_from_canonical": 126,
+        "n_from_raw_fallback": 87
+      }
+    },
+    "v31_raw_canonical_mixture__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.6363636363636364,
+        "pass@5": 0.9545454545454546,
+        "pass@10": 0.9545454545454546,
+        "MRR": 0.7651515151515152,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.7375541125541125,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.6818181818181818,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.6508838383838383,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.8181818181818182,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.8474025974025974,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.6818181818181818,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.6508838383838383,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.9545454545454546,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.7651515151515152,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.5,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.662878787878788,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 207,
+        "n_unresolved_rejected": 11,
+        "n_from_canonical": 195,
+        "n_from_raw_fallback": 139
+      }
+    },
+    "v31_raw_canonical_mixture__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.7857142857142857,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9285714285714286,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.8571428571428571,
+          "MRR": 0.7857142857142857,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9047619047619048,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7619047619047619,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 70,
+        "n_unresolved_rejected": 0,
+        "n_from_canonical": 68,
+        "n_from_raw_fallback": 43
+      }
+    },
+    "v31_raw_canonical_mixture__v28_holdout": {
+      "n_test_theorems": 30,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.9666666666666667,
+        "pass@5": 0.9666666666666667,
+        "pass@10": 0.9666666666666667,
+        "MRR": 0.9666666666666667,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.9666666666666667,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.9666666666666667,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7,
+          "pass@5": 0.8666666666666667,
+          "pass@10": 0.9333333333333333,
+          "MRR": 0.788888888888889,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.7666666666666667,
+          "pass@5": 0.9666666666666667,
+          "pass@10": 0.9666666666666667,
+          "MRR": 0.8472222222222222,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7,
+          "pass@5": 0.8666666666666667,
+          "pass@10": 0.9333333333333333,
+          "MRR": 0.788888888888889,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5666666666666667,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.7167989417989418,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.43333333333333335,
+          "pass@5": 0.8666666666666667,
+          "pass@10": 1.0,
+          "MRR": 0.6187037037037038,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 294,
+        "n_unresolved_rejected": 6,
+        "n_from_canonical": 287,
+        "n_from_raw_fallback": 168
+      }
+    },
+    "v31_raw_canonical_mixture__v29_holdout": {
+      "n_test_theorems": 20,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 1.0,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.75,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.85,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.85,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.9083333333333334,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.75,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.85,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.6,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.7095833333333332,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.55,
+          "pass@5": 0.9,
+          "pass@10": 1.0,
+          "MRR": 0.6804166666666667,
+          "n_no_candidate_verified": 0
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 197,
+        "n_unresolved_rejected": 5,
+        "n_from_canonical": 190,
+        "n_from_raw_fallback": 112
+      }
+    },
+    "v31_raw_canonical_mixture__v30_targeted_family": {
+      "n_test_theorems": 10,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.8,
+        "pass@5": 0.9,
+        "pass@10": 0.9,
+        "MRR": 0.825,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.8142857142857143,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.7642857142857142,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.8142857142857143,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.7642857142857142,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.8,
+          "pass@5": 0.9,
+          "pass@10": 0.9,
+          "MRR": 0.825,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.5,
+          "pass@5": 0.8,
+          "pass@10": 0.9,
+          "MRR": 0.6416666666666666,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 100,
+        "n_unresolved_rejected": 2,
+        "n_from_canonical": 97,
+        "n_from_raw_fallback": 63
+      }
+    },
+    "v31_raw_canonical_mixture__token_diversity": {
+      "n_test_theorems": 13,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.9230769230769231,
+        "pass@5": 0.9230769230769231,
+        "pass@10": 0.9230769230769231,
+        "MRR": 0.9230769230769231,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.9230769230769231,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.9230769230769231,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.8461538461538461,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.8846153846153846,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.7692307692307693,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.8333333333333333,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.8461538461538461,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.8846153846153846,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.6923076923076923,
+          "pass@5": 0.9230769230769231,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.8076923076923077,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.3076923076923077,
+          "pass@5": 0.7692307692307693,
+          "pass@10": 0.9230769230769231,
+          "MRR": 0.5302197802197802,
+          "n_no_candidate_verified": 1
+        }
+      },
+      "pool_stats": {
+        "n_canonical_generated": 129,
+        "n_unresolved_rejected": 10,
+        "n_from_canonical": 118,
+        "n_from_raw_fallback": 96
+      }
+    }
+  },
+  "pool_stats": {
+    "v30_general_targeted__v25_heldout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v30_general_targeted__v26_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v30_general_targeted__v27_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v30_general_targeted__v28_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v30_general_targeted__v29_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v30_general_targeted__v30_targeted_family": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v30_general_targeted__token_diversity": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__v25_heldout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__v26_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__v27_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__v28_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__v29_holdout": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__v30_targeted_family": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_raw_plus_projection_aug__token_diversity": {
+      "n_canonical_generated": 0,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 0,
+      "n_from_raw_fallback": 0
+    },
+    "v31_canonical_general__v25_heldout": {
+      "n_canonical_generated": 135,
+      "n_unresolved_rejected": 4,
+      "n_from_canonical": 130,
+      "n_from_raw_fallback": 81
+    },
+    "v31_canonical_general__v26_holdout": {
+      "n_canonical_generated": 205,
+      "n_unresolved_rejected": 1,
+      "n_from_canonical": 203,
+      "n_from_raw_fallback": 165
+    },
+    "v31_canonical_general__v27_holdout": {
+      "n_canonical_generated": 68,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 68,
+      "n_from_raw_fallback": 51
+    },
+    "v31_canonical_general__v28_holdout": {
+      "n_canonical_generated": 292,
+      "n_unresolved_rejected": 2,
+      "n_from_canonical": 290,
+      "n_from_raw_fallback": 199
+    },
+    "v31_canonical_general__v29_holdout": {
+      "n_canonical_generated": 189,
+      "n_unresolved_rejected": 4,
+      "n_from_canonical": 185,
+      "n_from_raw_fallback": 149
+    },
+    "v31_canonical_general__v30_targeted_family": {
+      "n_canonical_generated": 99,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 99,
+      "n_from_raw_fallback": 87
+    },
+    "v31_canonical_general__token_diversity": {
+      "n_canonical_generated": 130,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 130,
+      "n_from_raw_fallback": 123
+    },
+    "v31_raw_canonical_mixture__v25_heldout": {
+      "n_canonical_generated": 136,
+      "n_unresolved_rejected": 6,
+      "n_from_canonical": 126,
+      "n_from_raw_fallback": 87
+    },
+    "v31_raw_canonical_mixture__v26_holdout": {
+      "n_canonical_generated": 207,
+      "n_unresolved_rejected": 11,
+      "n_from_canonical": 195,
+      "n_from_raw_fallback": 139
+    },
+    "v31_raw_canonical_mixture__v27_holdout": {
+      "n_canonical_generated": 70,
+      "n_unresolved_rejected": 0,
+      "n_from_canonical": 68,
+      "n_from_raw_fallback": 43
+    },
+    "v31_raw_canonical_mixture__v28_holdout": {
+      "n_canonical_generated": 294,
+      "n_unresolved_rejected": 6,
+      "n_from_canonical": 287,
+      "n_from_raw_fallback": 168
+    },
+    "v31_raw_canonical_mixture__v29_holdout": {
+      "n_canonical_generated": 197,
+      "n_unresolved_rejected": 5,
+      "n_from_canonical": 190,
+      "n_from_raw_fallback": 112
+    },
+    "v31_raw_canonical_mixture__v30_targeted_family": {
+      "n_canonical_generated": 100,
+      "n_unresolved_rejected": 2,
+      "n_from_canonical": 97,
+      "n_from_raw_fallback": 63
+    },
+    "v31_raw_canonical_mixture__token_diversity": {
+      "n_canonical_generated": 129,
+      "n_unresolved_rejected": 10,
+      "n_from_canonical": 118,
+      "n_from_raw_fallback": 96
+    }
+  },
+  "not_v19_placeholders": true
+}

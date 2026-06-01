@@ -1,0 +1,13 @@
+{
+  "n_test_theorems": 8,
+  "pass@1": 0.5,
+  "pass@3": 1.0,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "MRR": 0.75,
+  "n_malformed_top1": 0,
+  "n_false_top1": 4,
+  "verified_ceiling_match_rows": 8,
+  "config": "rule",
+  "uses_state_after": false
+}

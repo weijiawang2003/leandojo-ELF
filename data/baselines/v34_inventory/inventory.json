@@ -1,0 +1,5763 @@
+{
+  "versions_detailed": [
+    "v24",
+    "v25",
+    "v26",
+    "v27",
+    "v28",
+    "v29",
+    "v30",
+    "v31",
+    "v32",
+    "v33"
+  ],
+  "inventory": {
+    "v24": {
+      "scripts": [
+        {
+          "name": "analyze_v24_regressions.py",
+          "bytes": 7438,
+          "human": "7.3K"
+        },
+        {
+          "name": "audit_v24_generator_bound_rows.py",
+          "bytes": 6286,
+          "human": "6.1K"
+        },
+        {
+          "name": "build_v24_training_set.py",
+          "bytes": 4286,
+          "human": "4.2K"
+        },
+        {
+          "name": "generate_v24_residual_shape_corpus.py",
+          "bytes": 15160,
+          "human": "14.8K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V24_BROAD_GENERATOR_REPORT.md",
+          "bytes": 6543,
+          "human": "6.4K"
+        },
+        {
+          "name": "V24_FAILURE_EXAMPLES.md",
+          "bytes": 2773,
+          "human": "2.7K"
+        },
+        {
+          "name": "V24_GENERATOR_BOUND_ROWS.md",
+          "bytes": 4125,
+          "human": "4.0K"
+        },
+        {
+          "name": "V24_REGRESSION_ANALYSIS.md",
+          "bytes": 926,
+          "human": "926B"
+        },
+        {
+          "name": "V24_REPO_STATUS.md",
+          "bytes": 2035,
+          "human": "2.0K"
+        },
+        {
+          "name": "V24_RESIDUAL_CORPUS_REPORT.md",
+          "bytes": 2618,
+          "human": "2.6K"
+        },
+        {
+          "name": "V24_RESIDUAL_ROW_RESULTS.md",
+          "bytes": 933,
+          "human": "933B"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v24_eval.py",
+          "bytes": 1428,
+          "human": "1.4K"
+        },
+        {
+          "name": "test_v24_regression_analysis.py",
+          "bytes": 1369,
+          "human": "1.3K"
+        },
+        {
+          "name": "test_v24_residual_rows.py",
+          "bytes": 1159,
+          "human": "1.1K"
+        },
+        {
+          "name": "test_v24_residual_shape_corpus.py",
+          "bytes": 2568,
+          "human": "2.5K"
+        },
+        {
+          "name": "test_v24_training_set.py",
+          "bytes": 1699,
+          "human": "1.7K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v24_broad_residual_eval",
+          "bytes": 736727,
+          "human": "719.5K"
+        },
+        {
+          "name": "v24_broad_residual_eval_stdout.log",
+          "bytes": 1146,
+          "human": "1.1K"
+        },
+        {
+          "name": "v24_failure_analysis.json",
+          "bytes": 4535,
+          "human": "4.4K"
+        },
+        {
+          "name": "v24_generator_bound_rows.json",
+          "bytes": 6709,
+          "human": "6.6K"
+        },
+        {
+          "name": "v24_regression_analysis.json",
+          "bytes": 6350,
+          "human": "6.2K"
+        },
+        {
+          "name": "v24_zeroshot_tierc_test",
+          "bytes": 262464,
+          "human": "256.3K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v24_broad_plus_residual",
+          "bytes": 1603667,
+          "human": "1.5M"
+        },
+        {
+          "name": "v24_residual_shape_corpus",
+          "bytes": 73538,
+          "human": "71.8K"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v24_broad_residual",
+          "bytes": 2354360,
+          "human": "2.2M"
+        },
+        {
+          "name": "token_seq2seq_v24_broad_residual_train.log",
+          "bytes": 1563,
+          "human": "1.5K"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v24_residual_shape_seeds.jsonl",
+          "bytes": 30394,
+          "human": "29.7K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v24_residual_shape_candidates.jsonl",
+          "bytes": 83538,
+          "human": "81.6K"
+        }
+      ]
+    },
+    "v25": {
+      "scripts": [
+        {
+          "name": "build_v25_tierc_training_set.py",
+          "bytes": 7704,
+          "human": "7.5K"
+        },
+        {
+          "name": "evaluate_v25_tierc.py",
+          "bytes": 16503,
+          "human": "16.1K"
+        },
+        {
+          "name": "generate_v25_mathlib_tierc_corpus.py",
+          "bytes": 20295,
+          "human": "19.8K"
+        },
+        {
+          "name": "probe_v25_mathlib_env.py",
+          "bytes": 8215,
+          "human": "8.0K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V25_BROADCORE_REGRESSION_REPORT.md",
+          "bytes": 3205,
+          "human": "3.1K"
+        },
+        {
+          "name": "V25_FAILURE_EXAMPLES.md",
+          "bytes": 4550,
+          "human": "4.4K"
+        },
+        {
+          "name": "V25_MATHLIB_ENV_REPORT.md",
+          "bytes": 4100,
+          "human": "4.0K"
+        },
+        {
+          "name": "V25_REPO_STATUS.md",
+          "bytes": 3408,
+          "human": "3.3K"
+        },
+        {
+          "name": "V25_TIERC_AUGMENTATION_REPORT.md",
+          "bytes": 3826,
+          "human": "3.7K"
+        },
+        {
+          "name": "V25_TIERC_CORPUS_REPORT.md",
+          "bytes": 4453,
+          "human": "4.3K"
+        },
+        {
+          "name": "V25_ZERO_SHOT_TIERC_REPORT.md",
+          "bytes": 5414,
+          "human": "5.3K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v25_broadcore_regression.py",
+          "bytes": 3011,
+          "human": "2.9K"
+        },
+        {
+          "name": "test_v25_mathlib_env_probe.py",
+          "bytes": 1740,
+          "human": "1.7K"
+        },
+        {
+          "name": "test_v25_tierc_corpus.py",
+          "bytes": 3433,
+          "human": "3.4K"
+        },
+        {
+          "name": "test_v25_tierc_eval.py",
+          "bytes": 1589,
+          "human": "1.6K"
+        },
+        {
+          "name": "test_v25_training_set.py",
+          "bytes": 2260,
+          "human": "2.2K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v25_aug_tierc_test",
+          "bytes": 233731,
+          "human": "228.3K"
+        },
+        {
+          "name": "v25_broadcore_regression",
+          "bytes": 802536,
+          "human": "783.7K"
+        },
+        {
+          "name": "v25_mathlib_env_probe.json",
+          "bytes": 3369,
+          "human": "3.3K"
+        },
+        {
+          "name": "v25_zero_shot_tierc",
+          "bytes": 661094,
+          "human": "645.6K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v25_mathlib_tierc_corpus",
+          "bytes": 39731,
+          "human": "38.8K"
+        },
+        {
+          "name": "v25_tierc_augmented",
+          "bytes": 1629187,
+          "human": "1.6M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v25_tierc_augmented",
+          "bytes": 2407047,
+          "human": "2.3M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v25_mathlib_tierc_seeds.jsonl",
+          "bytes": 15040,
+          "human": "14.7K"
+        },
+        {
+          "name": "v25_mathlib_tierc_test_seeds.jsonl",
+          "bytes": 5793,
+          "human": "5.7K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v25_mathlib_tierc_candidates.jsonl",
+          "bytes": 45482,
+          "human": "44.4K"
+        }
+      ]
+    },
+    "v26": {
+      "scripts": [
+        {
+          "name": "analyze_v26_mathlib_failures.py",
+          "bytes": 12100,
+          "human": "11.8K"
+        },
+        {
+          "name": "audit_v26_mathlib_failures.py",
+          "bytes": 17474,
+          "human": "17.1K"
+        },
+        {
+          "name": "build_v26_mathlib_specialist_dataset.py",
+          "bytes": 12971,
+          "human": "12.7K"
+        },
+        {
+          "name": "evaluate_v26_routed_system.py",
+          "bytes": 14577,
+          "human": "14.2K"
+        },
+        {
+          "name": "evaluate_v26_specialist.py",
+          "bytes": 12745,
+          "human": "12.4K"
+        },
+        {
+          "name": "generate_v26_mathlib_specialist_corpus.py",
+          "bytes": 31531,
+          "human": "30.8K"
+        },
+        {
+          "name": "train_v26_mathlib_specialist.py",
+          "bytes": 5355,
+          "human": "5.2K"
+        },
+        {
+          "name": "widen_v26_set_corpus.py",
+          "bytes": 10692,
+          "human": "10.4K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V26_FAILURE_EXAMPLES.md",
+          "bytes": 1840,
+          "human": "1.8K"
+        },
+        {
+          "name": "V26_MATHLIB_CATEGORY_ANALYSIS.md",
+          "bytes": 4015,
+          "human": "3.9K"
+        },
+        {
+          "name": "V26_MATHLIB_FAILURE_AUDIT.md",
+          "bytes": 8668,
+          "human": "8.5K"
+        },
+        {
+          "name": "V26_MATHLIB_SPECIALIST_CORPUS_REPORT.md",
+          "bytes": 4501,
+          "human": "4.4K"
+        },
+        {
+          "name": "V26_MATHLIB_SPECIALIST_DATASET_REPORT.md",
+          "bytes": 2833,
+          "human": "2.8K"
+        },
+        {
+          "name": "V26_MATHLIB_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 4884,
+          "human": "4.8K"
+        },
+        {
+          "name": "V26_REPO_STATUS.md",
+          "bytes": 5253,
+          "human": "5.1K"
+        },
+        {
+          "name": "V26_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 3647,
+          "human": "3.6K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v26_mathlib_dataset.py",
+          "bytes": 2515,
+          "human": "2.5K"
+        },
+        {
+          "name": "test_v26_mathlib_router.py",
+          "bytes": 1997,
+          "human": "2.0K"
+        },
+        {
+          "name": "test_v26_mathlib_specialist_corpus.py",
+          "bytes": 4745,
+          "human": "4.6K"
+        },
+        {
+          "name": "test_v26_routed_system.py",
+          "bytes": 1998,
+          "human": "2.0K"
+        },
+        {
+          "name": "test_v26_specialist_eval.py",
+          "bytes": 2087,
+          "human": "2.0K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v26_mathlib_failure_audit.json",
+          "bytes": 25270,
+          "human": "24.7K"
+        },
+        {
+          "name": "v26_routed_system",
+          "bytes": 34874,
+          "human": "34.1K"
+        },
+        {
+          "name": "v26_specialist_eval",
+          "bytes": 1125750,
+          "human": "1.1M"
+        },
+        {
+          "name": "v26_widen_eval",
+          "bytes": 533695,
+          "human": "521.2K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v26_mathlib_specialist",
+          "bytes": 107991,
+          "human": "105.5K"
+        },
+        {
+          "name": "v26_mathlib_specialist_splits",
+          "bytes": 605527,
+          "human": "591.3K"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v26_mathlib_specialist_base",
+          "bytes": 1986162,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v26_mathlib_specialist_plus_core",
+          "bytes": 2028472,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v26_mathlib_specialist_widened",
+          "bytes": 2000662,
+          "human": "1.9M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v26_mathlib_specialist_seeds.jsonl",
+          "bytes": 43601,
+          "human": "42.6K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v26_mathlib_specialist_candidates.jsonl",
+          "bytes": 135963,
+          "human": "132.8K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v26_mathlib_router.py",
+          "bytes": 3956,
+          "human": "3.9K"
+        }
+      ]
+    },
+    "v27": {
+      "scripts": [
+        {
+          "name": "analyze_v27_remaining_failures.py",
+          "bytes": 7073,
+          "human": "6.9K"
+        },
+        {
+          "name": "audit_v27_mathlib_category_gaps.py",
+          "bytes": 7976,
+          "human": "7.8K"
+        },
+        {
+          "name": "audit_v27_verifier_soundness.py",
+          "bytes": 8409,
+          "human": "8.2K"
+        },
+        {
+          "name": "build_v27_mathlib_specialist_dataset.py",
+          "bytes": 12890,
+          "human": "12.6K"
+        },
+        {
+          "name": "evaluate_v27_mathlib_specialists.py",
+          "bytes": 10668,
+          "human": "10.4K"
+        },
+        {
+          "name": "evaluate_v27_routed_system.py",
+          "bytes": 12919,
+          "human": "12.6K"
+        },
+        {
+          "name": "generate_v27_mathlib_expanded_corpus.py",
+          "bytes": 29556,
+          "human": "28.9K"
+        },
+        {
+          "name": "recompute_v27_mathlib_metrics_corrected.py",
+          "bytes": 9940,
+          "human": "9.7K"
+        },
+        {
+          "name": "train_v27_mathlib_specialist.py",
+          "bytes": 7092,
+          "human": "6.9K"
+        },
+        {
+          "name": "verify_v27_mathlib_expanded_corpus.py",
+          "bytes": 4918,
+          "human": "4.8K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V27_CORRECTED_METRICS_AUDIT.md",
+          "bytes": 4605,
+          "human": "4.5K"
+        },
+        {
+          "name": "V27_DATA_SCALING_ANALYSIS.md",
+          "bytes": 4381,
+          "human": "4.3K"
+        },
+        {
+          "name": "V27_FAILURE_EXAMPLES.md",
+          "bytes": 3477,
+          "human": "3.4K"
+        },
+        {
+          "name": "V27_MATHLIB_CATEGORY_GAP_AUDIT.md",
+          "bytes": 5989,
+          "human": "5.8K"
+        },
+        {
+          "name": "V27_MATHLIB_EXPANDED_CORPUS_REPORT.md",
+          "bytes": 3244,
+          "human": "3.2K"
+        },
+        {
+          "name": "V27_MATHLIB_SPECIALIST_DATASET_REPORT.md",
+          "bytes": 2556,
+          "human": "2.5K"
+        },
+        {
+          "name": "V27_MATHLIB_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 3893,
+          "human": "3.8K"
+        },
+        {
+          "name": "V27_REPO_STATUS.md",
+          "bytes": 5331,
+          "human": "5.2K"
+        },
+        {
+          "name": "V27_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 2308,
+          "human": "2.3K"
+        },
+        {
+          "name": "V27_VERIFIER_SOUNDNESS_AUDIT.md",
+          "bytes": 7397,
+          "human": "7.2K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v27_corrected_metrics.py",
+          "bytes": 1614,
+          "human": "1.6K"
+        },
+        {
+          "name": "test_v27_mathlib_dataset.py",
+          "bytes": 3159,
+          "human": "3.1K"
+        },
+        {
+          "name": "test_v27_mathlib_expanded_corpus.py",
+          "bytes": 2576,
+          "human": "2.5K"
+        },
+        {
+          "name": "test_v27_routed_system.py",
+          "bytes": 1814,
+          "human": "1.8K"
+        },
+        {
+          "name": "test_v27_specialist_eval.py",
+          "bytes": 2263,
+          "human": "2.2K"
+        },
+        {
+          "name": "test_v27_verifier_soundness.py",
+          "bytes": 6113,
+          "human": "6.0K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v27_category_gaps",
+          "bytes": 8169,
+          "human": "8.0K"
+        },
+        {
+          "name": "v27_corpus_integrity",
+          "bytes": 379,
+          "human": "379B"
+        },
+        {
+          "name": "v27_corrected_metrics",
+          "bytes": 4778,
+          "human": "4.7K"
+        },
+        {
+          "name": "v27_data_scaling",
+          "bytes": 8924,
+          "human": "8.7K"
+        },
+        {
+          "name": "v27_order_transfer",
+          "bytes": 68738,
+          "human": "67.1K"
+        },
+        {
+          "name": "v27_routed_system",
+          "bytes": 35916,
+          "human": "35.1K"
+        },
+        {
+          "name": "v27_set_transfer",
+          "bytes": 123518,
+          "human": "120.6K"
+        },
+        {
+          "name": "v27_specialist_eval",
+          "bytes": 2574375,
+          "human": "2.5M"
+        },
+        {
+          "name": "v27_verifier_soundness",
+          "bytes": 4296,
+          "human": "4.2K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v27_mathlib_specialist",
+          "bytes": 1288613,
+          "human": "1.2M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v27_base",
+          "bytes": 2040659,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v27_category_balanced",
+          "bytes": 2030904,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v27_order_holdout",
+          "bytes": 2020816,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v27_set_heavy",
+          "bytes": 2049365,
+          "human": "2.0M"
+        },
+        {
+          "name": "token_seq2seq_v27_set_holdout",
+          "bytes": 1976550,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v27_widened",
+          "bytes": 2049926,
+          "human": "2.0M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v27_mathlib_expanded_seeds.jsonl",
+          "bytes": 40822,
+          "human": "39.9K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v27_mathlib_expanded_candidates.jsonl",
+          "bytes": 121664,
+          "human": "118.8K"
+        }
+      ]
+    },
+    "v28": {
+      "scripts": [
+        {
+          "name": "analyze_v28_scaling_plateau.py",
+          "bytes": 8294,
+          "human": "8.1K"
+        },
+        {
+          "name": "audit_v28_mathlib_residuals.py",
+          "bytes": 10194,
+          "human": "10.0K"
+        },
+        {
+          "name": "build_v28_mathlib_dataset.py",
+          "bytes": 12836,
+          "human": "12.5K"
+        },
+        {
+          "name": "evaluate_v28_mathlib_specialists.py",
+          "bytes": 12784,
+          "human": "12.5K"
+        },
+        {
+          "name": "evaluate_v28_routed_system.py",
+          "bytes": 13832,
+          "human": "13.5K"
+        },
+        {
+          "name": "generate_v28_mathlib_expanded_corpus.py",
+          "bytes": 37605,
+          "human": "36.7K"
+        },
+        {
+          "name": "train_v28_mathlib_specialist.py",
+          "bytes": 7505,
+          "human": "7.3K"
+        },
+        {
+          "name": "verify_v28_mathlib_expanded_corpus.py",
+          "bytes": 6970,
+          "human": "6.8K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V28_DATASET_REPORT.md",
+          "bytes": 2929,
+          "human": "2.9K"
+        },
+        {
+          "name": "V28_EXPANDED_CORPUS_REPORT.md",
+          "bytes": 4008,
+          "human": "3.9K"
+        },
+        {
+          "name": "V28_FAILURE_EXAMPLES.md",
+          "bytes": 3875,
+          "human": "3.8K"
+        },
+        {
+          "name": "V28_MATHLIB_RESIDUAL_AUDIT.md",
+          "bytes": 6015,
+          "human": "5.9K"
+        },
+        {
+          "name": "V28_REPO_STATUS.md",
+          "bytes": 5207,
+          "human": "5.1K"
+        },
+        {
+          "name": "V28_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 2696,
+          "human": "2.6K"
+        },
+        {
+          "name": "V28_SCALING_PLATEAU_ANALYSIS.md",
+          "bytes": 4147,
+          "human": "4.0K"
+        },
+        {
+          "name": "V28_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 3861,
+          "human": "3.8K"
+        },
+        {
+          "name": "V28_VERIFICATION_REPORT.md",
+          "bytes": 2312,
+          "human": "2.3K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v28_dataset.py",
+          "bytes": 2947,
+          "human": "2.9K"
+        },
+        {
+          "name": "test_v28_mathlib_expanded_corpus.py",
+          "bytes": 2672,
+          "human": "2.6K"
+        },
+        {
+          "name": "test_v28_routed_system.py",
+          "bytes": 1527,
+          "human": "1.5K"
+        },
+        {
+          "name": "test_v28_scaling_plateau.py",
+          "bytes": 1189,
+          "human": "1.2K"
+        },
+        {
+          "name": "test_v28_specialist_eval.py",
+          "bytes": 1556,
+          "human": "1.5K"
+        },
+        {
+          "name": "test_v28_verification.py",
+          "bytes": 1291,
+          "human": "1.3K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v28_corpus_integrity",
+          "bytes": 709,
+          "human": "709B"
+        },
+        {
+          "name": "v28_residual_audit",
+          "bytes": 11091,
+          "human": "10.8K"
+        },
+        {
+          "name": "v28_routed_system",
+          "bytes": 46057,
+          "human": "45.0K"
+        },
+        {
+          "name": "v28_scaling",
+          "bytes": 18668,
+          "human": "18.2K"
+        },
+        {
+          "name": "v28_specialist_eval",
+          "bytes": 4965490,
+          "human": "4.7M"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v28_mathlib_specialist",
+          "bytes": 2634308,
+          "human": "2.5M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v28_category_balanced",
+          "bytes": 2152011,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v28_finset_holdout",
+          "bytes": 2160228,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v28_finset_specialist",
+          "bytes": 2179195,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v28_general",
+          "bytes": 2175353,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v28_order_holdout",
+          "bytes": 2126112,
+          "human": "2.0M"
+        },
+        {
+          "name": "token_seq2seq_v28_set_holdout",
+          "bytes": 2116311,
+          "human": "2.0M"
+        },
+        {
+          "name": "token_seq2seq_v28_set_order_heavy",
+          "bytes": 2174837,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v28_train.log",
+          "bytes": 5995,
+          "human": "5.9K"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v28_mathlib_expanded_seeds.jsonl",
+          "bytes": 79803,
+          "human": "77.9K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v28_mathlib_expanded_candidates.jsonl",
+          "bytes": 259178,
+          "human": "253.1K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v28_mathlib_router.py",
+          "bytes": 3965,
+          "human": "3.9K"
+        }
+      ]
+    },
+    "v29": {
+      "scripts": [
+        {
+          "name": "analyze_v29_density_law.py",
+          "bytes": 13760,
+          "human": "13.4K"
+        },
+        {
+          "name": "analyze_v29_remaining_failures.py",
+          "bytes": 7465,
+          "human": "7.3K"
+        },
+        {
+          "name": "audit_v29_family_density.py",
+          "bytes": 18971,
+          "human": "18.5K"
+        },
+        {
+          "name": "audit_v29_sparse_residuals.py",
+          "bytes": 12772,
+          "human": "12.5K"
+        },
+        {
+          "name": "build_v29_mathlib_dataset.py",
+          "bytes": 17664,
+          "human": "17.2K"
+        },
+        {
+          "name": "evaluate_v29_mathlib_specialists.py",
+          "bytes": 13927,
+          "human": "13.6K"
+        },
+        {
+          "name": "evaluate_v29_routed_system.py",
+          "bytes": 13733,
+          "human": "13.4K"
+        },
+        {
+          "name": "generate_v29_mathlib_density_corpus.py",
+          "bytes": 37373,
+          "human": "36.5K"
+        },
+        {
+          "name": "train_v29_mathlib_specialist.py",
+          "bytes": 8300,
+          "human": "8.1K"
+        },
+        {
+          "name": "verify_v29_mathlib_density_corpus.py",
+          "bytes": 8453,
+          "human": "8.3K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V29_DATASET_REPORT.md",
+          "bytes": 2845,
+          "human": "2.8K"
+        },
+        {
+          "name": "V29_DENSITY_LAW_ANALYSIS.md",
+          "bytes": 3996,
+          "human": "3.9K"
+        },
+        {
+          "name": "V29_EXPANDED_CORPUS_REPORT.md",
+          "bytes": 3534,
+          "human": "3.5K"
+        },
+        {
+          "name": "V29_FAILURE_EXAMPLES.md",
+          "bytes": 2943,
+          "human": "2.9K"
+        },
+        {
+          "name": "V29_FAMILY_DENSITY_AUDIT.md",
+          "bytes": 5464,
+          "human": "5.3K"
+        },
+        {
+          "name": "V29_REPO_STATUS.md",
+          "bytes": 4514,
+          "human": "4.4K"
+        },
+        {
+          "name": "V29_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 2239,
+          "human": "2.2K"
+        },
+        {
+          "name": "V29_SPARSE_RESIDUAL_AUDIT.md",
+          "bytes": 4627,
+          "human": "4.5K"
+        },
+        {
+          "name": "V29_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 3821,
+          "human": "3.7K"
+        },
+        {
+          "name": "V29_VERIFICATION_REPORT.md",
+          "bytes": 2004,
+          "human": "2.0K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v29_dataset.py",
+          "bytes": 3511,
+          "human": "3.4K"
+        },
+        {
+          "name": "test_v29_density_law.py",
+          "bytes": 2323,
+          "human": "2.3K"
+        },
+        {
+          "name": "test_v29_family_density.py",
+          "bytes": 1757,
+          "human": "1.7K"
+        },
+        {
+          "name": "test_v29_mathlib_density_corpus.py",
+          "bytes": 2121,
+          "human": "2.1K"
+        },
+        {
+          "name": "test_v29_routed_system.py",
+          "bytes": 1625,
+          "human": "1.6K"
+        },
+        {
+          "name": "test_v29_specialist_eval.py",
+          "bytes": 2441,
+          "human": "2.4K"
+        },
+        {
+          "name": "test_v29_verification.py",
+          "bytes": 1281,
+          "human": "1.3K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v29_corpus_integrity",
+          "bytes": 1875,
+          "human": "1.8K"
+        },
+        {
+          "name": "v29_density_law",
+          "bytes": 8729,
+          "human": "8.5K"
+        },
+        {
+          "name": "v29_family_density",
+          "bytes": 115360,
+          "human": "112.7K"
+        },
+        {
+          "name": "v29_remaining_failures",
+          "bytes": 10494,
+          "human": "10.2K"
+        },
+        {
+          "name": "v29_routed_system",
+          "bytes": 61038,
+          "human": "59.6K"
+        },
+        {
+          "name": "v29_sparse_residual",
+          "bytes": 65365,
+          "human": "63.8K"
+        },
+        {
+          "name": "v29_specialist_eval",
+          "bytes": 10443724,
+          "human": "10.0M"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v29_mathlib_specialist",
+          "bytes": 5523646,
+          "human": "5.3M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v29_category_balanced",
+          "bytes": 2245871,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_finset_holdout",
+          "bytes": 2219804,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_function_order",
+          "bytes": 2246853,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_general",
+          "bytes": 2246607,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_order_holdout",
+          "bytes": 2193453,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_set_finset_order_heavy",
+          "bytes": 2248650,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_set_holdout",
+          "bytes": 2206393,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v29_v28best_plus",
+          "bytes": 2246502,
+          "human": "2.1M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v29_mathlib_density_seeds.jsonl",
+          "bytes": 127597,
+          "human": "124.6K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v29_mathlib_density_candidates.jsonl",
+          "bytes": 399521,
+          "human": "390.2K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v29_mathlib_router.py",
+          "bytes": 4115,
+          "human": "4.0K"
+        }
+      ]
+    },
+    "v30": {
+      "scripts": [
+        {
+          "name": "analyze_v30_density_law_update.py",
+          "bytes": 6919,
+          "human": "6.8K"
+        },
+        {
+          "name": "analyze_v30_remaining_failures.py",
+          "bytes": 6477,
+          "human": "6.3K"
+        },
+        {
+          "name": "audit_v30_low_density_residuals.py",
+          "bytes": 6713,
+          "human": "6.6K"
+        },
+        {
+          "name": "audit_v30_v25_regression.py",
+          "bytes": 8220,
+          "human": "8.0K"
+        },
+        {
+          "name": "build_v30_mathlib_dataset.py",
+          "bytes": 11370,
+          "human": "11.1K"
+        },
+        {
+          "name": "evaluate_v30_mathlib_specialists.py",
+          "bytes": 12153,
+          "human": "11.9K"
+        },
+        {
+          "name": "evaluate_v30_routed_system.py",
+          "bytes": 11928,
+          "human": "11.6K"
+        },
+        {
+          "name": "generate_v30_targeted_density_corpus.py",
+          "bytes": 20546,
+          "human": "20.1K"
+        },
+        {
+          "name": "train_v30_mathlib_specialist.py",
+          "bytes": 6226,
+          "human": "6.1K"
+        },
+        {
+          "name": "verify_v30_targeted_density_corpus.py",
+          "bytes": 6859,
+          "human": "6.7K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V30_DATASET_REPORT.md",
+          "bytes": 1763,
+          "human": "1.7K"
+        },
+        {
+          "name": "V30_DENSITY_LAW_UPDATE.md",
+          "bytes": 3202,
+          "human": "3.1K"
+        },
+        {
+          "name": "V30_FAILURE_EXAMPLES.md",
+          "bytes": 2385,
+          "human": "2.3K"
+        },
+        {
+          "name": "V30_LOW_DENSITY_RESIDUAL_AUDIT.md",
+          "bytes": 2820,
+          "human": "2.8K"
+        },
+        {
+          "name": "V30_REPO_STATUS.md",
+          "bytes": 2984,
+          "human": "2.9K"
+        },
+        {
+          "name": "V30_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 1835,
+          "human": "1.8K"
+        },
+        {
+          "name": "V30_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 3358,
+          "human": "3.3K"
+        },
+        {
+          "name": "V30_TARGETED_DENSITY_CORPUS_REPORT.md",
+          "bytes": 2271,
+          "human": "2.2K"
+        },
+        {
+          "name": "V30_V25_REGRESSION_AUDIT.md",
+          "bytes": 3084,
+          "human": "3.0K"
+        },
+        {
+          "name": "V30_VERIFICATION_REPORT.md",
+          "bytes": 1033,
+          "human": "1.0K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v30_dataset.py",
+          "bytes": 2397,
+          "human": "2.3K"
+        },
+        {
+          "name": "test_v30_density_law_update.py",
+          "bytes": 1064,
+          "human": "1.0K"
+        },
+        {
+          "name": "test_v30_regression_recovery.py",
+          "bytes": 1335,
+          "human": "1.3K"
+        },
+        {
+          "name": "test_v30_routed_system.py",
+          "bytes": 1389,
+          "human": "1.4K"
+        },
+        {
+          "name": "test_v30_specialist_eval.py",
+          "bytes": 1471,
+          "human": "1.4K"
+        },
+        {
+          "name": "test_v30_targeted_density_corpus.py",
+          "bytes": 1618,
+          "human": "1.6K"
+        },
+        {
+          "name": "test_v30_verification.py",
+          "bytes": 1046,
+          "human": "1.0K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v30_corpus_integrity",
+          "bytes": 1518,
+          "human": "1.5K"
+        },
+        {
+          "name": "v30_density_law_update",
+          "bytes": 3165,
+          "human": "3.1K"
+        },
+        {
+          "name": "v30_low_density",
+          "bytes": 5722,
+          "human": "5.6K"
+        },
+        {
+          "name": "v30_remaining_failures",
+          "bytes": 12813,
+          "human": "12.5K"
+        },
+        {
+          "name": "v30_routed_system",
+          "bytes": 51927,
+          "human": "50.7K"
+        },
+        {
+          "name": "v30_specialist_eval",
+          "bytes": 11179412,
+          "human": "10.7M"
+        },
+        {
+          "name": "v30_v25_regression",
+          "bytes": 4192,
+          "human": "4.1K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v30_mathlib_specialist",
+          "bytes": 2867663,
+          "human": "2.7M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v30_general_targeted",
+          "bytes": 2281220,
+          "human": "2.2M"
+        },
+        {
+          "name": "token_seq2seq_v30_targeted_only",
+          "bytes": 2011860,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v30_targeted_upsample",
+          "bytes": 2278639,
+          "human": "2.2M"
+        },
+        {
+          "name": "token_seq2seq_v30_v29best_plus",
+          "bytes": 2279061,
+          "human": "2.2M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v30_targeted_density_seeds.jsonl",
+          "bytes": 35171,
+          "human": "34.3K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v30_targeted_density_candidates.jsonl",
+          "bytes": 131161,
+          "human": "128.1K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v30_mathlib_router.py",
+          "bytes": 2528,
+          "human": "2.5K"
+        }
+      ]
+    },
+    "v31": {
+      "scripts": [
+        {
+          "name": "analyze_v31_density_vs_token_coverage.py",
+          "bytes": 5104,
+          "human": "5.0K"
+        },
+        {
+          "name": "analyze_v31_remaining_failures.py",
+          "bytes": 6823,
+          "human": "6.7K"
+        },
+        {
+          "name": "audit_v31_token_coverage_residuals.py",
+          "bytes": 7922,
+          "human": "7.7K"
+        },
+        {
+          "name": "build_v31_canonical_mathlib_dataset.py",
+          "bytes": 8368,
+          "human": "8.2K"
+        },
+        {
+          "name": "evaluate_v31_normalized_specialists.py",
+          "bytes": 14132,
+          "human": "13.8K"
+        },
+        {
+          "name": "evaluate_v31_routed_system.py",
+          "bytes": 12517,
+          "human": "12.2K"
+        },
+        {
+          "name": "generate_v31_projection_rename_aug.py",
+          "bytes": 11775,
+          "human": "11.5K"
+        },
+        {
+          "name": "train_v31_normalized_specialist.py",
+          "bytes": 6227,
+          "human": "6.1K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V31_CANONICAL_DATASET_REPORT.md",
+          "bytes": 2149,
+          "human": "2.1K"
+        },
+        {
+          "name": "V31_DENSITY_VS_TOKEN_COVERAGE.md",
+          "bytes": 3310,
+          "human": "3.2K"
+        },
+        {
+          "name": "V31_FAILURE_EXAMPLES.md",
+          "bytes": 2253,
+          "human": "2.2K"
+        },
+        {
+          "name": "V31_IDENTIFIER_NORMALIZATION_DESIGN.md",
+          "bytes": 3686,
+          "human": "3.6K"
+        },
+        {
+          "name": "V31_NORMALIZED_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 3013,
+          "human": "2.9K"
+        },
+        {
+          "name": "V31_PROJECTION_RENAME_AUG_REPORT.md",
+          "bytes": 1665,
+          "human": "1.6K"
+        },
+        {
+          "name": "V31_REPO_STATUS.md",
+          "bytes": 3244,
+          "human": "3.2K"
+        },
+        {
+          "name": "V31_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 2061,
+          "human": "2.0K"
+        },
+        {
+          "name": "V31_TOKEN_COVERAGE_AUDIT.md",
+          "bytes": 2975,
+          "human": "2.9K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v31_canonical_dataset.py",
+          "bytes": 2046,
+          "human": "2.0K"
+        },
+        {
+          "name": "test_v31_density_vs_token_coverage.py",
+          "bytes": 1060,
+          "human": "1.0K"
+        },
+        {
+          "name": "test_v31_identifier_normalization.py",
+          "bytes": 2889,
+          "human": "2.8K"
+        },
+        {
+          "name": "test_v31_normalized_eval.py",
+          "bytes": 2087,
+          "human": "2.0K"
+        },
+        {
+          "name": "test_v31_projection_rename_aug.py",
+          "bytes": 1586,
+          "human": "1.5K"
+        },
+        {
+          "name": "test_v31_routed_system.py",
+          "bytes": 1593,
+          "human": "1.6K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v31_density_vs_token_coverage",
+          "bytes": 2916,
+          "human": "2.8K"
+        },
+        {
+          "name": "v31_normalized_eval",
+          "bytes": 3665250,
+          "human": "3.5M"
+        },
+        {
+          "name": "v31_remaining_failures",
+          "bytes": 1850,
+          "human": "1.8K"
+        },
+        {
+          "name": "v31_routed_system",
+          "bytes": 3909,
+          "human": "3.8K"
+        },
+        {
+          "name": "v31_token_coverage",
+          "bytes": 14355,
+          "human": "14.0K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v31_canonical_mathlib",
+          "bytes": 3099146,
+          "human": "3.0M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v31_canonical_general",
+          "bytes": 2219658,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v31_raw_canonical_mixture",
+          "bytes": 2441869,
+          "human": "2.3M"
+        },
+        {
+          "name": "token_seq2seq_v31_raw_plus_projection_aug",
+          "bytes": 2289509,
+          "human": "2.2M"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v31_projection_rename_aug_candidates.jsonl",
+          "bytes": 105296,
+          "human": "102.8K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v31_identifier_normalization.py",
+          "bytes": 9493,
+          "human": "9.3K"
+        },
+        {
+          "name": "v31_mathlib_router.py",
+          "bytes": 2683,
+          "human": "2.6K"
+        }
+      ]
+    },
+    "v32": {
+      "scripts": [
+        {
+          "name": "analyze_v32_saturation.py",
+          "bytes": 6737,
+          "human": "6.6K"
+        },
+        {
+          "name": "audit_v32_final_residual.py",
+          "bytes": 8018,
+          "human": "7.8K"
+        },
+        {
+          "name": "evaluate_v32_identifier_stress.py",
+          "bytes": 7043,
+          "human": "6.9K"
+        },
+        {
+          "name": "evaluate_v32_routed_system.py",
+          "bytes": 13117,
+          "human": "12.8K"
+        },
+        {
+          "name": "generate_v32_final_residual_repair.py",
+          "bytes": 9147,
+          "human": "8.9K"
+        },
+        {
+          "name": "generate_v32_fresh_mathlib_holdout.py",
+          "bytes": 10688,
+          "human": "10.4K"
+        },
+        {
+          "name": "generate_v32_identifier_stress_benchmark.py",
+          "bytes": 9430,
+          "human": "9.2K"
+        },
+        {
+          "name": "train_v32_repaired_specialist.py",
+          "bytes": 2341,
+          "human": "2.3K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V32_FAILURE_EXAMPLES.md",
+          "bytes": 2005,
+          "human": "2.0K"
+        },
+        {
+          "name": "V32_FINAL_RESIDUAL_AUDIT.md",
+          "bytes": 1906,
+          "human": "1.9K"
+        },
+        {
+          "name": "V32_FINAL_RESIDUAL_REPAIR_REPORT.md",
+          "bytes": 1529,
+          "human": "1.5K"
+        },
+        {
+          "name": "V32_FRESH_MATHLIB_HOLDOUT.md",
+          "bytes": 1256,
+          "human": "1.2K"
+        },
+        {
+          "name": "V32_IDENTIFIER_STRESS_BENCHMARK.md",
+          "bytes": 1253,
+          "human": "1.2K"
+        },
+        {
+          "name": "V32_IDENTIFIER_STRESS_EVAL_REPORT.md",
+          "bytes": 2395,
+          "human": "2.3K"
+        },
+        {
+          "name": "V32_REPO_STATUS.md",
+          "bytes": 2145,
+          "human": "2.1K"
+        },
+        {
+          "name": "V32_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 2109,
+          "human": "2.1K"
+        },
+        {
+          "name": "V32_SATURATION_ANALYSIS.md",
+          "bytes": 2757,
+          "human": "2.7K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v32_final_residual.py",
+          "bytes": 878,
+          "human": "878B"
+        },
+        {
+          "name": "test_v32_fresh_holdout.py",
+          "bytes": 1171,
+          "human": "1.1K"
+        },
+        {
+          "name": "test_v32_identifier_stress.py",
+          "bytes": 1744,
+          "human": "1.7K"
+        },
+        {
+          "name": "test_v32_routed_system.py",
+          "bytes": 1433,
+          "human": "1.4K"
+        },
+        {
+          "name": "test_v32_saturation_analysis.py",
+          "bytes": 915,
+          "human": "915B"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v32_final_residual",
+          "bytes": 2387,
+          "human": "2.3K"
+        },
+        {
+          "name": "v32_identifier_stress_eval",
+          "bytes": 1522507,
+          "human": "1.5M"
+        },
+        {
+          "name": "v32_routed_system",
+          "bytes": 60170,
+          "human": "58.8K"
+        },
+        {
+          "name": "v32_saturation",
+          "bytes": 3392,
+          "human": "3.3K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v32_mathlib",
+          "bytes": 691317,
+          "human": "675.1K"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v32_canonical_repaired",
+          "bytes": 2221382,
+          "human": "2.1M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v32_final_residual_repair_seeds.jsonl",
+          "bytes": 5728,
+          "human": "5.6K"
+        },
+        {
+          "name": "v32_fresh_mathlib_holdout_seeds.jsonl",
+          "bytes": 8767,
+          "human": "8.6K"
+        },
+        {
+          "name": "v32_identifier_stress_seeds.jsonl",
+          "bytes": 18441,
+          "human": "18.0K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v32_final_residual_repair_candidates.jsonl",
+          "bytes": 23027,
+          "human": "22.5K"
+        },
+        {
+          "name": "v32_fresh_mathlib_holdout_candidates.jsonl",
+          "bytes": 17824,
+          "human": "17.4K"
+        },
+        {
+          "name": "v32_identifier_stress_candidates.jsonl",
+          "bytes": 34887,
+          "human": "34.1K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v32_mathlib_router.py",
+          "bytes": 2340,
+          "human": "2.3K"
+        }
+      ]
+    },
+    "v33": {
+      "scripts": [
+        {
+          "name": "analyze_v33_single_tactic_saturation.py",
+          "bytes": 6502,
+          "human": "6.3K"
+        },
+        {
+          "name": "audit_v33_remaining_residuals.py",
+          "bytes": 6484,
+          "human": "6.3K"
+        },
+        {
+          "name": "build_v33_mathlib_dataset.py",
+          "bytes": 6914,
+          "human": "6.8K"
+        },
+        {
+          "name": "evaluate_v33_mathlib_specialists.py",
+          "bytes": 7373,
+          "human": "7.2K"
+        },
+        {
+          "name": "evaluate_v33_routed_system.py",
+          "bytes": 10533,
+          "human": "10.3K"
+        },
+        {
+          "name": "generate_v33_fresh_robustness_holdout.py",
+          "bytes": 9336,
+          "human": "9.1K"
+        },
+        {
+          "name": "generate_v33_residual_coverage_corpus.py",
+          "bytes": 12982,
+          "human": "12.7K"
+        },
+        {
+          "name": "train_v33_mathlib_specialist.py",
+          "bytes": 2735,
+          "human": "2.7K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V33_DATASET_REPORT.md",
+          "bytes": 1141,
+          "human": "1.1K"
+        },
+        {
+          "name": "V33_FAILURE_EXAMPLES.md",
+          "bytes": 1451,
+          "human": "1.4K"
+        },
+        {
+          "name": "V33_FRESH_ROBUSTNESS_HOLDOUT.md",
+          "bytes": 1051,
+          "human": "1.0K"
+        },
+        {
+          "name": "V33_REMAINING_RESIDUAL_AUDIT.md",
+          "bytes": 1999,
+          "human": "2.0K"
+        },
+        {
+          "name": "V33_REPO_STATUS.md",
+          "bytes": 2427,
+          "human": "2.4K"
+        },
+        {
+          "name": "V33_RESIDUAL_COVERAGE_CORPUS_REPORT.md",
+          "bytes": 1477,
+          "human": "1.4K"
+        },
+        {
+          "name": "V33_ROUTED_SYSTEM_REPORT.md",
+          "bytes": 1737,
+          "human": "1.7K"
+        },
+        {
+          "name": "V33_SINGLE_TACTIC_SATURATION_ANALYSIS.md",
+          "bytes": 2368,
+          "human": "2.3K"
+        },
+        {
+          "name": "V33_SPECIALIST_EVAL_REPORT.md",
+          "bytes": 2326,
+          "human": "2.3K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_v33_fresh_robustness_holdout.py",
+          "bytes": 913,
+          "human": "913B"
+        },
+        {
+          "name": "test_v33_remaining_residuals.py",
+          "bytes": 870,
+          "human": "870B"
+        },
+        {
+          "name": "test_v33_residual_coverage_corpus.py",
+          "bytes": 1237,
+          "human": "1.2K"
+        },
+        {
+          "name": "test_v33_routed_system.py",
+          "bytes": 1422,
+          "human": "1.4K"
+        },
+        {
+          "name": "test_v33_saturation_analysis.py",
+          "bytes": 977,
+          "human": "977B"
+        },
+        {
+          "name": "test_v33_specialist_eval.py",
+          "bytes": 1634,
+          "human": "1.6K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "v33_remaining_residual",
+          "bytes": 15556,
+          "human": "15.2K"
+        },
+        {
+          "name": "v33_routed_system",
+          "bytes": 67668,
+          "human": "66.1K"
+        },
+        {
+          "name": "v33_saturation",
+          "bytes": 1702,
+          "human": "1.7K"
+        },
+        {
+          "name": "v33_specialist_eval",
+          "bytes": 4264009,
+          "human": "4.1M"
+        }
+      ],
+      "processed": [
+        {
+          "name": "v33_mathlib_specialist",
+          "bytes": 1482100,
+          "human": "1.4M"
+        }
+      ],
+      "models": [
+        {
+          "name": "token_seq2seq_v33_general_residual",
+          "bytes": 2242978,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v33_general_residual_stress",
+          "bytes": 2243125,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v33_residual_only",
+          "bytes": 1947596,
+          "human": "1.9M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v33_fresh_robustness_holdout_seeds.jsonl",
+          "bytes": 15644,
+          "human": "15.3K"
+        },
+        {
+          "name": "v33_residual_coverage_seeds.jsonl",
+          "bytes": 26008,
+          "human": "25.4K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v33_fresh_robustness_holdout_candidates.jsonl",
+          "bytes": 27084,
+          "human": "26.4K"
+        },
+        {
+          "name": "v33_residual_coverage_candidates.jsonl",
+          "bytes": 58732,
+          "human": "57.4K"
+        }
+      ],
+      "src": [
+        {
+          "name": "v33_mathlib_router.py",
+          "bytes": 2281,
+          "human": "2.2K"
+        }
+      ]
+    },
+    "legacy": {
+      "scripts": [
+        {
+          "name": "analyze_v10_scaling.py",
+          "bytes": 16049,
+          "human": "15.7K"
+        },
+        {
+          "name": "analyze_v18_failures.py",
+          "bytes": 5870,
+          "human": "5.7K"
+        },
+        {
+          "name": "analyze_v20_failures.py",
+          "bytes": 8755,
+          "human": "8.5K"
+        },
+        {
+          "name": "analyze_v22_category_interference.py",
+          "bytes": 17927,
+          "human": "17.5K"
+        },
+        {
+          "name": "analyze_v2_failures.py",
+          "bytes": 9258,
+          "human": "9.0K"
+        },
+        {
+          "name": "analyze_v8_failures.py",
+          "bytes": 10382,
+          "human": "10.1K"
+        },
+        {
+          "name": "audit_v16_generator_bound.py",
+          "bytes": 11227,
+          "human": "11.0K"
+        },
+        {
+          "name": "audit_v17_residual_failure.py",
+          "bytes": 8782,
+          "human": "8.6K"
+        },
+        {
+          "name": "audit_v20_shape_gaps.py",
+          "bytes": 14812,
+          "human": "14.5K"
+        },
+        {
+          "name": "audit_v21_forall_regression.py",
+          "bytes": 11822,
+          "human": "11.5K"
+        },
+        {
+          "name": "audit_v22_exists_failures.py",
+          "bytes": 6910,
+          "human": "6.7K"
+        },
+        {
+          "name": "audit_v22_routing_vs_single.py",
+          "bytes": 8281,
+          "human": "8.1K"
+        },
+        {
+          "name": "audit_v23_generator_bound.py",
+          "bytes": 6315,
+          "human": "6.2K"
+        },
+        {
+          "name": "audit_v23_reranker_data.py",
+          "bytes": 11236,
+          "human": "11.0K"
+        },
+        {
+          "name": "build_combined_v10_per_op.py",
+          "bytes": 8085,
+          "human": "7.9K"
+        },
+        {
+          "name": "build_v10_full_matrix.py",
+          "bytes": 8577,
+          "human": "8.4K"
+        },
+        {
+          "name": "build_v11_family_lofo.py",
+          "bytes": 10514,
+          "human": "10.3K"
+        },
+        {
+          "name": "build_v16_family_lofo.py",
+          "bytes": 7674,
+          "human": "7.5K"
+        },
+        {
+          "name": "build_v17_family_lofo.py",
+          "bytes": 6412,
+          "human": "6.3K"
+        },
+        {
+          "name": "build_v19_abstract_dataset.py",
+          "bytes": 12011,
+          "human": "11.7K"
+        },
+        {
+          "name": "build_v20_broad_training.py",
+          "bytes": 7502,
+          "human": "7.3K"
+        },
+        {
+          "name": "build_v21_training_configs.py",
+          "bytes": 7981,
+          "human": "7.8K"
+        },
+        {
+          "name": "build_v22_balanced_training.py",
+          "bytes": 8628,
+          "human": "8.4K"
+        },
+        {
+          "name": "build_v8_full_matrix.py",
+          "bytes": 9178,
+          "human": "9.0K"
+        },
+        {
+          "name": "build_v9_corpus.py",
+          "bytes": 13112,
+          "human": "12.8K"
+        },
+        {
+          "name": "compare_v13_v14.py",
+          "bytes": 11864,
+          "human": "11.6K"
+        },
+        {
+          "name": "compose_v2_failures.py",
+          "bytes": 3307,
+          "human": "3.2K"
+        },
+        {
+          "name": "compose_v3_examples.py",
+          "bytes": 7197,
+          "human": "7.0K"
+        },
+        {
+          "name": "enrich_v8_predictions.py",
+          "bytes": 3988,
+          "human": "3.9K"
+        },
+        {
+          "name": "eval_combined_v10_per_op.sh",
+          "bytes": 2040,
+          "human": "2.0K"
+        },
+        {
+          "name": "eval_v11_family_lofo.sh",
+          "bytes": 2322,
+          "human": "2.3K"
+        },
+        {
+          "name": "evaluate_mini_elf_v1.py",
+          "bytes": 12819,
+          "human": "12.5K"
+        },
+        {
+          "name": "evaluate_mini_elf_v2.py",
+          "bytes": 703,
+          "human": "703B"
+        },
+        {
+          "name": "evaluate_mini_elf_v3.py",
+          "bytes": 10014,
+          "human": "9.8K"
+        },
+        {
+          "name": "evaluate_mini_elf_v5.py",
+          "bytes": 15020,
+          "human": "14.7K"
+        },
+        {
+          "name": "evaluate_mini_elf_v6.py",
+          "bytes": 8531,
+          "human": "8.3K"
+        },
+        {
+          "name": "evaluate_mini_elf_v8.py",
+          "bytes": 15229,
+          "human": "14.9K"
+        },
+        {
+          "name": "evaluate_retrieval_v6.py",
+          "bytes": 3474,
+          "human": "3.4K"
+        },
+        {
+          "name": "evaluate_retrieval_v7.py",
+          "bytes": 14881,
+          "human": "14.5K"
+        },
+        {
+          "name": "evaluate_v12_literal_rerank.py",
+          "bytes": 14841,
+          "human": "14.5K"
+        },
+        {
+          "name": "evaluate_v15_reranker.py",
+          "bytes": 16460,
+          "human": "16.1K"
+        },
+        {
+          "name": "evaluate_v18_zero_shot.py",
+          "bytes": 18361,
+          "human": "17.9K"
+        },
+        {
+          "name": "evaluate_v19_abstract_seq2seq.py",
+          "bytes": 19552,
+          "human": "19.1K"
+        },
+        {
+          "name": "evaluate_v20_abstract_reranker.py",
+          "bytes": 5893,
+          "human": "5.8K"
+        },
+        {
+          "name": "evaluate_v20_broad_core.py",
+          "bytes": 17795,
+          "human": "17.4K"
+        },
+        {
+          "name": "evaluate_v21_broad_core.py",
+          "bytes": 14214,
+          "human": "13.9K"
+        },
+        {
+          "name": "evaluate_v23_rerankers.py",
+          "bytes": 14945,
+          "human": "14.6K"
+        },
+        {
+          "name": "generate_v16_contrapositive_corpus.py",
+          "bytes": 17037,
+          "human": "16.6K"
+        },
+        {
+          "name": "generate_v17_arrow_false_elim_corpus.py",
+          "bytes": 12195,
+          "human": "11.9K"
+        },
+        {
+          "name": "generate_v18_broad_core_corpus.py",
+          "bytes": 22950,
+          "human": "22.4K"
+        },
+        {
+          "name": "generate_v20_bool_corpus.py",
+          "bytes": 15344,
+          "human": "15.0K"
+        },
+        {
+          "name": "generate_v20_implication_corpus.py",
+          "bytes": 19415,
+          "human": "19.0K"
+        },
+        {
+          "name": "generate_v21_forall_corpus.py",
+          "bytes": 14575,
+          "human": "14.2K"
+        },
+        {
+          "name": "generate_v22_exists_corpus.py",
+          "bytes": 13592,
+          "human": "13.3K"
+        },
+        {
+          "name": "inventory_v34_artifacts.py",
+          "bytes": 6886,
+          "human": "6.7K"
+        },
+        {
+          "name": "rerun_v12_timeouts.py",
+          "bytes": 20451,
+          "human": "20.0K"
+        },
+        {
+          "name": "rerun_v14_timeouts.py",
+          "bytes": 11745,
+          "human": "11.5K"
+        },
+        {
+          "name": "rerun_v20_timeouts.py",
+          "bytes": 7350,
+          "human": "7.2K"
+        },
+        {
+          "name": "run_mini_elf_v1_eval.sh",
+          "bytes": 4555,
+          "human": "4.4K"
+        },
+        {
+          "name": "run_mini_elf_v2_eval.sh",
+          "bytes": 3332,
+          "human": "3.3K"
+        },
+        {
+          "name": "run_mini_elf_v3_eval.sh",
+          "bytes": 2526,
+          "human": "2.5K"
+        },
+        {
+          "name": "run_mini_elf_v5_eval.sh",
+          "bytes": 2206,
+          "human": "2.2K"
+        },
+        {
+          "name": "run_mini_elf_v6_eval.sh",
+          "bytes": 1822,
+          "human": "1.8K"
+        },
+        {
+          "name": "run_mini_elf_v7_eval.sh",
+          "bytes": 1130,
+          "human": "1.1K"
+        },
+        {
+          "name": "run_mini_elf_v8_eval.sh",
+          "bytes": 1621,
+          "human": "1.6K"
+        },
+        {
+          "name": "run_v10_eval_focused.sh",
+          "bytes": 3631,
+          "human": "3.5K"
+        },
+        {
+          "name": "run_v10_eval_loop.sh",
+          "bytes": 4445,
+          "human": "4.3K"
+        },
+        {
+          "name": "run_v10_eval_new_cells.sh",
+          "bytes": 3110,
+          "human": "3.0K"
+        },
+        {
+          "name": "run_v12_eval.sh",
+          "bytes": 297,
+          "human": "297B"
+        },
+        {
+          "name": "run_v1_transfer_eval.sh",
+          "bytes": 1992,
+          "human": "1.9K"
+        },
+        {
+          "name": "run_v22_evals.sh",
+          "bytes": 2209,
+          "human": "2.2K"
+        },
+        {
+          "name": "run_v4_template_ablation.sh",
+          "bytes": 1897,
+          "human": "1.9K"
+        },
+        {
+          "name": "run_v8_eval_min.sh",
+          "bytes": 1571,
+          "human": "1.5K"
+        },
+        {
+          "name": "run_v8_seq2seq_eval_loop.sh",
+          "bytes": 1692,
+          "human": "1.7K"
+        },
+        {
+          "name": "run_v8_seq2seq_training.sh",
+          "bytes": 1529,
+          "human": "1.5K"
+        },
+        {
+          "name": "run_v9_llm_donorless_pilot.py",
+          "bytes": 12567,
+          "human": "12.3K"
+        },
+        {
+          "name": "summarize_v12.py",
+          "bytes": 3673,
+          "human": "3.6K"
+        },
+        {
+          "name": "summarize_v2.py",
+          "bytes": 4028,
+          "human": "3.9K"
+        },
+        {
+          "name": "summarize_v5.py",
+          "bytes": 8259,
+          "human": "8.1K"
+        },
+        {
+          "name": "summarize_v6.py",
+          "bytes": 7255,
+          "human": "7.1K"
+        },
+        {
+          "name": "summarize_v7.py",
+          "bytes": 4017,
+          "human": "3.9K"
+        },
+        {
+          "name": "summarize_v8.py",
+          "bytes": 3488,
+          "human": "3.4K"
+        },
+        {
+          "name": "train_combined_v10_per_op.sh",
+          "bytes": 830,
+          "human": "830B"
+        },
+        {
+          "name": "train_mini_elf_v1.py",
+          "bytes": 9100,
+          "human": "8.9K"
+        },
+        {
+          "name": "train_mini_elf_v2.py",
+          "bytes": 8169,
+          "human": "8.0K"
+        },
+        {
+          "name": "train_v11_family_lofo.sh",
+          "bytes": 779,
+          "human": "779B"
+        },
+        {
+          "name": "train_v18_broad_synthetic_model.py",
+          "bytes": 9558,
+          "human": "9.3K"
+        },
+        {
+          "name": "train_v19_abstract_seq2seq.py",
+          "bytes": 4542,
+          "human": "4.4K"
+        },
+        {
+          "name": "train_v20_broad_plus_seq2seq.py",
+          "bytes": 4836,
+          "human": "4.7K"
+        },
+        {
+          "name": "train_v22_general_models.py",
+          "bytes": 9071,
+          "human": "8.9K"
+        },
+        {
+          "name": "train_v23_reranker.py",
+          "bytes": 2710,
+          "human": "2.6K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "V10_FAILURE_EXAMPLES.md",
+          "bytes": 6164,
+          "human": "6.0K"
+        },
+        {
+          "name": "V10_FULL_EVAL_MATRIX.md",
+          "bytes": 11245,
+          "human": "11.0K"
+        },
+        {
+          "name": "V10_REDUNDANCY_CORPUS_REPORT.md",
+          "bytes": 6409,
+          "human": "6.3K"
+        },
+        {
+          "name": "V10_SCALING_ANALYSIS.md",
+          "bytes": 5451,
+          "human": "5.3K"
+        },
+        {
+          "name": "V10_SEQ2SEQ_SCALING_REPORT.md",
+          "bytes": 7948,
+          "human": "7.8K"
+        },
+        {
+          "name": "V11_FAILURE_EXAMPLES.md",
+          "bytes": 6521,
+          "human": "6.4K"
+        },
+        {
+          "name": "V11_FAMILY_LOFO_REDUNDANCY_REPORT.md",
+          "bytes": 11026,
+          "human": "10.8K"
+        },
+        {
+          "name": "V12_FAILURE_EXAMPLES.md",
+          "bytes": 7720,
+          "human": "7.5K"
+        },
+        {
+          "name": "V12_LITERAL_AND_RERANK_FAILURE_ANALYSIS.md",
+          "bytes": 5746,
+          "human": "5.6K"
+        },
+        {
+          "name": "V12_LITERAL_RERANK_REPORT.md",
+          "bytes": 12128,
+          "human": "11.8K"
+        },
+        {
+          "name": "V12_TOKENIZATION_NOTE.md",
+          "bytes": 4952,
+          "human": "4.8K"
+        },
+        {
+          "name": "V13_FAILURE_EXAMPLES.md",
+          "bytes": 6483,
+          "human": "6.3K"
+        },
+        {
+          "name": "V13_TIMEOUT_RERUN_REPORT.md",
+          "bytes": 12537,
+          "human": "12.2K"
+        },
+        {
+          "name": "V13_TOKENIZATION_DECISION.md",
+          "bytes": 7261,
+          "human": "7.1K"
+        },
+        {
+          "name": "V14_CHAR_VS_TOKEN_REPORT.md",
+          "bytes": 7797,
+          "human": "7.6K"
+        },
+        {
+          "name": "V14_FAILURE_EXAMPLES.md",
+          "bytes": 7278,
+          "human": "7.1K"
+        },
+        {
+          "name": "V14_TOKEN_SEQ2SEQ_REPORT.md",
+          "bytes": 14727,
+          "human": "14.4K"
+        },
+        {
+          "name": "V15_FAILURE_EXAMPLES.md",
+          "bytes": 5382,
+          "human": "5.3K"
+        },
+        {
+          "name": "V15_LEARNED_RERANKER_REPORT.md",
+          "bytes": 10530,
+          "human": "10.3K"
+        },
+        {
+          "name": "V15_NEG_IMP_EXFALSO_RERANK_ANALYSIS.md",
+          "bytes": 4726,
+          "human": "4.6K"
+        },
+        {
+          "name": "V16_CONTRAPOSITIVE_AUGMENTATION_REPORT.md",
+          "bytes": 12045,
+          "human": "11.8K"
+        },
+        {
+          "name": "V16_FAILURE_EXAMPLES.md",
+          "bytes": 5882,
+          "human": "5.7K"
+        },
+        {
+          "name": "V16_GENERATOR_BOUND_FAILURE_AUDIT.md",
+          "bytes": 1683,
+          "human": "1.6K"
+        },
+        {
+          "name": "V17_ARROW_FALSE_ELIM_REPORT.md",
+          "bytes": 10779,
+          "human": "10.5K"
+        },
+        {
+          "name": "V17_FAILURE_EXAMPLES.md",
+          "bytes": 5538,
+          "human": "5.4K"
+        },
+        {
+          "name": "V17_RESIDUAL_FAILURE_AUDIT.md",
+          "bytes": 2103,
+          "human": "2.1K"
+        },
+        {
+          "name": "V18_BENCHMARK_DESIGN.md",
+          "bytes": 6585,
+          "human": "6.4K"
+        },
+        {
+          "name": "V18_BROAD_CORE_REPORT.md",
+          "bytes": 5543,
+          "human": "5.4K"
+        },
+        {
+          "name": "V18_FAILURE_EXAMPLES.md",
+          "bytes": 7512,
+          "human": "7.3K"
+        },
+        {
+          "name": "V18_ZERO_SHOT_TRANSFER_REPORT.md",
+          "bytes": 11086,
+          "human": "10.8K"
+        },
+        {
+          "name": "V19_BOOL_GAP_NOTE.md",
+          "bytes": 2853,
+          "human": "2.8K"
+        },
+        {
+          "name": "V19_FAILURE_EXAMPLES.md",
+          "bytes": 5396,
+          "human": "5.3K"
+        },
+        {
+          "name": "V19_IDENTIFIER_ABSTRACTION_REPORT.md",
+          "bytes": 9761,
+          "human": "9.5K"
+        },
+        {
+          "name": "V19_IMPLICATION_IDENTIFIER_ANALYSIS.md",
+          "bytes": 4490,
+          "human": "4.4K"
+        },
+        {
+          "name": "V20_BROAD_TRANSFER_REPORT.md",
+          "bytes": 8854,
+          "human": "8.6K"
+        },
+        {
+          "name": "V20_FAILURE_EXAMPLES.md",
+          "bytes": 8482,
+          "human": "8.3K"
+        },
+        {
+          "name": "V20_IMPLICATION_BOOL_CORPUS_REPORT.md",
+          "bytes": 7387,
+          "human": "7.2K"
+        },
+        {
+          "name": "V20_RANKER_TIME_ABSTRACTION_REPORT.md",
+          "bytes": 7051,
+          "human": "6.9K"
+        },
+        {
+          "name": "V20_SHAPE_GAP_AUDIT.md",
+          "bytes": 15492,
+          "human": "15.1K"
+        },
+        {
+          "name": "V21_CAPACITY_TRADEOFF_ANALYSIS.md",
+          "bytes": 5032,
+          "human": "4.9K"
+        },
+        {
+          "name": "V21_FAILURE_EXAMPLES.md",
+          "bytes": 7219,
+          "human": "7.0K"
+        },
+        {
+          "name": "V21_FORALL_RECOVERY_REPORT.md",
+          "bytes": 5706,
+          "human": "5.6K"
+        },
+        {
+          "name": "V21_FORALL_REGRESSION_AUDIT.md",
+          "bytes": 4246,
+          "human": "4.1K"
+        },
+        {
+          "name": "V21_REPO_CHECKPOINT.md",
+          "bytes": 4140,
+          "human": "4.0K"
+        },
+        {
+          "name": "V22_CATEGORY_INTERFERENCE_ANALYSIS.md",
+          "bytes": 5395,
+          "human": "5.3K"
+        },
+        {
+          "name": "V22_EXISTS_FAILURE_AUDIT.md",
+          "bytes": 3572,
+          "human": "3.5K"
+        },
+        {
+          "name": "V22_FAILURE_EXAMPLES.md",
+          "bytes": 5065,
+          "human": "4.9K"
+        },
+        {
+          "name": "V22_GENERAL_MODEL_REPORT.md",
+          "bytes": 9108,
+          "human": "8.9K"
+        },
+        {
+          "name": "V22_REPO_STATUS.md",
+          "bytes": 3223,
+          "human": "3.1K"
+        },
+        {
+          "name": "V22_ROUTING_AUDIT.md",
+          "bytes": 2497,
+          "human": "2.4K"
+        },
+        {
+          "name": "V23_FAILURE_EXAMPLES.md",
+          "bytes": 6010,
+          "human": "5.9K"
+        },
+        {
+          "name": "V23_GENERATOR_BOUND_AUDIT.md",
+          "bytes": 3970,
+          "human": "3.9K"
+        },
+        {
+          "name": "V23_LEARNED_RERANKER_REFRESH_REPORT.md",
+          "bytes": 5781,
+          "human": "5.6K"
+        },
+        {
+          "name": "V23_NEGATION_RERANK_ANALYSIS.md",
+          "bytes": 3008,
+          "human": "2.9K"
+        },
+        {
+          "name": "V23_REPO_STATUS.md",
+          "bytes": 3485,
+          "human": "3.4K"
+        },
+        {
+          "name": "V23_RERANKER_DATA_AUDIT.md",
+          "bytes": 2136,
+          "human": "2.1K"
+        },
+        {
+          "name": "V2_FAILURE_EXAMPLES.md",
+          "bytes": 7200,
+          "human": "7.0K"
+        },
+        {
+          "name": "V2_GENERALIZATION_REPORT.md",
+          "bytes": 10602,
+          "human": "10.4K"
+        },
+        {
+          "name": "V34_GIT_RECOVERY_PLAN.md",
+          "bytes": 5382,
+          "human": "5.3K"
+        },
+        {
+          "name": "V3_DIFFICULTY_FAILURE_ANALYSIS.md",
+          "bytes": 5051,
+          "human": "4.9K"
+        },
+        {
+          "name": "V3_FAILURE_EXAMPLES.md",
+          "bytes": 5441,
+          "human": "5.3K"
+        },
+        {
+          "name": "V3_PROOF_PLANNER_REPORT.md",
+          "bytes": 10198,
+          "human": "10.0K"
+        },
+        {
+          "name": "V4_PLANNER_BLIND_REPORT.md",
+          "bytes": 8302,
+          "human": "8.1K"
+        },
+        {
+          "name": "V4_PLANNER_COVERAGE_AUDIT.md",
+          "bytes": 8954,
+          "human": "8.7K"
+        },
+        {
+          "name": "V5_FAILURE_EXAMPLES.md",
+          "bytes": 6458,
+          "human": "6.3K"
+        },
+        {
+          "name": "V5_LEARNED_PROPOSER.md",
+          "bytes": 3258,
+          "human": "3.2K"
+        },
+        {
+          "name": "V5_LLM_PILOT_SKIPPED.md",
+          "bytes": 1099,
+          "human": "1.1K"
+        },
+        {
+          "name": "V5_RESULTS_SUMMARY.md",
+          "bytes": 4725,
+          "human": "4.6K"
+        },
+        {
+          "name": "V5_TARGET_FAMILIES.md",
+          "bytes": 6317,
+          "human": "6.2K"
+        },
+        {
+          "name": "V6_FAILURE_EXAMPLES.md",
+          "bytes": 3530,
+          "human": "3.4K"
+        },
+        {
+          "name": "V6_RETRIEVAL_FAILURE_ANALYSIS.md",
+          "bytes": 4580,
+          "human": "4.5K"
+        },
+        {
+          "name": "V6_STRUCTURE_AWARE_RETRIEVAL_REPORT.md",
+          "bytes": 4741,
+          "human": "4.6K"
+        },
+        {
+          "name": "V7_DONOR_AVAILABILITY_AUDIT.md",
+          "bytes": 14105,
+          "human": "13.8K"
+        },
+        {
+          "name": "V7_FAILURE_EXAMPLES.md",
+          "bytes": 5168,
+          "human": "5.0K"
+        },
+        {
+          "name": "V7_RETRIEVAL_HOLDOUT_REPORT.md",
+          "bytes": 9019,
+          "human": "8.8K"
+        },
+        {
+          "name": "V8_DONORLESS_TARGETS.md",
+          "bytes": 17784,
+          "human": "17.4K"
+        },
+        {
+          "name": "V8_FAILURE_EXAMPLES.md",
+          "bytes": 10896,
+          "human": "10.6K"
+        },
+        {
+          "name": "V8_FULL_EVAL_MATRIX.md",
+          "bytes": 5715,
+          "human": "5.6K"
+        },
+        {
+          "name": "V8_GENERATIVE_PROPOSER_REPORT.md",
+          "bytes": 14810,
+          "human": "14.5K"
+        },
+        {
+          "name": "V8_LLM_DONORLESS_PILOT_SKIPPED.md",
+          "bytes": 2020,
+          "human": "2.0K"
+        },
+        {
+          "name": "V8_REPO_CHECKPOINT.md",
+          "bytes": 3599,
+          "human": "3.5K"
+        },
+        {
+          "name": "V9_DATA_SCALING_PLAN.md",
+          "bytes": 9772,
+          "human": "9.5K"
+        },
+        {
+          "name": "V9_LLM_DONORLESS_REPORT.md",
+          "bytes": 2051,
+          "human": "2.0K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test_elf_v1_sampling.py",
+          "bytes": 5684,
+          "human": "5.6K"
+        },
+        {
+          "name": "test_mini_elf_v3_eval.py",
+          "bytes": 6708,
+          "human": "6.6K"
+        },
+        {
+          "name": "test_v10_no_leakage.py",
+          "bytes": 7845,
+          "human": "7.7K"
+        },
+        {
+          "name": "test_v10_scaling_analysis.py",
+          "bytes": 6270,
+          "human": "6.1K"
+        },
+        {
+          "name": "test_v11_family_lofo_no_leakage.py",
+          "bytes": 6093,
+          "human": "6.0K"
+        },
+        {
+          "name": "test_v11_family_report.py",
+          "bytes": 4914,
+          "human": "4.8K"
+        },
+        {
+          "name": "test_v12_eval.py",
+          "bytes": 5969,
+          "human": "5.8K"
+        },
+        {
+          "name": "test_v13_timeout_rerun.py",
+          "bytes": 7682,
+          "human": "7.5K"
+        },
+        {
+          "name": "test_v14_comparison.py",
+          "bytes": 3492,
+          "human": "3.4K"
+        },
+        {
+          "name": "test_v14_eval.py",
+          "bytes": 6173,
+          "human": "6.0K"
+        },
+        {
+          "name": "test_v14_timeout_rerun.py",
+          "bytes": 7449,
+          "human": "7.3K"
+        },
+        {
+          "name": "test_v15_rerank_policy.py",
+          "bytes": 5671,
+          "human": "5.5K"
+        },
+        {
+          "name": "test_v15_reranker_eval.py",
+          "bytes": 7140,
+          "human": "7.0K"
+        },
+        {
+          "name": "test_v16_contrapositive_corpus.py",
+          "bytes": 5759,
+          "human": "5.6K"
+        },
+        {
+          "name": "test_v16_eval.py",
+          "bytes": 9292,
+          "human": "9.1K"
+        },
+        {
+          "name": "test_v16_family_lofo_no_leakage.py",
+          "bytes": 5706,
+          "human": "5.6K"
+        },
+        {
+          "name": "test_v17_arrow_false_elim_corpus.py",
+          "bytes": 3804,
+          "human": "3.7K"
+        },
+        {
+          "name": "test_v17_eval.py",
+          "bytes": 7782,
+          "human": "7.6K"
+        },
+        {
+          "name": "test_v17_family_lofo_no_leakage.py",
+          "bytes": 4032,
+          "human": "3.9K"
+        },
+        {
+          "name": "test_v17_policy_edit.py",
+          "bytes": 2959,
+          "human": "2.9K"
+        },
+        {
+          "name": "test_v18_benchmark_splits.py",
+          "bytes": 2451,
+          "human": "2.4K"
+        },
+        {
+          "name": "test_v18_broad_core_corpus.py",
+          "bytes": 3492,
+          "human": "3.4K"
+        },
+        {
+          "name": "test_v18_eval.py",
+          "bytes": 6733,
+          "human": "6.6K"
+        },
+        {
+          "name": "test_v18_failure_taxonomy.py",
+          "bytes": 2494,
+          "human": "2.4K"
+        },
+        {
+          "name": "test_v19_abstract_dataset.py",
+          "bytes": 3546,
+          "human": "3.5K"
+        },
+        {
+          "name": "test_v19_eval.py",
+          "bytes": 5636,
+          "human": "5.5K"
+        },
+        {
+          "name": "test_v20_bool_corpus.py",
+          "bytes": 4879,
+          "human": "4.8K"
+        },
+        {
+          "name": "test_v20_eval.py",
+          "bytes": 7938,
+          "human": "7.8K"
+        },
+        {
+          "name": "test_v20_implication_corpus.py",
+          "bytes": 7337,
+          "human": "7.2K"
+        },
+        {
+          "name": "test_v20_training_build.py",
+          "bytes": 5152,
+          "human": "5.0K"
+        },
+        {
+          "name": "test_v21_eval.py",
+          "bytes": 4105,
+          "human": "4.0K"
+        },
+        {
+          "name": "test_v21_forall_corpus.py",
+          "bytes": 4214,
+          "human": "4.1K"
+        },
+        {
+          "name": "test_v21_model_router.py",
+          "bytes": 2458,
+          "human": "2.4K"
+        },
+        {
+          "name": "test_v21_training_configs.py",
+          "bytes": 3262,
+          "human": "3.2K"
+        },
+        {
+          "name": "test_v22_balanced_training.py",
+          "bytes": 3825,
+          "human": "3.7K"
+        },
+        {
+          "name": "test_v22_category_interference.py",
+          "bytes": 2327,
+          "human": "2.3K"
+        },
+        {
+          "name": "test_v22_exists_corpus.py",
+          "bytes": 3955,
+          "human": "3.9K"
+        },
+        {
+          "name": "test_v22_general_eval.py",
+          "bytes": 4925,
+          "human": "4.8K"
+        },
+        {
+          "name": "test_v23_eval.py",
+          "bytes": 2569,
+          "human": "2.5K"
+        },
+        {
+          "name": "test_v23_learned_reranker.py",
+          "bytes": 3632,
+          "human": "3.5K"
+        },
+        {
+          "name": "test_v23_policy.py",
+          "bytes": 2074,
+          "human": "2.0K"
+        },
+        {
+          "name": "test_v23_reranker_data.py",
+          "bytes": 1711,
+          "human": "1.7K"
+        },
+        {
+          "name": "test_v23_reranker_features.py",
+          "bytes": 3883,
+          "human": "3.8K"
+        },
+        {
+          "name": "test_v2_pipeline.py",
+          "bytes": 5993,
+          "human": "5.9K"
+        },
+        {
+          "name": "test_v4_template_ablation.py",
+          "bytes": 4786,
+          "human": "4.7K"
+        },
+        {
+          "name": "test_v5_eval.py",
+          "bytes": 4908,
+          "human": "4.8K"
+        },
+        {
+          "name": "test_v6_eval.py",
+          "bytes": 3269,
+          "human": "3.2K"
+        },
+        {
+          "name": "test_v7_eval.py",
+          "bytes": 4353,
+          "human": "4.3K"
+        },
+        {
+          "name": "test_v8_fusion.py",
+          "bytes": 3189,
+          "human": "3.1K"
+        },
+        {
+          "name": "test_v9_corpus.py",
+          "bytes": 2816,
+          "human": "2.8K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "basic_lean_cli_mini_elf_v1_decoder_test",
+          "bytes": 343952,
+          "human": "335.9K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_decoder_val",
+          "bytes": 342143,
+          "human": "334.1K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_nn_test",
+          "bytes": 342886,
+          "human": "334.8K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_nn_val",
+          "bytes": 349281,
+          "human": "341.1K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_rerank_test",
+          "bytes": 345970,
+          "human": "337.9K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_rerank_val",
+          "bytes": 344570,
+          "human": "336.5K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_rerank_witness_test",
+          "bytes": 345323,
+          "human": "337.2K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_v1_rerank_witness_val",
+          "bytes": 341725,
+          "human": "333.7K"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2_basic_test",
+          "bytes": 428820,
+          "human": "418.8K"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2_hard_adversarial_test",
+          "bytes": 721479,
+          "human": "704.6K"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2_hard_difficulty_test",
+          "bytes": 740952,
+          "human": "723.6K"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2_hard_hash_test",
+          "bytes": 416736,
+          "human": "407.0K"
+        },
+        {
+          "name": "hard_lean_cli_transfer_v1_adversarial_sibling_test",
+          "bytes": 464251,
+          "human": "453.4K"
+        },
+        {
+          "name": "hard_lean_cli_transfer_v1_difficulty_holdout_test",
+          "bytes": 670850,
+          "human": "655.1K"
+        },
+        {
+          "name": "hard_lean_cli_transfer_v1_family_holdout_test",
+          "bytes": 436610,
+          "human": "426.4K"
+        },
+        {
+          "name": "hard_lean_cli_transfer_v1_hash_test",
+          "bytes": 349971,
+          "human": "341.8K"
+        },
+        {
+          "name": "hard_lean_cli_transfer_v1_hash_test_norerank",
+          "bytes": 424317,
+          "human": "414.4K"
+        },
+        {
+          "name": "mini_elf_v3_basic_test",
+          "bytes": 546934,
+          "human": "534.1K"
+        },
+        {
+          "name": "mini_elf_v3_hard_adversarial_test",
+          "bytes": 693154,
+          "human": "676.9K"
+        },
+        {
+          "name": "mini_elf_v3_hard_difficulty_test",
+          "bytes": 715636,
+          "human": "698.9K"
+        },
+        {
+          "name": "mini_elf_v3_hard_difficulty_test_noplanner",
+          "bytes": 808779,
+          "human": "789.8K"
+        },
+        {
+          "name": "mini_elf_v3_hard_hash_test",
+          "bytes": 519945,
+          "human": "507.8K"
+        },
+        {
+          "name": "planner_blind_split_v3_test",
+          "bytes": 1063567,
+          "human": "1.0M"
+        },
+        {
+          "name": "planner_blind_split_v4templates_test",
+          "bytes": 1037538,
+          "human": "1013.2K"
+        },
+        {
+          "name": "planner_blind_v1_test",
+          "bytes": 1209683,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v2_test",
+          "bytes": 1244995,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v3_test",
+          "bytes": 1258475,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v4_template_both_test",
+          "bytes": 1211683,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v4_template_exists_test",
+          "bytes": 1244557,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v4_template_negation_test",
+          "bytes": 1233180,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v5_llm_test",
+          "bytes": 815032,
+          "human": "795.9K"
+        },
+        {
+          "name": "planner_blind_v5_retrieval_fusion_test",
+          "bytes": 1077302,
+          "human": "1.0M"
+        },
+        {
+          "name": "planner_blind_v5_retrieval_fusion_v4templates_test",
+          "bytes": 1008515,
+          "human": "984.9K"
+        },
+        {
+          "name": "planner_blind_v6_ablation_no_adapt_pref_test",
+          "bytes": 1172210,
+          "human": "1.1M"
+        },
+        {
+          "name": "planner_blind_v6_ablation_no_structure_test",
+          "bytes": 1229386,
+          "human": "1.2M"
+        },
+        {
+          "name": "planner_blind_v6_fusion_test",
+          "bytes": 1169049,
+          "human": "1.1M"
+        },
+        {
+          "name": "planner_blind_v6_retrieval_test",
+          "bytes": 1182129,
+          "human": "1.1M"
+        },
+        {
+          "name": "planner_blind_v6_v5fusion_test",
+          "bytes": 1092332,
+          "human": "1.0M"
+        },
+        {
+          "name": "planner_blind_v6_v5retrieval_test",
+          "bytes": 1095197,
+          "human": "1.0M"
+        },
+        {
+          "name": "v10_eval",
+          "bytes": 577024,
+          "human": "563.5K"
+        },
+        {
+          "name": "v10_eval_clean",
+          "bytes": 218179,
+          "human": "213.1K"
+        },
+        {
+          "name": "v11_family_lofo_eval",
+          "bytes": 226109,
+          "human": "220.8K"
+        },
+        {
+          "name": "v12_eval",
+          "bytes": 281061,
+          "human": "274.5K"
+        },
+        {
+          "name": "v13_timeout_rerun",
+          "bytes": 33547,
+          "human": "32.8K"
+        },
+        {
+          "name": "v14_timeout_rerun",
+          "bytes": 28451,
+          "human": "27.8K"
+        },
+        {
+          "name": "v14_token_seq2seq",
+          "bytes": 729763,
+          "human": "712.7K"
+        },
+        {
+          "name": "v15_learned_reranker",
+          "bytes": 135649,
+          "human": "132.5K"
+        },
+        {
+          "name": "v16_audit",
+          "bytes": 37576,
+          "human": "36.7K"
+        },
+        {
+          "name": "v16_empty_rerun",
+          "bytes": 0,
+          "human": "0B"
+        },
+        {
+          "name": "v16_policy_eval",
+          "bytes": 135459,
+          "human": "132.3K"
+        },
+        {
+          "name": "v16_token_seq2seq",
+          "bytes": 675286,
+          "human": "659.5K"
+        },
+        {
+          "name": "v17_audit",
+          "bytes": 3823,
+          "human": "3.7K"
+        },
+        {
+          "name": "v17_empty_rerun",
+          "bytes": 0,
+          "human": "0B"
+        },
+        {
+          "name": "v17_policy_eval",
+          "bytes": 34492,
+          "human": "33.7K"
+        },
+        {
+          "name": "v17_token_seq2seq",
+          "bytes": 228991,
+          "human": "223.6K"
+        },
+        {
+          "name": "v18_audit",
+          "bytes": 20899,
+          "human": "20.4K"
+        },
+        {
+          "name": "v18_broad_only_eval",
+          "bytes": 496069,
+          "human": "484.4K"
+        },
+        {
+          "name": "v18_broad_synthetic_eval",
+          "bytes": 525418,
+          "human": "513.1K"
+        },
+        {
+          "name": "v18_broad_synthetic_eval_stdout.log",
+          "bytes": 1229,
+          "human": "1.2K"
+        },
+        {
+          "name": "v18_zero_shot_v17_pipeline",
+          "bytes": 525402,
+          "human": "513.1K"
+        },
+        {
+          "name": "v19_abstract_ensemble_eval",
+          "bytes": 336540,
+          "human": "328.7K"
+        },
+        {
+          "name": "v19_abstract_ensemble_eval_stdout.log",
+          "bytes": 861,
+          "human": "861B"
+        },
+        {
+          "name": "v19_abstract_only_eval",
+          "bytes": 345924,
+          "human": "337.8K"
+        },
+        {
+          "name": "v19_abstract_only_eval_stdout.log",
+          "bytes": 861,
+          "human": "861B"
+        },
+        {
+          "name": "v20_abstract_reranker_comparison.json",
+          "bytes": 9042,
+          "human": "8.8K"
+        },
+        {
+          "name": "v20_broad_plus_eval",
+          "bytes": 773296,
+          "human": "755.2K"
+        },
+        {
+          "name": "v20_broad_plus_eval_stdout.log",
+          "bytes": 1537,
+          "human": "1.5K"
+        },
+        {
+          "name": "v20_broad_plus_eval_timeout_rerun",
+          "bytes": 779547,
+          "human": "761.3K"
+        },
+        {
+          "name": "v20_broad_plus_eval_timeout_rerun_stdout.log",
+          "bytes": 1537,
+          "human": "1.5K"
+        },
+        {
+          "name": "v20_failure_analysis.json",
+          "bytes": 18157,
+          "human": "17.7K"
+        },
+        {
+          "name": "v20_shape_gap_audit.json",
+          "bytes": 65630,
+          "human": "64.1K"
+        },
+        {
+          "name": "v20_timeout_rerun_stdout.log",
+          "bytes": 5174,
+          "human": "5.1K"
+        },
+        {
+          "name": "v21_broad_plus_forall_eval",
+          "bytes": 694092,
+          "human": "677.8K"
+        },
+        {
+          "name": "v21_capacity_eval",
+          "bytes": 732497,
+          "human": "715.3K"
+        },
+        {
+          "name": "v21_eval_stdout.log",
+          "bytes": 3642,
+          "human": "3.6K"
+        },
+        {
+          "name": "v21_failure_analysis.json",
+          "bytes": 13773,
+          "human": "13.5K"
+        },
+        {
+          "name": "v21_forall_regression_audit.json",
+          "bytes": 4633,
+          "human": "4.5K"
+        },
+        {
+          "name": "v21_routed_eval",
+          "bytes": 733616,
+          "human": "716.4K"
+        },
+        {
+          "name": "v22_category_interference.json",
+          "bytes": 8269,
+          "human": "8.1K"
+        },
+        {
+          "name": "v22_evals_runner.log",
+          "bytes": 3245,
+          "human": "3.2K"
+        },
+        {
+          "name": "v22_exists_failure_audit.json",
+          "bytes": 3596,
+          "human": "3.5K"
+        },
+        {
+          "name": "v22_failure_analysis.json",
+          "bytes": 10885,
+          "human": "10.6K"
+        },
+        {
+          "name": "v22_general_balanced_eval",
+          "bytes": 776183,
+          "human": "758.0K"
+        },
+        {
+          "name": "v22_general_balanced_eval_stdout.log",
+          "bytes": 1142,
+          "human": "1.1K"
+        },
+        {
+          "name": "v22_general_balanced_large_eval",
+          "bytes": 785101,
+          "human": "766.7K"
+        },
+        {
+          "name": "v22_general_balanced_large_eval_stdout.log",
+          "bytes": 1154,
+          "human": "1.1K"
+        },
+        {
+          "name": "v22_general_large_eval",
+          "bytes": 758127,
+          "human": "740.4K"
+        },
+        {
+          "name": "v22_general_large_eval_stdout.log",
+          "bytes": 1130,
+          "human": "1.1K"
+        },
+        {
+          "name": "v22_general_plus_exists_eval",
+          "bytes": 768228,
+          "human": "750.2K"
+        },
+        {
+          "name": "v22_general_plus_exists_eval_stdout.log",
+          "bytes": 1142,
+          "human": "1.1K"
+        },
+        {
+          "name": "v22_routing_audit.json",
+          "bytes": 3405,
+          "human": "3.3K"
+        },
+        {
+          "name": "v23_failure_analysis.json",
+          "bytes": 10936,
+          "human": "10.7K"
+        },
+        {
+          "name": "v23_generator_bound_audit.json",
+          "bytes": 10859,
+          "human": "10.6K"
+        },
+        {
+          "name": "v23_rerank_eval",
+          "bytes": 26445,
+          "human": "25.8K"
+        },
+        {
+          "name": "v3_difficulty_failure_analysis.json",
+          "bytes": 7266,
+          "human": "7.1K"
+        },
+        {
+          "name": "v4_planner_coverage_audit.json",
+          "bytes": 17432,
+          "human": "17.0K"
+        },
+        {
+          "name": "v7_donor_audit",
+          "bytes": 925956,
+          "human": "904.3K"
+        },
+        {
+          "name": "v7_eval",
+          "bytes": 9939773,
+          "human": "9.5M"
+        },
+        {
+          "name": "v8_donorless",
+          "bytes": 381855,
+          "human": "372.9K"
+        },
+        {
+          "name": "v8_eval",
+          "bytes": 67099,
+          "human": "65.5K"
+        },
+        {
+          "name": "v8_seq2seq_donorless_eval",
+          "bytes": 0,
+          "human": "0B"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_exists_elim_conj",
+          "bytes": 20544,
+          "human": "20.1K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_exists_elim_prop",
+          "bytes": 15108,
+          "human": "14.8K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_exists_reconstruct",
+          "bytes": 13180,
+          "human": "12.9K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_forall_inst",
+          "bytes": 16348,
+          "human": "16.0K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_neg_contrapositive",
+          "bytes": 13255,
+          "human": "12.9K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_neg_double_intro",
+          "bytes": 8814,
+          "human": "8.6K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_neg_exfalso",
+          "bytes": 18774,
+          "human": "18.3K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_neg_imp_exfalso",
+          "bytes": 10553,
+          "human": "10.3K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_neg_or_cases",
+          "bytes": 18437,
+          "human": "18.0K"
+        },
+        {
+          "name": "v8_seq2seq_family_holdout_rewrite_succ",
+          "bytes": 13359,
+          "human": "13.0K"
+        },
+        {
+          "name": "v8_seq2seq_operation_holdout_contradiction",
+          "bytes": 39476,
+          "human": "38.6K"
+        },
+        {
+          "name": "v8_seq2seq_operation_holdout_destruct_exists",
+          "bytes": 39041,
+          "human": "38.1K"
+        },
+        {
+          "name": "v8_seq2seq_operation_holdout_instantiate_forall",
+          "bytes": 16369,
+          "human": "16.0K"
+        },
+        {
+          "name": "v8_seq2seq_operation_holdout_intro_negation",
+          "bytes": 37680,
+          "human": "36.8K"
+        },
+        {
+          "name": "v8_seq2seq_operation_holdout_project_conjunction",
+          "bytes": 0,
+          "human": "0B"
+        },
+        {
+          "name": "v8_seq2seq_operation_holdout_rewrite",
+          "bytes": 13356,
+          "human": "13.0K"
+        }
+      ],
+      "processed": [
+        {
+          "name": "proof_blocks_combined_v10_per_op",
+          "bytes": 1707088,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_blocks_combined_v10_redundancy_cell_holdout",
+          "bytes": 8566422,
+          "human": "8.2M"
+        },
+        {
+          "name": "proof_blocks_combined_v10_redundancy_family_holdout",
+          "bytes": 8540802,
+          "human": "8.1M"
+        },
+        {
+          "name": "proof_blocks_combined_v10_redundancy_interpolation",
+          "bytes": 212949,
+          "human": "208.0K"
+        },
+        {
+          "name": "proof_blocks_combined_v10_redundancy_low_shot",
+          "bytes": 425770,
+          "human": "415.8K"
+        },
+        {
+          "name": "proof_blocks_combined_v10_redundancy_operation_holdout",
+          "bytes": 1710388,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_blocks_v10_manifest.json",
+          "bytes": 75064,
+          "human": "73.3K"
+        },
+        {
+          "name": "proof_blocks_v11_family_lofo",
+          "bytes": 1362615,
+          "human": "1.3M"
+        },
+        {
+          "name": "proof_blocks_v14_token",
+          "bytes": 4293526,
+          "human": "4.1M"
+        },
+        {
+          "name": "proof_blocks_v16_token",
+          "bytes": 2088345,
+          "human": "2.0M"
+        },
+        {
+          "name": "proof_blocks_v16_token_tokenized",
+          "bytes": 6147700,
+          "human": "5.9M"
+        },
+        {
+          "name": "proof_blocks_v17_token",
+          "bytes": 2438789,
+          "human": "2.3M"
+        },
+        {
+          "name": "proof_blocks_v17_token_tokenized",
+          "bytes": 7014801,
+          "human": "6.7M"
+        },
+        {
+          "name": "v15_rerank_dataset",
+          "bytes": 734592,
+          "human": "717.4K"
+        },
+        {
+          "name": "v16_contrapositive_corpus",
+          "bytes": 136393,
+          "human": "133.2K"
+        },
+        {
+          "name": "v17_arrow_false_elim_corpus",
+          "bytes": 65474,
+          "human": "63.9K"
+        },
+        {
+          "name": "v18_broad_core",
+          "bytes": 57549,
+          "human": "56.2K"
+        },
+        {
+          "name": "v18_broad_core_gen_stdout.log",
+          "bytes": 1490,
+          "human": "1.5K"
+        },
+        {
+          "name": "v19_abstract_synthetic_train",
+          "bytes": 899767,
+          "human": "878.7K"
+        },
+        {
+          "name": "v19_abstract_v18_split",
+          "bytes": 85824,
+          "human": "83.8K"
+        },
+        {
+          "name": "v20_bool_corpus",
+          "bytes": 84000,
+          "human": "82.0K"
+        },
+        {
+          "name": "v20_bool_gen_stdout.log",
+          "bytes": 7782,
+          "human": "7.6K"
+        },
+        {
+          "name": "v20_broad_synthetic_plus",
+          "bytes": 948363,
+          "human": "926.1K"
+        },
+        {
+          "name": "v20_implication_corpus",
+          "bytes": 396881,
+          "human": "387.6K"
+        },
+        {
+          "name": "v20_implication_gen_stdout.log",
+          "bytes": 910,
+          "human": "910B"
+        },
+        {
+          "name": "v21_broad_plus_forall",
+          "bytes": 1297363,
+          "human": "1.2M"
+        },
+        {
+          "name": "v21_forall_corpus",
+          "bytes": 349969,
+          "human": "341.8K"
+        },
+        {
+          "name": "v21_forall_gen_stdout.log",
+          "bytes": 911,
+          "human": "911B"
+        },
+        {
+          "name": "v21_forall_only",
+          "bytes": 353909,
+          "human": "345.6K"
+        },
+        {
+          "name": "v22_balanced_broad",
+          "bytes": 8497544,
+          "human": "8.1M"
+        },
+        {
+          "name": "v22_exists_corpus",
+          "bytes": 234627,
+          "human": "229.1K"
+        },
+        {
+          "name": "v22_exists_gen_stdout.log",
+          "bytes": 592,
+          "human": "592B"
+        },
+        {
+          "name": "v23_reranker_data",
+          "bytes": 2618711,
+          "human": "2.5M"
+        },
+        {
+          "name": "v9_validation_lean_cli",
+          "bytes": 5509,
+          "human": "5.4K"
+        }
+      ],
+      "models": [
+        {
+          "name": "basic_lean_cli_mini_elf_v1",
+          "bytes": 2252462,
+          "human": "2.1M"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2",
+          "bytes": 2133738,
+          "human": "2.0M"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2_adversarial",
+          "bytes": 2406725,
+          "human": "2.3M"
+        },
+        {
+          "name": "combined_lean_cli_mini_elf_v2_difficulty",
+          "bytes": 2389782,
+          "human": "2.3M"
+        },
+        {
+          "name": "proof_block_seq2seq_combined_v10",
+          "bytes": 1725921,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_combined_v10_per_op",
+          "bytes": 13804397,
+          "human": "13.2M"
+        },
+        {
+          "name": "proof_block_seq2seq_v11_family_exists_reconstruct",
+          "bytes": 1736893,
+          "human": "1.7M"
+        },
+        {
+          "name": "proof_block_seq2seq_v11_family_forall_inst",
+          "bytes": 1736602,
+          "human": "1.7M"
+        },
+        {
+          "name": "proof_block_seq2seq_v11_family_neg_exfalso",
+          "bytes": 1731137,
+          "human": "1.7M"
+        },
+        {
+          "name": "proof_block_seq2seq_v11_family_neg_imp_exfalso",
+          "bytes": 1732889,
+          "human": "1.7M"
+        },
+        {
+          "name": "proof_block_seq2seq_v11_family_rewrite_succ",
+          "bytes": 1730643,
+          "human": "1.7M"
+        },
+        {
+          "name": "token_seq2seq_v14",
+          "bytes": 9979456,
+          "human": "9.5M"
+        },
+        {
+          "name": "token_seq2seq_v14_train_stdout.log",
+          "bytes": 5371,
+          "human": "5.2K"
+        },
+        {
+          "name": "token_seq2seq_v16",
+          "bytes": 10205279,
+          "human": "9.7M"
+        },
+        {
+          "name": "token_seq2seq_v16_train_stdout.log",
+          "bytes": 5378,
+          "human": "5.3K"
+        },
+        {
+          "name": "token_seq2seq_v17",
+          "bytes": 2057201,
+          "human": "2.0M"
+        },
+        {
+          "name": "token_seq2seq_v17_train_stdout.log",
+          "bytes": 1357,
+          "human": "1.3K"
+        },
+        {
+          "name": "token_seq2seq_v18_broad_synthetic",
+          "bytes": 2041469,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v18_broad_synthetic_train_stdout.log",
+          "bytes": 1920,
+          "human": "1.9K"
+        },
+        {
+          "name": "token_seq2seq_v19_abstract",
+          "bytes": 2020493,
+          "human": "1.9M"
+        },
+        {
+          "name": "token_seq2seq_v19_abstract_train_stdout.log",
+          "bytes": 1574,
+          "human": "1.5K"
+        },
+        {
+          "name": "token_seq2seq_v20_broad_plus",
+          "bytes": 2205504,
+          "human": "2.1M"
+        },
+        {
+          "name": "token_seq2seq_v20_broad_plus_train_stdout.log",
+          "bytes": 1766,
+          "human": "1.7K"
+        },
+        {
+          "name": "token_seq2seq_v21_broad_plus_forall",
+          "bytes": 2258101,
+          "human": "2.2M"
+        },
+        {
+          "name": "token_seq2seq_v21_capacity",
+          "bytes": 4351315,
+          "human": "4.1M"
+        },
+        {
+          "name": "token_seq2seq_v21_forall_specialist",
+          "bytes": 1826138,
+          "human": "1.7M"
+        },
+        {
+          "name": "v15_reranker",
+          "bytes": 247920,
+          "human": "242.1K"
+        },
+        {
+          "name": "v21_training_stdout.log",
+          "bytes": 5650,
+          "human": "5.5K"
+        },
+        {
+          "name": "v22_general_balanced",
+          "bytes": 2483415,
+          "human": "2.4M"
+        },
+        {
+          "name": "v22_general_balanced_large",
+          "bytes": 4574416,
+          "human": "4.4M"
+        },
+        {
+          "name": "v22_general_large",
+          "bytes": 4391674,
+          "human": "4.2M"
+        },
+        {
+          "name": "v22_general_manifest.json",
+          "bytes": 4966,
+          "human": "4.8K"
+        },
+        {
+          "name": "v22_general_plus_exists",
+          "bytes": 2295568,
+          "human": "2.2M"
+        },
+        {
+          "name": "v22_general_train_stdout.log",
+          "bytes": 3169,
+          "human": "3.1K"
+        },
+        {
+          "name": "v23_reranker_category_aware",
+          "bytes": 26422,
+          "human": "25.8K"
+        },
+        {
+          "name": "v23_reranker_plain",
+          "bytes": 25479,
+          "human": "24.9K"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "v16_contrapositive_seeds.jsonl",
+          "bytes": 35203,
+          "human": "34.4K"
+        },
+        {
+          "name": "v17_arrow_false_elim_seeds.jsonl",
+          "bytes": 23267,
+          "human": "22.7K"
+        },
+        {
+          "name": "v18_broad_core_seeds.jsonl",
+          "bytes": 21513,
+          "human": "21.0K"
+        },
+        {
+          "name": "v20_bool_seeds.jsonl",
+          "bytes": 32177,
+          "human": "31.4K"
+        },
+        {
+          "name": "v20_implication_seeds.jsonl",
+          "bytes": 128965,
+          "human": "125.9K"
+        },
+        {
+          "name": "v21_forall_seeds.jsonl",
+          "bytes": 216688,
+          "human": "211.6K"
+        },
+        {
+          "name": "v22_exists_seeds.jsonl",
+          "bytes": 78236,
+          "human": "76.4K"
+        },
+        {
+          "name": "v9_validation_seeds.jsonl",
+          "bytes": 5234,
+          "human": "5.1K"
+        }
+      ],
+      "manual": [
+        {
+          "name": "v16_contrapositive_candidates.jsonl",
+          "bytes": 155715,
+          "human": "152.1K"
+        },
+        {
+          "name": "v17_arrow_false_elim_candidates.jsonl",
+          "bytes": 74696,
+          "human": "72.9K"
+        },
+        {
+          "name": "v18_broad_core_candidates.jsonl",
+          "bytes": 59035,
+          "human": "57.7K"
+        },
+        {
+          "name": "v20_bool_candidates.jsonl",
+          "bytes": 96158,
+          "human": "93.9K"
+        },
+        {
+          "name": "v20_implication_candidates.jsonl",
+          "bytes": 448859,
+          "human": "438.3K"
+        },
+        {
+          "name": "v21_forall_candidates.jsonl",
+          "bytes": 396479,
+          "human": "387.2K"
+        },
+        {
+          "name": "v22_exists_candidates.jsonl",
+          "bytes": 266604,
+          "human": "260.4K"
+        },
+        {
+          "name": "v9_validation_candidates.jsonl",
+          "bytes": 4213,
+          "human": "4.1K"
+        }
+      ],
+      "src": [
+        {
+          "name": "elf_v1_sample.py",
+          "bytes": 12904,
+          "human": "12.6K"
+        },
+        {
+          "name": "elf_v1_train.py",
+          "bytes": 20621,
+          "human": "20.1K"
+        },
+        {
+          "name": "elf_v3_sample.py",
+          "bytes": 10652,
+          "human": "10.4K"
+        },
+        {
+          "name": "elf_v5_sample.py",
+          "bytes": 5234,
+          "human": "5.1K"
+        },
+        {
+          "name": "proof_planner_v4.py",
+          "bytes": 9457,
+          "human": "9.2K"
+        },
+        {
+          "name": "v15_rerank_policy.py",
+          "bytes": 7658,
+          "human": "7.5K"
+        },
+        {
+          "name": "v21_model_router.py",
+          "bytes": 3696,
+          "human": "3.6K"
+        },
+        {
+          "name": "v23_learned_reranker.py",
+          "bytes": 7256,
+          "human": "7.1K"
+        },
+        {
+          "name": "v23_rerank_policy.py",
+          "bytes": 2773,
+          "human": "2.7K"
+        },
+        {
+          "name": "v23_reranker_features.py",
+          "bytes": 8728,
+          "human": "8.5K"
+        },
+        {
+          "name": "v8_fusion.py",
+          "bytes": 7076,
+          "human": "6.9K"
+        }
+      ]
+    },
+    "shared": {
+      "scripts": [
+        {
+          "name": "__pycache__",
+          "bytes": 939295,
+          "human": "917.3K"
+        },
+        {
+          "name": "_seed_cache.py",
+          "bytes": 511,
+          "human": "511B"
+        },
+        {
+          "name": "analyze_difficulty_failures.py",
+          "bytes": 8972,
+          "human": "8.8K"
+        },
+        {
+          "name": "audit_corpus.py",
+          "bytes": 492,
+          "human": "492B"
+        },
+        {
+          "name": "audit_planner_coverage.py",
+          "bytes": 12292,
+          "human": "12.0K"
+        },
+        {
+          "name": "audit_retrieval_donors.py",
+          "bytes": 17957,
+          "human": "17.5K"
+        },
+        {
+          "name": "build_combined.py",
+          "bytes": 3644,
+          "human": "3.6K"
+        },
+        {
+          "name": "build_dataset.py",
+          "bytes": 6634,
+          "human": "6.5K"
+        },
+        {
+          "name": "build_hard_splits.sh",
+          "bytes": 1903,
+          "human": "1.9K"
+        },
+        {
+          "name": "build_planner_blind_retrieval_splits.py",
+          "bytes": 8444,
+          "human": "8.2K"
+        },
+        {
+          "name": "build_proof_block_dataset.py",
+          "bytes": 4760,
+          "human": "4.6K"
+        },
+        {
+          "name": "build_redundancy_proof_blocks.py",
+          "bytes": 8557,
+          "human": "8.4K"
+        },
+        {
+          "name": "build_redundancy_splits.py",
+          "bytes": 12202,
+          "human": "11.9K"
+        },
+        {
+          "name": "build_rerank_dataset.py",
+          "bytes": 3378,
+          "human": "3.3K"
+        },
+        {
+          "name": "build_token_seq2seq_dataset.py",
+          "bytes": 3654,
+          "human": "3.6K"
+        },
+        {
+          "name": "collect_traces.py",
+          "bytes": 696,
+          "human": "696B"
+        },
+        {
+          "name": "debug_leandojo_direct.py",
+          "bytes": 2216,
+          "human": "2.2K"
+        },
+        {
+          "name": "debug_leandojo_manual_repl.py",
+          "bytes": 2169,
+          "human": "2.1K"
+        },
+        {
+          "name": "debug_leandojo_pexpect.py",
+          "bytes": 2382,
+          "human": "2.3K"
+        },
+        {
+          "name": "evaluate_ar_model.py",
+          "bytes": 9015,
+          "human": "8.8K"
+        },
+        {
+          "name": "evaluate_baseline.py",
+          "bytes": 9091,
+          "human": "8.9K"
+        },
+        {
+          "name": "evaluate_mini_elf.py",
+          "bytes": 8485,
+          "human": "8.3K"
+        },
+        {
+          "name": "evaluate_proof_block_seq2seq.py",
+          "bytes": 12663,
+          "human": "12.4K"
+        },
+        {
+          "name": "evaluate_retrieval_proposer.py",
+          "bytes": 4273,
+          "human": "4.2K"
+        },
+        {
+          "name": "evaluate_token_seq2seq.py",
+          "bytes": 16119,
+          "human": "15.7K"
+        },
+        {
+          "name": "evaluate_traces.py",
+          "bytes": 550,
+          "human": "550B"
+        },
+        {
+          "name": "extract_donorless_targets.py",
+          "bytes": 12948,
+          "human": "12.6K"
+        },
+        {
+          "name": "generate_basic_corpus.py",
+          "bytes": 20311,
+          "human": "19.8K"
+        },
+        {
+          "name": "generate_hard_corpus.py",
+          "bytes": 19540,
+          "human": "19.1K"
+        },
+        {
+          "name": "generate_manual_candidates.py",
+          "bytes": 2058,
+          "human": "2.0K"
+        },
+        {
+          "name": "generate_planner_blind_corpus.py",
+          "bytes": 14844,
+          "human": "14.5K"
+        },
+        {
+          "name": "generate_redundancy_corpus.py",
+          "bytes": 24850,
+          "human": "24.3K"
+        },
+        {
+          "name": "probe.lean",
+          "bytes": 333,
+          "human": "333B"
+        },
+        {
+          "name": "probe_async.sh",
+          "bytes": 1594,
+          "human": "1.6K"
+        },
+        {
+          "name": "probe_versions.sh",
+          "bytes": 795,
+          "human": "795B"
+        },
+        {
+          "name": "run_ar_eval.sh",
+          "bytes": 1056,
+          "human": "1.0K"
+        },
+        {
+          "name": "run_llm_donorless_pilot.py",
+          "bytes": 10681,
+          "human": "10.4K"
+        },
+        {
+          "name": "run_llm_proposer_pilot.py",
+          "bytes": 9812,
+          "human": "9.6K"
+        },
+        {
+          "name": "run_mini_elf_eval.sh",
+          "bytes": 1263,
+          "human": "1.2K"
+        },
+        {
+          "name": "run_planner_blind_eval.sh",
+          "bytes": 2545,
+          "human": "2.5K"
+        },
+        {
+          "name": "train_ar_model.py",
+          "bytes": 4705,
+          "human": "4.6K"
+        },
+        {
+          "name": "train_learned_reranker.py",
+          "bytes": 5226,
+          "human": "5.1K"
+        },
+        {
+          "name": "train_mini_elf.py",
+          "bytes": 4337,
+          "human": "4.2K"
+        },
+        {
+          "name": "train_proof_block_seq2seq.py",
+          "bytes": 5156,
+          "human": "5.0K"
+        },
+        {
+          "name": "train_token_seq2seq.py",
+          "bytes": 5776,
+          "human": "5.6K"
+        }
+      ],
+      "docs": [
+        {
+          "name": "LEANDOJO_SETUP.md",
+          "bytes": 18503,
+          "human": "18.1K"
+        },
+        {
+          "name": "NEXT_STEPS.md",
+          "bytes": 59599,
+          "human": "58.2K"
+        },
+        {
+          "name": "PROJECT_REPORT.md",
+          "bytes": 158045,
+          "human": "154.3K"
+        },
+        {
+          "name": "RESULTS_SUMMARY.md",
+          "bytes": 107704,
+          "human": "105.2K"
+        },
+        {
+          "name": "RESUME_BULLETS.md",
+          "bytes": 46742,
+          "human": "45.6K"
+        }
+      ],
+      "tests": [
+        {
+          "name": "__init__.py",
+          "bytes": 0,
+          "human": "0B"
+        },
+        {
+          "name": "__pycache__",
+          "bytes": 3487599,
+          "human": "3.3M"
+        },
+        {
+          "name": "conftest.py",
+          "bytes": 273,
+          "human": "273B"
+        },
+        {
+          "name": "test_abstract_pattern_reranker.py",
+          "bytes": 6791,
+          "human": "6.6K"
+        },
+        {
+          "name": "test_adaptation_ranking.py",
+          "bytes": 3281,
+          "human": "3.2K"
+        },
+        {
+          "name": "test_ar_data.py",
+          "bytes": 4460,
+          "human": "4.4K"
+        },
+        {
+          "name": "test_ar_decode.py",
+          "bytes": 6719,
+          "human": "6.6K"
+        },
+        {
+          "name": "test_backend_selection.py",
+          "bytes": 3022,
+          "human": "3.0K"
+        },
+        {
+          "name": "test_baseline_eval.py",
+          "bytes": 9137,
+          "human": "8.9K"
+        },
+        {
+          "name": "test_baselines.py",
+          "bytes": 8536,
+          "human": "8.3K"
+        },
+        {
+          "name": "test_basic_corpus_generator.py",
+          "bytes": 6152,
+          "human": "6.0K"
+        },
+        {
+          "name": "test_collector_mock.py",
+          "bytes": 4455,
+          "human": "4.4K"
+        },
+        {
+          "name": "test_corpus_audit.py",
+          "bytes": 10372,
+          "human": "10.1K"
+        },
+        {
+          "name": "test_dataset_builder.py",
+          "bytes": 15061,
+          "human": "14.7K"
+        },
+        {
+          "name": "test_donorless_targets.py",
+          "bytes": 3883,
+          "human": "3.8K"
+        },
+        {
+          "name": "test_elf_embed.py",
+          "bytes": 3880,
+          "human": "3.8K"
+        },
+        {
+          "name": "test_elf_flow.py",
+          "bytes": 1805,
+          "human": "1.8K"
+        },
+        {
+          "name": "test_elf_rerank.py",
+          "bytes": 6036,
+          "human": "5.9K"
+        },
+        {
+          "name": "test_elf_sampling.py",
+          "bytes": 5019,
+          "human": "4.9K"
+        },
+        {
+          "name": "test_elf_structure.py",
+          "bytes": 6518,
+          "human": "6.4K"
+        },
+        {
+          "name": "test_elf_witness.py",
+          "bytes": 3053,
+          "human": "3.0K"
+        },
+        {
+          "name": "test_hard_corpus_generator.py",
+          "bytes": 4775,
+          "human": "4.7K"
+        },
+        {
+          "name": "test_identifier_abstraction.py",
+          "bytes": 6143,
+          "human": "6.0K"
+        },
+        {
+          "name": "test_io.py",
+          "bytes": 1870,
+          "human": "1.8K"
+        },
+        {
+          "name": "test_lean_cli_runner.py",
+          "bytes": 12301,
+          "human": "12.0K"
+        },
+        {
+          "name": "test_leandojo_runner.py",
+          "bytes": 12696,
+          "human": "12.4K"
+        },
+        {
+          "name": "test_leandojo_runner_real_api.py",
+          "bytes": 9569,
+          "human": "9.3K"
+        },
+        {
+          "name": "test_leandojo_smoke_real.py",
+          "bytes": 4669,
+          "human": "4.6K"
+        },
+        {
+          "name": "test_learned_reranker.py",
+          "bytes": 7303,
+          "human": "7.1K"
+        },
+        {
+          "name": "test_literal_aware_decode.py",
+          "bytes": 7859,
+          "human": "7.7K"
+        },
+        {
+          "name": "test_llm_proposer_skip.py",
+          "bytes": 2048,
+          "human": "2.0K"
+        },
+        {
+          "name": "test_local_context.py",
+          "bytes": 5102,
+          "human": "5.0K"
+        },
+        {
+          "name": "test_manual_file_client.py",
+          "bytes": 3526,
+          "human": "3.4K"
+        },
+        {
+          "name": "test_neural_baseline.py",
+          "bytes": 7820,
+          "human": "7.6K"
+        },
+        {
+          "name": "test_planner_blind_corpus_generator.py",
+          "bytes": 4206,
+          "human": "4.1K"
+        },
+        {
+          "name": "test_planner_coverage_audit.py",
+          "bytes": 2949,
+          "human": "2.9K"
+        },
+        {
+          "name": "test_proof_block_cleaner.py",
+          "bytes": 2809,
+          "human": "2.7K"
+        },
+        {
+          "name": "test_proof_block_dataset.py",
+          "bytes": 5549,
+          "human": "5.4K"
+        },
+        {
+          "name": "test_proof_block_reranker.py",
+          "bytes": 8129,
+          "human": "7.9K"
+        },
+        {
+          "name": "test_proof_block_seq2seq.py",
+          "bytes": 4153,
+          "human": "4.1K"
+        },
+        {
+          "name": "test_proof_planner_parser.py",
+          "bytes": 4721,
+          "human": "4.6K"
+        },
+        {
+          "name": "test_proof_planner_templates.py",
+          "bytes": 6393,
+          "human": "6.2K"
+        },
+        {
+          "name": "test_proposer_interface.py",
+          "bytes": 3578,
+          "human": "3.5K"
+        },
+        {
+          "name": "test_redundancy_corpus_generator.py",
+          "bytes": 7028,
+          "human": "6.9K"
+        },
+        {
+          "name": "test_redundancy_splits.py",
+          "bytes": 5769,
+          "human": "5.6K"
+        },
+        {
+          "name": "test_rerank_dataset.py",
+          "bytes": 10713,
+          "human": "10.5K"
+        },
+        {
+          "name": "test_retrieval_abstraction.py",
+          "bytes": 4520,
+          "human": "4.4K"
+        },
+        {
+          "name": "test_retrieval_donor_audit.py",
+          "bytes": 3003,
+          "human": "2.9K"
+        },
+        {
+          "name": "test_retrieval_features.py",
+          "bytes": 3271,
+          "human": "3.2K"
+        },
+        {
+          "name": "test_retrieval_holdout_splits.py",
+          "bytes": 4472,
+          "human": "4.4K"
+        },
+        {
+          "name": "test_retrieval_proposer.py",
+          "bytes": 4196,
+          "human": "4.1K"
+        },
+        {
+          "name": "test_sanitizer.py",
+          "bytes": 3447,
+          "human": "3.4K"
+        },
+        {
+          "name": "test_schemas.py",
+          "bytes": 4713,
+          "human": "4.6K"
+        },
+        {
+          "name": "test_splits.py",
+          "bytes": 4230,
+          "human": "4.1K"
+        },
+        {
+          "name": "test_structure_aware_retrieval.py",
+          "bytes": 4098,
+          "human": "4.0K"
+        },
+        {
+          "name": "test_tactic_tokenizer.py",
+          "bytes": 9620,
+          "human": "9.4K"
+        },
+        {
+          "name": "test_token_seq2seq_dataset.py",
+          "bytes": 8305,
+          "human": "8.1K"
+        },
+        {
+          "name": "test_token_seq2seq_model.py",
+          "bytes": 6177,
+          "human": "6.0K"
+        }
+      ],
+      "baselines": [
+        {
+          "name": "basic_lean_cli_ar_test",
+          "bytes": 114242,
+          "human": "111.6K"
+        },
+        {
+          "name": "basic_lean_cli_ar_val",
+          "bytes": 116438,
+          "human": "113.7K"
+        },
+        {
+          "name": "basic_lean_cli_majority_test",
+          "bytes": 136156,
+          "human": "133.0K"
+        },
+        {
+          "name": "basic_lean_cli_majority_val",
+          "bytes": 132690,
+          "human": "129.6K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_test",
+          "bytes": 119337,
+          "human": "116.5K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_test_nn",
+          "bytes": 110996,
+          "human": "108.4K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_val",
+          "bytes": 119487,
+          "human": "116.7K"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf_val_nn",
+          "bytes": 104452,
+          "human": "102.0K"
+        },
+        {
+          "name": "basic_lean_cli_neural_test",
+          "bytes": 131993,
+          "human": "128.9K"
+        },
+        {
+          "name": "basic_lean_cli_neural_val",
+          "bytes": 136726,
+          "human": "133.5K"
+        },
+        {
+          "name": "basic_lean_cli_retrieval_test",
+          "bytes": 145637,
+          "human": "142.2K"
+        },
+        {
+          "name": "basic_lean_cli_retrieval_val",
+          "bytes": 146106,
+          "human": "142.7K"
+        },
+        {
+          "name": "planner_blind_ar_test",
+          "bytes": 1042475,
+          "human": "1018.0K"
+        },
+        {
+          "name": "planner_blind_retrieval_proposer_test",
+          "bytes": 1080723,
+          "human": "1.0M"
+        },
+        {
+          "name": "planner_blind_retrieval_verbatim_test",
+          "bytes": 1086588,
+          "human": "1.0M"
+        }
+      ],
+      "processed": [
+        {
+          "name": "basic_lean_cli",
+          "bytes": 170785,
+          "human": "166.8K"
+        },
+        {
+          "name": "basic_lean_cli_with_failed",
+          "bytes": 77421,
+          "human": "75.6K"
+        },
+        {
+          "name": "combined_lean_cli",
+          "bytes": 380042,
+          "human": "371.1K"
+        },
+        {
+          "name": "combined_lean_cli_adversarial_sibling",
+          "bytes": 380099,
+          "human": "371.2K"
+        },
+        {
+          "name": "combined_lean_cli_difficulty_holdout",
+          "bytes": 380153,
+          "human": "371.2K"
+        },
+        {
+          "name": "combined_lean_cli_family_holdout",
+          "bytes": 380184,
+          "human": "371.3K"
+        },
+        {
+          "name": "hard_lean_cli",
+          "bytes": 152571,
+          "human": "149.0K"
+        },
+        {
+          "name": "hard_lean_cli_adversarial_sibling",
+          "bytes": 152661,
+          "human": "149.1K"
+        },
+        {
+          "name": "hard_lean_cli_difficulty_holdout",
+          "bytes": 152570,
+          "human": "149.0K"
+        },
+        {
+          "name": "hard_lean_cli_family_holdout",
+          "bytes": 152682,
+          "human": "149.1K"
+        },
+        {
+          "name": "hard_lean_cli_hash",
+          "bytes": 152596,
+          "human": "149.0K"
+        },
+        {
+          "name": "planner_blind_family_holdout",
+          "bytes": 1131866,
+          "human": "1.1M"
+        },
+        {
+          "name": "planner_blind_kshot_0",
+          "bytes": 112865,
+          "human": "110.2K"
+        },
+        {
+          "name": "planner_blind_kshot_1",
+          "bytes": 112893,
+          "human": "110.2K"
+        },
+        {
+          "name": "planner_blind_kshot_2",
+          "bytes": 112919,
+          "human": "110.3K"
+        },
+        {
+          "name": "planner_blind_lean_cli",
+          "bytes": 116480,
+          "human": "113.8K"
+        },
+        {
+          "name": "planner_blind_literal_holdout",
+          "bytes": 113317,
+          "human": "110.7K"
+        },
+        {
+          "name": "planner_blind_operation_holdout",
+          "bytes": 678704,
+          "human": "662.8K"
+        },
+        {
+          "name": "planner_blind_split_lean_cli",
+          "bytes": 116618,
+          "human": "113.9K"
+        },
+        {
+          "name": "proof_blocks_donorless_eval",
+          "bytes": 244431,
+          "human": "238.7K"
+        },
+        {
+          "name": "proof_blocks_family_holdout",
+          "bytes": 2552817,
+          "human": "2.4M"
+        },
+        {
+          "name": "proof_blocks_interpolation",
+          "bytes": 243722,
+          "human": "238.0K"
+        },
+        {
+          "name": "proof_blocks_manifest.json",
+          "bytes": 2117,
+          "human": "2.1K"
+        },
+        {
+          "name": "proof_blocks_operation_holdout",
+          "bytes": 1795030,
+          "human": "1.7M"
+        },
+        {
+          "name": "proof_blocks_redundancy_cell_holdout",
+          "bytes": 722342,
+          "human": "705.4K"
+        },
+        {
+          "name": "proof_blocks_redundancy_family_holdout",
+          "bytes": 696722,
+          "human": "680.4K"
+        },
+        {
+          "name": "proof_blocks_redundancy_interpolation",
+          "bytes": 16847,
+          "human": "16.5K"
+        },
+        {
+          "name": "proof_blocks_redundancy_low_shot",
+          "bytes": 33564,
+          "human": "32.8K"
+        },
+        {
+          "name": "proof_blocks_redundancy_operation_holdout",
+          "bytes": 141572,
+          "human": "138.3K"
+        },
+        {
+          "name": "redundancy_cell_holdout",
+          "bytes": 1325640,
+          "human": "1.3M"
+        },
+        {
+          "name": "redundancy_family_holdout",
+          "bytes": 1330365,
+          "human": "1.3M"
+        },
+        {
+          "name": "redundancy_interpolation",
+          "bytes": 33035,
+          "human": "32.3K"
+        },
+        {
+          "name": "redundancy_lean_cli",
+          "bytes": 32781,
+          "human": "32.0K"
+        },
+        {
+          "name": "redundancy_low_shot",
+          "bytes": 66580,
+          "human": "65.0K"
+        },
+        {
+          "name": "redundancy_operation_holdout",
+          "bytes": 265710,
+          "human": "259.5K"
+        }
+      ],
+      "models": [
+        {
+          "name": "basic_lean_cli_ar",
+          "bytes": 1672631,
+          "human": "1.6M"
+        },
+        {
+          "name": "basic_lean_cli_mini_elf",
+          "bytes": 1477589,
+          "human": "1.4M"
+        },
+        {
+          "name": "proof_block_seq2seq_donorless_eval",
+          "bytes": 1700704,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_exists_elim_conj",
+          "bytes": 1728422,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_exists_elim_prop",
+          "bytes": 1728007,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_exists_reconstruct",
+          "bytes": 1728899,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_forall_inst",
+          "bytes": 1725752,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_neg_contrapositive",
+          "bytes": 1729077,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_neg_double_intro",
+          "bytes": 1728580,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_neg_exfalso",
+          "bytes": 1722248,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_neg_imp_exfalso",
+          "bytes": 1727209,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_neg_or_cases",
+          "bytes": 1724360,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_family_holdout_rewrite_succ",
+          "bytes": 1718525,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_interpolation",
+          "bytes": 1703918,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_operation_holdout_contradiction",
+          "bytes": 1719674,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_operation_holdout_destruct_exists",
+          "bytes": 1730521,
+          "human": "1.7M"
+        },
+        {
+          "name": "proof_block_seq2seq_operation_holdout_instantiate_forall",
+          "bytes": 1725769,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_operation_holdout_intro_negation",
+          "bytes": 1726968,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_operation_holdout_project_conjunction",
+          "bytes": 1723838,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_operation_holdout_rewrite",
+          "bytes": 1718518,
+          "human": "1.6M"
+        },
+        {
+          "name": "proof_block_seq2seq_redundancy",
+          "bytes": 1639241,
+          "human": "1.6M"
+        }
+      ],
+      "seeds": [
+        {
+          "name": "basic_lean_seeds.jsonl",
+          "bytes": 53616,
+          "human": "52.4K"
+        },
+        {
+          "name": "combined_lean_seeds.jsonl",
+          "bytes": 106489,
+          "human": "104.0K"
+        },
+        {
+          "name": "hard_lean_seeds.jsonl",
+          "bytes": 52873,
+          "human": "51.6K"
+        },
+        {
+          "name": "leandojo_seeds.jsonl",
+          "bytes": 895,
+          "human": "895B"
+        },
+        {
+          "name": "planner_blind_seeds.jsonl",
+          "bytes": 37234,
+          "human": "36.4K"
+        },
+        {
+          "name": "redundancy_seeds.jsonl",
+          "bytes": 30751,
+          "human": "30.0K"
+        },
+        {
+          "name": "toy_lean_cli_seeds.jsonl",
+          "bytes": 1394,
+          "human": "1.4K"
+        },
+        {
+          "name": "toy_seeds.jsonl",
+          "bytes": 553,
+          "human": "553B"
+        }
+      ],
+      "manual": [
+        {
+          "name": "basic_lean_candidates.jsonl",
+          "bytes": 49528,
+          "human": "48.4K"
+        },
+        {
+          "name": "example_manual_candidates.jsonl",
+          "bytes": 1648,
+          "human": "1.6K"
+        },
+        {
+          "name": "hard_lean_candidates.jsonl",
+          "bytes": 51620,
+          "human": "50.4K"
+        },
+        {
+          "name": "leandojo_candidates.jsonl",
+          "bytes": 752,
+          "human": "752B"
+        },
+        {
+          "name": "planner_blind_candidates.jsonl",
+          "bytes": 38078,
+          "human": "37.2K"
+        },
+        {
+          "name": "redundancy_candidates.jsonl",
+          "bytes": 25896,
+          "human": "25.3K"
+        }
+      ],
+      "src": [
+        {
+          "name": "__init__.py",
+          "bytes": 96,
+          "human": "96B"
+        },
+        {
+          "name": "__pycache__",
+          "bytes": 1244728,
+          "human": "1.2M"
+        },
+        {
+          "name": "abstract_pattern_reranker.py",
+          "bytes": 10016,
+          "human": "9.8K"
+        },
+        {
+          "name": "ar_decode.py",
+          "bytes": 8720,
+          "human": "8.5K"
+        },
+        {
+          "name": "ar_model.py",
+          "bytes": 12757,
+          "human": "12.5K"
+        },
+        {
+          "name": "ar_train.py",
+          "bytes": 13814,
+          "human": "13.5K"
+        },
+        {
+          "name": "baseline_eval.py",
+          "bytes": 17205,
+          "human": "16.8K"
+        },
+        {
+          "name": "baselines.py",
+          "bytes": 13045,
+          "human": "12.7K"
+        },
+        {
+          "name": "collector.py",
+          "bytes": 11307,
+          "human": "11.0K"
+        },
+        {
+          "name": "config.py",
+          "bytes": 3021,
+          "human": "3.0K"
+        },
+        {
+          "name": "corpus_audit.py",
+          "bytes": 17845,
+          "human": "17.4K"
+        },
+        {
+          "name": "dataset_builder.py",
+          "bytes": 16985,
+          "human": "16.6K"
+        },
+        {
+          "name": "elf_embed.py",
+          "bytes": 8023,
+          "human": "7.8K"
+        },
+        {
+          "name": "elf_flow.py",
+          "bytes": 3701,
+          "human": "3.6K"
+        },
+        {
+          "name": "elf_rerank.py",
+          "bytes": 23262,
+          "human": "22.7K"
+        },
+        {
+          "name": "elf_sample.py",
+          "bytes": 9056,
+          "human": "8.8K"
+        },
+        {
+          "name": "elf_structure.py",
+          "bytes": 16767,
+          "human": "16.4K"
+        },
+        {
+          "name": "elf_train.py",
+          "bytes": 16972,
+          "human": "16.6K"
+        },
+        {
+          "name": "elf_witness.py",
+          "bytes": 3868,
+          "human": "3.8K"
+        },
+        {
+          "name": "evaluate_traces.py",
+          "bytes": 8347,
+          "human": "8.2K"
+        },
+        {
+          "name": "identifier_abstraction.py",
+          "bytes": 10209,
+          "human": "10.0K"
+        },
+        {
+          "name": "io_utils.py",
+          "bytes": 3597,
+          "human": "3.5K"
+        },
+        {
+          "name": "lean_runner.py",
+          "bytes": 22907,
+          "human": "22.4K"
+        },
+        {
+          "name": "learned_reranker.py",
+          "bytes": 11926,
+          "human": "11.6K"
+        },
+        {
+          "name": "literal_aware_decode.py",
+          "bytes": 10965,
+          "human": "10.7K"
+        },
+        {
+          "name": "llm_client.py",
+          "bytes": 13739,
+          "human": "13.4K"
+        },
+        {
+          "name": "llm_proposer.py",
+          "bytes": 8181,
+          "human": "8.0K"
+        },
+        {
+          "name": "local_context.py",
+          "bytes": 9710,
+          "human": "9.5K"
+        },
+        {
+          "name": "mathlib_batched_verifier.py",
+          "bytes": 13383,
+          "human": "13.1K"
+        },
+        {
+          "name": "mathlib_verifier.py",
+          "bytes": 14926,
+          "human": "14.6K"
+        },
+        {
+          "name": "neural_baseline.py",
+          "bytes": 10662,
+          "human": "10.4K"
+        },
+        {
+          "name": "prompt_templates.py",
+          "bytes": 3442,
+          "human": "3.4K"
+        },
+        {
+          "name": "proof_block_cleaner.py",
+          "bytes": 6799,
+          "human": "6.6K"
+        },
+        {
+          "name": "proof_block_dataset.py",
+          "bytes": 13061,
+          "human": "12.8K"
+        },
+        {
+          "name": "proof_block_reranker.py",
+          "bytes": 10399,
+          "human": "10.2K"
+        },
+        {
+          "name": "proof_block_seq2seq.py",
+          "bytes": 9126,
+          "human": "8.9K"
+        },
+        {
+          "name": "proof_planner.py",
+          "bytes": 24853,
+          "human": "24.3K"
+        },
+        {
+          "name": "proposer.py",
+          "bytes": 9707,
+          "human": "9.5K"
+        },
+        {
+          "name": "rerank_dataset.py",
+          "bytes": 21228,
+          "human": "20.7K"
+        },
+        {
+          "name": "retrieval_abstraction.py",
+          "bytes": 8093,
+          "human": "7.9K"
+        },
+        {
+          "name": "retrieval_abstraction_proposer.py",
+          "bytes": 7558,
+          "human": "7.4K"
+        },
+        {
+          "name": "retrieval_features.py",
+          "bytes": 11372,
+          "human": "11.1K"
+        },
+        {
+          "name": "retrieval_proposer.py",
+          "bytes": 21523,
+          "human": "21.0K"
+        },
+        {
+          "name": "retrieval_splits.py",
+          "bytes": 11172,
+          "human": "10.9K"
+        },
+        {
+          "name": "schemas.py",
+          "bytes": 5721,
+          "human": "5.6K"
+        },
+        {
+          "name": "splits.py",
+          "bytes": 7255,
+          "human": "7.1K"
+        },
+        {
+          "name": "tactic_sanitizer.py",
+          "bytes": 5817,
+          "human": "5.7K"
+        },
+        {
+          "name": "tactic_tokenizer.py",
+          "bytes": 12143,
+          "human": "11.9K"
+        },
+        {
+          "name": "token_seq2seq.py",
+          "bytes": 13614,
+          "human": "13.3K"
+        },
+        {
+          "name": "token_seq2seq_dataset.py",
+          "bytes": 12308,
+          "human": "12.0K"
+        }
+      ]
+    }
+  },
+  "totals": {
+    "shared": {
+      "bytes": 62758014,
+      "human": "59.9M",
+      "by_kind": {
+        "baselines": "4.5M",
+        "docs": "381.4K",
+        "manual": "163.6K",
+        "models": "34.1M",
+        "processed": "13.9M",
+        "scripts": "1.2M",
+        "seeds": "277.2K",
+        "src": "1.7M",
+        "tests": "3.6M"
+      }
+    },
+    "legacy": {
+      "bytes": 203769124,
+      "human": "194.3M",
+      "by_kind": {
+        "baselines": "51.8M",
+        "docs": "557.5K",
+        "manual": "1.4M",
+        "models": "80.5M",
+        "processed": "58.5M",
+        "scripts": "756.6K",
+        "seeds": "528.6K",
+        "src": "93.8K",
+        "tests": "236.7K"
+      }
+    },
+    "v24": {
+      "bytes": 5226337,
+      "human": "5.0M",
+      "by_kind": {
+        "baselines": "994.1K",
+        "docs": "19.5K",
+        "manual": "81.6K",
+        "models": "2.2M",
+        "processed": "1.6M",
+        "scripts": "32.4K",
+        "seeds": "29.7K",
+        "tests": "8.0K"
+      }
+    },
+    "v26": {
+      "bytes": 8798351,
+      "human": "8.4M",
+      "by_kind": {
+        "baselines": "1.6M",
+        "docs": "34.8K",
+        "manual": "132.8K",
+        "models": "5.7M",
+        "processed": "696.8K",
+        "scripts": "114.7K",
+        "seeds": "42.6K",
+        "src": "3.9K",
+        "tests": "13.0K"
+      }
+    },
+    "v27": {
+      "bytes": 16620573,
+      "human": "15.9M",
+      "by_kind": {
+        "baselines": "2.7M",
+        "docs": "42.2K",
+        "manual": "118.8K",
+        "models": "11.6M",
+        "processed": "1.2M",
+        "scripts": "108.8K",
+        "seeds": "39.9K",
+        "tests": "17.1K"
+      }
+    },
+    "v28": {
+      "bytes": 23265563,
+      "human": "22.2M",
+      "by_kind": {
+        "baselines": "4.8M",
+        "docs": "34.2K",
+        "manual": "253.1K",
+        "models": "14.4M",
+        "processed": "2.5M",
+        "scripts": "107.4K",
+        "seeds": "77.9K",
+        "src": "3.9K",
+        "tests": "10.9K"
+      }
+    },
+    "v29": {
+      "bytes": 34819061,
+      "human": "33.2M",
+      "by_kind": {
+        "baselines": "10.2M",
+        "docs": "35.1K",
+        "manual": "390.2K",
+        "models": "17.0M",
+        "processed": "5.3M",
+        "scripts": "148.8K",
+        "seeds": "124.6K",
+        "src": "4.0K",
+        "tests": "14.7K"
+      }
+    },
+    "v30": {
+      "bytes": 23278518,
+      "human": "22.2M",
+      "by_kind": {
+        "baselines": "10.7M",
+        "docs": "24.2K",
+        "manual": "128.1K",
+        "models": "8.4M",
+        "processed": "2.7M",
+        "scripts": "95.1K",
+        "seeds": "34.3K",
+        "src": "2.5K",
+        "tests": "10.1K"
+      }
+    },
+    "v31": {
+      "bytes": 13964419,
+      "human": "13.3M",
+      "by_kind": {
+        "baselines": "3.5M",
+        "docs": "23.8K",
+        "manual": "102.8K",
+        "models": "6.6M",
+        "processed": "3.0M",
+        "scripts": "71.2K",
+        "src": "11.9K",
+        "tests": "11.0K"
+      }
+    },
+    "v32": {
+      "bytes": 4702186,
+      "human": "4.5M",
+      "by_kind": {
+        "baselines": "1.5M",
+        "docs": "16.9K",
+        "manual": "74.0K",
+        "models": "2.1M",
+        "processed": "675.1K",
+        "scripts": "65.0K",
+        "seeds": "32.2K",
+        "src": "2.3K",
+        "tests": "6.0K"
+      }
+    },
+    "v33": {
+      "bytes": 12480372,
+      "human": "11.9M",
+      "by_kind": {
+        "baselines": "4.1M",
+        "docs": "15.6K",
+        "manual": "83.8K",
+        "models": "6.1M",
+        "processed": "1.4M",
+        "scripts": "61.4K",
+        "seeds": "40.7K",
+        "src": "2.2K",
+        "tests": "6.9K"
+      }
+    },
+    "v25": {
+      "bytes": 5936716,
+      "human": "5.7M",
+      "by_kind": {
+        "baselines": "1.6M",
+        "docs": "28.3K",
+        "manual": "44.4K",
+        "models": "2.3M",
+        "processed": "1.6M",
+        "scripts": "51.5K",
+        "seeds": "20.3K",
+        "tests": "11.8K"
+      }
+    }
+  },
+  "flags": {
+    "large_artifacts_gt_5MB": [
+      {
+        "path": "data/baselines/v29_specialist_eval",
+        "human": "10.0M"
+      },
+      {
+        "path": "data/baselines/v30_specialist_eval",
+        "human": "10.7M"
+      },
+      {
+        "path": "data/baselines/v7_eval",
+        "human": "9.5M"
+      },
+      {
+        "path": "data/models/proof_block_seq2seq_combined_v10_per_op",
+        "human": "13.2M"
+      },
+      {
+        "path": "data/models/token_seq2seq_v14",
+        "human": "9.5M"
+      },
+      {
+        "path": "data/models/token_seq2seq_v16",
+        "human": "9.7M"
+      },
+      {
+        "path": "data/processed/proof_blocks_combined_v10_redundancy_cell_holdout",
+        "human": "8.2M"
+      },
+      {
+        "path": "data/processed/proof_blocks_combined_v10_redundancy_family_holdout",
+        "human": "8.1M"
+      },
+      {
+        "path": "data/processed/proof_blocks_v16_token_tokenized",
+        "human": "5.9M"
+      },
+      {
+        "path": "data/processed/proof_blocks_v17_token_tokenized",
+        "human": "6.7M"
+      },
+      {
+        "path": "data/processed/v22_balanced_broad",
+        "human": "8.1M"
+      },
+      {
+        "path": "data/processed/v29_mathlib_specialist",
+        "human": "5.3M"
+      }
+    ],
+    "stray_logs": [
+      "data/baselines/v13_timeout_rerun/rerun_stdout.log",
+      "data/baselines/v18_broad_synthetic_eval_stdout.log",
+      "data/baselines/v19_abstract_ensemble_eval_stdout.log",
+      "data/baselines/v19_abstract_only_eval_stdout.log",
+      "data/baselines/v20_broad_plus_eval_stdout.log",
+      "data/baselines/v20_broad_plus_eval_timeout_rerun_stdout.log",
+      "data/baselines/v20_timeout_rerun_stdout.log",
+      "data/baselines/v21_eval_stdout.log",
+      "data/baselines/v22_evals_runner.log",
+      "data/baselines/v22_general_balanced_eval_stdout.log",
+      "data/baselines/v22_general_balanced_large_eval_stdout.log",
+      "data/baselines/v22_general_large_eval_stdout.log",
+      "data/baselines/v22_general_plus_exists_eval_stdout.log",
+      "data/baselines/v24_broad_residual_eval_stdout.log",
+      "data/models/token_seq2seq_v14_train_stdout.log",
+      "data/models/token_seq2seq_v16_train_stdout.log",
+      "data/models/token_seq2seq_v17_train_stdout.log",
+      "data/models/token_seq2seq_v18_broad_synthetic_train_stdout.log",
+      "data/models/token_seq2seq_v19_abstract_train_stdout.log",
+      "data/models/token_seq2seq_v20_broad_plus_train_stdout.log",
+      "data/models/token_seq2seq_v24_broad_residual_train.log",
+      "data/models/token_seq2seq_v28_train.log",
+      "data/models/v21_training_stdout.log",
+      "data/models/v22_general_train_stdout.log",
+      "data/processed/v18_broad_core_gen_stdout.log",
+      "data/processed/v20_bool_gen_stdout.log",
+      "data/processed/v20_implication_gen_stdout.log",
+      "data/processed/v21_forall_gen_stdout.log",
+      "data/processed/v22_exists_gen_stdout.log"
+    ],
+    "doc_counts_per_version": {
+      "v24": 7,
+      "v25": 7,
+      "v26": 8,
+      "v27": 10,
+      "v28": 9,
+      "v29": 10,
+      "v30": 10,
+      "v31": 9,
+      "v32": 9,
+      "v33": 9,
+      "legacy": 83
+    },
+    "external_mathlib_scratch": {
+      "path": "/home/wangw/code/mini_elf_mathlib_probe",
+      "exists": true,
+      "inside_repo": false,
+      "human": "7.0G",
+      "note": "Outside the repo tree -> never tracked by git; keep separate."
+    },
+    "protected_models_present": {
+      "v24_broad_residual": true,
+      "v33_general_residual": true
+    }
+  }
+}

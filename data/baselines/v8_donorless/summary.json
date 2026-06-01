@@ -1,0 +1,28 @@
+{
+  "family_holdout": {
+    "n_targets": 157,
+    "by_group": {
+      "exists_elim": 46,
+      "exists_reconstruct": 15,
+      "forall_inst": 7,
+      "contrapositive": 12,
+      "negation_contradiction": 57,
+      "rewrite": 20
+    },
+    "with_manual_verified": 157,
+    "without": 0
+  },
+  "operation_holdout": {
+    "n_targets": 157,
+    "by_group": {
+      "negation_contradiction": 57,
+      "exists_elim": 46,
+      "forall_inst": 7,
+      "contrapositive": 12,
+      "rewrite": 20,
+      "exists_reconstruct": 15
+    },
+    "with_manual_verified": 157,
+    "without": 0
+  }
+}

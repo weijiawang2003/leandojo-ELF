@@ -1,0 +1,40 @@
+{
+  "summary": {
+    "n_train_examples": 149,
+    "n_val_examples": 61,
+    "n_train_theorems": 50,
+    "n_val_theorems": 20,
+    "vocab_size": 142,
+    "n_parameters": 484494,
+    "best_epoch": 18,
+    "truncation": {
+      "source_truncated": 0,
+      "target_truncated": 0
+    },
+    "uses_state_after": false,
+    "source": "token_seq2seq"
+  },
+  "train_config": {
+    "epochs": 40,
+    "batch_size": 32,
+    "lr": 0.003,
+    "embedding_dim": 96,
+    "hidden_dim": 128,
+    "num_layers": 1,
+    "bidirectional_encoder": true,
+    "attention_dim": 64,
+    "dropout": 0.1,
+    "max_input_len": 160,
+    "max_output_len": 80,
+    "seed": 0,
+    "grad_clip": 1.0,
+    "weight_decay": 0.0,
+    "beam_width": 10,
+    "length_penalty": 0.7
+  },
+  "extra": {
+    "corpus": "v26_specialist_base",
+    "train_rows": "data/processed/v26_mathlib_specialist_splits/theorem_holdout/train_rows.jsonl",
+    "val_rows": "data/processed/v26_mathlib_specialist_splits/theorem_holdout/val_rows.jsonl"
+  }
+}

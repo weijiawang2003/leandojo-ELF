@@ -1,0 +1,130 @@
+{
+  "config": "v29_mathlib_specialist_dataset",
+  "pools": {
+    "v28_general": 554,
+    "v28_best": 606,
+    "v28_val": 137,
+    "v29_rows": 492
+  },
+  "novel_v29_theorems": 113,
+  "nonnovel_v29_theorems": 80,
+  "configs": {
+    "v29_general": 839,
+    "v29_v28best_plus": 891,
+    "v29_set_finset_order_heavy": 1330,
+    "v29_category_balanced": 674,
+    "v29_function_order": 1005,
+    "shared_val": 177,
+    "balance_cap_per_category": 142
+  },
+  "theorem_holdout": {
+    "n_train": 839,
+    "n_test_rows": 47,
+    "n_test_theorems": 20,
+    "n_test_seeds": 20,
+    "by_category": {
+      "function": 3,
+      "finset": 7,
+      "list": 1,
+      "logic": 1,
+      "set": 2,
+      "nat": 1,
+      "order": 5
+    }
+  },
+  "family_density_holdout": {
+    "n_train": 839,
+    "n_test_rows": 87,
+    "n_test_theorems": 34,
+    "n_test_seeds": 34,
+    "n_families": 17,
+    "family_train_density": {
+      "finset::mem_iff": 5,
+      "function::comp_id": 9,
+      "function::comp_assoc": 3,
+      "finset::mem_inter_proj": 5,
+      "finset::mem_union_intro": 5,
+      "set::inter_subset": 8,
+      "logic::imp_trans": 3,
+      "set::mem_inter_proj": 8,
+      "finset::subset_union": 6,
+      "order::lattice_inf_sup": 7,
+      "order::min_max": 9,
+      "set::subset_union": 11,
+      "set::mem_iff": 7,
+      "finset::inter_subset": 6,
+      "order::antisymm": 2,
+      "set::mem_union_intro": 9,
+      "order::le_of_eq": 8
+    },
+    "by_category": {
+      "finset": 10,
+      "function": 4,
+      "set": 10,
+      "logic": 2,
+      "order": 8
+    }
+  },
+  "low_density_holdout": {
+    "n_train": 839,
+    "n_test_rows": 33,
+    "n_test_theorems": 13,
+    "n_test_seeds": 13,
+    "n_families": 13,
+    "family_train_density": {
+      "logic::false_elim": 1,
+      "logic::and_symm": 0,
+      "finset::inter_comm": 1,
+      "nat::add_zero": 2,
+      "function::comp_app": 0,
+      "finset::subset_inter": 1,
+      "list::reverse_reverse": 2,
+      "list::map_id": 1,
+      "finset::union_subset": 1,
+      "nat::add_comm": 2,
+      "nat::add_assoc": 0,
+      "logic::contrapose": 1,
+      "list::append_nil": 0
+    },
+    "by_category": {
+      "logic": 3,
+      "nat": 3,
+      "list": 3,
+      "finset": 3,
+      "function": 1
+    }
+  },
+  "category_holdout_set": {
+    "n_train": 532,
+    "n_test_rows": 343,
+    "n_test_theorems": 123,
+    "n_test_seeds": 48
+  },
+  "category_holdout_finset": {
+    "n_train": 758,
+    "n_test_rows": 125,
+    "n_test_theorems": 56,
+    "n_test_seeds": 44
+  },
+  "category_holdout_order": {
+    "n_train": 711,
+    "n_test_rows": 124,
+    "n_test_theorems": 62,
+    "n_test_seeds": 36
+  },
+  "dropped_overlap": {
+    "v29_train": 0,
+    "v28_general": 0,
+    "v28_best": 0
+  },
+  "benchmarks_preserved": [
+    "v25_heldout",
+    "v26_holdout",
+    "v27_holdout",
+    "v28_holdout"
+  ],
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "leakage_guard": "name + statement + triple vs all v29 splits and v25/v26/v27/v28 benchmarks",
+  "category_balanced_role": "NEGATIVE CONTROL only (v27/v28 showed balancing harmful)"
+}

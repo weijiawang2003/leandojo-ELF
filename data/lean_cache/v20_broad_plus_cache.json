@@ -1,0 +1,2372 @@
+{
+  "014002b518803f49450e0968a6d10f6a3e84b3c7ac0ee367bcdca535b3a863d2": {
+    "elapsed_ms": 332.7842309990956,
+    "error": "/tmp/mini_elf_lean_pnhmboi5.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "014c46dc21dee43d4ebcdcb2025b5831dc75a8168edf01d4be73802ed4837c1b": {
+    "elapsed_ms": 384.75955200010503,
+    "error": "/tmp/mini_elf_lean_vqny9dgm.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "023078a42951c53a9ddc4dbf8b2e405362b10039a707c3c79764c7fc6725380f": {
+    "elapsed_ms": 365.7304729995303,
+    "error": "/tmp/mini_elf_lean_9e08u83z.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_9e08u83z.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `fbc`",
+    "success": false
+  },
+  "027e801d1fa3e9408441a5b5b51e5095a7422a656f9e6d1fac655e91d41ae1f1": {
+    "elapsed_ms": 345.6577639999523,
+    "error": "/tmp/mini_elf_lean_eftcerwg.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "030d58a89d30c5cbf958e7d1ade459800ddbc85f4c857b06ac73b0778cdd4e6d": {
+    "elapsed_ms": 349.06632599995646,
+    "error": "/tmp/mini_elf_lean_rqu3l265.lean:2:17: error: Function expected at\n  h\nbut this term has type\n  p 3\n\nNote: Expected a function because this term is being applied to the argument\n  \u27e8ha, hb\u27e9",
+    "success": false
+  },
+  "03cc7afde8425a1a44ec1fbcab5067cf90ebb639ee821cc2c466a8d99a9e230b": {
+    "elapsed_ms": 356.20655000002444,
+    "error": "/tmp/mini_elf_lean_hkl41xvn.lean:4:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "0577ec86181e0a56bf7db765e38bbcad1e64b9d06add613336a7870d54684e1d": {
+    "elapsed_ms": 378.65093699929275,
+    "error": "/tmp/mini_elf_lean_ysy1wtdf.lean:2:6: error(lean.unknownIdentifier): Unknown identifier `hh`\n/tmp/mini_elf_lean_ysy1wtdf.lean:1:38: error: unsolved goals\nn : Nat\n\u22a2 n.succ = n + 1",
+    "success": false
+  },
+  "05b9a95787c458112eadcf0936a404b9a3567b7af5706b9224500e8bcc13b3f5": {
+    "elapsed_ms": 319.6059129995774,
+    "error": "/tmp/mini_elf_lean_3evyl623.lean:2:11: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Nat \u2192 Prop\nh : \u2200 (n : Nat), p n \u2192 q n\nha : p 3\n\u22a2 q 3",
+    "success": false
+  },
+  "06297386b09118673c74e808af7fe1d290dddc541474cc26f5cede805d8f22bc": {
+    "elapsed_ms": 293.57323000022006,
+    "error": "/tmp/mini_elf_lean_2zs721xf.lean:2:10: error: Application type mismatch: The argument\n  hp\nhas type\n  p 5\nof sort `Prop` but is expected to have type\n  Nat\nof sort `Type` in the application\n  h hp\n/tmp/mini_elf_lean_2zs721xf.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "0663f1640596ed616239adc8e3c87c32c738b439ff0547fb4377d29a8635951a": {
+    "elapsed_ms": 401.2824310002543,
+    "error": null,
+    "success": true
+  },
+  "06ece76e461f0ebb51f5d13eb543fd788440dfe9b26404b6a7b7ec8900a98c15": {
+    "elapsed_ms": 302.11544899975706,
+    "error": null,
+    "success": true
+  },
+  "07233b33394a582f9ea7917e886f71b73fec312f3659008175c1b53f08ffae76": {
+    "elapsed_ms": 419.191162000061,
+    "error": "/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application type mismatch: The argument\n  h.right\nhas type\n  q \u2227 r\nbut is expected to have type\n  p \u2227 q\nin the application\n  And.intro h.right",
+    "success": false
+  },
+  "07253355d85530879382fd89be9d3fcd7cc5a5faeb82dd7ee175a99c510b8f4a": {
+    "elapsed_ms": 348.73670199976914,
+    "error": "/tmp/mini_elf_lean_r0yfg6s_.lean:2:2: error: Tactic `rfl` failed: The left-hand side\n  xs ++ []\nis not definitionally equal to the right-hand side\n  xs\n\n\u03b1 : Type\nxs : List \u03b1\n\u22a2 xs ++ [] = xs",
+    "success": false
+  },
+  "0790725bc11ae4fbe48849cac7a2c8353b9259162ac34e13061f18965dd22f53": {
+    "elapsed_ms": 383.3810119995178,
+    "error": "/tmp/mini_elf_lean_e05nlmxu.lean:4:2: error: Duplicate alternative name `inl`\n/tmp/mini_elf_lean_e05nlmxu.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "0794722826ec6ec894c58b4784e4312a223611c03dba5033f322043d36670b55": {
+    "elapsed_ms": 316.1157489994366,
+    "error": null,
+    "success": true
+  },
+  "0799e85365f51f1547c16034cb8f7fae701418208fca2273afc8424e7948cc15": {
+    "elapsed_ms": 467.60865899977944,
+    "error": "/tmp/mini_elf_lean_66c49bic.lean:4:8: error(lean.unknownIdentifier): Unknown identifier `hr`",
+    "success": false
+  },
+  "0817496154695ef84b1340854069add756b4545f6c2b15f1d130a6b0ca965022": {
+    "elapsed_ms": 379.9670389998937,
+    "error": null,
+    "success": true
+  },
+  "08a9900c278e1c7250f5e4ad733e23a7c950ad4aa7cf9fc53fdac8df85e300f4": {
+    "elapsed_ms": 410.2557819996946,
+    "error": "/tmp/mini_elf_lean_5ao0b1qp.lean:2:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\np : Prop\nhp : p\n\u22a2 p",
+    "success": false
+  },
+  "08d50f262caa151e7f9bf3b5679cf083aec34d5422d52e33d388d33da43f92dc": {
+    "elapsed_ms": 317.3980109995682,
+    "error": "/tmp/mini_elf_lean_heuzypb_.lean:2:11: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Nat \u2192 Prop\nh : \u2200 (n : Nat), p n \u2192 q n\nha : p 3\n\u22a2 q 3",
+    "success": false
+  },
+  "090e6c7a03fd48dc02027df4dbf42b29aba991fc4691551eb05a84ecb609248a": {
+    "elapsed_ms": 408.6267550001139,
+    "error": "/tmp/mini_elf_lean_i_3iky_0.lean:2:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  n.succ\nin the target expression\n  n = m\n\nn m : Nat\nh : n.succ = m.succ\n\u22a2 n = m",
+    "success": false
+  },
+  "098570062d3c808b02ff77a79f3468d7b0619635c06bcd26fe4f1fd0f5347ea6": {
+    "elapsed_ms": 369.78198699944187,
+    "error": "/tmp/mini_elf_lean_p68q87vx.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  3",
+    "success": false
+  },
+  "09c5569e88bc090b23e485d2e37db4a583660867e19f8b37857b6e68c6caf7bf": {
+    "elapsed_ms": 330.93643199936196,
+    "error": "/tmp/mini_elf_lean_vtwzry2g.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "0a662afd8179350fdae57b8b5e319719b34e59887e94d117508e1516dc27e5aa": {
+    "elapsed_ms": 303.4502370001064,
+    "error": "/tmp/mini_elf_lean_thb092yy.lean:2:16: error: Tactic `rcases` failed: `h\u271d : p n` is not an inductive datatype",
+    "success": false
+  },
+  "0b8c9ac49ce6e539834b7a35e7eaa47bd353cf6da0d352d3b7067d04627db301": {
+    "elapsed_ms": 354.07664600006683,
+    "error": "/tmp/mini_elf_lean_7c8_8eos.lean:4:20: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "0cd139b25b963f4cf0257e5d200d25de3cd6ba86532e48a33da370449bfefb55": {
+    "elapsed_ms": 334.64611300041724,
+    "error": null,
+    "success": true
+  },
+  "0d7ff4ae708f6f739b2be4a76f3421c6e34e1012148e719ab37f547737b9e84f": {
+    "elapsed_ms": 374.55444799979887,
+    "error": "/tmp/mini_elf_lean_jhanpw13.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_jhanpw13.lean:2:10: error: Application type mismatch: The argument\n  h\nhas type\n  (p \u2192 q) \u2192 p\nbut is expected to have type\n  p \u2192 q\nin the application\n  h h",
+    "success": false
+  },
+  "0da97144ee1ec5660d779e4c6f678489327e49b349f770ed0d15ec5f5d3cf5f2": {
+    "elapsed_ms": 413.18070799934503,
+    "error": "/tmp/mini_elf_lean_5bj1i1ym.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "0e2a8ce01e96ba741ee0176fd710bac995f4e66559648bc05a4af08ada181bfe": {
+    "elapsed_ms": 424.2713109997567,
+    "error": "/tmp/mini_elf_lean_pks30ze9.lean:3:30: error(lean.unknownIdentifier): Unknown identifier `hq`\n/tmp/mini_elf_lean_pks30ze9.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "0e4127734b1db776c7e202e2f70cf06dd559e9a54410c1f4d8003f7a400f5f39": {
+    "elapsed_ms": 312.32484399970417,
+    "error": "/tmp/mini_elf_lean_rwu272dh.lean:2:2: error: Type mismatch\n  rfl\nhas type\n  ?m.10 = ?m.10\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "0ef6e33533be338eafaad66fb89fdc3e83efe78c67050992977e6e6d80142ba4": {
+    "elapsed_ms": 348.4810709996964,
+    "error": null,
+    "success": true
+  },
+  "0f477e30325405e35d214fa1f50976aa8cfd8fd541c732167e3d61da7b34ca22": {
+    "elapsed_ms": 315.3707999999824,
+    "error": "/tmp/mini_elf_lean_2rcwz1dd.lean:2:2: error: Tactic `assumption` failed\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true\n/tmp/mini_elf_lean_2rcwz1dd.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "11dc32a8d56c65ea04a18afdd1ce374daa991b3df744a05f8b84ab784335bcc4": {
+    "elapsed_ms": 367.73306200029765,
+    "error": "/tmp/mini_elf_lean_2bek887m.lean:2:8: error: Invalid projection: Projections cannot be used on functions, and\n  And\nhas function type `Prop \u2192 Prop \u2192 Prop`",
+    "success": false
+  },
+  "127aa45a8e89f527f112997ecff31e2c8c13f5c0db7a145b27453a82954200fc": {
+    "elapsed_ms": 373.77632799962157,
+    "error": "/tmp/mini_elf_lean_c4wzgvp4.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnb`",
+    "success": false
+  },
+  "12a363530864d180cd10c7817f1b3d8133207ab948546910a344a6c3f248d07d": {
+    "elapsed_ms": 320.5230670000674,
+    "error": null,
+    "success": true
+  },
+  "131f52af6bc8fa74305c2ece4b4501e26877d4a8af20df329c9fd97efaaaad0d": {
+    "elapsed_ms": 308.5992520000218,
+    "error": "/tmp/mini_elf_lean_sg0fa28f.lean:4:0: error: unexpected end of input",
+    "success": false
+  },
+  "137016681cfd20c72239c3c270c2b8ee32365c05ffe490bbaa11ca5d3ff15de5": {
+    "elapsed_ms": 340.37216100023215,
+    "error": "/tmp/mini_elf_lean_7t7rytns.lean:2:17: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2227 q\nbut is expected to have type\n  q \u2227 ?m.3\nin the application\n  h.left\n/tmp/mini_elf_lean_7t7rytns.lean:1:40: error: unsolved goals\np q : Prop\nh : p \u2227 q\n\u22a2 q",
+    "success": false
+  },
+  "1404dacd8d7c0fa3333b1834836a99662c85517fe339a4605e9d290b51c2d075": {
+    "elapsed_ms": 326.75433799977327,
+    "error": "/tmp/mini_elf_lean_j24ozmg3.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_j24ozmg3.lean:2:9: error: invalid binder name `Eq.refl`, it must be atomic",
+    "success": false
+  },
+  "1495839d5d71c2d03e1505b04bfc01097f133ad9d9c9002a78a58a9f0ebef8ce": {
+    "elapsed_ms": 415.81202999987,
+    "error": null,
+    "success": true
+  },
+  "1729b3db394390f55aaea42a0099233b93ad68eb021706f3005eb633ac7ce8bd": {
+    "elapsed_ms": 312.7481190003891,
+    "error": null,
+    "success": true
+  },
+  "173ecbef8dbe7d400be469921887156aa522516d5064b14946c110a6404c1e6d": {
+    "elapsed_ms": 421.65291600031196,
+    "error": "/tmp/mini_elf_lean_wzlk41vy.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.And`",
+    "success": false
+  },
+  "183ece6eb8bcccd1a21ed8a0173a58d0eab6d58df6fc6f322a1af5fa69ccc9cb": {
+    "elapsed_ms": 336.56266199977836,
+    "error": "/tmp/mini_elf_lean_h5jxw20y.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "18ae6bbbeb95b3c924cdfeb5dbc744003bebcbe850e4c2f29c7d006829ccc758": {
+    "elapsed_ms": 334.84639000016614,
+    "error": "/tmp/mini_elf_lean_98n_2x9h.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n \u2192 q n\nbut is expected to have type\n  q 5\n/tmp/mini_elf_lean_98n_2x9h.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "1a062ac6e6cb7e4690c84967b5d0f87502773003bf0daab0e571d73160cf39e8": {
+    "elapsed_ms": 342.4297289993774,
+    "error": "/tmp/mini_elf_lean_17kxszpf.lean:2:10: error: Application type mismatch: The argument\n  p\nhas type\n  Prop\nof sort `Type` but is expected to have type\n  p \u2192 q\nof sort `Prop` in the application\n  h p",
+    "success": false
+  },
+  "1a412929c1cf113905323dd5d6382a2fbcc544925f763836142d20af4c302f78": {
+    "elapsed_ms": 338.47725600026024,
+    "error": "/tmp/mini_elf_lean_9oypuabu.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `Falsehphp`",
+    "success": false
+  },
+  "1b5e7d82d7255b5d662fbb36784a77b9f6076e5f8d9d34bdf9499c2676acd268": {
+    "elapsed_ms": 356.17446699961874,
+    "error": "/tmp/mini_elf_lean_hsj5nrf8.lean:2:17: error: Application type mismatch: The argument\n  Nat\nhas type\n  Type\nbut is expected to have type\n  ?m.4 \u2192 ?m.5\nin the application\n  congrArg Nat",
+    "success": false
+  },
+  "1b8eb51be06a41c5fe87b5026ca42ca87c7f9e8c799dbb4b45a4a8179c43155f": {
+    "elapsed_ms": 331.53694099928543,
+    "error": "/tmp/mini_elf_lean_1xvcx6ym.lean:2:8: error: Invalid projection: Projections cannot be used on functions, and\n  And\nhas function type `Prop \u2192 Prop \u2192 Prop`",
+    "success": false
+  },
+  "1c17c55b18cff325c1f226b2e7b96de77bb0f642f68833c5859faac20525f172": {
+    "elapsed_ms": 379.7618520002288,
+    "error": "/tmp/mini_elf_lean_byfyk5pl.lean:1:56: error: unsolved goals\ncase intro\np q r : Prop\nhp : p\nright\u271d : q \u2227 r\n\u22a2 (p \u2227 q) \u2227 r",
+    "success": false
+  },
+  "1c57ca8ac44b6b798344f4f6816acb329ed0bb6ce51f7093b5a055e3fe26d40a": {
+    "elapsed_ms": 322.5896019994252,
+    "error": null,
+    "success": true
+  },
+  "1db340ab11ebbbfd127dbc7a04aa1805648a3b1375e0c3be9e51bda273629aca": {
+    "elapsed_ms": 323.58391399975517,
+    "error": "/tmp/mini_elf_lean_bue9rsp8.lean:2:2: error: Type mismatch\n  h.right.right\nhas type\n  r\nbut is expected to have type\n  (p \u2227 q) \u2227 r",
+    "success": false
+  },
+  "1e550ad1e640eb48bc4a9a331e1ec04af153aeb65fb88ae95b35bab870300bfb": {
+    "elapsed_ms": 345.5783140002495,
+    "error": null,
+    "success": true
+  },
+  "1e64c5cb017fdf5e0d9dad236db5e80467537e122a0940af0616ce73079f1f29": {
+    "elapsed_ms": 308.12899300053687,
+    "error": "/tmp/mini_elf_lean_88qzivs8.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  100\n\nn : Nat\n\u22a2 n = 100",
+    "success": false
+  },
+  "1f56cac657df0e8a3adce56de48760c532178cb2acc48fd2cec5f8251f6729f1": {
+    "elapsed_ms": 431.6160830003355,
+    "error": "/tmp/mini_elf_lean_53z38a5_.lean:2:16: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "1f615a1010583c6902e7684e261ab127a89a09459cd99a40e933df9feae39068": {
+    "elapsed_ms": 363.2394750002277,
+    "error": "/tmp/mini_elf_lean_94mz2q2s.lean:2:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "20344e0c0013cc92cc30491b3c583a881c6dcfb5e64d0e37b3afb7baac4f9ddb": {
+    "elapsed_ms": 325.6860510000479,
+    "error": "/tmp/mini_elf_lean_pd_6hq6c.lean:3:17: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.32 = ?m.32\nbut is expected to have type\n  false = true\nin the application\n  Or.inl rfl\n/tmp/mini_elf_lean_pd_6hq6c.lean:1:45: error: unsolved goals\ncase true\n\u22a2 true = true \u2228 true = false\n/tmp/mini_elf_lean_pd_6hq6c.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "2107697fefe6e9c2c6394b7479378114ab2521536ce075f8ca5a552c02ed20b7": {
+    "elapsed_ms": 329.45234299950243,
+    "error": "/tmp/mini_elf_lean_5or714xx.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_5or714xx.lean:1:70: error: unsolved goals\ncase inr\np q r : Prop\nhpr : p \u2192 r\nhqr : q \u2192 r\nhx : q\n\u22a2 r\n/tmp/mini_elf_lean_5or714xx.lean:3:15: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "21d897acdc2d226d44cbf3e21a4021985619a1493ef6d5bacb55d7d069ff2aad": {
+    "elapsed_ms": 358.7033120002161,
+    "error": null,
+    "success": true
+  },
+  "21e05c9f1081e2b50c8fde22dc8ffc0d5d5a06ed7ad8882cc1d749203e2b2f39": {
+    "elapsed_ms": 309.233941000457,
+    "error": "/tmp/mini_elf_lean_g9ufhjvi.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype",
+    "success": false
+  },
+  "21fe774a320ada5a1fbeec8db9fec1964d8ef9823e28bd7cf3f9f6a70c9290d2": {
+    "elapsed_ms": 322.80766400072025,
+    "error": "/tmp/mini_elf_lean_1_639pg1.lean:3:12: error: Type mismatch\n  Or.inl\nhas type\n  ?m.21 \u2192 ?m.21 \u2228 ?m.22\nbut is expected to have type\n  true = true \u2228 true = false\n/tmp/mini_elf_lean_1_639pg1.lean:2:2: error: Alternative `false` has not been provided",
+    "success": false
+  },
+  "22c6123825b47c8905c099b2ddfd69232d17a662ebccb5a8e2cd434a9ed40525": {
+    "elapsed_ms": 311.6541760000473,
+    "error": null,
+    "success": true
+  },
+  "22f5ce73fc73f97a08e61a548bec06a3d58b63c130ee7abce2d3757edf3fe1d6": {
+    "elapsed_ms": 336.7882639995514,
+    "error": "/tmp/mini_elf_lean_xk_dnbjq.lean:2:10: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "231b7bc4222782825454665c202989b4d963251fbca4cc8defd0d5428e14230b": {
+    "elapsed_ms": 397.15261200035457,
+    "error": "/tmp/mini_elf_lean_e5oshrsu.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "242db362f53c6fd4ad6776842ea6591c2d960eb638a99738a14f7fbe12dedcd7": {
+    "elapsed_ms": 295.0603710005453,
+    "error": "/tmp/mini_elf_lean_qro5qx0k.lean:2:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} ([] ++ xs) xs",
+    "success": false
+  },
+  "247e265bacced18b2a20e2dd7e8eb75b107ab7132f45c4af74a5ecd6a8851759": {
+    "elapsed_ms": 342.21199300009175,
+    "error": null,
+    "success": true
+  },
+  "2488068554dd65eda039a683db1c76d5be48121765a5776858ae94d8336fa121": {
+    "elapsed_ms": 323.4882959995957,
+    "error": "/tmp/mini_elf_lean_xfkti9gf.lean:2:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "25d96559d991428518a2c0f50f3623dd3ea282c512059d5b9db3dc90dee72282": {
+    "elapsed_ms": 312.0655069997156,
+    "error": "/tmp/mini_elf_lean_m0oq26fz.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype",
+    "success": false
+  },
+  "263d662acba2860a8d4c3a0b2a05a29a451599fd7604488defbf44ff7788fa89": {
+    "elapsed_ms": 296.14280900023005,
+    "error": "/tmp/mini_elf_lean_va1_nlyh.lean:2:20: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "2688a67b7ab5e7ea2ebdb8b776999826b24cd5481e52e39e982f5efcf05c8d77": {
+    "elapsed_ms": 338.1394719999662,
+    "error": "/tmp/mini_elf_lean_1ugd_a__.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hq\n/tmp/mini_elf_lean_1ugd_a__.lean:1:50: error: unsolved goals\ncase right\np q : Prop\nhp : p\nhq : q\n\u22a2 q",
+    "success": false
+  },
+  "26a9a1660112d3223b6debbe49fe570700a52cc833a3cd191b1297603ae54534": {
+    "elapsed_ms": 400.23630099949514,
+    "error": "/tmp/mini_elf_lean_egfmekxt.lean:3:4: error: Tactic `rfl` failed: The left-hand side\n  false = true\nis not definitionally equal to the right-hand side\n  false = false\n\ncase false\n\u22a2 false = true \u2228 false = false",
+    "success": false
+  },
+  "26c5994d37c9d531419564048253f58049a868fce3dd830754e8a5615aa599d9": {
+    "elapsed_ms": 370.9319979998327,
+    "error": "/tmp/mini_elf_lean_g0ihgsj6.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  4",
+    "success": false
+  },
+  "26d835ee2aca0fb4e78afe65aa3d00bae5c449f97036151033c3a5429dbef8bf": {
+    "elapsed_ms": 382.6779250002801,
+    "error": "/tmp/mini_elf_lean_x4i0lmys.lean:3:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_x4i0lmys.lean:2:15: error: Missing alternative name: Expected `refl`\n/tmp/mini_elf_lean_x4i0lmys.lean:2:2: error: Alternative `refl` has not been provided",
+    "success": false
+  },
+  "26f1106a792f46ce1e17c4a2d28c1c66ed3823533a9da62bcb46254e2c1473f7": {
+    "elapsed_ms": 331.9107810002606,
+    "error": "/tmp/mini_elf_lean_kmz4iaob.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_kmz4iaob.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "27f55d5e0117b7d576b64a2d9ec49f6c4c06cbbf81b619611d3d81aa278738c5": {
+    "elapsed_ms": 323.7715430004755,
+    "error": "/tmp/mini_elf_lean_tvo1t0u8.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "2878958f503f74c47cd86bbb64e7f80285fea4974e9ccada82a46bc02d089ce3": {
+    "elapsed_ms": 321.18612800059054,
+    "error": "/tmp/mini_elf_lean_vpou290f.lean:3:0: error: unexpected end of input; expected '\u27e9'",
+    "success": false
+  },
+  "28d7d585d8b02bc6a7cd170ea9539d72f51ff7e8f488a840479cbfebd1f681bb": {
+    "elapsed_ms": 329.61903600062215,
+    "error": null,
+    "success": true
+  },
+  "2910026fc77dab1b176784d2fcc7561ec8e5702b2aee20e640d64e8919ea0920": {
+    "elapsed_ms": 319.4996459997128,
+    "error": "/tmp/mini_elf_lean_qeza846d.lean:2:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} [x].length 1",
+    "success": false
+  },
+  "293588533cdcc7cbf21fa96a22bddb94f0df9612c4845828142626ab8869ac13": {
+    "elapsed_ms": 332.2664220004299,
+    "error": "/tmp/mini_elf_lean_sbhce70_.lean:4:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_sbhce70_.lean:3:2: error: Missing alternative name: Expected `refl`\n/tmp/mini_elf_lean_sbhce70_.lean:2:2: error: Alternative `refl` has not been provided",
+    "success": false
+  },
+  "2bc15710bf2795afdd7c504b3b8072b790c7985496b883d555287d0b4fc8224a": {
+    "elapsed_ms": 331.07949900022504,
+    "error": null,
+    "success": true
+  },
+  "2cffc41ea18a5c22cf120f99b6b3aeb84b61fe97c652665aa8546268068b22e7": {
+    "elapsed_ms": 310.124800000267,
+    "error": null,
+    "success": true
+  },
+  "2e371da9a02d6393f2e46b30d8d80f5a6d9aa75c55aec9d1c80de4013aba224b": {
+    "elapsed_ms": 346.4784719999443,
+    "error": "/tmp/mini_elf_lean_y4oir2_7.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  q\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "2e7dc7be5145c009989e9c389db4c8409a47fdc8f196ca29616940970de1232e": {
+    "elapsed_ms": 373.62455899983615,
+    "error": "/tmp/mini_elf_lean_hf_upaj7.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_hf_upaj7.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "2edad482e11d05d312150cb9fb14593a12046499754cf20a9a00bb892fab69f4": {
+    "elapsed_ms": 345.16706799968233,
+    "error": "/tmp/mini_elf_lean_ahifylla.lean:2:16: error: Tactic `rcases` failed: `h : \u2200 (n : Nat), p n` is not an inductive datatype",
+    "success": false
+  },
+  "2f983e5cad0779ec3453bf3a072109803d054c35b6696af032e61c8db87c8b06": {
+    "elapsed_ms": 408.72891599974537,
+    "error": "/tmp/mini_elf_lean_aj9n3wsn.lean:3:25: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\ncase intro\np q : Prop\nhp : p\nhq : q\n\u22a2 q \u2227 p\n/tmp/mini_elf_lean_aj9n3wsn.lean:3:31: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "2ff8a2d588f6aa8849adf3c8878c1661f53b81784f589b0e64f0279c3ea1a8ae": {
+    "elapsed_ms": 2346.589645999302,
+    "error": "/tmp/mini_elf_lean_y6l9qcof.lean:2:18: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2227 q\nbut is expected to have type\n  ?m.2 \u2227 p\nin the application\n  h.right",
+    "success": false
+  },
+  "3091b0a8b842b22ca08f9df6f552314b8a6620baf25fabefbb9c6b99569f104c": {
+    "elapsed_ms": 323.7957430001188,
+    "error": "/tmp/mini_elf_lean_c_wz5b4b.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_c_wz5b4b.lean:2:29: error: Application type mismatch: The argument\n  h2\nhas type\n  b = c\nbut is expected to have type\n  c = b\nin the application\n  Eq.symm h2",
+    "success": false
+  },
+  "30a4ddb6165d1bd21b0dd0267dd2d5a9fd799de206f76bf7af23d274dc223acd": {
+    "elapsed_ms": 368.29991199920187,
+    "error": null,
+    "success": true
+  },
+  "30dc535c6d513fd3ba3982eb90af47b4f8b19be78a0b0b0612109d8f8472f744": {
+    "elapsed_ms": 340.89112099991326,
+    "error": "/tmp/mini_elf_lean_98j3wcot.lean:1:79: error: unsolved goals\np q : Nat \u2192 Prop\nhpq\u271d : \u2200 (n : Nat), p n \u2192 q n\nn : Nat\nhpq : p n\n\u22a2 \u2203 n, q n\n/tmp/mini_elf_lean_98j3wcot.lean:2:25: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "30df89e0246b669849a4ecad331592b81e576d853c5e72193390e57670322cfa": {
+    "elapsed_ms": 329.61396900009277,
+    "error": "/tmp/mini_elf_lean_rzhdz2qe.lean:3:0: error: unexpected end of input; expected ']'\n/tmp/mini_elf_lean_rzhdz2qe.lean:1:33: error: unsolved goals\nn : Nat\n\u22a2 n + 0 = n",
+    "success": false
+  },
+  "3169313a231055dc1db548e9ce838932528b979cf2ffe58802259beda8e8a67c": {
+    "elapsed_ms": 362.8973880004196,
+    "error": "/tmp/mini_elf_lean_byii3yxg.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hx`",
+    "success": false
+  },
+  "31cbd47f107a9cb4d5681dffbf4a68d9b2bf248368b77e9b2b2c4ac91649818b": {
+    "elapsed_ms": 348.42678000040905,
+    "error": null,
+    "success": true
+  },
+  "32893730dac9b372fc59ddd8c9f2d3160b2e1434da238c127bb69d25ea746962": {
+    "elapsed_ms": 333.9996200002133,
+    "error": "/tmp/mini_elf_lean_p_igqj37.lean:2:2: error: Type mismatch\n  Eq.refl x\nhas type\n  x = x\nbut is expected to have type\n  (x :: xs).length = xs.length + 1",
+    "success": false
+  },
+  "339593de58262f0723fe2da53b54e31240267cd110079af79f30d0d74219b220": {
+    "elapsed_ms": 379.45391299945186,
+    "error": "/tmp/mini_elf_lean_nnnb7fmy.lean:2:2: error: Type mismatch\n  rfl\nhas type\n  ?m.11 = ?m.11\nbut is expected to have type\n  xs ++ [] = xs",
+    "success": false
+  },
+  "345b1d5d5705837c51d7fd5c2be238c20972a3e43d1e78f43a860732bcbc78a3": {
+    "elapsed_ms": 364.27852099996016,
+    "error": null,
+    "success": true
+  },
+  "34d8e40229a06f5062d53ca55452e84275b087048b31333efef5b4d26d63041e": {
+    "elapsed_ms": 365.7280309998896,
+    "error": null,
+    "success": true
+  },
+  "352bbc3115d4e06755601428362ac745471147b60c45e93643b97e39fe5d6bd2": {
+    "elapsed_ms": 334.48300100008055,
+    "error": null,
+    "success": true
+  },
+  "35769817836ec20c83e0ef28d3504741f69258e907eec0567da15277e922e8ad": {
+    "elapsed_ms": 350.00168999977177,
+    "error": "/tmp/mini_elf_lean_wxd6u_lw.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_wxd6u_lw.lean:4:2: error: No goals to be solved",
+    "success": false
+  },
+  "35c01776b3142023e5c15d28359249fcb3553a8ea1558c8d301b42427ac334e0": {
+    "elapsed_ms": 368.9651929998945,
+    "error": "/tmp/mini_elf_lean_12h44ms9.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`",
+    "success": false
+  },
+  "35e31db45416ce53bc868a2b9546ef2b031fb50917ee3a74822c42211f58e96a": {
+    "elapsed_ms": 329.4819960001405,
+    "error": "/tmp/mini_elf_lean_5j6sht08.lean:3:18: error(lean.unknownIdentifier): Unknown identifier `hnp`\n/tmp/mini_elf_lean_5j6sht08.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "367505f57daa113b7ef65659bc7a7ea8df9dea60cb0094efe2fc93274a7f8037": {
+    "elapsed_ms": 449.624963000133,
+    "error": null,
+    "success": true
+  },
+  "36b6c0715f9d36b037f8d02db5a8ad98a6975c67c76fdb76c2cbbe439bc4c5b6": {
+    "elapsed_ms": 357.238038000105,
+    "error": "/tmp/mini_elf_lean_zth2f9fz.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_zth2f9fz.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "379d931d01c6165aa0073ae8813d7f0a4f4ca121ce2c7b6ffaa8cf7d7e85ae07": {
+    "elapsed_ms": 345.1679409999997,
+    "error": "/tmp/mini_elf_lean_ey15nmja.lean:2:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "37b6b7148beb1cc1e0bf35138822d754ad6c17059ca63e4d88e039927ca68473": {
+    "elapsed_ms": 406.09428100015066,
+    "error": "/tmp/mini_elf_lean_r429d3xc.lean:4:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_r429d3xc.lean:3:2: error: Too many variable names provided at alternative `intro`: 3 provided, but 2 expected",
+    "success": false
+  },
+  "383d290ea8624f53e57bf5896f80ba5e9b71c6babdd98cbf93970d54f2aac597": {
+    "elapsed_ms": 356.88058600044315,
+    "error": "/tmp/mini_elf_lean_eca840tb.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "390a56240cd563f007bb54c59b7d7caf9cf9b887fc7af9a673bfd3839bd7ef6f": {
+    "elapsed_ms": 351.55599900008383,
+    "error": null,
+    "success": true
+  },
+  "39dd22c4e7fe7299f68102be700f834a98d9975cc13d4999b69014a187f9e948": {
+    "elapsed_ms": 377.896834999774,
+    "error": "/tmp/mini_elf_lean_1slf5qpd.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  7",
+    "success": false
+  },
+  "3a417625480a6a0f1a673253df619900a3f74e2c53fbb3b840d4623ccc61e904": {
+    "elapsed_ms": 298.906750000242,
+    "error": "/tmp/mini_elf_lean_w4bz8c08.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n \u2192 q n\nbut is expected to have type\n  q 5\n/tmp/mini_elf_lean_w4bz8c08.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "3aa8fea09225f18210517f68f7daef3cc856c620a065ba12c6c5902c28740734": {
+    "elapsed_ms": 405.6312180000532,
+    "error": "/tmp/mini_elf_lean_31xvtp8o.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "3c3d004e0c90d94964156d96658df6b228bdb6f2588df1dcbd09267be514a4cb": {
+    "elapsed_ms": 317.68000699958066,
+    "error": "/tmp/mini_elf_lean_muf5fz__.lean:4:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "3c4edc9d89cdadcf6ec2302456082377af15c5a1ec407012407effdeb7391d6f": {
+    "elapsed_ms": 336.52781399996456,
+    "error": "/tmp/mini_elf_lean_tvtcl5zz.lean:2:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} (x :: xs).head? (some x)",
+    "success": false
+  },
+  "3c7aa5e49b84ff6656c40c0463111692d52cb6c2f616fc3039266f15a3a751e4": {
+    "elapsed_ms": 596.4587369999208,
+    "error": "/tmp/mini_elf_lean_xz3p9stg.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `hphp`",
+    "success": false
+  },
+  "3d17e4024e583cdbe5e4f09cc3c1b468f6134ea9bb4a7e3b770bf25854c82a9d": {
+    "elapsed_ms": 371.6026209995107,
+    "error": "/tmp/mini_elf_lean_fvc8cl43.lean:2:2: error: Type mismatch\n  h hp\nhas type\n  q \u2192 r\nbut is expected to have type\n  r\n/tmp/mini_elf_lean_fvc8cl43.lean:2:12: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "3d76a747a24ac32143688b0a8b59b7e23786b991d9aaf11c7482b87cb1ed0066": {
+    "elapsed_ms": 333.3494550006435,
+    "error": null,
+    "success": true
+  },
+  "3db66e435c6f7c58703c36a30cf5d671a53dd3374ac5537c24a83431fa4a7a9c": {
+    "elapsed_ms": 377.55903499964916,
+    "error": "/tmp/mini_elf_lean_sxnrs31q.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  \u2200 (n : Nat), p n\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : Nat \u2192 Prop\nh : \u2200 (n : Nat), p n\n\u22a2 p 7",
+    "success": false
+  },
+  "3ec52a7002788c9841dc786d5dba071bc0da188a4818b4dd9bcb462335f30232": {
+    "elapsed_ms": 379.5834080001441,
+    "error": "/tmp/mini_elf_lean_se7vcmpc.lean:4:20: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "3f8af845fc63fadd25463fc5f4b2dd2f665af0ee66f5c552bb1363edada9f168": {
+    "elapsed_ms": 330.7694619998074,
+    "error": "/tmp/mini_elf_lean_56l5g43n.lean:2:17: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "40889a29aff5849f816025c8fceb8baba8ad2da49aa06e1a3758e36dc2cf92a7": {
+    "elapsed_ms": 315.9772809995047,
+    "error": "/tmp/mini_elf_lean_1o4thyu6.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  7",
+    "success": false
+  },
+  "41d4935c9594fcd77ceedb6cee4cba28b11757e9a57729a5a236ead1c214deec": {
+    "elapsed_ms": 345.491208000567,
+    "error": null,
+    "success": true
+  },
+  "429620ad65a1030d266a0957cf826a85e7faf2a3423d45aa041afb02ade4f077": {
+    "elapsed_ms": 361.98053099997196,
+    "error": "/tmp/mini_elf_lean_9nk2zkh0.lean:1:44: error: unsolved goals\ncase inr\np q : Prop\nhq : q\n\u22a2 q \u2228 p",
+    "success": false
+  },
+  "431108348d95eb3ae40f2a3bc8d63bd43a7069a1b7e4831dc49a5ee86ec368b8": {
+    "elapsed_ms": 515.9007599995675,
+    "error": "/tmp/mini_elf_lean_35ds87pa.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  4",
+    "success": false
+  },
+  "4317215185ecc084768d346f5a974c5ef3f5313c05696f6541e2954be82bf972": {
+    "elapsed_ms": 508.5631520005336,
+    "error": "/tmp/mini_elf_lean_vw3eg5_j.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  hpq hp\nhas type `q` which does not have the necessary form.",
+    "success": false
+  },
+  "44070a1edea8e405180f548ec9cdc06a42573e8de8e43f68b265503902c2ad2f": {
+    "elapsed_ms": 312.4526240007981,
+    "error": "/tmp/mini_elf_lean_nvymtvhl.lean:3:2: error: Type mismatch\n  hp\nhas type\n  p n\nbut is expected to have type\n  \u2203 m, p m",
+    "success": false
+  },
+  "45b183ff4aba924ae0ac25c11ae678edd8d9363830dd4ea0f5154620c2ccc81f": {
+    "elapsed_ms": 387.05078499970114,
+    "error": null,
+    "success": true
+  },
+  "45b68e19cca93ab8d1fc668efd413a94410ba30586ba5b0f626b543d2b4745ee": {
+    "elapsed_ms": 358.88456599968777,
+    "error": "/tmp/mini_elf_lean_ean9vyrg.lean:4:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_ean9vyrg.lean:3:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Exists.intro` has 2 explicit field, but only 1 was provided",
+    "success": false
+  },
+  "4681baf7a0fa9df25013f53f3aa29b99275c8dcf231a4303393ab98d61d93db6": {
+    "elapsed_ms": 306.4436949998708,
+    "error": "/tmp/mini_elf_lean_yam6ka_d.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`",
+    "success": false
+  },
+  "47888dd05e0ccd6decc45593706d7295991745aefb921999cc781deeb77475fb": {
+    "elapsed_ms": 386.4586789995883,
+    "error": "/tmp/mini_elf_lean_7c_gkhcp.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hq`\n/tmp/mini_elf_lean_7c_gkhcp.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "485edf0ed936a6ce6510d64fa18e7bead79cd9fc87049fbe46e011601356c460": {
+    "elapsed_ms": 304.8343170003136,
+    "error": null,
+    "success": true
+  },
+  "48ac469a98b7d1dd84ed0d1ce62a870d0b8a48fe4e2aedab5d8f40deaccca1a7": {
+    "elapsed_ms": 394.3392759993003,
+    "error": "/tmp/mini_elf_lean_9tyv2zq3.lean:2:12: error: Application type mismatch: The argument\n  hpq\nhas type\n  p \u2192 q\nbut is expected to have type\n  p\nin the application\n  hpq hpq",
+    "success": false
+  },
+  "48eca9b1aa0e4cd7ac2aa29b9911628532fdf387da5ed955c83de1a572213d21": {
+    "elapsed_ms": 312.6673070000834,
+    "error": "/tmp/mini_elf_lean_fltbzgk6.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_fltbzgk6.lean:2:9: error: invalid binder name `Eq.refl`, it must be atomic",
+    "success": false
+  },
+  "4970f7ae5cfedbb9776b72b58d548a7fb1d97cfa54cf032b7404368a3d49e301": {
+    "elapsed_ms": 336.85381000032066,
+    "error": "/tmp/mini_elf_lean_hoy1ea0u.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`\n/tmp/mini_elf_lean_hoy1ea0u.lean:1:49: error: unsolved goals\np : Nat \u2192 Prop\nh : p 3\n\u22a2 p sorry\n/tmp/mini_elf_lean_hoy1ea0u.lean:3:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "4a1bf9c64a0ba3212dd9673f68f505767b0af2988b9fbd875302b95e6d3abf02": {
+    "elapsed_ms": 371.0278400003517,
+    "error": "/tmp/mini_elf_lean_acnkp8lc.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "4a5bcce778499ddbd3302479e39f0e180a516f6f023105dda62729cdf578c688": {
+    "elapsed_ms": 336.0791300001438,
+    "error": "/tmp/mini_elf_lean_8sl0650d.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_8sl0650d.lean:3:23: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "4b8964ea3b3e7b7efc21d187f216b4e3ccc9799ac14d8252bfb419e18d355154": {
+    "elapsed_ms": 363.70084099962696,
+    "error": "/tmp/mini_elf_lean_a75dvbtv.lean:2:8: error: Unexpected term `@rfl`; expected single reference to variable",
+    "success": false
+  },
+  "4bbbcaca15d1828d12d68357dc7f50c1c30941ceaf78f6cb4ab309fbc7dd37bb": {
+    "elapsed_ms": 319.0528559998711,
+    "error": "/tmp/mini_elf_lean_egixqr_b.lean:3:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  hpq\nhas type `p n` which does not have the necessary form.",
+    "success": false
+  },
+  "4cf577d7be3e6a8875dc195b2ace0505adaaf6bb2051125ddf62e20442e868f9": {
+    "elapsed_ms": 321.0377289997268,
+    "error": "/tmp/mini_elf_lean_7iwtlnmt.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype",
+    "success": false
+  },
+  "4da99ec153baa28c9bf5210add5a6ba5a674d3d6441b4ebb3a1df106ff706a40": {
+    "elapsed_ms": 327.4654830001964,
+    "error": "/tmp/mini_elf_lean_l7l1tmt1.lean:3:0: error: unexpected end of input",
+    "success": false
+  },
+  "4fb95257b2f91a2eb45c02e16bb5e4df2d08d96127899480063bb998eeb5fd56": {
+    "elapsed_ms": 1369.2114139994374,
+    "error": "/tmp/mini_elf_lean_2qz8nyf0.lean:1:32: error: unsolved goals\ncase true\n\u22a2 (!!decide (true = true)) = true",
+    "success": false
+  },
+  "502e1b825a6ed72f29ba36e252f5a73f192ab2ee3bae36e8b6f93c2a0e21ecee": {
+    "elapsed_ms": 362.2580900000685,
+    "error": null,
+    "success": true
+  },
+  "5088f30e7bb7e9f01f8b4c1ac24e832fe03c5e68442b0fe84717538ac0ed7c21": {
+    "elapsed_ms": 328.96895199974097,
+    "error": "/tmp/mini_elf_lean_s6cehc5c.lean:3:25: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  hq\nhas type `q` which does not have the necessary form.",
+    "success": false
+  },
+  "50bc09a454a577b8744e65b7f49cb18a64d1f49290bf58e23a0f93e544476e2b": {
+    "elapsed_ms": 349.8313460004283,
+    "error": "/tmp/mini_elf_lean_me1qoynf.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "5136e9d344e92567d512a7a0e976491adb5c138dd747d73ad1c5b893d162bcb7": {
+    "elapsed_ms": 339.91103599964845,
+    "error": "/tmp/mini_elf_lean_ifzwi5q6.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided",
+    "success": false
+  },
+  "516eeaacb4baf771ad23b3674beaf46a3459b592d9965b56794ede4d9a243e65": {
+    "elapsed_ms": 370.556697000211,
+    "error": "/tmp/mini_elf_lean___o4pilr.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean___o4pilr.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "51ac95ba1f67fd9c64b015a3de1ae94131847b1f4c6fa4df292e4593ece444f0": {
+    "elapsed_ms": 409.5305159999043,
+    "error": "/tmp/mini_elf_lean_fzzt5a3o.lean:2:19: error: Invalid field notation: Identifier or numeral expected\n/tmp/mini_elf_lean_fzzt5a3o.lean:1:46: error: unsolved goals\np q r : Prop\nh : p \u2227 q \u2227 r\n\u22a2 r",
+    "success": false
+  },
+  "51b1cec79883315d950cb61c2a435bf8e1d4bc7d3315f48b329be23dd1fca290": {
+    "elapsed_ms": 326.15618699946936,
+    "error": "/tmp/mini_elf_lean_8x2bpjgx.lean:2:10: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "51b3e7f8a21febcf27339565ae8f9df675fb9b03495a7545a26fe95529a08cce": {
+    "elapsed_ms": 352.77350599972124,
+    "error": "/tmp/mini_elf_lean_5g5noqz5.lean:2:2: error: Type mismatch\n  h.right.left\nhas type\n  q\nbut is expected to have type\n  (p \u2227 q) \u2227 r",
+    "success": false
+  },
+  "51e90b41f01abd995d45fb61502eb2a942a46a4c4b4af3286051fde75aa0587f": {
+    "elapsed_ms": 333.1559719999859,
+    "error": null,
+    "success": true
+  },
+  "5216f8cc64c32f60c77b4752b5b7694c736f46bcfdcf8fd43f441a529ee45ccb": {
+    "elapsed_ms": 320.7421679999243,
+    "error": "/tmp/mini_elf_lean_3pxu19_l.lean:4:0: error: unexpected end of input",
+    "success": false
+  },
+  "53875062256fb6ccbb5ee7c5b88215aa4d7a13b5930474b22b756523c6ac7a52": {
+    "elapsed_ms": 339.3704110003455,
+    "error": "/tmp/mini_elf_lean_f9mml6qb.lean:3:0: error: unexpected end of input; expected ')'",
+    "success": false
+  },
+  "5437294cc4fe598a1b315b6f29a3c19a3301bfcf67dbf8be70451b4f5e2ecdf0": {
+    "elapsed_ms": 373.58341600065614,
+    "error": "/tmp/mini_elf_lean_cm5spz1c.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_cm5spz1c.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `g`",
+    "success": false
+  },
+  "5453d571d999ba96788d9d982a83da457532111980ebc23bc1ffff68fb98d46a": {
+    "elapsed_ms": 311.28160699972796,
+    "error": "/tmp/mini_elf_lean_j3_b5b4l.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n.succ = m.succ\n\nNote: Expected a function because this term is being applied to the argument\n  3",
+    "success": false
+  },
+  "5496d3fb71a412235027b721fd957a16e54771c3ac7ff3da30ae303c2fa6d309": {
+    "elapsed_ms": 358.7560960004339,
+    "error": null,
+    "success": true
+  },
+  "5566f44f4b3d4035b4a47e795c567034f58bc9173caf89a5d77e9f8a69c72ef8": {
+    "elapsed_ms": 367.6576269999714,
+    "error": "/tmp/mini_elf_lean_hnriyczr.lean:2:2: error: Type mismatch\n  congrArg Nat.succ\nhas type\n  ?m.6 = ?m.7 \u2192 Nat.succ ?m.6 = Nat.succ ?m.7\nbut is expected to have type\n  n = m",
+    "success": false
+  },
+  "562a24a824d487d235771c84776ca75db55523fc20af036f7cd7cb3dbbdc3e0b": {
+    "elapsed_ms": 360.87109400068584,
+    "error": "/tmp/mini_elf_lean_j51y2y3s.lean:2:2: error: Type mismatch\n  \u27e8hq, hq\u27e9\nhas type\n  q \u2227 q\nbut is expected to have type\n  p \u2228 q",
+    "success": false
+  },
+  "56598b219e1e49108561d37335e83d6e68fab940cd53b696d52146e39f507169": {
+    "elapsed_ms": 323.49743399936415,
+    "error": null,
+    "success": true
+  },
+  "56b05b8af5ade091152ff38a74ef8d3fe312d9901ec116c3a77db401a288fb3b": {
+    "elapsed_ms": 343.69101999982377,
+    "error": "/tmp/mini_elf_lean_ta9w552g.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "57177dbf9daa9353d082d67fa2948836471dda66d9609576686183c11ba25655": {
+    "elapsed_ms": 334.4548160002887,
+    "error": "/tmp/mini_elf_lean_qzavkgqr.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_qzavkgqr.lean:4:2: error: No goals to be solved",
+    "success": false
+  },
+  "57459067376e11f56ca5f65e712accbcd509609d53c7f414709d3ff22943953c": {
+    "elapsed_ms": 316.69538999994984,
+    "error": "/tmp/mini_elf_lean_r_ur53nh.lean:2:2: error: Type mismatch\n  h.right.left\nhas type\n  q\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "5817f0237acddb4fd131c675d67a636aeaa6166e809717c04026a55aede3916d": {
+    "elapsed_ms": 348.14573299991025,
+    "error": null,
+    "success": true
+  },
+  "58551071875c236744450cf910603bd77841ee1cff0870dd6d29a70a439b907b": {
+    "elapsed_ms": 421.9256279993715,
+    "error": "/tmp/mini_elf_lean_6_wvyv4k.lean:2:19: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  False\nin the application\n  False.elim hp",
+    "success": false
+  },
+  "5863ea2a795f594e45d98755e6761aa0bf5a32fca9eae53d2c3344b02b1163f8": {
+    "elapsed_ms": 330.8119040002566,
+    "error": "/tmp/mini_elf_lean_7x83fgd1.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  \u2200 (n : Nat), p n\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np : Nat \u2192 Prop\nh : \u2200 (n : Nat), p n\n\u22a2 p 7",
+    "success": false
+  },
+  "586743bd3456d6c3bdec334f466409606d173e8a028b1046626b2f8a2316d380": {
+    "elapsed_ms": 313.0331229995136,
+    "error": "/tmp/mini_elf_lean_8wxvws3y.lean:2:16: error: Tactic `rcases` failed: `h : p \u2228 q \u2192 False` is not an inductive datatype\n/tmp/mini_elf_lean_8wxvws3y.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "58b0c1f0e7e51643411e23d31a59a9212f0e32974eb8c7fedf1a2a037ee9a7e1": {
+    "elapsed_ms": 315.71659200017166,
+    "error": "/tmp/mini_elf_lean_ivzr67mk.lean:3:0: error: unexpected end of input",
+    "success": false
+  },
+  "58d34f3fd2bfd9ad760b346772c6498d38d578956939c75af034bb9c16117237": {
+    "elapsed_ms": 346.39035899999726,
+    "error": "/tmp/mini_elf_lean_cj6t6yk6.lean:2:8: error: Invalid projection: Projections cannot be used on functions, and\n  And\nhas function type `Prop \u2192 Prop \u2192 Prop`",
+    "success": false
+  },
+  "591a97766669e12b16734830428c7dbdc8a8549164686f2c40e240d98171e12c": {
+    "elapsed_ms": 312.3206879999998,
+    "error": "/tmp/mini_elf_lean_dontzhmt.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+    "success": false
+  },
+  "5992f1555ce6a0782b6fa4df078d1f6fc776532d24ac82fa5a3778ff37631336": {
+    "elapsed_ms": 302.4381089999224,
+    "error": "/tmp/mini_elf_lean_rrkxy2ki.lean:2:2: error: Type mismatch\n  Eq.refl x\nhas type\n  x = x\nbut is expected to have type\n  (x :: xs).head? = some x",
+    "success": false
+  },
+  "5a22546d965decbff9a2a4aaff3ab5f4676b2d0efd2bc3e39c4a6dd7c9b35d55": {
+    "elapsed_ms": 381.9649549996029,
+    "error": "/tmp/mini_elf_lean_bwgqzzkw.lean:2:17: error: Application type mismatch: The argument\n  Eq.trans h2\nhas type\n  c = ?m.12 \u2192 b = ?m.12\nbut is expected to have type\n  b = ?m.8\nin the application\n  Eq.trans h1 (Eq.trans h2)",
+    "success": false
+  },
+  "5ae173f96e2fbe895f6c766df5cda20709dcbaea41a23764b5a38ad36afeb9d2": {
+    "elapsed_ms": 353.3082269996157,
+    "error": "/tmp/mini_elf_lean_jsb8aqtd.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np : Prop\nhp : p\nhnp : \u00acp\n\u22a2 False",
+    "success": false
+  },
+  "5b2a1c5e2203e29b2a2672c47d44c89f8364902734edb7c44182e5593b6069a2": {
+    "elapsed_ms": 313.20099200002005,
+    "error": "/tmp/mini_elf_lean_0l68s3h0.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_0l68s3h0.lean:2:20: error: Application type mismatch: The argument\n  Eq.symm h2\nhas type\n  c = b\nbut is expected to have type\n  b = c\nin the application\n  Eq.trans h1 (Eq.symm h2)",
+    "success": false
+  },
+  "5b3d74f862fd48c7afd5f324fbdd4fcb345ab060773624b1f510b0e00de0afc0": {
+    "elapsed_ms": 330.04011799948785,
+    "error": "/tmp/mini_elf_lean_sgik41cy.lean:2:21: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "5cb2afcd17c35b32bd7406434b6c4f09725300c3534712bf8e185ce92c39dda6": {
+    "elapsed_ms": 319.6710089996486,
+    "error": "/tmp/mini_elf_lean_fifw3nnu.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_fifw3nnu.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "5cd37df44c3567a8f8ce0ce256584c403a8a4458cb74cc735d3b2e446b410053": {
+    "elapsed_ms": 406.7530270003772,
+    "error": "/tmp/mini_elf_lean_quqsmdlh.lean:2:16: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  ?m.2 \u2228 ?m.3\nin the application\n  Or.elim hp",
+    "success": false
+  },
+  "5d8c7ba255e564bdc562e40443512385b1834853a9040c3d5354fd11d1d4161f": {
+    "elapsed_ms": 320.617688999846,
+    "error": "/tmp/mini_elf_lean_uwyvm1ji.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype",
+    "success": false
+  },
+  "5e39ea41c2dd070b44403e1cc08d282ee15e45b6b34e509f147830424949f9a6": {
+    "elapsed_ms": 536.0128230004193,
+    "error": "/tmp/mini_elf_lean_gc0ol495.lean:2:18: error: Type mismatch\n  absurd \u22ef\nhas type\n  \u00acq \u2192 ?m.4\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "5e7033832caeb276c1062a6d59dc1a2020d488f1305d63df6e72e1cfcf018b26": {
+    "elapsed_ms": 388.96420699984446,
+    "error": "/tmp/mini_elf_lean_502zbzxx.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "5eb087cf8f638591885fa6c181392b7927c7d17869cbdd6a587b4f33097f4f1b": {
+    "elapsed_ms": 318.3876760003841,
+    "error": "/tmp/mini_elf_lean_qa5cynd5.lean:2:2: error: Tactic `assumption` failed\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true\n/tmp/mini_elf_lean_qa5cynd5.lean:2:8: error: unexpected token 'at'; expected command",
+    "success": false
+  },
+  "5f352c42d2a763f17a87c96aa9851c3bd6c458b501d9e8f14cd33873d36bb323": {
+    "elapsed_ms": 373.124734999692,
+    "error": null,
+    "success": true
+  },
+  "5f39ee02f672e8c5cc5a23b8e8021f3240518764ebd60fce3c54698d1eff4dde": {
+    "elapsed_ms": 384.90313199963566,
+    "error": null,
+    "success": true
+  },
+  "5f43f57e74507be6f8a5079b831ba151c67d1a6b567baf03a8d69003cea01ba3": {
+    "elapsed_ms": 323.39135899928806,
+    "error": "/tmp/mini_elf_lean_ym_zk3ni.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n\nbut is expected to have type\n  p 7\n/tmp/mini_elf_lean_ym_zk3ni.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "5fad8c2f20dd0b50ef2a4470814ad33661302d235d24fdf60cf924fe3b9c6f71": {
+    "elapsed_ms": 310.32533799952944,
+    "error": "/tmp/mini_elf_lean_6yw0ymxv.lean:2:2: error: Alternative `intro` has not been provided\n/tmp/mini_elf_lean_6yw0ymxv.lean:2:15: error: unexpected token '\u27e8'; expected command",
+    "success": false
+  },
+  "6001c26757ced8181becde2d945bc1e7a63eab09af60c3ca715a7f53484bbeee": {
+    "elapsed_ms": 19852.846068999497,
+    "error": "/tmp/mini_elf_lean_186n_mcg.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "60ce2965443a52ca582a7efca4ebceb1b15fbd68f63247e69b7667172f885f2f": {
+    "elapsed_ms": 455.3247060002832,
+    "error": "/tmp/mini_elf_lean_423mp0c7.lean:2:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.9), a = a\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "612fae34e02eafb25bf35d4d798013e2d1f31a39097be36ed78dfce58a292269": {
+    "elapsed_ms": 329.27429000028496,
+    "error": "/tmp/mini_elf_lean_e4wmquan.lean:2:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "613e42519a666a33a63f04dace305aee7ac4135500a86e79f8da84f551b745f7": {
+    "elapsed_ms": 407.07772899986594,
+    "error": null,
+    "success": true
+  },
+  "6190d8916c5cb3582373f1f4272dca837e81b9a5c77ee20914d33bd359125687": {
+    "elapsed_ms": 364.9401590000707,
+    "error": "/tmp/mini_elf_lean_tzyeuapf.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n \u2192 q n\nbut is expected to have type\n  q 5\n/tmp/mini_elf_lean_tzyeuapf.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "63897f70b2eb29a1cb1623b8baf0ecc9c27ba88359dd84dfcc9006a5cf7e2b0b": {
+    "elapsed_ms": 325.6045449998055,
+    "error": "/tmp/mini_elf_lean_up6ol2ke.lean:2:2: error: Type mismatch\n  Eq.refl ?m.11\nhas type\n  ?m.11 = ?m.11\nbut is expected to have type\n  xs ++ [] = xs",
+    "success": false
+  },
+  "63908ff55b030f28103c1bba666caa84964915348c69a2a803e03f98c910ef87": {
+    "elapsed_ms": 325.0280369993561,
+    "error": "/tmp/mini_elf_lean_9t2rvmj0.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hq\n/tmp/mini_elf_lean_9t2rvmj0.lean:1:64: error: unsolved goals\ncase a\np q r : Prop\nh : p \u2192 q \u2192 r\nhq : q\nhp : p\n\u22a2 q",
+    "success": false
+  },
+  "63b01b7f14369e30620130e920c60f0b8ce74f7a4e0617f681822188cabbe646": {
+    "elapsed_ms": 366.40431599971635,
+    "error": "/tmp/mini_elf_lean_8n5s_hb4.lean:3:14: error: Type mismatch\n  absurd hp\nhas type\n  \u00acp \u2192 ?m.25\nbut is expected to have type\n  r\n/tmp/mini_elf_lean_8n5s_hb4.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_8n5s_hb4.lean:3:30: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "63b2600eaf2c01bb19eadcada622d14537802fea3a6d46d2c486d3c2e7e8b3be": {
+    "elapsed_ms": 310.30053600079555,
+    "error": null,
+    "success": true
+  },
+  "63e79966d5b4e76f3e5fc729f62a63e43f7de0217bd687090f5f11768e5ba538": {
+    "elapsed_ms": 336.0278840000319,
+    "error": "/tmp/mini_elf_lean_tqsp65k2.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.And`",
+    "success": false
+  },
+  "646888d40710b9f89c5cde58e2b886db4e03ce0fa4fa429432bceed0ba4c9b78": {
+    "elapsed_ms": 324.43034800053283,
+    "error": "/tmp/mini_elf_lean_r5mqomez.lean:3:2: error: Type mismatch\n  hpq\nhas type\n  p n\nbut is expected to have type\n  \u2203 n, q n",
+    "success": false
+  },
+  "6575aba903959031f3daf7472f29bcceddec58abfa5894eb85153bee336cee81": {
+    "elapsed_ms": 390.6493620006586,
+    "error": "/tmp/mini_elf_lean_4fsqmomz.lean:2:2: error: Type mismatch\n  rfl\nhas type\n  ?m.10 = ?m.10\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "6595a69fabad5fac29a6caa631d33098b6db958a93e9b56541f6f81755d06e59": {
+    "elapsed_ms": 369.7657660004552,
+    "error": "/tmp/mini_elf_lean_a6hoif1x.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  7",
+    "success": false
+  },
+  "65ca74d91bcad616bcb00f3849a25e919bb6ecfe1a2dd3414ef31eeedcb6b7cb": {
+    "elapsed_ms": 359.5352679994903,
+    "error": "/tmp/mini_elf_lean_e1ra2lgi.lean:2:17: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "663c3797855b08cd8900700bd27f8932c4d8e3636a2193a94f97bfd35e3827c6": {
+    "elapsed_ms": 340.6391650005389,
+    "error": "/tmp/mini_elf_lean_8624va_p.lean:2:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  ?b && true\nin the target expression\n  b = true\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true",
+    "success": false
+  },
+  "6648a6559163e81398bf39c87ab5a6c28bdd47ccd882318aec4029eca556ad8b": {
+    "elapsed_ms": 521.7712849998861,
+    "error": "/tmp/mini_elf_lean_hvunm3c_.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.hp`",
+    "success": false
+  },
+  "66b74a6eb3192c5505774403b2ea0b95ea2bcd61d8b3c21eac151fd220ddbec7": {
+    "elapsed_ms": 358.9855460004401,
+    "error": "/tmp/mini_elf_lean_eszuqvma.lean:3:12: error: Type mismatch\n  Or.inr\nhas type\n  ?m.22 \u2192 ?m.21 \u2228 ?m.22\nbut is expected to have type\n  true = true \u2228 true = false\n/tmp/mini_elf_lean_eszuqvma.lean:2:2: error: Alternative `false` has not been provided",
+    "success": false
+  },
+  "66fc59cb7a9c7fb553ed143373b97727e5b1699364de34e4e61133af86c2d697": {
+    "elapsed_ms": 340.9554069994556,
+    "error": "/tmp/mini_elf_lean_g95buiut.lean:2:2: error: Type mismatch\n  h\nhas type\n  n = m\nbut is expected to have type\n  m = n",
+    "success": false
+  },
+  "66fd4b560cc47c1a924ba3d8e334c2d9c98c357ee6864dfb7943c3f3e89f0bca": {
+    "elapsed_ms": 329.2679930000304,
+    "error": null,
+    "success": true
+  },
+  "670944fdf7356bb8fc4eb851c1efbc059aaebf3c42caad7cab28dcbef529a7b4": {
+    "elapsed_ms": 294.1244250005184,
+    "error": "/tmp/mini_elf_lean_92k9c42w.lean:2:2: error: Type mismatch\n  Eq.refl x\nhas type\n  x = x\nbut is expected to have type\n  (x :: xs).length = xs.length + 1",
+    "success": false
+  },
+  "67f13917773316803342aac4c4061da6365d8e4180669c3c667cc9a6b946bcfc": {
+    "elapsed_ms": 358.49009300000034,
+    "error": null,
+    "success": true
+  },
+  "6824144ce4c598e21317cdfdc4b416ea30a529e0b3c43638ad9784c9ed293e29": {
+    "elapsed_ms": 390.3866270002254,
+    "error": "/tmp/mini_elf_lean__5rbd1wz.lean:1:44: error: unsolved goals\ncase inr\np q : Prop\nhp : q\n\u22a2 q \u2228 p",
+    "success": false
+  },
+  "6924a1b8d601df918be97616eb10b2f2744048ea37009cf133ce55976bae2136": {
+    "elapsed_ms": 383.85550400016655,
+    "error": "/tmp/mini_elf_lean_9_xlbunw.lean:2:10: error: Application type mismatch: The argument\n  p\nhas type\n  Nat \u2192 Prop\nbut is expected to have type\n  Nat\nin the application\n  h p",
+    "success": false
+  },
+  "693827f0caf7f0795aed6c676d5aa493198fc1adabbad6e69773967f8cac2904": {
+    "elapsed_ms": 312.0053900001949,
+    "error": "/tmp/mini_elf_lean_2jnorjvb.lean:2:12: error: Application type mismatch: The argument\n  hpq\nhas type\n  p \u2192 q\nbut is expected to have type\n  q\nin the application\n  hqr hpq",
+    "success": false
+  },
+  "6a0ab2655bf0e74edc208a42b55524642a2d63508f4b631b024999dabfc6333e": {
+    "elapsed_ms": 347.6491259998511,
+    "error": "/tmp/mini_elf_lean_j9vl5ofg.lean:2:28: error: Application type mismatch: The argument\n  h\nhas type\n  \u00ac(p \u2228 q)\nbut is expected to have type\n  \u00acp\nin the application\n  absurd hp h",
+    "success": false
+  },
+  "6a3d324b9da6df2e93f1ca25059dbc739fd10dd4a5f9c599acef532a693b44f9": {
+    "elapsed_ms": 307.1052449995477,
+    "error": null,
+    "success": true
+  },
+  "6bbf2d5e2c10817185ca486bf7db725383f75dc73b67aac95cca990c64e41345": {
+    "elapsed_ms": 306.5030799998567,
+    "error": "/tmp/mini_elf_lean_9jn8y7sd.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_9jn8y7sd.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "6c79008aa1009c6845c69b2d96c5bf2c276552df4d81f997e16cf2f597545a61": {
+    "elapsed_ms": 341.8727160005801,
+    "error": "/tmp/mini_elf_lean_2lq8ilh7.lean:2:32: error: Application type mismatch: The argument\n  absurd\nhas type\n  ?m.5 \u2192 \u00ac?m.5 \u2192 ?m.6\nbut is expected to have type\n  \u00acFalse\nin the application\n  absurd (h hp) absurd",
+    "success": false
+  },
+  "6c904c36424d9479de965182a8fa08b155dd6f157d76385085c8288f4784ea48": {
+    "elapsed_ms": 330.73396399959165,
+    "error": "/tmp/mini_elf_lean_rbh4e6nw.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_rbh4e6nw.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "6c974cafc1ddade51fcd6ef6498f848158b8eb7ca9c30ebe4c29909e8d97c91e": {
+    "elapsed_ms": 337.5197790001039,
+    "error": "/tmp/mini_elf_lean_915vficb.lean:2:29: error: Application type mismatch: The argument\n  h2\nhas type\n  b = c\nbut is expected to have type\n  c = b\nin the application\n  Eq.symm h2",
+    "success": false
+  },
+  "6cc77259de403ceed3222d5ba32c32f1784a9e50119b8ca8e3a1bae12aff1fa0": {
+    "elapsed_ms": 360.8131010005309,
+    "error": "/tmp/mini_elf_lean_28g5lzmr.lean:2:18: error: Function expected at\n  h hp\nbut this term has type\n  q\n\nNote: Expected a function because this term is being applied to the argument\n  hnq",
+    "success": false
+  },
+  "6d5a0f1862c6063a40b787f9d516d95592ae79c699cc3a9a76f1a0e370ab1f40": {
+    "elapsed_ms": 339.06939400003466,
+    "error": null,
+    "success": true
+  },
+  "6de4369a29697639896a27b754d41dbc748058f2fbdb711b43903e076c4b6c82": {
+    "elapsed_ms": 495.00122199970065,
+    "error": "/tmp/mini_elf_lean_a0t_onyf.lean:2:16: error: Tactic `rcases` failed: `h\u271d : p n` is not an inductive datatype",
+    "success": false
+  },
+  "6f3ad7984825d2b6c083036aaf6c3f10757ae63ffb359c8ff841296097430ea4": {
+    "elapsed_ms": 335.2564580000035,
+    "error": "/tmp/mini_elf_lean_u_pdbcsy.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_u_pdbcsy.lean:2:18: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2227 q \u2227 r\nbut is expected to have type\n  p \u2227 q\nin the application\n  And.intro h\n/tmp/mini_elf_lean_u_pdbcsy.lean:2:20: error: Invalid `\u27e8...\u27e9` notation: The expected type `r` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "6f924bca6cc3cd7303e050402d0f6a32db827db7fb64306584dd6cf974a94a05": {
+    "elapsed_ms": 338.3084030001555,
+    "error": "/tmp/mini_elf_lean_a1nhhesp.lean:2:2: error: Tactic `assumption` failed\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true",
+    "success": false
+  },
+  "6feb25dfe590b812f4b3829edc6b9136614ee03b0126e116d15c885b32785923": {
+    "elapsed_ms": 324.0154249997431,
+    "error": null,
+    "success": true
+  },
+  "7010c2dfebccf175868c6df1ac42f9359ebcb26ccd6be1bdbcb63f42e7653cfd": {
+    "elapsed_ms": 369.8594600000433,
+    "error": null,
+    "success": true
+  },
+  "72432eb1c43ba627ece4ae6291c0160cf2438b72f71f16d41e2446f70e4312e9": {
+    "elapsed_ms": 348.38897899953736,
+    "error": null,
+    "success": true
+  },
+  "72eb66bd3976eeca87441d0c0a906de1506f011e3c3c0535900e0f2497464c69": {
+    "elapsed_ms": 318.98662599996896,
+    "error": null,
+    "success": true
+  },
+  "740a8eacfce2446acda63163f6742924e14a2e035074d26c32054ffee9007e11": {
+    "elapsed_ms": 557.5261339999997,
+    "error": "/tmp/mini_elf_lean_g4fugyn9.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "75b8f5308f67faa600e170a87120198784b03cc18c30b1d6bcfae19946793380": {
+    "elapsed_ms": 353.2872010000574,
+    "error": null,
+    "success": true
+  },
+  "75f3ab0cf5621b3dda06641c5bbda4c9f06c25cfda940fe1334f8b8c25829e12": {
+    "elapsed_ms": 365.2590629999395,
+    "error": "/tmp/mini_elf_lean_0w4grsm7.lean:3:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_0w4grsm7.lean:2:15: error: Missing alternative name: Expected `refl`\n/tmp/mini_elf_lean_0w4grsm7.lean:2:2: error: Alternative `refl` has not been provided",
+    "success": false
+  },
+  "7659c44645e30f709c397e828d935092b5943c6c57757f00849a87070b59910d": {
+    "elapsed_ms": 316.73994199991284,
+    "error": "/tmp/mini_elf_lean_vnx9wjnb.lean:4:0: error: unexpected end of input",
+    "success": false
+  },
+  "770acff6bfba6ddf4e7504a76898c0774dce0a555e4e1161da088155a9ba8214": {
+    "elapsed_ms": 348.59446300015406,
+    "error": "/tmp/mini_elf_lean_fb3zp_ix.lean:1:45: error: unsolved goals\ncase true\n\u22a2 true = true \u2228 true = false\n/tmp/mini_elf_lean_fb3zp_ix.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "776fbbde8b5053fd0923df56aceb56f834f3348800fa51fe1148ef16e76342e3": {
+    "elapsed_ms": 348.0852839993531,
+    "error": "/tmp/mini_elf_lean_ihvxho14.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`\n/tmp/mini_elf_lean_ihvxho14.lean:3:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "7770f6782f9cbed0389295a77d5efef9872f7a6571c9980b74a81622dbfecfa0": {
+    "elapsed_ms": 315.29478799984645,
+    "error": "/tmp/mini_elf_lean_ffgggk47.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+    "success": false
+  },
+  "78231986e7e8e9a9ad5c27e3a2363d58a87fc60de3d05fc255bd79e72d54a2b8": {
+    "elapsed_ms": 326.0131140004887,
+    "error": "/tmp/mini_elf_lean_ky9_kbz0.lean:2:17: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "789c171481c5cfccb4a4b1f71d9a9d23d3e3b2f3cd890344a4d98cbde26fe7cb": {
+    "elapsed_ms": 346.8255699999645,
+    "error": "/tmp/mini_elf_lean_6ccohm8j.lean:2:18: error: Type mismatch\n  absurd hp\nhas type\n  \u00ac\u00acp \u2192 ?m.4\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "7a1de8374537a9008c95169fd006448cb7bea9b5583879b7a5838d1b0dea6a24": {
+    "elapsed_ms": 325.57335299952683,
+    "error": "/tmp/mini_elf_lean_iak16z9u.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  8\n\nn : Nat\n\u22a2 n = 8",
+    "success": false
+  },
+  "7a2c5166088e969eebb1b8d1533c9aa4aedbb5d6eb9e0e72c55f69390020aa98": {
+    "elapsed_ms": 331.7719919996307,
+    "error": "/tmp/mini_elf_lean_t051ood5.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  8",
+    "success": false
+  },
+  "7a426300a4672c6bdfd78dd492557c450a8e7ebaed3d8e5eb04a06600f108d2a": {
+    "elapsed_ms": 313.1573889995707,
+    "error": "/tmp/mini_elf_lean_jwfhmxwm.lean:3:0: error: unexpected end of input; expected '\u21a6', '=>'",
+    "success": false
+  },
+  "7b01748f7415f4cc83cda88710f21e0a0166371defed7cc69520f84c391a1527": {
+    "elapsed_ms": 351.7497650000223,
+    "error": null,
+    "success": true
+  },
+  "7b6496c40325955a701b9b15c822bf30af1ef74be0e73bcf14d336b7ea94644f": {
+    "elapsed_ms": 335.1439099997151,
+    "error": null,
+    "success": true
+  },
+  "7ba2610d0a48c0eb78ed93708e4dc03c45970ba24069ef6d82ce2bbecdf07917": {
+    "elapsed_ms": 327.9929340005765,
+    "error": "/tmp/mini_elf_lean_6pvc1td5.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_6pvc1td5.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "7bb590d31ebe4842da7447da8b65e2b6dbb4d16d39562d473bf51a3bc3a13486": {
+    "elapsed_ms": 326.0471969997525,
+    "error": "/tmp/mini_elf_lean_gs3cxl03.lean:3:0: error: unexpected end of input",
+    "success": false
+  },
+  "7c35985d6ad62c55ad87f0556106eb54e629af1bd0974346ed7698915dcebe32": {
+    "elapsed_ms": 309.9570179992952,
+    "error": "/tmp/mini_elf_lean_k9ymi_5o.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n \u2192 q n\nbut is expected to have type\n  q 5\n/tmp/mini_elf_lean_k9ymi_5o.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "7c41421a60bcea5006a65de8b180814d28e1d171363e36610d026550750a63a4": {
+    "elapsed_ms": 351.1605600006078,
+    "error": "/tmp/mini_elf_lean_9sam77gg.lean:2:2: error: Type mismatch\n  rfl\nhas type\n  ?m.5 = ?m.5\nbut is expected to have type\n  f n = f m",
+    "success": false
+  },
+  "7c7d63f87836924aa3c285d9759882a3009971e1f5ea7fc26ee8bb7b02237da7": {
+    "elapsed_ms": 336.10594000037963,
+    "error": "/tmp/mini_elf_lean_h5zomo9p.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `c`\n/tmp/mini_elf_lean_h5zomo9p.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.4\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.4\n\u22a2 (!!decide (b = b)) = true",
+    "success": false
+  },
+  "7d2323fec3f71ed6065a1dbf870f4859be74da0bd636ef2ce9c55cc3b54b18a3": {
+    "elapsed_ms": 429.7286950004491,
+    "error": "/tmp/mini_elf_lean_h_2fsxey.lean:2:21: error(lean.unknownIdentifier): Unknown identifier `hr`",
+    "success": false
+  },
+  "7d3d4f19775fd7cd0a579e0c27f006cd533cc32891d84a9a534e2c734df639bc": {
+    "elapsed_ms": 348.55119400072,
+    "error": "/tmp/mini_elf_lean_r6q67z3k.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  3",
+    "success": false
+  },
+  "7d7db1fd21cfb055abf761e9066f257147b8b533101272712cb470121a34b628": {
+    "elapsed_ms": 336.2092870002016,
+    "error": "/tmp/mini_elf_lean_saz_9eqy.lean:2:2: error: Type mismatch\n  And.intro h\nhas type\n  ?m.3 \u2192 (p \u2227 q) \u2227 ?m.3\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "7e15d86badb55e4f63c0da5eed9cc54cebd95623b1ad066409e922f896442e3f": {
+    "elapsed_ms": 303.89512100009597,
+    "error": "/tmp/mini_elf_lean_4xcg514e.lean:3:0: error: unexpected end of input\n/tmp/mini_elf_lean_4xcg514e.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "7e91362dcfe13b3803755609d714f8e946d462ff0c8aa7ca32d73dcaad0a2682": {
+    "elapsed_ms": 403.8288689998808,
+    "error": "/tmp/mini_elf_lean_80ue4sll.lean:3:0: error: unexpected end of input\n/tmp/mini_elf_lean_80ue4sll.lean:1:53: error: unsolved goals\ncase refl\nn k : Nat\n\u22a2 k + n = k + n",
+    "success": false
+  },
+  "7f0591e1dc721fcc9f07296301391ef89109eeb10544b4392c6e874b021546d8": {
+    "elapsed_ms": 340.7870840001124,
+    "error": "/tmp/mini_elf_lean__y6extbv.lean:2:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.9), a = a\nbut is expected to have type\n  n.succ = n + 1",
+    "success": false
+  },
+  "7f66d386e59092838003831718612d3451e987a3e755d17124d6b1b162f079ce": {
+    "elapsed_ms": 323.60250200053997,
+    "error": "/tmp/mini_elf_lean_czkpdzny.lean:2:6: error(lean.unknownIdentifier): Unknown constant `Bool.and_trueand_true`\n/tmp/mini_elf_lean_czkpdzny.lean:1:58: error: unsolved goals\nb : Bool\nh : (b && true) = true\n\u22a2 b = true",
+    "success": false
+  },
+  "7ff9b20bf01ecc9816bb91a3b20df12944ba17f7c1e8418051e8a1e5058986f1": {
+    "elapsed_ms": 321.7193270002099,
+    "error": null,
+    "success": true
+  },
+  "8043de234aeb6b7f47afc9b5d630ace95874331f67b10fdabcce45bb6a985907": {
+    "elapsed_ms": 335.973709999962,
+    "error": "/tmp/mini_elf_lean_eayeiaet.lean:2:11: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Nat \u2192 Prop\nh : \u2200 (n : Nat), p n \u2192 q n\nha : p 3\n\u22a2 q 3",
+    "success": false
+  },
+  "80593f77541b9723e42f3e637e5dbf2fcdfeebcd6741638384406134da5bb393": {
+    "elapsed_ms": 379.7722250001243,
+    "error": "/tmp/mini_elf_lean_ycb_dz6r.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "80c055b0bc80db2280945621c553e2f9cd5f852bc051931f2ae28fa1fa6c3ed5": {
+    "elapsed_ms": 332.22108900008607,
+    "error": "/tmp/mini_elf_lean_i1ncdvx2.lean:2:8: error: don't know how to synthesize implicit argument `a`\n  @rfl (?m.42 n) (?m.43 n)\ncontext:\nn : Nat\n\u22a2 ?m.42 n\n/tmp/mini_elf_lean_i1ncdvx2.lean:2:8: error: don't know how to synthesize implicit argument `\u03b1`\n  @rfl (?m.42 n) (?m.43 n)\ncontext:\nn : Nat\n\u22a2 Sort ?u.73",
+    "success": false
+  },
+  "8115ec20534f6742d331e37739079c878f37e75ab1d151367ddfbd013d807469": {
+    "elapsed_ms": 396.906682000008,
+    "error": "/tmp/mini_elf_lean_uxrw_vd_.lean:3:2: error: Invalid alternative name `h`: Expected `intro`\n/tmp/mini_elf_lean_uxrw_vd_.lean:2:2: error: Alternative `intro` has not been provided\n/tmp/mini_elf_lean_uxrw_vd_.lean:3:6: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "821f3c39194493c119554b3cfe60de6bd0ffebd97494bd2e2a5b851f9698a25d": {
+    "elapsed_ms": 376.17579600009776,
+    "error": null,
+    "success": true
+  },
+  "822edc836bea51f26fb4730cc391e1870ea14f1efd89a4854662ad33545ac6fb": {
+    "elapsed_ms": 314.9991519994728,
+    "error": "/tmp/mini_elf_lean_hh5g10yd.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_hh5g10yd.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "835f403d696da23f493a9525ebe9b68126306a2d3bd421da8be9c5c95247508a": {
+    "elapsed_ms": 355.39209800026583,
+    "error": "/tmp/mini_elf_lean_pl0azttt.lean:2:32: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "8384c217e025edd41d2c50e716654264ebe8cde4bbcafd18402709051ef2aaba": {
+    "elapsed_ms": 363.3558909996282,
+    "error": null,
+    "success": true
+  },
+  "83a4097d9d39e755317e36d98cbc43f2925b324f3796394dc2ccd7d1c9c4ef28": {
+    "elapsed_ms": 307.38977900000464,
+    "error": "/tmp/mini_elf_lean_h_1krcb2.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "83f30ef3bbe0bbf91c6aa353287f8fe718af48fd4941eadc0f0b93d527a664d6": {
+    "elapsed_ms": 327.4209900000642,
+    "error": null,
+    "success": true
+  },
+  "844d8f28f7d1e66d1587ca3e74cb9a876efa110c955167f6f7aace2b5dc1ec4f": {
+    "elapsed_ms": 409.6968169997126,
+    "error": "/tmp/mini_elf_lean_ybqnev3l.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_ybqnev3l.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "859fa09e0771ad691c299bbb7dc5eb481e3b692f8133d9d5be3fc7f7dd9e87e2": {
+    "elapsed_ms": 363.216353000098,
+    "error": "/tmp/mini_elf_lean_v8qafwf5.lean:3:0: error: unexpected end of input; expected '\u21a6', '=>'",
+    "success": false
+  },
+  "85cb71113870946072ddf81bdc2ca8246f71b14b1b2bf0ed2f89180138acdae6": {
+    "elapsed_ms": 438.17611900067277,
+    "error": "/tmp/mini_elf_lean_z062knqn.lean:3:2: error: Type mismatch\n  And.intro hq\nhas type\n  ?m.6 \u2192 q \u2227 ?m.6\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "86b939fa3616311ba0250f959f8243c04d6f732d676cb8673f919fc2c661a3cc": {
+    "elapsed_ms": 326.87625699963974,
+    "error": "/tmp/mini_elf_lean_3pd3zoj3.lean:3:3: error: unexpected token '\u27e8'; expected '_' or identifier",
+    "success": false
+  },
+  "86e9afe52e9276fc1603c42aee187c745681e3aba65d0e470d363cfe33618abb": {
+    "elapsed_ms": 339.45360300003813,
+    "error": "/tmp/mini_elf_lean_cg2w5hk6.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `b`\n/tmp/mini_elf_lean_cg2w5hk6.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.9\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nn : Nat\nx\u271d : ?m.9\n\u22a2 n.succ = n + 1",
+    "success": false
+  },
+  "88a0344c30b4c2c7bd969577acc5a63a80d09f7666fbec1a14caa003731ecc35": {
+    "elapsed_ms": 390.75160800075537,
+    "error": "/tmp/mini_elf_lean_xf8v05x5.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+    "success": false
+  },
+  "88def9051b7b301eb280512ad588ab9b749ae40c0e0d727f5d6ec53dae7d3ee4": {
+    "elapsed_ms": 355.46941599932325,
+    "error": "/tmp/mini_elf_lean_nmejzc5t.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  3\n\nn : Nat\n\u22a2 n = 3",
+    "success": false
+  },
+  "890a51768707d00cbe0d8114c89235e00836873f306478a86f455c50fcfbb083": {
+    "elapsed_ms": 342.16296300019167,
+    "error": "/tmp/mini_elf_lean_f91r0pa_.lean:3:2: error: Type mismatch\n  hq\nhas type\n  p n\nbut is expected to have type\n  \u2203 m, p m",
+    "success": false
+  },
+  "89201ffba7084354e0f6f3c028d3494b7beb8828865783565ab68f123d96c61b": {
+    "elapsed_ms": 355.66538400053105,
+    "error": "/tmp/mini_elf_lean_xhomx3nj.lean:2:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} (xs ++ []) xs",
+    "success": false
+  },
+  "8a95e361bf09bf202eab45b421d8476af0ba01bf6927e4ed2ecfd2762bdf2b76": {
+    "elapsed_ms": 398.5365960006675,
+    "error": null,
+    "success": true
+  },
+  "8aa92ecfa5979faf3b89d674301500abb1745f955cc21fe08e38e149eff8c616": {
+    "elapsed_ms": 298.438828000144,
+    "error": "/tmp/mini_elf_lean_43wl6482.lean:3:0: error: unexpected end of input; expected '\u27e9'",
+    "success": false
+  },
+  "8adcd0deac2099e15a7580ad99cfe46d6d599818c25014e7c6a8eaa6a112ec16": {
+    "elapsed_ms": 427.316047000204,
+    "error": null,
+    "success": true
+  },
+  "8b2ebc4e5ab059d5e5b0cb177611ac571d9602ef658e8f2ac10236e15105dbb6": {
+    "elapsed_ms": 405.0495539995609,
+    "error": "/tmp/mini_elf_lean_3kqg__g0.lean:2:2: error: Type mismatch\n  congrArg Nat.succ\nhas type\n  ?m.14 = ?m.15 \u2192 Nat.succ ?m.14 = Nat.succ ?m.15\nbut is expected to have type\n  k + n = k + m",
+    "success": false
+  },
+  "8bd9ba12f852457cc6d0a1c98727b210e725ba911811d381cb87d7774a38e2d4": {
+    "elapsed_ms": 369.5582989994364,
+    "error": "/tmp/mini_elf_lean_grda45ig.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  13\n\nn : Nat\n\u22a2 n = 13",
+    "success": false
+  },
+  "8be4a7eeb0e277c4ad7a0065ac89cc24dc7f90e8224715975f44328fbc12ce7f": {
+    "elapsed_ms": 368.6040070006129,
+    "error": "/tmp/mini_elf_lean_em9sp9l7.lean:2:2: error: Type mismatch\n  hpq hp\nhas type\n  q\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "8be55ca901f53df58c0789f002082ce83a41fee256b21ae28c93735e0d2ee13c": {
+    "elapsed_ms": 366.8264090001685,
+    "error": "/tmp/mini_elf_lean_kup4fmwt.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_kup4fmwt.lean:2:20: error(lean.unknownIdentifier): Unknown identifier `hf`",
+    "success": false
+  },
+  "8c0b2949a0da2b68c6f441d51a742734e6df31491ce88326d71f6da9106a7f8f": {
+    "elapsed_ms": 335.9259179997025,
+    "error": "/tmp/mini_elf_lean_4gfhy6rm.lean:2:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.9), a = a\nbut is expected to have type\n  n + 1 = n.succ",
+    "success": false
+  },
+  "8c95c8f6ce4fecf1b44f345d0d4948e2fba1d3973c759b1dfef54c32e52911f7": {
+    "elapsed_ms": 1435.44319800003,
+    "error": "/tmp/mini_elf_lean_41ir01dl.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "8d00a981265f515a9789ad7b615acd45a1256189d1ebfd74342bafdd9c9bc3d4": {
+    "elapsed_ms": 312.4538140000368,
+    "error": null,
+    "success": true
+  },
+  "8d67325c2f9085eebe5e14a3296ea6157635041cb0411fa40e7ac4db49dd846d": {
+    "elapsed_ms": 347.8312229999574,
+    "error": "/tmp/mini_elf_lean_lq4wh_ss.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "8ebb75701b9158d6fa894e3359ffe40a211006070f4424752dfdcb4bc0295b33": {
+    "elapsed_ms": 372.89281099992877,
+    "error": "/tmp/mini_elf_lean_rbxvbgs6.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  hp\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "90edc8960b9a504e368733c9036feefa7d2bc8de8e50bde226d69f24bb0dc47c": {
+    "elapsed_ms": 405.7354890001079,
+    "error": "/tmp/mini_elf_lean_9rriyj9g.lean:2:16: error: Tactic `rcases` failed: `h : \u2200 (n : Nat), p n` is not an inductive datatype",
+    "success": false
+  },
+  "91572c17fc70da6e94743a1d1963a725e59479b7991cc9d55ac0b746e6253e7d": {
+    "elapsed_ms": 337.9797540001164,
+    "error": "/tmp/mini_elf_lean_fpi7pmm5.lean:2:2: error: Type mismatch\n  And.intro hp\nhas type\n  ?m.3 \u2192 p \u2227 ?m.3\nbut is expected to have type\n  p \u2228 q",
+    "success": false
+  },
+  "921d3b6fb7cedf579e6aa09fa5426de8ab7922dbd7eb4c7c77d7a9c19010decd": {
+    "elapsed_ms": 362.82145000041055,
+    "error": "/tmp/mini_elf_lean_rclcn7qm.lean:3:12: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "9279c0128a3b7d5200a21e6cd1204d4140fa5c37bcb12408227c1a3874b0d9a8": {
+    "elapsed_ms": 379.5028550002826,
+    "error": "/tmp/mini_elf_lean__krxtv43.lean:2:2: error: Type mismatch\n  h hp\nhas type\n  q \u2192 r\nbut is expected to have type\n  r\n/tmp/mini_elf_lean__krxtv43.lean:2:12: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "92c82d8169acfaa23a80c7d49c5b19a1f99be019be9c0e821dd92747c01e3b0a": {
+    "elapsed_ms": 452.0904999999402,
+    "error": "/tmp/mini_elf_lean_g58fca6x.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "9340355e4fe5afee8d74d9fa99194c4d306a61ac88646d60a048c10adcf3f344": {
+    "elapsed_ms": 330.5641859997195,
+    "error": "/tmp/mini_elf_lean_9nnde2nq.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hq`\n/tmp/mini_elf_lean_9nnde2nq.lean:3:11: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "93a5b2d9be8afb7ba6355195037238901bfc70cdf74462ace8b2301d36516355": {
+    "elapsed_ms": 413.7667759996475,
+    "error": "/tmp/mini_elf_lean_zet9nad1.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+    "success": false
+  },
+  "93f4d3cb6c6868ccbed8d3b82b82fa1ea8d117fbf58230c21596aaa2c70db55b": {
+    "elapsed_ms": 340.3159109993794,
+    "error": "/tmp/mini_elf_lean_m62h98nc.lean:2:17: error: Application type mismatch: The argument\n  Nat\nhas type\n  Type\nbut is expected to have type\n  ?m.4 \u2192 ?m.5\nin the application\n  congrArg Nat",
+    "success": false
+  },
+  "93fa6c6135f288f363ff9984351c2917832ace4b3b9fc3057d33f993d59db240": {
+    "elapsed_ms": 389.8058699996909,
+    "error": "/tmp/mini_elf_lean_5yykc3pr.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  9",
+    "success": false
+  },
+  "947c286230d5adf3162134d80e28c4ced1be37dcbfd393088e83840be2dc44a9": {
+    "elapsed_ms": 313.38770300044416,
+    "error": "/tmp/mini_elf_lean_cegn6ltd.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`\n/tmp/mini_elf_lean_cegn6ltd.lean:3:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "94c9e809e9db3f3e69621a6bf30d29b22c89af6b080541cf09d5ef3c0cb22d34": {
+    "elapsed_ms": 312.2565570001825,
+    "error": null,
+    "success": true
+  },
+  "95ff69a69f49ddf28778f8f4bdedfe8cf5dc85eed98462d67e6f13e96c9b6fec": {
+    "elapsed_ms": 318.7308500000654,
+    "error": null,
+    "success": true
+  },
+  "97b5ae0ae334ba3e3d9b7df4bc7c7e381407b1e0f8930a544593da9747b6ce06": {
+    "elapsed_ms": 368.7379240000155,
+    "error": "/tmp/mini_elf_lean__rc0dxv6.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "98087f40052acd062187e9daf41fd11baae6b52289d665ea91c2ea9bbb4cd2a7": {
+    "elapsed_ms": 430.9140830000615,
+    "error": "/tmp/mini_elf_lean_nx7yu2sb.lean:3:18: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+    "success": false
+  },
+  "9a8312417b91acb23637d05df14411ce40832b773aacbd79fa0095636b0ce3d0": {
+    "elapsed_ms": 321.8718149992128,
+    "error": null,
+    "success": true
+  },
+  "9ba4f59ace0cc15bac4012dbb5431037efb81567bff690acdb5960a8f7feed6b": {
+    "elapsed_ms": 343.79654599979403,
+    "error": "/tmp/mini_elf_lean_d0dfvtwx.lean:2:8: error(lean.unknownIdentifier): Unknown constant `Or.intro`",
+    "success": false
+  },
+  "9cede19c2ddfbd3bda3e61040b6c563befda13ffc4e3018a68d0fa15eeb54cb1": {
+    "elapsed_ms": 341.91364900016197,
+    "error": "/tmp/mini_elf_lean_fmxkpf95.lean:2:19: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "9d4de397c1066522b9457bcf498cef1ce0d3b1b62d0cf08828155f4e3c8558a8": {
+    "elapsed_ms": 328.66213399938715,
+    "error": "/tmp/mini_elf_lean_14qn2247.lean:2:18: error: Function expected at\n  h hp\nbut this term has type\n  q\n\nNote: Expected a function because this term is being applied to the argument\n  hnq",
+    "success": false
+  },
+  "9e85909384bb37b6f083116341519dd57c2a9ff75c00ce7ce6122aa0474ff558": {
+    "elapsed_ms": 333.2829720002337,
+    "error": "/tmp/mini_elf_lean_md8un0l0.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n \u2192 q n\nbut is expected to have type\n  q 5\n/tmp/mini_elf_lean_md8un0l0.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "9e88a1f77195364c1d5a30031c610605ab6ea8d4e5cdd3b9fc86c97b3e654818": {
+    "elapsed_ms": 327.877002000605,
+    "error": null,
+    "success": true
+  },
+  "9eaee7b913d399f4845e41295ac56b1b8c675c6f2d4eaade74130bc0393083ca": {
+    "elapsed_ms": 435.03940400023566,
+    "error": "/tmp/mini_elf_lean_txd1fdzt.lean:2:18: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.\n/tmp/mini_elf_lean_txd1fdzt.lean:1:56: error: unsolved goals\np q r : Prop\nh : p \u2227 q \u2227 r\n\u22a2 (p \u2227 q) \u2227 r",
+    "success": false
+  },
+  "9f93768ce06400d9e9f6057370bfef4c5ceb7de418ff7c7d882cfc3df16f4e8f": {
+    "elapsed_ms": 319.5304730006683,
+    "error": "/tmp/mini_elf_lean_zy0j118o.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  8",
+    "success": false
+  },
+  "9fee18b8d37aaf93b2ae2751505c8c6f788c018f2665cd42ac4902889e654ae4": {
+    "elapsed_ms": 320.3440020006383,
+    "error": "/tmp/mini_elf_lean_j1eoofzy.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  3",
+    "success": false
+  },
+  "9ff1b72e19801253e48f4171a2586b08c739ba73a37f49996ca30baa7f155e19": {
+    "elapsed_ms": 365.7043880002675,
+    "error": "/tmp/mini_elf_lean_j5qanmg0.lean:4:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "a000d90dafd714070627f9b23bd0a004f31b1234549ccbd561fad16d05dd91ab": {
+    "elapsed_ms": 351.1020030000509,
+    "error": "/tmp/mini_elf_lean_jypuo7_e.lean:3:9: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "a036212010ae6c2e74934624542a3552f918f2c7cf81f5812d580db84190a0e0": {
+    "elapsed_ms": 404.3660880006428,
+    "error": null,
+    "success": true
+  },
+  "a06d288a8c76574383e053f8ed9b687e3665c21ff4f7fcf7271bc58f44023a23": {
+    "elapsed_ms": 315.4722210001637,
+    "error": "/tmp/mini_elf_lean_h62qmlro.lean:2:10: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "a3139824b7f90a1fa8daa68f2ea7aecd0ef493f545e7bd7acac4b1ab6624c473": {
+    "elapsed_ms": 352.48157200021524,
+    "error": "/tmp/mini_elf_lean_3cvovb7q.lean:3:10: error: Application type mismatch: The argument\n  a\nhas type\n  \u03b1\nbut is expected to have type\n  \u03b2\nin the application\n  g a",
+    "success": false
+  },
+  "a36674c70b0b218f2b28ea9bac0f9376f6d070854b19ab7c34ad8e96ca776144": {
+    "elapsed_ms": 312.94108500060247,
+    "error": "/tmp/mini_elf_lean_79rp8ibh.lean:4:15: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "a41b9c64503d15bfd210f9d37c51eccbad3b559de1386f8136cedb518298eb71": {
+    "elapsed_ms": 354.9223840000195,
+    "error": "/tmp/mini_elf_lean_y44t77g5.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "a42c1b8d5d412ff5532c540de652156960b972625c014cf92f06dbf1a86de00b": {
+    "elapsed_ms": 345.201076000194,
+    "error": null,
+    "success": true
+  },
+  "a44b2f0021a97c7f637729381bd646e3aa5aea3bf0c7ed0071ff474ade056cc9": {
+    "elapsed_ms": 1389.9629870002173,
+    "error": "/tmp/mini_elf_lean_ysr473sg.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`\n/tmp/mini_elf_lean_ysr473sg.lean:3:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "a45039f83211d14f6407a174aea364b0c79cf5c09e3c1abd85464f21b914c696": {
+    "elapsed_ms": 389.0467129999706,
+    "error": null,
+    "success": true
+  },
+  "a55fd424ae902d1a917ac04374a499302de106bda8ca663a9becccfcd4e3aa58": {
+    "elapsed_ms": 366.45858799965936,
+    "error": null,
+    "success": true
+  },
+  "a5b6a7e7df6f33ebd063ad2c45285e13449356552263071456e511b03f99dbf9": {
+    "elapsed_ms": 476.40288099955796,
+    "error": "/tmp/mini_elf_lean_yj4l4t_3.lean:3:22: error(lean.unknownIdentifier): Unknown identifier `hnq`",
+    "success": false
+  },
+  "a62666792cdc169a002244dbbaef052c6ad48b1a3422e0b6a4e092c7af175547": {
+    "elapsed_ms": 348.0608519994348,
+    "error": "/tmp/mini_elf_lean_ytrkpzyz.lean:3:9: error(lean.unknownIdentifier): Unknown identifier `ha`\n/tmp/mini_elf_lean_ytrkpzyz.lean:3:13: error(lean.unknownIdentifier): Unknown identifier `hb`",
+    "success": false
+  },
+  "a673fac5f156694e7f08e39b62ebcf2f501082475a715d70107edda74ee510a4": {
+    "elapsed_ms": 400.6834179999714,
+    "error": "/tmp/mini_elf_lean_326atd3o.lean:2:2: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t = x)\n  n.succ = m.succ\n\nn m : Nat\nh : n.succ = m.succ\n\u22a2 n = m",
+    "success": false
+  },
+  "a678793668cf6ab2c5c21164da784ad986296206855925316e8a57ff9f0de4f3": {
+    "elapsed_ms": 392.1399270002439,
+    "error": "/tmp/mini_elf_lean_aonnv283.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "a6857a8817975ea10eb38316294de77ebba1d772f05a6efee285eea0445c1d31": {
+    "elapsed_ms": 357.4958979997973,
+    "error": "/tmp/mini_elf_lean_878hvygf.lean:3:0: error: unexpected end of input",
+    "success": false
+  },
+  "a71ff79ad08e91da0f984daf6e392989749f99492640e8b2b87ff58e29e70b46": {
+    "elapsed_ms": 325.0958369999353,
+    "error": "/tmp/mini_elf_lean_cb73ownn.lean:3:18: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "a747fbe8fe20b7b3a7e5e00b56b7baf7e73b2c1ac47c744662d42d162907cc28": {
+    "elapsed_ms": 330.75876499970036,
+    "error": null,
+    "success": true
+  },
+  "a75141b826ea52eab929a538d81803c8ff728812e6140c6a1f6f8a9cdd8b0694": {
+    "elapsed_ms": 378.67711699982465,
+    "error": "/tmp/mini_elf_lean_0pwdi8fi.lean:3:27: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  q\nin the application\n  Or.inl hp\n/tmp/mini_elf_lean_0pwdi8fi.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "a91b2df4927dc6ad84c6c9abd04ae57b906a98b37c2b7368933d5c72f1a2b252": {
+    "elapsed_ms": 319.94665399997757,
+    "error": null,
+    "success": true
+  },
+  "a9fde6682f02b9fdb93d421307210e0e5a584de0390ba6c8f33a7b7840c103e2": {
+    "elapsed_ms": 387.8980819999924,
+    "error": "/tmp/mini_elf_lean_986w3h_f.lean:1:56: error: unsolved goals\ncase intro\np q r : Prop\nh : p\nright\u271d : q \u2227 r\n\u22a2 (p \u2227 q) \u2227 r",
+    "success": false
+  },
+  "aa8542beeafdcbc9d6e8d77d612a1f0cdc53f99907470c2426d037cd714222fb": {
+    "elapsed_ms": 310.3952550000031,
+    "error": "/tmp/mini_elf_lean_drunui1o.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_drunui1o.lean:2:9: error: invalid binder name `Eq.refl`, it must be atomic",
+    "success": false
+  },
+  "aad803f0204d44a8d3d947129fdd6acc91a7467e152da603ed00b7e836cfc4d8": {
+    "elapsed_ms": 332.98430600007123,
+    "error": null,
+    "success": true
+  },
+  "aaef4ef16d417789d7097f0a930a3974eb393e3fbdd227d6853c7634f6ef0080": {
+    "elapsed_ms": 328.616527000122,
+    "error": "/tmp/mini_elf_lean_qw1zgho4.lean:2:8: error: invalid `\u25b8` notation, expected result type of cast is \n  n = m\nhowever, the equality \n  h\nof type \n  n.succ = m.succ\ndoes not contain the expected result type on either the left or the right hand side",
+    "success": false
+  },
+  "ad39027675e15cfde75cfed62f297c87cdd64244175f6f20ed3c86d1f6d6bfd6": {
+    "elapsed_ms": 376.78739900002256,
+    "error": "/tmp/mini_elf_lean_ilks_1vi.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "adbeca9ab7e784f9e5615fa854b6201998925fb09234ac0bce81034097a04fe0": {
+    "elapsed_ms": 350.8358790004422,
+    "error": "/tmp/mini_elf_lean_fjowm7pm.lean:2:2: error: Type mismatch\n  h.right.left\nhas type\n  q\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "aeabb871d74c1dd354ba1acc0deea5af4a075484a9d4585b16b9b77ffa2dcfb0": {
+    "elapsed_ms": 428.2168110003113,
+    "error": "/tmp/mini_elf_lean_2sq06coz.lean:2:2: error: Tactic `assumption` failed\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true\n/tmp/mini_elf_lean_2sq06coz.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "af0787e536e28b693996616d9bd09016263ebd40a8355364a4c9a18e91c2364f": {
+    "elapsed_ms": 368.6051690001477,
+    "error": "/tmp/mini_elf_lean_yhcol5fv.lean:3:12: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "af5a96d896544df7ddd21691d2a651cdce8efb3aaa7df787478ca1b4078e07b4": {
+    "elapsed_ms": 334.0329839993501,
+    "error": "/tmp/mini_elf_lean_zia4q8zd.lean:2:18: error: Function expected at\n  h hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  hnq",
+    "success": false
+  },
+  "af98bcf809d7a6cd1c4578beee21ebc4316e20d3d2b40999223252663f37f326": {
+    "elapsed_ms": 316.0075660007351,
+    "error": "/tmp/mini_elf_lean_di_kj04i.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "b02aa75af36fa2a2953fc88c5ba2a4278b013a0cbd8aa227f94d318b79f2bdaf": {
+    "elapsed_ms": 313.30009500015876,
+    "error": "/tmp/mini_elf_lean__luwa05v.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "b04db45e8ff7e2bf896b516f0347c6ad1d175bc1399d7dfb81effca1cfdee89f": {
+    "elapsed_ms": 342.8344060002928,
+    "error": null,
+    "success": true
+  },
+  "b05b56bd452e0e8f63e30d2682ec86068a21e1036ce75bfccbb3835150fdd17a": {
+    "elapsed_ms": 344.09549300016806,
+    "error": "/tmp/mini_elf_lean_e_62fcbn.lean:3:18: error(lean.unknownIdentifier): Unknown identifier `hnp`\n/tmp/mini_elf_lean_e_62fcbn.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "b092292cfcb2fbf7a1d0ce1a0b568fa7ad9fa1cd58fb6d48ed719cfc3e769f0e": {
+    "elapsed_ms": 326.6799560005893,
+    "error": "/tmp/mini_elf_lean_cc6ekhxv.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Prop\nhp : p\n\u22a2 p \u2228 q",
+    "success": false
+  },
+  "b0c9d53c3e421ff6848dd0ec5f2deb0204111eab491c0c46b16bee7a594a8efc": {
+    "elapsed_ms": 363.85526199956075,
+    "error": "/tmp/mini_elf_lean_s2gm3htk.lean:2:2: error: Type mismatch\n  Eq.symm\nhas type\n  ?m.5 = ?m.6 \u2192 ?m.6 = ?m.5\nbut is expected to have type\n  m = n",
+    "success": false
+  },
+  "b15423114b26b2f825cd9495aa9ae455c067bcfccf6592f04006a0b97bfefb9e": {
+    "elapsed_ms": 318.928507000237,
+    "error": "/tmp/mini_elf_lean_bbjaekfi.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h1`",
+    "success": false
+  },
+  "b2323e03ab3e17cbc9b5f38a4793f217872eab0c46f033407a82b9537af85324": {
+    "elapsed_ms": 415.63353299989103,
+    "error": "/tmp/mini_elf_lean_7ej_8whm.lean:2:2: error: Type mismatch\n  h.left\nhas type\n  p\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "b2daa9c949ca91990efff3b499a8d638dcb19957b93151bfb8f54ce7c36950d5": {
+    "elapsed_ms": 326.90159600042534,
+    "error": "/tmp/mini_elf_lean_8v64puc2.lean:3:0: error: unexpected end of input; expected ']'\n/tmp/mini_elf_lean_8v64puc2.lean:2:23: error: Application type mismatch: The argument\n  h\nhas type\n  (b && true) = true\nof sort `Prop` but is expected to have type\n  Bool\nof sort `Type` in the application\n  Bool.and_true h",
+    "success": false
+  },
+  "b338c32b800b0c11eaca951f44d33a9b8e57cbf90d1c7b3d53a7fd7df194faa8": {
+    "elapsed_ms": 443.0558780004503,
+    "error": "/tmp/mini_elf_lean_1dxlsqhg.lean:2:2: error: Tactic `apply` failed: could not unify the conclusion of `f`\n  \u03b2\nwith the goal\n  \u03b3\n\nNote: The full type of `f` is\n  \u03b1 \u2192 \u03b2\n\n\u03b1 \u03b2 \u03b3 : Type\nf : \u03b1 \u2192 \u03b2\ng : \u03b2 \u2192 \u03b3\na : \u03b1\n\u22a2 \u03b3",
+    "success": false
+  },
+  "b432fb8bf388f1ee8fec63739af31e94538a82bbf016fea51b840b3f94154b68": {
+    "elapsed_ms": 369.7676390002016,
+    "error": "/tmp/mini_elf_lean_e3l06lno.lean:4:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_e3l06lno.lean:3:2: error: Missing alternative name: Expected `refl`\n/tmp/mini_elf_lean_e3l06lno.lean:2:2: error: Alternative `refl` has not been provided",
+    "success": false
+  },
+  "b4f56a19b6de6619ec98ce240e46526a4f02d897eec55daad9b579d1b8ae67ca": {
+    "elapsed_ms": 492.9306819994963,
+    "error": "/tmp/mini_elf_lean_wumvpgix.lean:2:17: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "b51d5d6d7fcbbe5b727041ec86bb83527b9dccf3a9999065565c76c61396ffe2": {
+    "elapsed_ms": 353.07172700049705,
+    "error": "/tmp/mini_elf_lean_fourhryh.lean:3:3: error: unexpected token '\u27e8'; expected '_' or identifier",
+    "success": false
+  },
+  "b625056ee3c6e15ac491e00ec7e3b810f61e2b3c38f82b88051631d5548e6b0a": {
+    "elapsed_ms": 328.2725939998272,
+    "error": "/tmp/mini_elf_lean_8leubtvb.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `y`\n/tmp/mini_elf_lean_8leubtvb.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.4\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.4\n\u22a2 (!!decide (b = b)) = true",
+    "success": false
+  },
+  "b75e1adb6a6ac58e06ed7962ecbfc531f60a44a04573310f9d761cc9a51e40fb": {
+    "elapsed_ms": 350.5775360008556,
+    "error": "/tmp/mini_elf_lean_81v2s_2f.lean:3:27: error(lean.unknownIdentifier): Unknown identifier `hq`\n/tmp/mini_elf_lean_81v2s_2f.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "b781174b2f5020b8544547526447ec175508e54d2c61adce1169af53e20694ba": {
+    "elapsed_ms": 316.0652209999171,
+    "error": "/tmp/mini_elf_lean_68u9659d.lean:2:2: error: Tactic `assumption` failed\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true",
+    "success": false
+  },
+  "b7cd71e52d83eae08d88b2af4b1491f83f40fc7ff23f75861215f21c59be7ec9": {
+    "elapsed_ms": 383.2799480005633,
+    "error": "/tmp/mini_elf_lean_dv0_s66d.lean:2:2: error: Tactic `assumption` failed\n\nb : Bool\nh : (b && true) = true\n\u22a2 b = true\n/tmp/mini_elf_lean_dv0_s66d.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "b8562264afada848e15685f95e11730ca457f5cfb5c61a692d295631cf2fbc35": {
+    "elapsed_ms": 498.51709399990796,
+    "error": null,
+    "success": true
+  },
+  "b8592fea2b2b70b9cbc52d9aedc66c3fc1747d946e923abacf39efe00737be7f": {
+    "elapsed_ms": 350.6364439999743,
+    "error": "/tmp/mini_elf_lean_y_48yy0r.lean:4:0: error: unexpected end of input; expected ']'",
+    "success": false
+  },
+  "b8984344e8d5a159989b9506125ce86012c05cd6388268c02b8a04bf0665d76c": {
+    "elapsed_ms": 350.0796859998445,
+    "error": "/tmp/mini_elf_lean_wnr6b0xh.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  7\n\nn : Nat\n\u22a2 n = 7",
+    "success": false
+  },
+  "b8fb31c2f1a50c088442292041e3feff8dd3779c0e998e56d7aebc672dabc3a8": {
+    "elapsed_ms": 307.57532299958257,
+    "error": "/tmp/mini_elf_lean_osse9j54.lean:2:8: error: Function expected at\n  Eq.refl ?m.7\nbut this term has type\n  ?m.7 = ?m.7\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "ba69fcadba8a84c291880e6c05fd3c1ce3faaa1718a1e85fed2ef05530f871d5": {
+    "elapsed_ms": 639.4134499996653,
+    "error": "/tmp/mini_elf_lean_72tham6m.lean:2:2: error: Type mismatch\n  fun hp => absurd\nhas type\n  (hp : ?m.2) \u2192 ?m.5 hp \u2192 \u00ac?m.5 hp \u2192 ?m.6 hp\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "bacdde348ec93d77751738d8965d25343690c87266727f1492576ead686e3969": {
+    "elapsed_ms": 303.0155529995682,
+    "error": "/tmp/mini_elf_lean_9jjxxi2v.lean:3:10: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "bb9ab377718bc2054870889ce77560db55ee8dcd997da94df51f7823ee356a99": {
+    "elapsed_ms": 367.0071979995555,
+    "error": "/tmp/mini_elf_lean_p8rv_ewb.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_p8rv_ewb.lean:2:32: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2192 False\nbut is expected to have type\n  \u00acFalse\nin the application\n  absurd (h hp) h",
+    "success": false
+  },
+  "bbb99ce25ffdc859493be561bd5947a60978eb7ebae8e031cecb8b8d1058fa05": {
+    "elapsed_ms": 321.2877430005392,
+    "error": "/tmp/mini_elf_lean_fawg6jqy.lean:2:8: error: Function expected at\n  Eq.refl ?m.13\nbut this term has type\n  ?m.13 = ?m.13\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "bbd925234a432c4e0cf8530395e26f24c90d8c8cbd3436d4384ac5bc03f4a1d1": {
+    "elapsed_ms": 339.14796999943064,
+    "error": "/tmp/mini_elf_lean_nggdhgp8.lean:2:17: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  ?m.2 \u2192 ?m.3 \u2192 ?m.4\nin the application\n  And.elim hp",
+    "success": false
+  },
+  "bd489f3772a1d1dd0da3ace37214ea41b763045f1b4397ad373c23fdba0bf6c3": {
+    "elapsed_ms": 346.56378499948914,
+    "error": "/tmp/mini_elf_lean_up5pnrm_.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hq`\n/tmp/mini_elf_lean_up5pnrm_.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_up5pnrm_.lean:3:23: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "bd4944b5614eeab0f1e43cd9f22768c4a8cf3d9ea14cb8857801c0ebe4cc9f00": {
+    "elapsed_ms": 421.15904099955515,
+    "error": "/tmp/mini_elf_lean_bpfgc0q6.lean:4:0: error: unexpected end of input",
+    "success": false
+  },
+  "bdaaf98a764b6d4b5edf5f0557eb25fde08d4f6916c4cc1eabcc4f9b0e4cfbd7": {
+    "elapsed_ms": 338.27175199985504,
+    "error": "/tmp/mini_elf_lean_2gewnnvt.lean:2:8: error(lean.unknownIdentifier): Unknown constant `False.hp`",
+    "success": false
+  },
+  "bdf5e88074acc1305dff3fb5ed60f4331b23b8d909ba7c44e2bb61159893695a": {
+    "elapsed_ms": 318.96484899971256,
+    "error": "/tmp/mini_elf_lean_f1tovs8y.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`\n/tmp/mini_elf_lean_f1tovs8y.lean:3:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "be0a52e9445b08d8edbc8816942006c67b934de5affac2704d537ea89b3a7800": {
+    "elapsed_ms": 338.5436970002047,
+    "error": "/tmp/mini_elf_lean_wg39dp5w.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n\nbut is expected to have type\n  p 7\n/tmp/mini_elf_lean_wg39dp5w.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "be0be4e98a27c988fbf2855db0bc371e3589dd40035ff97cad209c05a72c98f5": {
+    "elapsed_ms": 335.1548370001183,
+    "error": "/tmp/mini_elf_lean_5axkpk8d.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `y`\n/tmp/mini_elf_lean_5axkpk8d.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.4\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.4\n\u22a2 (!!decide (b = b)) = true",
+    "success": false
+  },
+  "be15fd595cd913789d7dd9fc9c229788904657bc28cd9a60c397757f035b1c9b": {
+    "elapsed_ms": 334.4569179998871,
+    "error": "/tmp/mini_elf_lean__98lrrf7.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  p \u2228 q \u2192 False\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\np q : Prop\nh : \u00ac(p \u2228 q)\n\u22a2 \u00acp",
+    "success": false
+  },
+  "bf394b0d7fde3590242b9b76bd7659ff849ee52d92d18e75a53ca6953792c6f7": {
+    "elapsed_ms": 303.35279399969295,
+    "error": "/tmp/mini_elf_lean_ml2sei48.lean:2:11: error: unexpected token ','; expected '_' or identifier\n/tmp/mini_elf_lean_ml2sei48.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Exists.intro` has 2 explicit field, but only 1 was provided\n/tmp/mini_elf_lean_ml2sei48.lean:1:34: error: unsolved goals\nn : Nat\n\u22a2 Nat",
+    "success": false
+  },
+  "bf785f9aa209c2f1a18d28442e7606a151b597769b5831c1b87322f4fa4daa50": {
+    "elapsed_ms": 438.20071699974505,
+    "error": "/tmp/mini_elf_lean_qfa4r0pe.lean:1:64: error: unsolved goals\ncase a\np q r : Prop\nh : p \u2192 q \u2192 r\nhq : q\nhp : p\n\u22a2 q",
+    "success": false
+  },
+  "c09b8dd7bc20af40cf26a3af6e91368f5f7a7bf9dc199a7441a0e8a54329336e": {
+    "elapsed_ms": 336.31144799983304,
+    "error": null,
+    "success": true
+  },
+  "c137da93e718aa7f57bfcbc55e2dc8ec06906d02f0434fe2fcd64a4d11e57cbd": {
+    "elapsed_ms": 322.63111999964167,
+    "error": "/tmp/mini_elf_lean_j0oaei51.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.And`",
+    "success": false
+  },
+  "c1933c830181877139ea6228ab8c1fa631e56d88b6a75b557d57f7e0ff39c8ab": {
+    "elapsed_ms": 975.4360599999927,
+    "error": null,
+    "success": true
+  },
+  "c2c4fbc6c7123c865895b03d1971a3a25989bbe70fc176944d9e5abbdc2fe615": {
+    "elapsed_ms": 368.7763879997874,
+    "error": "/tmp/mini_elf_lean_qdy1f9iv.lean:1:45: error: unsolved goals\ncase true\n\u22a2 true = true \u2228 true = false",
+    "success": false
+  },
+  "c35addd0c868a67ac6c1b02057a03fef32231633ce1d527a1ec5dfd16e3305b7": {
+    "elapsed_ms": 358.4374870006286,
+    "error": "/tmp/mini_elf_lean_b207sdnr.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `inl`\n/tmp/mini_elf_lean_b207sdnr.lean:1:44: error: unsolved goals\ncase inr\np q : Prop\nhq : q\n\u22a2 q \u2228 p\n/tmp/mini_elf_lean_b207sdnr.lean:3:15: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "c3d327af805cae958f3f0b350d9aa6b04ad868be357ff6f283743b7bffa3e5d3": {
+    "elapsed_ms": 363.69834700053616,
+    "error": null,
+    "success": true
+  },
+  "c42d3ca2ef0c01ee35d0946dce48d3d2d81dfee48fecf3cc5b41afb724fa67da": {
+    "elapsed_ms": 419.751952000297,
+    "error": "/tmp/mini_elf_lean_mqr_xewr.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "c4c8b8927f54dc5cfbd4d34ad07ae6ca45c84270962b2448bf4cf2678b597a81": {
+    "elapsed_ms": 330.90364300005604,
+    "error": "/tmp/mini_elf_lean_lcap681d.lean:2:17: error: Application type mismatch: The argument\n  Nat\nhas type\n  Type\nbut is expected to have type\n  ?m.4 \u2192 ?m.5\nin the application\n  congrArg Nat",
+    "success": false
+  },
+  "c5451eb708ff73682287b54e605dcd85360efafc417147b963ee591bca7cfb82": {
+    "elapsed_ms": 328.99794800050586,
+    "error": "/tmp/mini_elf_lean_2piyei_h.lean:2:2: error: Type mismatch\n  h\nhas type\n  \u2200 (n : Nat), p n\nbut is expected to have type\n  p 7\n/tmp/mini_elf_lean_2piyei_h.lean:2:10: error: unexpected token 'with'; expected command",
+    "success": false
+  },
+  "c56e0a8d0eb6cbf3bbe21f26636006cfe90e2ad2c54d2ab520ab51b07e15efaa": {
+    "elapsed_ms": 342.5591470004292,
+    "error": "/tmp/mini_elf_lean_0iawu_hh.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_0iawu_hh.lean:2:9: error: invalid binder name `Eq.refl`, it must be atomic",
+    "success": false
+  },
+  "c5ff3aee44b019b9ce28b447f321325bc8878706074895f0992fea862c647052": {
+    "elapsed_ms": 375.6718799995724,
+    "error": "/tmp/mini_elf_lean_n24bxtve.lean:2:2: error: Type mismatch\n  And.intro h\nhas type\n  ?m.3 \u2192 (p \u2227 q) \u2227 ?m.3\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "c686fbcc5f38e09de1caa8fac3c2542a8346c57615997f1b3323e704e7b4be7b": {
+    "elapsed_ms": 340.70638199955283,
+    "error": "/tmp/mini_elf_lean_a6o5bghl.lean:4:2: error: Duplicate alternative name `inl`\n/tmp/mini_elf_lean_a6o5bghl.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "c6d4a42a3d4ce99f0ef12cc53abf11fd3f8182176db45efc21ba6674e68b7a62": {
+    "elapsed_ms": 308.59155600046506,
+    "error": "/tmp/mini_elf_lean_apu_2scc.lean:2:16: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "c82c8b84f94572702edc5b1711d84962042d38f2ca3268ffcf7daccf302ebd5c": {
+    "elapsed_ms": 328.40668500011816,
+    "error": null,
+    "success": true
+  },
+  "c8b11381757c5aed3ee236feeb56c5cf11c1858a542f812344425a73d41a9d20": {
+    "elapsed_ms": 331.3675819999844,
+    "error": null,
+    "success": true
+  },
+  "c9c5d9679ce36ee69a8794012446662d6f2390842c8d822df13b67c4d5082a90": {
+    "elapsed_ms": 414.1454550008348,
+    "error": "/tmp/mini_elf_lean__1ln896f.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "ca7e10df4b6188129de3604392b825815adadd76cc845b6e3c387ee1b8020a4a": {
+    "elapsed_ms": 346.9411260002744,
+    "error": "/tmp/mini_elf_lean_lbweff2j.lean:2:18: error: Type mismatch\n  absurd \u22ef\nhas type\n  \u00ac?m.5 \u2192 ?m.4\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "cae769e21d41525b1baee2b3d837c2f8b0b6b635bca220d5ecc7128839fd529c": {
+    "elapsed_ms": 336.810357000104,
+    "error": null,
+    "success": true
+  },
+  "cb4ec12b3ab3debbb552a55ddcc2c14a1170f5a2422f20ecce35b3b660a1f539": {
+    "elapsed_ms": 428.93823200029146,
+    "error": "/tmp/mini_elf_lean_twln8us4.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `hh`",
+    "success": false
+  },
+  "cb89a27788f2a0c88cd6a5cf497d272ffb3bc67f135e1a9101fb69c861f142f3": {
+    "elapsed_ms": 320.91381900045235,
+    "error": "/tmp/mini_elf_lean_it0d_dd7.lean:2:8: error: Function expected at\n  Eq.refl x\nbut this term has type\n  x = x\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "cc5b70cb6c869a2c531314edcf10f712fbe171d7a2ac3ed452dc9d565d4a9a04": {
+    "elapsed_ms": 308.12653900011355,
+    "error": null,
+    "success": true
+  },
+  "cc98aa925b8a932828bb89275d20b5b5b5ee5d45c1879475a7293c9b08e24fdf": {
+    "elapsed_ms": 1412.0326279999063,
+    "error": "/tmp/mini_elf_lean_fs0c747k.lean:2:16: error: Tactic `rcases` failed: `h : \u2200 (n : Nat), p n` is not an inductive datatype",
+    "success": false
+  },
+  "cca2a0ff36cbab3a25d94d93c6f94dc777a1d5c5ae1cb64252b3fe4d9b638df7": {
+    "elapsed_ms": 346.86080499977834,
+    "error": "/tmp/mini_elf_lean_5nyc70wb.lean:4:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_5nyc70wb.lean:3:2: error: Missing alternative name: Expected `refl`\n/tmp/mini_elf_lean_5nyc70wb.lean:2:2: error: Alternative `refl` has not been provided",
+    "success": false
+  },
+  "ccce27ce465400cde081fcf9a84ea9ebb5780f8d8e7dcedfb38766cb97bfc6ee": {
+    "elapsed_ms": 371.3245630005986,
+    "error": "/tmp/mini_elf_lean_ch24rt5h.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_ch24rt5h.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "cce0fd20a3399515453e64338d41fe909b719b3f448d5b6244f6ac1a4483e6d6": {
+    "elapsed_ms": 392.96310800000356,
+    "error": null,
+    "success": true
+  },
+  "cd9cc17c6c0fb74a0e33eceb6803603140adc3bf2cb7a7ba55fee754244b8618": {
+    "elapsed_ms": 348.0914830001893,
+    "error": null,
+    "success": true
+  },
+  "cf57c1eacec07591624f54cfb4d494af620733434f7072b56a73663a11b04998": {
+    "elapsed_ms": 298.8418089998959,
+    "error": "/tmp/mini_elf_lean__dfkvgxn.lean:3:12: error: Application type mismatch: The argument\n  hpq\nhas type\n  p n\nbut is expected to have type\n  q n\nin the application\n  Exists.intro n hpq",
+    "success": false
+  },
+  "cfb920fefb14dcd626953d04923ad14adfd6142fdc7a2733e0c315e3f63b2e33": {
+    "elapsed_ms": 371.8149899996206,
+    "error": "/tmp/mini_elf_lean_s3lpsnb_.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "cfbafb7cbffa163e8ff3e40542447d1e3a68847d795f89196bf9032819b78d56": {
+    "elapsed_ms": 324.4973219998428,
+    "error": "/tmp/mini_elf_lean_8e0r1rp6.lean:3:30: error: Application type mismatch: The last\n  hq\nargument has type\n  q\nbut is expected to have type\n  p\nin the application\n  \u27e8hq, hq\u27e9",
+    "success": false
+  },
+  "d060268a1a259af5086cbbb23d4fa6b2d88af7598104759ed9a2ba1275076f53": {
+    "elapsed_ms": 336.78855400012253,
+    "error": "/tmp/mini_elf_lean_6dm_s_fr.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  3",
+    "success": false
+  },
+  "d10561d962a39b44d0306fb7c2227687fd858faafc175efe8b4a226cccd4a64d": {
+    "elapsed_ms": 368.8600049999877,
+    "error": "/tmp/mini_elf_lean__ofajho2.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean__ofajho2.lean:2:23: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "d140460d3804c0cfa394b6007a321853aff5256c715650fb77893852d76e0a45": {
+    "elapsed_ms": 300.02466599944455,
+    "error": "/tmp/mini_elf_lean_xignhig5.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  6\n\nn : Nat\n\u22a2 n = 6",
+    "success": false
+  },
+  "d14e9090b373aa2450408f776ec4a17dcdc64f161351c2200daca20e6f1bb36d": {
+    "elapsed_ms": 364.65675700037536,
+    "error": "/tmp/mini_elf_lean_uybpok4e.lean:2:10: error: Application type mismatch: The argument\n  h hp\nhas type\n  q \u2192 r\nbut is expected to have type\n  p\nin the application\n  h (h hp)",
+    "success": false
+  },
+  "d164f918d817c82316577f16dd9755fc52cda4830ac466cc871b27a1e0e18b00": {
+    "elapsed_ms": 426.3964419997137,
+    "error": "/tmp/mini_elf_lean_74wnc1f7.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hp",
+    "success": false
+  },
+  "d17b94341f3c701395cc3b2c24c102b0e7d8c923ee59e94086b3ec65e2fd268a": {
+    "elapsed_ms": 363.0795870003567,
+    "error": "/tmp/mini_elf_lean_9i4l9l58.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_9i4l9l58.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "d1ed1afc5471b8d7b23a0bc5edb94a516156357f64ed4f92a45a703919f73615": {
+    "elapsed_ms": 425.80358299983345,
+    "error": null,
+    "success": true
+  },
+  "d24996427a16b2675a5bcc854d190f04b7ff63a745347cebd22cfa0bdcb66466": {
+    "elapsed_ms": 334.6997469998314,
+    "error": null,
+    "success": true
+  },
+  "d28c86a5a2f1ba9c497e8fd8bf58ca78cea932ce88d763eed1fd5fb21022cade": {
+    "elapsed_ms": 358.5674179994385,
+    "error": "/tmp/mini_elf_lean_x8w66zu0.lean:2:12: error: don't know how to synthesize placeholder\ncontext:\nn m k : Nat\nh : n = m\n\u22a2 n + k = n + k\n/tmp/mini_elf_lean_x8w66zu0.lean:1:53: error: unsolved goals\nn m k : Nat\nh : n = m\n\u22a2 n + k = m + k",
+    "success": false
+  },
+  "d39b4b907d90d4bd9a9e309ee5c9bcd735d623490e691000c07df9154fecbb13": {
+    "elapsed_ms": 419.9547600001097,
+    "error": "/tmp/mini_elf_lean_4rj1e2w2.lean:2:2: error: Type mismatch\n  Eq.refl\nhas type\n  \u2200 (a : ?m.3), a = a\nbut is expected to have type\n  n = n",
+    "success": false
+  },
+  "d4e89d79b262fc8e17002e076db37c7fc36965efee7e825f1de8ca2d528b70e4": {
+    "elapsed_ms": 423.04289799994876,
+    "error": "/tmp/mini_elf_lean_z1rwu8w6.lean:3:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  hpq\nhas type `p n` which does not have the necessary form.",
+    "success": false
+  },
+  "d50bd34ca3d16841a13a2e5280efee3daceed4d3980c3042b1a40fee9a23ed69": {
+    "elapsed_ms": 348.6824190003972,
+    "error": "/tmp/mini_elf_lean_1sfxapy8.lean:2:2: error: Type mismatch\n  Eq.refl x\nhas type\n  x = x\nbut is expected to have type\n  [x].length = 1",
+    "success": false
+  },
+  "d554a06b388fc9b79d816070a3cbfaa5f3554668beeee36f7df875b92901c964": {
+    "elapsed_ms": 328.6932729997716,
+    "error": "/tmp/mini_elf_lean_g3wqxib7.lean:2:2: error: Type mismatch\n  rfl\nhas type\n  ?m.10 = ?m.10\nbut is expected to have type\n  0 + n = n",
+    "success": false
+  },
+  "d55b8b54402575e674302961d161c3a674cf6792c4976fb554b4b9278ca09387": {
+    "elapsed_ms": 483.5547279999446,
+    "error": "/tmp/mini_elf_lean_ulbjeki3.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean_ulbjeki3.lean:1:64: error: unsolved goals\ncase a\np q r : Prop\nh : p \u2192 q \u2192 r\nhq : q\nhp : p\n\u22a2 q",
+    "success": false
+  },
+  "d5655a2443ea8cd450d835a2444ddf00b809b864f06dfde6f3005e2009482ae7": {
+    "elapsed_ms": 419.8251359994174,
+    "error": "/tmp/mini_elf_lean_zt8f4ov5.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "d78297c29d3cdd3198179ea1d14b81086346fd8f76ea4745834d9bc04bddc470": {
+    "elapsed_ms": 342.6308300004166,
+    "error": "/tmp/mini_elf_lean_mqm6n38l.lean:3:20: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hq\n/tmp/mini_elf_lean_mqm6n38l.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "d8a813559bbc90e7c19fdde44731ee369f6b7670d1444025d3ca8b3a3867aa34": {
+    "elapsed_ms": 327.9539479999585,
+    "error": "/tmp/mini_elf_lean_ypaxegda.lean:3:8: error: Function expected at\n  h\nbut this term has type\n  p 3\n\nNote: Expected a function because this term is being applied to the argument\n  \u27e8ha, hb\u27e9",
+    "success": false
+  },
+  "d8b0ad760592a2d8c02ae3bc950e7dc4b0054b98c2ccd102c5190ddd1249ef1d": {
+    "elapsed_ms": 322.36792700041406,
+    "error": "/tmp/mini_elf_lean_ukhijbjt.lean:2:2: error: Type mismatch\n  Eq.trans rfl\nhas type\n  ?m.15 = ?m.13 \u2192 ?m.15 = ?m.13\nbut is expected to have type\n  [] ++ xs = xs",
+    "success": false
+  },
+  "d977b4bfff58ecf130b73a011bff03cfd8c3d6b138caa1ce6e4669abf60ae27c": {
+    "elapsed_ms": 310.9366240005329,
+    "error": "/tmp/mini_elf_lean_dopyzyxj.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `y`\n/tmp/mini_elf_lean_dopyzyxj.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.4\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nb : Bool\nx\u271d : ?m.4\n\u22a2 (!!decide (b = b)) = true",
+    "success": false
+  },
+  "d97a10dfbfc2e01967b9e7e365c197b5061a8b02f54555e0b840e26ce59fa380": {
+    "elapsed_ms": 338.92836199993326,
+    "error": null,
+    "success": true
+  },
+  "d9d7ce9930a100a489c6123c958e8c717648c623fb73a327bb143313e24e15be": {
+    "elapsed_ms": 326.5588160002153,
+    "error": "/tmp/mini_elf_lean_misughvw.lean:2:10: error: Invalid `\u27e8...\u27e9` notation: The expected type `Nat` has more than one constructor\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "da6a739a55adcd2176497d12711a06880b85aade02cbeee4568057362396893d": {
+    "elapsed_ms": 375.44082699969294,
+    "error": null,
+    "success": true
+  },
+  "db5a024c2fe5e466fa227808ee47afa3a20ec2b1c6574d5abe38cc704f6f94e4": {
+    "elapsed_ms": 371.6287300003387,
+    "error": "/tmp/mini_elf_lean_kafryj_d.lean:2:17: error: Application type mismatch: The argument\n  Eq.symm h2\nhas type\n  c = b\nbut is expected to have type\n  b = c\nin the application\n  Eq.trans h1 (Eq.symm h2)",
+    "success": false
+  },
+  "dbccf623fe0997f26dbf9e4bb738c3430ee5ba43ef441c78b5137af4f57fab4f": {
+    "elapsed_ms": 337.8115550003713,
+    "error": "/tmp/mini_elf_lean_3p45c6xe.lean:4:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_3p45c6xe.lean:3:2: error: Missing alternative name: Expected `refl`\n/tmp/mini_elf_lean_3p45c6xe.lean:2:2: error: Alternative `refl` has not been provided",
+    "success": false
+  },
+  "dc3ba1eeeab0eb236da58dc675fa2764a728182878ae3f8a4146e1bd9a4fd084": {
+    "elapsed_ms": 381.83937999929185,
+    "error": null,
+    "success": true
+  },
+  "dccf04b7ec1bb473305ddc3cb8ec26dc9f6bb9068003330641e9f180746a2197": {
+    "elapsed_ms": 583.6185690000093,
+    "error": "/tmp/mini_elf_lean_utela39y.lean:2:8: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hp",
+    "success": false
+  },
+  "dcdb06e958115885bd2db71c1dea5ce6b4fd149ac4563213838d079d6b0264c1": {
+    "elapsed_ms": 349.91660099967703,
+    "error": "/tmp/mini_elf_lean_pw2vazqb.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "dda5bdcfa1696938ad4b2fe2e59a086d77c0a9730c590e5ce0a7c5ff08b4052e": {
+    "elapsed_ms": 424.3987700001526,
+    "error": null,
+    "success": true
+  },
+  "dead15a0ee42cbf8a558469fd19f168f5df334e6d85ba29e0b8102069747aee5": {
+    "elapsed_ms": 352.47194600015064,
+    "error": "/tmp/mini_elf_lean_tqv9pfe4.lean:3:2: error: Type mismatch\n  a\nhas type\n  \u03b1\nbut is expected to have type\n  \u03b2",
+    "success": false
+  },
+  "df089f7722ecb481cfb932affeb12937d619b15824beef9a457621861f11ffea": {
+    "elapsed_ms": 635.8532099993681,
+    "error": "/tmp/mini_elf_lean_2vo4nr06.lean:2:21: error: Application type mismatch: The last\n  hp\nargument has type\n  p\nbut is expected to have type\n  q\nin the application\n  \u27e8hp, hp\u27e9",
+    "success": false
+  },
+  "df0be1f6aac21e17f418a87f7898bf501e43e92e6a159226c4fd7f0f79c07ee6": {
+    "elapsed_ms": 322.99963799960096,
+    "error": "/tmp/mini_elf_lean_so5trlb7.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`\n/tmp/mini_elf_lean_so5trlb7.lean:3:2: error: Tactic `rfl` failed: Expected the goal to be a binary relation\n\nHint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`\n\np : Nat \u2192 Prop\nh : p 3\n\u22a2 p sorry",
+    "success": false
+  },
+  "dfedf5c30d8605bd0b068b439ffc1cd0e7c6ebaf788e97574a1d2c7a02e6682f": {
+    "elapsed_ms": 500.1937780002663,
+    "error": null,
+    "success": true
+  },
+  "e024b803507478272ee660976635311215a187e8f15d5b8fd3591d655aed94ee": {
+    "elapsed_ms": 3454.798591999861,
+    "error": "/tmp/mini_elf_lean_vgs1joc8.lean:3:2: error: Type mismatch\n  hq\nhas type\n  q\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "e0b8bdd1baa7378ee47115a5b1af93820c6c05b500df98d3e9398764e287c6d6": {
+    "elapsed_ms": 325.49097100036306,
+    "error": "/tmp/mini_elf_lean_s8qj588f.lean:5:0: error: unexpected end of input",
+    "success": false
+  },
+  "e1d9154e42294be06f1c54611c43e479d912ac1a37a82ec34b3f5748a369d2f1": {
+    "elapsed_ms": 415.59261600013997,
+    "error": null,
+    "success": true
+  },
+  "e294459ce708b590b993131a8211590b4cb3a80e76c2be28bf77cf4f19d2ac76": {
+    "elapsed_ms": 354.0689379997275,
+    "error": "/tmp/mini_elf_lean_eluz7nxb.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  q\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "e38cd250510e34ee14e2f7e7cb51e2d8db278ad4db853738125d8f308bf365fd": {
+    "elapsed_ms": 311.730496000564,
+    "error": "/tmp/mini_elf_lean_3e4t09d9.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  4\n\nn : Nat\n\u22a2 n = 4",
+    "success": false
+  },
+  "e3d4ba686dc607467cafd346be0e06d48d30921f8410218f056c17514daab09c": {
+    "elapsed_ms": 361.20168800061947,
+    "error": "/tmp/mini_elf_lean_8ssmx9bh.lean:2:12: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  q\nin the application\n  hqr hp",
+    "success": false
+  },
+  "e44484bfd4d2c5411fb5b427c88aedd37b5aa39c4975a2ce52d053244a8f98f2": {
+    "elapsed_ms": 363.6320589994284,
+    "error": "/tmp/mini_elf_lean_5bywxrqc.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_5bywxrqc.lean:2:9: error: invalid binder name `Eq.refl`, it must be atomic",
+    "success": false
+  },
+  "e5117cedd6f23016d930b1d34179260dd870b7b2d94b8752f1f3bf643826a10e": {
+    "elapsed_ms": 361.55785100072535,
+    "error": "/tmp/mini_elf_lean_h7cuc_mv.lean:2:8: error: Function expected at\n  Eq.refl x\nbut this term has type\n  x = x\n\nNote: Expected a function because this term is being applied to the argument\n  a",
+    "success": false
+  },
+  "e5492b02fc680d0c45b2ad5f53cc9effa06665c53a00730da42c24d8f0c6151e": {
+    "elapsed_ms": 363.0789730000288,
+    "error": null,
+    "success": true
+  },
+  "e5761fae671f2a8e573294e8af143c902bcdf9378fa7ab39588e83e9d33db043": {
+    "elapsed_ms": 457.2053629999573,
+    "error": "/tmp/mini_elf_lean_mq57qaty.lean:2:19: error: Type mismatch\n  absurd hp\nhas type\n  \u00acp \u2192 ?m.4\nbut is expected to have type\n  False",
+    "success": false
+  },
+  "e58c366f92a500d1794c58db0b135395405a3361b421e61117b05f6b798ebbd3": {
+    "elapsed_ms": 371.0246829996322,
+    "error": null,
+    "success": true
+  },
+  "e5d7904bd83de558847a323e0ec3040d57a108aa77888bce1b4d6fc8d27dcbba": {
+    "elapsed_ms": 311.6590230001748,
+    "error": "/tmp/mini_elf_lean_yettd6f9.lean:2:2: error: Type mismatch\n  Eq.trans rfl\nhas type\n  ?m.15 = ?m.13 \u2192 ?m.15 = ?m.13\nbut is expected to have type\n  xs ++ [] = xs",
+    "success": false
+  },
+  "e6cc57903a2e8b859fb7ece339d1832c53de8beda2c925c8f84e17396d19de5a": {
+    "elapsed_ms": 320.9402249995037,
+    "error": "/tmp/mini_elf_lean_fu68m8wf.lean:3:12: error(lean.unknownIdentifier): Unknown identifier `hn`",
+    "success": false
+  },
+  "e82e08892d1226766a3bb645b901d9bd6d791e617026e8cdb9dafadaa35c63d8": {
+    "elapsed_ms": 398.0972589997691,
+    "error": "/tmp/mini_elf_lean_ba_jvd4a.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.hp`",
+    "success": false
+  },
+  "e848eca4727d90f7f7351a8d67fec040a0c4e76b4a56e8a8b0162e9d4317ff25": {
+    "elapsed_ms": 356.33600399978604,
+    "error": "/tmp/mini_elf_lean_fnc4x3p_.lean:2:2: error: Type mismatch\n  Eq.trans rfl\nhas type\n  ?m.11 = ?m.9 \u2192 ?m.11 = ?m.9\nbut is expected to have type\n  (x :: xs).head? = some x",
+    "success": false
+  },
+  "e928c9b91635245197cd5b934b5bec944f54162b59c888d045c88de3fa29a280": {
+    "elapsed_ms": 351.05168000063713,
+    "error": "/tmp/mini_elf_lean_kxc7h6qf.lean:2:2: error: Tactic `rfl` failed: The left-hand side\n  0 + n\nis not definitionally equal to the right-hand side\n  n\n\nn : Nat\n\u22a2 0 + n = n",
+    "success": false
+  },
+  "ea742bdd35aa9c81c7609a3f62b62db9e0498a4fdad3dd639f2bd27f3b5cc902": {
+    "elapsed_ms": 415.7511169996724,
+    "error": "/tmp/mini_elf_lean_903kbocz.lean:2:10: error: Application type mismatch: The argument\n  f a\nhas type\n  \u03b2\nbut is expected to have type\n  \u03b1\nin the application\n  f (f a)",
+    "success": false
+  },
+  "ea9666df04fcfe06dc531d90ac841ad4529ccbaace18bd4a57cf298a5d68cec8": {
+    "elapsed_ms": 329.3895020005948,
+    "error": "/tmp/mini_elf_lean_l841mj4j.lean:2:2: error: Type mismatch\n  Eq.refl rfl\nhas type\n  Eq.{0} \u22ef \u22ef\nbut is expected to have type\n  Eq.{1} (x :: xs).length (xs.length + 1)",
+    "success": false
+  },
+  "ebed2bda558fbfa4ed95e5e2ebe5715fb010a335c1be3191322802c8d0f84362": {
+    "elapsed_ms": 505.62729200009926,
+    "error": "/tmp/mini_elf_lean__c06i54r.lean:4:0: error: unexpected end of input",
+    "success": false
+  },
+  "ebf971f422eb08f35cc266d08af684587685efa22e8e67795a0e8345b25a0214": {
+    "elapsed_ms": 372.9697100006888,
+    "error": "/tmp/mini_elf_lean_3j7f451x.lean:3:30: error(lean.unknownIdentifier): Unknown identifier `hx`\n/tmp/mini_elf_lean_3j7f451x.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "ecdf3cf37c7c57916834291f9a1a80fcc5a8453cc657cf5fd34d73d9329addcb": {
+    "elapsed_ms": 322.679994000282,
+    "error": "/tmp/mini_elf_lean_lbl8ns98.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "edfed65e08d372005cb37c8e20bf1e577625df9dd4266c7df51813c0f87ba703": {
+    "elapsed_ms": 337.74626499962324,
+    "error": null,
+    "success": true
+  },
+  "ee5cabf8b1121949955da61988e84eb7857889b9d26f051ef4175a49246a593b": {
+    "elapsed_ms": 386.33437499993306,
+    "error": "/tmp/mini_elf_lean_g30oe1_a.lean:3:0: error: unexpected end of input",
+    "success": false
+  },
+  "eefc511483e14f4196bb9983458e69f47ed19d5f180a82443f27e203a378f1e5": {
+    "elapsed_ms": 366.33460499979265,
+    "error": "/tmp/mini_elf_lean_p2_stskq.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_p2_stskq.lean:2:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `q` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "ef12e564ffab91513999e098ffdf4db71a5e3144a06446c591bcbf1900a0cf11": {
+    "elapsed_ms": 351.6344250001566,
+    "error": "/tmp/mini_elf_lean_wu622a3v.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_wu622a3v.lean:4:2: error: No goals to be solved",
+    "success": false
+  },
+  "ef3c34d47e5a3fc2117f4c1f178324630d9338eaf15e1c81feb517a34c89e405": {
+    "elapsed_ms": 335.37983699989127,
+    "error": "/tmp/mini_elf_lean_a0eknmi2.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  n\nis not definitionally equal to the right-hand side\n  0\n\nn : Nat\n\u22a2 n = 0",
+    "success": false
+  },
+  "ef7c3d930e445ceb002e933f832a828a590d53d1aac4904261f0b6063cd596d0": {
+    "elapsed_ms": 363.34859900034644,
+    "error": "/tmp/mini_elf_lean_6nbgo1t8.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  8",
+    "success": false
+  },
+  "efa43b50329a9d88d25296995fa43ea4942c16f78fbe1104564a0eeb9407ef6a": {
+    "elapsed_ms": 346.3011000003462,
+    "error": "/tmp/mini_elf_lean_ngkkfzjr.lean:4:2: error: Type mismatch\n  hp\nhas type\n  p\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "f018805b4d14a46a7eb5c82d9f4a95c1b3b48ef3b774bd85e7607c42c85877b1": {
+    "elapsed_ms": 332.4751650006874,
+    "error": "/tmp/mini_elf_lean_2b95zeji.lean:3:0: error: unexpected end of input\n/tmp/mini_elf_lean_2b95zeji.lean:1:53: error: unsolved goals\ncase refl\nn : Nat\n\u22a2 n = n",
+    "success": false
+  },
+  "f0939130172f08f09bdeea51450070010c1d16cf9a83f8517853e7899ea63d8f": {
+    "elapsed_ms": 333.12398700036283,
+    "error": "/tmp/mini_elf_lean_h3w6cq3w.lean:3:17: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.32 = ?m.32\nbut is expected to have type\n  false = true\nin the application\n  Or.inl rfl\n/tmp/mini_elf_lean_h3w6cq3w.lean:1:45: error: unsolved goals\ncase true\n\u22a2 true = true \u2228 true = false",
+    "success": false
+  },
+  "f1c1185c07e04f751fbd77f3948c5b0ecbd7f842f8d7099476bf515663fdff63": {
+    "elapsed_ms": 340.9996840000531,
+    "error": "/tmp/mini_elf_lean_6nz8cvnm.lean:5:0: error: unexpected end of input; expected '_' or identifier\n/tmp/mini_elf_lean_6nz8cvnm.lean:4:2: error: Missing alternative name: Expected `inr`\n/tmp/mini_elf_lean_6nz8cvnm.lean:3:20: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean_6nz8cvnm.lean:2:2: error: Alternative `inr` has not been provided",
+    "success": false
+  },
+  "f250ffd729a0e03096083839116861c66750cced020513786ec77aec974954e8": {
+    "elapsed_ms": 364.3469670005288,
+    "error": "/tmp/mini_elf_lean_p9f4gjjt.lean:3:0: error: unexpected end of input\n/tmp/mini_elf_lean_p9f4gjjt.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `x`",
+    "success": false
+  },
+  "f27b2c67dde263d12cbd4cb31a652cb2d03e100a438409d0f2e08c54249e2e4f": {
+    "elapsed_ms": 334.85900000050606,
+    "error": "/tmp/mini_elf_lean_ekz7ea31.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_ekz7ea31.lean:4:2: error: No goals to be solved",
+    "success": false
+  },
+  "f355d6acff9411f5ee31f983580a590f27b95e55ca0c436ca8a239fd464a34ae": {
+    "elapsed_ms": 348.4528139997565,
+    "error": "/tmp/mini_elf_lean_v1w_rpap.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `b`\n/tmp/mini_elf_lean_v1w_rpap.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type\n  ?m.9\n\nExplanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.\n\nn : Nat\nx\u271d : ?m.9\n\u22a2 0 + n = n",
+    "success": false
+  },
+  "f3a0d3b361a72b80ce36ee705fa07062d59a8e81ea7f6a04190b99cb2b091f34": {
+    "elapsed_ms": 377.868483000384,
+    "error": null,
+    "success": true
+  },
+  "f4075d255155747d3ce0c802592d157c45f619f2f054880819479c4f0e8104fb": {
+    "elapsed_ms": 316.0128560002704,
+    "error": "/tmp/mini_elf_lean_0sfzh9vu.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_0sfzh9vu.lean:2:33: error: Application type mismatch: The last\n  h2\nargument has type\n  b = c\nbut is expected to have type\n  c = c\nin the application\n  Eq.trans h2 h2",
+    "success": false
+  },
+  "f460b0508d6cdc04b3ea0d83d171d8c0dd05c9bb5598e1bc2e588c8387e46425": {
+    "elapsed_ms": 470.75395499996375,
+    "error": "/tmp/mini_elf_lean_htppkt39.lean:3:23: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "f4ec419db443c6e8ee4f04dcaaa44d763a6735914697c1568a53ffc9f4b928ee": {
+    "elapsed_ms": 348.7391259996002,
+    "error": "/tmp/mini_elf_lean_1agfxdo6.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_1agfxdo6.lean:2:8: error: Function expected at\n  h.right\nbut this term has type\n  q \u2227 r\n\nNote: Expected a function because this term is being applied to the argument\n  failed to pretty print term (use 'set_option pp.rawOnError true' for raw representation)",
+    "success": false
+  },
+  "f62efbc2341dc8c01d7bb6f1b89bbdc85fd69cbc8360662693ee90ec48ec45d7": {
+    "elapsed_ms": 346.45902599913825,
+    "error": "/tmp/mini_elf_lean_esa4wqyx.lean:3:26: error: Application type mismatch: The argument\n  hp\nhas type\n  p\nbut is expected to have type\n  q\nin the application\n  And.intro hp",
+    "success": false
+  },
+  "f68d5836ac1521f1570e3814efe12d029abfba2ae15085a6e1d0c9ade1f9bff6": {
+    "elapsed_ms": 313.25859900061914,
+    "error": null,
+    "success": true
+  },
+  "f70424f86e4d73cc443e925c5cf34c0444cc24d5a2004d35153210dd2d5bb2dd": {
+    "elapsed_ms": 353.13321000012365,
+    "error": "/tmp/mini_elf_lean_rd0_ptl2.lean:2:2: error: Tactic `apply` failed: could not unify the conclusion of `hpq`\n  q\nwith the goal\n  r\n\nNote: The full type of `hpq` is\n  p \u2192 q\n\np q r : Prop\nhpq : p \u2192 q\nhqr : q \u2192 r\nhp : p\n\u22a2 r",
+    "success": false
+  },
+  "f7b7660b5dd194311e29f4c9a66b514d25c31aee718c67d4f8fdaebd6b6241d1": {
+    "elapsed_ms": 376.35369899999205,
+    "error": null,
+    "success": true
+  },
+  "f94848a72f2786543e265cda3ce7ac13cf5a0c26e2cc36985e4bb0081104bd3d": {
+    "elapsed_ms": 325.0493089999509,
+    "error": null,
+    "success": true
+  },
+  "f9709cb5416ff97dcf619c83a10360827bc8c60e895c40849f4bd45b66e2b23e": {
+    "elapsed_ms": 331.3073050003368,
+    "error": "/tmp/mini_elf_lean_ay9rjja0.lean:2:2: error: Type mismatch\n  h.left\nhas type\n  p\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "faebf20952e9d22c8179060b6f9b629240084dbd352f08b51edb14317ef044d8": {
+    "elapsed_ms": 354.2222949999996,
+    "error": "/tmp/mini_elf_lean_794gzknp.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_794gzknp.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "fc29c4aedac8c7df7a1e53f499302cdb853157081a23fe207c67323e8db7abf9": {
+    "elapsed_ms": 311.15397099983966,
+    "error": "/tmp/mini_elf_lean_k3b95twp.lean:2:8: error: Function expected at\n  h\nbut this term has type\n  n = m\n\nNote: Expected a function because this term is being applied to the argument\n  8",
+    "success": false
+  },
+  "fcf5dc7ecc24e4485eb369ec154840a85bc897c1d65f58d000a1413563503c76": {
+    "elapsed_ms": 612.867331000416,
+    "error": "/tmp/mini_elf_lean_1pdpz84p.lean:2:2: error: Type mismatch\n  hpq hp\nhas type\n  q\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "fcf78a31b5cf7724e993eb58e0c7b0af206098f35f2b1850b8b7a9fb19c0a652": {
+    "elapsed_ms": 335.29099299994414,
+    "error": "/tmp/mini_elf_lean_iz8szp_3.lean:2:8: error: Invalid projection: Projections cannot be used on functions, and\n  And\nhas function type `Prop \u2192 Prop \u2192 Prop`",
+    "success": false
+  },
+  "fd2cccb3c3e9558d40e487d4e698f2cbbaf5a9d16927ebfc17f9907c80331d21": {
+    "elapsed_ms": 436.6507630002161,
+    "error": null,
+    "success": true
+  },
+  "fdb198faefd8a64eb29f4df2919c2fd9639d2acb93fe6bd78d2dc2caff3be8f7": {
+    "elapsed_ms": 334.2896650001421,
+    "error": null,
+    "success": true
+  },
+  "fdd48fe3f8027fd2d2498cefeda0f3cb770c7807faa88f75c2f88415f5176a79": {
+    "elapsed_ms": 343.57668200027547,
+    "error": "/tmp/mini_elf_lean_71ikm_m6.lean:2:16: error: Tactic `rcases` failed: `h : \u2200 (n : Nat), p n` is not an inductive datatype",
+    "success": false
+  },
+  "ffaeda5b6c498ae9388f937b5b199cebc79296bb44ad4df62bae44a884a65c3f": {
+    "elapsed_ms": 500.6181540002217,
+    "error": "/tmp/mini_elf_lean_ljf3ikq0.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  }
+}

@@ -1,0 +1,1316 @@
+{
+  "families": {
+    "forall_inst": {
+      "rows": [
+        {
+          "theorem_name": "forall_inst_13_6",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 9,
+            "rule": 0,
+            "learned": 9,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 13",
+            "rule": "exact h 13",
+            "learned": "exact h 13",
+            "policy": "exact h 13"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "forall_inst_3_0",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 9,
+            "rule": 0,
+            "learned": 9,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 3",
+            "rule": "exact h 3",
+            "learned": "exact h 3",
+            "policy": "exact h 3"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "forall_inst_5_2",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 2,
+            "rule": 0,
+            "learned": 2,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 5",
+            "rule": "exact h 5",
+            "learned": "exact h 5",
+            "policy": "exact h 5"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "forall_inst_7_0",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 4,
+            "rule": 0,
+            "learned": 4,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 7",
+            "rule": "exact h 7",
+            "learned": "exact h 7",
+            "policy": "exact h 7"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "forall_inst_9_4",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 9,
+            "rule": 0,
+            "learned": 9,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 9",
+            "rule": "exact h 9",
+            "learned": "exact h 9",
+            "policy": "exact h 9"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "forall_inst_var_k",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 9,
+            "rule": 0,
+            "learned": 9,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 8",
+            "rule": "exact h 8",
+            "learned": "exact h 8",
+            "policy": "exact h 8"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "forall_inst_var_m",
+          "family": "forall_inst",
+          "required_operation": "instantiate_forall",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 9,
+            "rule": 0,
+            "learned": 9,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact h 8",
+            "rule": "exact h 8",
+            "learned": "exact h 8",
+            "policy": "exact h 8"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        }
+      ],
+      "summary": {
+        "n_test_rows": 7,
+        "pass@5_ok": 7,
+        "rank_bound_top5_to_top10": 0,
+        "corpus_shape_bound_no_top10": 0
+      }
+    },
+    "rewrite_succ": {
+      "rows": [
+        {
+          "theorem_name": "rewrite_succ_ab",
+          "family": "rewrite_succ",
+          "required_operation": "rewrite",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 1,
+            "rule": 0,
+            "learned": 2,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "rw [h]",
+            "rule": "rw [h]",
+            "learned": "rw [h]",
+            "policy": "rw [h]"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "rewrite_succ_ij",
+          "family": "rewrite_succ",
+          "required_operation": "rewrite",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 2,
+            "rule": 0,
+            "learned": 2,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "rw [h]",
+            "rule": "rw [h]",
+            "learned": "rw [h]",
+            "policy": "rw [h]"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "rewrite_succ_kl",
+          "family": "rewrite_succ",
+          "required_operation": "rewrite",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 1,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "rw [h]",
+            "rule": "rw [h]",
+            "learned": "rw [h]",
+            "policy": "rw [h]"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "rewrite_succ_nm",
+          "family": "rewrite_succ",
+          "required_operation": "rewrite",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 1,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "rw [h]",
+            "rule": "rw [h]",
+            "learned": "rw [h]",
+            "policy": "rw [h]"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "rewrite_succ_xy",
+          "family": "rewrite_succ",
+          "required_operation": "rewrite",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 1,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "rw [h]",
+            "rule": "rw [h]",
+            "learned": "rw [h]",
+            "policy": "rw [h]"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        }
+      ],
+      "summary": {
+        "n_test_rows": 5,
+        "pass@5_ok": 5,
+        "rank_bound_top5_to_top10": 0,
+        "corpus_shape_bound_no_top10": 0
+      }
+    },
+    "neg_exfalso": {
+      "rows": [
+        {
+          "theorem_name": "neg_exfalso_ab",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact absurd hp hnp",
+            "rule": "exact absurd hp hnp",
+            "learned": "exact absurd hp hnp",
+            "policy": "exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_exfalso_ac",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact absurd hp hnp",
+            "rule": "exact absurd hp hnp",
+            "learned": "exact absurd hp hnp",
+            "policy": "exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_exfalso_arrow_ab",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "corpus_shape_bound_no_top10",
+          "first_verified_rank_under": {
+            "raw": null,
+            "rule": null,
+            "learned": null,
+            "policy": null
+          },
+          "candidates_at_first_verified": {
+            "raw": null,
+            "rule": null,
+            "learned": null,
+            "policy": null
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            }
+          },
+          "sibling_shape_in_train": null
+        },
+        {
+          "theorem_name": "neg_exfalso_arrow_pq",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "corpus_shape_bound_no_top10",
+          "first_verified_rank_under": {
+            "raw": null,
+            "rule": null,
+            "learned": null,
+            "policy": null
+          },
+          "candidates_at_first_verified": {
+            "raw": null,
+            "rule": null,
+            "learned": null,
+            "policy": null
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            }
+          },
+          "sibling_shape_in_train": null
+        },
+        {
+          "theorem_name": "neg_exfalso_arrow_xy",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "corpus_shape_bound_no_top10",
+          "first_verified_rank_under": {
+            "raw": null,
+            "rule": null,
+            "learned": null,
+            "policy": null
+          },
+          "candidates_at_first_verified": {
+            "raw": null,
+            "rule": null,
+            "learned": null,
+            "policy": null
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": false
+            }
+          },
+          "sibling_shape_in_train": null
+        },
+        {
+          "theorem_name": "neg_exfalso_pq",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact absurd hp hnp",
+            "rule": "exact absurd hp hnp",
+            "learned": "exact absurd hp hnp",
+            "policy": "exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_exfalso_pr",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact absurd hp hnp",
+            "rule": "exact absurd hp hnp",
+            "learned": "exact absurd hp hnp",
+            "policy": "exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_exfalso_xy",
+          "family": "neg_exfalso",
+          "required_operation": "contradiction",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 0,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "exact absurd hp hnp",
+            "rule": "exact absurd hp hnp",
+            "learned": "exact absurd hp hnp",
+            "policy": "exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        }
+      ],
+      "summary": {
+        "n_test_rows": 8,
+        "pass@5_ok": 5,
+        "rank_bound_top5_to_top10": 0,
+        "corpus_shape_bound_no_top10": 3
+      }
+    },
+    "exists_reconstruct": {
+      "rows": [
+        {
+          "theorem_name": "exists_reconstruct_100",
+          "family": "exists_reconstruct",
+          "required_operation": "unknown",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 1,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "rule": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "learned": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "policy": "cases h with | intro n hn => exact ⟨n, hn⟩"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_11",
+          "family": "exists_reconstruct",
+          "required_operation": "unknown",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 2,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "rule": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "learned": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "policy": "cases h with | intro n hn => exact ⟨n, hn⟩"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "family": "exists_reconstruct",
+          "required_operation": "unknown",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 2,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "rule": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "learned": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "policy": "cases h with | intro n hn => exact ⟨n, hn⟩"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_3",
+          "family": "exists_reconstruct",
+          "required_operation": "unknown",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 1,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "rule": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "learned": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "policy": "cases h with | intro n hn => exact ⟨n, hn⟩"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_7",
+          "family": "exists_reconstruct",
+          "required_operation": "unknown",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 0,
+            "rule": 1,
+            "learned": 0,
+            "policy": 0
+          },
+          "candidates_at_first_verified": {
+            "raw": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "rule": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "learned": "cases h with | intro n hn => exact ⟨n, hn⟩",
+            "policy": "cases h with | intro n hn => exact ⟨n, hn⟩"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": true,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        }
+      ],
+      "summary": {
+        "n_test_rows": 5,
+        "pass@5_ok": 5,
+        "rank_bound_top5_to_top10": 0,
+        "corpus_shape_bound_no_top10": 0
+      }
+    },
+    "neg_imp_exfalso": {
+      "rows": [
+        {
+          "theorem_name": "neg_imp_exfalso_ab",
+          "family": "neg_imp_exfalso",
+          "required_operation": "intro_negation",
+          "classification_under_policy": "rank_bound_top5_to_top10",
+          "first_verified_rank_under": {
+            "raw": 6,
+            "rule": 8,
+            "learned": 6,
+            "policy": 6
+          },
+          "candidates_at_first_verified": {
+            "raw": "intro hp\n  exact absurd hp hnp",
+            "rule": "intro hp\n  exact absurd hp hnp",
+            "learned": "intro hp\n  exact absurd hp hnp",
+            "policy": "intro hp\n  exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_imp_exfalso_ad",
+          "family": "neg_imp_exfalso",
+          "required_operation": "intro_negation",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 4,
+            "rule": 6,
+            "learned": 4,
+            "policy": 4
+          },
+          "candidates_at_first_verified": {
+            "raw": "intro hp\n  exact absurd hp hnp",
+            "rule": "intro hp\n  exact absurd hp hnp",
+            "learned": "intro hp\n  exact absurd hp hnp",
+            "policy": "intro hp\n  exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_imp_exfalso_pq",
+          "family": "neg_imp_exfalso",
+          "required_operation": "intro_negation",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 4,
+            "rule": 6,
+            "learned": 4,
+            "policy": 4
+          },
+          "candidates_at_first_verified": {
+            "raw": "intro hp\n  exact absurd hp hnp",
+            "rule": "intro hp\n  exact absurd hp hnp",
+            "learned": "intro hp\n  exact absurd hp hnp",
+            "policy": "intro hp\n  exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_imp_exfalso_ps",
+          "family": "neg_imp_exfalso",
+          "required_operation": "intro_negation",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 3,
+            "rule": 5,
+            "learned": 3,
+            "policy": 3
+          },
+          "candidates_at_first_verified": {
+            "raw": "intro hp\n  exact absurd hp hnp",
+            "rule": "intro hp\n  exact absurd hp hnp",
+            "learned": "intro hp\n  exact absurd hp hnp",
+            "policy": "intro hp\n  exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        },
+        {
+          "theorem_name": "neg_imp_exfalso_xy",
+          "family": "neg_imp_exfalso",
+          "required_operation": "intro_negation",
+          "classification_under_policy": "pass@5_ok",
+          "first_verified_rank_under": {
+            "raw": 4,
+            "rule": 5,
+            "learned": 4,
+            "policy": 4
+          },
+          "candidates_at_first_verified": {
+            "raw": "intro hp\n  exact absurd hp hnp",
+            "rule": "intro hp\n  exact absurd hp hnp",
+            "learned": "intro hp\n  exact absurd hp hnp",
+            "policy": "intro hp\n  exact absurd hp hnp"
+          },
+          "pass_at_under": {
+            "raw": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "rule": {
+              "pass@1": false,
+              "pass@5": false,
+              "pass@10": true
+            },
+            "learned": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            },
+            "policy": {
+              "pass@1": false,
+              "pass@5": true,
+              "pass@10": true
+            }
+          },
+          "sibling_shape_in_train": true
+        }
+      ],
+      "summary": {
+        "n_test_rows": 5,
+        "pass@5_ok": 4,
+        "rank_bound_top5_to_top10": 1,
+        "corpus_shape_bound_no_top10": 0
+      }
+    }
+  },
+  "aggregate": {
+    "forall_inst": {
+      "n_test_rows": 7,
+      "pass@5_ok": 7,
+      "rank_bound_top5_to_top10": 0,
+      "corpus_shape_bound_no_top10": 0
+    },
+    "rewrite_succ": {
+      "n_test_rows": 5,
+      "pass@5_ok": 5,
+      "rank_bound_top5_to_top10": 0,
+      "corpus_shape_bound_no_top10": 0
+    },
+    "neg_exfalso": {
+      "n_test_rows": 8,
+      "pass@5_ok": 5,
+      "rank_bound_top5_to_top10": 0,
+      "corpus_shape_bound_no_top10": 3
+    },
+    "exists_reconstruct": {
+      "n_test_rows": 5,
+      "pass@5_ok": 5,
+      "rank_bound_top5_to_top10": 0,
+      "corpus_shape_bound_no_top10": 0
+    },
+    "neg_imp_exfalso": {
+      "n_test_rows": 5,
+      "pass@5_ok": 4,
+      "rank_bound_top5_to_top10": 1,
+      "corpus_shape_bound_no_top10": 0
+    }
+  }
+}

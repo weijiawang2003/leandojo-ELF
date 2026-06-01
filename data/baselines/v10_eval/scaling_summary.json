@@ -1,0 +1,2955 @@
+{
+  "per_operation_train_features": {
+    "contradiction": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "intro_negation": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "instantiate_forall": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "rewrite_eq": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "exists_elim": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "implication_chain": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "conjunction_projection": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    },
+    "disjunction_cases": {
+      "n_train_rows": 5,
+      "n_train_families": 5
+    }
+  },
+  "operation_holdout": {
+    "conjunction_projection": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/conjunction_projection",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 5,
+        "n_train_rows": 27,
+        "n_train_theorems": 27,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 13,
+        "novel_verified": 13,
+        "donorless_verified": 13,
+        "cross_family_verified": 13,
+        "cross_operation_verified": 13,
+        "per_family": {
+          "left_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "left_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "nested_left_left": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "right_then_left": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "right_xy": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "conjunction_projection": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 20.88654438199592
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/conjunction_projection",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 5,
+        "n_train_rows": 27,
+        "n_train_theorems": 27,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.4,
+        "pass@5": 0.4,
+        "pass@10": 0.6,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 3,
+        "per_family": {
+          "left_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "left_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "nested_left_left": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          },
+          "right_then_left": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "right_xy": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "conjunction_projection": {
+            "n": 5,
+            "pass@5": 0.4,
+            "pass@10": 0.6
+          }
+        },
+        "elapsed_seconds": 14.31965238598059
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/conjunction_projection",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 5,
+        "n_train_rows": 27,
+        "n_train_theorems": 27,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 13,
+        "novel_verified": 13,
+        "donorless_verified": 13,
+        "cross_family_verified": 13,
+        "cross_operation_verified": 13,
+        "per_family": {
+          "left_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "left_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "nested_left_left": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "right_then_left": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "right_xy": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "conjunction_projection": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 9.447535811021226
+      }
+    },
+    "contradiction": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/contradiction",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 3,
+        "n_train_rows": 29,
+        "n_train_theorems": 29,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.3333333333333333,
+        "pass@5": 0.6666666666666666,
+        "pass@10": 0.6666666666666666,
+        "total_verified_candidates": 5,
+        "novel_verified": 5,
+        "donorless_verified": 5,
+        "cross_family_verified": 5,
+        "cross_operation_verified": 5,
+        "per_family": {
+          "exfalso_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "exfalso_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "iff_false_mp": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 3,
+            "pass@5": 0.6666666666666666,
+            "pass@10": 0.6666666666666666
+          }
+        },
+        "elapsed_seconds": 190.43718760399497
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/contradiction",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 3,
+        "n_train_rows": 29,
+        "n_train_theorems": 29,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_ab": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "exfalso_pq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "iff_false_mp": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 3,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 171.55801235098625
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/contradiction",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 3,
+        "n_train_rows": 29,
+        "n_train_theorems": 29,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.3333333333333333,
+        "pass@5": 0.6666666666666666,
+        "pass@10": 0.6666666666666666,
+        "total_verified_candidates": 4,
+        "novel_verified": 4,
+        "donorless_verified": 4,
+        "cross_family_verified": 4,
+        "cross_operation_verified": 4,
+        "per_family": {
+          "exfalso_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "exfalso_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "iff_false_mp": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 3,
+            "pass@5": 0.6666666666666666,
+            "pass@10": 0.6666666666666666
+          }
+        },
+        "elapsed_seconds": 129.01013012698968
+      }
+    },
+    "disjunction_cases": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/disjunction_cases",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.25,
+        "pass@5": 0.25,
+        "pass@10": 0.5,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 3,
+        "per_family": {
+          "or_self": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "or_swap": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "or_to_via": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "or_true_lhs": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 4,
+            "pass@5": 0.25,
+            "pass@10": 0.5
+          }
+        },
+        "elapsed_seconds": 160.5273022770125
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/disjunction_cases",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_self": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "or_swap": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "or_to_via": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "or_true_lhs": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 4,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 13.573212013987359
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/disjunction_cases",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.5,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 5,
+        "novel_verified": 5,
+        "donorless_verified": 5,
+        "cross_family_verified": 5,
+        "cross_operation_verified": 5,
+        "per_family": {
+          "or_self": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "or_swap": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "or_to_via": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "or_true_lhs": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 4,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 13.970781512005487
+      }
+    },
+    "exists_elim": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/exists_elim",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.75,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 12,
+        "novel_verified": 12,
+        "donorless_verified": 12,
+        "cross_family_verified": 12,
+        "cross_operation_verified": 12,
+        "per_family": {
+          "drop_witness_prop": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "reuse_addzero": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "reuse_witness_3": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "reuse_witness_7": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 4,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 14.826945220003836
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/exists_elim",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "drop_witness_prop": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "reuse_addzero": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "reuse_witness_3": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "reuse_witness_7": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 4,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 15.249694911006372
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/exists_elim",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.75,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 14,
+        "novel_verified": 14,
+        "donorless_verified": 14,
+        "cross_family_verified": 14,
+        "cross_operation_verified": 14,
+        "per_family": {
+          "drop_witness_prop": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "reuse_addzero": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "reuse_witness_3": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "reuse_witness_7": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 4,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 9.320661250996636
+      }
+    },
+    "implication_chain": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/implication_chain",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.25,
+        "pass@5": 0.25,
+        "pass@10": 0.25,
+        "total_verified_candidates": 2,
+        "novel_verified": 2,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 2,
+        "per_family": {
+          "branch_join": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "three_step": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "two_step_abc": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "two_step_intro": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 4,
+            "pass@5": 0.25,
+            "pass@10": 0.25
+          }
+        },
+        "elapsed_seconds": 15.631006351002725
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/implication_chain",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "branch_join": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "three_step": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "two_step_abc": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "two_step_intro": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 4,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 14.495552491018316
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/implication_chain",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.75,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 7,
+        "novel_verified": 7,
+        "donorless_verified": 7,
+        "cross_family_verified": 7,
+        "cross_operation_verified": 7,
+        "per_family": {
+          "branch_join": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "three_step": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "two_step_abc": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "two_step_intro": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 4,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 12.865620932978345
+      }
+    },
+    "instantiate_forall": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/instantiate_forall",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 3,
+        "n_train_rows": 29,
+        "n_train_theorems": 29,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.3333333333333333,
+        "pass@5": 0.3333333333333333,
+        "pass@10": 0.6666666666666666,
+        "total_verified_candidates": 2,
+        "novel_verified": 2,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 2,
+        "per_family": {
+          "nat_eq_3": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          },
+          "nat_eq_7": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "nat_le_5": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 3,
+            "pass@5": 0.3333333333333333,
+            "pass@10": 0.6666666666666666
+          }
+        },
+        "elapsed_seconds": 10.529547526995884
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/instantiate_forall",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 3,
+        "n_train_rows": 29,
+        "n_train_theorems": 29,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_eq_3": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "nat_eq_7": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "nat_le_5": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 3,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 10.050788421009202
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/instantiate_forall",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 3,
+        "n_train_rows": 29,
+        "n_train_theorems": 29,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 3,
+        "per_family": {
+          "nat_eq_3": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "nat_eq_7": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "nat_le_5": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 3,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 6.540678394987481
+      }
+    },
+    "intro_negation": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/intro_negation",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 5,
+        "n_train_rows": 27,
+        "n_train_theorems": 27,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.4,
+        "pass@5": 0.4,
+        "pass@10": 0.4,
+        "total_verified_candidates": 4,
+        "novel_verified": 4,
+        "donorless_verified": 4,
+        "cross_family_verified": 4,
+        "cross_operation_verified": 4,
+        "per_family": {
+          "contrapos_ab": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "contrapos_rs": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_with_extra": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "intro_negation": {
+            "n": 5,
+            "pass@5": 0.4,
+            "pass@10": 0.4
+          }
+        },
+        "elapsed_seconds": 39.910574632987846
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/intro_negation",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 5,
+        "n_train_rows": 27,
+        "n_train_theorems": 27,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "contrapos_ab": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_pq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_rs": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "contrapos_with_extra": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "intro_negation": {
+            "n": 5,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 19.38009919799515
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/intro_negation",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 5,
+        "n_train_rows": 27,
+        "n_train_theorems": 27,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.8,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 10,
+        "novel_verified": 10,
+        "donorless_verified": 10,
+        "cross_family_verified": 10,
+        "cross_operation_verified": 10,
+        "per_family": {
+          "contrapos_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "contrapos_chain": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "contrapos_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "contrapos_rs": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "contrapos_with_extra": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "intro_negation": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 34.4380313680158
+      }
+    },
+    "rewrite_eq": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/rewrite_eq",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.5,
+        "pass@5": 0.5,
+        "pass@10": 0.5,
+        "total_verified_candidates": 2,
+        "novel_verified": 2,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 2,
+        "per_family": {
+          "mul_one": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          },
+          "rev_target": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "succ_eq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "swap_under_z": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 4,
+            "pass@5": 0.5,
+            "pass@10": 0.5
+          }
+        },
+        "elapsed_seconds": 52.70425903701107
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/rewrite_eq",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.75,
+        "pass@10": 0.75,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 3,
+        "per_family": {
+          "mul_one": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "rev_target": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "succ_eq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "swap_under_z": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 4,
+            "pass@5": 0.75,
+            "pass@10": 0.75
+          }
+        },
+        "elapsed_seconds": 33.59468197301612
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/rewrite_eq",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 4,
+        "n_train_rows": 28,
+        "n_train_theorems": 28,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.75,
+        "pass@5": 0.75,
+        "pass@10": 0.75,
+        "total_verified_candidates": 4,
+        "novel_verified": 4,
+        "donorless_verified": 4,
+        "cross_family_verified": 4,
+        "cross_operation_verified": 4,
+        "per_family": {
+          "mul_one": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "rev_target": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "succ_eq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          },
+          "swap_under_z": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 4,
+            "pass@5": 0.75,
+            "pass@10": 0.75
+          }
+        },
+        "elapsed_seconds": 30.62059534501168
+      }
+    }
+  },
+  "cell_holdout": {
+    "conjunction_projection__left_ab": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/conjunction_projection__left_ab",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 2,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "left_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "conjunction_projection": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 63.982746986002894
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/conjunction_projection__left_ab",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 0,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "left_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "conjunction_projection": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 67.39403696599766
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/conjunction_projection__left_ab",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 2,
+        "novel_verified": 1,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "left_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "conjunction_projection": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 63.81886615999974
+      }
+    },
+    "contradiction__arrow_false": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__arrow_false",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "arrow_false": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 4.545752481004456
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__arrow_false",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "arrow_false": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 23.98899438898661
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__arrow_false",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "arrow_false": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 3.6966111799993087
+      }
+    },
+    "contradiction__exfalso_pq": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__exfalso_pq",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 4,
+        "novel_verified": 4,
+        "donorless_verified": 4,
+        "cross_family_verified": 4,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 0.09650165899074636
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__exfalso_pq",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_pq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 0.05501036701025441
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__exfalso_pq",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_pq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 0.03463613000349142
+      }
+    },
+    "contradiction__exfalso_with_extra": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__exfalso_with_extra",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 2,
+        "novel_verified": 1,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_with_extra": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 23.71124337700894
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__exfalso_with_extra",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_with_extra": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 4.022105415991973
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/contradiction__exfalso_with_extra",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 2,
+        "novel_verified": 1,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "exfalso_with_extra": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "contradiction": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 1.672830786992563
+      }
+    },
+    "disjunction_cases__or_self": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/disjunction_cases__or_self",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_self": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 45.71245030200225
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/disjunction_cases__or_self",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_self": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 44.00797151599545
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/disjunction_cases__or_self",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_self": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 23.448880370007828
+      }
+    },
+    "disjunction_cases__or_with_false": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/disjunction_cases__or_with_false",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_with_false": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 4.1383866899996065
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/disjunction_cases__or_with_false",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_with_false": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 3.835772121004993
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/disjunction_cases__or_with_false",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "or_with_false": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "disjunction_cases": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 4.347325128997909
+      }
+    },
+    "exists_elim__reuse_witness_3": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/exists_elim__reuse_witness_3",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "reuse_witness_3": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 84.7497271290049
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/exists_elim__reuse_witness_3",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "reuse_witness_3": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 82.62887544601108
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/exists_elim__reuse_witness_3",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 2,
+        "novel_verified": 2,
+        "donorless_verified": 2,
+        "cross_family_verified": 2,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "reuse_witness_3": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 21.69148016901454
+      }
+    },
+    "exists_elim__reuse_witness_5": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/exists_elim__reuse_witness_5",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "reuse_witness_5": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 4.370104859990533
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/exists_elim__reuse_witness_5",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "reuse_witness_5": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 4.161432636989048
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/exists_elim__reuse_witness_5",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 4,
+        "novel_verified": 4,
+        "donorless_verified": 4,
+        "cross_family_verified": 4,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "reuse_witness_5": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "exists_elim": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 2.941137209010776
+      }
+    },
+    "implication_chain__two_step_abc": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/implication_chain__two_step_abc",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "two_step_abc": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 62.69221806101268
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/implication_chain__two_step_abc",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "two_step_abc": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 62.92358661498292
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/implication_chain__two_step_abc",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "two_step_abc": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 62.864939135994064
+      }
+    },
+    "implication_chain__two_step_pqr": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/implication_chain__two_step_pqr",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "two_step_pqr": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 5.111625463992823
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/implication_chain__two_step_pqr",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "two_step_pqr": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 5.27346403701813
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/implication_chain__two_step_pqr",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "two_step_pqr": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "implication_chain": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 4.696411723998608
+      }
+    },
+    "instantiate_forall__nat_add_zero_4": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__nat_add_zero_4",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_add_zero_4": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 4.319110831012949
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__nat_add_zero_4",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_add_zero_4": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 45.23101014198619
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__nat_add_zero_4",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_add_zero_4": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 4.458558563987026
+      }
+    },
+    "instantiate_forall__nat_eq_3": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__nat_eq_3",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_eq_3": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 43.3830554879969
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__nat_eq_3",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_eq_3": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 23.841878736013314
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__nat_eq_3",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "nat_eq_3": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 42.51116315100808
+      }
+    },
+    "instantiate_forall__prop_self_imp": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__prop_self_imp",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "prop_self_imp": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 24.8470583059825
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__prop_self_imp",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "prop_self_imp": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 5.226340217021061
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__prop_self_imp",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "prop_self_imp": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 3.572940206009662
+      }
+    },
+    "intro_negation__contrapos_ab": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/intro_negation__contrapos_ab",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "contrapos_ab": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "intro_negation": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 24.16833152298932
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/intro_negation__contrapos_ab",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "contrapos_ab": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "intro_negation": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 63.01785432701581
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/intro_negation__contrapos_ab",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 1,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "contrapos_ab": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "intro_negation": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 82.78704734201892
+      }
+    },
+    "rewrite_eq__mul_one": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/rewrite_eq__mul_one",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "mul_one": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 62.954239108017646
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/rewrite_eq__mul_one",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 0,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "mul_one": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 104.28989766500308
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/rewrite_eq__mul_one",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 31,
+        "n_train_theorems": 31,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 1,
+        "novel_verified": 0,
+        "donorless_verified": 1,
+        "cross_family_verified": 1,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "mul_one": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 1,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 42.13239612898906
+      }
+    },
+    "rewrite_eq__swap_under_z": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/rewrite_eq__swap_under_z",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "swap_under_z": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 0.02811983900028281
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/rewrite_eq__swap_under_z",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "swap_under_z": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 0.048456844000611454
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/rewrite_eq__swap_under_z",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 1,
+        "n_train_rows": 39,
+        "n_train_theorems": 39,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "swap_under_z": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "rewrite_eq": {
+            "n": 1,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 0.026985037984559312
+      }
+    }
+  },
+  "donorless_eval": {
+    "baseline_v8": {},
+    "redundancy_only": {},
+    "combined_v10": {}
+  },
+  "v8_negative_controls": {
+    "family_holdout_forall_inst": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_family_holdout/forall_inst",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 7,
+        "n_train_rows": 683,
+        "n_train_theorems": 282,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 1.0,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 7,
+        "novel_verified": 7,
+        "donorless_verified": 7,
+        "cross_family_verified": 7,
+        "cross_operation_verified": 7,
+        "per_family": {
+          "forall_inst": {
+            "n": 7,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 7,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 35.62654469101108
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_family_holdout/forall_inst",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 7,
+        "n_train_rows": 683,
+        "n_train_theorems": 282,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.0,
+        "pass@10": 0.0,
+        "total_verified_candidates": 0,
+        "novel_verified": 0,
+        "donorless_verified": 0,
+        "cross_family_verified": 0,
+        "cross_operation_verified": 0,
+        "per_family": {
+          "forall_inst": {
+            "n": 7,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 7,
+            "pass@5": 0.0,
+            "pass@10": 0.0
+          }
+        },
+        "elapsed_seconds": 111.0030887349858
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_family_holdout/forall_inst",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 7,
+        "n_train_rows": 683,
+        "n_train_theorems": 282,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.8571428571428571,
+        "pass@5": 0.8571428571428571,
+        "pass@10": 0.8571428571428571,
+        "total_verified_candidates": 6,
+        "novel_verified": 6,
+        "donorless_verified": 6,
+        "cross_family_verified": 6,
+        "cross_operation_verified": 6,
+        "per_family": {
+          "forall_inst": {
+            "n": 7,
+            "pass@5": 0.8571428571428571,
+            "pass@10": 0.8571428571428571
+          }
+        },
+        "per_operation": {
+          "instantiate_forall": {
+            "n": 7,
+            "pass@5": 0.8571428571428571,
+            "pass@10": 0.8571428571428571
+          }
+        },
+        "elapsed_seconds": 33.49993510902277
+      }
+    },
+    "family_holdout_rewrite_succ": {
+      "baseline_v8": {
+        "regime_dir": "data/processed/proof_blocks_family_holdout/rewrite_succ",
+        "model_dir": "data/models/proof_block_seq2seq_interpolation",
+        "n_test_theorems": 5,
+        "n_train_rows": 670,
+        "n_train_theorems": 284,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.6,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 14,
+        "novel_verified": 14,
+        "donorless_verified": 14,
+        "cross_family_verified": 14,
+        "cross_operation_verified": 14,
+        "per_family": {
+          "rewrite_succ": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "rewrite": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 159.20406789999106
+      },
+      "redundancy_only": {
+        "regime_dir": "data/processed/proof_blocks_family_holdout/rewrite_succ",
+        "model_dir": "data/models/proof_block_seq2seq_redundancy",
+        "n_test_theorems": 5,
+        "n_train_rows": 670,
+        "n_train_theorems": 284,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.0,
+        "pass@5": 0.2,
+        "pass@10": 0.6,
+        "total_verified_candidates": 3,
+        "novel_verified": 3,
+        "donorless_verified": 3,
+        "cross_family_verified": 3,
+        "cross_operation_verified": 3,
+        "per_family": {
+          "rewrite_succ": {
+            "n": 5,
+            "pass@5": 0.2,
+            "pass@10": 0.6
+          }
+        },
+        "per_operation": {
+          "rewrite": {
+            "n": 5,
+            "pass@5": 0.2,
+            "pass@10": 0.6
+          }
+        },
+        "elapsed_seconds": 120.9576446749852
+      },
+      "combined_v10": {
+        "regime_dir": "data/processed/proof_blocks_family_holdout/rewrite_succ",
+        "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+        "n_test_theorems": 5,
+        "n_train_rows": 670,
+        "n_train_theorems": 284,
+        "top_k": 10,
+        "verified": true,
+        "pass@1": 0.8,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "total_verified_candidates": 12,
+        "novel_verified": 12,
+        "donorless_verified": 12,
+        "cross_family_verified": 12,
+        "cross_operation_verified": 12,
+        "per_family": {
+          "rewrite_succ": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "per_operation": {
+          "rewrite": {
+            "n": 5,
+            "pass@5": 1.0,
+            "pass@10": 1.0
+          }
+        },
+        "elapsed_seconds": 113.14973917999305
+      }
+    }
+  }
+}

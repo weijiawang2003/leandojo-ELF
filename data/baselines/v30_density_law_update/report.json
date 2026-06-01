@@ -1,0 +1,151 @@
+{
+  "config": "v30_density_law_update",
+  "model": "v30_general_targeted",
+  "bench_v29_vs_v30": {
+    "v25_heldout": {
+      "v29_best": 0.8571428571428571,
+      "v30": 1.0,
+      "delta": 0.1429
+    },
+    "v26_holdout": {
+      "v29_best": 1.0,
+      "v30": 1.0,
+      "delta": 0.0
+    },
+    "v27_holdout": {
+      "v29_best": 1.0,
+      "v30": 1.0,
+      "delta": 0.0
+    },
+    "v28_holdout": {
+      "v29_best": 0.9666666666666667,
+      "v30": 0.9666666666666667,
+      "delta": 0.0
+    },
+    "v29_holdout": {
+      "v29_best": 1.0,
+      "v30": 1.0,
+      "delta": 0.0
+    },
+    "v29_family_density": {
+      "v29_best": 0.8529411764705882,
+      "v30": 0.8235294117647058,
+      "delta": -0.0294
+    },
+    "v29_low_density": {
+      "v29_best": 1.0,
+      "v30": 1.0,
+      "delta": 0.0
+    },
+    "v30_holdout": {
+      "v29_best": 0.3333333333333333,
+      "v30": 0.8666666666666667,
+      "delta": 0.5333
+    },
+    "v30_targeted_family": {
+      "v29_best": 0.1,
+      "v30": 0.6,
+      "delta": 0.5
+    }
+  },
+  "v25_recovery": {
+    "v29_general": {
+      "v25_nat_add_assoc": false,
+      "v25_set_empty_subset": false
+    },
+    "v30_general_targeted": {
+      "v25_nat_add_assoc": true,
+      "v25_set_empty_subset": true
+    },
+    "v25_pass@10_v29": 0.8571428571428571,
+    "v25_pass@10_v30": 1.0
+  },
+  "targeted_family_per_family": [
+    {
+      "family": "finset::empty_subset",
+      "n": 1,
+      "pass@10": 1.0,
+      "train_density": 0
+    },
+    {
+      "family": "finset::mem_inter_proj",
+      "n": 1,
+      "pass@10": 0.0,
+      "train_density": 8
+    },
+    {
+      "family": "finset::mem_union_intro",
+      "n": 1,
+      "pass@10": 1.0,
+      "train_density": 6
+    },
+    {
+      "family": "nat::add_assoc",
+      "n": 1,
+      "pass@10": 1.0,
+      "train_density": 5
+    },
+    {
+      "family": "order::le_refl",
+      "n": 1,
+      "pass@10": 1.0,
+      "train_density": 7
+    },
+    {
+      "family": "set::empty_subset",
+      "n": 1,
+      "pass@10": 1.0,
+      "train_density": 3
+    },
+    {
+      "family": "set::mem_inter_proj",
+      "n": 1,
+      "pass@10": 0.0,
+      "train_density": 12
+    },
+    {
+      "family": "set::mem_union_intro",
+      "n": 1,
+      "pass@10": 0.0,
+      "train_density": 12
+    },
+    {
+      "family": "set::subset_inter",
+      "n": 1,
+      "pass@10": 1.0,
+      "train_density": 7
+    },
+    {
+      "family": "set::union_subset",
+      "n": 1,
+      "pass@10": 0.0,
+      "train_density": 5
+    }
+  ],
+  "failures_vs_threshold": {
+    "below_4_siblings": {
+      "n_families": 2,
+      "mean_pass@10": 1.0
+    },
+    "at_least_4_siblings": {
+      "n_families": 8,
+      "mean_pass@10": 0.5
+    }
+  },
+  "v29_family_density_repair": {
+    "v29_general": 0.8235294117647058,
+    "v30": 0.8235294117647058
+  },
+  "v30_residual_classes": {
+    "unknown_identifier": 6,
+    "other": 3,
+    "type_mismatch": 3,
+    "parse_error": 1
+  },
+  "n_residuals": 13,
+  "density_law_out_of_sample": {
+    "v25_recovered": true,
+    "below_threshold_worse": false,
+    "note": "targeted repair validates the density law if v25 recovers and below-threshold families remain the weak ones."
+  }
+}

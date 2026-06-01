@@ -2360,6 +2360,414 @@ Docs: [``V27_REPO_STATUS.md``](V27_REPO_STATUS.md),
 
 ---
 
+## 9z3. Mini-ELF v28: data-scaling breaks the fresh-holdout plateau + Finset
+
+v28 asked one question: was the v27 fresh-holdout plateau (pass@10 **0.714**) a
+data-volume limit or an architecture/planning wall? It is data-volume — and scaling
+verified single-tactic shapes broke it, with broad-core untouched.
+
+**Residual audit (Part 1).** `audit_v28_mathlib_residuals.py` classified the 9
+distinct v27 residuals from the eval predictions. The diagnosis: **sparse-sibling
+underfit**. The model is not missing the vocabulary wholesale — it has the right
+*tokens* but **mis-binds** them when a family has 1–3 siblings (e.g. for `s∩t⊆s` it
+emits the *swap* `⟨h.2,h.1⟩`; for `a+b+c` it hallucinates `Nat.append_assoc`). Every
+residual is single-tactic-provable; none need planning. This is a coverage/density
+limit, not architecture or proof-state supervision.
+
+**Corpus (Part 2).** `generate_v28_mathlib_expanded_corpus.py` densified each
+residual family with alpha-renamed siblings (distinct statements/states, identical
+proofs — honest augmentation, each independently Lean-verified, the benchmark itself
+guard-dropped) and added new categories: **Finset** (`[DecidableEq α]`), **polymorphic
+order** over `[Preorder]`/`[PartialOrder]`/`[LinearOrder]`/`[Lattice]` (v27 order was
+Nat-locked), function/logic. **158 theorems → 350 verified rows, 0 true coverage
+gaps** (set 132, order 61, finset 51, nat 41, logic 30, function 22, list 13); the 2
+rejects were `simp`-no-progress on `rfl`-true goals (the `rfl` candidates verified).
+
+**Verification + gold (Part 3).** Integrity re-check **350/350** re-pass, 0
+regressions; a category-stratified gold sample of **24 across all 7 categories**
+(deterministic seed) showed **0 trusted-vs-gold mismatches / 0 false positives** —
+trusted verifier sound & complete on v28.
+
+**Dataset (Part 4).** Statement-level leakage guards vs the v28 holdout *and* the
+v25/v26/v27 benchmarks built four configs (general 554, set_order_heavy 816,
+category_balanced 442, finset_specialist 606) + a **fresh 30-theorem v28 holdout**
+(vs v27's 7 — a far more robust benchmark) + Set/order/Finset category-holdouts.
+
+**Training (Part 5).** Seven ~0.5 M-param specialists (seed 0, 40 epochs); v28_general
+val-exact **0.263 > v27's 0.235** — the small model is still absorbing signal, not
+saturating. v24/v27 models never overwritten (`token_seq2seq_v28_*`).
+
+**Results (Part 6–7, trusted verifier).** `v28_general` (recommended) preserves v25
+held-out **1.000** and v26 holdout **0.955**, and lifts the **fresh v27 holdout 0.714
+→ 0.857** (best v28 config **1.000**) and the **new v28 holdout to 0.867** (vs 0.667
+for the best v27 model). The v27 residual `mem_inter_iff` is solved **@ rank 0** via
+`simp [Set.mem_inter]`. New **Finset** category **0.833** held-out. Whole-category
+transfer: order **0.778** (overlaps Nat `≤`), finset 0.333, set 0.237 — confirming
+success is *within-family* sibling density, not generic transfer. **Category
+balancing harmful again** (v28 holdout 0.700 vs 0.867). Routed system
+(`V28MathlibRouter` → v28_general for Mathlib, v24 for core): broad-core
+**bit-identical** (0.9375/0.9583, `adopt_router = True`), routed Mathlib tier
+**0.918** over 73 combined held-out theorems.
+
+**Scaling analysis (Part 8).** The fresh-holdout improvement is unambiguous (v27
+holdout +0.286, v28 holdout +0.200). Of 5 residuals across both fresh holdouts, only
+1 is multi-step; the rest are single-sibling/arity shapes (Finset projection
+direction, `le_antisymm`, renamed `comp_assoc`). The next wall is **still
+coverage/vocabulary**, not architecture or proof-state supervision — **LeanDojo
+next-state remains premature**.
+
+**v24 residual cleanup (Part 9): deferred again.** v28's pipeline filled the budget;
+the safe default keeps `and_assoc_one`/`or_inr`/`or_elim_to_common` off the protected
+v24 model — a dedicated specialist/router pass, never co-trained into broad-core.
+
+Docs: [``V28_REPO_STATUS.md``](V28_REPO_STATUS.md),
+[``V28_MATHLIB_RESIDUAL_AUDIT.md``](V28_MATHLIB_RESIDUAL_AUDIT.md),
+[``V28_EXPANDED_CORPUS_REPORT.md``](V28_EXPANDED_CORPUS_REPORT.md),
+[``V28_VERIFICATION_REPORT.md``](V28_VERIFICATION_REPORT.md),
+[``V28_DATASET_REPORT.md``](V28_DATASET_REPORT.md),
+[``V28_SPECIALIST_EVAL_REPORT.md``](V28_SPECIALIST_EVAL_REPORT.md),
+[``V28_ROUTED_SYSTEM_REPORT.md``](V28_ROUTED_SYSTEM_REPORT.md),
+[``V28_SCALING_PLATEAU_ANALYSIS.md``](V28_SCALING_PLATEAU_ANALYSIS.md),
+[``V28_FAILURE_EXAMPLES.md``](V28_FAILURE_EXAMPLES.md).
+
+---
+
+## 9z4. Mini-ELF v29: sibling-density scaling + the density law
+
+v29 asked the question v28 left open: improvement came from **within-family sibling
+density** rather than cross-category transfer — so *how much* density, and does it
+obey a law? v29 measured the law, then scaled along it.
+
+**Family-density audit (Part 1).** `audit_v29_family_density.py` grouped the v26–v28
+verified corpora into 181 families and binned **507 held-out evaluations** by
+*effective training density* (siblings actually present in the evaluating model's
+train set). The result is a clean law: held-out pass@10 **0.684 (0 siblings) → 0.829
+(1–3) → 0.944 (4–6)**, reliable (≥0.9) at ~4 siblings. The two weak categories (set,
+finset) are weak only because their held-out pool is dominated by density-0
+whole-category-transfer evaluations.
+
+**Sparse-residual audit (Part 2).** `audit_v29_sparse_residuals.py` isolated the 5
+genuine theorem-holdout residuals of the v28 system — `finset::mem_inter_proj`
+(emits the wrong projector `.2`), `function::comp_assoc` ×2 (hallucinates
+`Set.id_comp`), `order::antisymm` (Nat-locked `Nat.trans`), `set::union_comm` — every
+one **single-tactic** (0 multi-step), confirming a data/coverage wall.
+
+**Corpus (Part 3).** `generate_v29_mathlib_density_corpus.py` densified each weak
+family by crossing a var-set menu (`s,t,u`/`a,b,c`/`p,q,r`/`u,v,w`…) with a proof-head
+menu (named lemma · `intro;exact` · `simp` · `rintro` · `funext`): **229 theorems →
+492 verified rows, 0 coverage gaps**, every row trusted-verified. Integrity (Part 4)
+**492/492**, gold sample **32 across all 7 categories, 0 mismatches / 0 false
+positives** — the project-long 0-mismatch invariant holds.
+
+**Dataset (Part 5).** Five configs (general 839 / v28best_plus 891 / set_finset_order_
+heavy 1330 / category_balanced 674 *neg-control* / function_order 1005) plus the two
+**density-contrast holdouts**: `family_density_holdout` (34 thms, mean training family
+density **6.53**) vs `low_density_holdout` (13 thms, **0.92**) — the same model on
+both isolates the density effect. Statement/triple/name leakage guards asserted; no
+`state_after`.
+
+**Specialist eval (Parts 6–7).** `v29_general` (val-exact **0.328** > v28's 0.263)
+lifts the **fresh v28 holdout 0.867 → 0.933** (`v29_set_finset_order_heavy` **0.967**),
+takes the **new v29 holdout to 1.000** and **v26 to 1.000**, and **fixes** the v28
+`comp_assoc`/`antisymm` residuals. Honest cost: **v25 regresses 1.000 → 0.857** (2/14;
+`nat_add_assoc`, `set_empty_subset` drop out of the top-10 beam under the distribution
+shift — correct tactics still verify, so recoverable). The clean causal density
+effect: the *same* hard lemma-binding families score **0.16–0.26 at density 0**
+(whole-category transfer) vs **0.70 at density ~6** (family-density holdout).
+
+**Routed system (Part 8).** `V29MathlibRouter` (core → untouched v24; mathlib →
+`v29_general`) preserves broad-core **bit-for-bit at 0.9375 / 0.9583** (= v27/v28 bar)
+and lifts routed Mathlib tier-C to **0.921** over **140** combined held-outs (up from
+v28's 0.918 on 73) → **router adopted**.
+
+**Scaling / failures (Parts 9–10).** Whole-category transfer did **not** improve
+(set 0.237→0.292, finset 0.333→0.136, order 0.778→0.556) → density is within-family,
+not cross-category. Balancing (capping) ≤ general everywhere; targeted *upsampling*
+helps — so unweighted `general` is the default and `set_finset_order_heavy` a safe
+strict add. The 8 remaining residuals are **single-tactic data-bound** (6 vocabulary,
+2 API, **0 multi-step**) → LeanDojo next-state supervision remains premature; v30
+should densify the `_3` surface-token projection variants and recover the v25 micro-
+regression. v24 broad-core **audited, not retrained** (protected).
+
+Honesty: real external `import Mathlib`; `TrustedMathlibVerifier` only; no
+`state_after`; manual targets never used as predictions; no v10 leakage; no
+full-proving claim; v24/v25–v28 metrics unchanged; git history untouched. Docs:
+[``V29_REPO_STATUS.md``](V29_REPO_STATUS.md),
+[``V29_FAMILY_DENSITY_AUDIT.md``](V29_FAMILY_DENSITY_AUDIT.md),
+[``V29_SPARSE_RESIDUAL_AUDIT.md``](V29_SPARSE_RESIDUAL_AUDIT.md),
+[``V29_EXPANDED_CORPUS_REPORT.md``](V29_EXPANDED_CORPUS_REPORT.md),
+[``V29_VERIFICATION_REPORT.md``](V29_VERIFICATION_REPORT.md),
+[``V29_DATASET_REPORT.md``](V29_DATASET_REPORT.md),
+[``V29_SPECIALIST_EVAL_REPORT.md``](V29_SPECIALIST_EVAL_REPORT.md),
+[``V29_ROUTED_SYSTEM_REPORT.md``](V29_ROUTED_SYSTEM_REPORT.md),
+[``V29_DENSITY_LAW_ANALYSIS.md``](V29_DENSITY_LAW_ANALYSIS.md),
+[``V29_FAILURE_EXAMPLES.md``](V29_FAILURE_EXAMPLES.md).
+
+---
+
+## 9z5. Mini-ELF v30: targeted density repair (v25 regression recovered)
+
+v30 asked whether the v29 density law is **actionable**: can a *surgical*, law-guided
+repair fix a known regression and the sub-threshold families without broad expansion?
+
+**v25 regression audit (Part 1).** `audit_v30_v25_regression.py` pinned the two v29
+casualties (`v25_nat_add_assoc`, `v25_set_empty_subset`; pass@10 1.000→0.857) as
+**beam-absence + sparse-sibling**: the correct tactic (`omega`/`Nat.add_assoc x y z`,
+`Set.empty_subset s`) is **absent from the v29 top-10 beam**, and both families have
+**density 0** in v29 training — `empty_subset` was even solvable at density 0 in v28
+and lost only to the v29 distribution shift.
+
+**Low-density audit (Part 2).** `audit_v30_low_density_residuals.py` listed 10 target
+families: 5 below the 4-sibling threshold (count repair: `add_assoc`/`empty_subset`/
+`le_refl`/`union_subset`/`comp_assoc`) and 4 `_3` projection families that are dense by
+*count* (≥5) but whose held-out members use **surface tokens absent from training**
+(`u,v` sets, element `w`, hyp `hw`) — a **token-diversity** gap, not a count gap.
+
+**Corpus (Part 3).** `generate_v30_targeted_density_corpus.py` added **69 theorems →
+155 verified rows, 0 gaps** (each family to ~4–6 siblings; fresh tokens for the
+projection families). Integrity (Part 4) **155/155**, gold **24 across 11 families, 0
+mismatches / 0 false positives** — the 0-mismatch invariant now holds v27→v30.
+
+**Dataset/train (Parts 5–6).** Four configs (general_targeted 905 / v29best_plus 1396 /
+targeted_only 66 *ablation* / targeted_upsample 971); **no category-balanced config**
+(v29 negative control). `v30_general_targeted` val-exact 0.324. v24/v29 never
+overwritten; no capacity probe.
+
+**Specialist eval (Part 7).** `v30_general_targeted` **recovers v25 to 1.000** (both
+regressed theorems solved) **with zero regression**, and the repaired general model now
+matches the heavy config (v26 1.000, v27 1.000, v28 0.967, v29 1.000). Ablations:
+`targeted_upsample` regresses v26 to 0.857 and `targeted_only` collapses (v28 0.30) —
+**unweighted addition is best; the repair must augment, not replace.**
+
+**Routed (Part 8).** `V30MathlibRouter` (core → untouched v24; mathlib →
+`v30_general_targeted`) preserves broad-core **0.9375 / 0.9583** (= bar, no regression →
+adopted) and holds routed tier-C pass@10 at **0.921 over 165** held-outs (25 more, and
+harder, than v29's 140).
+
+**Density law update / failures (Parts 9–10).** Count-repair **validated the law out of
+sample** (v25 recovered; v30 fresh-family holdout 0.33→0.87). The `_3` token-diversity
+residuals did **not** repair (0.85→0.82) — refining the law: *density helps only when
+the held-out member's surface tokens are in-distribution*; pure augmentation cannot
+cover a novel identifier (a coverage limit, not architecture). All 13 remaining
+residuals are **single-tactic** (0 multi-step) → LeanDojo next-state still premature.
+v24 broad-core **audited, not retrained**.
+
+Honesty: real external `import Mathlib`; `TrustedMathlibVerifier` only; no
+`state_after`; manual targets never used as predictions; no v10 leakage; no
+full-proving claim; v24/v25–v29 metrics unchanged; git history untouched. Docs:
+[``V30_REPO_STATUS.md``](V30_REPO_STATUS.md),
+[``V30_V25_REGRESSION_AUDIT.md``](V30_V25_REGRESSION_AUDIT.md),
+[``V30_LOW_DENSITY_RESIDUAL_AUDIT.md``](V30_LOW_DENSITY_RESIDUAL_AUDIT.md),
+[``V30_TARGETED_DENSITY_CORPUS_REPORT.md``](V30_TARGETED_DENSITY_CORPUS_REPORT.md),
+[``V30_VERIFICATION_REPORT.md``](V30_VERIFICATION_REPORT.md),
+[``V30_DATASET_REPORT.md``](V30_DATASET_REPORT.md),
+[``V30_SPECIALIST_EVAL_REPORT.md``](V30_SPECIALIST_EVAL_REPORT.md),
+[``V30_ROUTED_SYSTEM_REPORT.md``](V30_ROUTED_SYSTEM_REPORT.md),
+[``V30_DENSITY_LAW_UPDATE.md``](V30_DENSITY_LAW_UPDATE.md),
+[``V30_FAILURE_EXAMPLES.md``](V30_FAILURE_EXAMPLES.md).
+
+---
+
+## 9z6. Mini-ELF v31: token-coverage ceiling + safe identifier canonicalization
+
+v31 attacked the residual v30 left: the **token-coverage ceiling**. v30's refined law
+said density helps only when the held-out member's surface tokens are in-distribution;
+v31 asks whether identifier *normalization* can remove that dependence — without
+repeating the documented v19 placeholder failure.
+
+**Token-coverage audit (Part 1).** `audit_v31_token_coverage_residuals.py` showed
+**all 13 v30 residuals are surface-token OOD**: for every one the identifier-free proof
+*pattern* is already in the family's training rows; only the specific identifier
+(`hw`, `hm`, `g`) is missing. 0 true-missing-shape, 0 API-arity → the ~15 % ceiling is
+**raw identifier memorization**, answering v30's open RQ3.
+
+**Normalization design (Part 2).** `src/mini_elf_lean/v31_identifier_normalization.py`
+canonicalizes binder identifiers to **valid Lean names** `c0,c1,…` so parallel theorems
+collapse to one form (`exact h.1` and `exact hw.1` both → `exact c4.1`). It differs from
+the v19 placeholder decoder on the three points that made v19 fail (pass@k 0.583→0.208,
+dominant `unresolved_placeholder`): valid identifiers (not placeholders); **union with
+the raw v30 pool** (raw fallback, not replacement); **reject-unmapped-before-verify**.
+Reused v19's `local_context` parser; did **not** reuse its decoder.
+
+**Dataset / augmentation (Parts 3–4).** Canonicalized the v30 base (902/905 rows,
+**0 round-trip failures**) into `canonical_general` + mixture/aug configs; built a
+verified **projection rename-augmentation** (Approach B, **140 rows**, every missing
+identifier `hw`/`hm`/`hg`/`h3`/`hmem` covered 28×, 0 failures). Token-diversity holdout
+= the 13 v30 residuals.
+
+**Eval (Parts 5–6).** `v31_canonical_general` (val-exact 0.367) lifts the token-diversity
+holdout **0.00 → 0.92** and the v30 targeted-family holdout **0.60 → 1.00**, keeps every
+standard held-out at **1.000** (v28 lifted 0.967 → 1.000), cuts residuals **13 → 1**, and
+generates **0 unresolved** canonical candidates — adding **zero new theorems**. Approach B
+(rename-aug) independently reached 0.77. Approach C (pattern rerank) cannot help (it
+reorders but cannot add an absent candidate).
+
+**Routed (Part 7).** `V31MathlibRouter` (core → untouched v24; mathlib → canonical
+specialist, canonical-mode pooling + raw fallback) preserves broad-core **0.9375/0.9583**
+and lifts routed tier-C pass@10 **0.921 → 0.985** over 131 held-outs; 11/1267 (0.9 %)
+canonical candidates unresolvable and dropped pre-verify — the v19 mode does not recur.
+
+**Analysis / failures (Parts 8–10).** The density law gains a **second axis**:
+single-tactic held-out success needs **family density (≥4–6 siblings) AND surface-token
+coverage**. The single remaining residual (`∅∩s⊆t`) is a sparse *shape* (axis 1), not
+token-coverage; **0 multi-step** → LeanDojo next-state still premature. v24 core residuals
+**audited, not retrained** — apply the same canonicalization/rename recipe via a routed
+core specialist.
+
+Honesty: real external `import Mathlib`; `TrustedMathlibVerifier` only; canonical names
+are valid Lean identifiers (not placeholders); no `state_after`; manual targets never
+predictions; no v10 leakage; no full-proving claim; v24/v25–v30 metrics unchanged; git
+untouched. Docs:
+[``V31_REPO_STATUS.md``](V31_REPO_STATUS.md),
+[``V31_TOKEN_COVERAGE_AUDIT.md``](V31_TOKEN_COVERAGE_AUDIT.md),
+[``V31_IDENTIFIER_NORMALIZATION_DESIGN.md``](V31_IDENTIFIER_NORMALIZATION_DESIGN.md),
+[``V31_CANONICAL_DATASET_REPORT.md``](V31_CANONICAL_DATASET_REPORT.md),
+[``V31_PROJECTION_RENAME_AUG_REPORT.md``](V31_PROJECTION_RENAME_AUG_REPORT.md),
+[``V31_NORMALIZED_SPECIALIST_EVAL_REPORT.md``](V31_NORMALIZED_SPECIALIST_EVAL_REPORT.md),
+[``V31_ROUTED_SYSTEM_REPORT.md``](V31_ROUTED_SYSTEM_REPORT.md),
+[``V31_DENSITY_VS_TOKEN_COVERAGE.md``](V31_DENSITY_VS_TOKEN_COVERAGE.md),
+[``V31_FAILURE_EXAMPLES.md``](V31_FAILURE_EXAMPLES.md).
+
+---
+
+## 9z7. Mini-ELF v32: robustness stress-test + saturation decision
+
+v32 asked whether v31's canonicalization is a genuine generalization or a memorized
+patch, closed/characterized the final residual, and decided whether the single-tactic
+Mathlib tier is saturated.
+
+**Final-residual audit (Part 1).** `audit_v32_final_residual.py` + a Lean probe showed
+the one residual `(∅ : Set α) ∩ s ⊆ t` is **single-tactic** (`simp` closes it) — a
+sparse `∅∩` shape, not multi-step. `leandojo_justified_by_residual: false`.
+
+**Repair (Part 2).** `generate_v32_final_residual_repair.py` added **37 verified `∅∩`
+siblings** (single-tactic) → `v32_canonical_repaired`.
+
+**Adversarial stress benchmark (Parts 3–4).** `generate_v32_identifier_stress_benchmark.py`
+built **46 theorems with never-seen identifiers** (`h_mem`, `proof₁`, `hα`, `φ ψ χ`,
+`A B obj`). The decisive result: raw v30 **0.261**, rename-augmentation **0.283** (it
+only memorized the specific v30 residual identifiers), **canonicalization 0.891** — a
+3.4× lift confirming **identifier-invariance generalizes**, the sharpest evidence that
+Approach A is a real solution, not a patch. A **25-theorem fresh-shape micro-holdout**
+(Part 5) scored 0.76–0.80 (the remaining axis is shape/density, not token coverage).
+
+**Routed (Part 6).** `V32MathlibRouter` (core → untouched v24; mathlib → v32 canonical
+specialist) preserves broad-core **0.9375/0.9583** and reaches routed tier-C **0.950
+over 202 held-outs** — the hardest set to date (adds the 46 adversarial + 25 fresh
+theorems; the 0.985→0.950 vs v31/131 is a harder benchmark, not a regression). The v19
+guard handled adversarial input safely: 56/1977 (2.8 %) unresolved, all dropped before
+the verifier; raw fallback added 1588.
+
+**Saturation (Part 7).** `analyze_v32_saturation.py`: the tier is **robust but not
+fully saturated** (adversarial 0.89 < 0.95, fresh 0.80 < 0.85). **11 residuals, all
+single-tactic, 0 multi-step** → LeanDojo next-state **not justified** (and forbidden by
+constraint). **v33 = one more single-tactic coverage/robustness pass** (harden canonical
+decode for Greek/subscript identifiers; add fresh order/set shapes), then package;
+LeanDojo deferred until a genuinely multi-step benchmark exists.
+
+Honesty: real external `import Mathlib`; `TrustedMathlibVerifier` only; **not v19
+placeholders** (the canonical guard drops unresolved before the verifier); no
+`state_after`; manual targets never predictions; no v10 leakage; no full-proving claim;
+v24/v25–v31 metrics unchanged; git untouched. Docs:
+[``V32_REPO_STATUS.md``](V32_REPO_STATUS.md),
+[``V32_FINAL_RESIDUAL_AUDIT.md``](V32_FINAL_RESIDUAL_AUDIT.md),
+[``V32_FINAL_RESIDUAL_REPAIR_REPORT.md``](V32_FINAL_RESIDUAL_REPAIR_REPORT.md),
+[``V32_IDENTIFIER_STRESS_BENCHMARK.md``](V32_IDENTIFIER_STRESS_BENCHMARK.md),
+[``V32_IDENTIFIER_STRESS_EVAL_REPORT.md``](V32_IDENTIFIER_STRESS_EVAL_REPORT.md),
+[``V32_FRESH_MATHLIB_HOLDOUT.md``](V32_FRESH_MATHLIB_HOLDOUT.md),
+[``V32_ROUTED_SYSTEM_REPORT.md``](V32_ROUTED_SYSTEM_REPORT.md),
+[``V32_SATURATION_ANALYSIS.md``](V32_SATURATION_ANALYSIS.md),
+[``V32_FAILURE_EXAMPLES.md``](V32_FAILURE_EXAMPLES.md).
+
+---
+
+## 9z8. Mini-ELF v33: final single-tactic robustness pass (tier SATURATED)
+
+v33 ran the last targeted coverage/robustness pass over the 11 v32 residuals and made
+the saturation decision.
+
+**Residual audit (Part 1).** `audit_v33_remaining_residuals.py`: all 11 residuals are
+**single-tactic, 0 multi-step** — 5 are a **parser-coverage bug** (the subscript
+identifier `proof₁` was outside the canonicalizer's identifier regex, so the hypothesis
+wasn't canonicalized and the model's `exact c4.1` was rejected — the v32 8.5 % adversarial
+unresolved rate), 6 are fresh shape/vocabulary gaps.
+
+**Two levers (Parts 2–3).** (a) **Hardened canonical decode** —
+`v31_identifier_normalization` now recognizes Unicode subscripts/superscripts
+(`proof₁`, `h₂`, `f¹`); purely additive, all v31/v32 module tests still pass. (b)
+**Residual-coverage corpus** — `generate_v33_residual_coverage_corpus.py` added **83
+verified rows** (`inter_assoc`/`union_assoc`, `le_trans` 3–4-hop chains,
+`min·max·inf·sup_comm`, `∅∩` siblings). A **42-theorem fresh robustness holdout**
+(eval-only) stresses both axes.
+
+**Eval (Parts 5–6).** `v33_general_residual` (val-exact 0.357) hits **pass@10 1.00 on
+every single-tactic bench** — v25/v28/v29, token-diversity, adversarial
+identifier-stress (46/46), fresh-robustness (42/42) — **0 residuals**. Critically, the
+parser fix alone lifted **every** canonical model's adversarial stress
+**0.891 → 1.00** (so the v32 0.89 was a parser-coverage bug, not a model limit), and the
+residual corpus closed the fresh shapes (order 0.89 → 1.00).
+
+**Routed (Part 7).** `V33MathlibRouter` preserves broad-core **0.9375/0.9583** and
+reaches routed tier-C **0.992 over 244 held-outs** (up from v32's 0.950/202; the largest,
+hardest set). The v19 guard dropped 64/2401 (2.7 %) unresolvable canonical candidates
+safely.
+
+**Saturation (Part 8).** `analyze_v33_single_tactic_saturation.py`: the single-tactic
+Mathlib tier is **SATURATED** (adversarial + fresh both 1.00, routed 0.992, broad-core
+bit-for-bit, 0 eval-bench residuals, **0 multi-step**). **v34 = packaging / paper-style
+report / git recovery** (resolve the stale `.git/rebase-merge/`); **LeanDojo next-state
+stays deferred** — justified only by a genuinely multi-step benchmark, which would be a
+new corpus, not a fix to the current one.
+
+Honesty: real external `import Mathlib`; `TrustedMathlibVerifier` only; **not v19
+placeholders**; no `state_after`; manual targets never predictions; no v10 leakage; no
+full-proving claim; v24/v25–v32 metrics unchanged; git untouched. Docs:
+[``V33_REPO_STATUS.md``](V33_REPO_STATUS.md),
+[``V33_REMAINING_RESIDUAL_AUDIT.md``](V33_REMAINING_RESIDUAL_AUDIT.md),
+[``V33_RESIDUAL_COVERAGE_CORPUS_REPORT.md``](V33_RESIDUAL_COVERAGE_CORPUS_REPORT.md),
+[``V33_FRESH_ROBUSTNESS_HOLDOUT.md``](V33_FRESH_ROBUSTNESS_HOLDOUT.md),
+[``V33_DATASET_REPORT.md``](V33_DATASET_REPORT.md),
+[``V33_SPECIALIST_EVAL_REPORT.md``](V33_SPECIALIST_EVAL_REPORT.md),
+[``V33_ROUTED_SYSTEM_REPORT.md``](V33_ROUTED_SYSTEM_REPORT.md),
+[``V33_SINGLE_TACTIC_SATURATION_ANALYSIS.md``](V33_SINGLE_TACTIC_SATURATION_ANALYSIS.md),
+[``V33_FAILURE_EXAMPLES.md``](V33_FAILURE_EXAMPLES.md).
+
+## 9z9. Mini-ELF v34: packaging + git recovery (modeling phase closed)
+
+v34 **stops modeling** and packages the Mathlib specialist phase into a reproducible
+artifact, and safely recovers the git state. No new training, no new corpus, no LeanDojo
+work — the v33 saturation result stands as the final modeling milestone.
+
+**Git recovery (Parts 0–2).** A full `.git` backup was taken first
+(`~/code/ELFMath_git_recovery_backup_20260601_035811/`: `git_dir.tar.gz` 12 MB,
+diffs, status, 5161-entry untracked list, forensic `rebase-merge` snapshot). Inspection
+(`docs/V34_GIT_RECOVERY_PLAN.md`) found a **stale `.git/rebase-merge/` from 2026-05-28**:
+a `git pull --rebase origin main` had stopped on conflicts replaying `a691b63` onto the
+fetched `6852545`, after which work continued on `v27-mathlib-specialist` (`d392ac3`,
+`b4fcd6c`) and the rebase metadata was orphaned. Determinations: **0 unmerged paths, empty
+`git-rebase-todo`, no conflict markers** — stale, not active. Cleared with **`git rebase
+--quit`** (preserves HEAD/working tree; *not* `--abort`, which would have moved HEAD back
+to `a691b63`/`main` and risked the uncommitted work). Post-conditions verified: no rebase
+banner, `.git/rebase-merge/` gone, `HEAD` still `b4fcd6c`, `main` still `a691b63`, all
+artifacts intact.
+
+**Packaging (Parts 3–8).** Artifact inventory (`scripts/inventory_v34_artifacts.py` →
+`docs/V34_ARTIFACT_INVENTORY.md`): v24→v33 scripts/docs/data/models/tests + headline
+metrics, large-artifact flags, and confirmation the 7.0 GB external Mathlib scratch is
+outside the repo. Consolidated **paper-style report**
+(`docs/MINI_ELF_MATHLIB_FINAL_REPORT.md`) with the verified main results table (routed
+broad-core 0.9375/0.9583 bit-for-bit v26→v33; routed tier-C 0.917→0.992 as `n` grows
+36→244). **Reproducibility** (`docs/REPRODUCIBILITY.md`) and a **consistency audit**
+(`docs/V34_CONSISTENCY_AUDIT.md`) that programmatically re-checks the honesty constraints.
+A **commit plan** (`docs/V34_COMMIT_PLAN.md`) — not committed pending explicit approval.
+
+Honesty: theorem-level (single-tactic) verification only; **trusted verifier + router**;
+**no** full-proving claim; **no** `state_after`; **no** LeanDojo next-state (0 multi-step
+residuals); v24 protected; v25–v33 metrics unchanged; git history not rewritten (only
+orphaned metadata removed).
+
+---
+
 ## 10. Full results
 
 134-theorem corpus, theorem-level split 102/16/16 (val 37 rows / 16 theorems,

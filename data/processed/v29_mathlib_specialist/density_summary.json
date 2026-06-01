@@ -1,0 +1,289 @@
+{
+  "config": "v29_mathlib_density",
+  "mathlib_available": true,
+  "lean_verifier": "TrustedMathlibVerifier (sentinel+confirm+rescue, import Mathlib)",
+  "imports_used": [
+    "import Mathlib"
+  ],
+  "n_theorems": 229,
+  "n_candidates_proposed": 589,
+  "n_candidates_verified": 492,
+  "n_candidates_lean_rejected": 0,
+  "n_candidates_failed": 0,
+  "n_timeout": 0,
+  "n_theorems_with_training_rows": 193,
+  "n_zero_lean_success_theorems": 0,
+  "zero_lean_success_theorems": [],
+  "n_theorems_stripped_to_zero_by_guards": 36,
+  "theorems_stripped_to_zero_by_guards": [
+    "v29_fs_inter_subset_right_0",
+    "v29_fs_mem_inter_left_0",
+    "v29_fs_mem_union_iff_0",
+    "v29_fs_mem_union_right_0",
+    "v29_fs_subset_union_left_1",
+    "v29_fun_comp_assoc_0",
+    "v29_fun_comp_assoc_1",
+    "v29_list_append_nil_0",
+    "v29_list_append_nil_1",
+    "v29_list_map_id_0",
+    "v29_list_reverse_reverse_0",
+    "v29_logic_and_symm_0",
+    "v29_logic_and_symm_1",
+    "v29_logic_contrapose_0",
+    "v29_nat_add_assoc_0",
+    "v29_nat_add_assoc_1",
+    "v29_nat_add_comm_0",
+    "v29_nat_add_zero_1",
+    "v29_ord_antisymm_0",
+    "v29_ord_le_max_right_1",
+    "v29_ord_le_refl_pre_1",
+    "v29_ord_le_sup_right_1",
+    "v29_ord_le_trans_pre_1",
+    "v29_ord_nat_le_add_right_1",
+    "v29_ord_nat_le_add_right_2",
+    "v29_set_inter_comm_subset_0",
+    "v29_set_inter_subset_left_0",
+    "v29_set_inter_subset_right_2",
+    "v29_set_mem_inter_iff_0",
+    "v29_set_mem_inter_left_0",
+    "v29_set_mem_inter_left_2",
+    "v29_set_mem_union_iff_2",
+    "v29_set_mem_union_of_right_2",
+    "v29_set_subset_union_left_2",
+    "v29_set_union_comm_subset_1",
+    "v29_set_union_subset_0"
+  ],
+  "dropped_v18_name": 0,
+  "dropped_v18_triple": 2,
+  "dropped_heldout": 95,
+  "by_category": {
+    "finset": {
+      "theorems": 55,
+      "proposed": 126,
+      "verified": 114,
+      "failed": 0
+    },
+    "set": {
+      "theorems": 60,
+      "proposed": 176,
+      "verified": 143,
+      "failed": 0
+    },
+    "order": {
+      "theorems": 48,
+      "proposed": 85,
+      "verified": 72,
+      "failed": 0
+    },
+    "function": {
+      "theorems": 21,
+      "proposed": 67,
+      "verified": 61,
+      "failed": 0
+    },
+    "nat": {
+      "theorems": 18,
+      "proposed": 57,
+      "verified": 44,
+      "failed": 0
+    },
+    "list": {
+      "theorems": 12,
+      "proposed": 27,
+      "verified": 18,
+      "failed": 0
+    },
+    "logic": {
+      "theorems": 15,
+      "proposed": 51,
+      "verified": 40,
+      "failed": 0
+    }
+  },
+  "categories": [
+    "finset",
+    "function",
+    "list",
+    "logic",
+    "nat",
+    "order",
+    "set"
+  ],
+  "by_family": {
+    "add_assoc": {
+      "n_theorems": 3,
+      "n_verified_rows": 3
+    },
+    "add_comm": {
+      "n_theorems": 3,
+      "n_verified_rows": 6
+    },
+    "add_zero": {
+      "n_theorems": 3,
+      "n_verified_rows": 8
+    },
+    "and_symm": {
+      "n_theorems": 3,
+      "n_verified_rows": 4
+    },
+    "antisymm": {
+      "n_theorems": 9,
+      "n_verified_rows": 8
+    },
+    "append_nil": {
+      "n_theorems": 3,
+      "n_verified_rows": 2
+    },
+    "comp_app": {
+      "n_theorems": 3,
+      "n_verified_rows": 6
+    },
+    "comp_assoc": {
+      "n_theorems": 9,
+      "n_verified_rows": 21
+    },
+    "comp_id": {
+      "n_theorems": 8,
+      "n_verified_rows": 32
+    },
+    "contrapose": {
+      "n_theorems": 3,
+      "n_verified_rows": 6
+    },
+    "false_elim": {
+      "n_theorems": 3,
+      "n_verified_rows": 9
+    },
+    "id_apply": {
+      "n_theorems": 1,
+      "n_verified_rows": 2
+    },
+    "imp_trans": {
+      "n_theorems": 3,
+      "n_verified_rows": 9
+    },
+    "inter_comm": {
+      "n_theorems": 7,
+      "n_verified_rows": 12
+    },
+    "inter_subset": {
+      "n_theorems": 16,
+      "n_verified_rows": 32
+    },
+    "lattice_inf_sup": {
+      "n_theorems": 6,
+      "n_verified_rows": 5
+    },
+    "le_of_eq": {
+      "n_theorems": 10,
+      "n_verified_rows": 30
+    },
+    "le_refl": {
+      "n_theorems": 3,
+      "n_verified_rows": 4
+    },
+    "le_total": {
+      "n_theorems": 3,
+      "n_verified_rows": 3
+    },
+    "le_trans": {
+      "n_theorems": 5,
+      "n_verified_rows": 8
+    },
+    "map_id": {
+      "n_theorems": 3,
+      "n_verified_rows": 4
+    },
+    "mem_iff": {
+      "n_theorems": 16,
+      "n_verified_rows": 41
+    },
+    "mem_inter_proj": {
+      "n_theorems": 16,
+      "n_verified_rows": 33
+    },
+    "mem_union_intro": {
+      "n_theorems": 16,
+      "n_verified_rows": 42
+    },
+    "min_max": {
+      "n_theorems": 6,
+      "n_verified_rows": 5
+    },
+    "mul_comm": {
+      "n_theorems": 3,
+      "n_verified_rows": 9
+    },
+    "mul_one": {
+      "n_theorems": 3,
+      "n_verified_rows": 9
+    },
+    "nat_le": {
+      "n_theorems": 6,
+      "n_verified_rows": 9
+    },
+    "nil_append": {
+      "n_theorems": 3,
+      "n_verified_rows": 8
+    },
+    "or_symm": {
+      "n_theorems": 3,
+      "n_verified_rows": 12
+    },
+    "reverse_reverse": {
+      "n_theorems": 3,
+      "n_verified_rows": 4
+    },
+    "subset_inter": {
+      "n_theorems": 7,
+      "n_verified_rows": 14
+    },
+    "subset_refl": {
+      "n_theorems": 3,
+      "n_verified_rows": 9
+    },
+    "subset_trans": {
+      "n_theorems": 4,
+      "n_verified_rows": 12
+    },
+    "subset_union": {
+      "n_theorems": 16,
+      "n_verified_rows": 35
+    },
+    "union_comm": {
+      "n_theorems": 7,
+      "n_verified_rows": 15
+    },
+    "union_subset": {
+      "n_theorems": 7,
+      "n_verified_rows": 12
+    },
+    "zero_add": {
+      "n_theorems": 3,
+      "n_verified_rows": 9
+    }
+  },
+  "verified_proof_heads": {
+    "exact": 258,
+    "intro": 62,
+    "simp": 49,
+    "rfl": 29,
+    "funext": 15,
+    "ext": 13,
+    "omega": 12,
+    "tauto": 12,
+    "rw": 10,
+    "ring": 9,
+    "rintro": 6,
+    "left": 4,
+    "aesop": 4,
+    "right": 3,
+    "constructor": 3,
+    "ac_rfl": 3
+  },
+  "n_lean_invocations": 18,
+  "total_lean_seconds": 80.3,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

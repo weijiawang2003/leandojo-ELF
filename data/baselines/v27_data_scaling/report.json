@@ -1,0 +1,316 @@
+{
+  "config": "v27_data_scaling",
+  "table": {
+    "v24__v25_heldout": {
+      "best_config": "learned",
+      "pass@1": 0.42857142857142855,
+      "pass@5": 0.5714285714285714,
+      "pass@10": 0.5714285714285714,
+      "set@10": 0.0,
+      "order@10": null,
+      "n_no_verify": 6
+    },
+    "v24__v26_holdout": {
+      "best_config": "abstract",
+      "pass@1": 0.2727272727272727,
+      "pass@5": 0.3181818181818182,
+      "pass@10": 0.3181818181818182,
+      "set@10": 0.0,
+      "order@10": null,
+      "n_no_verify": 15
+    },
+    "v24__v27_holdout": {
+      "best_config": "policy_abstract",
+      "pass@1": 0.2857142857142857,
+      "pass@5": 0.2857142857142857,
+      "pass@10": 0.2857142857142857,
+      "set@10": 0.0,
+      "order@10": 0.0,
+      "n_no_verify": 5
+    },
+    "v25_aug__v25_heldout": {
+      "best_config": "raw",
+      "pass@1": 0.6428571428571429,
+      "pass@5": 0.7142857142857143,
+      "pass@10": 0.7857142857142857,
+      "set@10": 0.0,
+      "order@10": null,
+      "n_no_verify": 3
+    },
+    "v25_aug__v26_holdout": {
+      "best_config": "raw",
+      "pass@1": 0.45454545454545453,
+      "pass@5": 0.5909090909090909,
+      "pass@10": 0.6363636363636364,
+      "set@10": 0.5,
+      "order@10": null,
+      "n_no_verify": 8
+    },
+    "v25_aug__v27_holdout": {
+      "best_config": "raw",
+      "pass@1": 0.2857142857142857,
+      "pass@5": 0.42857142857142855,
+      "pass@10": 0.42857142857142855,
+      "set@10": 0.0,
+      "order@10": 0.5,
+      "n_no_verify": 4
+    },
+    "v26_base__v25_heldout": {
+      "best_config": "learned",
+      "pass@1": 0.8571428571428571,
+      "pass@5": 0.9285714285714286,
+      "pass@10": 0.9285714285714286,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 1
+    },
+    "v26_base__v26_holdout": {
+      "best_config": "abstract",
+      "pass@1": 0.5,
+      "pass@5": 0.8636363636363636,
+      "pass@10": 0.9090909090909091,
+      "set@10": 0.5,
+      "order@10": null,
+      "n_no_verify": 2
+    },
+    "v26_base__v27_holdout": {
+      "best_config": "policy_abstract",
+      "pass@1": 0.42857142857142855,
+      "pass@5": 0.5714285714285714,
+      "pass@10": 0.5714285714285714,
+      "set@10": 0.0,
+      "order@10": 1.0,
+      "n_no_verify": 3
+    },
+    "v26_widened__v25_heldout": {
+      "best_config": "learned",
+      "pass@1": 0.9285714285714286,
+      "pass@5": 0.9285714285714286,
+      "pass@10": 0.9285714285714286,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 1
+    },
+    "v26_widened__v26_holdout": {
+      "best_config": "learned",
+      "pass@1": 0.7727272727272727,
+      "pass@5": 0.9090909090909091,
+      "pass@10": 0.9090909090909091,
+      "set@10": 0.75,
+      "order@10": null,
+      "n_no_verify": 2
+    },
+    "v27_base__v25_heldout": {
+      "best_config": "abstract",
+      "pass@1": 0.7857142857142857,
+      "pass@5": 0.9285714285714286,
+      "pass@10": 0.9285714285714286,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 1
+    },
+    "v27_base__v26_holdout": {
+      "best_config": "policy_abstract",
+      "pass@1": 0.4090909090909091,
+      "pass@5": 0.8636363636363636,
+      "pass@10": 0.8636363636363636,
+      "set@10": 0.75,
+      "order@10": null,
+      "n_no_verify": 3
+    },
+    "v27_base__v27_holdout": {
+      "best_config": "policy_abstract",
+      "pass@1": 0.5714285714285714,
+      "pass@5": 0.7142857142857143,
+      "pass@10": 0.7142857142857143,
+      "set@10": 0.5,
+      "order@10": 1.0,
+      "n_no_verify": 2
+    },
+    "v27_widened__v25_heldout": {
+      "best_config": "abstract",
+      "pass@1": 0.5714285714285714,
+      "pass@5": 0.9285714285714286,
+      "pass@10": 0.9285714285714286,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 1
+    },
+    "v27_widened__v26_holdout": {
+      "best_config": "abstract",
+      "pass@1": 0.5909090909090909,
+      "pass@5": 0.9090909090909091,
+      "pass@10": 0.9090909090909091,
+      "set@10": 0.75,
+      "order@10": null,
+      "n_no_verify": 2
+    },
+    "v27_widened__v27_holdout": {
+      "best_config": "abstract",
+      "pass@1": 0.5714285714285714,
+      "pass@5": 0.7142857142857143,
+      "pass@10": 0.7142857142857143,
+      "set@10": 0.0,
+      "order@10": 1.0,
+      "n_no_verify": 2
+    },
+    "v27_category_balanced__v25_heldout": {
+      "best_config": "abstract",
+      "pass@1": 0.7857142857142857,
+      "pass@5": 1.0,
+      "pass@10": 1.0,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 0
+    },
+    "v27_category_balanced__v26_holdout": {
+      "best_config": "learned",
+      "pass@1": 0.7272727272727273,
+      "pass@5": 0.8636363636363636,
+      "pass@10": 0.8636363636363636,
+      "set@10": 0.5,
+      "order@10": null,
+      "n_no_verify": 3
+    },
+    "v27_category_balanced__v27_holdout": {
+      "best_config": "abstract",
+      "pass@1": 0.5714285714285714,
+      "pass@5": 0.7142857142857143,
+      "pass@10": 0.7142857142857143,
+      "set@10": 0.0,
+      "order@10": 1.0,
+      "n_no_verify": 2
+    },
+    "v27_set_heavy__v25_heldout": {
+      "best_config": "abstract",
+      "pass@1": 0.7142857142857143,
+      "pass@5": 0.9285714285714286,
+      "pass@10": 0.9285714285714286,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 1
+    },
+    "v27_set_heavy__v26_holdout": {
+      "best_config": "learned",
+      "pass@1": 0.8636363636363636,
+      "pass@5": 0.9545454545454546,
+      "pass@10": 0.9545454545454546,
+      "set@10": 1.0,
+      "order@10": null,
+      "n_no_verify": 1
+    },
+    "v27_set_heavy__v27_holdout": {
+      "best_config": "raw",
+      "pass@1": 0.5714285714285714,
+      "pass@5": 0.7142857142857143,
+      "pass@10": 0.7142857142857143,
+      "set@10": 0.0,
+      "order@10": 1.0,
+      "n_no_verify": 2
+    }
+  },
+  "v26_to_v27_deltas": {
+    "v26_base->v27_base@v25_heldout": {
+      "pass@10": 0.0,
+      "set@10": 0.0,
+      "order@10": null
+    },
+    "v26_widened->v27_widened@v25_heldout": {
+      "pass@10": 0.0,
+      "set@10": 0.0,
+      "order@10": null
+    },
+    "v26_base->v27_base@v26_holdout": {
+      "pass@10": -0.0455,
+      "set@10": 0.25,
+      "order@10": null
+    },
+    "v26_widened->v27_widened@v26_holdout": {
+      "pass@10": 0.0,
+      "set@10": 0.0,
+      "order@10": null
+    },
+    "v26_base->v27_base@v27_holdout": {
+      "pass@10": 0.1429,
+      "set@10": 0.5,
+      "order@10": 0.0
+    }
+  },
+  "specialist_vs_cotraining": {
+    "v25_heldout": {
+      "v25_aug(co-train)@10": 0.7857142857142857,
+      "v27_widened(specialist)@10": 0.9285714285714286
+    },
+    "v26_holdout": {
+      "v25_aug(co-train)@10": 0.6363636363636364,
+      "v27_widened(specialist)@10": 0.9090909090909091
+    },
+    "v27_holdout": {
+      "v25_aug(co-train)@10": 0.42857142857142855,
+      "v27_widened(specialist)@10": 0.7142857142857143
+    }
+  },
+  "balancing": {
+    "v25_heldout": {
+      "v27_widened@10": 0.9285714285714286,
+      "v27_category_balanced@10": 1.0,
+      "v27_set_heavy@10": 0.9285714285714286
+    },
+    "v26_holdout": {
+      "v27_widened@10": 0.9090909090909091,
+      "v27_category_balanced@10": 0.8636363636363636,
+      "v27_set_heavy@10": 0.9545454545454546
+    },
+    "v27_holdout": {
+      "v27_widened@10": 0.7142857142857143,
+      "v27_category_balanced@10": 0.7142857142857143,
+      "v27_set_heavy@10": 0.7142857142857143
+    }
+  },
+  "v27_widened_residuals": [
+    {
+      "bench": "v25_heldout",
+      "theorem": "v25_nat_add_assoc",
+      "statement": "(a b c : Nat) : a + b + c = a + (b + c)",
+      "category": "nat",
+      "failure_class": "unknown_identifier",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "v26_holdout",
+      "theorem": "v26_fun_comp_assoc2",
+      "statement": "(α β γ δ : Type) (f : α → β) (g : β → γ) (h : γ → δ) : (h ∘ g) ∘ f = h ∘ (g ∘ f)",
+      "category": "function",
+      "failure_class": "type_mismatch",
+      "bucket": "proof_shape (API/arity or wrong term)"
+    },
+    {
+      "bench": "v26_holdout",
+      "theorem": "v26_set_inter_comm_subset",
+      "statement": "(α : Type) (s t : Set α) : s ∩ t ⊆ t ∩ s",
+      "category": "set",
+      "failure_class": "type_mismatch",
+      "bucket": "proof_shape (API/arity or wrong term)"
+    },
+    {
+      "bench": "v27_holdout",
+      "theorem": "v27_set_mem_inter_iff",
+      "statement": "(α : Type) (s t : Set α) (x : α) : x ∈ s ∩ t ↔ x ∈ s ∧ x ∈ t",
+      "category": "set",
+      "failure_class": "unknown_identifier",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "v27_holdout",
+      "theorem": "v27_set_union_subset",
+      "statement": "(α : Type) (s t u : Set α) (h1 : s ⊆ u) (h2 : t ⊆ u) : s ∪ t ⊆ u",
+      "category": "set",
+      "failure_class": "type_mismatch",
+      "bucket": "proof_shape (API/arity or wrong term)"
+    }
+  ],
+  "residual_buckets": {
+    "lemma_vocabulary": 2,
+    "proof_shape (API/arity or wrong term)": 3
+  }
+}

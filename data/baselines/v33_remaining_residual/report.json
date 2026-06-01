@@ -1,0 +1,582 @@
+{
+  "config": "v33_remaining_residual_audit",
+  "n_residuals": 11,
+  "classification_counts": {
+    "canonicalization_gap": 5,
+    "theorem_shape_density_gap": 3,
+    "vocabulary_gap": 3
+  },
+  "by_family": {
+    "set::mem_inter_proj": 2,
+    "set::mem_union_intro": 1,
+    "finset::mem_inter_proj": 1,
+    "finset::mem_union_intro": 1,
+    "set::inter_assoc": 1,
+    "order::le_trans": 1,
+    "order::min_max": 2,
+    "order::lattice": 1,
+    "set::empty_subset": 1
+  },
+  "any_multi_step": false,
+  "audits": [
+    {
+      "theorem": "v32stress_set_inter_left_2",
+      "category": "set",
+      "family": "set::mem_inter_proj",
+      "bench": "identifier_stress",
+      "statement": "(α : Type) (S T : Set α) (z : α) (proof₁ : z ∈ S ∩ T) : z ∈ S",
+      "expected_proofs": [
+        "exact proof₁.1",
+        "exact proof₁.left"
+      ],
+      "v32_top8": [
+        "exact T.1",
+        "exact And.1",
+        "exact z.1",
+        "constructor <;>",
+        "exact Or.inl hz",
+        "exact Set.mem_of_mem_inter_left hz",
+        "exact Set.mem_union_left q",
+        "exact h.1"
+      ],
+      "error_classes": [
+        "other",
+        "other",
+        "other",
+        "parse_error",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "type_mismatch",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 3,
+        "parse_error": 1,
+        "unknown_identifier": 5,
+        "type_mismatch": 1
+      },
+      "binders_parsed": [
+        "α",
+        "S",
+        "T",
+        "z",
+        "proof₁"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "S": "c1",
+        "T": "c2",
+        "z": "c3",
+        "proof₁": "c4"
+      },
+      "classification": "canonicalization_gap",
+      "minimal_repair_proposal": "subscript identifier `proof₁` now parses (hardened decode); + projection siblings"
+    },
+    {
+      "theorem": "v32stress_set_inter_right_2",
+      "category": "set",
+      "family": "set::mem_inter_proj",
+      "bench": "identifier_stress",
+      "statement": "(α : Type) (S T : Set α) (z : α) (proof₁ : z ∈ S ∩ T) : z ∈ T",
+      "expected_proofs": [
+        "exact proof₁.2",
+        "exact proof₁.right"
+      ],
+      "v32_top8": [
+        "exact And.2",
+        "exact z.2",
+        "exact Or.2",
+        "constructor <;>",
+        "exact Set.mem_inter_iff",
+        "exact Set.mem_of_mem_inter_right",
+        "exact Or.inl hz",
+        "exact Set.mem_of_mem_inter_left hz"
+      ],
+      "error_classes": [
+        "other",
+        "other",
+        "other",
+        "parse_error",
+        "type_mismatch",
+        "type_mismatch",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 3,
+        "parse_error": 1,
+        "type_mismatch": 2,
+        "unknown_identifier": 4
+      },
+      "binders_parsed": [
+        "α",
+        "S",
+        "T",
+        "z",
+        "proof₁"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "S": "c1",
+        "T": "c2",
+        "z": "c3",
+        "proof₁": "c4"
+      },
+      "classification": "canonicalization_gap",
+      "minimal_repair_proposal": "subscript identifier `proof₁` now parses (hardened decode); + projection siblings"
+    },
+    {
+      "theorem": "v32stress_set_union_left_2",
+      "category": "set",
+      "family": "set::mem_union_intro",
+      "bench": "identifier_stress",
+      "statement": "(α : Type) (S T : Set α) (z : α) (proof₁ : z ∈ S) : z ∈ S ∪ T",
+      "expected_proofs": [
+        "exact Or.inl proof₁"
+      ],
+      "v32_top8": [
+        "simp [Set.mem_union_left T <",
+        "exact Set.mem_union_left T T",
+        "simp [Set.mem_union]",
+        "exact Set.mem_union_left T z",
+        "exact Or.inl z",
+        "simp [Set.mem_union_left T z",
+        "exact Set.mem_singleton S T",
+        "exact Set.mem_union_left q hz"
+      ],
+      "error_classes": [
+        "parse_error",
+        "type_mismatch",
+        "shape_miss",
+        "type_mismatch",
+        "type_mismatch",
+        "parse_error",
+        "other",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "parse_error": 2,
+        "type_mismatch": 3,
+        "shape_miss": 1,
+        "other": 1,
+        "unknown_identifier": 3
+      },
+      "binders_parsed": [
+        "α",
+        "S",
+        "T",
+        "z",
+        "proof₁"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "S": "c1",
+        "T": "c2",
+        "z": "c3",
+        "proof₁": "c4"
+      },
+      "classification": "canonicalization_gap",
+      "minimal_repair_proposal": "subscript identifier now parses; + union-intro siblings"
+    },
+    {
+      "theorem": "v32stress_fs_inter_left_2",
+      "category": "finset",
+      "family": "finset::mem_inter_proj",
+      "bench": "identifier_stress",
+      "statement": "(α : Type) [DecidableEq α] (S T : Finset α) (z : α) (proof₁ : z ∈ S ∩ T) : z ∈ S",
+      "expected_proofs": [
+        "exact (Finset.mem_inter.mp proof₁).1",
+        "exact Finset.mem_of_mem_inter_left proof₁"
+      ],
+      "v32_top8": [
+        "exact (Finset.mem_inter.mp <",
+        "exact (Finset.mem_inter.mp h",
+        "exact (Finset.mem_inter.mp hh",
+        "exact Finset.mem_of_mem_inter_left S T",
+        "exact (Finset.mem_inter.mp hx",
+        "exact Finset.mem_inter",
+        "exact Finset.mem_of_mem_inter_left hz",
+        "exact Finset.mem_of_mem_inter_right h"
+      ],
+      "error_classes": [
+        "parse_error",
+        "parse_error",
+        "parse_error",
+        "other",
+        "parse_error",
+        "other",
+        "unknown_identifier",
+        "unknown_identifier",
+        "other",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "parse_error": 4,
+        "other": 3,
+        "unknown_identifier": 3
+      },
+      "binders_parsed": [
+        "α",
+        "S",
+        "T",
+        "z",
+        "proof₁"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "S": "c1",
+        "T": "c2",
+        "z": "c3",
+        "proof₁": "c4"
+      },
+      "classification": "canonicalization_gap",
+      "minimal_repair_proposal": "subscript identifier now parses; + finset projection siblings"
+    },
+    {
+      "theorem": "v32stress_fs_union_right_2",
+      "category": "finset",
+      "family": "finset::mem_union_intro",
+      "bench": "identifier_stress",
+      "statement": "(α : Type) [DecidableEq α] (S T : Finset α) (z : α) (proof₁ : z ∈ T) : z ∈ S ∪ T",
+      "expected_proofs": [
+        "exact Finset.mem_union.mpr (Or.inr proof₁)"
+      ],
+      "v32_top8": [
+        "exact Finset.mem_union.mpr (Or.inr h)",
+        "simp [Finset.mem_union]",
+        "exact Finset.mem_union_right S T",
+        "exact Finset.mem_union.mpr (Or.inr z)",
+        "simp [Finset.mem_union.mpr (Or.inr h)",
+        "exact Finset.mem_union.mpr (Or.inr hy)",
+        "simp [Finset.mem_union.mpr (Or.inr z)",
+        "simp [Finset.mem_union.mpr (Or.inr hx)"
+      ],
+      "error_classes": [
+        "unknown_identifier",
+        "shape_miss",
+        "type_mismatch",
+        "type_mismatch",
+        "parse_error",
+        "unknown_identifier",
+        "parse_error",
+        "parse_error",
+        "unknown_identifier",
+        "parse_error"
+      ],
+      "error_counts": {
+        "unknown_identifier": 3,
+        "shape_miss": 1,
+        "type_mismatch": 2,
+        "parse_error": 4
+      },
+      "binders_parsed": [
+        "α",
+        "S",
+        "T",
+        "z",
+        "proof₁"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "S": "c1",
+        "T": "c2",
+        "z": "c3",
+        "proof₁": "c4"
+      },
+      "classification": "canonicalization_gap",
+      "minimal_repair_proposal": "subscript identifier now parses; + finset union siblings"
+    },
+    {
+      "theorem": "v32fresh_set_inter_assoc",
+      "category": "set",
+      "family": "set::inter_assoc",
+      "bench": "fresh_mathlib",
+      "statement": "(α : Type) (s t u : Set α) : s ∩ t ∩ u = s ∩ (t ∩ u)",
+      "expected_proofs": [
+        "exact Set.inter_assoc s t u",
+        "ext x; simp [and_assoc]"
+      ],
+      "v32_top8": [
+        "exact fun x h => ⟨h.1.1, h.1.2, h.2⟩",
+        "exact fun x h => ⟨h.1.1, h.2⟩",
+        "exact fun x h => ⟨h.1.2, h.2⟩",
+        "exact fun x h => ⟨h.1.2, h.1.2, h.2⟩",
+        "exact fun x h => ⟨h.1.1, h.1.2, h.1.2",
+        "exact fun x h => ⟨h.2, h.1.2, h.2⟩",
+        "exact fun x h => ⟨h.1.mp h.1.2, h.2⟩",
+        "exact fun x h => ⟨h.1.2, h.1.2, h.1.2"
+      ],
+      "error_classes": [
+        "other",
+        "other",
+        "other",
+        "other",
+        "parse_error",
+        "other",
+        "other",
+        "parse_error",
+        "other",
+        "other"
+      ],
+      "error_counts": {
+        "other": 8,
+        "parse_error": 2
+      },
+      "binders_parsed": [
+        "α",
+        "s",
+        "t",
+        "u"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "s": "c1",
+        "t": "c2",
+        "u": "c3"
+      },
+      "classification": "theorem_shape_density_gap",
+      "minimal_repair_proposal": "add `inter_assoc`/`union_assoc` siblings (Set.inter_assoc / simp [and_assoc])"
+    },
+    {
+      "theorem": "v32fresh_ord_le_trans3",
+      "category": "order",
+      "family": "order::le_trans",
+      "bench": "fresh_mathlib",
+      "statement": "(α : Type) [Preorder α] (a b c d : α) (h1 : a ≤ b) (h2 : b ≤ c) (h3 : c ≤ d) : a ≤ d",
+      "expected_proofs": [
+        "exact le_trans (le_trans h1 h2) h3",
+        "exact h1.trans (h2.trans h3)"
+      ],
+      "v32_top8": [
+        "exact d h1",
+        "rw [d]",
+        "exact d.trans h1",
+        "exact le_trans d h1",
+        "exact c.trans h1",
+        "exact b.trans h1",
+        "exact d.le",
+        "simp [d]"
+      ],
+      "error_classes": [
+        "other",
+        "other",
+        "other",
+        "type_mismatch",
+        "other",
+        "other",
+        "other",
+        "other",
+        "other",
+        "other"
+      ],
+      "error_counts": {
+        "other": 9,
+        "type_mismatch": 1
+      },
+      "binders_parsed": [
+        "α",
+        "a",
+        "b",
+        "c",
+        "d",
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "a": "c1",
+        "b": "c2",
+        "c": "c3",
+        "d": "c4",
+        "h1": "c5",
+        "h2": "c6",
+        "h3": "c7"
+      },
+      "classification": "theorem_shape_density_gap",
+      "minimal_repair_proposal": "add 3-4 hop le_trans chains (le_trans (le_trans h1 h2) h3)"
+    },
+    {
+      "theorem": "v32fresh_ord_min_comm",
+      "category": "order",
+      "family": "order::min_max",
+      "bench": "fresh_mathlib",
+      "statement": "(α : Type) [LinearOrder α] (a b : α) : min a b = min b a",
+      "expected_proofs": [
+        "exact min_comm a b"
+      ],
+      "v32_top8": [
+        "exact Nat.add_assoc a",
+        "exact Finset.union_comm a",
+        "exact Nat.le_of_eq a",
+        "exact le_of_eq a b",
+        "simp [Nat.add_assoc]",
+        "exact Nat.add_assoc α",
+        "simp [Finset.add_assoc]",
+        "simp [Finset.mem_inter]"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch",
+        "other",
+        "type_mismatch",
+        "unknown_identifier",
+        "other",
+        "type_mismatch",
+        "other"
+      ],
+      "error_counts": {
+        "type_mismatch": 6,
+        "other": 3,
+        "unknown_identifier": 1
+      },
+      "binders_parsed": [
+        "α",
+        "a",
+        "b"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "a": "c1",
+        "b": "c2"
+      },
+      "classification": "vocabulary_gap",
+      "minimal_repair_proposal": "add min_comm/max_comm siblings (min_comm a b / max_comm a b)"
+    },
+    {
+      "theorem": "v32fresh_ord_max_comm",
+      "category": "order",
+      "family": "order::min_max",
+      "bench": "fresh_mathlib",
+      "statement": "(α : Type) [LinearOrder α] (a b : α) : max a b = max b a",
+      "expected_proofs": [
+        "exact max_comm a b"
+      ],
+      "v32_top8": [
+        "ext x; simp",
+        "ext x; rfl",
+        "exact Finset.le_max_right a",
+        "exact Finset.union_comm a",
+        "exact Nat.le_max_right a",
+        "exact Finset.inter_comm a",
+        "exact Function.symm b",
+        "exact le_max_right.symm b"
+      ],
+      "error_classes": [
+        "other",
+        "other",
+        "unknown_identifier",
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch",
+        "unknown_identifier",
+        "unknown_identifier",
+        "type_mismatch",
+        "type_mismatch"
+      ],
+      "error_counts": {
+        "other": 2,
+        "unknown_identifier": 3,
+        "type_mismatch": 5
+      },
+      "binders_parsed": [
+        "α",
+        "a",
+        "b"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "a": "c1",
+        "b": "c2"
+      },
+      "classification": "vocabulary_gap",
+      "minimal_repair_proposal": "add min_comm/max_comm siblings (min_comm a b / max_comm a b)"
+    },
+    {
+      "theorem": "v32fresh_ord_inf_comm",
+      "category": "order",
+      "family": "order::lattice",
+      "bench": "fresh_mathlib",
+      "statement": "(α : Type) [Lattice α] (a b : α) : a ⊓ b = b ⊓ a",
+      "expected_proofs": [
+        "exact inf_comm a b"
+      ],
+      "v32_top8": [
+        "simp",
+        "exact b.symm",
+        "exact Function.id_comp",
+        "exact Nat.le_of_eq",
+        "exact Function.symm",
+        "exact Finset.union_comm",
+        "exact Nat.union_comm",
+        "rfl"
+      ],
+      "error_classes": [
+        "other",
+        "other",
+        "type_mismatch",
+        "type_mismatch",
+        "unknown_identifier",
+        "other",
+        "unknown_identifier",
+        "other",
+        "other",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "other": 5,
+        "type_mismatch": 2,
+        "unknown_identifier": 3
+      },
+      "binders_parsed": [
+        "α",
+        "a",
+        "b"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "a": "c1",
+        "b": "c2"
+      },
+      "classification": "vocabulary_gap",
+      "minimal_repair_proposal": "add inf_comm/sup_comm siblings (inf_comm a b / sup_comm a b)"
+    },
+    {
+      "theorem": "v30_set_empty_inter_subset",
+      "category": "set",
+      "family": "set::empty_subset",
+      "bench": "tierc_token_diversity",
+      "statement": "(α : Type) (s t : Set α) : (∅ : Set α) ∩ s ⊆ t",
+      "expected_proofs": [],
+      "v32_top8": [],
+      "error_classes": [],
+      "error_counts": {},
+      "binders_parsed": [
+        "α",
+        "s",
+        "t"
+      ],
+      "canonical_map": {
+        "α": "c0",
+        "s": "c1",
+        "t": "c2"
+      },
+      "classification": "theorem_shape_density_gap",
+      "minimal_repair_proposal": "the ∅∩ shape (v32 added 37; the canonical model should now generalize)"
+    }
+  ],
+  "v33_levers": {
+    "hardened_canonical_decode": "subscript/superscript identifiers now parse (proof₁, h₂, f¹)",
+    "residual_coverage_corpus": "inter_assoc, le_trans chains, min/max/inf_comm, ∅∩ siblings"
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

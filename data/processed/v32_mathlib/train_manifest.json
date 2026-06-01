@@ -1,0 +1,18 @@
+{
+  "config": "v32_train",
+  "configs": {
+    "v32_canonical_repaired": {
+      "config": "v32_canonical_repaired",
+      "out_dir": "/home/wangw/code/ELFMath/data/models/token_seq2seq_v32_canonical_repaired",
+      "n_train_rows": 942,
+      "vocab_size": 209,
+      "n_parameters": 516721,
+      "best_epoch": 19,
+      "val_greedy_exact_top1": 0.3671497584541063,
+      "runtime_seconds": 223.3
+    }
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "note": "v24/v30/v31 never overwritten"
+}

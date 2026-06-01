@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/contradiction",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.2,
+  "pass@5": 0.8,
+  "pass@10": 0.8,
+  "total_verified_candidates": 7,
+  "novel_verified": 1,
+  "donorless_verified": 7,
+  "cross_family_verified": 7,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "arrow_false": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "exfalso_ab": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "exfalso_pq": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "exfalso_with_extra": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "iff_false_mp": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "contradiction": {
+      "n": 5,
+      "pass@5": 0.8,
+      "pass@10": 0.8
+    }
+  },
+  "elapsed_seconds": 251.35619728799793
+}

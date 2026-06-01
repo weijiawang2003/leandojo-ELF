@@ -1,0 +1,14 @@
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-30 21:34:48,654 INFO loaded 48 v18 seeds
+2026-05-30 21:34:48,668 INFO v20 broad-plus model loaded
+2026-05-30 21:34:48,671 INFO learned reranker: /home/wangw/code/ELFMath/data/models/v15_reranker/neg_imp_exfalso
+2026-05-30 21:34:48,830 INFO pattern bag: 2099 rows, 204 unique global patterns
+2026-05-30 21:34:49,415 INFO warmup: success=True elapsed_ms=583.0
+2026-05-30 21:55:28,577 INFO   raw pass@1=0.396 pass@5=0.667 pass@10=0.688 MRR=0.505 no_verify=15 malformed_top1=1 head_correct=23
+2026-05-30 21:55:28,579 INFO   rule pass@1=0.458 pass@5=0.667 pass@10=0.688 MRR=0.535 no_verify=15 malformed_top1=1 head_correct=29
+2026-05-30 21:55:28,581 INFO   learned pass@1=0.479 pass@5=0.667 pass@10=0.688 MRR=0.537 no_verify=15 malformed_top1=1 head_correct=29
+2026-05-30 21:55:28,582 INFO   policy pass@1=0.438 pass@5=0.667 pass@10=0.688 MRR=0.512 no_verify=15 malformed_top1=2 head_correct=27
+2026-05-30 21:55:28,584 INFO   abstract pass@1=0.562 pass@5=0.688 pass@10=0.688 MRR=0.606 no_verify=15 malformed_top1=1 head_correct=24
+2026-05-30 21:55:28,585 INFO   policy_abstract pass@1=0.562 pass@5=0.688 pass@10=0.688 MRR=0.609 no_verify=15 malformed_top1=1 head_correct=25
+2026-05-30 21:55:28,588 INFO V20 broad-core eval DONE

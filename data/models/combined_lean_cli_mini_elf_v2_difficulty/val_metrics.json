@@ -1,0 +1,11 @@
+{
+  "ae_val_recon_exact": 0.07692,
+  "avg_generated_length": 17.75,
+  "avg_unique_candidates": 35.03846153846154,
+  "empty_generation_rate": 0.0,
+  "flow_best_epoch": 30,
+  "n_examples": 52,
+  "top1_exact": 0.0,
+  "top5_any_verified": 0.07692307692307693,
+  "uses_state_after": false
+}

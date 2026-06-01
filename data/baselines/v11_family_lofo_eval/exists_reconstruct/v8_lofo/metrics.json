@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_v11_family_lofo/exists_reconstruct",
+  "model_dir": "data/models/proof_block_seq2seq_family_holdout_exists_reconstruct",
+  "n_test_theorems": 5,
+  "n_train_rows": 715,
+  "n_train_theorems": 324,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.2,
+  "pass@5": 0.4,
+  "pass@10": 0.4,
+  "total_verified_candidates": 2,
+  "novel_verified": 0,
+  "donorless_verified": 2,
+  "cross_family_verified": 2,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "exists_reconstruct": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    }
+  },
+  "per_operation": {
+    "unknown": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    }
+  },
+  "elapsed_seconds": 97.2783790959802
+}

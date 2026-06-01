@@ -1,0 +1,444 @@
+{
+  "n": 73,
+  "best_config": "abstract",
+  "by_config": {
+    "raw": {
+      "pass@1": 0.6712328767123288,
+      "pass@5": 0.8904109589041096,
+      "pass@10": 0.9178082191780822,
+      "MRR": 0.7665905631659058,
+      "n_no_candidate_verified": 6,
+      "per_category": {
+        "nat": {
+          "n": 14,
+          "pass@1": 0.6428571428571429,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "list": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 17,
+          "pass@1": 0.5294117647058824,
+          "pass@5": 0.8823529411764706,
+          "pass@10": 0.8823529411764706
+        },
+        "logic": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 11,
+          "pass@1": 0.5454545454545454,
+          "pass@5": 0.8181818181818182,
+          "pass@10": 0.9090909090909091
+        },
+        "finset": {
+          "n": 6,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.8333333333333334
+        }
+      },
+      "failure_taxonomy": {
+        "other": 164,
+        "parse_error": 116,
+        "shape_miss": 4,
+        "type_mismatch": 210,
+        "unknown_identifier": 88,
+        "unknown_tactic": 2
+      },
+      "no_verify_reason": {
+        "v26_fun_comp_assoc2": "other",
+        "v27_set_union_subset": "parse_error",
+        "v28_fs_mem_inter_left_0": "parse_error",
+        "v28_fun_comp_assoc3": "other",
+        "v28_ord_antisymm": "type_mismatch",
+        "v28_set_union_comm_subset_1": "type_mismatch"
+      }
+    },
+    "rule": {
+      "pass@1": 0.5068493150684932,
+      "pass@5": 0.726027397260274,
+      "pass@10": 0.9178082191780822,
+      "MRR": 0.6132039573820396,
+      "n_no_candidate_verified": 6,
+      "per_category": {
+        "nat": {
+          "n": 14,
+          "pass@1": 0.5,
+          "pass@5": 0.6428571428571429,
+          "pass@10": 1.0
+        },
+        "list": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 17,
+          "pass@1": 0.4117647058823529,
+          "pass@5": 0.8823529411764706,
+          "pass@10": 0.8823529411764706
+        },
+        "logic": {
+          "n": 9,
+          "pass@1": 0.2222222222222222,
+          "pass@5": 0.2222222222222222,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 11,
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9090909090909091
+        },
+        "finset": {
+          "n": 6,
+          "pass@1": 0.5,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        }
+      },
+      "failure_taxonomy": {
+        "other": 164,
+        "shape_miss": 4,
+        "parse_error": 116,
+        "unknown_identifier": 88,
+        "type_mismatch": 210,
+        "unknown_tactic": 2
+      },
+      "no_verify_reason": {
+        "v26_fun_comp_assoc2": "other",
+        "v27_set_union_subset": "parse_error",
+        "v28_fs_mem_inter_left_0": "parse_error",
+        "v28_fun_comp_assoc3": "other",
+        "v28_ord_antisymm": "type_mismatch",
+        "v28_set_union_comm_subset_1": "type_mismatch"
+      }
+    },
+    "learned": {
+      "pass@1": 0.6986301369863014,
+      "pass@5": 0.8904109589041096,
+      "pass@10": 0.9178082191780822,
+      "MRR": 0.7919330289193304,
+      "n_no_candidate_verified": 6,
+      "per_category": {
+        "nat": {
+          "n": 14,
+          "pass@1": 0.7142857142857143,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "list": {
+          "n": 9,
+          "pass@1": 0.7777777777777778,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 17,
+          "pass@1": 0.5294117647058824,
+          "pass@5": 0.8823529411764706,
+          "pass@10": 0.8823529411764706
+        },
+        "logic": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 11,
+          "pass@1": 0.7272727272727273,
+          "pass@5": 0.8181818181818182,
+          "pass@10": 0.9090909090909091
+        },
+        "finset": {
+          "n": 6,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.8333333333333334
+        }
+      },
+      "failure_taxonomy": {
+        "other": 164,
+        "parse_error": 116,
+        "shape_miss": 4,
+        "unknown_identifier": 88,
+        "type_mismatch": 210,
+        "unknown_tactic": 2
+      },
+      "no_verify_reason": {
+        "v26_fun_comp_assoc2": "other",
+        "v27_set_union_subset": "parse_error",
+        "v28_fs_mem_inter_left_0": "parse_error",
+        "v28_fun_comp_assoc3": "other",
+        "v28_ord_antisymm": "type_mismatch",
+        "v28_set_union_comm_subset_1": "type_mismatch"
+      }
+    },
+    "policy": {
+      "pass@1": 0.5205479452054794,
+      "pass@5": 0.7397260273972602,
+      "pass@10": 0.9178082191780822,
+      "MRR": 0.6251902587519026,
+      "n_no_candidate_verified": 6,
+      "per_category": {
+        "nat": {
+          "n": 14,
+          "pass@1": 0.5,
+          "pass@5": 0.6428571428571429,
+          "pass@10": 1.0
+        },
+        "list": {
+          "n": 9,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 17,
+          "pass@1": 0.4117647058823529,
+          "pass@5": 0.8823529411764706,
+          "pass@10": 0.8823529411764706
+        },
+        "logic": {
+          "n": 9,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.3333333333333333,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 11,
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9090909090909091
+        },
+        "finset": {
+          "n": 6,
+          "pass@1": 0.5,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        }
+      },
+      "failure_taxonomy": {
+        "other": 164,
+        "shape_miss": 4,
+        "parse_error": 116,
+        "unknown_identifier": 88,
+        "type_mismatch": 210,
+        "unknown_tactic": 2
+      },
+      "no_verify_reason": {
+        "v26_fun_comp_assoc2": "other",
+        "v27_set_union_subset": "parse_error",
+        "v28_fs_mem_inter_left_0": "parse_error",
+        "v28_fun_comp_assoc3": "other",
+        "v28_ord_antisymm": "type_mismatch",
+        "v28_set_union_comm_subset_1": "type_mismatch"
+      }
+    },
+    "abstract": {
+      "pass@1": 0.589041095890411,
+      "pass@5": 0.9041095890410958,
+      "pass@10": 0.9178082191780822,
+      "MRR": 0.734474885844749,
+      "n_no_candidate_verified": 6,
+      "per_category": {
+        "nat": {
+          "n": 14,
+          "pass@1": 0.5,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "list": {
+          "n": 9,
+          "pass@1": 0.7777777777777778,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 17,
+          "pass@1": 0.4117647058823529,
+          "pass@5": 0.8235294117647058,
+          "pass@10": 0.8823529411764706
+        },
+        "logic": {
+          "n": 9,
+          "pass@1": 0.7777777777777778,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 11,
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091
+        },
+        "finset": {
+          "n": 6,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        }
+      },
+      "failure_taxonomy": {
+        "other": 164,
+        "parse_error": 116,
+        "shape_miss": 4,
+        "type_mismatch": 210,
+        "unknown_identifier": 88,
+        "unknown_tactic": 2
+      },
+      "no_verify_reason": {
+        "v26_fun_comp_assoc2": "other",
+        "v27_set_union_subset": "parse_error",
+        "v28_fs_mem_inter_left_0": "parse_error",
+        "v28_fun_comp_assoc3": "other",
+        "v28_ord_antisymm": "type_mismatch",
+        "v28_set_union_comm_subset_1": "other"
+      }
+    },
+    "policy_abstract": {
+      "pass@1": 0.5205479452054794,
+      "pass@5": 0.863013698630137,
+      "pass@10": 0.9178082191780822,
+      "MRR": 0.6762557077625572,
+      "n_no_candidate_verified": 6,
+      "per_category": {
+        "nat": {
+          "n": 14,
+          "pass@1": 0.5,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "list": {
+          "n": 9,
+          "pass@1": 0.7777777777777778,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "bool_option": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "set": {
+          "n": 17,
+          "pass@1": 0.29411764705882354,
+          "pass@5": 0.8235294117647058,
+          "pass@10": 0.8823529411764706
+        },
+        "logic": {
+          "n": 9,
+          "pass@1": 0.4444444444444444,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 1.0
+        },
+        "function": {
+          "n": 2,
+          "pass@1": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 0.0
+        },
+        "order": {
+          "n": 11,
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091
+        },
+        "finset": {
+          "n": 6,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        }
+      },
+      "failure_taxonomy": {
+        "shape_miss": 4,
+        "other": 164,
+        "parse_error": 116,
+        "type_mismatch": 210,
+        "unknown_identifier": 88,
+        "unknown_tactic": 2
+      },
+      "no_verify_reason": {
+        "v26_fun_comp_assoc2": "other",
+        "v27_set_union_subset": "parse_error",
+        "v28_fs_mem_inter_left_0": "parse_error",
+        "v28_fun_comp_assoc3": "other",
+        "v28_ord_antisymm": "type_mismatch",
+        "v28_set_union_comm_subset_1": "other"
+      }
+    }
+  }
+}

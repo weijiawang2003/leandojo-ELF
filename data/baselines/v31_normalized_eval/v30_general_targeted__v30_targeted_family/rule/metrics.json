@@ -1,0 +1,75 @@
+{
+  "config": "rule",
+  "n_test_theorems": 10,
+  "pass@1": 0.2,
+  "pass@5": 0.6,
+  "pass@10": 0.6,
+  "MRR": 0.36666666666666664,
+  "n_no_candidate_verified": 4,
+  "no_verify_reason": {
+    "v30_fs_mem_inter_right_mgh": "type_mismatch",
+    "v30_set_mem_inter_right_mgh": "other",
+    "v30_set_mem_union_right_mgh": "type_mismatch",
+    "v30_set_union_subset_rsw": "parse_error"
+  },
+  "per_category": {
+    "finset": {
+      "n": 3,
+      "pass@10": 0.6666666666666666
+    },
+    "nat": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 5,
+      "pass@10": 0.4
+    }
+  },
+  "per_family": {
+    "finset::empty_subset": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "finset::mem_union_intro": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::add_assoc": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::le_refl": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::empty_subset": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::mem_inter_proj": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "set::mem_union_intro": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "set::subset_inter": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::union_subset": {
+      "n": 1,
+      "pass@10": 0.0
+    }
+  }
+}

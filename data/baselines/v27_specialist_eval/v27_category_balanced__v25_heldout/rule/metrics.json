@@ -1,0 +1,55 @@
+{
+  "model": "v27_category_balanced",
+  "benchmark": "v25_heldout",
+  "config": "rule",
+  "n_test_theorems": 14,
+  "pass@1": 0.7142857142857143,
+  "pass@5": 0.7857142857142857,
+  "pass@10": 1.0,
+  "MRR": 0.7611111111111111,
+  "n_no_candidate_verified": 0,
+  "no_verify_reason": {},
+  "failure_taxonomy": {
+    "parse_error": 16,
+    "other": 20,
+    "unknown_tactic": 4,
+    "type_mismatch": 42,
+    "unknown_identifier": 22,
+    "shape_miss": 2
+  },
+  "per_category": {
+    "nat": {
+      "n": 4,
+      "pass@1": 0.5,
+      "pass@5": 0.75,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "bool_option": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 1.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

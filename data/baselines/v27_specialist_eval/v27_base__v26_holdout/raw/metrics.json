@@ -1,0 +1,65 @@
+{
+  "model": "v27_base",
+  "benchmark": "v26_holdout",
+  "config": "raw",
+  "n_test_theorems": 22,
+  "pass@1": 0.6363636363636364,
+  "pass@5": 0.8181818181818182,
+  "pass@10": 0.8636363636363636,
+  "MRR": 0.7079545454545454,
+  "n_no_candidate_verified": 3,
+  "no_verify_reason": {
+    "v26_fun_comp_assoc2": "other",
+    "v26_nat_le_trans2": "type_mismatch",
+    "v26_set_inter_comm_subset": "type_mismatch"
+  },
+  "failure_taxonomy": {
+    "shape_miss": 4,
+    "other": 44,
+    "unknown_identifier": 31,
+    "type_mismatch": 56,
+    "parse_error": 40,
+    "unknown_tactic": 6
+  },
+  "per_category": {
+    "bool_option": {
+      "n": 3,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 6,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.8333333333333334,
+      "pass@10": 0.8333333333333334
+    },
+    "set": {
+      "n": 4,
+      "pass@1": 0.25,
+      "pass@5": 0.5,
+      "pass@10": 0.75
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

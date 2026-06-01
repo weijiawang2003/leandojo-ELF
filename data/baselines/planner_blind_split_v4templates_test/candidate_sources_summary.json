@@ -1,0 +1,22 @@
+{
+  "flow_decoder": {
+    "attempted": 231,
+    "verified": 0
+  },
+  "planner_exists_elim": {
+    "attempted": 34,
+    "verified": 34
+  },
+  "planner_negation": {
+    "attempted": 127,
+    "verified": 127
+  },
+  "planner_projection": {
+    "attempted": 8,
+    "verified": 0
+  },
+  "witness_copy": {
+    "attempted": 18,
+    "verified": 18
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "attention_dim": 64,
+  "bidirectional_encoder": true,
+  "bos_id": 1,
+  "dropout": 0.1,
+  "embedding_dim": 64,
+  "eos_id": 2,
+  "hidden_dim": 128,
+  "max_input_len": 160,
+  "max_output_len": 80,
+  "num_layers": 1,
+  "pad_id": 0,
+  "regime_dir": "data/processed/proof_blocks_interpolation",
+  "regime_name": "proof_blocks_interpolation",
+  "summary": {
+    "best_epoch": 24,
+    "n_parameters": 414799,
+    "n_train_examples": 553,
+    "n_train_theorems": 233,
+    "n_val_examples": 52,
+    "n_val_theorems": 21,
+    "truncation": {
+      "source_truncated": 0,
+      "target_truncated": 0
+    },
+    "uses_state_after": false,
+    "vocab_size": 79
+  },
+  "training": {
+    "batch_size": 32,
+    "beam_width": 10,
+    "device": "cpu",
+    "epochs": 30,
+    "framework": "torch-2.12.0+cpu",
+    "grad_clip": 1.0,
+    "length_penalty": 0.7,
+    "lr": 0.003,
+    "optimizer": "adam",
+    "seed": 0,
+    "weight_decay": 0.0
+  },
+  "val_source": "val.jsonl",
+  "vocab_size": 79
+}

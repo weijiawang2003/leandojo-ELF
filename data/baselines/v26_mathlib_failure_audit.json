@@ -1,0 +1,932 @@
+{
+  "config_audited": "raw",
+  "n_tierc_theorems": 36,
+  "bound_counts": {
+    "solved": 17,
+    "generator_bound": 10,
+    "ranking_bound": 3,
+    "syntax_api_bound": 6
+  },
+  "by_skill_bound": {
+    "bool/option": {
+      "solved": 2,
+      "syntax_api_bound": 1
+    },
+    "core-shaped": {
+      "generator_bound": 3,
+      "solved": 11,
+      "ranking_bound": 2
+    },
+    "list": {
+      "solved": 1,
+      "ranking_bound": 1,
+      "generator_bound": 3
+    },
+    "mathlib-lemma": {
+      "syntax_api_bound": 1
+    },
+    "arithmetic": {
+      "solved": 3,
+      "syntax_api_bound": 1
+    },
+    "order": {
+      "syntax_api_bound": 2
+    },
+    "set": {
+      "generator_bound": 4,
+      "syntax_api_bound": 1
+    }
+  },
+  "most_missing_identifiers": [
+    [
+      "Or.refl",
+      6
+    ],
+    [
+      "g.intro",
+      4
+    ],
+    [
+      "g.refl",
+      4
+    ],
+    [
+      "g.trans",
+      3
+    ],
+    [
+      "Eq.zero_add",
+      2
+    ],
+    [
+      "Eq.add_comm",
+      2
+    ],
+    [
+      "Eq.nil_append",
+      2
+    ],
+    [
+      "simpa",
+      1
+    ],
+    [
+      "«using».heq",
+      1
+    ],
+    [
+      "h1.trans",
+      1
+    ],
+    [
+      "«using».trans",
+      1
+    ],
+    [
+      "List.refl",
+      1
+    ],
+    [
+      "hpqhpq",
+      1
+    ],
+    [
+      "Nat.Nat",
+      1
+    ],
+    [
+      "Eq.rfl",
+      1
+    ]
+  ],
+  "set_theorems_all_unsolved": true,
+  "rows": [
+    {
+      "theorem_name": "v25_bool_and_true",
+      "category": "bool_option",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "bool/option",
+      "v24_zs_first_rank_raw": 1,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 1,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 6,
+        "parse_error": 3
+      },
+      "missing_identifiers": [
+        "simpa"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_bool_decide_true",
+      "category": "bool_option",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "other": 2,
+        "unknown_identifier": 6,
+        "parse_error": 1,
+        "shape_miss": 1
+      },
+      "missing_identifiers": [
+        "«using».heq"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_bool_not_not",
+      "category": "bool_option",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "bool/option",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 3,
+        "parse_error": 1,
+        "unknown_tactic": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_bool_true_and",
+      "category": "bool_option",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": 8,
+      "heldout_delta": "aug_fixed",
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 7,
+        "parse_error": 3
+      },
+      "missing_identifiers": [
+        "h1.trans",
+        "«using».trans"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_append_nil",
+      "category": "list",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "list",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 0,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 8,
+        "type_or_arity": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_length_append",
+      "category": "list",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "list",
+      "v24_zs_first_rank_raw": 7,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "ranking_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 7,
+        "type_or_arity": 2
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_length_reverse",
+      "category": "list",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "list",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 5,
+        "type_or_arity": 5
+      },
+      "missing_identifiers": [
+        "Or.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_map_id",
+      "category": "list",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "list",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "aug_fixed",
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 5,
+        "type_or_arity": 5
+      },
+      "missing_identifiers": [
+        "Eq.zero_add"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_mem_cons_self",
+      "category": "list",
+      "transfer": "mathlib",
+      "required_operation": "destruct",
+      "expected_skill": "list",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 10
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_nil_append",
+      "category": "list",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "other",
+      "failure_classes": {
+        "other": 2,
+        "type_or_arity": 1,
+        "unknown_tactic": 2,
+        "parse_error": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_list_reverse_nil",
+      "category": "list",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 1,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 1,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 6,
+        "type_or_arity": 1
+      },
+      "missing_identifiers": [
+        "List.refl",
+        "Or.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_and_imp",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "project_conjunction",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 0,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 3,
+        "unknown_identifier": 1,
+        "parse_error": 3
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_and_symm",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "project_conjunction",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 2,
+        "unknown_identifier": 2,
+        "other": 2,
+        "parse_error": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_em",
+      "category": "logic",
+      "transfer": "mathlib",
+      "required_operation": "disjunction_cases",
+      "expected_skill": "mathlib-lemma",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "syntax_api_bound",
+      "dominant_failure": "parse_error",
+      "failure_classes": {
+        "parse_error": 8,
+        "unknown_identifier": 2
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_iff_refl",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "intro",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": "both_fail",
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 9,
+        "type_or_arity": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_imp_self",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "intro",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "parse_error": 1,
+        "type_or_arity": 1,
+        "unknown_identifier": 5
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_modus_ponens",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "intro",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "parse_error",
+      "failure_classes": {
+        "other": 1,
+        "unknown_identifier": 2,
+        "parse_error": 3,
+        "unknown_tactic": 1
+      },
+      "missing_identifiers": [
+        "hpqhpq"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_not_intro",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "intro_negation",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 6,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 6,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "ranking_bound",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 5,
+        "unknown_identifier": 4
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_logic_or_symm",
+      "category": "logic",
+      "transfer": "core",
+      "required_operation": "disjunction_cases",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 3,
+        "parse_error": 2,
+        "shape_miss": 1,
+        "type_or_arity": 1,
+        "other": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_add_assoc",
+      "category": "nat",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "arithmetic",
+      "v24_zs_first_rank_raw": 2,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 2,
+      "v25_aug_first_rank": 4,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "type_or_arity": 3,
+        "other": 2,
+        "unknown_identifier": 4
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_add_comm",
+      "category": "nat",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "arithmetic",
+      "v24_zs_first_rank_raw": 1,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 4,
+        "other": 2,
+        "unknown_identifier": 3
+      },
+      "missing_identifiers": [
+        "Nat.Nat"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_add_one_eq",
+      "category": "nat",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 5,
+        "other": 3,
+        "unknown_identifier": 1
+      },
+      "missing_identifiers": [
+        "Eq.add_comm"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_add_zero",
+      "category": "nat",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 0,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 9
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_le_refl",
+      "category": "nat",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "order",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "syntax_api_bound",
+      "dominant_failure": "parse_error",
+      "failure_classes": {
+        "unknown_identifier": 1,
+        "type_or_arity": 1,
+        "parse_error": 7
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 9
+    },
+    {
+      "theorem_name": "v25_nat_le_succ",
+      "category": "nat",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "order",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "syntax_api_bound",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 4,
+        "other": 2,
+        "unknown_identifier": 3
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 9
+    },
+    {
+      "theorem_name": "v25_nat_mul_one",
+      "category": "nat",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "arithmetic",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "aug_fixed",
+      "bound": "syntax_api_bound",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 6,
+        "unknown_identifier": 3,
+        "parse_error": 1
+      },
+      "missing_identifiers": [
+        "Eq.add_comm",
+        "Or.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_mul_zero",
+      "category": "nat",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "type_or_arity": 4,
+        "unknown_identifier": 5
+      },
+      "missing_identifiers": [
+        "Eq.zero_add",
+        "Eq.nil_append",
+        "Or.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_succ_eq",
+      "category": "nat",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 0,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 4,
+        "unknown_identifier": 3,
+        "other": 1,
+        "parse_error": 1
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_nat_zero_add",
+      "category": "nat",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "arithmetic",
+      "v24_zs_first_rank_raw": 2,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": 2,
+      "v25_aug_first_rank": 0,
+      "heldout_delta": "both_solved",
+      "bound": "solved",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 9
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_option_map_id",
+      "category": "bool_option",
+      "transfer": "mathlib",
+      "required_operation": "rewrite",
+      "expected_skill": "bool/option",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "syntax_api_bound",
+      "dominant_failure": "type_or_arity",
+      "failure_classes": {
+        "type_or_arity": 4,
+        "other": 2,
+        "unknown_identifier": 4
+      },
+      "missing_identifiers": [
+        "Eq.nil_append",
+        "Eq.rfl",
+        "Eq.succ",
+        "Or.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_option_some_isSome",
+      "category": "bool_option",
+      "transfer": "core",
+      "required_operation": "rewrite",
+      "expected_skill": "core-shaped",
+      "v24_zs_first_rank_raw": 8,
+      "v24_zs_first_rank_best": 0,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "ranking_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 5,
+        "type_or_arity": 3,
+        "parse_error": 1
+      },
+      "missing_identifiers": [
+        "Or.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_set_empty_subset",
+      "category": "set",
+      "transfer": "mathlib",
+      "required_operation": "intro",
+      "expected_skill": "set",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": "both_fail",
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 10
+      },
+      "missing_identifiers": [
+        "g.intro",
+        "g.elim",
+        "g.trans",
+        "g.refl"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_set_inter_subset_left",
+      "category": "set",
+      "transfer": "mathlib",
+      "required_operation": "intro",
+      "expected_skill": "set",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "syntax_api_bound",
+      "dominant_failure": "parse_error",
+      "failure_classes": {
+        "type_or_arity": 1,
+        "parse_error": 6,
+        "unknown_identifier": 3
+      },
+      "missing_identifiers": [],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_set_mem_singleton",
+      "category": "set",
+      "transfer": "mathlib",
+      "required_operation": "destruct",
+      "expected_skill": "set",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 10
+      },
+      "missing_identifiers": [
+        "g.a",
+        "g.refl",
+        "g.intro",
+        "g.trans"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_set_mem_univ",
+      "category": "set",
+      "transfer": "mathlib",
+      "required_operation": "destruct",
+      "expected_skill": "set",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": true,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": "both_fail",
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 9,
+        "parse_error": 1
+      },
+      "missing_identifiers": [
+        "g.refl",
+        "g.trans",
+        "g.intro"
+      ],
+      "n_union_candidates": 10
+    },
+    {
+      "theorem_name": "v25_set_subset_refl",
+      "category": "set",
+      "transfer": "mathlib",
+      "required_operation": "intro",
+      "expected_skill": "set",
+      "v24_zs_first_rank_raw": null,
+      "v24_zs_first_rank_best": null,
+      "in_heldout_test": false,
+      "v24_heldout_first_rank": null,
+      "v25_aug_first_rank": null,
+      "heldout_delta": null,
+      "bound": "generator_bound",
+      "dominant_failure": "unknown_identifier",
+      "failure_classes": {
+        "unknown_identifier": 9,
+        "type_or_arity": 1
+      },
+      "missing_identifiers": [
+        "g.refl",
+        "g.intro"
+      ],
+      "n_union_candidates": 10
+    }
+  ]
+}

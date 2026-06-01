@@ -1,0 +1,88 @@
+{
+  "n_rows": 48,
+  "n_top10_slots": 480,
+  "n_ok_slots": 56,
+  "n_zero_top10_rows": 20,
+  "per_class_total": {
+    "malformed_parse": 197,
+    "unknown_identifier": 140,
+    "ok": 56,
+    "other_error": 53,
+    "timeout": 23,
+    "environment_or_import_issue": 7,
+    "unsolved_goals": 2,
+    "no_goals": 1,
+    "unknown_tactic": 1
+  },
+  "per_category_class_counts": {
+    "implication": {
+      "unknown_identifier": 25,
+      "malformed_parse": 28,
+      "no_goals": 1,
+      "other_error": 6
+    },
+    "conjunction": {
+      "ok": 15,
+      "malformed_parse": 35,
+      "unknown_identifier": 2,
+      "other_error": 8
+    },
+    "disjunction": {
+      "unknown_identifier": 28,
+      "environment_or_import_issue": 4,
+      "ok": 6,
+      "malformed_parse": 4,
+      "other_error": 5,
+      "unknown_tactic": 1,
+      "unsolved_goals": 2
+    },
+    "negation": {
+      "unknown_identifier": 11,
+      "malformed_parse": 23,
+      "ok": 14,
+      "other_error": 2
+    },
+    "equality_rewrite": {
+      "ok": 11,
+      "other_error": 6,
+      "malformed_parse": 37,
+      "unknown_identifier": 2,
+      "environment_or_import_issue": 1,
+      "timeout": 3
+    },
+    "exists": {
+      "malformed_parse": 18,
+      "other_error": 7,
+      "timeout": 2,
+      "unknown_identifier": 12,
+      "ok": 1
+    },
+    "forall": {
+      "ok": 2,
+      "malformed_parse": 24,
+      "other_error": 2,
+      "timeout": 2
+    },
+    "nat_succ": {
+      "other_error": 9,
+      "unknown_identifier": 15,
+      "ok": 3,
+      "malformed_parse": 15,
+      "timeout": 8
+    },
+    "bool": {
+      "unknown_identifier": 19,
+      "environment_or_import_issue": 2,
+      "malformed_parse": 5,
+      "timeout": 3,
+      "other_error": 1
+    },
+    "list": {
+      "unknown_identifier": 26,
+      "other_error": 7,
+      "malformed_parse": 8,
+      "ok": 4,
+      "timeout": 5
+    }
+  }
+}

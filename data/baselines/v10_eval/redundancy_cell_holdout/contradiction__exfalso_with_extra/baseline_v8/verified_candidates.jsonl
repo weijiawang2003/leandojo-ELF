@@ -1,0 +1,2 @@
+{"theorem_name": "v10_contradiction_exfalso_with_extra_r", "family": "exfalso_with_extra", "required_operation": "contradiction", "rank": 0, "tactic": "exact absurd hp hnp", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": false}
+{"theorem_name": "v10_contradiction_exfalso_with_extra_r", "family": "exfalso_with_extra", "required_operation": "contradiction", "rank": 3, "tactic": "exact (hnp hp).elim", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": true}

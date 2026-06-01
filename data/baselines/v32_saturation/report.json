@@ -1,0 +1,129 @@
+{
+  "config": "v32_saturation",
+  "model": "v32_canonical_repaired",
+  "stress_fresh_pass10": {
+    "v30_general_targeted": {
+      "identifier_stress": 0.2608695652173913,
+      "fresh_mathlib": 0.76
+    },
+    "v31_canonical_general": {
+      "identifier_stress": 0.8913043478260869,
+      "fresh_mathlib": 0.76
+    },
+    "v32_canonical_repaired": {
+      "identifier_stress": 0.8913043478260869,
+      "fresh_mathlib": 0.8
+    }
+  },
+  "routed": {
+    "broad_core": {
+      "n": 48,
+      "best_config": "policy_abstract",
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334
+    },
+    "tierc": {
+      "n": 202,
+      "best_config": "learned",
+      "pass@1": 0.8465346534653465,
+      "pass@5": 0.9455445544554455,
+      "pass@10": 0.9504950495049505
+    }
+  },
+  "routed_adopt": true,
+  "remaining_failures": [
+    {
+      "bench": "identifier_stress",
+      "theorem": "v32stress_set_inter_left_2",
+      "category": "set",
+      "family": "set::mem_inter_proj",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "identifier_stress",
+      "theorem": "v32stress_set_inter_right_2",
+      "category": "set",
+      "family": "set::mem_inter_proj",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "identifier_stress",
+      "theorem": "v32stress_set_union_left_2",
+      "category": "set",
+      "family": "set::mem_union_intro",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "identifier_stress",
+      "theorem": "v32stress_fs_inter_left_2",
+      "category": "finset",
+      "family": "finset::mem_inter_proj",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "identifier_stress",
+      "theorem": "v32stress_fs_union_right_2",
+      "category": "finset",
+      "family": "finset::mem_union_intro",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "fresh_mathlib",
+      "theorem": "v32fresh_set_inter_assoc",
+      "category": "set",
+      "family": "set::inter_assoc",
+      "class": "token_or_shape"
+    },
+    {
+      "bench": "fresh_mathlib",
+      "theorem": "v32fresh_ord_le_trans3",
+      "category": "order",
+      "family": "order::le_trans",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "fresh_mathlib",
+      "theorem": "v32fresh_ord_min_comm",
+      "category": "order",
+      "family": "order::min_max",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "fresh_mathlib",
+      "theorem": "v32fresh_ord_max_comm",
+      "category": "order",
+      "family": "order::min_max",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "fresh_mathlib",
+      "theorem": "v32fresh_ord_inf_comm",
+      "category": "order",
+      "family": "order::lattice",
+      "class": "api_vocabulary"
+    },
+    {
+      "bench": "tierc_token_diversity",
+      "theorem": "v30_set_empty_inter_subset",
+      "category": "set",
+      "family": "set::empty_subset",
+      "class": "sparse_shape_single_tactic"
+    }
+  ],
+  "n_remaining_failures": 11,
+  "failure_class_counts": {
+    "api_vocabulary": 9,
+    "token_or_shape": 1,
+    "sparse_shape_single_tactic": 1
+  },
+  "by_category": {
+    "set": 5,
+    "finset": 2,
+    "order": 4
+  },
+  "leandojo_next_state_relevant": false,
+  "v33_decision": "v33 = more coverage — stress/fresh not yet strong; continue single-tactic density/canonicalization",
+  "saturation_strong": false,
+  "uses_state_after": false
+}

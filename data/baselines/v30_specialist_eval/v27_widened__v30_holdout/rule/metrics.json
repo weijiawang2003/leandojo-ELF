@@ -1,0 +1,124 @@
+{
+  "config": "rule",
+  "n_test_theorems": 15,
+  "pass@1": 0.2,
+  "pass@5": 0.2,
+  "pass@10": 0.2,
+  "MRR": 0.2,
+  "n_no_candidate_verified": 12,
+  "no_verify_reason": {
+    "v30_fs_mem_inter_left_mgh": "other",
+    "v30_fs_mem_union_left_kuv": "parse_error",
+    "v30_fun_comp_assoc_rst": "other",
+    "v30_nat_add_assoc_def": "unknown_identifier",
+    "v30_nat_add_assoc_rev_ghi": "unknown_identifier",
+    "v30_nat_add_assoc_rev_xyz": "unknown_identifier",
+    "v30_set_empty_inter_subset": "type_mismatch",
+    "v30_set_empty_subset_u": "unknown_identifier",
+    "v30_set_mem_inter_left_mgh": "other",
+    "v30_set_mem_union_left_ecd": "unknown_identifier",
+    "v30_set_mem_union_right_ecd": "unknown_identifier",
+    "v30_set_subset_inter_ghi": "parse_error"
+  },
+  "failure_taxonomy": {
+    "type_mismatch": 42,
+    "other": 40,
+    "unknown_identifier": 43,
+    "shape_miss": 5,
+    "parse_error": 12
+  },
+  "per_category": {
+    "finset": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 0.3333333333333333
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_family": {
+    "finset::empty_subset": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::mem_union_intro": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function::comp_assoc": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat::add_assoc": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "order::le_refl": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set::empty_subset": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::mem_inter_proj": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::mem_union_intro": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::subset_inter": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  }
+}

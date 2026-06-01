@@ -1,0 +1,18 @@
+2026-05-30 11:21:53,903 INFO wrote metrics_original.json snapshot (untouched v12)
+2026-05-30 11:21:53,904 INFO discovered 14 total timeout slots; selected 13 rerun targets
+2026-05-30 11:21:53,904 INFO wrote rerun plan to /home/wangw/code/ELFMath/data/baselines/v13_timeout_rerun/rerun_plan.jsonl
+2026-05-30 11:21:56,288 INFO warm-up: success=True error=None elapsed_ms=2383.0
+2026-05-30 11:21:56,288 INFO rerun: forall_inst_7_0 rank=1 src=seq2seq cand='exact h' (timeout=120s)
+2026-05-30 11:21:56,794 INFO rerun: forall_inst_7_0 rank=6 src=seq2seq cand='rcases h with |' (timeout=120s)
+2026-05-30 11:21:57,309 INFO rerun: forall_inst_3_0 rank=6 src=seq2seq cand='exact h 4' (timeout=120s)
+2026-05-30 11:21:57,744 INFO rerun: forall_inst_5_2 rank=0 src=seq2seq_literal_adapt cand='exact h 5' (timeout=120s)
+2026-05-30 11:21:58,201 INFO rerun: forall_inst_9_4 rank=3 src=seq2seq cand='exact h (h' (timeout=120s)
+2026-05-30 11:21:58,691 INFO rerun: forall_inst_13_6 rank=0 src=seq2seq_literal_adapt cand='exact h 13' (timeout=120s)
+2026-05-30 11:21:59,129 INFO rerun: forall_inst_13_6 rank=4 src=seq2seq cand='exact h' (timeout=120s)
+2026-05-30 11:21:59,557 INFO rerun: forall_inst_13_6 rank=7 src=seq2seq cand='exact h 4' (timeout=120s)
+2026-05-30 11:21:59,975 INFO rerun: forall_inst_var_k rank=0 src=seq2seq_literal_adapt cand='exact h 8' (timeout=120s)
+2026-05-30 11:22:00,399 INFO rerun: forall_inst_var_k rank=7 src=seq2seq cand='rcases h with hn => exact h' (timeout=120s)
+2026-05-30 11:22:00,874 INFO rerun: rewrite_succ_ij rank=0 src=seq2seq cand='rw [h]' (timeout=120s)
+2026-05-30 11:22:01,295 INFO rerun: exists_reconstruct_3 rank=5 src=seq2seq cand='cases h with | intro n hn => exact ⟨m, hn⟩' (timeout=120s)
+2026-05-30 11:22:01,758 INFO rerun: exists_reconstruct_20 rank=1 src=seq2seq cand='cases h with | intro n hn => exact ⟨m, rfl⟩' (timeout=120s)
+2026-05-30 11:22:02,175 INFO rerun summary: total=13 verified=4 still_timeout=0 other_fail=9

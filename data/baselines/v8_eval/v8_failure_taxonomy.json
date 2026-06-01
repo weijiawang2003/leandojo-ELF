@@ -1,0 +1,123 @@
+{
+  "donorless_eval": {
+    "seq2seq_only": {
+      "other": 582
+    }
+  },
+  "family_holdout_exists_elim_conj": {
+    "seq2seq_only": {
+      "type_mismatch": 42,
+      "other": 21,
+      "stale_donor": 17
+    }
+  },
+  "family_holdout_exists_elim_prop": {
+    "seq2seq_only": {
+      "other": 38,
+      "stale_donor": 10,
+      "type_mismatch": 7,
+      "lean_syntax_error": 5
+    }
+  },
+  "family_holdout_exists_reconstruct": {
+    "seq2seq_only": {
+      "wrong_theorem_family": 14,
+      "type_mismatch": 19,
+      "stale_donor": 7,
+      "verified": 2,
+      "other": 8
+    }
+  },
+  "family_holdout_forall_inst": {
+    "seq2seq_only": {
+      "other": 47,
+      "type_mismatch": 17,
+      "lean_syntax_error": 3,
+      "wrong_theorem_family": 3
+    }
+  },
+  "family_holdout_neg_contrapositive": {
+    "seq2seq_only": {
+      "stale_donor": 47,
+      "other": 13
+    }
+  },
+  "family_holdout_neg_double_intro": {
+    "seq2seq_only": {
+      "stale_donor": 26,
+      "type_mismatch": 7,
+      "other": 17
+    }
+  },
+  "family_holdout_neg_exfalso": {
+    "seq2seq_only": {
+      "type_mismatch": 16,
+      "stale_donor": 21,
+      "lean_syntax_error": 7,
+      "verified": 9,
+      "other": 27
+    }
+  },
+  "family_holdout_neg_imp_exfalso": {
+    "seq2seq_only": {
+      "stale_donor": 40,
+      "type_mismatch": 7,
+      "other": 3
+    }
+  },
+  "family_holdout_neg_or_cases": {
+    "seq2seq_only": {
+      "other": 14,
+      "stale_donor": 41,
+      "type_mismatch": 1,
+      "wrong_theorem_family": 2,
+      "lean_syntax_error": 2
+    }
+  },
+  "family_holdout_rewrite_succ": {
+    "seq2seq_only": {
+      "type_mismatch": 15,
+      "other": 35
+    }
+  },
+  "operation_holdout_contradiction": {
+    "seq2seq_only": {
+      "type_mismatch": 18,
+      "other": 49,
+      "stale_donor": 67,
+      "verified": 1,
+      "wrong_theorem_family": 3,
+      "lean_syntax_error": 2
+    }
+  },
+  "operation_holdout_destruct_exists": {
+    "seq2seq_only": {
+      "lean_syntax_error": 32,
+      "other": 75,
+      "type_mismatch": 33
+    }
+  },
+  "operation_holdout_instantiate_forall": {
+    "seq2seq_only": {
+      "other": 47,
+      "type_mismatch": 17,
+      "lean_syntax_error": 3,
+      "wrong_theorem_family": 3
+    }
+  },
+  "operation_holdout_intro_negation": {
+    "seq2seq_only": {
+      "other": 45,
+      "stale_donor": 81,
+      "type_mismatch": 22,
+      "wrong_theorem_family": 9,
+      "verified": 3
+    }
+  },
+  "operation_holdout_rewrite": {
+    "seq2seq_only": {
+      "type_mismatch": 15,
+      "other": 35
+    }
+  }
+}

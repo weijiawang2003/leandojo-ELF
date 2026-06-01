@@ -1,0 +1,47 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/exists_elim",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 4,
+  "n_train_rows": 28,
+  "n_train_theorems": 28,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.75,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 12,
+  "novel_verified": 12,
+  "donorless_verified": 12,
+  "cross_family_verified": 12,
+  "cross_operation_verified": 12,
+  "per_family": {
+    "drop_witness_prop": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_addzero": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_witness_3": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "reuse_witness_7": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "exists_elim": {
+      "n": 4,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "elapsed_seconds": 14.826945220003836
+}

@@ -1,0 +1,8 @@
+{
+  "epochs": 150,
+  "lr": 0.5,
+  "l2": 0.001,
+  "class_weight_positive": 6.0,
+  "seed": 0,
+  "hashed_dim": 256
+}

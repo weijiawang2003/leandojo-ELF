@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/implication_chain",
+  "model_dir": "data/models/proof_block_seq2seq_combined_v10_per_op/implication_chain",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.2,
+  "pass@5": 0.4,
+  "pass@10": 0.4,
+  "total_verified_candidates": 3,
+  "novel_verified": 1,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 3,
+  "per_family": {
+    "branch_join": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "three_step": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "two_step_abc": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "two_step_intro": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "two_step_pqr": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "implication_chain": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    }
+  },
+  "elapsed_seconds": 18.624406996998005
+}

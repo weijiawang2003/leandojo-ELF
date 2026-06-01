@@ -1,0 +1,144 @@
+{
+  "systems": [
+    "v18_broad_only",
+    "v20_broad_plus",
+    "v21_single_retrain",
+    "v21_capacity",
+    "v21_routed"
+  ],
+  "means": {
+    "v18_broad_only": {
+      "pass@1": 0.5,
+      "pass@5": 0.5833333333333334,
+      "pass@10": 0.6041666666666666,
+      "no_verified_top10": 19
+    },
+    "v20_broad_plus": {
+      "pass@1": 0.625,
+      "pass@5": 0.7291666666666666,
+      "pass@10": 0.7291666666666666,
+      "no_verified_top10": 13
+    },
+    "v21_single_retrain": {
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.7291666666666666,
+      "pass@10": 0.75,
+      "no_verified_top10": 12
+    },
+    "v21_capacity": {
+      "pass@1": 0.7083333333333334,
+      "pass@5": 0.7708333333333334,
+      "pass@10": 0.7708333333333334,
+      "no_verified_top10": 11
+    },
+    "v21_routed": {
+      "pass@1": 0.6875,
+      "pass@5": 0.7916666666666666,
+      "pass@10": 0.7916666666666666,
+      "no_verified_top10": 10
+    }
+  },
+  "per_category_pass5": {
+    "implication": {
+      "v18_broad_only": 0.0,
+      "v20_broad_plus": 1.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0
+    },
+    "conjunction": {
+      "v18_broad_only": 0.8333333333333334,
+      "v20_broad_plus": 0.8333333333333334,
+      "v21_single_retrain": 0.8333333333333334,
+      "v21_capacity": 0.8333333333333334,
+      "v21_routed": 0.8333333333333334
+    },
+    "disjunction": {
+      "v18_broad_only": 0.6,
+      "v20_broad_plus": 0.6,
+      "v21_single_retrain": 0.4,
+      "v21_capacity": 0.6,
+      "v21_routed": 0.6
+    },
+    "negation": {
+      "v18_broad_only": 0.8,
+      "v20_broad_plus": 0.8,
+      "v21_single_retrain": 0.6,
+      "v21_capacity": 0.8,
+      "v21_routed": 0.8
+    },
+    "equality_rewrite": {
+      "v18_broad_only": 1.0,
+      "v20_broad_plus": 1.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0
+    },
+    "exists": {
+      "v18_broad_only": 0.25,
+      "v20_broad_plus": 0.25,
+      "v21_single_retrain": 0.0,
+      "v21_capacity": 0.0,
+      "v21_routed": 0.25
+    },
+    "forall": {
+      "v18_broad_only": 0.6666666666666666,
+      "v20_broad_plus": 0.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0
+    },
+    "nat_succ": {
+      "v18_broad_only": 0.6,
+      "v20_broad_plus": 0.6,
+      "v21_single_retrain": 0.6,
+      "v21_capacity": 0.6,
+      "v21_routed": 0.6
+    },
+    "bool": {
+      "v18_broad_only": 0.0,
+      "v20_broad_plus": 1.0,
+      "v21_single_retrain": 1.0,
+      "v21_capacity": 1.0,
+      "v21_routed": 1.0
+    },
+    "list": {
+      "v18_broad_only": 0.8,
+      "v20_broad_plus": 0.8,
+      "v21_single_retrain": 0.8,
+      "v21_capacity": 0.8,
+      "v21_routed": 0.8
+    }
+  },
+  "category_classification": {
+    "implication": "stable",
+    "conjunction": "stable",
+    "disjunction": "mixed",
+    "negation": "harmed_by_retrain,capacity_sensitive",
+    "equality_rewrite": "stable",
+    "exists": "harmed_by_retrain",
+    "forall": "mixed",
+    "nat_succ": "stable",
+    "bool": "stable",
+    "list": "stable"
+  },
+  "summary": {
+    "needs_routing": [],
+    "harmed_by_retrain": [
+      "negation",
+      "exists"
+    ],
+    "capacity_sensitive": [
+      "negation"
+    ],
+    "stable": [
+      "implication",
+      "conjunction",
+      "equality_rewrite",
+      "nat_succ",
+      "bool",
+      "list"
+    ]
+  },
+  "uses_state_after": false
+}

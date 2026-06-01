@@ -1,0 +1,29 @@
+{
+  "config": "v28_corpus_integrity",
+  "verifier": "TrustedMathlibVerifier (sound&complete) vs GoldMathlibVerifier (1 decl/file)",
+  "n_verified": 350,
+  "n_failed": 2,
+  "verified_still_pass": 350,
+  "n_verified_regressions": 0,
+  "verified_regressions": [],
+  "n_failed_now_pass": 0,
+  "failed_now_pass": [],
+  "gold_sample_size": 24,
+  "gold_sample_by_category": {
+    "finset": 1,
+    "function": 3,
+    "list": 1,
+    "logic": 3,
+    "nat": 4,
+    "order": 5,
+    "set": 7
+  },
+  "n_gold_mismatches": 0,
+  "n_gold_false_positives": 0,
+  "gold_mismatches": [],
+  "integrity_ok": true,
+  "trusted_sound_on_sample": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

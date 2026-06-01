@@ -1,0 +1,157 @@
+{
+  "config": "v30_v25_regression_audit",
+  "source": "v28/v29 specialist eval + verified corpora (no Lean run)",
+  "targets": [
+    "v25_nat_add_assoc",
+    "v25_set_empty_subset"
+  ],
+  "audits": [
+    {
+      "theorem_name": "v25_nat_add_assoc",
+      "family": "nat::nat_add_assoc",
+      "statement": "(a b c : Nat) : a + b + c = a + (b + c)",
+      "expected_proofs": [
+        "exact Nat.add_assoc a b c",
+        "omega",
+        "ring",
+        "simp [Nat.add_assoc]"
+      ],
+      "v28_first_rank": 1,
+      "v29_first_rank": null,
+      "v28_pass@10": true,
+      "v29_pass@10": false,
+      "top10_candidates": [
+        "simp",
+        "exact Nat.add_zero a",
+        "exact Nat.append_assoc a",
+        "exact Nat.zero_add a",
+        "exact Nat.append_assoc b",
+        "exact Nat.add_comm a",
+        "exact Nat.add_comm b",
+        "exact Nat.le_add_left b",
+        "exact Nat.and_self a",
+        "exact Nat.zero_add b"
+      ],
+      "top10_error_classes": [
+        "other",
+        "type_mismatch",
+        "unknown_identifier",
+        "type_mismatch",
+        "unknown_identifier",
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch"
+      ],
+      "error_class_counts": {
+        "other": 1,
+        "type_mismatch": 7,
+        "unknown_identifier": 2
+      },
+      "correct_present_in_beam": false,
+      "v28_train_density": 0,
+      "v29_train_density": 0,
+      "v28_train_siblings": [],
+      "v29_train_siblings": [],
+      "classification": "beam_absence_sparse_sibling",
+      "proposed_minimal_siblings": {
+        "shape": "(x y z : Nat) : x + y + z = x + (y + z)",
+        "var_sets": [
+          "a,b,c",
+          "m,n,k",
+          "i,j,l",
+          "x,y,z",
+          "p,q,r"
+        ],
+        "proof_heads": [
+          "exact Nat.add_assoc x y z",
+          "omega",
+          "ring",
+          "simp [Nat.add_assoc]"
+        ],
+        "target_density": 6
+      }
+    },
+    {
+      "theorem_name": "v25_set_empty_subset",
+      "family": "set::set_empty_subset",
+      "statement": "(α : Type) (s : Set α) : (∅ : Set α) ⊆ s",
+      "expected_proofs": [
+        "exact Set.empty_subset s",
+        "simp",
+        "intro x hx; cases hx"
+      ],
+      "v28_first_rank": 1,
+      "v29_first_rank": null,
+      "v28_pass@10": true,
+      "v29_pass@10": false,
+      "top10_candidates": [
+        "intro x hx; exact hx",
+        "exact Set.Subset.refl s",
+        "exact Set.Subset.trans s",
+        "exact Set.Subset.mpr x hx",
+        "intro x h; exact h",
+        "exact Set.diff_subset",
+        "exact Set.Subset.mpr s h",
+        "exact Set.Subset.refl p",
+        "exact Set.Subset.mpr h1 hx",
+        "exact Set.Subset.mpr x h"
+      ],
+      "top10_error_classes": [
+        "type_mismatch",
+        "type_mismatch",
+        "type_mismatch",
+        "unknown_identifier",
+        "type_mismatch",
+        "type_mismatch",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier",
+        "unknown_identifier"
+      ],
+      "error_class_counts": {
+        "type_mismatch": 5,
+        "unknown_identifier": 5
+      },
+      "correct_present_in_beam": false,
+      "v28_train_density": 0,
+      "v29_train_density": 0,
+      "v28_train_siblings": [],
+      "v29_train_siblings": [],
+      "classification": "beam_absence_sparse_sibling",
+      "proposed_minimal_siblings": {
+        "shape": "(α : Type) (s : Set α) : (∅ : Set α) ⊆ s",
+        "var_sets": [
+          "s",
+          "t",
+          "a",
+          "u",
+          "A"
+        ],
+        "proof_heads": [
+          "exact Set.empty_subset s",
+          "simp",
+          "intro x hx; cases hx"
+        ],
+        "target_density": 6
+      }
+    }
+  ],
+  "summary": {
+    "v25_nat_add_assoc": {
+      "classification": "beam_absence_sparse_sibling",
+      "v28_rank": 1,
+      "v29_rank": null,
+      "v29_train_density": 0
+    },
+    "v25_set_empty_subset": {
+      "classification": "beam_absence_sparse_sibling",
+      "v28_rank": 1,
+      "v29_rank": null,
+      "v29_train_density": 0
+    }
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

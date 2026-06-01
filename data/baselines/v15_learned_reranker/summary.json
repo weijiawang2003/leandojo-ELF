@@ -1,0 +1,295 @@
+{
+  "folds": [
+    {
+      "fam": "forall_inst",
+      "n_test_theorems": 7,
+      "configs": {
+        "raw": {
+          "n_test_theorems": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.14285714285714285,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 1.0,
+          "MRR": 0.1476190476190476,
+          "n_malformed_top1": 0,
+          "n_false_top1": 7,
+          "verified_ceiling_match_rows": 7,
+          "config": "raw",
+          "uses_state_after": false
+        },
+        "rule": {
+          "n_test_theorems": 7,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 7,
+          "config": "rule",
+          "uses_state_after": false
+        },
+        "learned": {
+          "n_test_theorems": 7,
+          "pass@1": 0.0,
+          "pass@3": 0.14285714285714285,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 1.0,
+          "MRR": 0.1476190476190476,
+          "n_malformed_top1": 5,
+          "n_false_top1": 7,
+          "verified_ceiling_match_rows": 7,
+          "config": "learned",
+          "uses_state_after": false
+        },
+        "policy": {
+          "n_test_theorems": 7,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 7,
+          "config": "policy",
+          "uses_state_after": false
+        }
+      }
+    },
+    {
+      "fam": "rewrite_succ",
+      "n_test_theorems": 5,
+      "configs": {
+        "raw": {
+          "n_test_theorems": 5,
+          "pass@1": 0.6,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.7666666666666667,
+          "n_malformed_top1": 0,
+          "n_false_top1": 2,
+          "verified_ceiling_match_rows": 5,
+          "config": "raw",
+          "uses_state_after": false
+        },
+        "rule": {
+          "n_test_theorems": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 5,
+          "config": "rule",
+          "uses_state_after": false
+        },
+        "learned": {
+          "n_test_theorems": 5,
+          "pass@1": 0.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.4333333333333333,
+          "n_malformed_top1": 0,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 5,
+          "config": "learned",
+          "uses_state_after": false
+        },
+        "policy": {
+          "n_test_theorems": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 5,
+          "config": "policy",
+          "uses_state_after": false
+        }
+      }
+    },
+    {
+      "fam": "neg_exfalso",
+      "n_test_theorems": 8,
+      "configs": {
+        "raw": {
+          "n_test_theorems": 8,
+          "pass@1": 0.625,
+          "pass@3": 0.625,
+          "pass@5": 0.625,
+          "pass@10": 0.625,
+          "MRR": 0.625,
+          "n_malformed_top1": 0,
+          "n_false_top1": 3,
+          "verified_ceiling_match_rows": 8,
+          "config": "raw",
+          "uses_state_after": false
+        },
+        "rule": {
+          "n_test_theorems": 8,
+          "pass@1": 0.625,
+          "pass@3": 0.625,
+          "pass@5": 0.625,
+          "pass@10": 0.625,
+          "MRR": 0.625,
+          "n_malformed_top1": 0,
+          "n_false_top1": 3,
+          "verified_ceiling_match_rows": 8,
+          "config": "rule",
+          "uses_state_after": false
+        },
+        "learned": {
+          "n_test_theorems": 8,
+          "pass@1": 0.625,
+          "pass@3": 0.625,
+          "pass@5": 0.625,
+          "pass@10": 0.625,
+          "MRR": 0.625,
+          "n_malformed_top1": 1,
+          "n_false_top1": 3,
+          "verified_ceiling_match_rows": 8,
+          "config": "learned",
+          "uses_state_after": false
+        },
+        "policy": {
+          "n_test_theorems": 8,
+          "pass@1": 0.625,
+          "pass@3": 0.625,
+          "pass@5": 0.625,
+          "pass@10": 0.625,
+          "MRR": 0.625,
+          "n_malformed_top1": 1,
+          "n_false_top1": 3,
+          "verified_ceiling_match_rows": 8,
+          "config": "policy",
+          "uses_state_after": false
+        }
+      }
+    },
+    {
+      "fam": "exists_reconstruct",
+      "n_test_theorems": 5,
+      "configs": {
+        "raw": {
+          "n_test_theorems": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 5,
+          "config": "raw",
+          "uses_state_after": false
+        },
+        "rule": {
+          "n_test_theorems": 5,
+          "pass@1": 0.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.4333333333333333,
+          "n_malformed_top1": 5,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 5,
+          "config": "rule",
+          "uses_state_after": false
+        },
+        "learned": {
+          "n_test_theorems": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 5,
+          "config": "learned",
+          "uses_state_after": false
+        },
+        "policy": {
+          "n_test_theorems": 5,
+          "pass@1": 1.0,
+          "pass@3": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 1.0,
+          "n_malformed_top1": 0,
+          "n_false_top1": 0,
+          "verified_ceiling_match_rows": 5,
+          "config": "policy",
+          "uses_state_after": false
+        }
+      }
+    },
+    {
+      "fam": "neg_imp_exfalso",
+      "n_test_theorems": 5,
+      "configs": {
+        "raw": {
+          "n_test_theorems": 5,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.8,
+          "pass@10": 1.0,
+          "MRR": 0.19857142857142857,
+          "n_malformed_top1": 0,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 5,
+          "config": "raw",
+          "uses_state_after": false
+        },
+        "rule": {
+          "n_test_theorems": 5,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.0,
+          "pass@10": 1.0,
+          "MRR": 0.146031746031746,
+          "n_malformed_top1": 0,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 5,
+          "config": "rule",
+          "uses_state_after": false
+        },
+        "learned": {
+          "n_test_theorems": 5,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.8,
+          "pass@10": 1.0,
+          "MRR": 0.19857142857142857,
+          "n_malformed_top1": 0,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 5,
+          "config": "learned",
+          "uses_state_after": false
+        },
+        "policy": {
+          "n_test_theorems": 5,
+          "pass@1": 0.0,
+          "pass@3": 0.0,
+          "pass@5": 0.8,
+          "pass@10": 1.0,
+          "MRR": 0.19857142857142857,
+          "n_malformed_top1": 0,
+          "n_false_top1": 5,
+          "verified_ceiling_match_rows": 5,
+          "config": "policy",
+          "uses_state_after": false
+        }
+      }
+    }
+  ],
+  "uses_state_after": false
+}

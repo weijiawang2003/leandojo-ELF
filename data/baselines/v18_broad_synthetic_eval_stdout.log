@@ -1,0 +1,11 @@
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-05-30 17:24:05,194 INFO loaded 48 v18 seeds across 10 categories
+2026-05-30 17:24:05,249 INFO panel: 6 models loaded (broad_only=False)
+2026-05-30 17:24:05,251 INFO learned reranker: /home/wangw/code/ELFMath/data/models/v15_reranker/neg_imp_exfalso (n_features=244)
+2026-05-30 17:24:05,740 INFO warmup: success=True elapsed_ms=487.1
+2026-05-30 17:24:10,131 INFO   raw pass@1=0.333 pass@5=0.458 pass@10=0.542 MRR=0.379 no_verify=22 malformed_top1=2 head_correct=26
+2026-05-30 17:24:10,132 INFO   rule pass@1=0.333 pass@5=0.500 pass@10=0.583 MRR=0.405 no_verify=20 malformed_top1=2 head_correct=27
+2026-05-30 17:24:10,134 INFO   learned pass@1=0.292 pass@5=0.479 pass@10=0.562 MRR=0.373 no_verify=21 malformed_top1=3 head_correct=27
+2026-05-30 17:24:10,135 INFO   policy pass@1=0.292 pass@5=0.500 pass@10=0.583 MRR=0.377 no_verify=20 malformed_top1=3 head_correct=26
+2026-05-30 17:24:10,136 INFO V18 zero-shot eval DONE

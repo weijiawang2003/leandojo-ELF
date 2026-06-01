@@ -1,0 +1,35 @@
+{
+  "router": "MathlibRouter (imports/mathlib-flag -> v27 specialist; else v24 broad-core)",
+  "specialist_model": "data/models/token_seq2seq_v27_set_heavy",
+  "routing": {
+    "broad_to_core": "48/48",
+    "tierc_to_specialist": "43/43"
+  },
+  "routed": {
+    "broad_core": {
+      "n": 48,
+      "best_config": "policy_abstract",
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334
+    },
+    "tierc": {
+      "n": 43,
+      "best_config": "abstract",
+      "pass@1": 0.627906976744186,
+      "pass@5": 0.9069767441860465,
+      "pass@10": 0.9069767441860465
+    }
+  },
+  "broad_core_preserved": {
+    "routed_pass@5": 0.9375,
+    "v24_pass@5": 0.9166666666666666,
+    "routed_pass@10": 0.9583333333333334,
+    "v24_pass@10": 0.9375,
+    "no_regression": true
+  },
+  "vs_v26_routed_broad": {
+    "v26_pass@5": 0.9375,
+    "v26_pass@10": 0.9583333333333334
+  }
+}

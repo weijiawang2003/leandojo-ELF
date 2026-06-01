@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/intro_negation",
+  "model_dir": "data/models/proof_block_seq2seq_combined_v10_per_op/intro_negation",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.4,
+  "pass@5": 0.4,
+  "pass@10": 0.4,
+  "total_verified_candidates": 4,
+  "novel_verified": 0,
+  "donorless_verified": 4,
+  "cross_family_verified": 4,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "contrapos_ab": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "contrapos_chain": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "contrapos_pq": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "contrapos_rs": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "contrapos_with_extra": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "intro_negation": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.4
+    }
+  },
+  "elapsed_seconds": 41.05643841199344
+}

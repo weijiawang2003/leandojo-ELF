@@ -1,0 +1,295 @@
+{
+  "config": "v27_category_gaps",
+  "eval_summary": {
+    "v26_base__v25_heldout": {
+      "best_config": "learned",
+      "pass@10": 0.9285714285714286,
+      "per_category": {
+        "nat": 0.75,
+        "list": 1.0,
+        "bool_option": 1.0,
+        "set": 1.0,
+        "logic": 1.0
+      }
+    },
+    "v26_base__v26_holdout": {
+      "best_config": "abstract",
+      "pass@10": 0.9090909090909091,
+      "per_category": {
+        "bool_option": 1.0,
+        "list": 1.0,
+        "logic": 1.0,
+        "nat": 1.0,
+        "set": 0.5,
+        "function": 1.0
+      }
+    },
+    "v26_widened__v25_heldout": {
+      "best_config": "learned",
+      "pass@10": 0.9285714285714286,
+      "per_category": {
+        "nat": 0.75,
+        "list": 1.0,
+        "bool_option": 1.0,
+        "set": 1.0,
+        "logic": 1.0
+      }
+    },
+    "v26_widened__v26_holdout": {
+      "best_config": "learned",
+      "pass@10": 0.9090909090909091,
+      "per_category": {
+        "bool_option": 1.0,
+        "list": 1.0,
+        "logic": 1.0,
+        "nat": 1.0,
+        "set": 0.75,
+        "function": 0.0
+      }
+    }
+  },
+  "categories": {
+    "bool_option": {
+      "covered_theorems": 10,
+      "covered_rows": 29,
+      "top_proof_heads": {
+        "simp": 9,
+        "cases": 8,
+        "exact": 6,
+        "rfl": 4,
+        "by_cases": 1,
+        "decide": 1
+      },
+      "top_lemmas": {
+        "Bool.and_self": 1,
+        "Bool.or_false": 1,
+        "Bool.not_not": 1,
+        "Bool.eq_false_or_eq_true": 1,
+        "Option.map_id_fun": 1,
+        "Bool.or_self": 1
+      },
+      "uses_simp_rows": 12,
+      "uses_omega_rows": 0,
+      "lean_rejected": [],
+      "n_residual_theorems": 0,
+      "residual_theorems": [],
+      "proposed_expansion": "and/or/not identities via cases<;>simp, dichotomy, option map id/getD"
+    },
+    "function": {
+      "covered_theorems": 5,
+      "covered_rows": 14,
+      "top_proof_heads": {
+        "rfl": 5,
+        "simp": 4,
+        "funext": 3,
+        "exact": 2
+      },
+      "top_lemmas": {
+        "Function.id_comp": 1,
+        "Function.comp_id": 1
+      },
+      "uses_simp_rows": 4,
+      "uses_omega_rows": 0,
+      "lean_rejected": [
+        {
+          "tactic": "simp",
+          "error": "error: : `simp` made no progress",
+          "theorem": "v26_fun_comp_assoc2"
+        }
+      ],
+      "n_residual_theorems": 1,
+      "residual_theorems": [
+        {
+          "model": "v26_widened",
+          "bench": "v26_holdout",
+          "theorem": "v26_fun_comp_assoc2",
+          "statement": "(α β γ δ : Type) (f : α → β) (g : β → γ) (h : γ → δ) : (h ∘ g) ∘ f = h ∘ (g ∘ f)",
+          "failure": "other"
+        }
+      ],
+      "proposed_expansion": "comp id both sides via funext, comp_assoc, const apply"
+    },
+    "list": {
+      "covered_theorems": 12,
+      "covered_rows": 25,
+      "top_proof_heads": {
+        "simp": 12,
+        "exact": 7,
+        "rw": 3,
+        "rfl": 2,
+        "intro": 1
+      },
+      "top_lemmas": {
+        "List.append_assoc": 2,
+        "List.nil_append": 1,
+        "List.length_append": 1,
+        "List.mem_cons_self": 1,
+        "List.cons_ne_nil": 1,
+        "List.reverse_reverse": 1,
+        "List.mem_append_left": 1,
+        "List.mem_append.mpr": 1,
+        "Or.inl": 1,
+        "List.map_map": 1
+      },
+      "uses_simp_rows": 12,
+      "uses_omega_rows": 0,
+      "lean_rejected": [
+        {
+          "tactic": "exact List.length_cons x xs",
+          "error": "error: : Function expected at",
+          "theorem": "v26_list_length_cons2"
+        },
+        {
+          "tactic": "exact List.length_append xs ys",
+          "error": "error: : Function expected at",
+          "theorem": "v26_list_length_append2"
+        },
+        {
+          "tactic": "exact List.length_reverse xs",
+          "error": "error: : Function expected at",
+          "theorem": "v26_list_length_reverse2"
+        },
+        {
+          "tactic": "exact List.mem_cons_self x xs",
+          "error": "error: : Function expected at",
+          "theorem": "v26_list_mem_cons_self2"
+        },
+        {
+          "tactic": "left; rfl",
+          "error": "error: : No goals to be solved",
+          "theorem": "v26_list_mem_cons_self2"
+        },
+        {
+          "tactic": "exact (List.map_map g f xs)",
+          "error": "error: : Function expected at",
+          "theorem": "v26_list_map_map2"
+        }
+      ],
+      "n_residual_theorems": 0,
+      "residual_theorems": [],
+      "proposed_expansion": "use simp / arity-free lemma forms (length_cons w/o explicit args), append_assoc, reverse_reverse, map_map, mem_append"
+    },
+    "logic": {
+      "covered_theorems": 15,
+      "covered_rows": 49,
+      "top_proof_heads": {
+        "exact": 22,
+        "tauto": 15,
+        "intro": 4,
+        "apply": 3,
+        "by_contra": 1,
+        "by_cases": 1,
+        "constructor": 1,
+        "simp": 1
+      },
+      "top_lemmas": {
+        "Or.inl": 3,
+        "And.symm": 1,
+        "Or.symm": 1,
+        "Classical.not_not.mp": 1,
+        "Classical.em": 1
+      },
+      "uses_simp_rows": 3,
+      "uses_omega_rows": 0,
+      "lean_rejected": [],
+      "n_residual_theorems": 0,
+      "residual_theorems": [],
+      "proposed_expansion": "contrapositive, demorgan, curry/uncurry, or/and symm & self_iff, em"
+    },
+    "nat": {
+      "covered_theorems": 20,
+      "covered_rows": 66,
+      "top_proof_heads": {
+        "exact": 23,
+        "omega": 18,
+        "simp": 16,
+        "ring": 4,
+        "rfl": 2,
+        "rw": 2,
+        "ac_rfl": 1
+      },
+      "top_lemmas": {
+        "Nat.add_comm": 2,
+        "Nat.one_mul": 1,
+        "Nat.mul_zero": 1,
+        "Nat.zero_mul": 1,
+        "Nat.mul_comm": 1,
+        "Nat.le_refl": 1,
+        "Nat.le_succ": 1,
+        "Nat.le.intro": 1,
+        "Nat.zero_le": 1,
+        "Nat.le_add_right": 1,
+        "Nat.le_trans": 1,
+        "Nat.le_add_left": 1
+      },
+      "uses_simp_rows": 16,
+      "uses_omega_rows": 18,
+      "lean_rejected": [
+        {
+          "tactic": "exact Nat.add_sub_cancel",
+          "error": "error: : Type mismatch",
+          "theorem": "v26_nat_add_sub_cancel2"
+        }
+      ],
+      "n_residual_theorems": 1,
+      "residual_theorems": [
+        {
+          "model": "v26_base",
+          "bench": "v25_heldout",
+          "theorem": "v25_nat_add_assoc",
+          "statement": "(a b c : Nat) : a + b + c = a + (b + c)",
+          "failure": "type_mismatch"
+        }
+      ],
+      "proposed_expansion": "associativity variants (add_assoc both directions), two_mul/succ, ≤ transitivity/min/max/lt_succ, add_sub_cancel correct arity"
+    },
+    "set": {
+      "covered_theorems": 17,
+      "covered_rows": 54,
+      "top_proof_heads": {
+        "exact": 32,
+        "intro": 13,
+        "simp": 5,
+        "assumption": 1,
+        "rfl": 1,
+        "left": 1,
+        "right": 1
+      },
+      "top_lemmas": {
+        "Set.inter_subset_left": 3,
+        "Or.inl": 3,
+        "Or.inr": 3,
+        "Set.Subset.refl": 1,
+        "Set.inter_subset_right": 1,
+        "Set.subset_union_left": 1,
+        "Set.subset_union_right": 1,
+        "Set.mem_inter_iff": 1,
+        "Set.mem_singleton": 1,
+        "Set.mem_singleton_iff.mpr": 1,
+        "Set.subset_univ": 1,
+        "Set.mem_union_left": 1
+      },
+      "uses_simp_rows": 5,
+      "uses_omega_rows": 0,
+      "lean_rejected": [],
+      "n_residual_theorems": 2,
+      "residual_theorems": [
+        {
+          "model": "v26_base",
+          "bench": "v26_holdout",
+          "theorem": "v26_set_inter_comm_subset",
+          "statement": "(α : Type) (s t : Set α) : s ∩ t ⊆ t ∩ s",
+          "failure": "type_mismatch"
+        },
+        {
+          "model": "v26_base",
+          "bench": "v26_holdout",
+          "theorem": "v26_set_mem_inter_left",
+          "statement": "(α : Type) (s t : Set α) (x : α) (h : x ∈ s ∩ t) : x ∈ s",
+          "failure": "type_mismatch"
+        }
+      ],
+      "proposed_expansion": "membership iff (mem_inter_iff/mem_union), inter/union comm & assoc subset, diff/compl subset, singleton/insert membership, subset_trans, mem→union"
+    }
+  }
+}

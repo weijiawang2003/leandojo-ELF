@@ -1,0 +1,252 @@
+{
+  "n_total_theorems": 48,
+  "n_failed_top10_policy": 8,
+  "failure_class_tally": {
+    "type_mismatch": 3,
+    "other": 1,
+    "wrong_var_name": 1,
+    "tactic_failed": 3
+  },
+  "per_failure": [
+    {
+      "theorem_name": "v18_and_assoc_one",
+      "category": "conjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q r : Prop) (h : p ∧ q ∧ r) : (p ∧ q) ∧ r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∧ q ∧ r\n⊢ (p ∧ q) ∧ r",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact ⟨h.2, h.1⟩",
+        "exact ⟨h.1, h.1⟩",
+        "exact ⟨h.2, h.2, h.1⟩",
+        "exact ⟨h.2, h.2, hq⟩",
+        "exact ⟨h.2, h.1, hq⟩",
+        "exact ⟨h.2, hq⟩, h.1⟩",
+        "cases h with\n  | intro hp hq =>",
+        "exact ⟨h.2, ⟨hq, hp⟩",
+        "rcases h with ⟨hp, hq⟩\n  exact ⟨hq",
+        "cases h with ⟨hp, hq⟩\n  exact ⟨hq"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application type mismatch: The argument",
+        "/tmp/claude-1000/mini_elf_lean_3p7c75bf.lean:2:9: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_q2_25wju.lean:2:9: error: Application type mismatch: The argument",
+        "/tmp/claude-1000/mini_elf_lean_87o5k4fv.lean:2:9: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_yzzp68z9.lean:2:9: error: Application type mismatch: The argument"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_or_inr",
+      "category": "disjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q : Prop) (hq : q) : p ∨ q",
+      "state_before": "p : Prop\nq : Prop\nhq : q\n⊢ p ∨ q",
+      "failure_class": "other",
+      "top10": [
+        "exact Or.inl hq hq",
+        "exact Or.inr hp\n  exact hq",
+        "exact Or.intro hp hq",
+        "constructor\n  exact hp\n  exact hq",
+        "exact Or.inl hq hp",
+        "exact Or.inl hp\n  exact hq",
+        "exact fun hp => hq",
+        "left\n  exact hp\n  exact hq",
+        "right\n  exact hp\n  exact hq",
+        "left\n  exact hp\n  exact hp"
+      ],
+      "top5_errors": [
+        "/tmp/claude-1000/mini_elf_lean_tms9wy21.lean:2:8: error: Function expected at",
+        "/tmp/claude-1000/mini_elf_lean_v5j4d9_c.lean:2:15: error(lean.unknownIdentifier): Unknown identifier `hp`",
+        "/tmp/mini_elf_lean_d0dfvtwx.lean:2:8: error(lean.unknownIdentifier): Unknown constant `Or.intro`",
+        "/tmp/mini_elf_lean_wxd6u_lw.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hp`",
+        "/tmp/claude-1000/mini_elf_lean_69faxubl.lean:2:8: error: Function expected at"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_or_elim_to_common",
+      "category": "disjunction",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(p q r : Prop) (h : p ∨ q) (hpr : p → r) (hqr : q → r) : r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∨ q\nhpr : p → r\nhqr : q → r\n⊢ r",
+      "failure_class": "wrong_var_name",
+      "top10": [
+        "cases h with | inl ht => exact hpq hx",
+        "cases h with\n  | inl hp => exact hpq hx",
+        "cases h with\n  | inl ht => exact hpq hx",
+        "cases h with\n  | inl inl hp => exact hpq hx",
+        "cases h with\n  | inl hx => exact hpq hx",
+        "cases h with\n  | inl inl ht => exact hpq hx",
+        "cases h with\n  | inl inl hp => exact hpq | inr hx => exact hpq",
+        "cases h with | inl ht => exact hpq | inr hx => exact hpq hx",
+        "cases h with\n  | inl hp => exact hpq | inr hx => exact hpq hx",
+        "cases h with\n  | inl ht => exact hpq | inr hx => exact hpq hx"
+      ],
+      "top5_errors": [
+        "/tmp/claude-1000/mini_elf_lean_5q4k2t6p.lean:2:33: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "/tmp/claude-1000/mini_elf_lean_ngo2sa99.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "/tmp/claude-1000/mini_elf_lean_c7utw338.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "/tmp/claude-1000/mini_elf_lean_zwjnuxng.lean:3:2: error: Too many variable names provided at alternative `inl`: 2 provided, but 1 expected",
+        "/tmp/claude-1000/mini_elf_lean_e0qj7a0a.lean:3:20: error(lean.unknownIdentifier): Unknown identifier `hpq`"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_neg_or_left",
+      "category": "negation",
+      "expected_tactic_head": "intro",
+      "theorem_statement": "(p q : Prop) (h : ¬(p ∨ q)) : ¬p",
+      "state_before": "p : Prop\nq : Prop\nh : ¬(p ∨ q)\n⊢ ¬p",
+      "failure_class": "tactic_failed",
+      "top10": [
+        "cases h with\n  | inl hp => exact absurd",
+        "exact fun hp => h (h hp)",
+        "exact fun hp => (h hp)",
+        "exact fun hp => absurd hp hnp\n  | inr",
+        "exact fun hp => absurd hp hnp => h",
+        "exact fun hp => hnq (h hp)",
+        "exact fun hp => absurd hp hnp => absurd",
+        "exact h hp => absurd hp hnp\n  | inr",
+        "exact h hp => absurd hp hnp",
+        "exact fun hp => absurd hp hnp hnp"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_shvkc_hh.lean:2:2: error: Tactic `cases` failed: major premise type is not an inductive type",
+        "/tmp/claude-1000/mini_elf_lean_1ewperfe.lean:2:23: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_gsvgrioy.lean:2:21: error: Application type mismatch: The argument",
+        "/tmp/claude-1000/mini_elf_lean_6vf8jlet.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`",
+        "/tmp/claude-1000/mini_elf_lean_39u7ce7_.lean:2:28: error(lean.unknownIdentifier): Unknown identifier `hnp`"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_exists_intro_eq",
+      "category": "exists",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(n : Nat) : ∃ m, n = m",
+      "state_before": "n : Nat\n⊢ ∃ m, n = m",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact ⟨4, rfl⟩",
+        "exact ⟨20, rfl⟩",
+        "exact ⟨m, rfl⟩",
+        "refine ⟨m, ?_⟩\n  rfl",
+        "exact ⟨k, rfl⟩",
+        "rcases h with ⟨n, hn⟩",
+        "cases hp with\n  | intro n hn",
+        "cases h with\n  | intro n hn",
+        "rcases hp with ⟨n, hn⟩",
+        "cases hp with\n  | hn =>"
+      ],
+      "top5_errors": [
+        "/tmp/claude-1000/mini_elf_lean_8gmlw7bh.lean:2:12: error: Application type mismatch: The argument",
+        "/tmp/claude-1000/mini_elf_lean_pvzrzj4n.lean:2:13: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_fhx4aorr.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `m`",
+        "/tmp/mini_elf_lean_q6euh7yy.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `m`",
+        "/tmp/claude-1000/mini_elf_lean_wl2djh2z.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `k`"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_nat_zero_add",
+      "category": "nat_succ",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(n : Nat) : 0 + n = n",
+      "state_before": "n : Nat\n⊢ 0 + n = n",
+      "failure_class": "type_mismatch",
+      "top10": [
+        "exact rfl",
+        "rfl",
+        "exact Eq.refl _",
+        "exact ⟨0, rfl⟩",
+        "exact ⟨4, rfl⟩",
+        "refine ⟨4, rfl",
+        "exact ⟨m, rfl⟩",
+        "exact ⟨k, rfl⟩",
+        "exact Exists.refl _",
+        "exact ⟨j, rfl⟩"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_rwu272dh.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_kxc7h6qf.lean:2:2: error: Tactic `rfl` failed: The left-hand side",
+        "/tmp/claude-1000/mini_elf_lean_pvl8zbqy.lean:2:2: error: Type mismatch",
+        "/tmp/claude-1000/mini_elf_lean_vx31bpe1.lean:2:8: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Eq.refl` does n",
+        "/tmp/claude-1000/mini_elf_lean_ayfvlwdi.lean:2:8: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Eq.refl` does n"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_nat_succ_inj",
+      "category": "nat_succ",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(n m : Nat) (h : n.succ = m.succ) : n = m",
+      "state_before": "n : Nat\nm : Nat\nh : n.succ = m.succ\n⊢ n = m",
+      "failure_class": "tactic_failed",
+      "top10": [
+        "rw [h]",
+        "subst h\n  rfl",
+        "exact h ▸ rfl",
+        "cases h ▸ rfl",
+        "subst h\n  · rfl",
+        "subst h ▸ rfl",
+        "rw [congrArg]]",
+        "exact congrArg Nat.succ",
+        "exact congrArg Natsuccsucc",
+        "congrArg congrArg Nat.succ"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_i_3iky_0.lean:2:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern",
+        "/tmp/mini_elf_lean_326atd3o.lean:2:2: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t = x)",
+        "/tmp/mini_elf_lean_qw1zgho4.lean:2:8: error: invalid `▸` notation, expected result type of cast is ",
+        "/tmp/mini_elf_lean_ypbiut4w.lean:2:8: error: invalid `▸` notation, the equality",
+        "/tmp/claude-1000/mini_elf_lean_vh4h08ga.lean:2:2: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t "
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    },
+    {
+      "theorem_name": "v18_list_append_nil",
+      "category": "list",
+      "expected_tactic_head": "exact",
+      "theorem_statement": "(α : Type) (xs : List α) : xs ++ [] = xs",
+      "state_before": "α : Type\nxs : List α\n⊢ xs ++ [] = xs",
+      "failure_class": "tactic_failed",
+      "top10": [
+        "rfl",
+        "exact rfl",
+        "decide",
+        "cases rfl\n  ·",
+        "cases rfl",
+        "cases rfl\n  rfl",
+        "exact Eq.refl",
+        "cases x\n  ·",
+        "exact Or.refl",
+        "cases x\n  rfl"
+      ],
+      "top5_errors": [
+        "/tmp/mini_elf_lean_r0yfg6s_.lean:2:2: error: Tactic `rfl` failed: The left-hand side",
+        "/tmp/mini_elf_lean_nnnb7fmy.lean:2:2: error: Type mismatch",
+        "/tmp/claude-1000/mini_elf_lean_orlitinl.lean:2:2: error: Expected type must not contain free variables",
+        "/tmp/claude-1000/mini_elf_lean_nyyu7v9p.lean:4:0: error: unexpected end of input; expected '{' or indented tactic sequence",
+        "/tmp/claude-1000/mini_elf_lean_kaddqeec.lean:1:52: error: unsolved goals"
+      ],
+      "alt_configs": {
+        "raw": null
+      }
+    }
+  ]
+}

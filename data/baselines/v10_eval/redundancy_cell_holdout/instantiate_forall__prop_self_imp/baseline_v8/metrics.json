@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_cell_holdout/instantiate_forall__prop_self_imp",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 1,
+  "n_train_rows": 39,
+  "n_train_theorems": 39,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 3,
+  "novel_verified": 3,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "prop_self_imp": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "instantiate_forall": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "elapsed_seconds": 24.8470583059825
+}

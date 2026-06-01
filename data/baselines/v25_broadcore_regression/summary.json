@@ -1,0 +1,504 @@
+{
+  "n_test_theorems": 48,
+  "routed": false,
+  "configs": {
+    "raw": {
+      "n_test_theorems": 48,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.7916666666666666,
+      "pass@10": 0.8333333333333334,
+      "MRR": 0.7136574074074074,
+      "n_no_candidate_verified": 8,
+      "n_malformed_top1": 4,
+      "error_taxonomy": {
+        "unknown_identifier": 77,
+        "other": 59,
+        "type_mismatch": 121,
+        "timeout": 7,
+        "parse_error": 101,
+        "unsolved_goals": 1,
+        "unknown_tactic": 3
+      },
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@1": 0.5,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.8333333333333334
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@1": 0.0,
+          "pass@5": 0.4,
+          "pass@10": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@1": 0.75,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "bool": {
+          "n": 3,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "config": "raw",
+      "uses_state_after": false,
+      "routed": false
+    },
+    "rule": {
+      "n_test_theorems": 48,
+      "pass@1": 0.5,
+      "pass@5": 0.7916666666666666,
+      "pass@10": 0.8333333333333334,
+      "MRR": 0.6217261904761905,
+      "n_no_candidate_verified": 8,
+      "n_malformed_top1": 4,
+      "error_taxonomy": {
+        "unknown_identifier": 77,
+        "type_mismatch": 121,
+        "other": 59,
+        "timeout": 7,
+        "parse_error": 101,
+        "unsolved_goals": 1,
+        "unknown_tactic": 3
+      },
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@1": 0.8333333333333334,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@1": 0.5,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@1": 0.0,
+          "pass@5": 0.4,
+          "pass@10": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@1": 0.6,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@1": 0.0,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "bool": {
+          "n": 3,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.3333333333333333,
+          "pass@10": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "config": "rule",
+      "uses_state_after": false,
+      "routed": false
+    },
+    "learned": {
+      "n_test_theorems": 48,
+      "pass@1": 0.4375,
+      "pass@5": 0.8125,
+      "pass@10": 0.8333333333333334,
+      "MRR": 0.5800925925925926,
+      "n_no_candidate_verified": 8,
+      "n_malformed_top1": 7,
+      "error_taxonomy": {
+        "unknown_identifier": 77,
+        "type_mismatch": 121,
+        "other": 59,
+        "timeout": 7,
+        "parse_error": 101,
+        "unsolved_goals": 1,
+        "unknown_tactic": 3
+      },
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@1": 0.5,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.8333333333333334
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@1": 0.0,
+          "pass@5": 0.4,
+          "pass@10": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@1": 0.2,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "bool": {
+          "n": 3,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@1": 0.4,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "config": "learned",
+      "uses_state_after": false,
+      "routed": false
+    },
+    "policy": {
+      "n_test_theorems": 48,
+      "pass@1": 0.4583333333333333,
+      "pass@5": 0.7708333333333334,
+      "pass@10": 0.8333333333333334,
+      "MRR": 0.5830687830687831,
+      "n_no_candidate_verified": 8,
+      "n_malformed_top1": 7,
+      "error_taxonomy": {
+        "unknown_identifier": 77,
+        "type_mismatch": 121,
+        "other": 59,
+        "timeout": 7,
+        "parse_error": 101,
+        "unsolved_goals": 1,
+        "unknown_tactic": 3
+      },
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@1": 0.8333333333333334,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@1": 0.5,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.8333333333333334
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@1": 0.0,
+          "pass@5": 0.4,
+          "pass@10": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@1": 0.2,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@1": 0.0,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "bool": {
+          "n": 3,
+          "pass@1": 0.3333333333333333,
+          "pass@5": 0.3333333333333333,
+          "pass@10": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "config": "policy",
+      "uses_state_after": false,
+      "routed": false
+    },
+    "abstract": {
+      "n_test_theorems": 48,
+      "pass@1": 0.7291666666666666,
+      "pass@5": 0.8333333333333334,
+      "pass@10": 0.8333333333333334,
+      "MRR": 0.7715277777777777,
+      "n_no_candidate_verified": 8,
+      "n_malformed_top1": 0,
+      "error_taxonomy": {
+        "other": 59,
+        "type_mismatch": 121,
+        "unknown_identifier": 77,
+        "timeout": 7,
+        "parse_error": 101,
+        "unsolved_goals": 1,
+        "unknown_tactic": 3
+      },
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@1": 0.8333333333333334,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@1": 0.4,
+          "pass@5": 0.4,
+          "pass@10": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@1": 0.6,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "bool": {
+          "n": 3,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "config": "abstract",
+      "uses_state_after": false,
+      "routed": false
+    },
+    "policy_abstract": {
+      "n_test_theorems": 48,
+      "pass@1": 0.7083333333333334,
+      "pass@5": 0.8333333333333334,
+      "pass@10": 0.8333333333333334,
+      "MRR": 0.7611111111111111,
+      "n_no_candidate_verified": 8,
+      "n_malformed_top1": 0,
+      "error_taxonomy": {
+        "type_mismatch": 121,
+        "other": 59,
+        "unknown_identifier": 77,
+        "timeout": 7,
+        "parse_error": 101,
+        "unsolved_goals": 1,
+        "unknown_tactic": 3
+      },
+      "per_category": {
+        "implication": {
+          "n": 6,
+          "pass@1": 0.8333333333333334,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "conjunction": {
+          "n": 6,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.8333333333333334,
+          "pass@10": 0.8333333333333334
+        },
+        "disjunction": {
+          "n": 5,
+          "pass@1": 0.2,
+          "pass@5": 0.4,
+          "pass@10": 0.4
+        },
+        "negation": {
+          "n": 5,
+          "pass@1": 0.6,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "equality_rewrite": {
+          "n": 6,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "exists": {
+          "n": 4,
+          "pass@1": 0.5,
+          "pass@5": 0.75,
+          "pass@10": 0.75
+        },
+        "forall": {
+          "n": 3,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        },
+        "nat_succ": {
+          "n": 5,
+          "pass@1": 0.8,
+          "pass@5": 0.8,
+          "pass@10": 0.8
+        },
+        "bool": {
+          "n": 3,
+          "pass@1": 0.6666666666666666,
+          "pass@5": 0.6666666666666666,
+          "pass@10": 0.6666666666666666
+        },
+        "list": {
+          "n": 5,
+          "pass@1": 1.0,
+          "pass@5": 1.0,
+          "pass@10": 1.0
+        }
+      },
+      "config": "policy_abstract",
+      "uses_state_after": false,
+      "routed": false
+    }
+  }
+}

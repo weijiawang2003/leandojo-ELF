@@ -1,0 +1,52 @@
+{
+  "regime_dir": "data/processed/proof_blocks_combined_v10_per_op/disjunction_cases",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 5,
+  "n_train_rows": 588,
+  "n_train_theorems": 268,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.2,
+  "pass@5": 0.4,
+  "pass@10": 0.6,
+  "total_verified_candidates": 4,
+  "novel_verified": 0,
+  "donorless_verified": 4,
+  "cross_family_verified": 4,
+  "cross_operation_verified": 4,
+  "per_family": {
+    "or_self": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "or_swap": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "or_to_via": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "or_true_lhs": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 1.0
+    },
+    "or_with_false": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "disjunction_cases": {
+      "n": 5,
+      "pass@5": 0.4,
+      "pass@10": 0.6
+    }
+  },
+  "elapsed_seconds": 68.59727170501719
+}

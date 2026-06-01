@@ -1,0 +1,3672 @@
+{
+  "006d615dd0e99dad3330091a26b51d3b5cd0362d7a951e6f779b3d22370b6249": {
+    "elapsed_ms": 172.1345569967525,
+    "error": null,
+    "success": true
+  },
+  "00ab8d580209feda8a13a2670f1e980ee1e000c15433f2bfc4afe94d9bd5a183": {
+    "elapsed_ms": 180.89825099741574,
+    "error": "/tmp/mini_elf_lean_r9eum7_a.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q r : Prop\nhp : p\nhq : q \u2227 r\n\u22a2 p \u2227 q \u2227 r",
+    "success": false
+  },
+  "00e2253fbf3384799e615081f2144025294ea425ec67b3c92730df945d10a784": {
+    "elapsed_ms": 186.42799399094656,
+    "error": null,
+    "success": true
+  },
+  "00fcda3c065f60cda1fcb8a841d7bbf798266a6ffb4d262132d14df67f4f26d3": {
+    "elapsed_ms": 170.3563019982539,
+    "error": null,
+    "success": true
+  },
+  "00fe78ae4d6826704a210e964832b9fe6099073c3a7935e05ba72b150e76af01": {
+    "elapsed_ms": 182.271526005934,
+    "error": null,
+    "success": true
+  },
+  "016bfe0794b96dc62885d941b0fcd7999b6134779e3dc1a08bff4265de8878cc": {
+    "elapsed_ms": 168.71829199953936,
+    "error": "/tmp/mini_elf_lean_yoznpwk4.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "01c96ac93c799e264366f519897c39a38bda10d1e10da227fe2e7b0a7008144d": {
+    "elapsed_ms": 170.99873299594037,
+    "error": "/tmp/mini_elf_lean_672p12zr.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  y \u2227 z\nbut is expected to have type\n  z",
+    "success": false
+  },
+  "01f56937c85b1e582b377b40ac6b7554c6147e8331978ce45f565d1397c6a3a6": {
+    "elapsed_ms": 172.85214200092014,
+    "error": null,
+    "success": true
+  },
+  "02336005678374358b4c616a24224ff0a0e2e1cac41a0e87769fe26f65df3ef2": {
+    "elapsed_ms": 177.76260200480465,
+    "error": null,
+    "success": true
+  },
+  "02a6b0c2aa89f91e2f910c8f1f12005e3fd875864be0da99a27801f74e274108": {
+    "elapsed_ms": 176.65909200150054,
+    "error": null,
+    "success": true
+  },
+  "02f5f1a70ea16954e8d733958fe7db0fff919958c09f859f1ec60db428d6f3ef": {
+    "elapsed_ms": 172.83181399398018,
+    "error": null,
+    "success": true
+  },
+  "0336efbbca88867468137429628dd7e494c3279f04eff89b9c4266004684d943": {
+    "elapsed_ms": 169.66297499311622,
+    "error": null,
+    "success": true
+  },
+  "037a7130e10b1b0d203a1087ee37482d76f1bbbba4746029062ac4b6bb3999d5": {
+    "elapsed_ms": 166.08109899971168,
+    "error": null,
+    "success": true
+  },
+  "038fb757352c91665c6b8ada343fdff01a4ac6418f7b5f4710267ca65152e336": {
+    "elapsed_ms": 171.34473701298703,
+    "error": null,
+    "success": true
+  },
+  "03b7618fa571e7c1ce0ea9cb99201f42152be37a570f88116f8ad35db240d1db": {
+    "elapsed_ms": 167.3048170050606,
+    "error": "/tmp/mini_elf_lean_y0a79ai1.lean:1:38: error: unsolved goals\nq : Prop\nh : False\n\u22a2 q",
+    "success": false
+  },
+  "049ec8f76cf074af6bb5dd49f005224afdb3915bca180ebadfb64f8bcdba4909": {
+    "elapsed_ms": 170.75745201145764,
+    "error": null,
+    "success": true
+  },
+  "04d7465075bcd2dfa663b99a12f2e330b448f31f7c5383eeda4374c358b6bb0f": {
+    "elapsed_ms": 173.8571640016744,
+    "error": "/tmp/mini_elf_lean_fzjn5re8.lean:1:40: error: unsolved goals\nx y : Prop\nh : y\n\u22a2 x \u2228 y",
+    "success": false
+  },
+  "04ec65a37197ffff6ef4964c0fdc470e96dbce4b25d80361a7d6e844d255e1e2": {
+    "elapsed_ms": 167.18616800790187,
+    "error": null,
+    "success": true
+  },
+  "04febeea62826414d515cabb20d31776085726c3d562835414bc913fdabb7216": {
+    "elapsed_ms": 170.31302400573622,
+    "error": null,
+    "success": true
+  },
+  "057303a688d8dbe5edad1cf65d4c05b65bb52897688323d72d2b5e0ac50ef6f3": {
+    "elapsed_ms": 172.86283099383581,
+    "error": "/tmp/mini_elf_lean_qnwzpi3q.lean:1:40: error: unsolved goals\ncase h\np r : Prop\nh : p\n\u22a2 p\n/tmp/mini_elf_lean_qnwzpi3q.lean:2:7: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "05b0d216623c76d15e40ba93770e641f4d2e345fcaa0435c179abe8cae6658b3": {
+    "elapsed_ms": 165.4956679994939,
+    "error": "/tmp/mini_elf_lean_3ehigev4.lean:2:13: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "060bd99fe4f15dd92806310cada0e76183bb4c244080b656b90d9d2c5127a175": {
+    "elapsed_ms": 170.45740300090984,
+    "error": null,
+    "success": true
+  },
+  "063cc709dffa5888a4e50fdaf90177b48f8e903f97ac8b119dd6982325853111": {
+    "elapsed_ms": 170.96571600995958,
+    "error": "/tmp/mini_elf_lean_aan_3d2v.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_aan_3d2v.lean:2:8: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Exists.intro` has 2 explicit field, but only 1 was provided",
+    "success": false
+  },
+  "067081f70026bcc46aabde072856713bcfdad3db8d8fadfa1774047c6a081105": {
+    "elapsed_ms": 171.85697199602146,
+    "error": null,
+    "success": true
+  },
+  "070187419457b0464726303927d1a011b2e1252a555d1ccf36a52f7e3d8c20ff": {
+    "elapsed_ms": 168.38102899782825,
+    "error": "/tmp/mini_elf_lean_ionmb3l_.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "0794df956badd17dfae1def5553a651213853a7c193af4dcc97fd7d64e98fddd": {
+    "elapsed_ms": 167.35652400529943,
+    "error": null,
+    "success": true
+  },
+  "07a82ed46d56dd42ff8df1e4625769f3d5709a946a025308c81b41981007e9e8": {
+    "elapsed_ms": 174.01176899147686,
+    "error": "/tmp/mini_elf_lean_aogwfokq.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`\n/tmp/mini_elf_lean_aogwfokq.lean:1:50: error: unsolved goals\ncase right\nq s : Prop\nhp : q\nhq : s\n\u22a2 s",
+    "success": false
+  },
+  "082d7be4140110b7766f46d9c1fef31d00895de6ccd12cdeb8963937dfc1dabd": {
+    "elapsed_ms": 169.39975900459103,
+    "error": null,
+    "success": true
+  },
+  "083bce1af8e3c73ded3e0e4b39ff1239ca63c8b6978c5ab900c1a72ed71cdf26": {
+    "elapsed_ms": 166.8021579971537,
+    "error": null,
+    "success": true
+  },
+  "08468f5cc46cd5353b0b0f11f88fbbd1e20095cab23bd398a91266fbf4077683": {
+    "elapsed_ms": 175.5976459971862,
+    "error": null,
+    "success": true
+  },
+  "08471b5466fce2bd40e1d8cca59bc9beb5399591ea0b8ec388956105f3b2494a": {
+    "elapsed_ms": 174.47761399671435,
+    "error": "/tmp/mini_elf_lean_qbiv_33w.lean:2:9: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  OfNat \u03b2 1\nnumerals are polymorphic in Lean, but the numeral `1` cannot be used in a context where the expected type is\n  \u03b2\ndue to the absence of the instance above\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.",
+    "success": false
+  },
+  "086dc3d3de0c408bf5a8378ae73d2d51a32471273bd6e7240b25134da3a39b3a": {
+    "elapsed_ms": 178.9718450017972,
+    "error": "/tmp/mini_elf_lean_e_o6tnhp.lean:2:2: error: Type mismatch\n  h.left\nhas type\n  x \u2227 y\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "08c0a1770b5990b22f05895be9b81c46c5def2cf1681af1187b51440b9f7c38d": {
+    "elapsed_ms": 166.14035799284466,
+    "error": null,
+    "success": true
+  },
+  "096cc28ffa41ef244793265f651e584fdf78bd276b6a28a180b562722eb6cb68": {
+    "elapsed_ms": 169.1323690029094,
+    "error": null,
+    "success": true
+  },
+  "09d3ea2ee8bfbdbdba0233bc0cd6eb318d9bee2e39ca06f8abf23efa8985577c": {
+    "elapsed_ms": 172.02176699356642,
+    "error": "/tmp/mini_elf_lean_ja14gucv.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.symm`",
+    "success": false
+  },
+  "0a153879a4cb1dbf7ecfd6c1d2dfbc2c013fca0ad783da5946011465f1d35af0": {
+    "elapsed_ms": 168.13677799655125,
+    "error": null,
+    "success": true
+  },
+  "0a96f0836c9d4720e03422cd674c4457968978210e54b60b27fdbed561048ce7": {
+    "elapsed_ms": 168.3745570044266,
+    "error": null,
+    "success": true
+  },
+  "0ad9369b5cc38a103d824a84084d5cdee27b2b227f434b0d7e6dfcd1fda76c38": {
+    "elapsed_ms": 170.94964599527884,
+    "error": null,
+    "success": true
+  },
+  "0af1b946bbedbc2245e0da0e2edceaba4c181fbdced9e58beb3586ccecef1fd6": {
+    "elapsed_ms": 169.5224550057901,
+    "error": "/tmp/mini_elf_lean_8t1cavbp.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `q` which does not have the necessary form.",
+    "success": false
+  },
+  "0af95c37412e6267e019f03cd6d14cfc8613dce9f9f1a0fd5ee3f1a4baadbf2d": {
+    "elapsed_ms": 170.30485499708448,
+    "error": null,
+    "success": true
+  },
+  "0afcf653f10e1ed2ab1a55f9e6022583bc810b096052da132dc7c0b634162fa9": {
+    "elapsed_ms": 168.38796000229195,
+    "error": "/tmp/mini_elf_lean_ggdnzvi4.lean:2:16: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_ggdnzvi4.lean:1:50: error: unsolved goals\nq s : Prop\nhp : q\nhq : s\n\u22a2 q \u2227 s",
+    "success": false
+  },
+  "0b82f268901d15e700b6f68c1ddd96db95c15f3656a2990c900d3f176f8b27bd": {
+    "elapsed_ms": 187.55651799438056,
+    "error": null,
+    "success": true
+  },
+  "0ccf431f44a1129722d7cedf266bdff36d29d1d8de74455f27226a3642d6b391": {
+    "elapsed_ms": 163.70712900243234,
+    "error": "/tmp/mini_elf_lean_yq9w86tm.lean:1:58: error: unsolved goals\ncase mp\np q : Prop\nh1 : p \u2192 q\nh2 : q \u2192 p\n\u22a2 p \u2192 q\n\ncase mpr\np q : Prop\nh1 : p \u2192 q\nh2 : q \u2192 p\n\u22a2 q \u2192 p",
+    "success": false
+  },
+  "0d97356b603c72920f874470c4512f73d9da6df7f73c31d35eaeca459bfaf0ec": {
+    "elapsed_ms": 166.21681100514252,
+    "error": "/tmp/mini_elf_lean_nbdwyc7e.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided\n/tmp/mini_elf_lean_nbdwyc7e.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "0df95f0ea458fa1180c112e59bfaf11a068ec437c6c0f4a33d4f1db3fceea719": {
+    "elapsed_ms": 169.60360400844365,
+    "error": null,
+    "success": true
+  },
+  "0e27d33070b517aafc98f3cee5e2fb165eba2a4af49f3c97d3acfdfed27c9690": {
+    "elapsed_ms": 166.69368199654855,
+    "error": null,
+    "success": true
+  },
+  "0e68372c9d09a3191473b4b9dd6f78610561b775b3681b5d9f407d7eff0e81cd": {
+    "elapsed_ms": 169.23173899704125,
+    "error": null,
+    "success": true
+  },
+  "0e7aa1c409a256e5731a0fddf31594548bb55aad291cfd02e5fddf5e535fe209": {
+    "elapsed_ms": 170.2600970020285,
+    "error": null,
+    "success": true
+  },
+  "0eb7bb29b0f374367edae16696a1d7baa822bb265ec99af267af96cb2f569e2d": {
+    "elapsed_ms": 165.45750100340229,
+    "error": null,
+    "success": true
+  },
+  "0efb4bbbc0d6dcbce3bc840d1f1043bf7c5ae0f90cd7ee4fe7347aafbcb030fe": {
+    "elapsed_ms": 169.74296199623495,
+    "error": "/tmp/mini_elf_lean_sde0n8qg.lean:2:8: error: Function expected at\n  True\nbut this term has type\n  Prop\n\nNote: Expected a function because this term is being applied to the argument\n  hp\n/tmp/mini_elf_lean_sde0n8qg.lean:2:16: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "0f52ce6c5110f61a5f4eb25e5c821302b7a429a3f5cf2b042de32531c85b7b5d": {
+    "elapsed_ms": 172.55689400190022,
+    "error": null,
+    "success": true
+  },
+  "0fb5d882a46924d2fc80715e5876bff4bc7c509c1666ed98f0fd191d9c8aa238": {
+    "elapsed_ms": 166.4524740044726,
+    "error": "/tmp/mini_elf_lean_sja4cjtk.lean:1:54: error: unsolved goals\nm n o : Prop\nh : m \u2227 n \u2192 o\nha : m\nhb : n\n\u22a2 o\n/tmp/mini_elf_lean_sja4cjtk.lean:2:14: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "106caa4a2f5730bc31e3ce42e340bb9af04204da8eba70f5b433d0d2c9c83c2f": {
+    "elapsed_ms": 165.5716469977051,
+    "error": "/tmp/mini_elf_lean_1mrx6eek.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_1mrx6eek.lean:1:18: error: unsolved goals\n\u22a2 True",
+    "success": false
+  },
+  "10912f269407e2e272aba3852408c0c02552920480aed18713ab8f48ee6d7910": {
+    "elapsed_ms": 166.0528020001948,
+    "error": "/tmp/mini_elf_lean_ngoowzbu.lean:2:2: error: Type mismatch\n  fun hq => h.mpr hq\nhas type\n  t \u2192 q\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "117997720949b27c0634dbef1656057b6b703a9ba55b01b3f589bd936f27319a": {
+    "elapsed_ms": 180.23670100956224,
+    "error": null,
+    "success": true
+  },
+  "118597a712c263ea6c9801f6b798f55f96843ca91569f5407ab5482fb85909ca": {
+    "elapsed_ms": 172.75042900291737,
+    "error": null,
+    "success": true
+  },
+  "11b80ba5e384f3d0b6451e23122834e59c0be1b2355f082607580051ac89ea45": {
+    "elapsed_ms": 173.80861299170647,
+    "error": null,
+    "success": true
+  },
+  "11c6de83b984b3f638eeb7b80232eefdd964e95741a4cb97c69cc9d8dade883e": {
+    "elapsed_ms": 167.1533800108591,
+    "error": "/tmp/mini_elf_lean_8jj73ds0.lean:3:2: error: Type mismatch\n  Or.inl h\nhas type\n  x \u2228 ?m.6\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "1233f43d7ca2a4a14c61fc96db71a72e08b73569503cb1fd5cb4473202d7fdb0": {
+    "elapsed_ms": 169.30953400151338,
+    "error": "/tmp/mini_elf_lean_byzknu4j.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_byzknu4j.lean:1:37: error: unsolved goals\np : Prop\nh : p\n\u22a2 True",
+    "success": false
+  },
+  "1293e89a7227f6a9c91a81912892ef673377104f2e38e05b25949e43a037325b": {
+    "elapsed_ms": 170.57464800018352,
+    "error": "/tmp/mini_elf_lean_wxnamktd.lean:1:58: error: unsolved goals\ncase mpr\nr s : Prop\nh1 : r \u2192 s\nh2 : s \u2192 r\n\u22a2 s \u2192 r",
+    "success": false
+  },
+  "131fec82593e1ead2dec476e5bdfce40583df84fa31e3d5ebf5f7494b4b610ca": {
+    "elapsed_ms": 180.63560900918674,
+    "error": "/tmp/mini_elf_lean_8n67impu.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 p\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "132ed810bc11a9bb3547a2857b28b6a1a65c5e879da2efc277243cae16b2390a": {
+    "elapsed_ms": 167.11753199342638,
+    "error": null,
+    "success": true
+  },
+  "1369c334fa8a636d64bf1b930483efd1b411e7b2f7e279a0b03626236f51fcf2": {
+    "elapsed_ms": 169.78145400935318,
+    "error": "/tmp/mini_elf_lean_7gxteb9q.lean:3:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  hr\nhas type `z` which does not have the necessary form.\n/tmp/mini_elf_lean_7gxteb9q.lean:1:61: error: unsolved goals\ncase right\nx y z : Prop\nhp : x\nhq : y\nhr : z\n\u22a2 z",
+    "success": false
+  },
+  "143bef337903522f9d45d0318f5db693ca461ae36330d23c90406cd437ee7c1d": {
+    "elapsed_ms": 168.43729100946803,
+    "error": "/tmp/mini_elf_lean_ut7q4__s.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "15830199a05de3358a7c527a09253d832866d6809a3763f79d354b2a3358740a": {
+    "elapsed_ms": 174.390604996006,
+    "error": "/tmp/mini_elf_lean_qw1z4dmy.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 a\nbut is expected to have type\n  c",
+    "success": false
+  },
+  "15d08b745b4eec4eab526011313ffcd39e2c5ac59dfa715d04a551188a753970": {
+    "elapsed_ms": 171.10039701219648,
+    "error": null,
+    "success": true
+  },
+  "15d9c9d9535e3195905349d858bc0877d5b3fc959b2ca465aad4a79a687f43a7": {
+    "elapsed_ms": 180.0566050078487,
+    "error": null,
+    "success": true
+  },
+  "168fdca3ea673528e82f5af950e5e63614d6f2aeaa6cda31081ffe9f135227f2": {
+    "elapsed_ms": 164.5211129944073,
+    "error": "/tmp/mini_elf_lean_46uhuq4s.lean:3:2: error: Type mismatch\n  h2\nhas type\n  s \u2192 r\nbut is expected to have type\n  r \u2192 s",
+    "success": false
+  },
+  "16ffa027f8eeda48d9c4f2e1a824e36910abc6e0a26d210f5d075799ea2f91c8": {
+    "elapsed_ms": 171.09151599288452,
+    "error": "/tmp/mini_elf_lean_r9fng_p1.lean:3:2: error: Type mismatch\n  Or.inr h\nhas type\n  ?m.5 \u2228 t\nbut is expected to have type\n  t",
+    "success": false
+  },
+  "1708171f340c27726d51f43a198113905191e7d72afefa51c62f523e31988374": {
+    "elapsed_ms": 168.44869300257415,
+    "error": "/tmp/mini_elf_lean_44th36ph.lean:3:2: error: Type mismatch\n  Or.inr h\nhas type\n  ?m.5 \u2228 s\nbut is expected to have type\n  s",
+    "success": false
+  },
+  "174da66146d3ac190d34a4220d67efe3f491af1b8d1f757022d8c55d3c1cf800": {
+    "elapsed_ms": 172.11675200087484,
+    "error": null,
+    "success": true
+  },
+  "175b5b17f566a2d63e613c3450956e9782a53760c990357320573a1859235118": {
+    "elapsed_ms": 168.21604401047807,
+    "error": "/tmp/mini_elf_lean_9kq7pzyk.lean:2:2: error: Type mismatch\n  h.right.right\nhas type\n  r\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "176f2b20d9a9e938b88df736cf86c49de438901b453d86630633931b51bd066d": {
+    "elapsed_ms": 167.5315850006882,
+    "error": "/tmp/mini_elf_lean_cwclhm7v.lean:1:68: error: unsolved goals\ncase inr\na b c : Prop\nhp : a \u2192 c\nhq : b \u2192 c\nhx : b\n\u22a2 c\n/tmp/mini_elf_lean_cwclhm7v.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "179d9af14e99ce61b47ba3ec64b1b9dd190e5378eec58e63571cd2fd4344c15b": {
+    "elapsed_ms": 166.2107830052264,
+    "error": null,
+    "success": true
+  },
+  "17eba5c6081e5815d9da438f57d151b6abcfb120b3125fb90aa6e8ed27a413d4": {
+    "elapsed_ms": 188.53949299955275,
+    "error": "/tmp/mini_elf_lean_b1bvuy9q.lean:2:8: error: Function expected at\n  h.right\nbut this term has type\n  r\n\nNote: Expected a function because this term is being applied to the argument\n  hq",
+    "success": false
+  },
+  "1862a7091707834a504be04ed6e318693c82cb0f34de8f25e96a3c21d1e7c6ed": {
+    "elapsed_ms": 171.6971249989001,
+    "error": "/tmp/mini_elf_lean_ys0ld7ej.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_ys0ld7ej.lean:1:38: error: unsolved goals\ncase inr\nt : Prop\nhp : t\n\u22a2 t",
+    "success": false
+  },
+  "187b1bcdf3297811166e5c7b584531e11b8252334e9fbaf0bd418fc96361c94d": {
+    "elapsed_ms": 172.70416600513272,
+    "error": "/tmp/mini_elf_lean__inc6wz_.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `r` which does not have the necessary form.",
+    "success": false
+  },
+  "1887e4f546ae82ef25eee55931945a53b06f06b5d049665fd17ad724a93621ef": {
+    "elapsed_ms": 173.43941700528376,
+    "error": null,
+    "success": true
+  },
+  "1902ee3ac7098f029455e97d513cf4b593f67b0fb9fb184f595f7328ea0e7b29": {
+    "elapsed_ms": 167.13535400049295,
+    "error": null,
+    "success": true
+  },
+  "19307920ec10f535f18b3c16ebdb178898a9f0fb7c579dd3c1c3203ba0056547": {
+    "elapsed_ms": 167.06870100460947,
+    "error": null,
+    "success": true
+  },
+  "1aa3184557c959d4045709fd77b4cf7b38894485e8a1cac5ba778559bd67e85d": {
+    "elapsed_ms": 171.88983100641053,
+    "error": "/tmp/mini_elf_lean_tivobynj.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.inr`",
+    "success": false
+  },
+  "1aae2a0b055a052c16d8dac3ff363c3543d997cf0fb146f648e8760cba18e20a": {
+    "elapsed_ms": 186.54976699326653,
+    "error": null,
+    "success": true
+  },
+  "1b014603b07e9bcf28d7835118be1c0b8fe64eb34cdab4d5c6ec79261d96bf89": {
+    "elapsed_ms": 169.96012500021607,
+    "error": null,
+    "success": true
+  },
+  "1b56a9ff1cf70522f53c3be894dc6cd7dc9632b1ea1a6d03c2b4ca1b2adcba5b": {
+    "elapsed_ms": 171.33212198677938,
+    "error": "/tmp/mini_elf_lean_icx0jhs_.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_icx0jhs_.lean:1:38: error: unsolved goals\n\u03b1 : Type\na : \u03b1\n\u22a2 a = a",
+    "success": false
+  },
+  "1b828b9a16a1417e076797e1354ef9daca4d1306a44d4b678bcf201bc1f84a8c": {
+    "elapsed_ms": 171.2842230044771,
+    "error": "/tmp/mini_elf_lean_uicgohmc.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nx y : Prop\nhp : x\nhq : y\n\u22a2 x \u2227 y",
+    "success": false
+  },
+  "1c3b3f5be9b3c7df8610fbbc5a1651233d2e927635bfff9562fa64da52855908": {
+    "elapsed_ms": 167.56774499663152,
+    "error": null,
+    "success": true
+  },
+  "1cdf3965f910f9174f3c8de672ce9482ad48dc4c498b92b0191da0b2c52ee235": {
+    "elapsed_ms": 169.9952680064598,
+    "error": "/tmp/mini_elf_lean_yzm1qtkz.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`",
+    "success": false
+  },
+  "1d7c755e9becc8e21836dfd8bb1f875d5c6cc1600758ee7854c2ba73ca964664": {
+    "elapsed_ms": 168.61848000553437,
+    "error": null,
+    "success": true
+  },
+  "1e5f3fe304099acabf3b6319f50368aa553465ca30597d1ee78e713dbbab963c": {
+    "elapsed_ms": 168.69798400148284,
+    "error": null,
+    "success": true
+  },
+  "1ed9c041cf4b3d0f42e7a4a32c95a22d6cf79efbf94b1d63de70478325961035": {
+    "elapsed_ms": 167.02298399468418,
+    "error": "/tmp/mini_elf_lean_ep2qzfpa.lean:3:2: error: Type mismatch\n  Or.inl h\nhas type\n  s \u2228 ?m.6\nbut is expected to have type\n  s",
+    "success": false
+  },
+  "1f3fb45a356c412a906d113966af711f8e1b9ff43532c5cef51f9c2c44fa23e6": {
+    "elapsed_ms": 167.54778000176884,
+    "error": "/tmp/mini_elf_lean_uuv31ilw.lean:2:15: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "1ff67ac524c18a404eb399ba0b102d248722b7cdecfe8c70e021f8200b8cb2ca": {
+    "elapsed_ms": 169.663467007922,
+    "error": "/tmp/mini_elf_lean_o8nd372a.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  a\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean_o8nd372a.lean:4:8: error: Function expected at\n  hq\nbut this term has type\n  b\n\nNote: Expected a function because this term is being applied to the argument\n  hx",
+    "success": false
+  },
+  "2068d5fb1011cbd7491abdaaf56d1950fa2f9aefeb707604b75da1248867c3ba": {
+    "elapsed_ms": 183.3794200065313,
+    "error": null,
+    "success": true
+  },
+  "20871364262234e98b8f051dadee3076bdad4bfc4cc9a5bbb9a47cff8c8186a6": {
+    "elapsed_ms": 167.15417099476326,
+    "error": "/tmp/mini_elf_lean_ame17ubk.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  q \u2227 s\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "21fc3c210d837e6443cf5a8cc1a43550a4612705a1b8651d5ef0f26226cc1023": {
+    "elapsed_ms": 168.34422599640675,
+    "error": "/tmp/mini_elf_lean_5n6m40u4.lean:1:38: error: unsolved goals\ncase inr\nt : Prop\nhp : t\n\u22a2 t\n/tmp/mini_elf_lean_5n6m40u4.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "243bf51148ff4558e10c37d352cb93be22ca02b16ccaeb8406bbfee1b1fd787d": {
+    "elapsed_ms": 171.82509299891535,
+    "error": null,
+    "success": true
+  },
+  "247569f52267eebf20327d73afb56e4bf0d0895041c96a3c0504ff97ef5dd7ac": {
+    "elapsed_ms": 170.31993399723433,
+    "error": null,
+    "success": true
+  },
+  "249079bfc12deaff9d32ac16845509cd53699028b086728a3c3b5a4e29d58267": {
+    "elapsed_ms": 183.28591299359687,
+    "error": "/tmp/mini_elf_lean_dpfzlwrk.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `u` which does not have the necessary form.",
+    "success": false
+  },
+  "24bf5ab1a2781e784bb85c35a242204242c661aca27c23d2e30dc60422cbcebc": {
+    "elapsed_ms": 177.02192699653096,
+    "error": null,
+    "success": true
+  },
+  "2514cecb7395458834f589e040d1b1350a890a7ed819568a6b99e93eeea774fd": {
+    "elapsed_ms": 177.83684299502056,
+    "error": null,
+    "success": true
+  },
+  "252f4db18f39a18fc2d43f9155458aa6a23f7735aa4956586c0700061b0b35de": {
+    "elapsed_ms": 168.23094100982416,
+    "error": "/tmp/mini_elf_lean_mevgq6i9.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\np : Prop\n\u22a2 p \u2192 p",
+    "success": false
+  },
+  "2555149962395d20c54ddb144a91da18136a3aa5ec022d1081c45cb649159a8c": {
+    "elapsed_ms": 167.65224099799525,
+    "error": null,
+    "success": true
+  },
+  "25eaa2e916149f48a319d19e0c2a36f4efe0d40273e836d8226a2d29a5b76277": {
+    "elapsed_ms": 168.2025890040677,
+    "error": "/tmp/mini_elf_lean_1fulauab.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `m`",
+    "success": false
+  },
+  "26589b780b078b773ef19b48d7da9a3c0a174b7029fa128ecffbbcf3f3abbc1f": {
+    "elapsed_ms": 168.311524001183,
+    "error": null,
+    "success": true
+  },
+  "26e49c55ec7d4843880f90f0f213569227e4bd2a26b006beb72e75109e3009f0": {
+    "elapsed_ms": 169.93710900715087,
+    "error": "/tmp/mini_elf_lean_q2kng00e.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_q2kng00e.lean:2:17: error: Function expected at\n  h3\nbut this term has type\n  p \u2227 t\n\nNote: Expected a function because this term is being applied to the argument\n  failed to pretty print term (use 'set_option pp.rawOnError true' for raw representation)",
+    "success": false
+  },
+  "27568238a1d2081ea41abba7467038856fdc1f7818e1b97a12662cec6acb26ce": {
+    "elapsed_ms": 167.47030899568927,
+    "error": null,
+    "success": true
+  },
+  "276fc8d72e526d63778353d5357d69a48665c8e4311fb6297d23a4810c913638": {
+    "elapsed_ms": 168.32644799433183,
+    "error": null,
+    "success": true
+  },
+  "27c42d13b7f04c0f4b515bb748154e1d63d0e06ffdd635c0385292538468fb84": {
+    "elapsed_ms": 167.31765899749007,
+    "error": "/tmp/mini_elf_lean_j0gqjb5g.lean:2:2: error: Type mismatch\n  \u27e8h1, h2\u27e9\nhas type\n  (p \u2192 q) \u2227 (q \u2192 p)\nbut is expected to have type\n  p \u2194 q",
+    "success": false
+  },
+  "289fa46d1afb2b88301b4606ecdb5a21437f6ac0bd72804d6a5cbe6df7f1e960": {
+    "elapsed_ms": 168.51215899805538,
+    "error": "/tmp/mini_elf_lean_4av60zr7.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.13 \u2192 ?m.13\nbut is expected to have type\n  4 + 0 = 4",
+    "success": false
+  },
+  "294b979fec22e37eeb2fb953b4bb22871ee1352d290c0943a2e79a67f255595b": {
+    "elapsed_ms": 190.23921999905724,
+    "error": "/tmp/mini_elf_lean_yb8dfsjr.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_yb8dfsjr.lean:2:21: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "296161cb62381306c875f51096ecd119aa338beb8fc0441b1252b4a6b3ddf67d": {
+    "elapsed_ms": 169.7747299913317,
+    "error": "/tmp/mini_elf_lean_brevilxy.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "29c78cd3e7c423bc01701f23a0ed1b7a56fd47734ddec63a29239f5b3a241342": {
+    "elapsed_ms": 165.34197199507616,
+    "error": null,
+    "success": true
+  },
+  "2a06021ef1219cad389cbafb5343f5897a8ae4763ccb1182777d93717d5cc74d": {
+    "elapsed_ms": 172.26170799403917,
+    "error": "/tmp/mini_elf_lean_qnx_2vbr.lean:1:68: error: unsolved goals\ncase inr\na b d : Prop\nhp : a \u2192 d\nhq : b \u2192 d\nhx : b\n\u22a2 d\n/tmp/mini_elf_lean_qnx_2vbr.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "2a3c464adade70ca9b19cdf67886810b58feb9c2cf6ae6b57710b5d6c48b142c": {
+    "elapsed_ms": 164.56227799062617,
+    "error": "/tmp/mini_elf_lean_lnpkb757.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.13 \u2192 ?m.13\nbut is expected to have type\n  4 + 0 = 4",
+    "success": false
+  },
+  "2a8a84b36fa06524009f2fcdf1c5de2450573f59fc8c5e38a98a70780b605a00": {
+    "elapsed_ms": 168.3290780056268,
+    "error": null,
+    "success": true
+  },
+  "2b1e85d44a06c8ae49508f347e636a418d69c166c3fb1c12bb617fbddd67fa50": {
+    "elapsed_ms": 170.81963999953587,
+    "error": null,
+    "success": true
+  },
+  "2b2a481596ee015fc03427a6c589fc91c9a8bddd98843deb50ebc3c324b4c0b5": {
+    "elapsed_ms": 167.8477489913348,
+    "error": null,
+    "success": true
+  },
+  "2b4a3468cf5fa3ba4e6f6364268f95c4061592aa9c2191aedefd9020fd0cb39e": {
+    "elapsed_ms": 169.39527000067756,
+    "error": null,
+    "success": true
+  },
+  "2b4f27febf123e3ac493e96a1f2be75d44480adc040012f95af3f831539a4a8e": {
+    "elapsed_ms": 170.28546400251798,
+    "error": null,
+    "success": true
+  },
+  "2b7513e3593c718faae50f488f1cddc4cbe08dc52068172302c841b4f790be8c": {
+    "elapsed_ms": 169.96822001237888,
+    "error": null,
+    "success": true
+  },
+  "2be9f60893e43c36041e0c1e909679b85ab7c99db559845db26ff30e10ad2cf8": {
+    "elapsed_ms": 170.06981099257246,
+    "error": null,
+    "success": true
+  },
+  "2bfbfafe1e3181c76abaa81ed8c3f835507a6b6d83a1f256f23be741a78e99b7": {
+    "elapsed_ms": 174.19243800395634,
+    "error": null,
+    "success": true
+  },
+  "2c1324967d070698b1ec9c8a99db65ee0b8c0dfc3948d5b5d2211aed5d3c77c3": {
+    "elapsed_ms": 181.48776999441907,
+    "error": null,
+    "success": true
+  },
+  "2c367141d75842f25b75a28c33cce69916d291b04ce93b73f72ccbe9869f8b22": {
+    "elapsed_ms": 172.47865900571924,
+    "error": null,
+    "success": true
+  },
+  "2cbca771b303d035b707c6b65aa4858b217cffbbe5cc7fc016c3ab48731d4ac0": {
+    "elapsed_ms": 169.48950200458057,
+    "error": "/tmp/mini_elf_lean_px3ymapb.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_px3ymapb.lean:1:31: error: unsolved goals\n\u22a2 2 * 3 = 6",
+    "success": false
+  },
+  "2cde7b3f42c5eba42f8cad7c1325b6dbac33f5f6b0c3aefca043d35f15e9d784": {
+    "elapsed_ms": 176.54982299427502,
+    "error": "/tmp/mini_elf_lean_qs_vfo_z.lean:4:0: error: unexpected end of input; expected ')'",
+    "success": false
+  },
+  "2ce7c710dca44863432925ecb76f7c01f54f7e8b9914fb6796cda5ecfb542b2b": {
+    "elapsed_ms": 171.7183830041904,
+    "error": null,
+    "success": true
+  },
+  "2cf66ea9fd445cf435edb369015037900c5b5dcd57b3242237f0620e856a5140": {
+    "elapsed_ms": 167.0280999969691,
+    "error": null,
+    "success": true
+  },
+  "2dc6a53250db57ea01315544ba5e6daa0224104198cd83ab780830be94eb368e": {
+    "elapsed_ms": 167.16275400540326,
+    "error": "/tmp/mini_elf_lean_4kc22gk7.lean:3:8: error: Function expected at\n  h\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  \u27e8ha, hb\u27e9",
+    "success": false
+  },
+  "2e06f4eb877b87b1462bf9494b817d765535d06f14839a3140ddd6f434cefef1": {
+    "elapsed_ms": 180.10700700688176,
+    "error": null,
+    "success": true
+  },
+  "2e3300a70dfebd04a002bc6d099aa6c7920cf3ae98984fe3d537c7e56b9532b7": {
+    "elapsed_ms": 169.48937899724115,
+    "error": "/tmp/mini_elf_lean_o6jkt4pj.lean:3:2: error: Type mismatch\n  Or.inl h\nhas type\n  r \u2228 ?m.6\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "2e392229b68f65fb4816705a39dbc063f9f2c3f3a614e5a34e0afcb4f797ec20": {
+    "elapsed_ms": 166.78462400159333,
+    "error": "/tmp/mini_elf_lean_e5w9md8j.lean:1:58: error: unsolved goals\ncase mpr\nq t : Prop\nh1 : q \u2192 t\nh2 : t \u2192 q\n\u22a2 t \u2192 q",
+    "success": false
+  },
+  "2e478fb1f1b0c75fae789a6b2258860eacec88b71e33c3eaac2eb03408b3fddc": {
+    "elapsed_ms": 170.46354099875316,
+    "error": null,
+    "success": true
+  },
+  "2fa2f5aa39c6acf5cf75e9451a2fdb2871369fb1c098334711853e9b44c412e8": {
+    "elapsed_ms": 168.4669880050933,
+    "error": null,
+    "success": true
+  },
+  "2fb68a0a8520a61a04777dc02e7545858b9486bc20ee5fe81b1ae811e04cf8a7": {
+    "elapsed_ms": 167.44262499560136,
+    "error": "/tmp/mini_elf_lean_bzjzlm91.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "304fab38f8fe5e9290f5471b2c89d04066b2c55b5d72d79281415f410e967a66": {
+    "elapsed_ms": 167.49069400248118,
+    "error": "/tmp/mini_elf_lean_o_hbx3gu.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_o_hbx3gu.lean:1:38: error: unsolved goals\nt : Prop\nh : False\n\u22a2 t",
+    "success": false
+  },
+  "307efa6ff60a1652240ffa63e5893a19d86c7b8ae6a8af8f33ff803fe2041262": {
+    "elapsed_ms": 170.65919299784582,
+    "error": "/tmp/mini_elf_lean_t56ctoto.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `Orun`\n/tmp/mini_elf_lean_t56ctoto.lean:2:16: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "308c45b240cf639cfd20edc4cd282d08007998c79aa54e405bd2c39a0cd71619": {
+    "elapsed_ms": 174.08561999036465,
+    "error": "/tmp/mini_elf_lean_1dug1yvr.lean:1:44: error: unsolved goals\ncase inr\nx y : Prop\nhq : y\n\u22a2 y \u2228 x\n/tmp/mini_elf_lean_1dug1yvr.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "30a51cf760e84dcd222f4bb34a07b6ca5e12a07b903487cd36e4ca1512e93ca5": {
+    "elapsed_ms": 166.89640600816347,
+    "error": null,
+    "success": true
+  },
+  "30a55b1c79f8e0f91c0f3f1e4652f27b69f6583aaed01692c0ef6100f1dddcd7": {
+    "elapsed_ms": 172.12185099197086,
+    "error": "/tmp/mini_elf_lean_on_mkou5.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\ns : Prop\n\u22a2 s \u2192 s",
+    "success": false
+  },
+  "30fbe2d65b7a9676973980a7cc186d8f9f6fcf8c05a0b03b305a4566d50bf52c": {
+    "elapsed_ms": 171.64943600073457,
+    "error": "/tmp/mini_elf_lean_0br4d4pw.lean:2:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.2 \u2228 p\nbut is expected to have type\n  p \u2227 q",
+    "success": false
+  },
+  "31dd95923464072c81367c35e030d887b8414367285a1d549ed78c40dc2b4752": {
+    "elapsed_ms": 169.0427689900389,
+    "error": null,
+    "success": true
+  },
+  "31fdebd93b36ed0742c80bb42c3a3c532ec658df7ec7f00059c0782c744a1b49": {
+    "elapsed_ms": 170.94473299221136,
+    "error": "/tmp/mini_elf_lean_tksx37zr.lean:2:8: error: Function expected at\n  Or.inr hp\nbut this term has type\n  ?m.2 \u2228 x\n\nNote: Expected a function because this term is being applied to the argument\n  hq",
+    "success": false
+  },
+  "3248200ab25421f351c51d11147bc76f3032f01fa6a9e6ed8aaa11c286ba84c2": {
+    "elapsed_ms": 171.34120099944994,
+    "error": "/tmp/mini_elf_lean_l239zz0s.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nq s : Prop\nhp : q\nhq : s\n\u22a2 q \u2227 s",
+    "success": false
+  },
+  "324b75599442180eb7971083f808ed871c053073e00edbc8fbb11fb60fb5115f": {
+    "elapsed_ms": 181.3804959965637,
+    "error": null,
+    "success": true
+  },
+  "32bda73fa1cfe2a6211745cb1dcd28374bc356fff160681b9793e69c201ee563": {
+    "elapsed_ms": 170.4590330045903,
+    "error": null,
+    "success": true
+  },
+  "32d9da7c2a5e8e4830427ad40754de8a62825e613f782fc2136d0c3f2840f6bc": {
+    "elapsed_ms": 167.82070600311272,
+    "error": null,
+    "success": true
+  },
+  "3357bbaa8546abc81e40a8bf93f718fc1bffd872982880c8d0e16fa032c07ca8": {
+    "elapsed_ms": 178.0068280058913,
+    "error": null,
+    "success": true
+  },
+  "33596ded4c0972cc79d9108463011d6909304b48f10af7a0438c4b585898f283": {
+    "elapsed_ms": 173.47550200065598,
+    "error": null,
+    "success": true
+  },
+  "33d116cf62232b710045f56093d5c4435f4489315254e66e9be6f5708929091d": {
+    "elapsed_ms": 175.94636799185537,
+    "error": "/tmp/mini_elf_lean_xszqrm1z.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`",
+    "success": false
+  },
+  "33f062c67df83240d0ef6b6079363bcce537828da7fb89b5313e5b7ceff0a3a3": {
+    "elapsed_ms": 175.62116000044625,
+    "error": "/tmp/mini_elf_lean_xm01orn9.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_xm01orn9.lean:1:38: error: unsolved goals\ncase inr\ns : Prop\nhp : s\n\u22a2 s",
+    "success": false
+  },
+  "3401e59134fbf37f540654d5ce2ffbe52a07420bce3c2be77efe7c4320ad0152": {
+    "elapsed_ms": 167.09288301353808,
+    "error": null,
+    "success": true
+  },
+  "344b91495a23b0cfd33acb478dd5f0bbe894d98374b8005b95adfbe7f0b87689": {
+    "elapsed_ms": 169.40113999589812,
+    "error": "/tmp/mini_elf_lean_ag0xbzy8.lean:1:58: error: unsolved goals\ncase mp\nx y : Prop\nh1 : x \u2192 y\nh2 : y \u2192 x\n\u22a2 x \u2192 y\n\ncase mpr\nx y : Prop\nh1 : x \u2192 y\nh2 : y \u2192 x\n\u22a2 y \u2192 x",
+    "success": false
+  },
+  "3468f8825397b66548624b8b24ce0471bf1a04162afe2b3cabc8f26763dc22ef": {
+    "elapsed_ms": 174.94239899679087,
+    "error": "/tmp/mini_elf_lean_n86gaqhc.lean:3:2: error: Type mismatch\n  fun hq => h.mpr hq\nhas type\n  b \u2192 a\nbut is expected to have type\n  a",
+    "success": false
+  },
+  "350fd9ed8657a289c1e16be38fa788527514ed2760b7b591761d29f42c63b6a8": {
+    "elapsed_ms": 166.92240399424918,
+    "error": null,
+    "success": true
+  },
+  "35314d4b70d3e5807383ddf78abb1b2f9e1fa499e169447cbf36d815b3092d66": {
+    "elapsed_ms": 174.42580799979623,
+    "error": null,
+    "success": true
+  },
+  "359bf7b0762943a929c601db03329397c9a42f874eabb77d9bec588997c43995": {
+    "elapsed_ms": 167.94922099506948,
+    "error": "/tmp/mini_elf_lean_eru3qk_h.lean:1:44: error: unsolved goals\nx y : Prop\nhp : x\nhq : y\n\u22a2 y \u2227 x",
+    "success": false
+  },
+  "35f55b7204e47de8df16d5724d6b71bd55368b2a6e499b444a42906de9bd7c18": {
+    "elapsed_ms": 189.02804800018203,
+    "error": null,
+    "success": true
+  },
+  "365170c29a68a9e544fe23bb9ea4ae5e9b3841d25d87bf361e16355b86d37f65": {
+    "elapsed_ms": 170.04822099988814,
+    "error": "/tmp/mini_elf_lean_3p8zxp7x.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "36d125eec4f947eee2a948636e449f8a764869e178dd76f9a5476395971e40cf": {
+    "elapsed_ms": 165.25298600026872,
+    "error": null,
+    "success": true
+  },
+  "371feb1fe8f69655c72f6d74b8b03f5232764cff736727f249f557a4c563681a": {
+    "elapsed_ms": 173.8444959919434,
+    "error": null,
+    "success": true
+  },
+  "3796d718c523096f0c28f35bce9bddfb32904ee8d46ad51638a77b4f42387b7b": {
+    "elapsed_ms": 166.91864699532744,
+    "error": null,
+    "success": true
+  },
+  "37bbfc2e37f4acaa2514824b5534bff67e629d0f1547691cc7e84732d4056989": {
+    "elapsed_ms": 169.0971579955658,
+    "error": null,
+    "success": true
+  },
+  "39830f6059ebdeb3ba9b090e390bd11df9839650ea720ac187fa3254b1cd5a42": {
+    "elapsed_ms": 170.39803699299227,
+    "error": "/tmp/mini_elf_lean_s8nlwzhj.lean:2:9: error: Application type mismatch: The argument\n  hp\nhas type\n  x\nbut is expected to have type\n  x \u2227 y\nin the application\n  And.intro hp\n/tmp/mini_elf_lean_s8nlwzhj.lean:2:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `z` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "39903f39f408432e9a3b484d796844cfe06c8174e5094200c506bf4359db419b": {
+    "elapsed_ms": 165.74027300521266,
+    "error": null,
+    "success": true
+  },
+  "39bf3002358bc3c40b3f85b64d259d9b1aa53d8e1ee59a5c698fc9693a42110d": {
+    "elapsed_ms": 167.65482298796996,
+    "error": null,
+    "success": true
+  },
+  "39c8ab5ef32e196b3b6167547d5608dd505d58024cf5a6f72cc0e2abdb063d79": {
+    "elapsed_ms": 173.93953300779685,
+    "error": "/tmp/mini_elf_lean_1qnekq38.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.left\nhas type `p` which does not have the necessary form.",
+    "success": false
+  },
+  "3a7bb9e5b5867365f24aeaccaa4a23e05c6fce5a2229e990ebf89e148ca4f123": {
+    "elapsed_ms": 196.6352870076662,
+    "error": null,
+    "success": true
+  },
+  "3b1fbb02f76c542107d8ce1b132e27f8a937fe5585565eb13f1948447609e5d1": {
+    "elapsed_ms": 175.6941710045794,
+    "error": null,
+    "success": true
+  },
+  "3bd89136533199923daae78988d0e95e695bc2aa35da35f0fbc6dd92f0ceb6fa": {
+    "elapsed_ms": 168.0935159965884,
+    "error": null,
+    "success": true
+  },
+  "3d3d3d55ccd1ca3d76fa2c945231b0c06faae03d4a1f9d011ec6841da1793625": {
+    "elapsed_ms": 166.21352700167336,
+    "error": null,
+    "success": true
+  },
+  "3e1749adb1bc511228624a692d68c419770b8387cfd0ba066e2c7e0f1fdbaa83": {
+    "elapsed_ms": 166.08924299362116,
+    "error": "/tmp/mini_elf_lean_x9qwnc16.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_x9qwnc16.lean:1:50: error: unsolved goals\ncase right\np r : Prop\nhp : p\nhq : r\n\u22a2 r",
+    "success": false
+  },
+  "3e2b64c3420ba573173d946eb47b0440647055205254ad00d9a8815a3c34fd46": {
+    "elapsed_ms": 171.2557989958441,
+    "error": "/tmp/mini_elf_lean_oy672m_w.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `b` which does not have the necessary form.",
+    "success": false
+  },
+  "3e76d3d5bfe1a0abc545e670c1002eec1ae73085e78745ab599a5afa9a0b47b1": {
+    "elapsed_ms": 167.42417300702073,
+    "error": "/tmp/mini_elf_lean_v55xt83e.lean:3:2: error: Type mismatch\n  Or.inl hq\nhas type\n  (y \u2192 z) \u2228 ?m.15\nbut is expected to have type\n  z",
+    "success": false
+  },
+  "3e922239e512a9988422d69e70cf17bdca4b56fc0b34476100475d3d2c69f747": {
+    "elapsed_ms": 178.3351079939166,
+    "error": "/tmp/mini_elf_lean_eon2cyht.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.right`",
+    "success": false
+  },
+  "3eecda535935eebd6362bfa738616b3ae5ad71412bd96234cb6799d87d4b4fc4": {
+    "elapsed_ms": 166.376176988706,
+    "error": null,
+    "success": true
+  },
+  "3f227124de8c47768ff7051482870c927a23564c42475191dd254768468b431b": {
+    "elapsed_ms": 170.3464489983162,
+    "error": null,
+    "success": true
+  },
+  "3f37991b097e3b9c4ac20e54b725b3bf730bcee43cba8dcc53d65c293ee49498": {
+    "elapsed_ms": 175.51109800115228,
+    "error": null,
+    "success": true
+  },
+  "3fa721c3173e3d477e5a6af62639fd6b2fab95b48a85609e6589b89059683641": {
+    "elapsed_ms": 171.13316399627365,
+    "error": null,
+    "success": true
+  },
+  "3feb5570aa22a4f6341ef99123749cb3626a762adc35d4c273174092deb93cc6": {
+    "elapsed_ms": 174.16468598821666,
+    "error": null,
+    "success": true
+  },
+  "4015351f18f4efedeaaa46599bf0d5a7e874e0a3d1264bc74cbb45edb594f41d": {
+    "elapsed_ms": 181.38612899929285,
+    "error": null,
+    "success": true
+  },
+  "4030be592ca45a21227d03366b4f16d8108ef0163de223e09b41396c2e995171": {
+    "elapsed_ms": 167.86409199994523,
+    "error": null,
+    "success": true
+  },
+  "404ec68a4b8a36e55c6c58fe769cf20fbeed1abddd2cb921acabf74540edb42c": {
+    "elapsed_ms": 165.6589839985827,
+    "error": "/tmp/mini_elf_lean_6m3tg87g.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_6m3tg87g.lean:2:21: error(lean.unknownIdentifier): Unknown identifier `hq`\n/tmp/mini_elf_lean_6m3tg87g.lean:2:23: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "40bc095eb51f5001291dda752a1d7a14490cc5b18fa985806de0622b6a388fee": {
+    "elapsed_ms": 171.96929299097974,
+    "error": null,
+    "success": true
+  },
+  "42181e2ab897b84610aad5111826bad9ee21e80139348e6d39df508947381051": {
+    "elapsed_ms": 167.40081099851523,
+    "error": null,
+    "success": true
+  },
+  "423d6952db8a5b45375a924df04c6e831bc61bc6d13032368d6c71d7fa911555": {
+    "elapsed_ms": 167.62073399149813,
+    "error": null,
+    "success": true
+  },
+  "436dd2804f01a18fdd888f83bdfe3713537083c017f8573a1145ef8db2757d42": {
+    "elapsed_ms": 168.61941199749708,
+    "error": "/tmp/mini_elf_lean__nqdwqqx.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\np : Prop\n\u22a2 p \u2192 p\n/tmp/mini_elf_lean__nqdwqqx.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "43e669513a9e9edf2a2c29c25e7dd1e7153c0ecc4179509d6450e778f724bafa": {
+    "elapsed_ms": 166.9852199993329,
+    "error": "/tmp/mini_elf_lean_6tdo8fbl.lean:3:2: error: Type mismatch\n  Or.inr h\nhas type\n  ?m.5 \u2228 r\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "43fb9aa0392011216df7da92fd402ce17b401c8b021c7da3b3d0f506386f0f9d": {
+    "elapsed_ms": 173.24355100572575,
+    "error": null,
+    "success": true
+  },
+  "447fa23f922941f75d5a1b6edeeb6e31e2f66aad3302f551005dd8a4b89138a7": {
+    "elapsed_ms": 171.531447005691,
+    "error": null,
+    "success": true
+  },
+  "450b593894ef5e4bc364c57ed7a932b0d4bac0096a010a74911b5f4ad50357a8": {
+    "elapsed_ms": 170.81170399615075,
+    "error": null,
+    "success": true
+  },
+  "457698d4a7045621681abc63ff0a399db09a706315923364b7a22c50d6563f32": {
+    "elapsed_ms": 190.49831500160508,
+    "error": null,
+    "success": true
+  },
+  "457a38929ceee888688ba6e1f0bc45082e655aaeedb3b9515e48e00a49295309": {
+    "elapsed_ms": 170.43581300822552,
+    "error": null,
+    "success": true
+  },
+  "45ced8f9a2363e792a867481c00b96711f74acd3795fef15c6c179f265f7e8a7": {
+    "elapsed_ms": 169.9584669986507,
+    "error": "/tmp/mini_elf_lean_a208grmo.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h.mp`\n/tmp/mini_elf_lean_a208grmo.lean:2:25: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "45f90d2e6643014d62971322e668f51fea3cc7d54b15302bf7762336d5993977": {
+    "elapsed_ms": 173.20702399592847,
+    "error": null,
+    "success": true
+  },
+  "4604ab3c549435fa0454be3b511082e8b71c6541172fc283b3d12f9a710b77e2": {
+    "elapsed_ms": 168.4247730008792,
+    "error": "/tmp/mini_elf_lean_7ob5pvbn.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_7ob5pvbn.lean:1:61: error: unsolved goals\ncase right\na b c : Prop\nhp : a\nhq : b\nhr : c\n\u22a2 c",
+    "success": false
+  },
+  "466297bf83d0f92683faba9b52d0b2cfd2cdd2c3df6425c84a7a6543d4f11514": {
+    "elapsed_ms": 166.11105400079396,
+    "error": "/tmp/mini_elf_lean_p9oej_8p.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nr s : Prop\nhp : r\nhq : s\n\u22a2 r \u2227 s",
+    "success": false
+  },
+  "4701daca54dcd394df0a11c398c4d2a65700c7f824f2b75c68e4df0863f00a7f": {
+    "elapsed_ms": 167.52382498816587,
+    "error": "/tmp/mini_elf_lean_h67bvppb.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_h67bvppb.lean:1:37: error: unsolved goals\np : Prop\nh : p\n\u22a2 True",
+    "success": false
+  },
+  "470a9d0fb2bcac92a0e66fc971c7adde823a67f8a19cf463fa1354bbce48a371": {
+    "elapsed_ms": 183.74411499826238,
+    "error": "/tmp/mini_elf_lean_nz7ftw8x.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "4841f3700615232ede067234beb511aef81043febf399c72d98dc5e82c47ddf6": {
+    "elapsed_ms": 184.30561599961948,
+    "error": "/tmp/mini_elf_lean_70x_kf9p.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_70x_kf9p.lean:1:38: error: unsolved goals\ncase inr\ns : Prop\nhp : s\n\u22a2 s",
+    "success": false
+  },
+  "4894bb39303d3f7f0a9ce42a01d661e240a4089bcde625b0fecaef5564412b0d": {
+    "elapsed_ms": 177.50441399402916,
+    "error": null,
+    "success": true
+  },
+  "491b9edb377e37ba4213223cb2ec5f0b5fe08f65e13138e9d280c9c783ef5842": {
+    "elapsed_ms": 169.65738900762517,
+    "error": "/tmp/mini_elf_lean_smw64ai5.lean:2:13: error: Application type mismatch: The argument\n  hq\nhas type\n  q\nbut is expected to have type\n  q \u2227 s\nin the application\n  \u27e8hp, hq\u27e9\n/tmp/mini_elf_lean_smw64ai5.lean:2:16: error: unexpected token ','; expected command",
+    "success": false
+  },
+  "495c0f67eb61cf440a57fe24820ec9f1a56467d8d666f86eb02d961ce87121d0": {
+    "elapsed_ms": 170.62436399282888,
+    "error": "/tmp/mini_elf_lean_zvjbt5s1.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_zvjbt5s1.lean:1:40: error: unsolved goals\ns u : Prop\nh : u\n\u22a2 s \u2228 u",
+    "success": false
+  },
+  "496c54f2121f757e873b8f1b26672e043917ec7f675def76d00d694191c9c2ab": {
+    "elapsed_ms": 174.12859800970182,
+    "error": "/tmp/mini_elf_lean_lcj8ry2r.lean:2:2: error: Tactic `rfl` failed: Expected the goal to be a binary relation\n\nHint: Reflexivity tactics can only be used on goals of the form `x ~ x` or `R x x`\n\n\u22a2 True",
+    "success": false
+  },
+  "497089f20db1805009c12a752107956ab146a43c1bb892cf14b5c3be87fb9157": {
+    "elapsed_ms": 184.51633800577838,
+    "error": null,
+    "success": true
+  },
+  "49a68f8b753824f1b003e4b9f326be9126817341d961273b33a7ebc6cc841d5b": {
+    "elapsed_ms": 165.25215200090315,
+    "error": null,
+    "success": true
+  },
+  "49bba042b1f2cd62df3e7295076f8c67179d9f996c841264dba2879a7ce10bc2": {
+    "elapsed_ms": 183.10420999478083,
+    "error": "/tmp/mini_elf_lean_2uxsx73_.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `q` which does not have the necessary form.",
+    "success": false
+  },
+  "49ca8134971e9280132e16f3ef24fc82d6f0760c7339f46a34e1b42733515695": {
+    "elapsed_ms": 194.18569099798333,
+    "error": null,
+    "success": true
+  },
+  "49ef51e48904a829eb54dfbc3595ae6ebe82f04c2ed9125e4b64362d4773d5d3": {
+    "elapsed_ms": 180.28534400218632,
+    "error": null,
+    "success": true
+  },
+  "49f9f3532623f05556eb0ccccc86241fb5cc75ab19f53d410fe7082323d50fd6": {
+    "elapsed_ms": 166.53965201112442,
+    "error": null,
+    "success": true
+  },
+  "4a27c86e7545a9e97da05f4ffd2b0df157b334b52bb8c19dad440cc7d6353de8": {
+    "elapsed_ms": 170.57285299233627,
+    "error": "/tmp/mini_elf_lean_otgik3ev.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Prop\nhp : p\nhq : q\n\u22a2 p \u2227 q",
+    "success": false
+  },
+  "4a649ab18545c3ac517a79b1bcee8cfc48969f4462fb7a2cc29382c3d9538b46": {
+    "elapsed_ms": 183.61271699541248,
+    "error": null,
+    "success": true
+  },
+  "4b150f45614b7668db280f3017837643d2117bc693078e7f17194ed7276aa28c": {
+    "elapsed_ms": 177.77950799791142,
+    "error": null,
+    "success": true
+  },
+  "4b7232d6dca5dd29ef31e94c9ea3d033dda0e1d5d51a10143241e4bca73c93e9": {
+    "elapsed_ms": 169.5780899899546,
+    "error": null,
+    "success": true
+  },
+  "4b9727c29884ec2d9c65b6e5096c85a0106d1df8b15c056fc41e73b267bfdc6e": {
+    "elapsed_ms": 166.85040399897844,
+    "error": null,
+    "success": true
+  },
+  "4c383b202afae90fdf445b6495fec925f64dd4288921d3a85f9496bcd0b33147": {
+    "elapsed_ms": 169.5219880057266,
+    "error": "/tmp/mini_elf_lean_xyuyfp11.lean:3:0: error: unexpected end of input",
+    "success": false
+  },
+  "4c94a6fdd31e2c7d7a4f6037a585f7c39b3b65a2add3230c99dd0d7cf6f7a950": {
+    "elapsed_ms": 184.7050689975731,
+    "error": null,
+    "success": true
+  },
+  "4ca9dccde21f37179b346b9f8523728256783db51337a603d9015f690fd78d06": {
+    "elapsed_ms": 166.332886001328,
+    "error": "/tmp/mini_elf_lean_h_uahww5.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_h_uahww5.lean:1:32: error: unsolved goals\na : String\n\u22a2 a = a",
+    "success": false
+  },
+  "4d09c6a6b0860657be240553205d7984ed3e8ad84c1a0845baffd3bcdc57f498": {
+    "elapsed_ms": 181.47177899663802,
+    "error": null,
+    "success": true
+  },
+  "4d5b398499e88e1e613f928ab23e52fa4fb14b94fab4a5eebf2a8ef8164656ec": {
+    "elapsed_ms": 168.9991489984095,
+    "error": "/tmp/mini_elf_lean_0p51lbte.lean:1:38: error: unsolved goals\nt : Prop\nh : False\n\u22a2 t",
+    "success": false
+  },
+  "4dacadf23148a4fa45405d6df9353c4a58e3457e861b06ba0ce6f92b17213efb": {
+    "elapsed_ms": 169.95994400349446,
+    "error": null,
+    "success": true
+  },
+  "4dba42bacac85cbbdeb96bc6582ce6d21d54bd4d566eb783f2b641cb651dad1a": {
+    "elapsed_ms": 169.91352300101425,
+    "error": "/tmp/mini_elf_lean_569ny5a0.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hp`",
+    "success": false
+  },
+  "4dbc0be241590bbc49bab4d58938e63b7d5a0d98df248525a8d9e66579f6b587": {
+    "elapsed_ms": 169.36136499862187,
+    "error": null,
+    "success": true
+  },
+  "4ee7a162708668fc4e556a95ed719196e81c8a59f9e0222c8b79a00053bb39a3": {
+    "elapsed_ms": 172.04275299445726,
+    "error": null,
+    "success": true
+  },
+  "4eec16cd7b46e84f3de653815b6b90076a1288a5e5c39e3cb2172eeb0dd7f9f0": {
+    "elapsed_ms": 170.64913499052636,
+    "error": "/tmp/mini_elf_lean_4y64t18v.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`",
+    "success": false
+  },
+  "4fb687937803caa86bc958107607f18138872d78eb80230738f233a43295ac10": {
+    "elapsed_ms": 174.01086700556334,
+    "error": "/tmp/mini_elf_lean_bgr2twwi.lean:2:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  OfNat \u03b1 8\nnumerals are polymorphic in Lean, but the numeral `8` cannot be used in a context where the expected type is\n  \u03b1\ndue to the absence of the instance above\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.",
+    "success": false
+  },
+  "5010b5bc2776ad9063f6c1ec9f44977ac26372e01001759885062f391d020324": {
+    "elapsed_ms": 169.64630600705277,
+    "error": "/tmp/mini_elf_lean_cawzzly0.lean:2:2: error: Type mismatch\n  fun hq => h.mpr hq\nhas type\n  y \u2192 x\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "50aef25e6c6f5668fccdcfdda1fce7280af6eac5d0826762681db4b274cc68b7": {
+    "elapsed_ms": 170.7582389935851,
+    "error": "/tmp/mini_elf_lean_pf99ojzr.lean:2:11: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  q\nin the application\n  h2 h2\n/tmp/mini_elf_lean_pf99ojzr.lean:2:18: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "51600986072e92636edca4cd1880270dc0895276b31806a032f425e4f113f20c": {
+    "elapsed_ms": 182.64836400339846,
+    "error": "/tmp/mini_elf_lean_s8oe0r1k.lean:3:0: error: unexpected end of input; expected '\u27e9'\n/tmp/mini_elf_lean_s8oe0r1k.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 1 was provided",
+    "success": false
+  },
+  "51ab14cf2dfd66b9255d346a600de5a36959e091e6ef1e48fe6b0f70e02a26ce": {
+    "elapsed_ms": 169.73256299388595,
+    "error": null,
+    "success": true
+  },
+  "521b82f429591038e981e0c8fd88340ae0bab73d1e2ab91a77e47faef68b5612": {
+    "elapsed_ms": 170.4093120060861,
+    "error": null,
+    "success": true
+  },
+  "52cae1a4ad3d5812523691f4a18f758b1474d947e798a2e9ff01df3309810794": {
+    "elapsed_ms": 171.95621000428218,
+    "error": "/tmp/mini_elf_lean_9i0p78xf.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "52facb7b330c488edcfd8275cde22982fdd5c8289b59d7c9ab93fc60771f946e": {
+    "elapsed_ms": 169.06979300256353,
+    "error": null,
+    "success": true
+  },
+  "52ff0e19e1f69e2e5ea28d96c68de79ebe6852cbaba2a3050d26d5bc3d2fa055": {
+    "elapsed_ms": 169.66295200109016,
+    "error": "/tmp/mini_elf_lean_imsy1zeb.lean:1:40: error: unsolved goals\ns u : Prop\nh : u\n\u22a2 s \u2228 u",
+    "success": false
+  },
+  "53252082e03cc3e9333b42e9f04aea8055b79b23e7fda036687ec5fc1c59b8bf": {
+    "elapsed_ms": 165.63407400099095,
+    "error": "/tmp/mini_elf_lean_r7917lo7.lean:3:2: error: Type mismatch\n  \u27e8hp, hq\u27e9\nhas type\n  r \u2227 s\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "540c81ca96baf80c2102fd73d83bd31273fb7286cac185d039af7489c6e59438": {
+    "elapsed_ms": 166.52230599720497,
+    "error": null,
+    "success": true
+  },
+  "545cb38a53140992edf24926cfc6be028993e235163c4bdb93a64f5ee507e062": {
+    "elapsed_ms": 169.20327598927543,
+    "error": "/tmp/mini_elf_lean_li9rm8m4.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  y \u2227 z\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "557d4a772d00290b0ec21865fcbde32681847ebcd58b9902a707078b2dabb4a4": {
+    "elapsed_ms": 166.56341700581834,
+    "error": null,
+    "success": true
+  },
+  "560e33e2687d071497f371fbb18c8dc1cc3143c5e98b5558d60db08d2c1e9af0": {
+    "elapsed_ms": 164.76384100678843,
+    "error": null,
+    "success": true
+  },
+  "56201a6b64a2fea904ed6a5904850f87c01a6d0ad810ae5208848dcf0671e25b": {
+    "elapsed_ms": 177.03663300198968,
+    "error": "/tmp/mini_elf_lean_ljz1fsft.lean:3:2: error: Type mismatch\n  Or.inl h\nhas type\n  p \u2228 ?m.6\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "5688dd8d620ac3f4a7aba91074c60a8aafeb9bb94c390869f5e98f9dde33ab6e": {
+    "elapsed_ms": 188.04971399367787,
+    "error": "/tmp/mini_elf_lean_p7tdslzn.lean:2:2: error: Type mismatch\n  h.left.right\nhas type\n  q\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "56e52f493c9bcd7938aef4d462535e96c1b3f0128054139ac8a4c54c3403edcd": {
+    "elapsed_ms": 180.0460749946069,
+    "error": "/tmp/mini_elf_lean_8adqlwws.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_8adqlwws.lean:1:38: error: unsolved goals\np : Prop\nh : False\n\u22a2 p",
+    "success": false
+  },
+  "573f9f1df954c7bbf2f4f1e0ba97b7cee577efb0b79256dcbe7fd2bb394dd34a": {
+    "elapsed_ms": 170.54711100354325,
+    "error": null,
+    "success": true
+  },
+  "5766b6f34766e89087f7e64572c622f78a9190936bfeeb11772da1cc73876074": {
+    "elapsed_ms": 166.9656800077064,
+    "error": "/tmp/mini_elf_lean_vmt83bz3.lean:2:13: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "57676fed719edad857c0e528cfac9aea4b8309da73a68d2b5c2af2b37d7160f3": {
+    "elapsed_ms": 169.76140999759082,
+    "error": null,
+    "success": true
+  },
+  "578c32a6fe693e9f32be714073054877f220b6b35ae5b6f40915c7c50f2c0538": {
+    "elapsed_ms": 187.8283160040155,
+    "error": null,
+    "success": true
+  },
+  "57a8ec8c7653d3d9804d52204378d006cb4bf185decc5ab38a2da45130c5809e": {
+    "elapsed_ms": 168.77646300417837,
+    "error": "/tmp/mini_elf_lean_cd44o0vq.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "5902df35470eb85e9cd87c331c76b2d59f85c8e2f038ba765d0a7693407a90ae": {
+    "elapsed_ms": 167.02082198753487,
+    "error": null,
+    "success": true
+  },
+  "59703abd7c6687c1d44443db4a5197a6f88799e932fd0a9954a50f3e048202dc": {
+    "elapsed_ms": 173.5989110020455,
+    "error": "/tmp/mini_elf_lean_097p8uwl.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_097p8uwl.lean:1:38: error: unsolved goals\nq : Prop\nh : False\n\u22a2 q",
+    "success": false
+  },
+  "59da702568f6aa9c6c17613aac00b01d9a5332d006066974a17dc10eaf54337f": {
+    "elapsed_ms": 169.97514000104275,
+    "error": "/tmp/mini_elf_lean_89vbkf9b.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.inr`",
+    "success": false
+  },
+  "5ae8616b1b80235dfff7ea2241a86e075aa9c5a9413775fc73f32ba661478bbc": {
+    "elapsed_ms": 168.1854030030081,
+    "error": null,
+    "success": true
+  },
+  "5afe22e304a9bce586805b6a16ca53e4e3115dbf7715234b796692e6222f0dec": {
+    "elapsed_ms": 184.03721301001497,
+    "error": "/tmp/mini_elf_lean_wd57kr0w.lean:2:9: error: Function expected at\n  h\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  False.elim\n/tmp/mini_elf_lean_wd57kr0w.lean:2:2: error: Tactic `rcases` failed: `x\u271d : ?m.3` is not an inductive datatype",
+    "success": false
+  },
+  "5ba54010cb32f59db6c6600e51cfe789707888652159eca75c6a1e484bae0bb0": {
+    "elapsed_ms": 169.49885999201797,
+    "error": null,
+    "success": true
+  },
+  "5bf3d6601d10e1322dc1989f7efade6b2992cdc21c31df4bc714bb231ad66ce8": {
+    "elapsed_ms": 168.54176699416712,
+    "error": "/tmp/mini_elf_lean_l3fhnw1n.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "5bfdff0328bba1b7237be90e95492127d6c77682c0c0bdfe5d1d5bdb58cdf063": {
+    "elapsed_ms": 171.4780109905405,
+    "error": null,
+    "success": true
+  },
+  "5bfe1d7d4f673bc33626ef49ce0a1566439f90dfddc81281425ff3328cf8b198": {
+    "elapsed_ms": 168.86046300351154,
+    "error": null,
+    "success": true
+  },
+  "5e3180a845b43a7451a85613f640b65c4edbd72ecb04a52d394ab03d55b8c56d": {
+    "elapsed_ms": 171.2489970086608,
+    "error": null,
+    "success": true
+  },
+  "5e92bdd423748438457691e2d3e6febb45eea113865202cb90671a1f58054201": {
+    "elapsed_ms": 183.04032999731135,
+    "error": null,
+    "success": true
+  },
+  "5ec1b472832fda04e243537809443228329974f54c1d673c19c81c0b5ba6a3cb": {
+    "elapsed_ms": 167.16016799909994,
+    "error": "/tmp/mini_elf_lean_x560p3rn.lean:1:40: error: unsolved goals\np q : Prop\nh : q\n\u22a2 p \u2228 q",
+    "success": false
+  },
+  "5f29931855904ef6be6fa7a42b82deff47d3af3c6cd86a9120003580d9d5d97b": {
+    "elapsed_ms": 170.7032019912731,
+    "error": "/tmp/mini_elf_lean_e56mhcoc.lean:2:2: error: Type mismatch\n  h.left.right\nhas type\n  r\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "5ffcfbfb0342a45cc61aa95dbe4b5fff6091fbab8cdd3e1ffa4a22f5aa7d8a5d": {
+    "elapsed_ms": 168.5987309901975,
+    "error": "/tmp/mini_elf_lean_0qc9a2b1.lean:2:11: error(lean.invalidField): Invalid field `trans`: The environment does not contain `Function.trans`, so it is not possible to project the field `trans` from an expression\n  h1\nof type `p \u2192 q`",
+    "success": false
+  },
+  "605cd6074368190edf4b5b7bc805e2294eec91104776b3ed8fddb5421c3d87a0": {
+    "elapsed_ms": 171.562860996346,
+    "error": "/tmp/mini_elf_lean_hygvi8h3.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_hygvi8h3.lean:1:37: error: unsolved goals\ns : Prop\nh : s\n\u22a2 True",
+    "success": false
+  },
+  "611306228c06a17cc653ce3ad063354f8fac58dc865e4830fcf5913232a5973f": {
+    "elapsed_ms": 193.3356039953651,
+    "error": null,
+    "success": true
+  },
+  "6121eab3e0678da47f094dfb4ca13b4cfaa7f5344cc63a65d7b8def89da82029": {
+    "elapsed_ms": 164.53292900405359,
+    "error": "/tmp/mini_elf_lean_xda8ftcr.lean:1:38: error: unsolved goals\ncase inr\nr : Prop\nhp : r\n\u22a2 r\n/tmp/mini_elf_lean_xda8ftcr.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "616a57ff8f55c73b3f91194d354b5e1e5e0710ddd16ec7b9c1ed1543f25c0390": {
+    "elapsed_ms": 171.15823600033764,
+    "error": "/tmp/mini_elf_lean_qkxb7445.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `h2`",
+    "success": false
+  },
+  "6182c66fee246e0952f8e2e03f7ae1d33fb8af8ba7a6e2ae48f1faee61d34d04": {
+    "elapsed_ms": 169.34593000041787,
+    "error": null,
+    "success": true
+  },
+  "61b0b8c8bb2b09183c940ff219fcc7247c7054ea9845ee674dd4e21d32d3bfc3": {
+    "elapsed_ms": 184.96279600367416,
+    "error": null,
+    "success": true
+  },
+  "61e747fc609d46a2c46a0b993f23a69891fe9e9df7ec390e1ff809960ac552f2": {
+    "elapsed_ms": 171.0530369891785,
+    "error": null,
+    "success": true
+  },
+  "621aaaccb84cb5d2b456f32c00bedcc78042840ea16616ce11656b3ea1cdca74": {
+    "elapsed_ms": 165.3984700096771,
+    "error": null,
+    "success": true
+  },
+  "626499db7165b0da42553dd987ec7bf364bedeaad68b9ebde41eda443ada8f64": {
+    "elapsed_ms": 165.2276570093818,
+    "error": null,
+    "success": true
+  },
+  "62683c4159648ae881164bd8fec676dd7260c9397ca1363bda371556048890c0": {
+    "elapsed_ms": 176.32557000615634,
+    "error": "/tmp/mini_elf_lean_sch0p0a6.lean:1:40: error: unsolved goals\ncase h\nq t : Prop\nh : t\n\u22a2 t\n/tmp/mini_elf_lean_sch0p0a6.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "628723f5f909627d30b0259a7b67d62833f05ad9882ff99a1506c06db69d80b5": {
+    "elapsed_ms": 167.32631299237255,
+    "error": "/tmp/mini_elf_lean_i988vv2x.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_i988vv2x.lean:1:30: error: unsolved goals\ns : Prop\n\u22a2 s \u2192 s",
+    "success": false
+  },
+  "62b355bdf181e2dff5b46ec605d93685236a4a08740238787123c91b1bffb351": {
+    "elapsed_ms": 169.92017299344297,
+    "error": null,
+    "success": true
+  },
+  "62d37e4e9d1e6c8c6cc0d269ca807a31cc1c8bbfb8b5e9c9524e11d6e2933b63": {
+    "elapsed_ms": 168.75315801007673,
+    "error": null,
+    "success": true
+  },
+  "63e56a2fe6144e0ed76c3358c086488497395fa8c0107530fa1ed49db7f07ac1": {
+    "elapsed_ms": 169.7754549968522,
+    "error": null,
+    "success": true
+  },
+  "6416ba25a2b4a369d4cdea6641ca8adce5135453cbae6c6a0b2fe9269069c77c": {
+    "elapsed_ms": 187.21700299647637,
+    "error": null,
+    "success": true
+  },
+  "64a1238b1966891ca0db072c6daadb2c572e4a8fb2770621e55c69841b382ca9": {
+    "elapsed_ms": 169.34186799335293,
+    "error": "/tmp/mini_elf_lean_ewhh6gdg.lean:1:38: error: unsolved goals\ncase inr\ns : Prop\nhp : s\n\u22a2 s\n/tmp/mini_elf_lean_ewhh6gdg.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "659b695436a014c1bcbb9a78b5371195ebaf5bd89b44118129c7312cbe1a2874": {
+    "elapsed_ms": 173.04684199916665,
+    "error": "/tmp/mini_elf_lean_doos0hju.lean:2:2: error: Type mismatch\n  h.left.right\nhas type\n  r\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "65f92a26737ece6378a7892266935fa71a944fe7c5077929dc847e051208f905": {
+    "elapsed_ms": 165.49517599924002,
+    "error": null,
+    "success": true
+  },
+  "660f145bbaafc1c276216902a9882a9137f925d97aba2b534fd89c60fc11047e": {
+    "elapsed_ms": 173.39135298971087,
+    "error": "/tmp/mini_elf_lean_60onmoyk.lean:2:8: error: Function expected at\n  True.intro\nbut this term has type\n  True\n\nNote: Expected a function because this term is being applied to the argument\n  hp",
+    "success": false
+  },
+  "6622be935c9ea15892a30c557bea5831ab689e8dc0cb45249b89a32413477a9a": {
+    "elapsed_ms": 171.4265689952299,
+    "error": "/tmp/mini_elf_lean_pjkerytt.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "66df80403fdacdcae3ef8e19aeb3efc3c09778dc63008ce5eab5429d0e4fb843": {
+    "elapsed_ms": 165.56288998981472,
+    "error": null,
+    "success": true
+  },
+  "66fcdae1edb99decf4d6345eb0702b4e46bf5ca7c2c335dce29ba8a62862ef3e": {
+    "elapsed_ms": 164.8631209973246,
+    "error": "/tmp/mini_elf_lean_lldjld8g.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_lldjld8g.lean:1:37: error: unsolved goals\np : Prop\nh : p\n\u22a2 True",
+    "success": false
+  },
+  "6721d2ee7bef83368e58f15fea5e8ec23f98a3a82ade5f07359b66934fdd36a4": {
+    "elapsed_ms": 169.33743900153786,
+    "error": null,
+    "success": true
+  },
+  "67f52fc0701df06f8cb338627505a667e329f26448bbc35b8187a9bed37bf9c2": {
+    "elapsed_ms": 166.4318480034126,
+    "error": null,
+    "success": true
+  },
+  "684e7f09689bd7f80edf3cd96ed47cc87e5531ad404b9c0390e62c29852e9d55": {
+    "elapsed_ms": 168.87934699479956,
+    "error": "/tmp/mini_elf_lean_3xd6d29s.lean:2:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.2 \u2228 p\nbut is expected to have type\n  p \u2227 q \u2227 r",
+    "success": false
+  },
+  "68c14df514572a9f72b8ff81227e0b4f8fcc32a6426af705bdcfb062255f6bd9": {
+    "elapsed_ms": 168.63788600312546,
+    "error": "/tmp/mini_elf_lean_v02z14fu.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_v02z14fu.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "6903d895b570525bc82ec9ba68f812ee228284abf71a268101e8ee4528438e4e": {
+    "elapsed_ms": 169.18711600010283,
+    "error": null,
+    "success": true
+  },
+  "691cbdb34676f327e2600df7add5dfa57aee06302d2a21a13a613660e50d544e": {
+    "elapsed_ms": 172.37491899868473,
+    "error": "/tmp/mini_elf_lean_qjtctojl.lean:1:67: error: unsolved goals\ncase left\nx y z : Prop\nhp : x\nhq : y\nhr : z\n\u22a2 x \u2227 y\n\ncase right\nx y z : Prop\nhp : x\nhq : y\nhr : z\n\u22a2 z\n/tmp/mini_elf_lean_qjtctojl.lean:2:14: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "698bc69de753a62e417e8bccf6b6ff2c48ce5c4b3d777e0e45b20921c5172dd6": {
+    "elapsed_ms": 168.59339099028148,
+    "error": "/tmp/mini_elf_lean_vhmfdwru.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_vhmfdwru.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "6aace845fd160dd9031ae6fe69699d86f2168ad7b30ea81db8ca5f18c32d3e71": {
+    "elapsed_ms": 174.85900099563878,
+    "error": null,
+    "success": true
+  },
+  "6ae2e18ca80f0918adb8ff31f692debdd0b52501372d065e92f00eaca01e6316": {
+    "elapsed_ms": 170.20848899846897,
+    "error": "/tmp/mini_elf_lean_gvzzto39.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.13 \u2192 ?m.13\nbut is expected to have type\n  2 * 3 = 6",
+    "success": false
+  },
+  "6b393267b471aafe8b7061c7146c2ff6947e736c2e567f8893f55f6c5596107d": {
+    "elapsed_ms": 182.78459599241614,
+    "error": null,
+    "success": true
+  },
+  "6b896b8d48fbf96d1768b7ac5ce38676deea417995163478723d95d461705fb1": {
+    "elapsed_ms": 171.01776899653487,
+    "error": null,
+    "success": true
+  },
+  "6b8ffea699732f3c2f9e950dbd013d491b9c0c680558903183c01ce0cf322771": {
+    "elapsed_ms": 184.57463299273513,
+    "error": "/tmp/mini_elf_lean_am1ekw0w.lean:2:9: error: Application type mismatch: The argument\n  hp\nhas type\n  x\nbut is expected to have type\n  x \u2227 y\nin the application\n  And.intro hp\n/tmp/mini_elf_lean_am1ekw0w.lean:2:16: error: unexpected token ','; expected command",
+    "success": false
+  },
+  "6bf46f384adca77d973ac51202931eb904d05169dd2ecd45dfa6b5fcd955da53": {
+    "elapsed_ms": 168.70230600761715,
+    "error": null,
+    "success": true
+  },
+  "6c24c55660d2b2dcf5e95cf6a4e6f509b6a433d39cebc3a8764c1fcbbcfaf3ba": {
+    "elapsed_ms": 168.20123899378814,
+    "error": "/tmp/mini_elf_lean_v4ei0ci2.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "6d1f75c205169aefbef971609c8bed02bf45664e494dc19a60404a04de566bff": {
+    "elapsed_ms": 170.18825799459592,
+    "error": null,
+    "success": true
+  },
+  "6d41a80ad38bda5939fcf488d58f2352240d71805c4000f2c826dbd172be4e04": {
+    "elapsed_ms": 171.79213999770582,
+    "error": "/tmp/mini_elf_lean_oci5370i.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  q \u2227 r\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "6d7fedcde0ab56712df00694a7aeb720d86ebe428cb2d12bdf5948d450fa68ec": {
+    "elapsed_ms": 167.13218300719745,
+    "error": null,
+    "success": true
+  },
+  "6db949409573e3c5e57ec730cf5dc2d38b92d326faf2bc6892a804a35aa863e6": {
+    "elapsed_ms": 168.75696499482729,
+    "error": null,
+    "success": true
+  },
+  "6dc69f1effc42608dd67a451f77aed9732ed7f1b1f7bcc219b9ca81dac307e38": {
+    "elapsed_ms": 171.18173599010333,
+    "error": "/tmp/mini_elf_lean__wumbzon.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\np q : Prop\n\u22a2 p \u2227 q \u2192 p \u2227 q",
+    "success": false
+  },
+  "6ddb6707a2696e905df1df707755ea75f12f80216ab1fc5145e3f43357e61768": {
+    "elapsed_ms": 175.33982299210038,
+    "error": null,
+    "success": true
+  },
+  "6df4de92b44fa06f43494c1c09d32434323cb1c47dc8c732576f30203a74c149": {
+    "elapsed_ms": 172.92380600702018,
+    "error": "/tmp/mini_elf_lean_8uq1_761.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided\n/tmp/mini_elf_lean_8uq1_761.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "6df766f2c6cb6ba1fc1b6a3c08d3cd172b6d313e31dfb77c135f245aa22c14a9": {
+    "elapsed_ms": 167.23433400329668,
+    "error": "/tmp/mini_elf_lean_c9e55jeq.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 a\nbut is expected to have type\n  d",
+    "success": false
+  },
+  "6e2051195883f8f079e4e6296b6b1a061d31ecb00fb93cdfa3764ceea32b20da": {
+    "elapsed_ms": 173.28289699798916,
+    "error": null,
+    "success": true
+  },
+  "6e3657010ea9a717921b8b9e66e4917f206f9b155e3cf5334612a80a753ad04b": {
+    "elapsed_ms": 170.22690799785778,
+    "error": null,
+    "success": true
+  },
+  "6ef18036c4200d4265486aba183395ac07c1f5ff57404bd7e6457b352a95288a": {
+    "elapsed_ms": 166.54145199572667,
+    "error": "/tmp/mini_elf_lean_pw1gkc1_.lean:2:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\nr : Prop\nh : False\n\u22a2 r",
+    "success": false
+  },
+  "6f247de498df72aac4f636144e14ab65d38618b87a41a001e9258a68d7987958": {
+    "elapsed_ms": 173.03182800242212,
+    "error": null,
+    "success": true
+  },
+  "6f6809834e4d3be3e74a050f4c4ff786ce831bd296aced1545fdcb09425e09fb": {
+    "elapsed_ms": 172.17078800604213,
+    "error": null,
+    "success": true
+  },
+  "6fe1c09a9b6e3155ab5c6a7bec2ddddcb1d7580120eff1b740695bf50986c63b": {
+    "elapsed_ms": 168.52710899547674,
+    "error": "/tmp/mini_elf_lean__ynhdli4.lean:1:40: error: unsolved goals\nq t : Prop\nh : t\n\u22a2 q \u2228 t",
+    "success": false
+  },
+  "7012ba52ec3c2df210d31b906eacc132a46345fcfc48fad87906a5b8446b93e7": {
+    "elapsed_ms": 184.14795500575565,
+    "error": null,
+    "success": true
+  },
+  "711266e99a916da576b6c09a0fef9332501ed3cbf202423667a983755d7efe2d": {
+    "elapsed_ms": 167.79555699031334,
+    "error": "/tmp/mini_elf_lean_bsd8vv1r.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.symm`",
+    "success": false
+  },
+  "716c7ed231160e019e6ed56b044ca17971dd7e709cc5ab43428b5dcd317029fa": {
+    "elapsed_ms": 182.5059179973323,
+    "error": null,
+    "success": true
+  },
+  "71bd81902b1daa72c0be4baefba4ed3293d85205910dedf51fc0553939ac511f": {
+    "elapsed_ms": 167.12418899987824,
+    "error": null,
+    "success": true
+  },
+  "71fc1fe6547814c755cc3bae32f553bab569c063bad449f0d30dd0a8b561008e": {
+    "elapsed_ms": 169.4626359967515,
+    "error": null,
+    "success": true
+  },
+  "72e5ff93014a04acacfd74f792b29d6494b415637adb676ce7042d57eafc2e7f": {
+    "elapsed_ms": 166.66742799861822,
+    "error": "/tmp/mini_elf_lean_wwxz00ho.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_wwxz00ho.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "7361566186843f1aa8fb54e845fec23004efed335434d853bcebd4e609fc53e5": {
+    "elapsed_ms": 170.57233498780988,
+    "error": null,
+    "success": true
+  },
+  "74365da004c757e9cb4a594da1acc71e8ee4bdf875a17fbdcada2a11b8c2a0a4": {
+    "elapsed_ms": 174.98984700068831,
+    "error": "/tmp/mini_elf_lean_xrjo566b.lean:1:44: error: unsolved goals\np r : Prop\nhp : p\nhq : r\n\u22a2 r \u2227 p",
+    "success": false
+  },
+  "749be370fa6c9859cda6c0cda9f674725abc1d24d9e0247bae3048ff5f21cba7": {
+    "elapsed_ms": 174.2717290035216,
+    "error": "/tmp/mini_elf_lean_91rrvdy4.lean:1:58: error: unsolved goals\ncase mp\nr s : Prop\nh1 : r \u2192 s\nh2 : s \u2192 r\n\u22a2 r \u2192 s\n\ncase mpr\nr s : Prop\nh1 : r \u2192 s\nh2 : s \u2192 r\n\u22a2 s \u2192 r",
+    "success": false
+  },
+  "751fe9d932ba73530b3e1159a29075fc245468a34f106a300a5217260bdfcf34": {
+    "elapsed_ms": 186.154983995948,
+    "error": null,
+    "success": true
+  },
+  "75577eb190ffa9744e3964e9e4495aeff1fc90c499fc80ac7ea157ab83fdb84d": {
+    "elapsed_ms": 167.97687798680272,
+    "error": null,
+    "success": true
+  },
+  "7573a5f3b3562d3dab9be3fb472a6c333d34b18a3c09902a21cc33cd2cdf96ac": {
+    "elapsed_ms": 185.27969300339464,
+    "error": "/tmp/mini_elf_lean_da7ui819.lean:3:2: error: Type mismatch\n  \u27e8hp, hq\u27e9\nhas type\n  q \u2227 s\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "75d37d5ec41ca9ca8c99c36ce41e0e1139b024db97492385e7941c04e5de9c9d": {
+    "elapsed_ms": 185.76394600677304,
+    "error": null,
+    "success": true
+  },
+  "75dc0bf04450c01ea22e4b7fd1f581578f2b60dd33443f119bc6a1fa9957a745": {
+    "elapsed_ms": 168.9071800064994,
+    "error": null,
+    "success": true
+  },
+  "767dd090c5f744c092a834a04376a59675fa077dfb7226bb114cc156a11dec5c": {
+    "elapsed_ms": 173.45288400247227,
+    "error": null,
+    "success": true
+  },
+  "76c884736be114542c28024fae8b1ca43c2e04e47f38a5abc758ad02e86c02b6": {
+    "elapsed_ms": 164.94595499534626,
+    "error": "/tmp/mini_elf_lean_ca63t2nd.lean:3:8: error: Function expected at\n  Or.inr hp\nbut this term has type\n  ?m.14 \u2228 a\n\nNote: Expected a function because this term is being applied to the argument\n  hq\n/tmp/mini_elf_lean_ca63t2nd.lean:1:68: error: unsolved goals\ncase inr\na b d : Prop\nhp : a \u2192 d\nhq\u271d : b \u2192 d\nhq : b\n\u22a2 d\n/tmp/mini_elf_lean_ca63t2nd.lean:3:21: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "76cade8c84c47e08b624f8a9617426f35ffe2193568aa0bd62d229abf2a95c72": {
+    "elapsed_ms": 175.85455000516959,
+    "error": "/tmp/mini_elf_lean_h4jqb0m0.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_h4jqb0m0.lean:4:2: error: No goals to be solved",
+    "success": false
+  },
+  "77217fef735844b7cfddadf1f08521e4a07a2f492fde5ada709e6c1d9626b22b": {
+    "elapsed_ms": 169.7283819958102,
+    "error": "/tmp/mini_elf_lean__snk2vjg.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided\n/tmp/mini_elf_lean__snk2vjg.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "78d396bfc08870ad5075f604e6e065f34578b13197c74e4168992c8c00ec73f9": {
+    "elapsed_ms": 172.06994800653774,
+    "error": null,
+    "success": true
+  },
+  "78e836edbad2ca74a1ed09d160e814b8ca5d19ad7a8ac29d4bba0979eabc27a9": {
+    "elapsed_ms": 167.52084500330966,
+    "error": "/tmp/mini_elf_lean_tusst_lt.lean:2:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\nt : Prop\nh : False\n\u22a2 t",
+    "success": false
+  },
+  "792fa7b1432e3fad3cd212d113e55f279689de1988efd61ec0d406a337005c72": {
+    "elapsed_ms": 169.4781510013854,
+    "error": "/tmp/mini_elf_lean_dmt6abil.lean:2:9: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  OfNat \u03b1 0\nnumerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is\n  \u03b1\ndue to the absence of the instance above\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.",
+    "success": false
+  },
+  "7a0fc225d7bf8cbd37a2e657936651ee7c1cf2904c66e1b16927a9dadd44a577": {
+    "elapsed_ms": 172.1016539959237,
+    "error": null,
+    "success": true
+  },
+  "7a870e2f02ae0fac3fc5ce92e7a9345ac661ecec72bb2d81f56bc266485e6ad6": {
+    "elapsed_ms": 170.87683000136167,
+    "error": null,
+    "success": true
+  },
+  "7b72b2649b59be757ea2564b46a1a7698fa03cae4478f67eb893250337031217": {
+    "elapsed_ms": 166.46224600845017,
+    "error": null,
+    "success": true
+  },
+  "7bc858dc8f69f31ff530c861e34d57cfc9fc3d6b2e57b423d31f1d35cab62b91": {
+    "elapsed_ms": 175.0758889975259,
+    "error": "/tmp/mini_elf_lean_4b2swj4f.lean:2:12: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.11 = ?m.11\nbut is expected to have type\n  4 = 42\nin the application\n  Exists.intro 4 rfl",
+    "success": false
+  },
+  "7c145864a18ec5088a4dc3609ea2d116b973f36c61e8ff3499616e76859211a5": {
+    "elapsed_ms": 169.31899699557107,
+    "error": "/tmp/mini_elf_lean_7v_9l_k_.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_7v_9l_k_.lean:1:50: error: unsolved goals\ncase right\nq s : Prop\nhp : q\nhq : s\n\u22a2 s",
+    "success": false
+  },
+  "7c758953b4c5202350d2037032d3ed19845a804bc022ba8a9b5fefde0d5e1dd1": {
+    "elapsed_ms": 172.92471800465137,
+    "error": null,
+    "success": true
+  },
+  "7cc5b7427d983e7b4934c06a1e776fb5646004e2106a8cb495c8d9a6d9dfd324": {
+    "elapsed_ms": 168.2526819931809,
+    "error": null,
+    "success": true
+  },
+  "7d8ec17910a6eab1e51a65f92829245499a62c1e66ff8f655480381cf1c4d468": {
+    "elapsed_ms": 176.59019499842543,
+    "error": null,
+    "success": true
+  },
+  "7e30c93f7f353465fc614ca5cffa76067d0e3b7d07446cd36cf272555d15c638": {
+    "elapsed_ms": 173.61431899189483,
+    "error": null,
+    "success": true
+  },
+  "7e46fb695090ee97ab01c608ff48ee000bffafe80621cf6f0241292a6ef43846": {
+    "elapsed_ms": 169.28419600299094,
+    "error": null,
+    "success": true
+  },
+  "7f22535ef80d9c2e4884e1b678ef1bef01b958dfd6a8d7789928c3491fc22573": {
+    "elapsed_ms": 168.46631999942474,
+    "error": "/tmp/mini_elf_lean_h9d_ukil.lean:2:8: error(lean.unknownIdentifier): Unknown constant `id.intro`",
+    "success": false
+  },
+  "8041c909bba97962846749a617a9c34e4fcde92f4510c476870300904b7c321f": {
+    "elapsed_ms": 167.8314640012104,
+    "error": null,
+    "success": true
+  },
+  "8075684d50d6453d837ea3edaa4069c377ff9957b61a47fcf46a190a1a0bcdc4": {
+    "elapsed_ms": 184.82853801106103,
+    "error": "/tmp/mini_elf_lean_wfrjbgrf.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.19 \u2192 ?m.19\nbut is expected to have type\n  1 + 2 + 3 = 6",
+    "success": false
+  },
+  "8093e2f6fdac903bcc15053881b4700dd018fe9dd16606b83460f320f3519b20": {
+    "elapsed_ms": 170.9111359959934,
+    "error": null,
+    "success": true
+  },
+  "80a1c6a5cf4a77e19e992b3f154d5728296b6c8c649ef01bcc7e28f227b3575c": {
+    "elapsed_ms": 184.96260599931702,
+    "error": null,
+    "success": true
+  },
+  "80bc6222526c0c9156b3c326216e5bbe05c85aa1ccc101abba15a102aed44006": {
+    "elapsed_ms": 170.81569800211582,
+    "error": null,
+    "success": true
+  },
+  "80f40ee35414344107c2ce79be7b6cd61a0d401497bd49bca20e9357d5a9c3f7": {
+    "elapsed_ms": 167.09731999435462,
+    "error": "/tmp/mini_elf_lean_3s047f5g.lean:1:54: error: unsolved goals\nx y z : Prop\nh : x \u2227 y \u2192 z\nha : x\nhb : y\n\u22a2 z\n/tmp/mini_elf_lean_3s047f5g.lean:2:14: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "81d4306c486e20237c548b641b98aca98ff77feeaf457c628eadad3ceca56c72": {
+    "elapsed_ms": 171.70085899124388,
+    "error": null,
+    "success": true
+  },
+  "8201fe42f281b80988d85b81126242988f91afdd1636f5a872d938a89753cbef": {
+    "elapsed_ms": 171.24405900540296,
+    "error": "/tmp/mini_elf_lean_njkqiuzt.lean:3:20: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean_njkqiuzt.lean:4:14: error: Type mismatch\n  Or.inl hq\nhas type\n  q \u2228 ?m.35\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "826adfc7825f29ead7daed61141032fd14fe1b1ae381b5d5bafd85839d4e8fb1": {
+    "elapsed_ms": 174.5030080055585,
+    "error": "/tmp/mini_elf_lean__w2pzwyx.lean:3:2: error: Type mismatch\n  \u27e8hp, hq\u27e9\nhas type\n  x \u2227 y\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "82cc60334948d3701e0f89296526792ffa33d5d9ff7dd4983e3bfa120cda02cd": {
+    "elapsed_ms": 178.58322599204257,
+    "error": "/tmp/mini_elf_lean_oq3dwfnm.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_oq3dwfnm.lean:1:40: error: unsolved goals\ns u : Prop\nh : s \u2227 u\n\u22a2 u",
+    "success": false
+  },
+  "836c4c2210c91c8e8344b2b20f4754e464a639312ccf9622adca8c8c414fb708": {
+    "elapsed_ms": 176.39168100140523,
+    "error": null,
+    "success": true
+  },
+  "838ed211618671350735e45543d9d44990a2deed0a47ee20ac40ce465f9085ef": {
+    "elapsed_ms": 173.1185239914339,
+    "error": "/tmp/mini_elf_lean_7cl22upg.lean:3:2: error: Type mismatch\n  Or\nhas type\n  Prop \u2192 Prop \u2192 Prop\nof sort `Type` but is expected to have type\n  t\nof sort `Prop`",
+    "success": false
+  },
+  "83affe636cb32702286fdcb6acc7b3f3c4f6d29b992dd21a489ad4342dc4cf70": {
+    "elapsed_ms": 171.97646498971153,
+    "error": null,
+    "success": true
+  },
+  "83d1863258daf46b6655ce50d3edbee93c7955a82153eefc5eb0580f6f52f233": {
+    "elapsed_ms": 170.22044101031497,
+    "error": "/tmp/mini_elf_lean_j384njvy.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+    "success": false
+  },
+  "83fbf3376478da2cad1b796226953d500da52774da9af5ce88659d48225c609b": {
+    "elapsed_ms": 167.12529699725565,
+    "error": "/tmp/mini_elf_lean_vjbbgb1l.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_vjbbgb1l.lean:1:30: error: unsolved goals\na : Bool\n\u22a2 a = a",
+    "success": false
+  },
+  "857fb3d5ad28a074f4a7a24b44cc0fe0f3a1c05bd8ce9e222a5d260650166825": {
+    "elapsed_ms": 165.8725349989254,
+    "error": null,
+    "success": true
+  },
+  "85c7f2c1acee552edf556541d27910a58edf2c46f9de7eda38848c127be420a6": {
+    "elapsed_ms": 173.81910899712238,
+    "error": null,
+    "success": true
+  },
+  "85ca0f765e891975b520d41ebda807e0dbb9863e08b477a65c1b0734ad9e9917": {
+    "elapsed_ms": 171.82898901228327,
+    "error": null,
+    "success": true
+  },
+  "866006550376c2e45e73fbca4f716678ec257206afea61bc13ce11556cb87735": {
+    "elapsed_ms": 169.63197199220303,
+    "error": "/tmp/mini_elf_lean_t8mp_32t.lean:2:21: error: Application type mismatch: The argument\n  hq\nhas type\n  y\nbut is expected to have type\n  z\nin the application\n  \u27e8hp, hq\u27e9",
+    "success": false
+  },
+  "8780452bda87caf2fd3b8622b3c7f7b6f28ee536d6d164e9e5df79d340814828": {
+    "elapsed_ms": 167.74825200263876,
+    "error": "/tmp/mini_elf_lean_75em_3mp.lean:1:40: error: unsolved goals\ncase h\nr s : Prop\nh : s\n\u22a2 s\n/tmp/mini_elf_lean_75em_3mp.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "87aff6192d7e74ba111078465dde6c4ef16c24bfbab16e6c2589d556cd43cfdd": {
+    "elapsed_ms": 170.43589199602138,
+    "error": "/tmp/mini_elf_lean_0kc38j_h.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_0kc38j_h.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "87b48267413a5a35712bb9d9504985a330205df00374a02d255bc0a7781f82e9": {
+    "elapsed_ms": 177.9311769932974,
+    "error": null,
+    "success": true
+  },
+  "87e6618731b09745d1a8955f99582fd24d91a4f0e9d7a26d1c7174e616ab747f": {
+    "elapsed_ms": 170.5771949928021,
+    "error": "/tmp/mini_elf_lean_8jao2vtm.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "882536794a51677892b42a9d1c193bd2dd5bc1d1b8e398e8b4be0754d6e0fa80": {
+    "elapsed_ms": 180.17253100697417,
+    "error": "/tmp/mini_elf_lean_6sp4g1m8.lean:1:38: error: unsolved goals\np : Prop\nh : False\n\u22a2 p\n/tmp/mini_elf_lean_6sp4g1m8.lean:3:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "8829b24e84f3a5ea203ae3a3d12a55c0757699611f12eef98e179d05c52236b8": {
+    "elapsed_ms": 169.3372979934793,
+    "error": null,
+    "success": true
+  },
+  "882c9fe19aa139ee47bc852ef03f93bc0ede359ff106347dd9a01e8ec2ea7365": {
+    "elapsed_ms": 170.4572730086511,
+    "error": null,
+    "success": true
+  },
+  "882fb64d33f1afdfc4c271a5301e5c8e37460fc9c7df8eba3c8149cc8a6acbe7": {
+    "elapsed_ms": 172.56117200304288,
+    "error": "/tmp/mini_elf_lean_advgfls3.lean:1:68: error: unsolved goals\ncase inr\np q r : Prop\nhp : p \u2192 r\nhq : q \u2192 r\nhx : q\n\u22a2 r\n/tmp/mini_elf_lean_advgfls3.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "88fcbac14497f8cba9e60d45bbe6f7bc46be146c54e8307c44665f76620a655e": {
+    "elapsed_ms": 168.7446600117255,
+    "error": null,
+    "success": true
+  },
+  "8904c53e052e9c05d4c5c69277955038524283a2b8c4ad1d208a0926c0513fdf": {
+    "elapsed_ms": 171.31479099043645,
+    "error": null,
+    "success": true
+  },
+  "89132d8ae30b0333aee8e34e1c76f11fe5cd5c09f325a362f89ecdb7159e58e8": {
+    "elapsed_ms": 171.44135100534186,
+    "error": "/tmp/mini_elf_lean_sk5njllr.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  x\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean_sk5njllr.lean:4:8: error: Function expected at\n  hq\nbut this term has type\n  y\n\nNote: Expected a function because this term is being applied to the argument\n  hx",
+    "success": false
+  },
+  "8957696e8db284963afc0dda6c9bfe04d6db320246a3ab8428201e859cea2cc0": {
+    "elapsed_ms": 168.200425003306,
+    "error": "/tmp/mini_elf_lean_0u094qxe.lean:2:2: error: Type mismatch\n  h.right\nhas type\n  b \u2227 c\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "8982a0c31dc1ed43373ce8794a5a3855d7ffd7f9c3cb1a8a5a49750ac0296873": {
+    "elapsed_ms": 173.67526699672453,
+    "error": null,
+    "success": true
+  },
+  "8a0721b6accc0a79a8db167a458f880ae3cbfe0dd3ae33863b136f1f323d5bf5": {
+    "elapsed_ms": 166.94594798900653,
+    "error": null,
+    "success": true
+  },
+  "8a9abb9ca91dfdbf6184b70cc09a81d0c9ddcf9203aaa852077c467f8e4c7e9a": {
+    "elapsed_ms": 166.64336099347565,
+    "error": null,
+    "success": true
+  },
+  "8aeb04ff9011522cecfccfb5dbf18df82cd673f90adc452f9209a7ad9f261112": {
+    "elapsed_ms": 165.58193699165713,
+    "error": "/tmp/mini_elf_lean_j0hv5end.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`\n/tmp/mini_elf_lean_j0hv5end.lean:1:50: error: unsolved goals\ncase right\np q : Prop\nhp : p\nhq : q\n\u22a2 q",
+    "success": false
+  },
+  "8afc4b63aa6086f9b20615ddc9b07e33120cac865a80e929a59f93a3d8e1ec52": {
+    "elapsed_ms": 162.96050800883677,
+    "error": "/tmp/mini_elf_lean_wqos_7m_.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\nr : Prop\n\u22a2 r \u2192 r",
+    "success": false
+  },
+  "8b034abeb9da293b256bf7bd599728e29814a7e66d855c34744b48e23dd2efe1": {
+    "elapsed_ms": 169.7237610060256,
+    "error": "/tmp/mini_elf_lean_g83tw4rj.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 x\nbut is expected to have type\n  z",
+    "success": false
+  },
+  "8b8578e1a8066e4bf849f2817230c25ef016a17cfeba63d5b69df3c28acef755": {
+    "elapsed_ms": 168.2734739879379,
+    "error": null,
+    "success": true
+  },
+  "8b8fa9a506d93e14ae674f05f6c69ff86118a9be3c69e3b119d41bf0fa607a26": {
+    "elapsed_ms": 169.25727800116874,
+    "error": null,
+    "success": true
+  },
+  "8c6085565064a2c2cb50c224ec1764f1357def130a5720f17bd2f36f57157513": {
+    "elapsed_ms": 171.46453898749314,
+    "error": null,
+    "success": true
+  },
+  "8c74fc9660b2606d2f01b45e7cf77e3543e0b3ac43e11cc0144b59ab33a750f2": {
+    "elapsed_ms": 181.59808500786312,
+    "error": null,
+    "success": true
+  },
+  "8caf45c0e951b364a4eb9776efbb85471aeee8598310a54949f1fe482444c69a": {
+    "elapsed_ms": 166.59082099795341,
+    "error": null,
+    "success": true
+  },
+  "8d41ad0611648ef7ae9dbd7fc3e2c46d955bfaa057ad0744bfbeb2d636cd28cc": {
+    "elapsed_ms": 185.01041299896315,
+    "error": "/tmp/mini_elf_lean_0na8dtuy.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_0na8dtuy.lean:1:40: error: unsolved goals\nx y : Prop\nh : y\n\u22a2 x \u2228 y",
+    "success": false
+  },
+  "8d7c698d12e7fb59f58e2887eb764ef9d6f799b47806e639f5fe0ec232bf09f2": {
+    "elapsed_ms": 170.22137700405437,
+    "error": null,
+    "success": true
+  },
+  "8da230803917e8d7d34db8cab37a38feba7eb6bc6032f7d143770b2b9046d8d4": {
+    "elapsed_ms": 167.27765298855957,
+    "error": null,
+    "success": true
+  },
+  "8e84ec0c63576e9aeb5b17602bdea6ff7eef9610220fbf6de13e9f7b4a554d4d": {
+    "elapsed_ms": 179.1924309945898,
+    "error": null,
+    "success": true
+  },
+  "8ec80bc8125b62e00ca10470a9f2c0aa569d0a315f4c35d865aca807cd78c612": {
+    "elapsed_ms": 177.5633189972723,
+    "error": null,
+    "success": true
+  },
+  "8ed36064abd12db16c2ca3d150170e53f64dab8e79e381a304938c756bd09db6": {
+    "elapsed_ms": 171.89544699795078,
+    "error": "/tmp/mini_elf_lean_sx72gr37.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  p\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean_sx72gr37.lean:4:8: error: Function expected at\n  hq\nbut this term has type\n  q\n\nNote: Expected a function because this term is being applied to the argument\n  hx",
+    "success": false
+  },
+  "8eda5148246ba1c57421ed6a45bafdb6e8b7fffc81e4c13ff1c63debe73a658c": {
+    "elapsed_ms": 176.34365500998683,
+    "error": "/tmp/mini_elf_lean_ieist_np.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\na : Prop\n\u22a2 a \u2192 a",
+    "success": false
+  },
+  "8f2d775fa7d77878879b9e8fce02a53c2ae7561b3e73e4221f6203f0729fe77a": {
+    "elapsed_ms": 167.24029400211293,
+    "error": "/tmp/mini_elf_lean_rp37byqg.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "8f762e3c4b580ff35cb7185fa447f45bff03893dbb5969e10a773a261c3f271a": {
+    "elapsed_ms": 176.0811980057042,
+    "error": "/tmp/mini_elf_lean_zaeblic4.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "8fd1dfd544d7328b51c9dee2f94b1a2da18451832cb1f398fbd45edc45afc232": {
+    "elapsed_ms": 176.11128800490405,
+    "error": null,
+    "success": true
+  },
+  "8ff9376faa840beb8768adfcb7773e199a8a9e632102d636cb8c296d49536d70": {
+    "elapsed_ms": 169.3640740122646,
+    "error": null,
+    "success": true
+  },
+  "9074af93ccaeac3cb02e50d90bb23375db1573930de4609f44e28e58ab4b3bbe": {
+    "elapsed_ms": 166.56702500768006,
+    "error": "/tmp/mini_elf_lean_rmbduhzu.lean:3:16: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_rmbduhzu.lean:1:68: error: unsolved goals\ncase inl\na b c : Prop\nhp\u271d : a \u2192 c\nhq : b \u2192 c\nhp : a\n\u22a2 c\n\ncase inr\na b c : Prop\nhp : a \u2192 c\nhq\u271d : b \u2192 c\nhq : b\n\u22a2 c",
+    "success": false
+  },
+  "90b2c961a01b92db7b63937ea44b508925ad3ad3b7f085ceeb02c7608c1ad63d": {
+    "elapsed_ms": 166.6628669918282,
+    "error": null,
+    "success": true
+  },
+  "916a5a8ed4e5bf8096f09d1af4e32f7e62e039db0e91a95265b27b4c5a982ee8": {
+    "elapsed_ms": 170.4476550075924,
+    "error": null,
+    "success": true
+  },
+  "9180faaf2102bb5dc54b5aa009d195b3f5802706582f8761578fae30fc918bc6": {
+    "elapsed_ms": 174.9552230030531,
+    "error": null,
+    "success": true
+  },
+  "91ab4cad7619f7ce887a46e5ff52523be51e06843d0d9c57b1c8e2975f3272eb": {
+    "elapsed_ms": 170.03158599254675,
+    "error": null,
+    "success": true
+  },
+  "91f69943d78198a6bed100aee0cb7350b0f174e4710342e01208a50c91b4883f": {
+    "elapsed_ms": 170.83780000393745,
+    "error": null,
+    "success": true
+  },
+  "9210d00730cee0d47086c98461652b080b27c8e0c0e88f87b980650108759297": {
+    "elapsed_ms": 172.85204600193538,
+    "error": null,
+    "success": true
+  },
+  "92a61435501ac1418f74bb231576d621b80b5acc4c7746d9a5f956ea70660089": {
+    "elapsed_ms": 171.03291300009005,
+    "error": "/tmp/mini_elf_lean_ujymfaqe.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h.mpr`\n/tmp/mini_elf_lean_ujymfaqe.lean:2:26: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "93a57d728627c0bf404ddb46c63e152d9192d4890bd05d32efe9d3cdb8b73e15": {
+    "elapsed_ms": 172.4531340005342,
+    "error": "/tmp/mini_elf_lean_ci2id07a.lean:1:40: error: unsolved goals\ncase h\np r : Prop\nh : r\n\u22a2 r\n/tmp/mini_elf_lean_ci2id07a.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "93b0297c67ae6c67f9018dcf93ab66b32e75593a143a1987be057c52a87f1578": {
+    "elapsed_ms": 169.61058900051285,
+    "error": "/tmp/mini_elf_lean_ddjys0qs.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `s` which does not have the necessary form.",
+    "success": false
+  },
+  "93cd30e058e9ba5a3279aba21e099041ff7d7bd28cd2277ca1f0d9cf7f1a8694": {
+    "elapsed_ms": 172.55622100492474,
+    "error": null,
+    "success": true
+  },
+  "93de5cbd17ee44c4c32de013875e89e7fa516dab213699dab8bd1a3a432d65e5": {
+    "elapsed_ms": 168.20800000277814,
+    "error": "/tmp/mini_elf_lean_7mcg8kif.lean:1:44: error: unsolved goals\na b : Prop\nhp : a\nhq : b\n\u22a2 b \u2227 a",
+    "success": false
+  },
+  "95164193d1dd9d5898b7c9a61665641dfa3da86658a93991c874f9ef0bdc2419": {
+    "elapsed_ms": 174.1605779970996,
+    "error": null,
+    "success": true
+  },
+  "95bb8b762baf3b29b23561ea1ce7246ba811cd5ce514f0cd1419f0fd99e95bc5": {
+    "elapsed_ms": 168.21372900449205,
+    "error": "/tmp/mini_elf_lean_r9ly2p23.lean:2:2: error: Type mismatch\n  h.right.right\nhas type\n  s\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "961b2a03ef1ac9f297549a86ad63f1295f33be0226193d612653a392944f4dcc": {
+    "elapsed_ms": 167.19027599901892,
+    "error": "/tmp/mini_elf_lean_n8g9sbom.lean:1:38: error: unsolved goals\ncase inr\nr : Prop\nhp : r\n\u22a2 r\n/tmp/mini_elf_lean_n8g9sbom.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "961f5c5401cd1171bb28a82d1f8331a63c85e6c58e4ee7eab61d424c3799dea2": {
+    "elapsed_ms": 168.51555500761606,
+    "error": "/tmp/mini_elf_lean_bup2icor.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "9625979fe3c59321d0ffb91a060d51e21913ff0bc09129e8c216c12ea07cc51c": {
+    "elapsed_ms": 171.33491700224113,
+    "error": "/tmp/mini_elf_lean_q_ubpp1b.lean:3:11: error: Application type mismatch: The argument\n  h2\nhas type\n  s \u2192 r\nbut is expected to have type\n  r\nin the application\n  h1 h2",
+    "success": false
+  },
+  "9659ae783a65bcdecd134020befcfa8a9ca6c5b9b640641ce286a22474c03b99": {
+    "elapsed_ms": 168.2091499969829,
+    "error": null,
+    "success": true
+  },
+  "97d075a1a566f6f48e12554dc06d7aafc552067cfa995d99331c87f956b03a78": {
+    "elapsed_ms": 170.2301740006078,
+    "error": null,
+    "success": true
+  },
+  "97d4a5f22a25b10a69919d251585179e4b25459b154d4eee27b59ea871ba10d5": {
+    "elapsed_ms": 164.83497600711416,
+    "error": "/tmp/mini_elf_lean_59vtc16b.lean:2:2: error: Type mismatch\n  h.right.right\nhas type\n  c\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "97fff378d6a56af590988dd8d37263e55890198a45fdb8721a14ff0d55e79e09": {
+    "elapsed_ms": 172.90633099037223,
+    "error": "/tmp/mini_elf_lean_imqze1lv.lean:2:2: error: Type mismatch\n  h.left\nhas type\n  p \u2227 q\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "9864827b05887a1114c83487e6684fe0d80dec9af76cb9486df778e00497c3b2": {
+    "elapsed_ms": 168.44026300532278,
+    "error": null,
+    "success": true
+  },
+  "98aa4ef5f9677556eefe0fb251aecf1a77f9fe05afdfaf1c22a16b56669fb763": {
+    "elapsed_ms": 168.7464650021866,
+    "error": "/tmp/mini_elf_lean_vy4bmi5p.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_vy4bmi5p.lean:1:40: error: unsolved goals\np q : Prop\nh : q\n\u22a2 p \u2228 q",
+    "success": false
+  },
+  "99b13271be3feb4403ee3558310a0923f9adabd3b3357226c64c0b603bbced14": {
+    "elapsed_ms": 166.1049909889698,
+    "error": null,
+    "success": true
+  },
+  "9a16529bed367690bfdd6f147be7de45902cf3039347e335a47dd066002370ec": {
+    "elapsed_ms": 177.7664969995385,
+    "error": null,
+    "success": true
+  },
+  "9a1dad3cf8855f698f95dab737aec948195d008cfe34c2af456b7c819bb43174": {
+    "elapsed_ms": 182.66692500037607,
+    "error": "/tmp/mini_elf_lean_gvucfk5k.lean:3:2: error: Type mismatch\n  { mp := h1, mpr := h2 }\nhas type\n  x \u2194 y\nbut is expected to have type\n  x \u2192 y",
+    "success": false
+  },
+  "9a766f4b4e96a89c06b302af63b3637a736abb6638c3933c273d4aa4b6ba8154": {
+    "elapsed_ms": 165.38069600937888,
+    "error": null,
+    "success": true
+  },
+  "9ad874ba6719dbdd9e2495769355ea5566b06ed505f89ce87b3e64ec8874d497": {
+    "elapsed_ms": 165.9425590041792,
+    "error": "/tmp/mini_elf_lean_ks5h69mg.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\nt : Prop\nh : False\n\u22a2 t",
+    "success": false
+  },
+  "9ae23c1df8b67fb7dc270340ccaf5c0f075c7a789c9743e44ec5e3a2bda20bc5": {
+    "elapsed_ms": 169.9084470019443,
+    "error": "/tmp/mini_elf_lean_9ucme09q.lean:2:9: error: Application type mismatch: The argument\n  hp\nhas type\n  a\nbut is expected to have type\n  a \u2227 b\nin the application\n  And.intro hp\n/tmp/mini_elf_lean_9ucme09q.lean:2:8: error: Invalid `\u27e8...\u27e9` notation: The expected type `c` is not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor",
+    "success": false
+  },
+  "9b192162a516f808fe3e995f15a302e8c4a547696ed845900bbb3535f730e3fb": {
+    "elapsed_ms": 170.9927339979913,
+    "error": null,
+    "success": true
+  },
+  "9b273158386316d0aab2e8cd94b9fa708c01915bfa011670a0c767dec465ec55": {
+    "elapsed_ms": 170.31067500647623,
+    "error": "/tmp/mini_elf_lean_4aa500a_.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_4aa500a_.lean:1:38: error: unsolved goals\ncase inr\np : Prop\nhp : p\n\u22a2 p",
+    "success": false
+  },
+  "9b51852abdd36395290fdceb585ffc5d514660d94318f1ae62997eae2062f6f6": {
+    "elapsed_ms": 168.86212798999622,
+    "error": "/tmp/mini_elf_lean_29x61lsc.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_29x61lsc.lean:4:11: error: Application type mismatch: The argument\n  hx\nhas type\n  x\nbut is expected to have type\n  y\nin the application\n  hq hx\n/tmp/mini_elf_lean_29x61lsc.lean:5:2: error: No goals to be solved",
+    "success": false
+  },
+  "9b696f77286dea66a0ac633e7805259933330c52d3e9c388fdb4aa2928938347": {
+    "elapsed_ms": 169.30453600070905,
+    "error": "/tmp/mini_elf_lean_g7m4dy7g.lean:2:9: error: Insufficient number of fields for `\u27e8...\u27e9` constructor: Constructor `Eq.refl` does not have explicit fields, but 2 were provided\n/tmp/mini_elf_lean_g7m4dy7g.lean:3:2: error: No goals to be solved",
+    "success": false
+  },
+  "9c4a085a9ae968c7a5eb059cb023d52b9c3584a45ecca2229114f5e1ab6a509c": {
+    "elapsed_ms": 181.2545489956392,
+    "error": "/tmp/mini_elf_lean_s9593645.lean:2:2: error: Type mismatch\n  h.left.right\nhas type\n  y\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "9c6fa77414c4edb17cd8d6764644a0ad5f77a4fe28dff3e4b2c54428bf8b7ee4": {
+    "elapsed_ms": 177.60473099770024,
+    "error": null,
+    "success": true
+  },
+  "9cd967fb32841a8c9789b63ac32579c79b50f6df3b857f3a9e6fce5bb76221ea": {
+    "elapsed_ms": 173.83664200315252,
+    "error": null,
+    "success": true
+  },
+  "9d7743d3fb3dc755650a17d3a95ade53935ca25be304393cb15c6f302bbb54ef": {
+    "elapsed_ms": 171.4677799900528,
+    "error": null,
+    "success": true
+  },
+  "9d81b197b88704f84a4f4afe8a2ed264c2ede93cbfaa55905d55c1af62f3fdb1": {
+    "elapsed_ms": 170.3582400077721,
+    "error": null,
+    "success": true
+  },
+  "9e1aa7765d7d637e19aefdfc8693d05fb6832e504619cccb62afcf0a013278b4": {
+    "elapsed_ms": 169.24150599515997,
+    "error": "/tmp/mini_elf_lean_kn41aj4d.lean:2:15: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "9e9ce3e1029c6b08e623f60e5a125762cec363776ce249b775f6f561c45a0b93": {
+    "elapsed_ms": 171.2992749962723,
+    "error": null,
+    "success": true
+  },
+  "9eab9602da7af90119621509ed7c6b565016d3af2cd8c259370db9afd677eb89": {
+    "elapsed_ms": 173.86311398877297,
+    "error": "/tmp/mini_elf_lean_xtawu3f4.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h.mp`",
+    "success": false
+  },
+  "9edf7f6462ca48a6e08b659c024011387c9810963c010faabc8cfc1b9e37c48f": {
+    "elapsed_ms": 169.42821499833371,
+    "error": "/tmp/mini_elf_lean_90pw1okb.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "9f3e201169fcbe75f8178837153fb221154fcdc01f48267c6cd023e8da2ecfd8": {
+    "elapsed_ms": 170.75889300031122,
+    "error": "/tmp/mini_elf_lean__t54giyo.lean:3:8: error: Function expected at\n  hp\nbut this term has type\n  a\n\nNote: Expected a function because this term is being applied to the argument\n  hx\n/tmp/mini_elf_lean__t54giyo.lean:4:8: error: Function expected at\n  hq\nbut this term has type\n  b\n\nNote: Expected a function because this term is being applied to the argument\n  hx",
+    "success": false
+  },
+  "a025865917205e21998be067482b51a9893e7f614c2630d439f140c35783d258": {
+    "elapsed_ms": 168.06894600449596,
+    "error": null,
+    "success": true
+  },
+  "a094fd3973ff3ed4af6b4878aa8538dd259ec8771ff6d338b910978adb0eadbd": {
+    "elapsed_ms": 177.63378599192947,
+    "error": "/tmp/mini_elf_lean_7mz9lnb1.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hpq`\n/tmp/mini_elf_lean_7mz9lnb1.lean:1:38: error: unsolved goals\ncase inr\nu : Prop\nhp : u\n\u22a2 u",
+    "success": false
+  },
+  "a0b66ba0739d345401d7ef05fa422b42fc7b562e147c0c8675a426d98b70ae87": {
+    "elapsed_ms": 165.87440700095613,
+    "error": null,
+    "success": true
+  },
+  "a0e24b3a9638321284f5a12cb59b8f7ffb58932f2880520159288df489d79929": {
+    "elapsed_ms": 167.1384679939365,
+    "error": "/tmp/mini_elf_lean_4rgyfafk.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_4rgyfafk.lean:1:37: error: unsolved goals\ns : Prop\nh : s\n\u22a2 True",
+    "success": false
+  },
+  "a0eb54061af3e428d1b397c28827d2bdc4164e5809565b0149ca61bc41689095": {
+    "elapsed_ms": 186.62265299644787,
+    "error": "/tmp/mini_elf_lean_s9n7le8c.lean:3:2: error: Type mismatch\n  fun hq => h.mpr hq\nhas type\n  r \u2192 p\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "a1108b5e499d3e667ea7939732d028c06ef22cd9e332ceef5e3ccb8adfa98f2d": {
+    "elapsed_ms": 167.97760699409992,
+    "error": null,
+    "success": true
+  },
+  "a1595723b503ff9eb041970b29f10aaffcae3448f6a99129f58d21c49e4ab96d": {
+    "elapsed_ms": 169.96596498938743,
+    "error": null,
+    "success": true
+  },
+  "a23edf7f22c4d45ca9cc78bd22868f6d3a4540ce6c72e8eac120ce7dc149513a": {
+    "elapsed_ms": 167.82783799862955,
+    "error": null,
+    "success": true
+  },
+  "a2d786ddce97e4416920b8b0ad4d24313e083911621195d8f3f68b4420cef22a": {
+    "elapsed_ms": 167.44827201182488,
+    "error": "/tmp/mini_elf_lean_4_m8410i.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "a303225e694d04322c61a282603d41375b93a096879c3256c7520de08772762c": {
+    "elapsed_ms": 166.9980970036704,
+    "error": "/tmp/mini_elf_lean_fm4unf_2.lean:1:58: error: unsolved goals\ncase mpr\nx y : Prop\nh1 : x \u2192 y\nh2 : y \u2192 x\n\u22a2 y \u2192 x",
+    "success": false
+  },
+  "a33cb5a869193ff77cea78a134012dc6eedf590433ccf1bfd97ec1e4ec10972f": {
+    "elapsed_ms": 170.69886800891254,
+    "error": "/tmp/mini_elf_lean_hr_ohm_c.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_hr_ohm_c.lean:1:40: error: unsolved goals\nx y : Prop\nh : x\n\u22a2 x \u2228 y",
+    "success": false
+  },
+  "a345c6eb75c3f1c29a9140ed17e36b610f8f51d45a973c34da61c7ce6c033fd2": {
+    "elapsed_ms": 183.56587199377827,
+    "error": "/tmp/mini_elf_lean_i73q_sej.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nx y : Prop\nh : x \u2227 y\n\u22a2 x",
+    "success": false
+  },
+  "a3ce1e728a1d9ba9905c6bcdcfeeceb3ea9fe808d199b7bda8c3e650001770a8": {
+    "elapsed_ms": 169.44620700087398,
+    "error": "/tmp/mini_elf_lean_il5p05fl.lean:2:15: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "a3d5ba52fc4df2fd6c0459a2df98ed3dc433c66fc8ec4940feef40846ef162b0": {
+    "elapsed_ms": 174.01655799767468,
+    "error": "/tmp/mini_elf_lean_pioffyfn.lean:2:18: error: Application type mismatch: The argument\n  hp\nhas type\n  x\nbut is expected to have type\n  x \u2227 y\nin the application\n  And.intro hp\n/tmp/mini_elf_lean_pioffyfn.lean:2:23: error: unexpected token ')'; expected command",
+    "success": false
+  },
+  "a45d60ed4ae5b9b42fa7170d8550997ba8c1ac815b8408578bc5bb1b982f25ed": {
+    "elapsed_ms": 172.381302996655,
+    "error": null,
+    "success": true
+  },
+  "a4be41b046447875207a4601043e51537028cb2454e459eb9e4db20746dfc02f": {
+    "elapsed_ms": 179.79805800132453,
+    "error": null,
+    "success": true
+  },
+  "a591192404edaf7722612176e38a14ed3dca1ce0b9f654845418982b00d4a634": {
+    "elapsed_ms": 179.756173005444,
+    "error": null,
+    "success": true
+  },
+  "a61b938b973812bbf79766125c99ad8c17e5633b578c58af72810a979b72fc96": {
+    "elapsed_ms": 170.78035199665464,
+    "error": "/tmp/mini_elf_lean_om6wkn24.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np r : Prop\nhp : p\nhq : r\n\u22a2 p \u2227 r",
+    "success": false
+  },
+  "a62d361439740c233d62533eeb896d59323192ec87b953aca219f3998e06895c": {
+    "elapsed_ms": 175.08855900086928,
+    "error": null,
+    "success": true
+  },
+  "a71408d645e1471ad500e73778a50359c963e6908c0746a34e89dde5752cbf25": {
+    "elapsed_ms": 167.26035300234798,
+    "error": null,
+    "success": true
+  },
+  "a72b13e25873d4e55eb5c8a71c332ac4732f53876fdfbcb211668a16301ac578": {
+    "elapsed_ms": 172.54238300665747,
+    "error": "/tmp/mini_elf_lean_y23tb8l0.lean:3:16: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_y23tb8l0.lean:1:68: error: unsolved goals\ncase inl\np q r : Prop\nhp\u271d : p \u2192 r\nhq : q \u2192 r\nhp : p\n\u22a2 r\n\ncase inr\np q r : Prop\nhp : p \u2192 r\nhq\u271d : q \u2192 r\nhq : q\n\u22a2 r",
+    "success": false
+  },
+  "a78d9358942a47e01ccf708dab613526b3ece14eb739681e914cd59a6f019af7": {
+    "elapsed_ms": 170.85463200055528,
+    "error": null,
+    "success": true
+  },
+  "a78e53270b005c6b8c1c705c5cbd4fd6159ee0c8fc22991a02fb9d8ab375313c": {
+    "elapsed_ms": 167.15547700005118,
+    "error": null,
+    "success": true
+  },
+  "a7fc433a5bc52238b09c1b0f28afcffbb73bf8f9103a901d37b1ed3bf581781a": {
+    "elapsed_ms": 170.46632600249723,
+    "error": null,
+    "success": true
+  },
+  "a89f3b0da7603972bcc19c74dcc242fcaeddafe941ef52c6baa408bf8aa633d4": {
+    "elapsed_ms": 165.89150798972696,
+    "error": "/tmp/mini_elf_lean_8qpeyct6.lean:2:2: error: Type mismatch\n  Or.inl h\nhas type\n  False \u2228 ?m.3\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "a8bc83c8d0012da5e450317ebe87a4acd9634ac6a7f89d40dfb169ec43bb3ff0": {
+    "elapsed_ms": 170.92297300405335,
+    "error": null,
+    "success": true
+  },
+  "a8e3d681cd1a16977bed5bfbf77131ed439af2bb4bd7b89d482800af75cdd429": {
+    "elapsed_ms": 172.14300099294633,
+    "error": "/tmp/mini_elf_lean_fybszb9m.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  8\nis not definitionally equal to the right-hand side\n  4\n\n\u22a2 8 = 4",
+    "success": false
+  },
+  "a9269fde0508c8847751b6969bc646c370a0aed73fe2070c02c9f413f2ea2a5d": {
+    "elapsed_ms": 165.63379199942574,
+    "error": null,
+    "success": true
+  },
+  "a959715d315252b74d65cb6a19bea3e50ab82fa6633283e7e9f63063c91fe7bc": {
+    "elapsed_ms": 170.2996149979299,
+    "error": "/tmp/mini_elf_lean_5tv7ragh.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_5tv7ragh.lean:2:16: error: Tactic `rcases` failed: `x\u271d : ?m.2` is not an inductive datatype",
+    "success": false
+  },
+  "a965d5eff307a1fe14b126954d2dbee891f7cde2e3f929b6ce849f6d917d41f2": {
+    "elapsed_ms": 172.0235219981987,
+    "error": null,
+    "success": true
+  },
+  "a9f6f04abf81549410ca1342c02d50979bdd69e48b20c39a3b68da9c17507a24": {
+    "elapsed_ms": 172.03201199299656,
+    "error": "/tmp/mini_elf_lean_cbqiu7py.lean:1:44: error: unsolved goals\nr s : Prop\nhp : r\nhq : s\n\u22a2 s \u2227 r",
+    "success": false
+  },
+  "a9fe403ecbfc9ec6bbeb67ad4198a4065e47255775d30061b875307becaae9c0": {
+    "elapsed_ms": 169.89452700363472,
+    "error": null,
+    "success": true
+  },
+  "aa65bb6432e5f931f11c74bc611ee0b486cd60ddc94bb6b34673b788b11833c8": {
+    "elapsed_ms": 173.18238200095948,
+    "error": null,
+    "success": true
+  },
+  "aaa2aaf254202cb2a201275d15a6f3307537f0f8a19f32355d7750f60b7816d5": {
+    "elapsed_ms": 171.5122110035736,
+    "error": "/tmp/mini_elf_lean_ojp19vkb.lean:3:3: error: unknown tactic\n/tmp/mini_elf_lean_ojp19vkb.lean:1:31: error: unsolved goals\n\u22a2 42 = 42",
+    "success": false
+  },
+  "aad9af067f32162d1382119ea31c0585314f4a823a7525edeecb3f52bad09d8c": {
+    "elapsed_ms": 174.1930589923868,
+    "error": null,
+    "success": true
+  },
+  "ab2708bc3590b1513bc37242345ef16d5cb1e2c26e7197b777976623ebb92ae2": {
+    "elapsed_ms": 171.38078600692097,
+    "error": null,
+    "success": true
+  },
+  "ab4a21964b87ad4e9ac86d50aa614943f7484a36ca9ad0a508fd5593840ee6a1": {
+    "elapsed_ms": 173.1767050077906,
+    "error": "/tmp/mini_elf_lean_ptxvfmpb.lean:2:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\nq : Prop\nh : False\n\u22a2 q",
+    "success": false
+  },
+  "abb6b2a804a94a227a56ee55f9c4e2214f51a7f908b90916d3f4d3039cfa211f": {
+    "elapsed_ms": 170.65726598957554,
+    "error": "/tmp/mini_elf_lean_9a4o90wx.lean:3:16: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_9a4o90wx.lean:1:68: error: unsolved goals\ncase inl\nx y z : Prop\nhp\u271d : x \u2192 z\nhq : y \u2192 z\nhp : x\n\u22a2 z\n\ncase inr\nx y z : Prop\nhp : x \u2192 z\nhq\u271d : y \u2192 z\nhq : y\n\u22a2 z",
+    "success": false
+  },
+  "ac01cd5de2ecf440f14d89cb6017423df79a327aa8d1e42d4eace7f304542d02": {
+    "elapsed_ms": 170.84182798862457,
+    "error": "/tmp/mini_elf_lean_k5njliaw.lean:3:2: error: Type mismatch\n  \u27e8hp, hq\u27e9\nhas type\n  p \u2227 r\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "ac24dd02e2f392112a2692d51ffc7e73389995208a50b879ac9a15d5007d5df8": {
+    "elapsed_ms": 172.75565399904735,
+    "error": "/tmp/mini_elf_lean_0rrbwhec.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "ac2c98bbbb3e3c06dff55de8cc1ad8d6a830431146dda7f594900834cd911cdc": {
+    "elapsed_ms": 167.10563401284162,
+    "error": null,
+    "success": true
+  },
+  "ac93c234a06dbdab22453df82e9c3ac597fb324c3f54df1d8321acee8dc63885": {
+    "elapsed_ms": 167.1253649983555,
+    "error": null,
+    "success": true
+  },
+  "acaf7eb40c24f7b6d63cebd282aae0eacc14c20becca12523388808a0612c29f": {
+    "elapsed_ms": 170.36454199114814,
+    "error": "/tmp/mini_elf_lean_52f0ev51.lean:2:16: error: Tactic `rcases` failed: `left\u271d : p` is not an inductive datatype",
+    "success": false
+  },
+  "acee1c9e90aefd05aaa4ce823fb3f72afb8b09c40fe36943e0bd9a882518a492": {
+    "elapsed_ms": 170.8823639928596,
+    "error": null,
+    "success": true
+  },
+  "acf27e29e1a7347c45fc84ee85212248d172593134328f5b7ee98c4768337e52": {
+    "elapsed_ms": 185.84337701031473,
+    "error": null,
+    "success": true
+  },
+  "acf3dbc101cd80adbcec657c24e7278f3fe4d4926056d405f9d0990199c0402f": {
+    "elapsed_ms": 168.57758798869327,
+    "error": null,
+    "success": true
+  },
+  "ad9c075ae91de9799ecd688e055acc9c6b1fdc9bb806c82aea1b444a5310801b": {
+    "elapsed_ms": 181.88830598955974,
+    "error": "/tmp/mini_elf_lean_sn4rjw4c.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "ade7a5e35a4951d81959197fe8347a0c29d08aecb7232d6a84924d93740b8a44": {
+    "elapsed_ms": 165.8023579948349,
+    "error": "/tmp/mini_elf_lean_at05uyan.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `c` which does not have the necessary form.",
+    "success": false
+  },
+  "ae1b9a79ac3d0680ef26ed577307f5be36e8389e290ab300993e04e9d055da3c": {
+    "elapsed_ms": 181.89138600428123,
+    "error": null,
+    "success": true
+  },
+  "ae1e700b2181a420960757bbf5cd1439fe1c0ec9bd5bf307098f253fc633740f": {
+    "elapsed_ms": 165.2174089977052,
+    "error": "/tmp/mini_elf_lean_xk28svym.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `h.mpr`",
+    "success": false
+  },
+  "aea1747b30fd8382b4ea6fcb927ba1a2a981e3b61a3bcd3d75b8b0efd67c2d59": {
+    "elapsed_ms": 180.17545901238918,
+    "error": "/tmp/mini_elf_lean_bb8vai7c.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  p \u2228 q",
+    "success": false
+  },
+  "aed589c89842583f0f1312111dad36b7f9a18f6e48395f7542397ea783177131": {
+    "elapsed_ms": 169.29702600464225,
+    "error": "/tmp/mini_elf_lean_zouqwlc2.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "af0bf6f5c7f3f91ebb5fcc398361594984c74498b077182b787a25832dfdac8f": {
+    "elapsed_ms": 167.02213400276378,
+    "error": "/tmp/mini_elf_lean_l2lbaviv.lean:2:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\np : Prop\nh : False\n\u22a2 p",
+    "success": false
+  },
+  "af39aa797fef06021fae9e5093a2f2e24b51db4e859adbba3ad657153d0860ba": {
+    "elapsed_ms": 167.20927599817514,
+    "error": null,
+    "success": true
+  },
+  "af40d3700dd1f0a99d4edbb24bcb0f689042963469bcf998234ce5d07f817c82": {
+    "elapsed_ms": 170.39468600705732,
+    "error": null,
+    "success": true
+  },
+  "b01bbbe8e4787c3ea2b16a39fca16bfdece40be104aa6723571c1cf7fd1a0b90": {
+    "elapsed_ms": 171.70973499014508,
+    "error": null,
+    "success": true
+  },
+  "b08b47952e874eeef28b773dc957736625fc2cfc727d67f0a0e36739f4c7073a": {
+    "elapsed_ms": 166.65889600699302,
+    "error": null,
+    "success": true
+  },
+  "b16a962773229fd84577453010d5b35901d9246341b4e041f85d40995a27a6f4": {
+    "elapsed_ms": 170.15051901398692,
+    "error": "/tmp/mini_elf_lean_ggwehjcl.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "b1bcb9946b93eccd08f280108689fc20644638c8ba798319165157b0bee5cbd4": {
+    "elapsed_ms": 170.1648159942124,
+    "error": "/tmp/mini_elf_lean_1mtzgcax.lean:2:13: error: Application type mismatch: The argument\n  hr\nhas type\n  z\nbut is expected to have type\n  y \u2227 z\nin the application\n  \u27e8hp, hr\u27e9",
+    "success": false
+  },
+  "b1d2220af2f6d186b2996404a2748a5e6e51829868011596c2c4967b5719eee5": {
+    "elapsed_ms": 192.71803498850204,
+    "error": "/tmp/mini_elf_lean_a6n8y2hy.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "b1f55e6904e1640170ae39e0730c19e7826596a8fe61f839d4c86b75c4832eeb": {
+    "elapsed_ms": 171.10544099705294,
+    "error": "/tmp/mini_elf_lean_1gtwuyhj.lean:1:38: error: unsolved goals\ncase inr\ns : Prop\nhp : s\n\u22a2 s\n/tmp/mini_elf_lean_1gtwuyhj.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "b24cc657663cd07af01a2cacb57d772b7ffd76eeca0c3c1990064ae4994274b6": {
+    "elapsed_ms": 166.53168300399557,
+    "error": null,
+    "success": true
+  },
+  "b2b8c78963ecbc69e8efa677f84e4c9572ba97faf323cd524779fe9a545dff44": {
+    "elapsed_ms": 168.08134100574534,
+    "error": null,
+    "success": true
+  },
+  "b2d9a6431fcaf54fc71a3cdd524a8c1976313d8fd43cc6b7f64fe7790e6a0315": {
+    "elapsed_ms": 168.76803399645723,
+    "error": "/tmp/mini_elf_lean_7mitdsjy.lean:1:40: error: unsolved goals\np r : Prop\nh : r\n\u22a2 p \u2228 r",
+    "success": false
+  },
+  "b30bdfb6bdf8a90b6b231cfe6fbe7f2ca6f56980e7036d33fb0f53101cb62218": {
+    "elapsed_ms": 170.38310000498313,
+    "error": "/tmp/mini_elf_lean_kss_8yse.lean:1:44: error: unsolved goals\ncase inr\np q : Prop\nhq : q\n\u22a2 q \u2228 p\n/tmp/mini_elf_lean_kss_8yse.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "b3781c30197fdf41f3c2a4e468d3c833318d246e02f0e76d9d7eb921d49cc546": {
+    "elapsed_ms": 173.996437995811,
+    "error": "/tmp/mini_elf_lean_ubbj2opy.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "b38b7e0559af39521c168fbd5e35472e179de00d332b0c1d87e6a44deef221e2": {
+    "elapsed_ms": 168.114259999129,
+    "error": null,
+    "success": true
+  },
+  "b3f88125e4c0b4af7606fbce0a12f46ea97446fecfbdd1ed9df667345e4bc599": {
+    "elapsed_ms": 177.2906489932211,
+    "error": "/tmp/mini_elf_lean_26zye9ty.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_26zye9ty.lean:1:37: error: unsolved goals\ns : Prop\nh : s\n\u22a2 True",
+    "success": false
+  },
+  "b438b2ddee4e627de2efe5eb8adef8f33255a4d6c3eb772d42355b2a980f8ac3": {
+    "elapsed_ms": 172.6511059969198,
+    "error": null,
+    "success": true
+  },
+  "b47d9aec35d0ff76e2005a1812059b72dccea5fab176a3984836039de30324e3": {
+    "elapsed_ms": 170.68345900042914,
+    "error": null,
+    "success": true
+  },
+  "b4b3308807b65ae90dd0766abd5b8b06189f213df909abda78275ff8a36eab37": {
+    "elapsed_ms": 174.2064480058616,
+    "error": null,
+    "success": true
+  },
+  "b5f0c3e8139496b5fa2ec07beab60934f3ec10c03825bc0f0b21ff22e3fca9c9": {
+    "elapsed_ms": 168.82580000674352,
+    "error": "/tmp/mini_elf_lean_v967zn7p.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_v967zn7p.lean:2:16: error: Tactic `rcases` failed: `x\u271d : ?m.2` is not an inductive datatype\n/tmp/mini_elf_lean_v967zn7p.lean:2:25: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "b60743d501eb479753999377eccadd85f6d523013291cd578f26e22a6879c7f6": {
+    "elapsed_ms": 173.98844299896155,
+    "error": "/tmp/mini_elf_lean_pn3bcnla.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "b6e4632dc9e7244c076489acd62f5f531d0d60a98e2ba1d4f2087b727626f929": {
+    "elapsed_ms": 205.1730640087044,
+    "error": null,
+    "success": true
+  },
+  "b6f4d672e9370e1012e37f317e72c087f8aac5d0c0608a6332cd823c21b1f980": {
+    "elapsed_ms": 174.9086729978444,
+    "error": null,
+    "success": true
+  },
+  "b7364c5f09722eac5845e094d57dccccec0e4f0b174d420a1077b629745791f7": {
+    "elapsed_ms": 170.00111000379547,
+    "error": "/tmp/mini_elf_lean_27ntu4_z.lean:1:40: error: unsolved goals\ncase h\nx y : Prop\nh : y\n\u22a2 y\n/tmp/mini_elf_lean_27ntu4_z.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "b7852c2c96dcbb84966cb3ace085035ec2da156cd5d4cfba402592498855ace1": {
+    "elapsed_ms": 169.73518700979184,
+    "error": null,
+    "success": true
+  },
+  "b7a597544f959b9124916d436f4264be62d092e4452cd732c316a385287d5944": {
+    "elapsed_ms": 168.454409998958,
+    "error": "/tmp/mini_elf_lean_bq_p6w_e.lean:2:8: error(lean.unknownIdentifier): Unknown constant `id.intro`",
+    "success": false
+  },
+  "b7e95cefbb96683288fb0115feec940016574d85dee3c37de4068238fa594d91": {
+    "elapsed_ms": 173.02815501170699,
+    "error": "/tmp/mini_elf_lean_3dm9h1cx.lean:3:2: error: Type mismatch\n  Or.inl h\nhas type\n  t \u2228 ?m.6\nbut is expected to have type\n  t",
+    "success": false
+  },
+  "b7f251fcead0e440e23d6adf9640f25894031b58cd965eb24ff37c33ac65cb2b": {
+    "elapsed_ms": 170.38406399660744,
+    "error": null,
+    "success": true
+  },
+  "b87d95ae1d77065b698f6d785794c3eca29ba47b8622368acdb452889e8ff533": {
+    "elapsed_ms": 168.81911699601915,
+    "error": "/tmp/mini_elf_lean_4jvjwzid.lean:2:20: error: Application type mismatch: The argument\n  h2\nhas type\n  c = b\nbut is expected to have type\n  b = c\nin the application\n  Eq.trans h1 h2",
+    "success": false
+  },
+  "b891f90702d7bdecf7bcc98a5b44c0e1c5896114410f318845b3422299980a1d": {
+    "elapsed_ms": 172.54977799893823,
+    "error": "/tmp/mini_elf_lean_lgjj00o7.lean:2:2: error: Alternative `inr` has not been provided\n/tmp/mini_elf_lean_lgjj00o7.lean:4:2: error: No goals to be solved",
+    "success": false
+  },
+  "ba3a202aa3f11890fe1aaeb255d8704b7dfedd5713d597d2927ef9c039037502": {
+    "elapsed_ms": 169.31690600176807,
+    "error": "/tmp/mini_elf_lean_3bbo_l5a.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "ba8f6c5ee73222e2f8b55c0708a037712306a11afdff4d5dddcd17e6c499fd3b": {
+    "elapsed_ms": 168.71517700201366,
+    "error": null,
+    "success": true
+  },
+  "bacba2299539e8fcb5d128b23af86fb533fa3a7ae798e40dbf0236d8101ea0d2": {
+    "elapsed_ms": 183.2115979923401,
+    "error": null,
+    "success": true
+  },
+  "bb121103805e36f1068aae2e9098c69e627195060a8480bd3aeddcead17685a6": {
+    "elapsed_ms": 169.22165399591904,
+    "error": "/tmp/mini_elf_lean_gf1upkwu.lean:1:38: error: unsolved goals\nr : Prop\nh : False\n\u22a2 r",
+    "success": false
+  },
+  "bb468043a058ce97d32c1cbd7664d452c2f03430fe06ecc31051fedd4c8bc9c2": {
+    "elapsed_ms": 167.37893599201925,
+    "error": null,
+    "success": true
+  },
+  "bb66467017d117b3b4bbac638a48b2728485262213ed4ab6b814ba80483fe280": {
+    "elapsed_ms": 166.17611100082286,
+    "error": null,
+    "success": true
+  },
+  "bbd69d3f887d052dd0f4be0711a57404a555c701630970be5b2b6d65e7e631a2": {
+    "elapsed_ms": 172.4035829975037,
+    "error": "/tmp/mini_elf_lean_fg9m9e0f.lean:2:2: error: Type mismatch\n  h.left.right\nhas type\n  y\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "bc490731e1c7796e40b0933df26616e3f4530a8db7afc2ecabf18c767bf0677e": {
+    "elapsed_ms": 168.28946898749564,
+    "error": null,
+    "success": true
+  },
+  "bca3fe1e09aa4243b7b21ab13d28b7e41a19a0cab736ebebb7706cbbbab49e4c": {
+    "elapsed_ms": 181.116565989214,
+    "error": null,
+    "success": true
+  },
+  "bcb0b8d94c1417d357c7b4df516e6bcd5ea8c526bfef923a9da341551a80019b": {
+    "elapsed_ms": 173.14973000611644,
+    "error": null,
+    "success": true
+  },
+  "bcd2346f4a9428e9a62dc88b0ac8382aa08e77f74eca18fc32cd196a7a77d5e5": {
+    "elapsed_ms": 173.54448599508032,
+    "error": "/tmp/mini_elf_lean_42uygvpx.lean:3:2: error: Type mismatch\n  \u27e8hp, hq\u27e9\nhas type\n  x \u2227 y\nbut is expected to have type\n  x",
+    "success": false
+  },
+  "bcef09543ddd20c8e94ebfca53974711254e71375d7741db1089c8ae014f4bf2": {
+    "elapsed_ms": 168.07838500244543,
+    "error": null,
+    "success": true
+  },
+  "bda5c2c564ca67ffb386b07b20ed6ef50ccf5e921bbf0a0ff5e4a203a8f9ef69": {
+    "elapsed_ms": 168.46516400983091,
+    "error": null,
+    "success": true
+  },
+  "bdb0ce62cbac87f97aa28ee4928716931168f74fe95992af3ba234eb02162d26": {
+    "elapsed_ms": 168.08581199438777,
+    "error": null,
+    "success": true
+  },
+  "be142e67f364686af04d02f44f39026de27c1068c652a58bf5389d5de5be6cc6": {
+    "elapsed_ms": 165.97027199168224,
+    "error": null,
+    "success": true
+  },
+  "be27506e4f18c037fca323cf959d600074bafc5513eebfb0e6d2077366c1e9f2": {
+    "elapsed_ms": 165.29235799680464,
+    "error": null,
+    "success": true
+  },
+  "be72da926316b6e4d9f644c27fdd60fa18e3a1f25970c27117e74f4b37cc280f": {
+    "elapsed_ms": 170.16976600280032,
+    "error": null,
+    "success": true
+  },
+  "bf18bf5b7d8ffe1ebfdbc2c341aef7a561cdf59442a133d111f9f299324eed0b": {
+    "elapsed_ms": 179.48843899648637,
+    "error": "/tmp/mini_elf_lean_xshg64c3.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_xshg64c3.lean:2:21: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "bf813972b09cc083d96e996cc35db885c66099cd965dc6eb5b7919eb4a9eadcf": {
+    "elapsed_ms": 174.30263600545004,
+    "error": null,
+    "success": true
+  },
+  "bfb15315ab01af2dbb7342fbd95d31cb2460a411a14aea694bd5b04dd97e40cc": {
+    "elapsed_ms": 184.06284900265746,
+    "error": null,
+    "success": true
+  },
+  "bfb843f09015079393afd059c0c8f562e9eb9dfa0dc883cc68ca5eaf7fd15d0f": {
+    "elapsed_ms": 167.5211749970913,
+    "error": "/tmp/mini_elf_lean_k3ffvoon.lean:5:2: error: Duplicate alternative name `inr`\n/tmp/mini_elf_lean_k3ffvoon.lean:4:14: error: Type mismatch\n  hx\nhas type\n  a\nbut is expected to have type\n  c\n/tmp/mini_elf_lean_k3ffvoon.lean:4:14: error: Type mismatch\n  hx\nhas type\n  b\nbut is expected to have type\n  c",
+    "success": false
+  },
+  "c023e655821c835a98e2b7af07b8750f539c71deea9c065f871088bbdf1c3448": {
+    "elapsed_ms": 173.9642989996355,
+    "error": "/tmp/mini_elf_lean_qst03j44.lean:3:20: error: unknown tactic\n/tmp/mini_elf_lean_qst03j44.lean:3:16: error: unsolved goals\ncase intro\na b : Prop\nhp : a\nhq : b\n\u22a2 b \u2227 a",
+    "success": false
+  },
+  "c0852a13e0d41ac28b44971802add5c2bb64749cb70000e1e3ca807abe0b0f8a": {
+    "elapsed_ms": 170.3412839997327,
+    "error": null,
+    "success": true
+  },
+  "c0d0325dc48d45db14104163021e43049290c44f50681998ec1c6c46d09821ce": {
+    "elapsed_ms": 174.19520000112243,
+    "error": null,
+    "success": true
+  },
+  "c243c283c408f6836ad03e73b21309ee60b1e9832b8c1847b2f0d978997dd460": {
+    "elapsed_ms": 168.59938998823054,
+    "error": "/tmp/mini_elf_lean_pmv031ac.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `a`",
+    "success": false
+  },
+  "c245a32f6f1a2c572d26ef8d908f6e882780534a4cd0bfdcca05797aa43fc687": {
+    "elapsed_ms": 166.96047599543817,
+    "error": "/tmp/mini_elf_lean_zfdga7fi.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.13 \u2192 ?m.13\nbut is expected to have type\n  2 + 3 = 5",
+    "success": false
+  },
+  "c277b8d4f0abdfa6c46f773a6bd60f742766315218b025264177417a87a45377": {
+    "elapsed_ms": 169.64797100808937,
+    "error": null,
+    "success": true
+  },
+  "c2b3cc7433dfeebbc987b3518d917152abdc235c7528c92cb15884e4b08fc471": {
+    "elapsed_ms": 173.13315700448584,
+    "error": null,
+    "success": true
+  },
+  "c2ce79e07fde5d498442a495bcc22d1ce0ada42ee10af4f22bba490bafb7fff3": {
+    "elapsed_ms": 170.389406994218,
+    "error": null,
+    "success": true
+  },
+  "c2d8ec61f3431da8bc575fa45c2d6917406f95992a9941eb40c5ea3aed441b72": {
+    "elapsed_ms": 167.49536100542173,
+    "error": "/tmp/mini_elf_lean_n9oq295b.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_n9oq295b.lean:1:37: error: unsolved goals\np : Prop\nh : p\n\u22a2 True",
+    "success": false
+  },
+  "c3482a99f54cc51ffccbd1fd06ee12f8a16bc665a13d35d268a019cae783e405": {
+    "elapsed_ms": 167.05595699022524,
+    "error": "/tmp/mini_elf_lean_cmkejbbp.lean:2:8: error(lean.unknownIdentifier): Unknown constant `Or.efin`\n/tmp/mini_elf_lean_cmkejbbp.lean:2:19: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "c372e1a94d23e97746715f0b8fb1bab44cbb3166b0ee8b2154a67d0516a62e42": {
+    "elapsed_ms": 169.47399600758217,
+    "error": null,
+    "success": true
+  },
+  "c3933a140ba0a8978d0871c31acd5a613e0130d85618a7f930d1610dccf2eb0f": {
+    "elapsed_ms": 185.5341180053074,
+    "error": null,
+    "success": true
+  },
+  "c3bbcc6da9a68a4642c35cd3b49d13b43617b89037b26dba121650e0138ebe70": {
+    "elapsed_ms": 199.21337600681,
+    "error": "/tmp/mini_elf_lean_3xjcn_ai.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_3xjcn_ai.lean:1:48: error: unsolved goals\na b c : Prop\nh : (a \u2227 b) \u2227 c\n\u22a2 b",
+    "success": false
+  },
+  "c3cee0697cfae8fafabc35dab216ae44f0769f92018930a147fadcebb38552a0": {
+    "elapsed_ms": 169.25550300220493,
+    "error": null,
+    "success": true
+  },
+  "c40a279d47b0ef9d9af3fce3e9495a5272b9335112ea296b5cf2e47d175251aa": {
+    "elapsed_ms": 167.15867099992465,
+    "error": null,
+    "success": true
+  },
+  "c42f81b9d829f7e1c0b8ba999faef543f9c548d6310cce4787e43917ddbb990e": {
+    "elapsed_ms": 171.7907109996304,
+    "error": null,
+    "success": true
+  },
+  "c55cfe52bf96fb57e5537c304b02bbb8a21f54fd6ebc2bbe8da5b83fe1eb3e2e": {
+    "elapsed_ms": 172.47779900208116,
+    "error": null,
+    "success": true
+  },
+  "c63ae7739c04237e2965d2a5ae56dc52c9f96235ae1a5c80133f2c29d1ca10c4": {
+    "elapsed_ms": 170.06911200587638,
+    "error": null,
+    "success": true
+  },
+  "c6cf89e606bdb44cb9b2e8935bdb676bb93c17c29ece721cf406d32f606c8724": {
+    "elapsed_ms": 166.9356109923683,
+    "error": "/tmp/mini_elf_lean_l2vuvsiz.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_l2vuvsiz.lean:1:38: error: unsolved goals\nq : Prop\nh : False\n\u22a2 q",
+    "success": false
+  },
+  "c6fbf738680cc664d89868e5f951cff691fffbf8ed70ebe2649280d69f32e3cd": {
+    "elapsed_ms": 175.54908299644012,
+    "error": "/tmp/mini_elf_lean_11miebcv.lean:2:21: error: Application type mismatch: The argument\n  hq\nhas type\n  b\nbut is expected to have type\n  c\nin the application\n  \u27e8hp, hq\u27e9",
+    "success": false
+  },
+  "c75a03f465c9a751565674ed4c8354c0fc2e2eccf57437c6824d1398547ae789": {
+    "elapsed_ms": 166.00046098756138,
+    "error": null,
+    "success": true
+  },
+  "c809a387289611e154ddb1578561d236a8a54d7c43435b279c861cd90a6f25da": {
+    "elapsed_ms": 180.38768399856053,
+    "error": null,
+    "success": true
+  },
+  "c866bab81ae3ee97070cfb84463ef919341040c1f97256789a59e41e3a9378da": {
+    "elapsed_ms": 174.2375500034541,
+    "error": null,
+    "success": true
+  },
+  "c89a0bf998a8b66219dde9b474f6588587a105b04d3680116fbe8657fa697443": {
+    "elapsed_ms": 182.9941080068238,
+    "error": "/tmp/mini_elf_lean_k4ir_7ap.lean:1:38: error: unsolved goals\ncase inr\nu : Prop\nhp : u\n\u22a2 u",
+    "success": false
+  },
+  "c8e7d0aeee1fdbfb86022629a78b29668845b472cd4d0c24d65a108d80f63b15": {
+    "elapsed_ms": 173.90648100990802,
+    "error": null,
+    "success": true
+  },
+  "c97834006fed2c2fbced0d76ae118c21b9bae23a32ac7c5c6c347e539f8da67f": {
+    "elapsed_ms": 169.8908440012019,
+    "error": "/tmp/mini_elf_lean_3dchjcjr.lean:1:40: error: unsolved goals\ncase h\np q : Prop\nh : q\n\u22a2 q\n/tmp/mini_elf_lean_3dchjcjr.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "c9d5a7b806be1e235871de38e0038edc70a7b630b7f24ab3e7dc228f80d17b57": {
+    "elapsed_ms": 173.47609798889607,
+    "error": "/tmp/mini_elf_lean_h7i7g7l0.lean:2:2: error: Tactic `constructor` failed: target is not an inductive datatype\n\na : Prop\n\u22a2 a \u2192 a",
+    "success": false
+  },
+  "ca0c4b3e820838e71aa7273de08f3b026686a27a0532f1a27211303bd46e7eff": {
+    "elapsed_ms": 171.28325000521727,
+    "error": null,
+    "success": true
+  },
+  "ca2f0dc0e6de4e08efe6423e1dd80156abe6e6d57d3653b03486b3d0348f9a9f": {
+    "elapsed_ms": 171.3327890029177,
+    "error": null,
+    "success": true
+  },
+  "ca7c6a6aeb305eb623e1c518298cf7b8ad7926ff78476ea0907421b7226d48f4": {
+    "elapsed_ms": 170.6704370008083,
+    "error": null,
+    "success": true
+  },
+  "cafc6f02ffee32942743e3228196b113e73d6691d1c78e03f1bc42f1c1a6fe14": {
+    "elapsed_ms": 167.856034997385,
+    "error": null,
+    "success": true
+  },
+  "cb316ffe57d790181a85fbf78694ab8462a4cc958deab3867dd9af2d400c9f0e": {
+    "elapsed_ms": 168.32014100509696,
+    "error": null,
+    "success": true
+  },
+  "cb714ce8f6bd49bb42b66c9d21d6b34ad1e157a79c65a484097b665a05f0199e": {
+    "elapsed_ms": 167.5849089951953,
+    "error": null,
+    "success": true
+  },
+  "cbd37393cee1970dfcde92d483b439f756b78094ba34631ed1abc49e596e60d4": {
+    "elapsed_ms": 168.39506301039364,
+    "error": "/tmp/mini_elf_lean_f6gwuc1k.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nx y : Prop\nh : x \u2227 y\n\u22a2 y \u2227 x\n/tmp/mini_elf_lean_f6gwuc1k.lean:2:14: error: unexpected token '=>'; expected command",
+    "success": false
+  },
+  "cbf79ba49abc165fcc03c2fccdc690faec1f38a2ac21134817e3716448266d52": {
+    "elapsed_ms": 170.69330300728325,
+    "error": "/tmp/mini_elf_lean_aj2bgene.lean:1:38: error: unsolved goals\ncase inr\nu : Prop\nhp : u\n\u22a2 u\n/tmp/mini_elf_lean_aj2bgene.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "cc072d2a40f4047b5567f5ba0431d33902587ca75dfd937174ad3ec238dbfbc5": {
+    "elapsed_ms": 171.55125699355267,
+    "error": "/tmp/mini_elf_lean_6j8v3vd5.lean:2:2: error: Type mismatch\n  h.left\nhas type\n  a \u2227 b\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "cd0f60a20dd57ccd0cc553ab590c24e4b3dd61c3c1be4205e4ec4980947fc1cd": {
+    "elapsed_ms": 171.95736299618147,
+    "error": "/tmp/mini_elf_lean_kuqxju0w.lean:2:2: error: Tactic `right` failed: target is not an inductive datatype\n\np q : Prop\n\u22a2 p \u2228 q \u2192 p \u2228 q",
+    "success": false
+  },
+  "cd50a56ab5b5c18df1155b2eafa9ad85dccf038d91a5c641fca23b7f00d9dfcf": {
+    "elapsed_ms": 168.04623400093988,
+    "error": "/tmp/mini_elf_lean_zwcqqwr1.lean:2:2: error: Type mismatch\n  h.left\nhas type\n  p \u2227 r\nbut is expected to have type\n  p",
+    "success": false
+  },
+  "cd51075a0101d9510020a0590b80acc29b5a1867f31c4849070504de0aa1c92f": {
+    "elapsed_ms": 170.0049570063129,
+    "error": "/tmp/mini_elf_lean_wl9mchtd.lean:2:15: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "cdf478f7fcf6e204a56fc37a75652525cef06d74ea7bdae5827938d376c2acbb": {
+    "elapsed_ms": 202.4981949944049,
+    "error": null,
+    "success": true
+  },
+  "cee9fc1e53eb937cd360f94289ed32e632c38e2ae84d5c110153941c08c16e50": {
+    "elapsed_ms": 175.40758701215964,
+    "error": null,
+    "success": true
+  },
+  "cf27b63d83f661b44fba06b07b69233368905782f5c85183772b76ea720f3e72": {
+    "elapsed_ms": 164.32656400138512,
+    "error": null,
+    "success": true
+  },
+  "cf6025d405b759cddd8a9d88a3d20fea26719d3c844d2fe134b60af322b9913f": {
+    "elapsed_ms": 192.80910299858078,
+    "error": "/tmp/mini_elf_lean__3kvdigp.lean:1:38: error: unsolved goals\ncase inr\np : Prop\nhp : p\n\u22a2 p\n/tmp/mini_elf_lean__3kvdigp.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "cfb6361fee5844ae5cc87bc87f4df9fb16f90097f18cc89bfd87dc7535db8abf": {
+    "elapsed_ms": 175.4506819997914,
+    "error": null,
+    "success": true
+  },
+  "d0040f6a9bcd2165bb9922c697629d10bcd472de950d642a61f69013d46f3a04": {
+    "elapsed_ms": 168.0260860011913,
+    "error": "/tmp/mini_elf_lean_p3fdd_s_.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_p3fdd_s_.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hr`",
+    "success": false
+  },
+  "d0058d1e7f5bd2930ebcc5e380bcd5c745da07fd18294dae353f4252061317b7": {
+    "elapsed_ms": 167.17659300775267,
+    "error": "/tmp/mini_elf_lean_bzed2aao.lean:3:2: error: Type mismatch\n  Or.inr h\nhas type\n  ?m.5 \u2228 u\nbut is expected to have type\n  u",
+    "success": false
+  },
+  "d03f185427c8a452b26700807769a2667a30fda967328c032973dd044aeb5bc7": {
+    "elapsed_ms": 165.52478300582152,
+    "error": null,
+    "success": true
+  },
+  "d04552e8f1ef58f80a1e01d497460f9b5c578037b53be48061721f7aec787bb2": {
+    "elapsed_ms": 163.54122399934568,
+    "error": "/tmp/mini_elf_lean_9g1fsdjx.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.inr`",
+    "success": false
+  },
+  "d1dbc574bc91823f97c52dc7e5dc35829005e17f9f6c0bc99abd4e553a9076de": {
+    "elapsed_ms": 170.57291099627037,
+    "error": null,
+    "success": true
+  },
+  "d1e3ab6dfd96c544698a13dae0aab5ce823324619b739d54e126bd06af4d420f": {
+    "elapsed_ms": 172.1015099901706,
+    "error": null,
+    "success": true
+  },
+  "d23e2a5731e4b6ea3db9c1fbc198ff9beac14fbb6b5553c7f019a50754d1c2f9": {
+    "elapsed_ms": 175.68246099108364,
+    "error": null,
+    "success": true
+  },
+  "d268a8d845d302b94a65da1994ee1ee9c70c4033a7f2a7e28692ff083894e72c": {
+    "elapsed_ms": 168.59283301164396,
+    "error": "/tmp/mini_elf_lean_k4rkoy12.lean:1:44: error: unsolved goals\ncase inr\na b : Prop\nhq : b\n\u22a2 b \u2228 a\n/tmp/mini_elf_lean_k4rkoy12.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "d26ac6d17072fc687805ef23efeae47303e48f580dde33b34abf6cc32e743508": {
+    "elapsed_ms": 169.30272099853028,
+    "error": null,
+    "success": true
+  },
+  "d2a1ed21ebd9ab887a7a317dd83394ba8be8ca98f49ee08520a312d4c7729a32": {
+    "elapsed_ms": 169.43767700286116,
+    "error": "/tmp/mini_elf_lean__p3mgu_x.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean__p3mgu_x.lean:1:18: error: unsolved goals\n\u22a2 True",
+    "success": false
+  },
+  "d2b566980200955b1afe2f066978b22c3384ee4bc7bd6c1b61fea2e7db9fe286": {
+    "elapsed_ms": 171.8718680058373,
+    "error": null,
+    "success": true
+  },
+  "d3513702f50e02fe1fa5fd8546a66705e2b9b35aca94037e327cb1ac259ad001": {
+    "elapsed_ms": 167.7793569979258,
+    "error": "/tmp/mini_elf_lean_lved43es.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 x\nbut is expected to have type\n  z",
+    "success": false
+  },
+  "d363efaeb4cf3941dca63e6691c3c9fd5bc06ab70f55ef45fc5c2621677d4182": {
+    "elapsed_ms": 171.1720589955803,
+    "error": null,
+    "success": true
+  },
+  "d38549d2ba2449e99b7cc5b9299f12139a6b7b32017f35ab1114b93d2546eae0": {
+    "elapsed_ms": 171.1983189888997,
+    "error": null,
+    "success": true
+  },
+  "d38e0f09d92874e4fae1bb734b0e4ffebd9477dd5dcb007eaba1a993ac7a799e": {
+    "elapsed_ms": 169.3414280016441,
+    "error": null,
+    "success": true
+  },
+  "d41ff1ce49d5c6e4a84a6fa86a42146168b5ee0c3732ca133d25b6837487a3e4": {
+    "elapsed_ms": 171.46185800083913,
+    "error": null,
+    "success": true
+  },
+  "d4438cd8cef86682f9fd0973d8ddd40202460212742fbf4aa5effd3dce9357f6": {
+    "elapsed_ms": 169.19612399942707,
+    "error": "/tmp/mini_elf_lean_pqi9bkkh.lean:2:8: error: Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `b` which does not have the necessary form.",
+    "success": false
+  },
+  "d46ac77f066d2060375084685e27f4fd702efd5bf4f0380ed0f098ce96dea89b": {
+    "elapsed_ms": 173.5648059984669,
+    "error": "/tmp/mini_elf_lean_lw4w322i.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `h.elim`\n/tmp/mini_elf_lean_lw4w322i.lean:1:68: error: unsolved goals\ncase inr\na b d : Prop\nhp : a \u2192 d\nhq\u271d : b \u2192 d\nhq : b\n\u22a2 d",
+    "success": false
+  },
+  "d47ff5953300b5e1a3a3c587b985562f3cce13949d4de14a9728185c45617fd3": {
+    "elapsed_ms": 166.85942400363274,
+    "error": null,
+    "success": true
+  },
+  "d48c8d82008bdf5352b7146591bbfb623809b9e2f3ade4d0a16fd1e8bb3661a5": {
+    "elapsed_ms": 182.4179059913149,
+    "error": null,
+    "success": true
+  },
+  "d4a253e3ff2419c71c0ef88c402078037ae69072b8502944de671b4c284ed236": {
+    "elapsed_ms": 170.10541199124418,
+    "error": null,
+    "success": true
+  },
+  "d4a7949f79091646ed29cd03da93033b66cb486e94c4a020da437b46615b5750": {
+    "elapsed_ms": 181.60131500917487,
+    "error": null,
+    "success": true
+  },
+  "d5403eb24c9583267df4bc161b396865b9d96a43b7a0da13fe60fe2dfa442a9a": {
+    "elapsed_ms": 164.72479701042175,
+    "error": "/tmp/mini_elf_lean_ta4fuor3.lean:2:2: error: Type mismatch\n  h.right.right\nhas type\n  z\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "d54fd4a92fad39da0e9c12ae2ff086ee4e68a19e463730d160761e2f27ad5555": {
+    "elapsed_ms": 168.68820300442167,
+    "error": "/tmp/mini_elf_lean_3j83h3a3.lean:1:40: error: unsolved goals\ncase h\ns u : Prop\nh : u\n\u22a2 u\n/tmp/mini_elf_lean_3j83h3a3.lean:2:8: error: unexpected identifier; expected command",
+    "success": false
+  },
+  "d5c782da2af2986f7c43cf8a95e98ea9e5bcbdcdfa5ba141c907b466a2cf8926": {
+    "elapsed_ms": 172.7440680115251,
+    "error": null,
+    "success": true
+  },
+  "d68e6dbe39c633ee4d84fee9202cc053dac9b157117820d2cd79b1770544e3e3": {
+    "elapsed_ms": 168.2775110093644,
+    "error": "/tmp/mini_elf_lean_12hsnznu.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_12hsnznu.lean:1:37: error: unsolved goals\nq : Prop\nh : q\n\u22a2 True",
+    "success": false
+  },
+  "d69ae95fe3ec1f14b78e3fac89fd1872b67718018601f10981bafe367f493db7": {
+    "elapsed_ms": 168.6276279942831,
+    "error": "/tmp/mini_elf_lean_caw4bu6q.lean:2:14: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.11 = ?m.11\nbut is expected to have type\n  100 = 2\nin the application\n  Exists.intro 100 rfl",
+    "success": false
+  },
+  "d6c10bb098240b2a12c091c69316ea2b2e9a3f2d5d496af6480dccf1a9a26988": {
+    "elapsed_ms": 168.7651270040078,
+    "error": null,
+    "success": true
+  },
+  "d808ec3fbbb710cbec18d602a53dc2d385e243b2be5ed037e363740b9a6b4e69": {
+    "elapsed_ms": 172.8651929879561,
+    "error": null,
+    "success": true
+  },
+  "d84947a48d1b792155a31e42e837accd163f0e0c9be106ad6310fecdb4dc66f4": {
+    "elapsed_ms": 171.2917979893973,
+    "error": null,
+    "success": true
+  },
+  "d8a71c7fc95cf3cb3090f72370eccd0d253c45ed4047b47761f50e3ae6271027": {
+    "elapsed_ms": 169.78893399937078,
+    "error": "/tmp/mini_elf_lean_don9_00i.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 a\nbut is expected to have type\n  c",
+    "success": false
+  },
+  "d8ceb4f812188b101380a3514cfb0369d5a8b37f21cb66065e31b7c77dde73fa": {
+    "elapsed_ms": 170.69021599309053,
+    "error": "/tmp/mini_elf_lean_ncc3sqwp.lean:1:44: error: unsolved goals\ncase inr\nr s : Prop\nhq : s\n\u22a2 s \u2228 r\n/tmp/mini_elf_lean_ncc3sqwp.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "d8dff9db99677afb27f10b4ea5b2ebd99a0cb1c910c8d190dbe701a3b5928deb": {
+    "elapsed_ms": 167.83227199630346,
+    "error": null,
+    "success": true
+  },
+  "d8e4e3191406b3d4b9efd970435c5c1d1bbe5f14dc4d6d86d9917371efa7c2cd": {
+    "elapsed_ms": 170.807522998075,
+    "error": "/tmp/mini_elf_lean_loe8e2il.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "d972324aed13011abbc0ebe5b259a6b050f86e70bcbc3f596feff4f6ae9716d9": {
+    "elapsed_ms": 165.59996099385899,
+    "error": null,
+    "success": true
+  },
+  "d9ba1a0f4d1cb744e14f07862a3ecb4980cb8d2a5cb469b414742cfea1986c4c": {
+    "elapsed_ms": 171.165708990884,
+    "error": null,
+    "success": true
+  },
+  "da4917d69cd807d68bf15a4ce7cdc719f3bbaab5e1b161a4529cdef4b2c0927a": {
+    "elapsed_ms": 170.89212501014117,
+    "error": "/tmp/mini_elf_lean_pdmdil2g.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `h.mpr`\n/tmp/mini_elf_lean_pdmdil2g.lean:1:68: error: unsolved goals\ncase inr\na b c : Prop\nhp : a \u2192 c\nhq\u271d : b \u2192 c\nhq : b\n\u22a2 c",
+    "success": false
+  },
+  "da7c1bf0c8c47eac9cd9733f3d2f0b35bf1dd60342e2f7d1f9b78785c28893e9": {
+    "elapsed_ms": 168.24121700483374,
+    "error": null,
+    "success": true
+  },
+  "da8f33c563ba5023c16010312f2d5e56ea66da6f21e0f8431bd408a9a3709115": {
+    "elapsed_ms": 165.71405599825084,
+    "error": null,
+    "success": true
+  },
+  "dafea69b838e7fe5f8472d14e8e3d3526ca88336f574fa3303979f777df5710b": {
+    "elapsed_ms": 171.9588109990582,
+    "error": "/tmp/mini_elf_lean_qfx0_23n.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_qfx0_23n.lean:2:17: error: Application type mismatch: The argument\n  h1\nhas type\n  p \u2192 q\nbut is expected to have type\n  ?m.3 = ?m.4\nin the application\n  Eq.trans h1\n/tmp/mini_elf_lean_qfx0_23n.lean:2:30: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.7 = ?m.8\nin the application\n  Eq.trans h2\n/tmp/mini_elf_lean_qfx0_23n.lean:2:43: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.11 = ?m.12\nin the application\n  Eq.trans h2\n/tmp/mini_elf_lean_qfx0_23n.lean:2:56: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.15 = ?m.16\nin the application\n  Eq.trans h2\n/tmp/mini_elf_lean_qfx0_23n.lean:2:69: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.19 = ?m.20\nin the application\n  Eq.trans h2",
+    "success": false
+  },
+  "dbb623d1f04c2148f5207307cd619ffe9cef3dbfbf9332d14405dcc749a9af42": {
+    "elapsed_ms": 174.87012600759044,
+    "error": null,
+    "success": true
+  },
+  "dbb9a017ec0b219763c6ecf19377338c5c224bef1cc8ff0bb295afd058a8d05a": {
+    "elapsed_ms": 170.4587749991333,
+    "error": null,
+    "success": true
+  },
+  "dc1c14f745287c9c98681f52b388514f22825e2aa4aa050440e08950cca7c3e8": {
+    "elapsed_ms": 166.56027600402012,
+    "error": null,
+    "success": true
+  },
+  "dc71a2b3f6a6f155db0d63f2341c168f5e36a7ffefbeff64c7900e9e75b346b2": {
+    "elapsed_ms": 170.89969699736685,
+    "error": null,
+    "success": true
+  },
+  "dc928982c7baf341e12e1b84df3355e5099c8666b5dbd821b016a44a90ede34d": {
+    "elapsed_ms": 169.82983399066143,
+    "error": "/tmp/mini_elf_lean_2msmqpvm.lean:1:61: error: unsolved goals\ncase left\na b c : Prop\nhp : a\nhq : b\nhr : c\n\u22a2 a\n\ncase right\na b c : Prop\nhp : a\nhq : b\nhr : c\n\u22a2 c",
+    "success": false
+  },
+  "dc9f04a539faf3d640aae0fdc5df6a1bc628967b97c5ca31abdf30b6b57acb60": {
+    "elapsed_ms": 168.72119800245855,
+    "error": null,
+    "success": true
+  },
+  "dcc21b9c7c97563d1c2b4b206827311c41d4945af7d4847ab0680d5dfe19c8c7": {
+    "elapsed_ms": 172.90684799081646,
+    "error": null,
+    "success": true
+  },
+  "dd64a663d12bcf7786baaaf1437ba293c6784c123b87b7c88d6b3e1262497046": {
+    "elapsed_ms": 184.9608410120709,
+    "error": null,
+    "success": true
+  },
+  "ddda8f03fd968cb02b5072e31cc70b4ea1559d0d02b4c9f4b61000dd5eed1471": {
+    "elapsed_ms": 168.0016720056301,
+    "error": "/tmp/mini_elf_lean_3afvbqbg.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_3afvbqbg.lean:1:37: error: unsolved goals\nq : Prop\nh : q\n\u22a2 True",
+    "success": false
+  },
+  "de1227515e604234ee8e5f2d7ffb4be2dbe55918f3cd01dbc9264c6a4bdf6831": {
+    "elapsed_ms": 169.6954619983444,
+    "error": "/tmp/mini_elf_lean___p527ty.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "deebf35dcb3257019c0a91c7a5818eb073fdd4a83bcffda6c8b20d0d578a48ad": {
+    "elapsed_ms": 170.3517389978515,
+    "error": null,
+    "success": true
+  },
+  "df7851dd8fcc8fe81777f59a3de4f427a55c666d268231cd46bcbf27b45f1917": {
+    "elapsed_ms": 167.20986600557808,
+    "error": null,
+    "success": true
+  },
+  "df8eb9564095608662c9c82619410de4da3e82376125910f6d5f0a997ae04345": {
+    "elapsed_ms": 170.03741099324543,
+    "error": null,
+    "success": true
+  },
+  "df94bb606c9e35f97c95596683343c7052c9f64a3dde195593d64464abde9a94": {
+    "elapsed_ms": 185.29111599491443,
+    "error": null,
+    "success": true
+  },
+  "dfa275fbfaaa5da1fa4053f7946969ab1ad37bac83e7e3ae9a40444bf4a40054": {
+    "elapsed_ms": 167.7173460047925,
+    "error": "/tmp/mini_elf_lean_vgrjw1gh.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.inr`",
+    "success": false
+  },
+  "dfbfee2485a3f0368f119c90877c03be5df3768e9ab562680c5c9d1a7f2b852c": {
+    "elapsed_ms": 182.10380501113832,
+    "error": null,
+    "success": true
+  },
+  "e04a440f57b712464f3ae6a06189ff8657f0905d3f60be35b2d1499e0678f581": {
+    "elapsed_ms": 168.2773799984716,
+    "error": "/tmp/mini_elf_lean_7lw1j19x.lean:2:8: error: Function expected at\n  h.right\nbut this term has type\n  t\n\nNote: Expected a function because this term is being applied to the argument\n  h",
+    "success": false
+  },
+  "e09823840694b562842e3e0b7bdfc9d02f6e229482024f8fec3f237f4bb050e0": {
+    "elapsed_ms": 171.5073020022828,
+    "error": null,
+    "success": true
+  },
+  "e1159f8366bb65cfc360da5f7bf1d83d76a504ce78f3467ffa7f2d3402ce1570": {
+    "elapsed_ms": 183.7473119958304,
+    "error": "/tmp/mini_elf_lean_mjqazw9_.lean:2:10: error(lean.invalidField): Invalid field `righ`: The environment does not contain `And.righ`, so it is not possible to project the field `righ` from an expression\n  h\nof type `p \u2227 q \u2227 s`",
+    "success": false
+  },
+  "e21b78ea2e79264b5d732efd9c487c37288e934cf0d18611b64391e09aa02d17": {
+    "elapsed_ms": 166.75461799604818,
+    "error": null,
+    "success": true
+  },
+  "e2bbbe7a0c92b950a2b6ed6c0ab19531db415915a398063770686fc64f59f573": {
+    "elapsed_ms": 175.14085699804127,
+    "error": "/tmp/mini_elf_lean_tte0germ.lean:2:12: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.11 = ?m.11\nbut is expected to have type\n  8 = 4\nin the application\n  Exists.intro 8 rfl",
+    "success": false
+  },
+  "e2e6da8cfb704bdc959bfc8db95f7510852a7de4e1bc2d3deaa02951b3317f12": {
+    "elapsed_ms": 169.72001499379985,
+    "error": null,
+    "success": true
+  },
+  "e32a31a2f6ff5dc9f9a53aae8a693227e889e3ac0afd195b49c07157174c2fed": {
+    "elapsed_ms": 169.40522500954103,
+    "error": null,
+    "success": true
+  },
+  "e338d0962b6a4568a8a93b6a2e949b09e5eb0c1d094d0f2721da25497dcb72d3": {
+    "elapsed_ms": 170.4431890102569,
+    "error": null,
+    "success": true
+  },
+  "e34b051f16c17325b5fc2a0c816e312b7ca9dbf7346b9b4c2a85f2269297ccb4": {
+    "elapsed_ms": 168.70704700704664,
+    "error": "/tmp/mini_elf_lean_g2hare2n.lean:2:14: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "e3545025f627d9f36ad397e5e27c18dc8b323caf662532c6596b1117a086cf60": {
+    "elapsed_ms": 188.06951100123115,
+    "error": null,
+    "success": true
+  },
+  "e382ec7637221ddd701b7cfd0d6d44916c73e86e55b7abbc6513ab961256fa83": {
+    "elapsed_ms": 164.42816201015376,
+    "error": "/tmp/mini_elf_lean_zwtg8ks9.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "e398a51d165d2531600af8d6d1071dba39ce6aedbe616d767233f52a97a91e87": {
+    "elapsed_ms": 178.76249000255484,
+    "error": null,
+    "success": true
+  },
+  "e3b2147f6d7376a8b57f3ffe164a807c82bcfb9a503c5087c465b4755a7782da": {
+    "elapsed_ms": 177.59902401303407,
+    "error": null,
+    "success": true
+  },
+  "e3f14a2e6fcf56a91b7756dbc7c747415c99c859928d1619a2fc568a25473fcc": {
+    "elapsed_ms": 168.06202399311587,
+    "error": null,
+    "success": true
+  },
+  "e40f16ce2a52bd15abebac212350aeac557386a0a1a116a93806c689f7346728": {
+    "elapsed_ms": 170.33949100004975,
+    "error": null,
+    "success": true
+  },
+  "e4d4146a1d87aeb695d0c2f819d4f67c80532f601292f9152ef22da84f1ff519": {
+    "elapsed_ms": 186.0559290071251,
+    "error": "/tmp/mini_elf_lean_l2c_46_s.lean:2:8: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  h.right\nhas type `r` which does not have the necessary form.",
+    "success": false
+  },
+  "e51ba98f59b34954af3902d7ea5913d1aa7d4053fd90d5dc9702e0e7ab185ba6": {
+    "elapsed_ms": 178.17859799833968,
+    "error": "/tmp/mini_elf_lean_0_sbixhr.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.symm`",
+    "success": false
+  },
+  "e588458ca5d6898455dbc82d1fd7f528f85a50d1e3280a2bd6ec17ba03ce116c": {
+    "elapsed_ms": 167.89149299438577,
+    "error": null,
+    "success": true
+  },
+  "e6018a952f2f8fd8e5e54977f4a26370e29a563e7d3635138407946404904eaf": {
+    "elapsed_ms": 170.47852200630587,
+    "error": null,
+    "success": true
+  },
+  "e62ffec14d35d7991a6edcdf890e313d33b5585471c87a1b3e09568e5f46f288": {
+    "elapsed_ms": 178.81790301180445,
+    "error": "/tmp/mini_elf_lean_agqolhg6.lean:3:2: error: Tactic `rfl` failed: The left-hand side\n  1\nis not definitionally equal to the right-hand side\n  13\n\n\u22a2 1 = 13",
+    "success": false
+  },
+  "e66f80ebfc780d0df89051a6f8b83347f28d7aec04913dc4b4da147e424f22fc": {
+    "elapsed_ms": 165.02305200265255,
+    "error": null,
+    "success": true
+  },
+  "e6a02cda59427252a9a14ded7d3b3f9d2c80c133462fb903b02613a674ef965c": {
+    "elapsed_ms": 167.7590839972254,
+    "error": "/tmp/mini_elf_lean_3q13mv0s.lean:2:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.2 \u2228 r\nbut is expected to have type\n  r \u2227 s",
+    "success": false
+  },
+  "e6f565a4723e3910e5f22ed899a9e9d7420cbdb84858feb703e5c1add9a4c84a": {
+    "elapsed_ms": 166.577137002605,
+    "error": null,
+    "success": true
+  },
+  "e748d6e3c626fd7cf285c3eea70ec7416aa134cb0b68eb8909f3c5a5c30fb61a": {
+    "elapsed_ms": 168.93468199123163,
+    "error": null,
+    "success": true
+  },
+  "e74a08c2e8f1cab7035ffac4d95de47cd85bab71e10a9f843bb387a18627715d": {
+    "elapsed_ms": 188.85105798835866,
+    "error": "/tmp/mini_elf_lean_1ptyxbqt.lean:2:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.2 \u2228 x\nbut is expected to have type\n  x \u2227 y",
+    "success": false
+  },
+  "e813fea5824d8506308d1b3741afc29a8c65e786ac992da278c0f37c886421fa": {
+    "elapsed_ms": 169.7277069906704,
+    "error": null,
+    "success": true
+  },
+  "e85d443c106396139b845ea3a40006f551225b263c63820d43290a98221c963c": {
+    "elapsed_ms": 174.02401700383052,
+    "error": null,
+    "success": true
+  },
+  "e8be6636369e29367f60dce83568bc190f99c1fde97f02ea08a39364acb23f58": {
+    "elapsed_ms": 168.20683800324332,
+    "error": "/tmp/mini_elf_lean_oym7auhi.lean:2:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.2 \u2228 p\nbut is expected to have type\n  p \u2227 r",
+    "success": false
+  },
+  "e90672cfc31d13020a8e38c729f751cad81dbb8c3d4462d5d6ea1a66ebdfebac": {
+    "elapsed_ms": 167.87008399842307,
+    "error": null,
+    "success": true
+  },
+  "e90919d956905cf8d26024673ca5af64ea914ec80bb26802d5284428f8ad5caa": {
+    "elapsed_ms": 170.83001699938904,
+    "error": null,
+    "success": true
+  },
+  "e9624375720a87e689bedc39bede2cf04c8a12a700df38faf0c6a538ae3013f1": {
+    "elapsed_ms": 172.01398199540563,
+    "error": "/tmp/mini_elf_lean_ueyb34mh.lean:2:8: error(lean.unknownIdentifier): Unknown constant `id.intro`",
+    "success": false
+  },
+  "e96ebaeab19699eae26b17e2d9634704c29f20ea95d32fefa7ba2b4bbcb36cea": {
+    "elapsed_ms": 164.94223500194494,
+    "error": null,
+    "success": true
+  },
+  "e973269192f4fc4f07b9feb199664e9878245232f2111002e25cca96fd920d6b": {
+    "elapsed_ms": 168.80112400394864,
+    "error": "/tmp/mini_elf_lean_a8o8yhu3.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hp`\n/tmp/mini_elf_lean_a8o8yhu3.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hq`",
+    "success": false
+  },
+  "e9a8b21320f3070012c4edad72f91512d549826e53105ca0e15ede821960c8e8": {
+    "elapsed_ms": 170.0154550053412,
+    "error": null,
+    "success": true
+  },
+  "eaad6c063c9b416c688ceccc7534a5d97905ed87e0643a15ef572d45c490f8c7": {
+    "elapsed_ms": 164.30518600100186,
+    "error": null,
+    "success": true
+  },
+  "eaba99e1c4681ab94dc4d5bc7fd5cf8af2991510c2ac15a0b740299477ddbb34": {
+    "elapsed_ms": 176.99471100058872,
+    "error": "/tmp/mini_elf_lean_249cnxhw.lean:3:2: error: Type mismatch\n  Or.inr hp\nhas type\n  ?m.14 \u2228 p\nbut is expected to have type\n  r\n/tmp/mini_elf_lean_249cnxhw.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "eb718183bd3084ddc37f307f49b8211e9bd64672d769f86a1099f54676c71bf6": {
+    "elapsed_ms": 166.50602799199987,
+    "error": null,
+    "success": true
+  },
+  "ebb742db88b06a1d73107f86becc20a33c513445f7ca5a6741180398c9743637": {
+    "elapsed_ms": 176.57335700641852,
+    "error": null,
+    "success": true
+  },
+  "ec81aaf52d80b7506f778431250d26f4294db807d74e53440e966976cbd83f0f": {
+    "elapsed_ms": 173.18208800861612,
+    "error": "/tmp/mini_elf_lean_6a1z_vel.lean:2:17: error: Application type mismatch: The argument\n  h1\nhas type\n  p \u2192 q\nbut is expected to have type\n  ?m.3 = ?m.4\nin the application\n  Eq.trans h1\n/tmp/mini_elf_lean_6a1z_vel.lean:2:30: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.7 = ?m.8\nin the application\n  Eq.trans h2",
+    "success": false
+  },
+  "ec9acb41461dd0c7d98b8b2b61b0a8fb94ce4d221937d38d3ddaeca79fed38b7": {
+    "elapsed_ms": 169.4479930010857,
+    "error": "/tmp/mini_elf_lean_9_bq40v5.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `h.mp`",
+    "success": false
+  },
+  "ecbce5b58de1fc74ed06f811dd023a8b08c5b900ae91fda04536356379c85db0": {
+    "elapsed_ms": 169.0298400062602,
+    "error": null,
+    "success": true
+  },
+  "ece5f7878a9a60ee0fcfb178e1e7d456a89a53416c3b07945260233bae85fccc": {
+    "elapsed_ms": 169.06275899964385,
+    "error": null,
+    "success": true
+  },
+  "ed0f21483e42db9fbff359c5ea4fbf2aa68084a53a2b7af7ad2e16277c1681fe": {
+    "elapsed_ms": 171.39911699632648,
+    "error": "/tmp/mini_elf_lean_s1coxxru.lean:2:2: error: Type mismatch\n  id\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  t",
+    "success": false
+  },
+  "ed6cc6b77ff3de6402fcbf7a07bf264f4637beccf6ec4fb0ab2816926033f4ab": {
+    "elapsed_ms": 166.11513000680134,
+    "error": null,
+    "success": true
+  },
+  "ed8447c6953212959cb3225e35a40a404ab4eda5ecf805518926550a5773c35f": {
+    "elapsed_ms": 167.63108099985402,
+    "error": "/tmp/mini_elf_lean_s2gwqv2d.lean:1:58: error: unsolved goals\ncase mp\nq t : Prop\nh1 : q \u2192 t\nh2 : t \u2192 q\n\u22a2 q \u2192 t\n\ncase mpr\nq t : Prop\nh1 : q \u2192 t\nh2 : t \u2192 q\n\u22a2 t \u2192 q",
+    "success": false
+  },
+  "edad91f2aefde04a236502896a7c22ea5e055cd1d9b594f563955d5df8efce09": {
+    "elapsed_ms": 167.43491700617597,
+    "error": "/tmp/mini_elf_lean_idnk5fb8.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_idnk5fb8.lean:1:58: error: unsolved goals\nr s : Prop\nh1 : r \u2192 s\nh2 : s \u2192 r\n\u22a2 r \u2194 s",
+    "success": false
+  },
+  "eddac43975b534c23aa008a5fb9ffee04f2dfbb2bf5fc5d6209a81a95e39e573": {
+    "elapsed_ms": 171.5660210029455,
+    "error": "/tmp/mini_elf_lean_hc2soa3d.lean:2:15: error: unexpected token '|'; expected rcasesPat",
+    "success": false
+  },
+  "ede962fc445e4fa558e765f8a48e532ed73c9c650779416d064e4ea7b8b6fdf3": {
+    "elapsed_ms": 169.8771490046056,
+    "error": null,
+    "success": true
+  },
+  "ee3316e54f1dd6fb5b6b8a69ad7cd47c958c68b11cb22f8cbf2590661a2585af": {
+    "elapsed_ms": 169.11297901242506,
+    "error": null,
+    "success": true
+  },
+  "eed1e6301b8bf35b8d2ade9c89036f78c5f88a9046b47d40eb936ec6dba50022": {
+    "elapsed_ms": 184.91257399728056,
+    "error": "/tmp/mini_elf_lean__8gzjxnz.lean:2:2: error: Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  x \u2227 z",
+    "success": false
+  },
+  "ef2e9d9ad6a406deda1bce39d4eec8a2e65a8d37e2c224bd9eb473c6fa1a0ab6": {
+    "elapsed_ms": 172.52283800917212,
+    "error": null,
+    "success": true
+  },
+  "f1143932b8fc54970c8b55d633ea2fb51a28cafccbab4db99c59ccda7dbb0a1d": {
+    "elapsed_ms": 167.06492500088643,
+    "error": null,
+    "success": true
+  },
+  "f1b2b88d68d92340d8ba564324e801c13fb26fe564af01b9b60cc5c6adf2425b": {
+    "elapsed_ms": 164.66171099455096,
+    "error": null,
+    "success": true
+  },
+  "f1e89402f6e68a03ff6c1a632aa8e37189e794dc05de9ad83856529ed332182a": {
+    "elapsed_ms": 166.04386900144164,
+    "error": null,
+    "success": true
+  },
+  "f2eebe7ae06ece5c68864c43dd4b1b6387b7626b06f33c0d682f2e00b1c65253": {
+    "elapsed_ms": 168.55846799444407,
+    "error": null,
+    "success": true
+  },
+  "f32a4fd50dc76e444242a02b331b12d9567d1b1d9cca90260828e774cd5cd9f2": {
+    "elapsed_ms": 170.3663110092748,
+    "error": null,
+    "success": true
+  },
+  "f3c1832bf4a06d6cb575f270fbfec806bd9f762533eba5243e5f14621c6ab741": {
+    "elapsed_ms": 169.81229600787628,
+    "error": null,
+    "success": true
+  },
+  "f3f8db39f505e86905089aca87ef0bca49f4bd3a9d46480423ddb26e314a5f43": {
+    "elapsed_ms": 173.9782840013504,
+    "error": null,
+    "success": true
+  },
+  "f418733c46bdde7163a092504d971eecf02964a172d68923b2ff1a6461374449": {
+    "elapsed_ms": 169.12758599210065,
+    "error": null,
+    "success": true
+  },
+  "f4b335b598733a9383ec7ae988fdd60944106810bf7c50014a74584cda3d528b": {
+    "elapsed_ms": 166.65648299385794,
+    "error": null,
+    "success": true
+  },
+  "f4cd31639f72258f7c88eac77aec4a112751024285eb3bea7b54bb032fdd187a": {
+    "elapsed_ms": 165.44989599788096,
+    "error": null,
+    "success": true
+  },
+  "f58e158bf48ce2c42945a0cba6edc935796180467fbaf0f530bef51e41e2ec3b": {
+    "elapsed_ms": 173.3903420099523,
+    "error": "/tmp/mini_elf_lean_ss9jtku9.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_ss9jtku9.lean:2:17: error: Application type mismatch: The argument\n  h1\nhas type\n  p \u2192 q\nbut is expected to have type\n  ?m.3 = ?m.4\nin the application\n  Eq.trans h1\n/tmp/mini_elf_lean_ss9jtku9.lean:2:30: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.7 = ?m.8\nin the application\n  Eq.trans h2\n/tmp/mini_elf_lean_ss9jtku9.lean:2:43: error: Application type mismatch: The argument\n  h2\nhas type\n  q \u2192 r\nbut is expected to have type\n  ?m.11 = ?m.12\nin the application\n  Eq.trans h2\n/tmp/mini_elf_lean_ss9jtku9.lean:2:50: error(lean.unknownIdentifier): Unknown identifier `h`",
+    "success": false
+  },
+  "f6735d7b5726150e4bc96920c74c136768a409cc9831fbc64a4def3ea4b40eb2": {
+    "elapsed_ms": 165.25732500304002,
+    "error": null,
+    "success": true
+  },
+  "f6adef07633b9cadd307a5db4805f3cbd274c0d3d8e7cedbf6d72a2d251c6951": {
+    "elapsed_ms": 166.46815800049808,
+    "error": "/tmp/mini_elf_lean_xefw1bhc.lean:3:2: error: Type mismatch\n  Or.inl hq\nhas type\n  (b \u2192 d) \u2228 ?m.15\nbut is expected to have type\n  d",
+    "success": false
+  },
+  "f6c224717917862f6287c3a5d8c058b6447b0b4a7db1a0519a53d962d51e86fc": {
+    "elapsed_ms": 168.082164003863,
+    "error": "/tmp/mini_elf_lean_phkjql4j.lean:3:16: error(lean.unknownIdentifier): Unknown identifier `h`\n/tmp/mini_elf_lean_phkjql4j.lean:1:68: error: unsolved goals\ncase inl\na b d : Prop\nhp\u271d : a \u2192 d\nhq : b \u2192 d\nhp : a\n\u22a2 d\n\ncase inr\na b d : Prop\nhp : a \u2192 d\nhq\u271d : b \u2192 d\nhq : b\n\u22a2 d",
+    "success": false
+  },
+  "f6d2575601f169db2ef6313ccb30915dacff12ba625e9bfa2a8aabd21c23f369": {
+    "elapsed_ms": 167.94829900027253,
+    "error": null,
+    "success": true
+  },
+  "f6df81c95411925092dd6024d1140a49a9ae5b92e74a145ac1efdfa434e964b0": {
+    "elapsed_ms": 170.56986399984453,
+    "error": "/tmp/mini_elf_lean_49t6u3dw.lean:3:2: error: Type mismatch\n  Or.inr h\nhas type\n  ?m.5 \u2228 y\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "f7187d008d75bbf867f16e2815c1a92141c5b8dada2dbe8b937fd7cf7d4cf0f3": {
+    "elapsed_ms": 170.58127399650402,
+    "error": "/tmp/mini_elf_lean_mxdwuwwu.lean:2:3: error: unknown tactic\n/tmp/mini_elf_lean_mxdwuwwu.lean:1:40: error: unsolved goals\nq t : Prop\nh : t\n\u22a2 q \u2228 t",
+    "success": false
+  },
+  "f761eca165af1c7f0427bd4930ab1a627960cf9792bc768450d05d0a82ff144e": {
+    "elapsed_ms": 172.21358999086078,
+    "error": null,
+    "success": true
+  },
+  "f80280e528f6119848924a6542a82de976f791c603c9c59b9cdc43c1fa8231ca": {
+    "elapsed_ms": 170.73622401221655,
+    "error": null,
+    "success": true
+  },
+  "f8f00dbee7b1d402a44c8300d39caab5b73fc44093352724f7cfb1e9cf6d6870": {
+    "elapsed_ms": 171.78786400472745,
+    "error": null,
+    "success": true
+  },
+  "f96db086c1aebd513a37613d408e0d9c1af03d3ce37d0f1601da5aa530f41b76": {
+    "elapsed_ms": 170.49639600736555,
+    "error": null,
+    "success": true
+  },
+  "f9799fb9227924ea5e6b656c4a8ef1b2c5fe2080c53518cd93adff733552d9ec": {
+    "elapsed_ms": 181.73673599085305,
+    "error": null,
+    "success": true
+  },
+  "f98c257a75c1600b63f60a0d6dbc06d6ffe2de911e26786909b031378980daa3": {
+    "elapsed_ms": 169.1884040046716,
+    "error": "/tmp/mini_elf_lean_f47jxgjh.lean:1:61: error: unsolved goals\ncase left\nx y z : Prop\nhp : x\nhq : y\nhr : z\n\u22a2 x\n\ncase right\nx y z : Prop\nhp : x\nhq : y\nhr : z\n\u22a2 z",
+    "success": false
+  },
+  "f9ca0c7ded24071fde1788e7b0116f72cf9ee38842d8b89798a013be0ce2607d": {
+    "elapsed_ms": 165.65928699856158,
+    "error": null,
+    "success": true
+  },
+  "faee75d749d9c941d6fa8f8143e2db592dfd4bf0868b46b05d72d250079a1289": {
+    "elapsed_ms": 173.44290199980605,
+    "error": "/tmp/mini_elf_lean_pjedh6tb.lean:1:44: error: unsolved goals\ncase inr\np r : Prop\nhq : r\n\u22a2 r \u2228 p\n/tmp/mini_elf_lean_pjedh6tb.lean:4:2: error: unexpected token '|'; expected command",
+    "success": false
+  },
+  "fb911a57055a881960e4f4d896e3f6b935a9d9fb3a57bf41a20391221936076f": {
+    "elapsed_ms": 191.84973399387673,
+    "error": null,
+    "success": true
+  },
+  "fc407f70499b8211cf9643da8470b76ecb3ec3371b0e611fc8565215eebe81a2": {
+    "elapsed_ms": 171.7418229964096,
+    "error": null,
+    "success": true
+  },
+  "fc49d14c106265677b98bc70b6028ced811dda795a92563a9fc8673366ba1ff7": {
+    "elapsed_ms": 177.14073100069072,
+    "error": null,
+    "success": true
+  },
+  "fcbb0459dc11d1d365973053635a9f62228b331dea57c0b9624a1cbc2387e746": {
+    "elapsed_ms": 168.663378994097,
+    "error": null,
+    "success": true
+  },
+  "fd4d2cce646d7103e2791d5264a441c4df5cb7ec8089e78b484acc4a12783ed3": {
+    "elapsed_ms": 168.56675100279972,
+    "error": "/tmp/mini_elf_lean_he_qhzvw.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `hpq`",
+    "success": false
+  },
+  "fd4f539bc160da00d43ac2e669921f197643f59e7325afc1152c3b7fc24122de": {
+    "elapsed_ms": 171.04675200243946,
+    "error": null,
+    "success": true
+  },
+  "fdbe2141b7b23beb9550a46791ec231d898450f0a5568ee78298e5cb357b00b6": {
+    "elapsed_ms": 168.57602300297003,
+    "error": null,
+    "success": true
+  },
+  "fe2228000ffb90c542e4a59096d78b40ad44b581788d4481766a16793d1e9140": {
+    "elapsed_ms": 167.82204298942816,
+    "error": null,
+    "success": true
+  },
+  "fe44ab5ed13cc7b2dc669f12299399729506f2430d0cbb5d7283f284ef513fab": {
+    "elapsed_ms": 171.48393699608278,
+    "error": null,
+    "success": true
+  },
+  "fe4a1f670cf389102f7d94a62974b53b515c5c1bcf00563fe9d64826b9e7bd2e": {
+    "elapsed_ms": 170.4477349994704,
+    "error": null,
+    "success": true
+  },
+  "fe9dba62c071f7a07a17f43893eaceff3ec37e4b84f7eed7c7043be9a8b87f8e": {
+    "elapsed_ms": 175.94443800044246,
+    "error": "/tmp/mini_elf_lean_a_hrkbr4.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `i`",
+    "success": false
+  },
+  "fef5b5cb8d77586205b707efc457bc041dd3b2d14b9fbd71536a924bddd8f683": {
+    "elapsed_ms": 173.05303399916738,
+    "error": null,
+    "success": true
+  },
+  "ff56bd4cc0914cfdd5e9e834cd0b7730db7901eaa81b9f7760b005fcee13b7d5": {
+    "elapsed_ms": 167.23018800257705,
+    "error": null,
+    "success": true
+  },
+  "ffb6f7affe82c073336d611e162a0b31b40e7363b6737097fbebd19803334256": {
+    "elapsed_ms": 183.11693199211732,
+    "error": "/tmp/mini_elf_lean_hy0_rxlh.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.inr`",
+    "success": false
+  },
+  "ffc1a1c6cab261fab436970ecbdc4af468bad0446dea3349053b4848016dfff4": {
+    "elapsed_ms": 171.48711399931926,
+    "error": null,
+    "success": true
+  },
+  "ffe001a8a70b7da1fd703590be270e271dbb4813adb81501d57665daf99ec5eb": {
+    "elapsed_ms": 170.93085699889343,
+    "error": null,
+    "success": true
+  }
+}

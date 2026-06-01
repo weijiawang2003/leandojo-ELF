@@ -1,0 +1,1508 @@
+{
+  "models": {
+    "v24": "data/models/token_seq2seq_v24_broad_residual",
+    "v25_aug": "data/models/token_seq2seq_v25_tierc_augmented",
+    "v26_base": "data/models/token_seq2seq_v26_mathlib_specialist_base",
+    "v26_widened": "data/models/token_seq2seq_v26_mathlib_specialist_widened",
+    "v27_base": "data/models/token_seq2seq_v27_base",
+    "v27_widened": "data/models/token_seq2seq_v27_widened",
+    "v27_category_balanced": "data/models/token_seq2seq_v27_category_balanced",
+    "v27_set_heavy": "data/models/token_seq2seq_v27_set_heavy"
+  },
+  "benchmarks": {
+    "v25_heldout": "data/seeds/v25_mathlib_tierc_test_seeds.jsonl",
+    "v26_holdout": "data/processed/v26_mathlib_specialist_splits/theorem_holdout/test_seeds.jsonl",
+    "v27_holdout": "data/processed/v27_mathlib_specialist/theorem_holdout/test_seeds.jsonl"
+  },
+  "verifier": "TrustedMathlibVerifier",
+  "results": {
+    "v24__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.42857142857142855,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.5714285714285714,
+        "MRR": 0.5,
+        "n_no_candidate_verified": 6
+      },
+      "raw": {
+        "pass@1": 0.21428571428571427,
+        "pass@5": 0.5,
+        "pass@10": 0.5714285714285714,
+        "MRR": 0.3435374149659864,
+        "n_no_candidate_verified": 6
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.21428571428571427,
+          "pass@5": 0.5,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.3435374149659864,
+          "n_no_candidate_verified": 6
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.35714285714285715,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.3467120181405896,
+          "n_no_candidate_verified": 6
+        },
+        "learned": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.5,
+          "n_no_candidate_verified": 6
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.37222222222222223,
+          "n_no_candidate_verified": 6
+        },
+        "abstract": {
+          "pass@1": 0.35714285714285715,
+          "pass@5": 0.5,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.41734693877551027,
+          "n_no_candidate_verified": 6
+        },
+        "policy_abstract": {
+          "pass@1": 0.35714285714285715,
+          "pass@5": 0.5,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.43571428571428567,
+          "n_no_candidate_verified": 6
+        }
+      }
+    },
+    "v24__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.2727272727272727,
+        "pass@5": 0.3181818181818182,
+        "pass@10": 0.3181818181818182,
+        "MRR": 0.29545454545454547,
+        "n_no_candidate_verified": 15
+      },
+      "raw": {
+        "pass@1": 0.18181818181818182,
+        "pass@5": 0.2727272727272727,
+        "pass@10": 0.3181818181818182,
+        "MRR": 0.23295454545454544,
+        "n_no_candidate_verified": 15
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.18181818181818182,
+          "pass@5": 0.2727272727272727,
+          "pass@10": 0.3181818181818182,
+          "MRR": 0.23295454545454544,
+          "n_no_candidate_verified": 15
+        },
+        "rule": {
+          "pass@1": 0.18181818181818182,
+          "pass@5": 0.18181818181818182,
+          "pass@10": 0.3181818181818182,
+          "MRR": 0.19848484848484851,
+          "n_no_candidate_verified": 15
+        },
+        "learned": {
+          "pass@1": 0.2727272727272727,
+          "pass@5": 0.3181818181818182,
+          "pass@10": 0.3181818181818182,
+          "MRR": 0.29545454545454547,
+          "n_no_candidate_verified": 15
+        },
+        "policy": {
+          "pass@1": 0.18181818181818182,
+          "pass@5": 0.18181818181818182,
+          "pass@10": 0.3181818181818182,
+          "MRR": 0.19848484848484851,
+          "n_no_candidate_verified": 15
+        },
+        "abstract": {
+          "pass@1": 0.2727272727272727,
+          "pass@5": 0.3181818181818182,
+          "pass@10": 0.3181818181818182,
+          "MRR": 0.29545454545454547,
+          "n_no_candidate_verified": 15
+        },
+        "policy_abstract": {
+          "pass@1": 0.22727272727272727,
+          "pass@5": 0.3181818181818182,
+          "pass@10": 0.3181818181818182,
+          "MRR": 0.2727272727272727,
+          "n_no_candidate_verified": 15
+        }
+      }
+    },
+    "v24__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.2857142857142857,
+        "pass@5": 0.2857142857142857,
+        "pass@10": 0.2857142857142857,
+        "MRR": 0.2857142857142857,
+        "n_no_candidate_verified": 5
+      },
+      "raw": {
+        "pass@1": 0.0,
+        "pass@5": 0.2857142857142857,
+        "pass@10": 0.2857142857142857,
+        "MRR": 0.10714285714285714,
+        "n_no_candidate_verified": 5
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.0,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.2857142857142857,
+          "MRR": 0.10714285714285714,
+          "n_no_candidate_verified": 5
+        },
+        "rule": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.14285714285714285,
+          "pass@10": 0.2857142857142857,
+          "MRR": 0.15873015873015875,
+          "n_no_candidate_verified": 5
+        },
+        "learned": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.2857142857142857,
+          "MRR": 0.2857142857142857,
+          "n_no_candidate_verified": 5
+        },
+        "policy": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.14285714285714285,
+          "pass@10": 0.2857142857142857,
+          "MRR": 0.15873015873015875,
+          "n_no_candidate_verified": 5
+        },
+        "abstract": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.2857142857142857,
+          "MRR": 0.2857142857142857,
+          "n_no_candidate_verified": 5
+        },
+        "policy_abstract": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.2857142857142857,
+          "MRR": 0.2857142857142857,
+          "n_no_candidate_verified": 5
+        }
+      }
+    },
+    "v25_aug__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.6428571428571429,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7857142857142857,
+        "MRR": 0.665079365079365,
+        "n_no_candidate_verified": 3
+      },
+      "raw": {
+        "pass@1": 0.6428571428571429,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7857142857142857,
+        "MRR": 0.665079365079365,
+        "n_no_candidate_verified": 3
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7857142857142857,
+          "MRR": 0.665079365079365,
+          "n_no_candidate_verified": 3
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7857142857142857,
+          "MRR": 0.43698979591836734,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7857142857142857,
+          "MRR": 0.638888888888889,
+          "n_no_candidate_verified": 3
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7857142857142857,
+          "MRR": 0.4250850340136054,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.6428571428571429,
+          "pass@10": 0.7857142857142857,
+          "MRR": 0.518452380952381,
+          "n_no_candidate_verified": 3
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.6428571428571429,
+          "pass@10": 0.7857142857142857,
+          "MRR": 0.5192460317460318,
+          "n_no_candidate_verified": 3
+        }
+      }
+    },
+    "v25_aug__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.45454545454545453,
+        "pass@5": 0.5909090909090909,
+        "pass@10": 0.6363636363636364,
+        "MRR": 0.5126262626262627,
+        "n_no_candidate_verified": 8
+      },
+      "raw": {
+        "pass@1": 0.45454545454545453,
+        "pass@5": 0.5909090909090909,
+        "pass@10": 0.6363636363636364,
+        "MRR": 0.5126262626262627,
+        "n_no_candidate_verified": 8
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.6363636363636364,
+          "MRR": 0.5126262626262627,
+          "n_no_candidate_verified": 8
+        },
+        "rule": {
+          "pass@1": 0.3181818181818182,
+          "pass@5": 0.5,
+          "pass@10": 0.6363636363636364,
+          "MRR": 0.41489898989898993,
+          "n_no_candidate_verified": 8
+        },
+        "learned": {
+          "pass@1": 0.4090909090909091,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.6363636363636364,
+          "MRR": 0.480050505050505,
+          "n_no_candidate_verified": 8
+        },
+        "policy": {
+          "pass@1": 0.3181818181818182,
+          "pass@5": 0.5,
+          "pass@10": 0.6363636363636364,
+          "MRR": 0.41489898989898993,
+          "n_no_candidate_verified": 8
+        },
+        "abstract": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.6363636363636364,
+          "MRR": 0.5202020202020202,
+          "n_no_candidate_verified": 8
+        },
+        "policy_abstract": {
+          "pass@1": 0.4090909090909091,
+          "pass@5": 0.5454545454545454,
+          "pass@10": 0.6363636363636364,
+          "MRR": 0.48042929292929293,
+          "n_no_candidate_verified": 8
+        }
+      }
+    },
+    "v25_aug__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.2857142857142857,
+        "pass@5": 0.42857142857142855,
+        "pass@10": 0.42857142857142855,
+        "MRR": 0.3333333333333333,
+        "n_no_candidate_verified": 4
+      },
+      "raw": {
+        "pass@1": 0.2857142857142857,
+        "pass@5": 0.42857142857142855,
+        "pass@10": 0.42857142857142855,
+        "MRR": 0.3333333333333333,
+        "n_no_candidate_verified": 4
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.42857142857142855,
+          "MRR": 0.3333333333333333,
+          "n_no_candidate_verified": 4
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.42857142857142855,
+          "MRR": 0.30158730158730157,
+          "n_no_candidate_verified": 4
+        },
+        "learned": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.42857142857142855,
+          "MRR": 0.25,
+          "n_no_candidate_verified": 4
+        },
+        "policy": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.42857142857142855,
+          "MRR": 0.19444444444444445,
+          "n_no_candidate_verified": 4
+        },
+        "abstract": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.42857142857142855,
+          "MRR": 0.35714285714285715,
+          "n_no_candidate_verified": 4
+        },
+        "policy_abstract": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.42857142857142855,
+          "MRR": 0.35714285714285715,
+          "n_no_candidate_verified": 4
+        }
+      }
+    },
+    "v26_base__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.8571428571428571,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.8928571428571429,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.7857142857142857,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.8357142857142856,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8357142857142856,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8015873015873015,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8928571428571429,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8293650793650793,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7880952380952381,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7880952380952381,
+          "n_no_candidate_verified": 1
+        }
+      }
+    },
+    "v26_base__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.9090909090909091,
+        "MRR": 0.6787878787878788,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.5909090909090909,
+        "pass@5": 0.7272727272727273,
+        "pass@10": 0.9090909090909091,
+        "MRR": 0.6739177489177488,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.6739177489177488,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.5,
+          "pass@5": 0.6363636363636364,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.5736111111111111,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.8181818181818182,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.7242424242424242,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.5,
+          "pass@5": 0.6363636363636364,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.5736111111111111,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.6787878787878788,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.6072510822510823,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v26_base__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.42857142857142855,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.5714285714285714,
+        "MRR": 0.5,
+        "n_no_candidate_verified": 3
+      },
+      "raw": {
+        "pass@1": 0.2857142857142857,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.5714285714285714,
+        "MRR": 0.42857142857142855,
+        "n_no_candidate_verified": 3
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.42857142857142855,
+          "n_no_candidate_verified": 3
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.3178571428571429,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.5,
+          "n_no_candidate_verified": 3
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.3178571428571429,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.5,
+          "n_no_candidate_verified": 3
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.5714285714285714,
+          "MRR": 0.5,
+          "n_no_candidate_verified": 3
+        }
+      }
+    },
+    "v26_widened__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.9285714285714286,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.9285714285714286,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.8571428571428571,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.8928571428571429,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.8571428571428571,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8928571428571429,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.744047619047619,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.9285714285714286,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.9285714285714286,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8035714285714286,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7857142857142857,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7642857142857142,
+          "n_no_candidate_verified": 1
+        }
+      }
+    },
+    "v26_widened__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.7727272727272727,
+        "pass@5": 0.9090909090909091,
+        "pass@10": 0.9090909090909091,
+        "MRR": 0.8257575757575758,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.6363636363636364,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.9090909090909091,
+        "MRR": 0.7564935064935064,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.7564935064935064,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.4090909090909091,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.5325036075036075,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.7727272727272727,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.8257575757575758,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.4090909090909091,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.5325036075036075,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.7651515151515151,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.6265151515151515,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v26_widened__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.6428571428571429,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.5873015873015872,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5873015873015872,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.3346938775510204,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5873015873015872,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.336281179138322,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6428571428571429,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.4571428571428572,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v27_base__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.7857142857142857,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.8452380952380951,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.7142857142857143,
+        "pass@5": 0.8571428571428571,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.7757936507936508,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7757936507936508,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.6859977324263038,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8293650793650793,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7502834467120181,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8452380952380951,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7976190476190476,
+          "n_no_candidate_verified": 1
+        }
+      }
+    },
+    "v27_base__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "policy_abstract",
+      "best": {
+        "pass@1": 0.4090909090909091,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.8636363636363636,
+        "MRR": 0.5886363636363636,
+        "n_no_candidate_verified": 3
+      },
+      "raw": {
+        "pass@1": 0.6363636363636364,
+        "pass@5": 0.8181818181818182,
+        "pass@10": 0.8636363636363636,
+        "MRR": 0.7079545454545454,
+        "n_no_candidate_verified": 3
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.8181818181818182,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.7079545454545454,
+          "n_no_candidate_verified": 3
+        },
+        "rule": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.6363636363636364,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.5574494949494949,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.7272727272727273,
+          "pass@5": 0.8181818181818182,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.7647727272727273,
+          "n_no_candidate_verified": 3
+        },
+        "policy": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.6363636363636364,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.5574494949494949,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.8181818181818182,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.6325757575757576,
+          "n_no_candidate_verified": 3
+        },
+        "policy_abstract": {
+          "pass@1": 0.4090909090909091,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.5886363636363636,
+          "n_no_candidate_verified": 3
+        }
+      }
+    },
+    "v27_base__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.6428571428571429,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.2857142857142857,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.4166666666666667,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.4166666666666667,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.33015873015873015,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.0,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.25873015873015875,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6428571428571429,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6428571428571429,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v27_widened__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.7202380952380952,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.8571428571428571,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.6829365079365078,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.6829365079365078,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.651077097505669,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7936507936507936,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.6788548752834468,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7202380952380952,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7053571428571429,
+          "n_no_candidate_verified": 1
+        }
+      }
+    },
+    "v27_widened__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5909090909090909,
+        "pass@5": 0.9090909090909091,
+        "pass@10": 0.9090909090909091,
+        "MRR": 0.7424242424242423,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.5454545454545454,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.9090909090909091,
+        "MRR": 0.6898268398268398,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5454545454545454,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.6898268398268398,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.5555375180375179,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.7489177489177489,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.5909090909090909,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.5555375180375179,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.7424242424242423,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.4090909090909091,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9090909090909091,
+          "MRR": 0.618939393939394,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v27_widened__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.6428571428571429,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.42857142857142855,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.48214285714285715,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.48214285714285715,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.33531746031746035,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.44642857142857145,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.3174603174603175,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6428571428571429,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5476190476190476,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v27_category_balanced__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.7857142857142857,
+        "pass@5": 1.0,
+        "pass@10": 1.0,
+        "MRR": 0.8690476190476192,
+        "n_no_candidate_verified": 0
+      },
+      "raw": {
+        "pass@1": 0.6428571428571429,
+        "pass@5": 0.8571428571428571,
+        "pass@10": 1.0,
+        "MRR": 0.7523809523809524,
+        "n_no_candidate_verified": 0
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 1.0,
+          "MRR": 0.7523809523809524,
+          "n_no_candidate_verified": 0
+        },
+        "rule": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 1.0,
+          "MRR": 0.7611111111111111,
+          "n_no_candidate_verified": 0
+        },
+        "learned": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8690476190476192,
+          "n_no_candidate_verified": 0
+        },
+        "policy": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 1.0,
+          "MRR": 0.7777777777777778,
+          "n_no_candidate_verified": 0
+        },
+        "abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 1.0,
+          "pass@10": 1.0,
+          "MRR": 0.8928571428571429,
+          "n_no_candidate_verified": 0
+        },
+        "policy_abstract": {
+          "pass@1": 0.7857142857142857,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 1.0,
+          "MRR": 0.869047619047619,
+          "n_no_candidate_verified": 0
+        }
+      }
+    },
+    "v27_category_balanced__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.7272727272727273,
+        "pass@5": 0.8636363636363636,
+        "pass@10": 0.8636363636363636,
+        "MRR": 0.7954545454545454,
+        "n_no_candidate_verified": 3
+      },
+      "raw": {
+        "pass@1": 0.6363636363636364,
+        "pass@5": 0.7727272727272727,
+        "pass@10": 0.8636363636363636,
+        "MRR": 0.6946969696969696,
+        "n_no_candidate_verified": 3
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6363636363636364,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.6946969696969696,
+          "n_no_candidate_verified": 3
+        },
+        "rule": {
+          "pass@1": 0.5,
+          "pass@5": 0.6363636363636364,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.5666666666666667,
+          "n_no_candidate_verified": 3
+        },
+        "learned": {
+          "pass@1": 0.7272727272727273,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.7954545454545454,
+          "n_no_candidate_verified": 3
+        },
+        "policy": {
+          "pass@1": 0.5,
+          "pass@5": 0.6363636363636364,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.5666666666666667,
+          "n_no_candidate_verified": 3
+        },
+        "abstract": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.8636363636363636,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.7083333333333334,
+          "n_no_candidate_verified": 3
+        },
+        "policy_abstract": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.7727272727272727,
+          "pass@10": 0.8636363636363636,
+          "MRR": 0.6064935064935064,
+          "n_no_candidate_verified": 3
+        }
+      }
+    },
+    "v27_category_balanced__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.6428571428571429,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.5714285714285714,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.5892857142857143,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5892857142857143,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.3396825396825397,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.5714285714285714,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5178571428571429,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.42857142857142855,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.3873015873015873,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6428571428571429,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5714285714285714,
+          "n_no_candidate_verified": 2
+        }
+      }
+    },
+    "v27_set_heavy__v25_heldout": {
+      "n_test_theorems": 14,
+      "best_config": "abstract",
+      "best": {
+        "pass@1": 0.7142857142857143,
+        "pass@5": 0.9285714285714286,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.8214285714285714,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.6428571428571429,
+        "pass@5": 0.8571428571428571,
+        "pass@10": 0.9285714285714286,
+        "MRR": 0.7363945578231291,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7363945578231291,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.765079365079365,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7840136054421769,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.7857142857142857,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.768140589569161,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.7142857142857143,
+          "pass@5": 0.9285714285714286,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.8214285714285714,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.6428571428571429,
+          "pass@5": 0.8571428571428571,
+          "pass@10": 0.9285714285714286,
+          "MRR": 0.7619047619047619,
+          "n_no_candidate_verified": 1
+        }
+      }
+    },
+    "v27_set_heavy__v26_holdout": {
+      "n_test_theorems": 22,
+      "best_config": "learned",
+      "best": {
+        "pass@1": 0.8636363636363636,
+        "pass@5": 0.9545454545454546,
+        "pass@10": 0.9545454545454546,
+        "MRR": 0.9090909090909091,
+        "n_no_candidate_verified": 1
+      },
+      "raw": {
+        "pass@1": 0.8181818181818182,
+        "pass@5": 0.9545454545454546,
+        "pass@10": 0.9545454545454546,
+        "MRR": 0.8598484848484849,
+        "n_no_candidate_verified": 1
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.8181818181818182,
+          "pass@5": 0.9545454545454546,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.8598484848484849,
+          "n_no_candidate_verified": 1
+        },
+        "rule": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.6650252525252524,
+          "n_no_candidate_verified": 1
+        },
+        "learned": {
+          "pass@1": 0.8636363636363636,
+          "pass@5": 0.9545454545454546,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.9090909090909091,
+          "n_no_candidate_verified": 1
+        },
+        "policy": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.7272727272727273,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.6650252525252524,
+          "n_no_candidate_verified": 1
+        },
+        "abstract": {
+          "pass@1": 0.5909090909090909,
+          "pass@5": 0.9545454545454546,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.7651515151515151,
+          "n_no_candidate_verified": 1
+        },
+        "policy_abstract": {
+          "pass@1": 0.45454545454545453,
+          "pass@5": 0.9090909090909091,
+          "pass@10": 0.9545454545454546,
+          "MRR": 0.6704545454545454,
+          "n_no_candidate_verified": 1
+        }
+      }
+    },
+    "v27_set_heavy__v27_holdout": {
+      "n_test_theorems": 7,
+      "best_config": "raw",
+      "best": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.6190476190476192,
+        "n_no_candidate_verified": 2
+      },
+      "raw": {
+        "pass@1": 0.5714285714285714,
+        "pass@5": 0.7142857142857143,
+        "pass@10": 0.7142857142857143,
+        "MRR": 0.6190476190476192,
+        "n_no_candidate_verified": 2
+      },
+      "by_config": {
+        "raw": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6190476190476192,
+          "n_no_candidate_verified": 2
+        },
+        "rule": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.336281179138322,
+          "n_no_candidate_verified": 2
+        },
+        "learned": {
+          "pass@1": 0.2857142857142857,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.47619047619047616,
+          "n_no_candidate_verified": 2
+        },
+        "policy": {
+          "pass@1": 0.14285714285714285,
+          "pass@5": 0.2857142857142857,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.26485260770975055,
+          "n_no_candidate_verified": 2
+        },
+        "abstract": {
+          "pass@1": 0.5714285714285714,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.6428571428571429,
+          "n_no_candidate_verified": 2
+        },
+        "policy_abstract": {
+          "pass@1": 0.42857142857142855,
+          "pass@5": 0.7142857142857143,
+          "pass@10": 0.7142857142857143,
+          "MRR": 0.5714285714285714,
+          "n_no_candidate_verified": 2
+        }
+      }
+    }
+  }
+}

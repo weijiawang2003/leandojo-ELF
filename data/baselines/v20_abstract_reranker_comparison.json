@@ -1,0 +1,358 @@
+{
+  "configs": {
+    "raw": {
+      "pass@1": 0.3958333333333333,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6875,
+      "MRR": 0.5045138888888888,
+      "unknown_identifier": 77,
+      "n_malformed_top1": 1,
+      "per_category_pass5": {
+        "implication": 0.667,
+        "conjunction": 0.833,
+        "disjunction": 0.6,
+        "negation": 0.8,
+        "equality_rewrite": 1.0,
+        "exists": 0.0,
+        "forall": 0.0,
+        "nat_succ": 0.6,
+        "bool": 1.0,
+        "list": 0.8
+      }
+    },
+    "policy": {
+      "pass@1": 0.4375,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6875,
+      "MRR": 0.5121527777777777,
+      "unknown_identifier": 77,
+      "n_malformed_top1": 2,
+      "per_category_pass5": {
+        "implication": 0.667,
+        "conjunction": 0.833,
+        "disjunction": 0.6,
+        "negation": 0.8,
+        "equality_rewrite": 1.0,
+        "exists": 0.0,
+        "forall": 0.0,
+        "nat_succ": 0.6,
+        "bool": 1.0,
+        "list": 0.8
+      }
+    },
+    "abstract": {
+      "pass@1": 0.5625,
+      "pass@5": 0.6875,
+      "pass@10": 0.6875,
+      "MRR": 0.6055555555555555,
+      "unknown_identifier": 77,
+      "n_malformed_top1": 1,
+      "per_category_pass5": {
+        "implication": 0.667,
+        "conjunction": 0.833,
+        "disjunction": 0.6,
+        "negation": 0.8,
+        "equality_rewrite": 1.0,
+        "exists": 0.25,
+        "forall": 0.0,
+        "nat_succ": 0.6,
+        "bool": 1.0,
+        "list": 0.8
+      }
+    },
+    "policy_abstract": {
+      "pass@1": 0.5625,
+      "pass@5": 0.6875,
+      "pass@10": 0.6875,
+      "MRR": 0.6090277777777778,
+      "unknown_identifier": 77,
+      "n_malformed_top1": 1,
+      "per_category_pass5": {
+        "implication": 0.667,
+        "conjunction": 0.833,
+        "disjunction": 0.6,
+        "negation": 0.8,
+        "equality_rewrite": 1.0,
+        "exists": 0.25,
+        "forall": 0.0,
+        "nat_succ": 0.6,
+        "bool": 1.0,
+        "list": 0.8
+      }
+    }
+  },
+  "reorder_summary": {
+    "moved_up": 11,
+    "moved_down": 3,
+    "unchanged": 19
+  },
+  "reorder_trace": [
+    {
+      "theorem_name": "v18_imp_intro_basic",
+      "category": "implication",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact fun _ => hp"
+    },
+    {
+      "theorem_name": "v18_imp_chain",
+      "category": "implication",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 2,
+      "delta": 1,
+      "abstract_top1": "exact hpq hp"
+    },
+    {
+      "theorem_name": "v18_imp_swap_args",
+      "category": "implication",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact h hp hq"
+    },
+    {
+      "theorem_name": "v18_imp_arrow_arrow",
+      "category": "implication",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact h hpq"
+    },
+    {
+      "theorem_name": "v18_and_intro",
+      "category": "conjunction",
+      "raw_first_rank": 3,
+      "abstract_first_rank": 2,
+      "delta": -1,
+      "abstract_top1": "exact And.intro hp hq"
+    },
+    {
+      "theorem_name": "v18_and_left",
+      "category": "conjunction",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 0,
+      "delta": -1,
+      "abstract_top1": "exact h.1"
+    },
+    {
+      "theorem_name": "v18_and_right",
+      "category": "conjunction",
+      "raw_first_rank": 3,
+      "abstract_first_rank": 1,
+      "delta": -2,
+      "abstract_top1": "exact h.1"
+    },
+    {
+      "theorem_name": "v18_and_swap",
+      "category": "conjunction",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact ⟨h.2, h.1⟩"
+    },
+    {
+      "theorem_name": "v18_and_proj_3rd",
+      "category": "conjunction",
+      "raw_first_rank": 4,
+      "abstract_first_rank": 4,
+      "delta": 0,
+      "abstract_top1": "exact h.1.2"
+    },
+    {
+      "theorem_name": "v18_or_inl",
+      "category": "disjunction",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 0,
+      "delta": -1,
+      "abstract_top1": "exact Or.inl hp"
+    },
+    {
+      "theorem_name": "v18_or_swap",
+      "category": "disjunction",
+      "raw_first_rank": 3,
+      "abstract_first_rank": 4,
+      "delta": 1,
+      "abstract_top1": "cases h with\n  | inl hp => exact Or.inl hq"
+    },
+    {
+      "theorem_name": "v18_or_constant",
+      "category": "disjunction",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "cases h with\n  | inl hp => exact hp\n  | inr hp => exact hp"
+    },
+    {
+      "theorem_name": "v18_neg_not_intro",
+      "category": "negation",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 0,
+      "delta": -1,
+      "abstract_top1": "intro hp\n  exact absurd hp h"
+    },
+    {
+      "theorem_name": "v18_neg_absurd",
+      "category": "negation",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact absurd hp hnp"
+    },
+    {
+      "theorem_name": "v18_neg_double_in",
+      "category": "negation",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 1,
+      "delta": 1,
+      "abstract_top1": "exact fun hp => absurd hp"
+    },
+    {
+      "theorem_name": "v18_neg_modus_tollens",
+      "category": "negation",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact fun hp => hnq (h hp)"
+    },
+    {
+      "theorem_name": "v18_eq_refl_nat",
+      "category": "equality_rewrite",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_eq_symm",
+      "category": "equality_rewrite",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "rw [h]"
+    },
+    {
+      "theorem_name": "v18_eq_trans",
+      "category": "equality_rewrite",
+      "raw_first_rank": 2,
+      "abstract_first_rank": 0,
+      "delta": -2,
+      "abstract_top1": "exact Eq.trans h1 h2"
+    },
+    {
+      "theorem_name": "v18_eq_subst_lhs",
+      "category": "equality_rewrite",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "rw [h]"
+    },
+    {
+      "theorem_name": "v18_eq_subst_rhs",
+      "category": "equality_rewrite",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "rw [h]"
+    },
+    {
+      "theorem_name": "v18_eq_double_apply",
+      "category": "equality_rewrite",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "rw [h]"
+    },
+    {
+      "theorem_name": "v18_exists_intro_eq",
+      "category": "exists",
+      "raw_first_rank": 9,
+      "abstract_first_rank": 0,
+      "delta": -9,
+      "abstract_top1": "refine ⟨n, ?_⟩\n  rfl"
+    },
+    {
+      "theorem_name": "v18_nat_succ_unfold",
+      "category": "nat_succ",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_nat_add_zero",
+      "category": "nat_succ",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_nat_add_one_eq_succ",
+      "category": "nat_succ",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_bool_true_or_false",
+      "category": "bool",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "cases b <;> simp"
+    },
+    {
+      "theorem_name": "v18_bool_and_left",
+      "category": "bool",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "simpa using h"
+    },
+    {
+      "theorem_name": "v18_bool_not_not",
+      "category": "bool",
+      "raw_first_rank": 0,
+      "abstract_first_rank": 0,
+      "delta": 0,
+      "abstract_top1": "cases b\n  · rfl\n  · rfl"
+    },
+    {
+      "theorem_name": "v18_list_nil_append",
+      "category": "list",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 0,
+      "delta": -1,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_list_length_cons",
+      "category": "list",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 0,
+      "delta": -1,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_list_singleton_len",
+      "category": "list",
+      "raw_first_rank": 2,
+      "abstract_first_rank": 0,
+      "delta": -2,
+      "abstract_top1": "exact rfl"
+    },
+    {
+      "theorem_name": "v18_list_head_some",
+      "category": "list",
+      "raw_first_rank": 1,
+      "abstract_first_rank": 0,
+      "delta": -1,
+      "abstract_top1": "exact rfl"
+    }
+  ],
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "reranker_emits_placeholders": false
+}

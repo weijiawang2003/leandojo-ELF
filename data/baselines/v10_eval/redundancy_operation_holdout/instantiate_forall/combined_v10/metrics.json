@@ -1,0 +1,42 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/instantiate_forall",
+  "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+  "n_test_theorems": 3,
+  "n_train_rows": 29,
+  "n_train_theorems": 29,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 1.0,
+  "pass@5": 1.0,
+  "pass@10": 1.0,
+  "total_verified_candidates": 3,
+  "novel_verified": 3,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 3,
+  "per_family": {
+    "nat_eq_3": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat_eq_7": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat_le_5": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "per_operation": {
+    "instantiate_forall": {
+      "n": 3,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "elapsed_seconds": 6.540678394987481
+}

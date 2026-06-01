@@ -1,0 +1,358 @@
+{
+  "config": "v29_density_law",
+  "density_contrast_same_model": {
+    "family_density_holdout": {
+      "pass@1": 0.5588235294117647,
+      "pass@5": 0.7941176470588235,
+      "pass@10": 0.8235294117647058,
+      "n": 34,
+      "mean_family_train_density": 6.53
+    },
+    "low_density_holdout": {
+      "pass@1": 0.8461538461538461,
+      "pass@5": 1.0,
+      "pass@10": 1.0,
+      "n": 13,
+      "mean_family_train_density": 0.92
+    }
+  },
+  "confound_note": "family_density_holdout = hard lemma-binding families (set/finset projection/subset/membership); low_density_holdout = universal-tactic (simp/omega/rfl/tauto) families that are density-insensitive. The honest density signal is the SAME hard families at density~6 vs density 0 below.",
+  "clean_density_effect_hard_families": {
+    "density_~6_family_density_holdout": {
+      "pass@10": 0.7,
+      "n": 20
+    },
+    "density_0_set_transfer": {
+      "pass@10": 0.2632,
+      "n": 38
+    },
+    "density_0_finset_transfer": {
+      "pass@10": 0.1622,
+      "n": 37
+    },
+    "interpretation": "same hard lemma-binding families: held-out success rises sharply with training siblings (density 0 -> ~6)"
+  },
+  "density_law_pertheorem": {
+    "0": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "1-3": {
+      "n": 15,
+      "pass@10": 1.0
+    },
+    "10+": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "4-6": {
+      "n": 10,
+      "pass@10": 0.8
+    },
+    "7-10": {
+      "n": 16,
+      "pass@10": 0.75
+    }
+  },
+  "density_law_pertheorem_hard_only": {
+    "1-3": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "10+": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "4-6": {
+      "n": 10,
+      "pass@10": 0.8
+    },
+    "7-10": {
+      "n": 8,
+      "pass@10": 0.5
+    }
+  },
+  "min_siblings_for_0.9": "~4 (effective-density 4-6 bin reaches 0.94 in Part 1)",
+  "config_x_bench_pass10": {
+    "v27_widened": {
+      "v25_heldout": 0.9285714285714286,
+      "v26_holdout": 0.9090909090909091,
+      "v27_holdout": 0.7142857142857143,
+      "v28_holdout": 0.6333333333333333,
+      "v29_holdout": 0.25,
+      "family_density_holdout": 0.38235294117647056,
+      "low_density_holdout": 0.38461538461538464
+    },
+    "v28_general": {
+      "v25_heldout": 1.0,
+      "v26_holdout": 0.9545454545454546,
+      "v27_holdout": 0.8571428571428571,
+      "v28_holdout": 0.8666666666666667,
+      "v29_holdout": 0.45,
+      "family_density_holdout": 0.4411764705882353,
+      "low_density_holdout": 0.7692307692307693
+    },
+    "v29_general": {
+      "v25_heldout": 0.8571428571428571,
+      "v26_holdout": 1.0,
+      "v27_holdout": 0.8571428571428571,
+      "v28_holdout": 0.9333333333333333,
+      "v29_holdout": 1.0,
+      "family_density_holdout": 0.8235294117647058,
+      "low_density_holdout": 1.0
+    },
+    "v29_v28best_plus": {
+      "v25_heldout": 0.8571428571428571,
+      "v26_holdout": 1.0,
+      "v27_holdout": 0.8571428571428571,
+      "v28_holdout": 0.9333333333333333,
+      "v29_holdout": 1.0,
+      "family_density_holdout": 0.8235294117647058,
+      "low_density_holdout": 1.0
+    },
+    "v29_set_finset_order_heavy": {
+      "v25_heldout": 0.8571428571428571,
+      "v26_holdout": 1.0,
+      "v27_holdout": 1.0,
+      "v28_holdout": 0.9666666666666667,
+      "v29_holdout": 1.0,
+      "family_density_holdout": 0.8529411764705882,
+      "low_density_holdout": 1.0
+    },
+    "v29_category_balanced": {
+      "v25_heldout": 0.8571428571428571,
+      "v26_holdout": 1.0,
+      "v27_holdout": 1.0,
+      "v28_holdout": 0.9,
+      "v29_holdout": 0.9,
+      "family_density_holdout": 0.7647058823529411,
+      "low_density_holdout": 0.9230769230769231
+    },
+    "v29_function_order": {
+      "v25_heldout": 0.9285714285714286,
+      "v26_holdout": 0.9545454545454546,
+      "v27_holdout": 0.8571428571428571,
+      "v28_holdout": 0.9333333333333333,
+      "v29_holdout": 1.0,
+      "family_density_holdout": 0.7647058823529411,
+      "low_density_holdout": 1.0
+    }
+  },
+  "heavy_vs_general_per_category": {
+    "v28_holdout": {
+      "set": {
+        "general": 1.0,
+        "heavy": 1.0
+      },
+      "finset": {
+        "general": 0.8333333333333334,
+        "heavy": 0.8333333333333334
+      },
+      "order": {
+        "general": 0.8888888888888888,
+        "heavy": 1.0
+      }
+    },
+    "v29_holdout": {
+      "set": {
+        "general": 1.0,
+        "heavy": 1.0
+      },
+      "finset": {
+        "general": 1.0,
+        "heavy": 1.0
+      },
+      "order": {
+        "general": 1.0,
+        "heavy": 1.0
+      }
+    },
+    "family_density_holdout": {
+      "set": {
+        "general": 0.6,
+        "heavy": 0.7
+      },
+      "finset": {
+        "general": 0.8,
+        "heavy": 0.8
+      },
+      "order": {
+        "general": 1.0,
+        "heavy": 1.0
+      }
+    }
+  },
+  "balancing_negative_control": {
+    "v25_heldout": {
+      "general": 0.8571428571428571,
+      "balanced": 0.8571428571428571
+    },
+    "v26_holdout": {
+      "general": 1.0,
+      "balanced": 1.0
+    },
+    "v27_holdout": {
+      "general": 0.8571428571428571,
+      "balanced": 1.0
+    },
+    "v28_holdout": {
+      "general": 0.9333333333333333,
+      "balanced": 0.9
+    },
+    "v29_holdout": {
+      "general": 1.0,
+      "balanced": 0.9
+    },
+    "family_density_holdout": {
+      "general": 0.8235294117647058,
+      "balanced": 0.7647058823529411
+    },
+    "low_density_holdout": {
+      "general": 1.0,
+      "balanced": 0.9230769230769231
+    }
+  },
+  "whole_category_transfer": {
+    "set": {
+      "v28": 0.23684210526315788,
+      "v29": 0.2916666666666667
+    },
+    "finset": {
+      "v28": 0.3333333333333333,
+      "v29": 0.13636363636363635
+    },
+    "order": {
+      "v28": 0.7777777777777778,
+      "v29": 0.5555555555555556
+    }
+  },
+  "v29_residual_buckets": {
+    "syntax/parse": 2,
+    "lemma_vocabulary": 6
+  },
+  "v29_residuals": [
+    {
+      "bench": "v28_holdout",
+      "theorem": "v28_fs_empty_subset",
+      "bucket": "syntax/parse"
+    },
+    {
+      "bench": "v28_holdout",
+      "theorem": "v28_ord_le_refl_pre_1",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_fs_mem_inter_right_3",
+      "bucket": "syntax/parse"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_fs_mem_union_right_3",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_inter_left_3",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_inter_right_3",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_union_of_left_3",
+      "bucket": "lemma_vocabulary"
+    },
+    {
+      "bench": "family_density_holdout",
+      "theorem": "v29_set_mem_union_of_right_3",
+      "bucket": "lemma_vocabulary"
+    }
+  ],
+  "wall_diagnosis": {
+    "n_residuals": 8,
+    "multi_step_planning_bound": 0,
+    "leandojo_next_state_relevant": false,
+    "note": "residuals still dominated by vocab/shape -> DATA/coverage regime; LeanDojo next-state premature"
+  },
+  "corpus_density_by_category": {
+    "bool_option": {
+      "n_families": 16,
+      "avg_family_density": 1.0,
+      "n_heldout": 2,
+      "heldout_pass@10": 1.0
+    },
+    "finset": {
+      "n_families": 9,
+      "avg_family_density": 2.67,
+      "n_heldout": 18,
+      "heldout_pass@10": 0.4444
+    },
+    "function": {
+      "n_families": 9,
+      "avg_family_density": 1.78,
+      "n_heldout": 2,
+      "heldout_pass@10": 0.5
+    },
+    "list": {
+      "n_families": 22,
+      "avg_family_density": 1.14,
+      "n_heldout": 5,
+      "heldout_pass@10": 1.0
+    },
+    "logic": {
+      "n_families": 25,
+      "avg_family_density": 1.32,
+      "n_heldout": 5,
+      "heldout_pass@10": 1.0
+    },
+    "nat": {
+      "n_families": 29,
+      "avg_family_density": 1.31,
+      "n_heldout": 8,
+      "heldout_pass@10": 1.0
+    },
+    "order": {
+      "n_families": 15,
+      "avg_family_density": 3.13,
+      "n_heldout": 29,
+      "heldout_pass@10": 0.8276
+    },
+    "set": {
+      "n_families": 56,
+      "avg_family_density": 1.84,
+      "n_heldout": 43,
+      "heldout_pass@10": 0.4884
+    }
+  },
+  "corpus_effective_density_law": {
+    "0": {
+      "n_heldout": 395,
+      "heldout_success": 270,
+      "pass@10": 0.6835
+    },
+    "1-3": {
+      "n_heldout": 76,
+      "heldout_success": 63,
+      "pass@10": 0.8289
+    },
+    "4-6": {
+      "n_heldout": 36,
+      "heldout_success": 34,
+      "pass@10": 0.9444
+    },
+    "7-10": {
+      "n_heldout": 0,
+      "heldout_success": 0,
+      "pass@10": null
+    },
+    "10+": {
+      "n_heldout": 0,
+      "heldout_success": 0,
+      "pass@10": null
+    }
+  }
+}

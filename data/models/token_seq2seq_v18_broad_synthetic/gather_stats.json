@@ -1,0 +1,8 @@
+{
+  "n_v11_lofo": 3560,
+  "n_v16_corpus": 287,
+  "n_v17_corpus": 137,
+  "dropped_by_name_guard": 0,
+  "dropped_by_triple_guard": 15,
+  "dropped_by_dedup": 2818
+}

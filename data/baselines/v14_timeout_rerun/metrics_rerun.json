@@ -1,0 +1,193 @@
+{
+  "forall_inst": {
+    "literal_adapt_rerank": {
+      "n": 7,
+      "pass@1_original_lower_bound": 0.7142857142857143,
+      "pass@5_original_lower_bound": 0.7142857142857143,
+      "pass@10_original_lower_bound": 0.7142857142857143,
+      "pass@1_warm_rerun": 1.0,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "forall_inst_3_0",
+          "config": "literal_adapt_rerank",
+          "family": "forall_inst",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "forall_inst_var_k",
+          "config": "literal_adapt_rerank",
+          "family": "forall_inst",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        }
+      ]
+    },
+    "raw": {
+      "n": 7,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.2857142857142857,
+      "pass@10_original_lower_bound": 0.2857142857142857,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.2857142857142857,
+      "pass@10_warm_rerun": 0.2857142857142857,
+      "row_flips": []
+    }
+  },
+  "rewrite_succ": {
+    "literal_adapt_rerank": {
+      "n": 20,
+      "pass@1_original_lower_bound": 0.8,
+      "pass@5_original_lower_bound": 1.0,
+      "pass@10_original_lower_bound": 1.0,
+      "pass@1_warm_rerun": 0.8,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": []
+    },
+    "raw": {
+      "n": 20,
+      "pass@1_original_lower_bound": 0.6,
+      "pass@5_original_lower_bound": 1.0,
+      "pass@10_original_lower_bound": 1.0,
+      "pass@1_warm_rerun": 0.6,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": []
+    }
+  },
+  "neg_exfalso": {
+    "literal_adapt_rerank": {
+      "n": 32,
+      "pass@1_original_lower_bound": 0.625,
+      "pass@5_original_lower_bound": 0.625,
+      "pass@10_original_lower_bound": 0.625,
+      "pass@1_warm_rerun": 0.625,
+      "pass@5_warm_rerun": 0.625,
+      "pass@10_warm_rerun": 0.625,
+      "row_flips": []
+    },
+    "raw": {
+      "n": 32,
+      "pass@1_original_lower_bound": 0.625,
+      "pass@5_original_lower_bound": 0.625,
+      "pass@10_original_lower_bound": 0.625,
+      "pass@1_warm_rerun": 0.625,
+      "pass@5_warm_rerun": 0.625,
+      "pass@10_warm_rerun": 0.625,
+      "row_flips": []
+    }
+  },
+  "exists_reconstruct": {
+    "literal_adapt_rerank": {
+      "n": 15,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 1.0,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "config": "literal_adapt_rerank",
+          "family": "exists_reconstruct",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "config": "literal_adapt_rerank",
+          "family": "exists_reconstruct",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "config": "literal_adapt_rerank",
+          "family": "exists_reconstruct",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        }
+      ]
+    },
+    "raw": {
+      "n": 15,
+      "pass@1_original_lower_bound": 0.8,
+      "pass@5_original_lower_bound": 0.8,
+      "pass@10_original_lower_bound": 1.0,
+      "pass@1_warm_rerun": 1.0,
+      "pass@5_warm_rerun": 1.0,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "config": "raw",
+          "family": "exists_reconstruct",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "config": "raw",
+          "family": "exists_reconstruct",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "exists_reconstruct_20",
+          "config": "raw",
+          "family": "exists_reconstruct",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        }
+      ]
+    }
+  },
+  "neg_imp_exfalso": {
+    "literal_adapt_rerank": {
+      "n": 15,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.2,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.2,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": []
+    },
+    "raw": {
+      "n": 15,
+      "pass@1_original_lower_bound": 0.0,
+      "pass@5_original_lower_bound": 0.6,
+      "pass@10_original_lower_bound": 0.8,
+      "pass@1_warm_rerun": 0.0,
+      "pass@5_warm_rerun": 0.8,
+      "pass@10_warm_rerun": 1.0,
+      "row_flips": [
+        {
+          "theorem_name": "neg_imp_exfalso_xy",
+          "config": "raw",
+          "family": "neg_imp_exfalso",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "neg_imp_exfalso_xy",
+          "config": "raw",
+          "family": "neg_imp_exfalso",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        },
+        {
+          "theorem_name": "neg_imp_exfalso_xy",
+          "config": "raw",
+          "family": "neg_imp_exfalso",
+          "pass@5_original": false,
+          "pass@5_warm_rerun": true
+        }
+      ]
+    }
+  }
+}

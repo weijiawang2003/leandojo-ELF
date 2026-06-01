@@ -1,0 +1,47 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/implication_chain",
+  "model_dir": "data/models/proof_block_seq2seq_redundancy",
+  "n_test_theorems": 4,
+  "n_train_rows": 28,
+  "n_train_theorems": 28,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "total_verified_candidates": 0,
+  "novel_verified": 0,
+  "donorless_verified": 0,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "branch_join": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "three_step": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "two_step_abc": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "two_step_intro": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "implication_chain": {
+      "n": 4,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "elapsed_seconds": 14.495552491018316
+}

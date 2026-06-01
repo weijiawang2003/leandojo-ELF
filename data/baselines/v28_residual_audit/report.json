@@ -1,0 +1,154 @@
+{
+  "config": "v28_residual_audit",
+  "source": "v27_specialist_eval best-config predictions (no Lean re-run)",
+  "v27_models_considered": [
+    "v27_widened",
+    "v27_set_heavy",
+    "v27_category_balanced",
+    "v27_base"
+  ],
+  "benches": [
+    "v25_heldout",
+    "v26_holdout",
+    "v27_holdout"
+  ],
+  "per_cell": {
+    "v27_widened__v25_heldout": {
+      "config": "abstract",
+      "n_theorems": 14,
+      "n_residual": 1,
+      "residual_theorems": [
+        "v25_nat_add_assoc"
+      ]
+    },
+    "v27_widened__v26_holdout": {
+      "config": "abstract",
+      "n_theorems": 22,
+      "n_residual": 2,
+      "residual_theorems": [
+        "v26_fun_comp_assoc2",
+        "v26_set_inter_comm_subset"
+      ]
+    },
+    "v27_widened__v27_holdout": {
+      "config": "abstract",
+      "n_theorems": 7,
+      "n_residual": 2,
+      "residual_theorems": [
+        "v27_set_mem_inter_iff",
+        "v27_set_union_subset"
+      ]
+    },
+    "v27_set_heavy__v25_heldout": {
+      "config": "abstract",
+      "n_theorems": 14,
+      "n_residual": 1,
+      "residual_theorems": [
+        "v25_nat_add_assoc"
+      ]
+    },
+    "v27_set_heavy__v26_holdout": {
+      "config": "learned",
+      "n_theorems": 22,
+      "n_residual": 1,
+      "residual_theorems": [
+        "v26_fun_comp_assoc2"
+      ]
+    },
+    "v27_set_heavy__v27_holdout": {
+      "config": "raw",
+      "n_theorems": 7,
+      "n_residual": 2,
+      "residual_theorems": [
+        "v27_set_mem_inter_iff",
+        "v27_set_union_subset"
+      ]
+    },
+    "v27_category_balanced__v25_heldout": {
+      "config": "abstract",
+      "n_theorems": 14,
+      "n_residual": 0,
+      "residual_theorems": []
+    },
+    "v27_category_balanced__v26_holdout": {
+      "config": "learned",
+      "n_theorems": 22,
+      "n_residual": 3,
+      "residual_theorems": [
+        "v25_set_inter_subset_left",
+        "v26_fun_comp_assoc2",
+        "v26_set_mem_inter_left"
+      ]
+    },
+    "v27_category_balanced__v27_holdout": {
+      "config": "abstract",
+      "n_theorems": 7,
+      "n_residual": 2,
+      "residual_theorems": [
+        "v27_set_mem_inter_iff",
+        "v27_set_union_subset"
+      ]
+    },
+    "v27_base__v25_heldout": {
+      "config": "abstract",
+      "n_theorems": 14,
+      "n_residual": 1,
+      "residual_theorems": [
+        "v25_nat_add_assoc"
+      ]
+    },
+    "v27_base__v26_holdout": {
+      "config": "policy_abstract",
+      "n_theorems": 22,
+      "n_residual": 3,
+      "residual_theorems": [
+        "v26_fun_comp_assoc2",
+        "v26_nat_le_trans2",
+        "v26_set_inter_comm_subset"
+      ]
+    },
+    "v27_base__v27_holdout": {
+      "config": "policy_abstract",
+      "n_theorems": 7,
+      "n_residual": 2,
+      "residual_theorems": [
+        "v27_nat_add_assoc_rev",
+        "v27_set_union_subset"
+      ]
+    }
+  },
+  "n_distinct_residual_theorems": 9,
+  "residual_theorems": [
+    "v25_nat_add_assoc",
+    "v25_set_inter_subset_left",
+    "v26_fun_comp_assoc2",
+    "v26_nat_le_trans2",
+    "v26_set_inter_comm_subset",
+    "v26_set_mem_inter_left",
+    "v27_nat_add_assoc_rev",
+    "v27_set_mem_inter_iff",
+    "v27_set_union_subset"
+  ],
+  "hard_in_all_v27_configs": [
+    "v26_fun_comp_assoc2",
+    "v27_set_union_subset"
+  ],
+  "bucket_counts": {
+    "missing_lemma_vocabulary": 2,
+    "wrong_api_arity": 6,
+    "insufficient_shape_diversity": 1
+  },
+  "focus_family_counts": {
+    "order_trans": 1,
+    "subset_inter": 2,
+    "mem_inter_iff": 1,
+    "union_subset": 1
+  },
+  "by_category": {
+    "nat": 3,
+    "function": 1,
+    "set": 5
+  },
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

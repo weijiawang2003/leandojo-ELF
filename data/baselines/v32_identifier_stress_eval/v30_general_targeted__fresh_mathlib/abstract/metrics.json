@@ -1,0 +1,145 @@
+{
+  "config": "abstract",
+  "n_test_theorems": 25,
+  "pass@1": 0.44,
+  "pass@5": 0.76,
+  "pass@10": 0.76,
+  "MRR": 0.58,
+  "n_no_candidate_verified": 6,
+  "no_verify_reason": {
+    "v32fresh_set_inter_comm_eq": "parse_error",
+    "v32fresh_set_inter_assoc": "parse_error",
+    "v32fresh_ord_le_trans3": "type_mismatch",
+    "v32fresh_ord_min_comm": "type_mismatch",
+    "v32fresh_ord_max_comm": "unknown_identifier",
+    "v32fresh_ord_inf_comm": "unknown_identifier"
+  },
+  "per_category": {
+    "set": {
+      "n": 8,
+      "pass@10": 0.75
+    },
+    "finset": {
+      "n": 3,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 6,
+      "pass@10": 0.3333333333333333
+    },
+    "function": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 4,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 2,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 1,
+      "pass@10": 1.0
+    }
+  },
+  "per_family": {
+    "set::union_self": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::inter_self": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::subset_union": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::inter_comm": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "set::union_comm": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::inter_assoc": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "finset::inter_self": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "finset::union_self": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::le_trans": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "order::le_of_lt": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::min_max": {
+      "n": 2,
+      "pass@10": 0.0
+    },
+    "order::lattice": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "function::comp_app": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::add_comm": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::two_mul": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::one_mul": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "list::cons_ne_nil": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "list::reverse": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::diff_self": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "set::empty_union": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "finset::empty_union": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "nat::zero_add": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "order::le_refl": {
+      "n": 1,
+      "pass@10": 1.0
+    },
+    "logic::iff_refl": {
+      "n": 1,
+      "pass@10": 1.0
+    }
+  }
+}

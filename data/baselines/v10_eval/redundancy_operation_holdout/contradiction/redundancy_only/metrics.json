@@ -1,0 +1,42 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/contradiction",
+  "model_dir": "data/models/proof_block_seq2seq_redundancy",
+  "n_test_theorems": 3,
+  "n_train_rows": 29,
+  "n_train_theorems": 29,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "total_verified_candidates": 0,
+  "novel_verified": 0,
+  "donorless_verified": 0,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "exfalso_ab": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "exfalso_pq": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "iff_false_mp": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "contradiction": {
+      "n": 3,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "elapsed_seconds": 171.55801235098625
+}

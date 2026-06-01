@@ -1,0 +1,85 @@
+{
+  "config": "v32_final_residual_audit",
+  "model": "v31_canonical_general",
+  "source": "v31 normalized eval + verified corpora + recorded single-tactic Lean probe",
+  "n_residuals": 1,
+  "residuals": [
+    {
+      "bench": "token_diversity",
+      "theorem": "v30_set_empty_inter_subset",
+      "category": "set",
+      "family": "set::empty_subset",
+      "statement": "(α : Type) (s t : Set α) : (∅ : Set α) ∩ s ⊆ t",
+      "expected_proofs": [
+        "intro x hx; cases hx.1",
+        "simp"
+      ],
+      "top10_candidates": [
+        "exact Set.inter_subset_left",
+        "intro x h; exact",
+        "exact Set.inter_subset_right",
+        "intro x hx; exact",
+        "exact Set.empty_subset s",
+        "exact Set.subset_inter s",
+        "exact fun x h",
+        "exact Set.subset_inter h",
+        "exact Set.mem_inter_iff s",
+        "exact Set.mem_inter_iff h"
+      ],
+      "error_classes": [
+        "type_mismatch",
+        "parse_error",
+        "type_mismatch",
+        "parse_error",
+        "type_mismatch",
+        "type_mismatch",
+        "parse_error",
+        "unknown_identifier",
+        "type_mismatch",
+        "unknown_identifier"
+      ],
+      "error_counts": {
+        "type_mismatch": 5,
+        "parse_error": 3,
+        "unknown_identifier": 2
+      },
+      "correct_present_in_beam": false,
+      "correct_pattern_in_train": true,
+      "family_train_siblings": 3,
+      "token_surface": {
+        "tactic_patterns_expected": [
+          "intro ID ID; cases ID.1",
+          "simp"
+        ]
+      },
+      "canonical_map": {
+        "α": "c0",
+        "s": "c1",
+        "t": "c2"
+      },
+      "similar_train_rows_in_family": [
+        "v30_set_empty_subset_B",
+        "v30_set_empty_subset_a",
+        "v30_set_empty_subset_t"
+      ],
+      "single_tactic_probe": {
+        "statement": "(α : Type) (s t : Set α) : (∅ : Set α) ∩ s ⊆ t",
+        "verified_single_tactics": [
+          "simp",
+          "intro x hx; cases hx.1",
+          "intro x hx; simp at hx",
+          "intro x hx; exact hx.1.elim"
+        ],
+        "is_single_tactic": true
+      },
+      "classification": "sparse_shape_single_tactic"
+    }
+  ],
+  "classification_counts": {
+    "sparse_shape_single_tactic": 1
+  },
+  "is_multi_step": false,
+  "leandojo_justified_by_residual": false,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

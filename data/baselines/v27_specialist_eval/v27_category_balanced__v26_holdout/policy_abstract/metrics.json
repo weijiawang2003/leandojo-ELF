@@ -1,0 +1,65 @@
+{
+  "model": "v27_category_balanced",
+  "benchmark": "v26_holdout",
+  "config": "policy_abstract",
+  "n_test_theorems": 22,
+  "pass@1": 0.45454545454545453,
+  "pass@5": 0.7727272727272727,
+  "pass@10": 0.8636363636363636,
+  "MRR": 0.6064935064935064,
+  "n_no_candidate_verified": 3,
+  "no_verify_reason": {
+    "v25_set_inter_subset_left": "other",
+    "v26_fun_comp_assoc2": "unknown_identifier",
+    "v26_set_mem_inter_left": "other"
+  },
+  "failure_taxonomy": {
+    "parse_error": 31,
+    "other": 60,
+    "type_mismatch": 72,
+    "unknown_identifier": 16,
+    "unknown_tactic": 2,
+    "shape_miss": 1
+  },
+  "per_category": {
+    "bool_option": {
+      "n": 3,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 4,
+      "pass@1": 0.0,
+      "pass@5": 0.5,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 6,
+      "pass@1": 0.5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 4,
+      "pass@1": 0.25,
+      "pass@5": 0.5,
+      "pass@10": 0.5
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

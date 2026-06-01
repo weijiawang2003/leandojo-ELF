@@ -1,0 +1,14 @@
+{
+  "attention_dim": 64,
+  "bidirectional_encoder": true,
+  "bos_id": 1,
+  "dropout": 0.1,
+  "embedding_dim": 96,
+  "eos_id": 2,
+  "hidden_dim": 128,
+  "max_input_len": 160,
+  "max_output_len": 80,
+  "num_layers": 1,
+  "pad_id": 0,
+  "vocab_size": 233
+}

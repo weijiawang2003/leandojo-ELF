@@ -1,0 +1,97 @@
+{
+  "failure_taxonomy": {
+    "malformed": 2,
+    "missing_multistep": 30,
+    "unknown": 30,
+    "wrong_equality_direction": 22,
+    "wrong_iff_direction": 4,
+    "wrong_witness": 2
+  },
+  "failure_taxonomy_examples": {
+    "malformed": {
+      "goal": "⊢ e",
+      "theorem": "imp_chain_mixed_abef",
+      "top1": "decintradiction"
+    },
+    "missing_multistep": {
+      "goal": "⊢ p → s",
+      "theorem": "imp_chain3_pqrs",
+      "top1": "intro hp\n  exact h2 (h1 hp)"
+    },
+    "unknown": {
+      "goal": "⊢ r",
+      "theorem": "nested_and_r_last_pqr",
+      "top1": "exact fun h. exact h"
+    },
+    "wrong_equality_direction": {
+      "goal": "⊢ a = d",
+      "theorem": "eq_chain3_nat",
+      "top1": "exact Iff.intro h1 h2"
+    },
+    "wrong_iff_direction": {
+      "goal": "⊢ p → r",
+      "theorem": "iff_chain_pqr",
+      "top1": "intro hp\n  exact h2 (h1 hp)"
+    },
+    "wrong_witness": {
+      "goal": "⊢ ∃ n : Nat, n = m",
+      "theorem": "exists_hyp_copy_12",
+      "top1": "exact ⟨12, rfl⟩"
+    }
+  },
+  "reranker_calibration": {
+    "mean_score_failed": 0.4364,
+    "mean_score_verified": 0.9999,
+    "n_failed_scored": 472,
+    "n_verified_scored": 8,
+    "top1_false_negatives": [],
+    "top1_false_positives": [
+      {
+        "candidate": "intro hp\n  exact h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_chain3_pqrs"
+      },
+      {
+        "candidate": "intro hp\n  exact h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_chain3_pqrs"
+      },
+      {
+        "candidate": "exact fun hp => h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_chain3_abcd"
+      },
+      {
+        "candidate": "exact fun hp => h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_chain3_abcd"
+      },
+      {
+        "candidate": "intro hp\n  exact h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_chain3_pqrt"
+      },
+      {
+        "candidate": "intro hp\n  exact h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_chain3_pqrt"
+      },
+      {
+        "candidate": "intro h\n  exact h",
+        "score": 1.0,
+        "theorem": "imp_chain3_abde"
+      },
+      {
+        "candidate": "intro h\n  exact h",
+        "score": 1.0,
+        "theorem": "imp_chain3_abde"
+      }
+    ]
+  },
+  "source_effectiveness": {
+    "rows_reranker_rescued_top1": 6,
+    "verified_by_source": {
+      "flow_decoder": 8
+    }
+  }
+}

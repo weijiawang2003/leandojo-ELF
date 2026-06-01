@@ -1,0 +1,35 @@
+{
+  "model": "v27_set_holdout",
+  "benchmark": "category_holdout_set",
+  "config": "rule",
+  "n_test_theorems": 16,
+  "pass@1": 0.625,
+  "pass@5": 0.75,
+  "pass@10": 0.75,
+  "MRR": 0.6875,
+  "n_no_candidate_verified": 4,
+  "no_verify_reason": {
+    "v27_set_mem_inter_right": "other",
+    "v27_set_subset_inter": "other",
+    "v27_set_subset_trans": "other",
+    "v27_set_union_subset": "other"
+  },
+  "failure_taxonomy": {
+    "other": 69,
+    "type_mismatch": 30,
+    "unknown_identifier": 33,
+    "parse_error": 10,
+    "shape_miss": 5
+  },
+  "per_category": {
+    "set": {
+      "n": 16,
+      "pass@1": 0.625,
+      "pass@5": 0.75,
+      "pass@10": 0.75
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

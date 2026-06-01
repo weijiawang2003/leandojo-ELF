@@ -1,0 +1,84 @@
+{
+  "config": "v30_targeted_density",
+  "mathlib_available": true,
+  "lean_verifier": "TrustedMathlibVerifier (sentinel+confirm+rescue, import Mathlib)",
+  "n_theorems": 69,
+  "n_candidates_proposed": 176,
+  "n_candidates_verified": 155,
+  "n_candidates_lean_rejected": 8,
+  "n_timeout": 0,
+  "n_zero_lean_success_theorems": 0,
+  "zero_lean_success_theorems": [],
+  "n_theorems_stripped_to_zero_by_guards": 5,
+  "dropped_v18_name": 0,
+  "dropped_v18_triple": 0,
+  "dropped_heldout": 13,
+  "by_category": {
+    "nat": {
+      "theorems": 12,
+      "proposed": 48,
+      "verified": 48,
+      "failed": 0
+    },
+    "set": {
+      "theorems": 30,
+      "proposed": 66,
+      "verified": 55,
+      "failed": 8
+    },
+    "order": {
+      "theorems": 9,
+      "proposed": 21,
+      "verified": 19,
+      "failed": 0
+    },
+    "finset": {
+      "theorems": 13,
+      "proposed": 26,
+      "verified": 24,
+      "failed": 0
+    },
+    "function": {
+      "theorems": 5,
+      "proposed": 15,
+      "verified": 9,
+      "failed": 0
+    }
+  },
+  "family_theorems_added": {
+    "add_assoc": 12,
+    "comp_assoc": 3,
+    "empty_subset": 10,
+    "le_refl": 8,
+    "mem_inter_proj": 14,
+    "mem_union_intro": 11,
+    "subset_inter": 3,
+    "union_subset": 3
+  },
+  "previous_density": {
+    "add_assoc": 0,
+    "empty_subset": 0,
+    "le_refl": 3,
+    "mem_inter_proj": 8,
+    "mem_union_intro": 9,
+    "union_subset": 4,
+    "subset_inter": 4,
+    "comp_assoc": 3
+  },
+  "verified_proof_heads": {
+    "exact": 85,
+    "simp": 22,
+    "omega": 15,
+    "ring": 12,
+    "intro": 9,
+    "rintro": 3,
+    "rfl": 3,
+    "funext": 3,
+    "ext": 3
+  },
+  "total_lean_seconds": 35.5,
+  "n_lean_invocations": 8,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

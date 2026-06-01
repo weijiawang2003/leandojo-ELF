@@ -1,0 +1,73 @@
+{
+  "n_test_theorems": 14,
+  "pass@1": 0.35714285714285715,
+  "pass@5": 0.5,
+  "pass@10": 0.5714285714285714,
+  "MRR": 0.41734693877551027,
+  "n_no_candidate_verified": 6,
+  "no_verify_reason": {
+    "v25_nat_mul_one": "type_mismatch",
+    "v25_list_map_id": "unknown_identifier",
+    "v25_bool_true_and": "unknown_identifier",
+    "v25_set_mem_univ": "unknown_identifier",
+    "v25_set_empty_subset": "unknown_identifier",
+    "v25_logic_iff_refl": "unknown_identifier"
+  },
+  "failure_taxonomy": {
+    "parse_error": 23,
+    "type_mismatch": 28,
+    "other": 5,
+    "unknown_identifier": 72
+  },
+  "per_category": {
+    "nat": {
+      "n": 4,
+      "pass@1": 0.5,
+      "pass@5": 0.75,
+      "pass@10": 0.75
+    },
+    "list": {
+      "n": 3,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    },
+    "bool_option": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.5
+    },
+    "set": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    }
+  },
+  "per_transfer": {
+    "core": {
+      "n": 6,
+      "pass@1": 0.5,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    },
+    "mathlib": {
+      "n": 8,
+      "pass@1": 0.25,
+      "pass@5": 0.375,
+      "pass@10": 0.5
+    }
+  },
+  "config": "abstract",
+  "model": "v24_broad_residual",
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

@@ -1,0 +1,72 @@
+{
+  "model": "v26_plus_core",
+  "benchmark": "v25_heldout",
+  "config": "learned",
+  "n_test_theorems": 14,
+  "pass@1": 0.7857142857142857,
+  "pass@5": 0.8571428571428571,
+  "pass@10": 0.8571428571428571,
+  "MRR": 0.8214285714285714,
+  "n_no_candidate_verified": 2,
+  "no_verify_reason": {
+    "v25_logic_and_imp": "unknown_identifier",
+    "v25_logic_iff_refl": "parse_error"
+  },
+  "failure_taxonomy": {
+    "type_mismatch": 39,
+    "unknown_identifier": 31,
+    "other": 24,
+    "shape_miss": 4,
+    "parse_error": 15,
+    "unknown_tactic": 1
+  },
+  "per_category": {
+    "nat": {
+      "n": 4,
+      "pass@1": 0.75,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "bool_option": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 0.3333333333333333
+    }
+  },
+  "per_transfer": {
+    "core": {
+      "n": 6,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    },
+    "mathlib": {
+      "n": 8,
+      "pass@1": 0.875,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

@@ -1,0 +1,1 @@
+{"theorem_name": "v10_implication_chain_two_step_pqr", "family": "two_step_pqr", "required_operation": "implication_chain", "rank": 6, "tactic": "exact h2 (h1 hp)", "family_absent_from_train": true, "operation_absent_from_train": false, "novel": true}

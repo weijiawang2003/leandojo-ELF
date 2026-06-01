@@ -1,0 +1,47 @@
+{
+  "regime_dir": "data/processed/proof_blocks_redundancy_operation_holdout/rewrite_eq",
+  "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+  "n_test_theorems": 4,
+  "n_train_rows": 28,
+  "n_train_theorems": 28,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.75,
+  "pass@5": 0.75,
+  "pass@10": 0.75,
+  "total_verified_candidates": 4,
+  "novel_verified": 4,
+  "donorless_verified": 4,
+  "cross_family_verified": 4,
+  "cross_operation_verified": 4,
+  "per_family": {
+    "mul_one": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "rev_target": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "succ_eq": {
+      "n": 1,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "swap_under_z": {
+      "n": 1,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "rewrite_eq": {
+      "n": 4,
+      "pass@5": 0.75,
+      "pass@10": 0.75
+    }
+  },
+  "elapsed_seconds": 30.62059534501168
+}

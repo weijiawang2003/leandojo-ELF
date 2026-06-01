@@ -1,0 +1,60 @@
+{
+  "config": "v33_saturation",
+  "best_v33_model": "v33_general_residual",
+  "pass10": {
+    "v31_canonical_general": {
+      "v25_heldout": 1.0,
+      "v28_holdout": 1.0,
+      "v29_holdout": 1.0,
+      "token_diversity": 0.9230769230769231,
+      "identifier_stress": 1.0,
+      "fresh_robustness": 1.0
+    },
+    "v32_canonical_repaired": {
+      "v25_heldout": 1.0,
+      "v28_holdout": 1.0,
+      "v29_holdout": 1.0,
+      "token_diversity": 1.0,
+      "identifier_stress": 1.0,
+      "fresh_robustness": 1.0
+    },
+    "v33_general_residual": {
+      "v25_heldout": 1.0,
+      "v28_holdout": 1.0,
+      "v29_holdout": 1.0,
+      "token_diversity": 1.0,
+      "identifier_stress": 1.0,
+      "fresh_robustness": 1.0
+    }
+  },
+  "routed": {
+    "broad_core": {
+      "n": 48,
+      "best_config": "policy_abstract",
+      "pass@1": 0.7708333333333334,
+      "pass@5": 0.9375,
+      "pass@10": 0.9583333333333334
+    },
+    "tierc": {
+      "n": 244,
+      "best_config": "raw",
+      "pass@1": 0.8811475409836066,
+      "pass@5": 0.9795081967213115,
+      "pass@10": 0.9918032786885246
+    }
+  },
+  "routed_adopt": true,
+  "remaining_failures": [],
+  "n_remaining_failures": 0,
+  "failure_class_counts": {},
+  "by_family": {},
+  "any_multi_step": false,
+  "leandojo_next_state_relevant": false,
+  "adversarial_stress_v31_to_v33": {
+    "v31": 1.0,
+    "v33": 1.0
+  },
+  "saturation_strong": true,
+  "v34_decision": "v34 = PACKAGING / paper-style report / git recovery — single-tactic Mathlib tier is SATURATED (adversarial stress >=0.95, fresh >=0.85, <=2 residuals, all single-tactic); LeanDojo next-state premature until a genuinely multi-step benchmark exists",
+  "uses_state_after": false
+}

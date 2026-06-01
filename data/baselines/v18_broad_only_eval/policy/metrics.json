@@ -1,0 +1,96 @@
+{
+  "n_test_theorems": 48,
+  "pass@1": 0.5,
+  "pass@5": 0.5833333333333334,
+  "pass@10": 0.6041666666666666,
+  "MRR": 0.5368055555555555,
+  "n_no_candidate_verified": 19,
+  "n_malformed_top1": 0,
+  "n_top1_head_correct": 27,
+  "first_verified_rank_distribution": {
+    "0": 24,
+    "1": 2,
+    "2": 2,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 1
+  },
+  "first_verified_rank_none": 19,
+  "error_taxonomy": {
+    "unknown_identifier": 127,
+    "other": 52,
+    "timeout": 28,
+    "type_mismatch": 124,
+    "parse_error": 72,
+    "unknown_tactic": 1,
+    "unsolved_goals": 5
+  },
+  "per_category": {
+    "implication": {
+      "n": 6,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.16666666666666666
+    },
+    "conjunction": {
+      "n": 6,
+      "pass@1": 0.8333333333333334,
+      "pass@5": 0.8333333333333334,
+      "pass@10": 0.8333333333333334
+    },
+    "disjunction": {
+      "n": 5,
+      "pass@1": 0.4,
+      "pass@5": 0.6,
+      "pass@10": 0.6
+    },
+    "negation": {
+      "n": 5,
+      "pass@1": 0.4,
+      "pass@5": 0.8,
+      "pass@10": 0.8
+    },
+    "equality_rewrite": {
+      "n": 6,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "exists": {
+      "n": 4,
+      "pass@1": 0.0,
+      "pass@5": 0.25,
+      "pass@10": 0.25
+    },
+    "forall": {
+      "n": 3,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.6666666666666666
+    },
+    "nat_succ": {
+      "n": 5,
+      "pass@1": 0.6,
+      "pass@5": 0.6,
+      "pass@10": 0.6
+    },
+    "bool": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "list": {
+      "n": 5,
+      "pass@1": 0.8,
+      "pass@5": 0.8,
+      "pass@10": 0.8
+    }
+  },
+  "config": "policy",
+  "uses_state_after": false
+}

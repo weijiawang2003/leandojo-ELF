@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_v11_family_lofo/forall_inst",
+  "model_dir": "data/models/proof_block_seq2seq_interpolation",
+  "n_test_theorems": 7,
+  "n_train_rows": 723,
+  "n_train_theorems": 322,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.5714285714285714,
+  "pass@5": 0.5714285714285714,
+  "pass@10": 0.5714285714285714,
+  "total_verified_candidates": 4,
+  "novel_verified": 2,
+  "donorless_verified": 4,
+  "cross_family_verified": 4,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "forall_inst": {
+      "n": 7,
+      "pass@5": 0.5714285714285714,
+      "pass@10": 0.5714285714285714
+    }
+  },
+  "per_operation": {
+    "instantiate_forall": {
+      "n": 7,
+      "pass@5": 0.5714285714285714,
+      "pass@10": 0.5714285714285714
+    }
+  },
+  "elapsed_seconds": 285.0388715979934
+}

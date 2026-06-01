@@ -1,0 +1,141 @@
+{
+  "failure_taxonomy": {
+    "missing_multistep": 2,
+    "unknown": 21,
+    "wrong_conjunct": 9,
+    "wrong_disjunct": 6,
+    "wrong_iff_direction": 16
+  },
+  "failure_taxonomy_examples": {
+    "missing_multistep": {
+      "goal": "⊢ z",
+      "theorem": "imp_chain_mixed_xyzw",
+      "top1": "exact h1.trans h2"
+    },
+    "unknown": {
+      "goal": "⊢ q",
+      "theorem": "and_right_pq",
+      "top1": "exact h.2.1"
+    },
+    "wrong_conjunct": {
+      "goal": "⊢ s",
+      "theorem": "and_right_rs",
+      "top1": "exact h.1"
+    },
+    "wrong_disjunct": {
+      "goal": "⊢ p ∨ q",
+      "theorem": "or_inr_pq",
+      "top1": "exact Or.inl h"
+    },
+    "wrong_iff_direction": {
+      "goal": "⊢ p",
+      "theorem": "iff_mpr_pq",
+      "top1": "exact h.mp hq"
+    }
+  },
+  "reranker_calibration": {
+    "mean_score_failed": 0.2979,
+    "mean_score_verified": 0.8401,
+    "n_failed_scored": 338,
+    "n_verified_scored": 107,
+    "top1_false_negatives": [
+      {
+        "candidate": "exact h.right",
+        "rank": 4,
+        "score": 0.0,
+        "theorem": "and_right_rs"
+      },
+      {
+        "candidate": "exact h.right",
+        "rank": 4,
+        "score": 0.0,
+        "theorem": "and_right_rs"
+      },
+      {
+        "candidate": "exact h.right",
+        "rank": 4,
+        "score": 0.0,
+        "theorem": "and_right_rs"
+      },
+      {
+        "candidate": "exact h.right",
+        "rank": 5,
+        "score": 0.0,
+        "theorem": "and_right_pr"
+      },
+      {
+        "candidate": "exact h.right",
+        "rank": 5,
+        "score": 0.0,
+        "theorem": "and_right_pr"
+      },
+      {
+        "candidate": "exact h.right",
+        "rank": 5,
+        "score": 0.0,
+        "theorem": "and_right_pr"
+      },
+      {
+        "candidate": "exact ⟨hp, hq, hr⟩",
+        "rank": 4,
+        "score": 0.0,
+        "theorem": "nested_and_intro_rr_abc"
+      },
+      {
+        "candidate": "exact ⟨hp, hq, hr⟩",
+        "rank": 4,
+        "score": 0.0,
+        "theorem": "nested_and_intro_rr_abc"
+      }
+    ],
+    "top1_false_positives": [
+      {
+        "candidate": "exact And.left h",
+        "score": 0.79,
+        "theorem": "or_inr_rs"
+      },
+      {
+        "candidate": "exact And.left h",
+        "score": 0.79,
+        "theorem": "or_inr_rs"
+      },
+      {
+        "candidate": "exact h.mp hq",
+        "score": 1.0,
+        "theorem": "iff_mpr_pq"
+      },
+      {
+        "candidate": "exact h.mp hq",
+        "score": 1.0,
+        "theorem": "iff_mpr_pq"
+      },
+      {
+        "candidate": "exact h1.trans h2",
+        "score": 0.979,
+        "theorem": "imp_chain_mixed_xyzw"
+      },
+      {
+        "candidate": "exact h1.trans h2",
+        "score": 0.979,
+        "theorem": "imp_chain_mixed_xyzw"
+      },
+      {
+        "candidate": "exact h.right.left",
+        "score": 1.0,
+        "theorem": "nested_and_l_first_pqr"
+      },
+      {
+        "candidate": "exact h.right.left",
+        "score": 1.0,
+        "theorem": "nested_and_l_first_pqr"
+      }
+    ]
+  },
+  "source_effectiveness": {
+    "rows_reranker_rescued_top1": 6,
+    "verified_by_source": {
+      "flow_decoder": 97,
+      "witness_copy": 10
+    }
+  }
+}

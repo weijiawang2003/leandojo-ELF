@@ -1,0 +1,658 @@
+{
+  "baseline": "mini_elf_v3",
+  "elf_v1_generation": {
+    "avg_distinct_flow_candidates_per_row": 21.426966292134832,
+    "avg_generated_length_top1": 18.51685393258427,
+    "avg_reranker_score_failed_candidates": 0.3742804567791937,
+    "avg_reranker_score_verified_candidates": 0.46264786758618653,
+    "candidate_invalid_rate": 0.4539325842696629,
+    "candidate_source_breakdown": {
+      "flow_decoder": {
+        "attempted": 262,
+        "verified": 60
+      },
+      "planner_cases": {
+        "attempted": 4,
+        "verified": 4
+      },
+      "planner_chain": {
+        "attempted": 14,
+        "verified": 14
+      },
+      "planner_eq": {
+        "attempted": 4,
+        "verified": 4
+      },
+      "planner_iff": {
+        "attempted": 32,
+        "verified": 32
+      },
+      "planner_projection": {
+        "attempted": 72,
+        "verified": 72
+      },
+      "planner_template": {
+        "attempted": 45,
+        "verified": 45
+      },
+      "witness_copy": {
+        "attempted": 12,
+        "verified": 12
+      }
+    },
+    "empty_generation_rate": 0.0,
+    "invalid_rate_top1": 0.0,
+    "invalid_rate_top5": 0.45393258426966293,
+    "mode": "v3(planner,flow_v1(samples=64,steps=10,decode=decoder,witness,rerank))",
+    "n_samples_per_row": 64,
+    "novel_candidate_rate": 0.449438202247191,
+    "novel_candidates": 200,
+    "novel_candidates_verified": 150,
+    "rows_passed_via_novel_tactic": 64,
+    "total_candidates_in_topk": 445
+  },
+  "exact_match": {
+    "top1_exact": 0.29213483146067415,
+    "top1_exact_count": 26,
+    "topk_any_verified": {
+      "1": {
+        "count": 61,
+        "rate": 0.6853932584269663
+      },
+      "3": {
+        "count": 79,
+        "rate": 0.8876404494382022
+      },
+      "5": {
+        "count": 79,
+        "rate": 0.8876404494382022
+      }
+    }
+  },
+  "family_focus": {
+    "and_elim_right": {
+      "n_rows": 12,
+      "pass_at_1": 1.0,
+      "pass_at_5": 1.0
+    },
+    "exists_witness": {
+      "n_rows": 6,
+      "pass_at_1": 1.0,
+      "pass_at_5": 1.0
+    },
+    "or_intro_right": {
+      "n_rows": 8,
+      "pass_at_1": 1.0,
+      "pass_at_5": 1.0
+    }
+  },
+  "k_values": [
+    1,
+    3,
+    5
+  ],
+  "lean_verification": {
+    "cache_size": 1532,
+    "pass_at_k": {
+      "1": {
+        "count": 89,
+        "rate": 1.0
+      },
+      "3": {
+        "count": 89,
+        "rate": 1.0
+      },
+      "5": {
+        "count": 89,
+        "rate": 1.0
+      }
+    },
+    "tactics_total": 445,
+    "tactics_verified": 243
+  },
+  "mini_elf_v3_planner": {
+    "avg_planner_candidates_per_row": 1.9213483146067416,
+    "max_planner_candidates_per_row": 4,
+    "planner_by_source": {
+      "planner_cases": {
+        "attempted": 4,
+        "verified": 4
+      },
+      "planner_chain": {
+        "attempted": 14,
+        "verified": 14
+      },
+      "planner_eq": {
+        "attempted": 4,
+        "verified": 4
+      },
+      "planner_iff": {
+        "attempted": 32,
+        "verified": 32
+      },
+      "planner_projection": {
+        "attempted": 72,
+        "verified": 72
+      },
+      "planner_template": {
+        "attempted": 45,
+        "verified": 45
+      }
+    },
+    "planner_by_strategy": {
+      "and_constructor": {
+        "attempted": 9,
+        "verified": 9
+      },
+      "and_intro_flat": {
+        "attempted": 2,
+        "verified": 2
+      },
+      "and_intro_named": {
+        "attempted": 9,
+        "verified": 9
+      },
+      "eq_direct": {
+        "attempted": 4,
+        "verified": 4
+      },
+      "exact_and": {
+        "attempted": 9,
+        "verified": 9
+      },
+      "exact_chain": {
+        "attempted": 6,
+        "verified": 6
+      },
+      "exact_iff": {
+        "attempted": 12,
+        "verified": 12
+      },
+      "exact_projection": {
+        "attempted": 72,
+        "verified": 72
+      },
+      "intro_exact": {
+        "attempted": 14,
+        "verified": 14
+      },
+      "intro_lambda": {
+        "attempted": 14,
+        "verified": 14
+      },
+      "or_elim_cases": {
+        "attempted": 2,
+        "verified": 2
+      },
+      "or_elim_rcases": {
+        "attempted": 2,
+        "verified": 2
+      },
+      "or_intro_right": {
+        "attempted": 8,
+        "verified": 8
+      },
+      "or_intro_right_tac": {
+        "attempted": 8,
+        "verified": 8
+      }
+    },
+    "rows_passed_via_planner": 71,
+    "rows_passed_via_planner_rate": 0.797752808988764,
+    "rows_planner_top1_verified": 71,
+    "rows_solved_only_by_planner": 59,
+    "rows_with_any_planner_candidate": 71,
+    "use_planner": true
+  },
+  "mode": "v3(planner,flow_v1(samples=64,steps=10,decode=decoder,witness,rerank))",
+  "n_examples": 89,
+  "n_theorems": 39,
+  "oracle": {
+    "rows_with_verified_in_corpus": 89,
+    "rows_with_verified_in_corpus_rate": 1.0
+  },
+  "per_difficulty_pass_at_k": {
+    "hard": {
+      "n_rows": 26,
+      "pass_at_k": {
+        "1": {
+          "count": 26,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 26,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 26,
+          "rate": 1.0
+        }
+      }
+    },
+    "medium": {
+      "n_rows": 12,
+      "pass_at_k": {
+        "1": {
+          "count": 12,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 12,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 12,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "per_family_pass_at_k": {
+    "and_elim_right": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 12,
+      "n_theorems": 4,
+      "pass_at_k": {
+        "1": {
+          "count": 12,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 12,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 12,
+          "rate": 1.0
+        }
+      }
+    },
+    "and_intro": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 3,
+      "n_theorems": 1,
+      "pass_at_k": {
+        "1": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 3,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 3,
+          "rate": 1.0
+        }
+      }
+    },
+    "eq_symm": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 4,
+      "n_theorems": 2,
+      "pass_at_k": {
+        "1": {
+          "count": 4,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 4,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 4,
+          "rate": 1.0
+        }
+      }
+    },
+    "exists_witness": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 6,
+      "n_theorems": 3,
+      "pass_at_k": {
+        "1": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 6,
+          "rate": 1.0
+        }
+      }
+    },
+    "iff_chain": {
+      "any_verified_top5_rate": 0.0,
+      "n_rows": 4,
+      "n_theorems": 2,
+      "pass_at_k": {
+        "1": {
+          "count": 4,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 4,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 4,
+          "rate": 1.0
+        }
+      }
+    },
+    "iff_flip": {
+      "any_verified_top5_rate": 0.0,
+      "n_rows": 6,
+      "n_theorems": 2,
+      "pass_at_k": {
+        "1": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 6,
+          "rate": 1.0
+        }
+      }
+    },
+    "iff_intro": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 6,
+      "n_theorems": 2,
+      "pass_at_k": {
+        "1": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 6,
+          "rate": 1.0
+        }
+      }
+    },
+    "iff_mpr": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 6,
+      "n_theorems": 3,
+      "pass_at_k": {
+        "1": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 6,
+          "rate": 1.0
+        }
+      }
+    },
+    "imp_chain3": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 2,
+      "n_theorems": 1,
+      "pass_at_k": {
+        "1": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    },
+    "imp_chain_mixed": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 2,
+      "n_theorems": 1,
+      "pass_at_k": {
+        "1": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    },
+    "imp_uncurry": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 2,
+      "n_theorems": 1,
+      "pass_at_k": {
+        "1": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    },
+    "modus_ponens": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 2,
+      "n_theorems": 1,
+      "pass_at_k": {
+        "1": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    },
+    "nat_rfl": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 6,
+      "n_theorems": 2,
+      "pass_at_k": {
+        "1": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 6,
+          "rate": 1.0
+        }
+      }
+    },
+    "nested_and_elim_l": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 12,
+      "n_theorems": 6,
+      "pass_at_k": {
+        "1": {
+          "count": 12,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 12,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 12,
+          "rate": 1.0
+        }
+      }
+    },
+    "nested_and_intro": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 6,
+      "n_theorems": 3,
+      "pass_at_k": {
+        "1": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 6,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 6,
+          "rate": 1.0
+        }
+      }
+    },
+    "or_intro_right": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 8,
+      "n_theorems": 4,
+      "pass_at_k": {
+        "1": {
+          "count": 8,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 8,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 8,
+          "rate": 1.0
+        }
+      }
+    },
+    "or_self_elim": {
+      "any_verified_top5_rate": 1.0,
+      "n_rows": 2,
+      "n_theorems": 1,
+      "pass_at_k": {
+        "1": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "3": {
+          "count": 2,
+          "rate": 1.0
+        },
+        "5": {
+          "count": 2,
+          "rate": 1.0
+        }
+      }
+    }
+  },
+  "retrieval_mode": "v3(planner,flow_v1(samples=64,steps=10,decode=decoder,witness,rerank))",
+  "sibling_confusion": {
+    "and_elim": {
+      "families": [
+        "and_elim_left",
+        "and_elim_right"
+      ],
+      "matrix": {
+        "and_elim_right": {
+          "and_elim_right": 12
+        }
+      },
+      "n_rows": 12,
+      "top1_family_accuracy": 1.0
+    },
+    "eq": {
+      "families": [
+        "eq_refl",
+        "eq_symm",
+        "eq_trans"
+      ],
+      "matrix": {
+        "eq_symm": {
+          "eq_symm": 4
+        }
+      },
+      "n_rows": 4,
+      "top1_family_accuracy": 1.0
+    },
+    "iff": {
+      "families": [
+        "iff_mp",
+        "iff_mpr",
+        "iff_intro"
+      ],
+      "matrix": {
+        "iff_intro": {
+          "iff_intro": 6
+        },
+        "iff_mpr": {
+          "<ambiguous/other>": 6
+        }
+      },
+      "n_rows": 12,
+      "top1_family_accuracy": 0.5
+    },
+    "imp": {
+      "families": [
+        "imp_identity",
+        "imp_compose",
+        "modus_ponens"
+      ],
+      "matrix": {
+        "modus_ponens": {
+          "modus_ponens": 2
+        }
+      },
+      "n_rows": 2,
+      "top1_family_accuracy": 1.0
+    },
+    "or_intro": {
+      "families": [
+        "or_intro_left",
+        "or_intro_right"
+      ],
+      "matrix": {
+        "or_intro_right": {
+          "or_intro_right": 8
+        }
+      },
+      "n_rows": 8,
+      "top1_family_accuracy": 1.0
+    }
+  },
+  "small_sample_warning": false,
+  "split_diagnostics": {
+    "n_eval_examples": 89,
+    "n_eval_theorems": 39,
+    "n_train_examples": 358,
+    "n_train_theorems": 152,
+    "theorem_intersection": []
+  },
+  "top_k": 5
+}

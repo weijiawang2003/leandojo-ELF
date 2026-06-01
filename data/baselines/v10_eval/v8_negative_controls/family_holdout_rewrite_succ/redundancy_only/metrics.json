@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_family_holdout/rewrite_succ",
+  "model_dir": "data/models/proof_block_seq2seq_redundancy",
+  "n_test_theorems": 5,
+  "n_train_rows": 670,
+  "n_train_theorems": 284,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.2,
+  "pass@10": 0.6,
+  "total_verified_candidates": 3,
+  "novel_verified": 3,
+  "donorless_verified": 3,
+  "cross_family_verified": 3,
+  "cross_operation_verified": 3,
+  "per_family": {
+    "rewrite_succ": {
+      "n": 5,
+      "pass@5": 0.2,
+      "pass@10": 0.6
+    }
+  },
+  "per_operation": {
+    "rewrite": {
+      "n": 5,
+      "pass@5": 0.2,
+      "pass@10": 0.6
+    }
+  },
+  "elapsed_seconds": 120.9576446749852
+}

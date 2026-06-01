@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_family_holdout/forall_inst",
+  "model_dir": "data/models/proof_block_seq2seq_combined_v10",
+  "n_test_theorems": 7,
+  "n_train_rows": 683,
+  "n_train_theorems": 282,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.8571428571428571,
+  "pass@5": 0.8571428571428571,
+  "pass@10": 0.8571428571428571,
+  "total_verified_candidates": 6,
+  "novel_verified": 6,
+  "donorless_verified": 6,
+  "cross_family_verified": 6,
+  "cross_operation_verified": 6,
+  "per_family": {
+    "forall_inst": {
+      "n": 7,
+      "pass@5": 0.8571428571428571,
+      "pass@10": 0.8571428571428571
+    }
+  },
+  "per_operation": {
+    "instantiate_forall": {
+      "n": 7,
+      "pass@5": 0.8571428571428571,
+      "pass@10": 0.8571428571428571
+    }
+  },
+  "elapsed_seconds": 33.49993510902277
+}

@@ -1,0 +1,10 @@
+{
+  "flow_decoder": {
+    "attempted": 122,
+    "verified": 4
+  },
+  "witness_copy": {
+    "attempted": 8,
+    "verified": 8
+  }
+}

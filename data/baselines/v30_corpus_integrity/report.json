@@ -1,0 +1,60 @@
+{
+  "config": "v30_corpus_integrity",
+  "verifier": "TrustedMathlibVerifier (sound&complete) vs GoldMathlibVerifier (1 decl/file)",
+  "n_candidates_proposed": 176,
+  "n_verified": 155,
+  "n_failed": 8,
+  "n_timeout": 0,
+  "n_zero_success_theorems": 0,
+  "verified_still_pass": 155,
+  "n_verified_regressions": 0,
+  "verified_regressions": [],
+  "n_failed_now_pass": 0,
+  "by_family_theorems_added": {
+    "add_assoc": 12,
+    "comp_assoc": 3,
+    "empty_subset": 10,
+    "le_refl": 8,
+    "mem_inter_proj": 14,
+    "mem_union_intro": 11,
+    "subset_inter": 3,
+    "union_subset": 3
+  },
+  "previous_density": {
+    "add_assoc": 0,
+    "empty_subset": 0,
+    "le_refl": 3,
+    "mem_inter_proj": 8,
+    "mem_union_intro": 9,
+    "union_subset": 4,
+    "subset_inter": 4,
+    "comp_assoc": 3
+  },
+  "common_api_failures": {
+    "error": 8
+  },
+  "reverify_lean_seconds": 30.6,
+  "generation_lean_seconds": 35.5,
+  "gold_sample_size": 24,
+  "gold_sample_by_family": {
+    "finset::empty_subset": 1,
+    "finset::mem_inter_proj": 1,
+    "finset::mem_union_intro": 2,
+    "function::comp_assoc": 3,
+    "nat::add_assoc": 6,
+    "order::le_refl": 3,
+    "set::empty_subset": 3,
+    "set::mem_inter_proj": 2,
+    "set::mem_union_intro": 1,
+    "set::subset_inter": 1,
+    "set::union_subset": 1
+  },
+  "n_gold_mismatches": 0,
+  "n_gold_false_positives": 0,
+  "gold_mismatches": [],
+  "integrity_ok": true,
+  "trusted_sound_on_sample": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "uses_mathlib": true
+}

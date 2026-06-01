@@ -1,0 +1,62 @@
+{
+  "config": "v31_remaining_failures",
+  "best_model": "v31_canonical_general",
+  "benches": [
+    "v28_holdout",
+    "v29_holdout",
+    "v30_targeted_family",
+    "token_diversity"
+  ],
+  "n_residuals": 1,
+  "fail_class_counts": {
+    "api_syntax": 1
+  },
+  "by_bench": {
+    "token_diversity": 1
+  },
+  "by_family": {
+    "set::empty_subset": 1
+  },
+  "residuals": [
+    {
+      "bench": "token_diversity",
+      "theorem": "v30_set_empty_inter_subset",
+      "category": "set",
+      "family": "set::empty_subset",
+      "statement": "(α : Type) (s t : Set α) : (∅ : Set α) ∩ s ⊆ t",
+      "expected_proofs": [
+        "intro x hx; cases hx.1",
+        "simp"
+      ],
+      "top10": [
+        "exact Set.inter_subset_left",
+        "intro x h; exact",
+        "exact Set.inter_subset_right",
+        "intro x hx; exact",
+        "exact Set.empty_subset s",
+        "exact Set.subset_inter s"
+      ],
+      "error_counts": {
+        "type_mismatch": 5,
+        "parse_error": 3,
+        "unknown_identifier": 2
+      },
+      "fail_class": "api_syntax"
+    }
+  ],
+  "leandojo_next_state_relevant": false,
+  "verdict": "remaining failures still single-tactic token/vocab/API-bound -> LeanDojo next-state premature",
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "v24_core_note": {
+    "audited": true,
+    "retrained": false,
+    "n_old_core_residuals": 3,
+    "old_core_residuals": [
+      "v18_and_assoc_one",
+      "v18_or_elim_to_common",
+      "v18_or_inr"
+    ],
+    "v31_insight": "the v31 finding (residuals are identifier/token coverage, fixable by verified rename augmentation or canonicalization) applies directly to the core residuals and_assoc_one / or_inr / or_elim_to_common: build a small CORE rename-augmented sibling corpus + a core specialist routed to — never retrain the protected v24 model."
+  }
+}

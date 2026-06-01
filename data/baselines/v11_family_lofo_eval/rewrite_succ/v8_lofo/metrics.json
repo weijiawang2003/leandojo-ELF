@@ -1,0 +1,32 @@
+{
+  "regime_dir": "data/processed/proof_blocks_v11_family_lofo/rewrite_succ",
+  "model_dir": "data/models/proof_block_seq2seq_family_holdout_rewrite_succ",
+  "n_test_theorems": 5,
+  "n_train_rows": 710,
+  "n_train_theorems": 324,
+  "top_k": 10,
+  "verified": true,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "total_verified_candidates": 0,
+  "novel_verified": 0,
+  "donorless_verified": 0,
+  "cross_family_verified": 0,
+  "cross_operation_verified": 0,
+  "per_family": {
+    "rewrite_succ": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "per_operation": {
+    "rewrite": {
+      "n": 5,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    }
+  },
+  "elapsed_seconds": 39.712264649017015
+}

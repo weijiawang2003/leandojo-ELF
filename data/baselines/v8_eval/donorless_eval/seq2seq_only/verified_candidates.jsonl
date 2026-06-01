@@ -1,0 +1,3 @@
+{"theorem_name": "exists_reconstruct_7", "rank": 3, "family": "exists_reconstruct", "required_operation": "unknown", "tactic": "refine ⟨7, ?_⟩\n  rfl", "source": "proof_block_seq2seq", "donor_available": false, "op_available": true}
+{"theorem_name": "exists_reconstruct_100", "rank": 2, "family": "exists_reconstruct", "required_operation": "unknown", "tactic": "exact ⟨100, rfl⟩", "source": "proof_block_seq2seq", "donor_available": false, "op_available": true}
+{"theorem_name": "exists_reconstruct_100", "rank": 3, "family": "exists_reconstruct", "required_operation": "unknown", "tactic": "refine ⟨100, ?_⟩\n  rfl", "source": "proof_block_seq2seq", "donor_available": false, "op_available": true}

@@ -1,0 +1,162 @@
+{
+  "config": "raw",
+  "n_test_theorems": 34,
+  "pass@1": 0.5294117647058824,
+  "pass@5": 0.7647058823529411,
+  "pass@10": 0.8529411764705882,
+  "MRR": 0.6284313725490197,
+  "n_no_candidate_verified": 5,
+  "no_verify_reason": {
+    "v29_fs_inter_subset_right_3": "unknown_identifier",
+    "v29_fs_mem_union_right_3": "unknown_identifier",
+    "v29_set_mem_inter_right_3": "unknown_identifier",
+    "v29_set_mem_union_of_left_3": "unknown_identifier",
+    "v29_set_mem_union_of_right_3": "unknown_identifier"
+  },
+  "failure_taxonomy": {
+    "type_mismatch": 57,
+    "other": 37,
+    "unknown_identifier": 146,
+    "parse_error": 25,
+    "shape_miss": 1
+  },
+  "per_category": {
+    "finset": {
+      "n": 10,
+      "pass@1": 0.3,
+      "pass@5": 0.7,
+      "pass@10": 0.8
+    },
+    "function": {
+      "n": 4,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 8,
+      "pass@1": 0.5,
+      "pass@5": 0.875,
+      "pass@10": 1.0
+    },
+    "set": {
+      "n": 10,
+      "pass@1": 0.5,
+      "pass@5": 0.6,
+      "pass@10": 0.7
+    }
+  },
+  "per_family": {
+    "finset::inter_subset": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.5,
+      "pass@10": 0.5
+    },
+    "finset::mem_inter_proj": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "finset::mem_iff": {
+      "n": 2,
+      "pass@1": 0.5,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "finset::mem_union_intro": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.5
+    },
+    "finset::subset_union": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "function::comp_assoc": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "function::comp_id": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic::imp_trans": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order::antisymm": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order::lattice_inf_sup": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order::min_max": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.5,
+      "pass@10": 1.0
+    },
+    "order::le_of_eq": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set::inter_subset": {
+      "n": 2,
+      "pass@1": 0.5,
+      "pass@5": 0.5,
+      "pass@10": 1.0
+    },
+    "set::mem_iff": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "set::mem_inter_proj": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.5,
+      "pass@10": 0.5
+    },
+    "set::mem_union_intro": {
+      "n": 2,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "set::subset_union": {
+      "n": 2,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

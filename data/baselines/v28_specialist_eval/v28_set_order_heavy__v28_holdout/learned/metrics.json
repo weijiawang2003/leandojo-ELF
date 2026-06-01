@@ -1,0 +1,71 @@
+{
+  "config": "learned",
+  "n_test_theorems": 30,
+  "pass@1": 0.5666666666666667,
+  "pass@5": 0.7333333333333333,
+  "pass@10": 0.8333333333333334,
+  "MRR": 0.6509259259259258,
+  "n_no_candidate_verified": 5,
+  "no_verify_reason": {
+    "v28_fs_mem_inter_left_0": "other",
+    "v28_fun_comp_assoc3": "unknown_identifier",
+    "v28_ord_antisymm": "type_mismatch",
+    "v28_ord_min_le_right_1": "type_mismatch",
+    "v28_set_union_comm_subset_1": "type_mismatch"
+  },
+  "failure_taxonomy": {
+    "shape_miss": 3,
+    "type_mismatch": 97,
+    "unknown_identifier": 48,
+    "parse_error": 33,
+    "other": 55,
+    "unknown_tactic": 1
+  },
+  "per_category": {
+    "finset": {
+      "n": 6,
+      "pass@1": 0.5,
+      "pass@5": 0.6666666666666666,
+      "pass@10": 0.8333333333333334
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "list": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "order": {
+      "n": 9,
+      "pass@1": 0.4444444444444444,
+      "pass@5": 0.5555555555555556,
+      "pass@10": 0.7777777777777778
+    },
+    "set": {
+      "n": 9,
+      "pass@1": 0.6666666666666666,
+      "pass@5": 0.8888888888888888,
+      "pass@10": 0.8888888888888888
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

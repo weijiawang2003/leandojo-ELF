@@ -1,0 +1,180 @@
+{
+  "n_timeout_pairs": 35,
+  "n_flipped_to_success": 9,
+  "n_flipped_to_real_error": 26,
+  "n_still_timeout": 0,
+  "flipped_to_success": [
+    {
+      "theorem": "v18_and_intro",
+      "candidate": "constructor\n  exact hp\n  exact hq"
+    },
+    {
+      "theorem": "v18_and_intro",
+      "candidate": "exact And.intro hp hq"
+    },
+    {
+      "theorem": "v18_and_proj_3rd",
+      "candidate": "exact h.2.2"
+    },
+    {
+      "theorem": "v18_and_right",
+      "candidate": "exact And.right h"
+    },
+    {
+      "theorem": "v18_and_swap",
+      "candidate": "rcases h with ⟨hp, hq⟩\n  exact ⟨hq, hp⟩"
+    },
+    {
+      "theorem": "v18_imp_chain",
+      "candidate": "exact hqr (hpq hp)"
+    },
+    {
+      "theorem": "v18_imp_compose",
+      "candidate": "apply g\n  exact f a"
+    },
+    {
+      "theorem": "v18_imp_compose",
+      "candidate": "exact g (f a)"
+    },
+    {
+      "theorem": "v18_imp_p_self",
+      "candidate": "exact hp"
+    }
+  ],
+  "flipped_to_real_error": [
+    {
+      "theorem": "v18_and_assoc_one",
+      "candidate": "cases h with\n  | intro hp",
+      "error": "/tmp/mini_elf_lean_byfyk5pl.lean:1:56: error: unsolved goals"
+    },
+    {
+      "theorem": "v18_and_assoc_one",
+      "candidate": "exact And.right h.1.1",
+      "error": "/tmp/mini_elf_lean_txd1fdzt.lean:2:18: error: Invalid projection: Projection operates on types of the form `C ...` where"
+    },
+    {
+      "theorem": "v18_and_assoc_one",
+      "candidate": "exact ⟨h.2, h.1⟩",
+      "error": "/tmp/mini_elf_lean_de4f3k2h.lean:2:9: error: Application type mismatch: The argument"
+    },
+    {
+      "theorem": "v18_and_intro",
+      "candidate": "constructor\n  exact hp\n  exact hp",
+      "error": "/tmp/mini_elf_lean_ngkkfzjr.lean:4:2: error: Type mismatch"
+    },
+    {
+      "theorem": "v18_and_intro",
+      "candidate": "constructor\n  exact hp hq",
+      "error": "/tmp/mini_elf_lean_1ugd_a__.lean:3:8: error: Function expected at"
+    },
+    {
+      "theorem": "v18_and_intro",
+      "candidate": "exact ⟨hp, hq, hr",
+      "error": "/tmp/mini_elf_lean_p2_stskq.lean:3:0: error: unexpected end of input; expected '⟩'"
+    },
+    {
+      "theorem": "v18_and_left",
+      "candidate": "exact And.2 h",
+      "error": "/tmp/mini_elf_lean_1xvcx6ym.lean:2:8: error: Invalid projection: Projections cannot be used on functions, and"
+    },
+    {
+      "theorem": "v18_and_left",
+      "candidate": "exact And.And h",
+      "error": "/tmp/mini_elf_lean_j0oaei51.lean:2:8: error(lean.unknownIdentifier): Unknown constant `And.And`"
+    },
+    {
+      "theorem": "v18_and_proj_3rd",
+      "candidate": "exact h.right.1",
+      "error": "/tmp/mini_elf_lean_r_ur53nh.lean:2:2: error: Type mismatch"
+    },
+    {
+      "theorem": "v18_and_right",
+      "candidate": "exact And.2 h",
+      "error": "/tmp/mini_elf_lean_2bek887m.lean:2:8: error: Invalid projection: Projections cannot be used on functions, and"
+    },
+    {
+      "theorem": "v18_and_right",
+      "candidate": "exact And.intro h",
+      "error": "/tmp/mini_elf_lean_n24bxtve.lean:2:2: error: Type mismatch"
+    },
+    {
+      "theorem": "v18_and_right",
+      "candidate": "exact And.left h",
+      "error": "/tmp/mini_elf_lean_7t7rytns.lean:2:17: error: Application type mismatch: The argument"
+    },
+    {
+      "theorem": "v18_and_right",
+      "candidate": "exact h.1",
+      "error": "/tmp/mini_elf_lean_ay9rjja0.lean:2:2: error: Type mismatch"
+    },
+    {
+      "theorem": "v18_and_swap",
+      "candidate": "cases h with\n  | h with ⟨hp, hq⟩\n  exact ⟨hq, hp",
+      "error": "/tmp/mini_elf_lean_uxrw_vd_.lean:3:2: error: Invalid alternative name `h`: Expected `intro`"
+    },
+    {
+      "theorem": "v18_imp_arrow_arrow",
+      "candidate": "apply hpq\n  exact",
+      "error": "/tmp/mini_elf_lean_vnx9wjnb.lean:4:0: error: unexpected end of input"
+    },
+    {
+      "theorem": "v18_imp_arrow_arrow",
+      "candidate": "exact h hp",
+      "error": "/tmp/mini_elf_lean__luwa05v.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `hp`"
+    },
+    {
+      "theorem": "v18_imp_arrow_arrow",
+      "candidate": "exact h p",
+      "error": "/tmp/mini_elf_lean_17kxszpf.lean:2:10: error: Application type mismatch: The argument"
+    },
+    {
+      "theorem": "v18_imp_chain",
+      "candidate": "apply hqr\n  exact hp hp",
+      "error": "/tmp/mini_elf_lean_74wnc1f7.lean:3:8: error: Function expected at"
+    },
+    {
+      "theorem": "v18_imp_chain",
+      "candidate": "exact hpq hp",
+      "error": "/tmp/mini_elf_lean_em9sp9l7.lean:2:2: error: Type mismatch"
+    },
+    {
+      "theorem": "v18_imp_chain",
+      "candidate": "exact hqr hpq hp",
+      "error": "/tmp/mini_elf_lean_2jnorjvb.lean:2:12: error: Application type mismatch: The argument"
+    },
+    {
+      "theorem": "v18_imp_p_self",
+      "candidate": "apply hp\n  exact",
+      "error": "/tmp/mini_elf_lean_sg0fa28f.lean:4:0: error: unexpected end of input"
+    },
+    {
+      "theorem": "v18_imp_p_self",
+      "candidate": "exact False.hp",
+      "error": "/tmp/mini_elf_lean_2gewnnvt.lean:2:8: error(lean.unknownIdentifier): Unknown constant `False.hp`"
+    },
+    {
+      "theorem": "v18_imp_p_self",
+      "candidate": "exact Falsehphp",
+      "error": "/tmp/mini_elf_lean_9oypuabu.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `Falsehphp`"
+    },
+    {
+      "theorem": "v18_imp_swap_args",
+      "candidate": "apply h\n  exact hp\n  exact",
+      "error": "/tmp/mini_elf_lean_di_kj04i.lean:5:0: error: unexpected end of input"
+    },
+    {
+      "theorem": "v18_imp_swap_args",
+      "candidate": "apply h\n  exact hp hq",
+      "error": "/tmp/mini_elf_lean_9t2rvmj0.lean:3:8: error: Function expected at"
+    },
+    {
+      "theorem": "v18_imp_swap_args",
+      "candidate": "exact h hp hx",
+      "error": "/tmp/mini_elf_lean_byii3yxg.lean:2:13: error(lean.unknownIdentifier): Unknown identifier `hx`"
+    }
+  ],
+  "still_timeout": [],
+  "verifier_timeout_s": 60.0,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

@@ -1,0 +1,102 @@
+{
+  "families": {
+    "forall_inst": {
+      "residual": [],
+      "n_test_rows_unique": 7
+    },
+    "rewrite_succ": {
+      "residual": [],
+      "n_test_rows_unique": 5
+    },
+    "neg_exfalso": {
+      "residual": [
+        {
+          "theorem_name": "neg_exfalso_arrow_pq",
+          "family": "neg_exfalso",
+          "theorem_statement": "(p q : Prop) (h : p → False) (hp : p) : q",
+          "state_before": "p q : Prop\nh : p → False\nhp : p\n⊢ q",
+          "expected_tactic": "exact (h hp).elim",
+          "required_operation": "contradiction",
+          "policy_first_verified_rank": null,
+          "policy_pass@10": false,
+          "raw_beam_candidates": [
+            "exact h hp",
+            "exact absurd hp ",
+            "exact absurd h ",
+            "exact False h",
+            "exact False hp",
+            "exact False.elim ",
+            "exact hf hp",
+            "exact h h",
+            "exact h (h",
+            "exact h hp "
+          ],
+          "raw_beam_errors": [
+            "/tmp/mini_elf_lean_o4o70cf0.lean:2:2: error: Type mismatch",
+            "/tmp/mini_elf_lean_pj7otvn6.lean:2:2: error: Type mismatch",
+            "/tmp/mini_elf_lean_por7zdn6.lean:2:2: error: Type mismatch",
+            "/tmp/mini_elf_lean_5x43whu2.lean:2:8: error: Function expected at",
+            "/tmp/mini_elf_lean_zx8cdhwf.lean:2:8: error: Function expected at",
+            "/tmp/mini_elf_lean_xndep_sz.lean:2:2: error: Type mismatch",
+            "/tmp/mini_elf_lean_g0b4zxf8.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `hf`",
+            "/tmp/mini_elf_lean__pn4imzx.lean:2:10: error: Application type mismatch: The argument",
+            "/tmp/mini_elf_lean_29yqkdww.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+            "/tmp/mini_elf_lean_221vs57i.lean:2:2: error: Type mismatch"
+          ],
+          "raw_beam_verified_indices": []
+        }
+      ],
+      "n_test_rows_unique": 8
+    },
+    "exists_reconstruct": {
+      "residual": [],
+      "n_test_rows_unique": 5
+    },
+    "neg_imp_exfalso": {
+      "residual": [],
+      "n_test_rows_unique": 5
+    }
+  },
+  "residual_failures": [
+    {
+      "theorem_name": "neg_exfalso_arrow_pq",
+      "family": "neg_exfalso",
+      "theorem_statement": "(p q : Prop) (h : p → False) (hp : p) : q",
+      "state_before": "p q : Prop\nh : p → False\nhp : p\n⊢ q",
+      "expected_tactic": "exact (h hp).elim",
+      "required_operation": "contradiction",
+      "policy_first_verified_rank": null,
+      "policy_pass@10": false,
+      "raw_beam_candidates": [
+        "exact h hp",
+        "exact absurd hp ",
+        "exact absurd h ",
+        "exact False h",
+        "exact False hp",
+        "exact False.elim ",
+        "exact hf hp",
+        "exact h h",
+        "exact h (h",
+        "exact h hp "
+      ],
+      "raw_beam_errors": [
+        "/tmp/mini_elf_lean_o4o70cf0.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_pj7otvn6.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_por7zdn6.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_5x43whu2.lean:2:8: error: Function expected at",
+        "/tmp/mini_elf_lean_zx8cdhwf.lean:2:8: error: Function expected at",
+        "/tmp/mini_elf_lean_xndep_sz.lean:2:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_g0b4zxf8.lean:2:8: error(lean.unknownIdentifier): Unknown identifier `hf`",
+        "/tmp/mini_elf_lean__pn4imzx.lean:2:10: error: Application type mismatch: The argument",
+        "/tmp/mini_elf_lean_29yqkdww.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+        "/tmp/mini_elf_lean_221vs57i.lean:2:2: error: Type mismatch"
+      ],
+      "raw_beam_verified_indices": []
+    }
+  ],
+  "aggregate": {
+    "n_rows": 30,
+    "n_pass_at_5": 29,
+    "n_fail_at_5": 1
+  }
+}

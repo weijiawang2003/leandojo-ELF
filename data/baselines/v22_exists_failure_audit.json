@@ -1,0 +1,92 @@
+{
+  "n_exists_theorems": 4,
+  "training_pool_probes": {
+    "rows_with_anonymous_constructor": 141,
+    "rows_with_cases_with_intro": 11,
+    "rows_tagged_exists_category_or_op": 34,
+    "pool_total": 2776
+  },
+  "per_theorem": [
+    {
+      "theorem_name": "v18_exists_compose",
+      "split": "train",
+      "theorem_statement": "(p q : Nat → Prop) (h : ∃ n, p n) (hpq : ∀ n, p n → q n) : ∃ n, q n",
+      "expected_tactic_head": "cases",
+      "v20_first_rank": null,
+      "routed_first_rank": null,
+      "v20_top5": [
+        "rcases h with ⟨n, hpq⟩\n  exact hpq",
+        "rcases h with ⟨n, hpq⟩\n  exact hq",
+        "rcases h with ⟨n, hpq⟩ => exact ⟨n,",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨n, hpq⟩",
+        "rcases h with ⟨n, hpq⟩\n  exact ⟨hq, hpq⟩"
+      ],
+      "v20_top3_errors": [
+        "/tmp/mini_elf_lean_r5mqomez.lean:3:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_ta9w552g.lean:3:8: error(lean.unknownIdentifier): Unknown identifier `hq`",
+        "/tmp/mini_elf_lean_98j3wcot.lean:1:79: error: unsolved goals"
+      ]
+    },
+    {
+      "theorem_name": "v18_exists_intro_eq",
+      "split": "test",
+      "theorem_statement": "(n : Nat) : ∃ m, n = m",
+      "expected_tactic_head": "exact",
+      "v20_first_rank": 0,
+      "routed_first_rank": 0,
+      "v20_top5": [
+        "refine ⟨n, ?_⟩\n  rfl",
+        "refine ⟨0, ?_⟩\n  rfl",
+        "refine ⟨3, ?_⟩\n  rfl",
+        "refine ⟨8, ?_⟩\n  rfl",
+        "refine ⟨100, ?_⟩\n  rfl"
+      ],
+      "v20_top3_errors": [
+        "",
+        "/tmp/mini_elf_lean_a0eknmi2.lean:3:2: error: Tactic `rfl` failed: The left-hand side",
+        "/tmp/mini_elf_lean_nmejzc5t.lean:3:2: error: Tactic `rfl` failed: The left-hand side"
+      ]
+    },
+    {
+      "theorem_name": "v18_exists_intro_nat",
+      "split": "val",
+      "theorem_statement": "(p : Nat → Prop) (h : p 3) : ∃ n, p n",
+      "expected_tactic_head": "exact",
+      "v20_first_rank": null,
+      "routed_first_rank": null,
+      "v20_top5": [
+        "refine ⟨n, ?_⟩\n  rfl",
+        "refine ⟨n, ?_⟩\n  | ⟨n, ?_⟩",
+        "rcases h with ⟨hp, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hp⟩\n  exact hq"
+      ],
+      "v20_top3_errors": [
+        "/tmp/mini_elf_lean_so5trlb7.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`",
+        "/tmp/mini_elf_lean_hoy1ea0u.lean:2:10: error(lean.unknownIdentifier): Unknown identifier `n`",
+        "/tmp/mini_elf_lean_uwyvm1ji.lean:2:16: error: Tactic `rcases` failed: `h : p 3` is not an inductive datatype"
+      ]
+    },
+    {
+      "theorem_name": "v18_exists_relabel",
+      "split": "train",
+      "theorem_statement": "(p : Nat → Prop) (h : ∃ n, p n) : ∃ m, p m",
+      "expected_tactic_head": "exact",
+      "v20_first_rank": null,
+      "routed_first_rank": null,
+      "v20_top5": [
+        "rcases h with ⟨n, hp⟩\n  exact hp",
+        "rcases h with ⟨n, hp, hq⟩\n  exact hq",
+        "rcases h with ⟨n, hp, hq⟩\n  exact hp",
+        "obtain ⟨n, hpq⟩ := h\n  exact hpq.2",
+        "obtain ⟨n, hpq⟩ := h\n  exact hpq.1"
+      ],
+      "v20_top3_errors": [
+        "/tmp/mini_elf_lean_nvymtvhl.lean:3:2: error: Type mismatch",
+        "/tmp/mini_elf_lean_thb092yy.lean:2:16: error: Tactic `rcases` failed: `h✝ : p n` is not an inductive datatype",
+        "/tmp/mini_elf_lean_a0t_onyf.lean:2:16: error: Tactic `rcases` failed: `h✝ : p n` is not an inductive datatype"
+      ]
+    }
+  ],
+  "uses_state_after": false
+}

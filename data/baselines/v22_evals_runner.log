@@ -1,0 +1,38 @@
+=== eval v22_general_plus_exists (bag=A_mixed) ===
+2026-05-31 01:43:57,829 INFO   raw pass@1=0.792 pass@5=0.833 pass@10=0.833 no_verify=8
+2026-05-31 01:43:57,831 INFO   rule pass@1=0.771 pass@5=0.833 pass@10=0.833 no_verify=8
+2026-05-31 01:43:57,834 INFO   learned pass@1=0.646 pass@5=0.833 pass@10=0.833 no_verify=8
+2026-05-31 01:43:57,838 INFO   policy pass@1=0.688 pass@5=0.833 pass@10=0.833 no_verify=8
+2026-05-31 01:43:57,841 INFO   abstract pass@1=0.729 pass@5=0.812 pass@10=0.833 no_verify=8
+2026-05-31 01:43:57,843 INFO   policy_abstract pass@1=0.708 pass@5=0.812 pass@10=0.833 no_verify=8
+2026-05-31 01:43:57,843 INFO V21 eval DONE -> data/baselines/v22_general_plus_exists_eval
+=== eval v22_general_balanced (bag=B_oversample) ===
+2026-05-31 01:45:28,853 INFO   raw pass@1=0.667 pass@5=0.750 pass@10=0.792 no_verify=10
+2026-05-31 01:45:28,859 INFO   rule pass@1=0.604 pass@5=0.771 pass@10=0.792 no_verify=10
+2026-05-31 01:45:28,862 INFO   learned pass@1=0.562 pass@5=0.708 pass@10=0.792 no_verify=10
+2026-05-31 01:45:28,867 INFO   policy pass@1=0.625 pass@5=0.750 pass@10=0.792 no_verify=10
+2026-05-31 01:45:28,870 INFO   abstract pass@1=0.625 pass@5=0.792 pass@10=0.792 no_verify=10
+2026-05-31 01:45:28,874 INFO   policy_abstract pass@1=0.625 pass@5=0.792 pass@10=0.792 no_verify=10
+2026-05-31 01:45:28,891 INFO V21 eval DONE -> data/baselines/v22_general_balanced_eval
+=== eval v22_general_large (bag=A_mixed) ===
+2026-05-31 01:46:42,121 INFO   raw pass@1=0.708 pass@5=0.771 pass@10=0.812 no_verify=9
+2026-05-31 01:46:42,123 INFO   rule pass@1=0.688 pass@5=0.792 pass@10=0.812 no_verify=9
+2026-05-31 01:46:42,124 INFO   learned pass@1=0.646 pass@5=0.771 pass@10=0.812 no_verify=9
+2026-05-31 01:46:42,126 INFO   policy pass@1=0.604 pass@5=0.792 pass@10=0.812 no_verify=9
+2026-05-31 01:46:42,127 INFO   abstract pass@1=0.667 pass@5=0.771 pass@10=0.812 no_verify=9
+2026-05-31 01:46:42,128 INFO   policy_abstract pass@1=0.667 pass@5=0.771 pass@10=0.812 no_verify=9
+2026-05-31 01:46:42,137 INFO V21 eval DONE -> data/baselines/v22_general_large_eval
+=== eval v22_general_balanced_large (bag=B_oversample) ===
+2026-05-31 01:47:35,290 INFO   raw pass@1=0.583 pass@5=0.750 pass@10=0.792 no_verify=10
+2026-05-31 01:47:35,291 INFO   rule pass@1=0.562 pass@5=0.750 pass@10=0.792 no_verify=10
+2026-05-31 01:47:35,293 INFO   learned pass@1=0.458 pass@5=0.750 pass@10=0.792 no_verify=10
+2026-05-31 01:47:35,294 INFO   policy pass@1=0.500 pass@5=0.750 pass@10=0.792 no_verify=10
+2026-05-31 01:47:35,295 INFO   abstract pass@1=0.625 pass@5=0.792 pass@10=0.792 no_verify=10
+2026-05-31 01:47:35,297 INFO   policy_abstract pass@1=0.625 pass@5=0.792 pass@10=0.792 no_verify=10
+2026-05-31 01:47:35,307 INFO V21 eval DONE -> data/baselines/v22_general_balanced_large_eval
+=== Part 6: category-interference analysis ===
+2026-05-31 01:47:35,607 INFO wrote /home/wangw/code/ELFMath/data/baselines/v22_category_interference.json
+2026-05-31 01:47:35,608 INFO wrote /home/wangw/code/ELFMath/docs/V22_CATEGORY_INTERFERENCE_ANALYSIS.md
+2026-05-31 01:47:35,608 INFO best_single=v22_general_plus_exists p@5=0.812 vs routed=0.792 (gap=-0.020) single_matches_routing=True
+=== refresh routing audit (Part 1, includes nothing new but re-asserts) ===
+ALL_V22_EVALS_DONE

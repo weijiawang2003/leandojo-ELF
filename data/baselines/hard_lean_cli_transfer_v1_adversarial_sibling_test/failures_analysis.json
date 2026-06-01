@@ -1,0 +1,110 @@
+{
+  "failure_taxonomy": {
+    "missing_multistep": 6,
+    "unknown": 18,
+    "wrong_iff_direction": 10,
+    "wrong_witness": 4
+  },
+  "failure_taxonomy_examples": {
+    "missing_multistep": {
+      "goal": "⊢ p → s",
+      "theorem": "imp_chain3_pqrs",
+      "top1": "intro hp\n  exact h2 (h1 hp)"
+    },
+    "unknown": {
+      "goal": "⊢ p",
+      "theorem": "nested_and_l_first_pqr",
+      "top1": "exact Eq.symm h"
+    },
+    "wrong_iff_direction": {
+      "goal": "⊢ p → r",
+      "theorem": "iff_chain_pqr",
+      "top1": "intro hp\n  exact h2 (h1 hp)"
+    },
+    "wrong_witness": {
+      "goal": "⊢ ∃ n : Nat, n = 6",
+      "theorem": "exists_hard_nat_6",
+      "top1": "exact ⟨1, rfl⟩"
+    }
+  },
+  "reranker_calibration": {
+    "mean_score_failed": 0.4481,
+    "mean_score_verified": 0.9968,
+    "n_failed_scored": 182,
+    "n_verified_scored": 8,
+    "top1_false_negatives": [
+      {
+        "candidate": "refine ⟨6, ?_⟩\n  rfl",
+        "rank": 2,
+        "score": 1.0,
+        "theorem": "exists_hard_nat_6"
+      },
+      {
+        "candidate": "refine ⟨6, ?_⟩\n  rfl",
+        "rank": 2,
+        "score": 1.0,
+        "theorem": "exists_hard_nat_6"
+      },
+      {
+        "candidate": "exact ⟨9, rfl⟩",
+        "rank": 2,
+        "score": 0.999,
+        "theorem": "exists_hard_nat_9"
+      },
+      {
+        "candidate": "exact ⟨9, rfl⟩",
+        "rank": 2,
+        "score": 0.999,
+        "theorem": "exists_hard_nat_9"
+      }
+    ],
+    "top1_false_positives": [
+      {
+        "candidate": "intro hp\n  exact h2 (h1 hp)",
+        "score": 0.999,
+        "theorem": "imp_chain3_pqrs"
+      },
+      {
+        "candidate": "intro hp\n  exact h2 (h1 hp)",
+        "score": 0.999,
+        "theorem": "imp_chain3_pqrs"
+      },
+      {
+        "candidate": "exact fun hp => h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_uncurry_acd"
+      },
+      {
+        "candidate": "exact fun hp => h2 (h1 hp)",
+        "score": 1.0,
+        "theorem": "imp_uncurry_acd"
+      },
+      {
+        "candidate": "exact Eq.symm h",
+        "score": 0.999,
+        "theorem": "nested_and_l_first_pqr"
+      },
+      {
+        "candidate": "exact Eq.symm h",
+        "score": 0.999,
+        "theorem": "nested_and_l_first_pqr"
+      },
+      {
+        "candidate": "exact h.elim",
+        "score": 1.0,
+        "theorem": "nested_and_l_mid_pqr"
+      },
+      {
+        "candidate": "exact h.elim",
+        "score": 1.0,
+        "theorem": "nested_and_l_mid_pqr"
+      }
+    ]
+  },
+  "source_effectiveness": {
+    "rows_reranker_rescued_top1": 0,
+    "verified_by_source": {
+      "witness_copy": 8
+    }
+  }
+}

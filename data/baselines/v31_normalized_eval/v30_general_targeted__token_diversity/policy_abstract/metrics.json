@@ -1,0 +1,68 @@
+{
+  "config": "policy_abstract",
+  "n_test_theorems": 13,
+  "pass@1": 0.0,
+  "pass@5": 0.0,
+  "pass@10": 0.0,
+  "MRR": 0.0,
+  "n_no_candidate_verified": 13,
+  "no_verify_reason": {
+    "v29_fs_mem_union_right_3": "unknown_identifier",
+    "v29_ord_min_le_left_2": "unknown_identifier",
+    "v29_set_mem_inter_left_3": "other",
+    "v29_set_mem_inter_right_3": "unknown_identifier",
+    "v29_set_mem_union_of_left_3": "unknown_identifier",
+    "v29_set_mem_union_of_right_3": "unknown_identifier",
+    "v30_set_empty_inter_subset": "type_mismatch",
+    "v30_set_mem_inter_left_mgh": "other",
+    "v30_fs_mem_inter_right_mgh": "type_mismatch",
+    "v30_set_mem_inter_right_mgh": "other",
+    "v30_set_mem_union_right_mgh": "type_mismatch",
+    "v30_set_union_subset_rsw": "parse_error",
+    "v28_ord_le_max_right_1": "unknown_identifier"
+  },
+  "per_category": {
+    "finset": {
+      "n": 2,
+      "pass@10": 0.0
+    },
+    "order": {
+      "n": 2,
+      "pass@10": 0.0
+    },
+    "set": {
+      "n": 9,
+      "pass@10": 0.0
+    }
+  },
+  "per_family": {
+    "finset::mem_union_intro": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "order::min_max": {
+      "n": 2,
+      "pass@10": 0.0
+    },
+    "set::mem_inter_proj": {
+      "n": 4,
+      "pass@10": 0.0
+    },
+    "set::mem_union_intro": {
+      "n": 3,
+      "pass@10": 0.0
+    },
+    "set::empty_subset": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "finset::mem_inter_proj": {
+      "n": 1,
+      "pass@10": 0.0
+    },
+    "set::union_subset": {
+      "n": 1,
+      "pass@10": 0.0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "config": "v27_corpus_integrity",
+  "n_verified": 181,
+  "n_failed": 5,
+  "verified_still_pass": 181,
+  "n_verified_regressions": 0,
+  "verified_regressions": [],
+  "n_failed_now_pass": 0,
+  "failed_now_pass": [],
+  "gold_sample_size": 24,
+  "n_gold_mismatches": 0,
+  "gold_mismatches": [],
+  "integrity_ok": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

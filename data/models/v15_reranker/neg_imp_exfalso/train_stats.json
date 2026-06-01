@@ -1,0 +1,16 @@
+{
+  "n_train_rows": 1333,
+  "n_features": 244,
+  "positive_fraction_train": 0.09827456864216054,
+  "final_epoch": {
+    "epoch": 199,
+    "train_loss": 7.054655576781837,
+    "train_acc": 0.8387096774193549,
+    "val_acc": 0.9459459459459459,
+    "val_tp": 7,
+    "val_fp": 1,
+    "val_fn": 7,
+    "val_tn": 133
+  },
+  "uses_state_after": false
+}

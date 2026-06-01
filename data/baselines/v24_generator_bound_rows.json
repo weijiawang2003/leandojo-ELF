@@ -1,0 +1,176 @@
+{
+  "n_generator_bound": 8,
+  "rows": [
+    {
+      "theorem_name": "v18_and_assoc_one",
+      "category": "conjunction",
+      "statement": "(p q r : Prop) (h : p ∧ q ∧ r) : (p ∧ q) ∧ r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∧ q ∧ r\n⊢ (p ∧ q) ∧ r",
+      "raw_top3": [
+        "exact ⟨h.2, h.1⟩",
+        "rcases h with ⟨hp, hq⟩\n  exact ⟨hq",
+        "cases h with\n  | intro hp hq =>"
+      ],
+      "raw_top3_errors": [
+        ": Application type mismatch: The argument",
+        ": unexpected end of input; expected '⟩'",
+        ": unexpected end of input; expected '?', '_' or '{'"
+      ],
+      "classification": "conjunction shape gap (nested re-association)",
+      "proposed_family": "conj_reassoc",
+      "verified_shape": "exact ⟨⟨h.1, h.2.1⟩, h.2.2⟩",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_or_inr",
+      "category": "disjunction",
+      "statement": "(p q : Prop) (hq : q) : p ∨ q",
+      "state_before": "p : Prop\nq : Prop\nhq : q\n⊢ p ∨ q",
+      "raw_top3": [
+        "left\n  exact hp\n  exact hq",
+        "exact Or.inr hp\n  exact hq",
+        "right\n  exact hp\n  exact hq"
+      ],
+      "raw_top3_errors": [
+        "(lean.unknownIdentifier): Unknown identifier `hp`",
+        "(lean.unknownIdentifier): Unknown identifier `hp`",
+        "(lean.unknownIdentifier): Unknown identifier `hp`"
+      ],
+      "classification": "disjunction shape gap + wrong-hyp (emits Or.inr hp not hq)",
+      "proposed_family": "or_intro",
+      "verified_shape": "exact Or.inr hq",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_or_elim_to_common",
+      "category": "disjunction",
+      "statement": "(p q r : Prop) (h : p ∨ q) (hpr : p → r) (hqr : q → r) : r",
+      "state_before": "p : Prop\nq : Prop\nr : Prop\nh : p ∨ q\nhpr : p → r\nhqr : q → r\n⊢ r",
+      "raw_top3": [
+        "cases h with | inl ht => exact hpq hx",
+        "cases h with\n  | inl hp => exact hpq hx",
+        "cases h with\n  | inl ht => exact hpq hx"
+      ],
+      "raw_top3_errors": [
+        "(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "(lean.unknownIdentifier): Unknown identifier `hpq`",
+        "(lean.unknownIdentifier): Unknown identifier `hpq`"
+      ],
+      "classification": "disjunction shape gap (or-elimination)",
+      "proposed_family": "or_elim",
+      "verified_shape": "exact Or.elim h hpr hqr",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_neg_or_left",
+      "category": "negation",
+      "statement": "(p q : Prop) (h : ¬(p ∨ q)) : ¬p",
+      "state_before": "p : Prop\nq : Prop\nh : ¬(p ∨ q)\n⊢ ¬p",
+      "raw_top3": [
+        "exact fun hp => h (h hp)",
+        "exact fun hp => absurd hp hnp\n  | inr",
+        "exact fun hp => absurd hp hnp => h"
+      ],
+      "raw_top3_errors": [
+        ": Application type mismatch: The argument",
+        "(lean.unknownIdentifier): Unknown identifier `hnp`",
+        "(lean.unknownIdentifier): Unknown identifier `hnp`"
+      ],
+      "classification": "negation shape gap (push ¬ through Or.inl)",
+      "proposed_family": "neg_of_or",
+      "verified_shape": "intro hp\n  exact h (Or.inl hp)",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_exists_intro_eq",
+      "category": "exists",
+      "statement": "(n : Nat) : ∃ m, n = m",
+      "state_before": "n : Nat\n⊢ ∃ m, n = m",
+      "raw_top3": [
+        "exact ⟨m, rfl⟩",
+        "refine ⟨m, ?_⟩\n  rfl",
+        "rcases h with ⟨n, hn⟩"
+      ],
+      "raw_top3_errors": [
+        "(lean.unknownIdentifier): Unknown identifier `m`",
+        "(lean.unknownIdentifier): Unknown identifier `m`",
+        "(lean.unknownIdentifier): Unknown identifier `h`"
+      ],
+      "classification": "exists shape gap (reversed reflexive witness ∃ m, n = m)",
+      "proposed_family": "exists_eq_rev",
+      "verified_shape": "exact ⟨n, rfl⟩",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_nat_zero_add",
+      "category": "nat_succ",
+      "statement": "(n : Nat) : 0 + n = n",
+      "state_before": "n : Nat\n⊢ 0 + n = n",
+      "raw_top3": [
+        "exact rfl",
+        "exact Eq.refl _",
+        "exact ⟨m, rfl⟩"
+      ],
+      "raw_top3_errors": [
+        ": Type mismatch",
+        ": Type mismatch",
+        ": Insufficient number of fields for `⟨...⟩` constructor: Con"
+      ],
+      "classification": "nat_succ shape gap (0 + n = n is NOT rfl; needs lemma/omega)",
+      "proposed_family": "nat_zero_add",
+      "verified_shape": "exact Nat.zero_add n  /  omega",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_nat_succ_inj",
+      "category": "nat_succ",
+      "statement": "(n m : Nat) (h : n.succ = m.succ) : n = m",
+      "state_before": "n : Nat\nm : Nat\nh : n.succ = m.succ\n⊢ n = m",
+      "raw_top3": [
+        "rw [h]",
+        "subst h\n  rfl",
+        "exact congrArg Nat.succ"
+      ],
+      "raw_top3_errors": [
+        ": Tactic `rewrite` failed: Did not find an occurrence of the",
+        ": Tactic `subst` failed: invalid equality proof, it is not o",
+        ": Type mismatch"
+      ],
+      "classification": "nat_succ shape gap (succ injectivity)",
+      "proposed_family": "nat_succ_inj",
+      "verified_shape": "exact Nat.succ.inj h  /  injection h  /  omega",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    },
+    {
+      "theorem_name": "v18_list_append_nil",
+      "category": "list",
+      "statement": "(α : Type) (xs : List α) : xs ++ [] = xs",
+      "state_before": "α : Type\nxs : List α\n⊢ xs ++ [] = xs",
+      "raw_top3": [
+        "rfl",
+        "exact rfl",
+        "exact Eq.refl"
+      ],
+      "raw_top3_errors": [
+        ": Tactic `rfl` failed: The left-hand side",
+        ": Type mismatch",
+        ": Type mismatch"
+      ],
+      "classification": "list shape gap (xs ++ [] = xs is NOT rfl; needs lemma/simp)",
+      "proposed_family": "list_append_nil",
+      "verified_shape": "exact List.append_nil xs  /  simp",
+      "similar_verified_in_training": "no (generator never emitted this shape)"
+    }
+  ],
+  "families_to_add": [
+    "conj_reassoc",
+    "exists_eq_rev",
+    "list_append_nil",
+    "nat_succ_inj",
+    "nat_zero_add",
+    "neg_of_or",
+    "or_elim",
+    "or_intro"
+  ],
+  "uses_state_after": false
+}

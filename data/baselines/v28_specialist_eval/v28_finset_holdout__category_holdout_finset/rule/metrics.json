@@ -1,0 +1,42 @@
+{
+  "config": "rule",
+  "n_test_theorems": 18,
+  "pass@1": 0.05555555555555555,
+  "pass@5": 0.2777777777777778,
+  "pass@10": 0.3333333333333333,
+  "MRR": 0.1435185185185185,
+  "n_no_candidate_verified": 12,
+  "no_verify_reason": {
+    "v28_fs_inter_subset_left_0": "other",
+    "v28_fs_inter_subset_left_1": "unknown_identifier",
+    "v28_fs_inter_subset_right_0": "other",
+    "v28_fs_mem_inter_iff_0": "type_mismatch",
+    "v28_fs_mem_inter_iff_1": "type_mismatch",
+    "v28_fs_mem_inter_left_0": "other",
+    "v28_fs_mem_inter_right_0": "other",
+    "v28_fs_mem_inter_right_1": "other",
+    "v28_fs_subset_union_left_0": "type_mismatch",
+    "v28_fs_subset_union_left_1": "type_mismatch",
+    "v28_fs_subset_union_right_1": "type_mismatch",
+    "v28_fs_union_comm": "other"
+  },
+  "failure_taxonomy": {
+    "shape_miss": 3,
+    "type_mismatch": 51,
+    "other": 67,
+    "unknown_identifier": 35,
+    "parse_error": 12,
+    "unknown_tactic": 1
+  },
+  "per_category": {
+    "finset": {
+      "n": 18,
+      "pass@1": 0.05555555555555555,
+      "pass@5": 0.2777777777777778,
+      "pass@10": 0.3333333333333333
+    }
+  },
+  "mathlib": true,
+  "uses_state_after": false,
+  "uses_manual_oracle": false
+}

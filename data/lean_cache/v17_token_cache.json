@@ -1,0 +1,402 @@
+{
+  "014f2323362aa701c3fab7542699f4b654042022b1041da44e492502270d8345": {
+    "elapsed_ms": 379.1490010044072,
+    "error": "/tmp/mini_elf_lean_3g4gq2c2.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  x \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "038ae10deb78e7bf0a6371c82431c3d16abc3adbc6874c52dda415ee2da79ef0": {
+    "elapsed_ms": 404.600105015561,
+    "error": null,
+    "success": true
+  },
+  "0421675a96e1d18c099d0189e5a8c9bd40db74663bde7dc1bfc0784b7d4ed0f2": {
+    "elapsed_ms": 541.0875960078556,
+    "error": "/tmp/mini_elf_lean_df37aku_.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_df37aku_.lean:2:10: error: Application type mismatch: The argument\n  h hp\nhas type\n  False\nbut is expected to have type\n  a\nin the application\n  h (h hp)",
+    "success": false
+  },
+  "053555803a7d0235c61f68eb2b8adb15cdbe16e5b8f2d99fcccbe5feb5af5266": {
+    "elapsed_ms": 445.04860500455834,
+    "error": "/tmp/mini_elf_lean_bobm0myr.lean:2:10: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression\n  h\nof type `a \u2192 False`",
+    "success": false
+  },
+  "11a1609b87b0ad7722e44fbea951d86e410c3f32e7a127f22abc5c14942f23e4": {
+    "elapsed_ms": 426.1844799912069,
+    "error": "/tmp/mini_elf_lean_uqmkmyty.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  a \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "132c27c4ca3b7e3afc210632f9fc3f323cbfb8d26060f4b6f3e6e26b1dd01c21": {
+    "elapsed_ms": 401.0996589786373,
+    "error": "/tmp/mini_elf_lean_o3i4zqs9.lean:2:10: error: Application type mismatch: The argument\n  h hp\nhas type\n  False\nbut is expected to have type\n  p\nin the application\n  h (h hp)",
+    "success": false
+  },
+  "13f8abf0ed5c75fd781d770bafd29fd43078350af33a4264a1a1c79e04b8dffd": {
+    "elapsed_ms": 406.9125739915762,
+    "error": "/tmp/mini_elf_lean_6rj9cscv.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hpfalse`",
+    "success": false
+  },
+  "14e692d38cb4a03eb6c9a2b5f451560ced32110615bc5ecc5c83e441ca3e447d": {
+    "elapsed_ms": 584.2554560222197,
+    "error": "/tmp/mini_elf_lean_jk_371li.lean:2:2: error: Type mismatch\n  fun hp => absurd\nhas type\n  (hp : ?m.2) \u2192 ?m.5 hp \u2192 \u00ac?m.5 hp \u2192 ?m.6 hp\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "176ef38f1b90ed609218303787d0d50e7d8087e3a743a2abc6018edfd46c8330": {
+    "elapsed_ms": 420.18618498696014,
+    "error": "/tmp/mini_elf_lean_314iwp2u.lean:2:8: error: Function expected at\n  hnp hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  hnp",
+    "success": false
+  },
+  "2461835af502e520ad7441cd0e9eaaebfc2d2d4f2b2de394a8e3e3c4e9896bbe": {
+    "elapsed_ms": 453.3545320155099,
+    "error": null,
+    "success": true
+  },
+  "281d86dc15b1906b7261f77bb3e7ca71824f79107aea389a9a35201c3f95e741": {
+    "elapsed_ms": 441.5476300055161,
+    "error": "/tmp/mini_elf_lean_ar0etzqq.lean:2:8: error: Function expected at\n  absurd hp hnp\nbut this term has type\n  ?m.3\n\nNote: Expected a function because this term is being applied to the argument\n  hp",
+    "success": false
+  },
+  "2d69bc40f8bc93aa92f2750992cbd4bd682639c808953d84322cc07b5c63e096": {
+    "elapsed_ms": 575.7399830035865,
+    "error": null,
+    "success": true
+  },
+  "2f564f6de50903fd7156e3fc3bb0f44372da4917c0b101903249b4895f66002a": {
+    "elapsed_ms": 414.6268100012094,
+    "error": "/tmp/mini_elf_lean_vsqm94n2.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\na c : Prop\nhp : a\nhnp : \u00aca\n\u22a2 c",
+    "success": false
+  },
+  "31d9b99cd63b41415407d34e1f978534e7d48f58f361aacb7766d33f537ee278": {
+    "elapsed_ms": 402.06692198989913,
+    "error": "/tmp/mini_elf_lean_8ju9vep8.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\na b : Prop\nhp : a\nhnp : \u00aca\n\u22a2 b",
+    "success": false
+  },
+  "332c7f405139208cd9f31a9e11e9df268c4045b6e098223d472e49ffbd22b5a2": {
+    "elapsed_ms": 426.68055000831373,
+    "error": "/tmp/mini_elf_lean_jpw_wdfl.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "37412820f78c9c7d7407eb4ed35dcb8b0fec13c4ba8a82f5bd31b1ffa2b8af1c": {
+    "elapsed_ms": 452.1042380074505,
+    "error": "/tmp/mini_elf_lean__62zas0w.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean__62zas0w.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  a \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "385c798f5d8a8524162f770be28fb504687a09c43587a4db684561b9c841f439": {
+    "elapsed_ms": 400.2425209910143,
+    "error": "/tmp/mini_elf_lean_vwyypak0.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np r : Prop\nhp : p\nhnp : \u00acp\n\u22a2 r",
+    "success": false
+  },
+  "387f091fcfecaebf54755a7010aedfcacc963d31cef7075a611aac356eeb1bf8": {
+    "elapsed_ms": 395.95321301021613,
+    "error": "/tmp/mini_elf_lean_3xrxtpln.lean:2:8: error: Function expected at\n  hnp hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  hnp",
+    "success": false
+  },
+  "3c47d8c21507bedc403e2f20b03598b04f8af1603b5b0cddf5097f46e009a717": {
+    "elapsed_ms": 436.66304400539957,
+    "error": "/tmp/mini_elf_lean_mnygk_nx.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `absurdhnp`",
+    "success": false
+  },
+  "3cc9882daa7bfc94efdbd2370a4c69175ce09b0b02cc33e02ae27e1f38c78bdb": {
+    "elapsed_ms": 411.9028869899921,
+    "error": "/tmp/mini_elf_lean_7unpmj09.lean:2:2: error: Type mismatch\n  h hp\nhas type\n  False\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "427108fe4027ea1c2109a5af3ceebc214792568ad38dd7048519157034f1fe9c": {
+    "elapsed_ms": 420.3083080064971,
+    "error": "/tmp/mini_elf_lean_pzxgvcck.lean:2:2: error: Type mismatch\n  hnp hp\nhas type\n  False\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "4b2be26d4bb65a71b00508edfac3517c7a3c4b3e20e3faa65c422e8fd18e83e4": {
+    "elapsed_ms": 370.40755202178843,
+    "error": "/tmp/mini_elf_lean_ntdx77ur.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnphnp`",
+    "success": false
+  },
+  "5259a7eab487347c67ceaaf93dc505704d55c4a7cc7b7a67c3bd5c49594fa65e": {
+    "elapsed_ms": 396.3348910037894,
+    "error": null,
+    "success": true
+  },
+  "552d467322d76dba5845c9bf5d3bf5ba556ee55677e20d1ebb50f534c1a847a2": {
+    "elapsed_ms": 378.8971140165813,
+    "error": "/tmp/mini_elf_lean_w3nsobgi.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hphnphnp`",
+    "success": false
+  },
+  "59ef394a26175b3ccb9ebfbc5c8f3ebad97f03b2bda8b7a1ba984c7a84b4e9c2": {
+    "elapsed_ms": 410.8143020130228,
+    "error": "/tmp/mini_elf_lean_qriz_rhe.lean:2:2: error: Type mismatch\n  fun hp => absurd hp\nhas type\n  (hp : ?m.2) \u2192 \u00ac?m.2 \u2192 ?m.5 hp\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "5ced1c0d14f69ba8443bf74938fa5fa60633b0dbb148af3777a4bede6d3c72ce": {
+    "elapsed_ms": 391.1925120046362,
+    "error": "/tmp/mini_elf_lean_zikypx5c.lean:2:2: error: Type mismatch\n  fun hp => absurd hp hnp\nhas type\n  (hp : x) \u2192 ?m.5 hp\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "5dcee782bf0448579bf85885c9f22987912d07de16481bb4eecbca065da0e0fc": {
+    "elapsed_ms": 395.4726769879926,
+    "error": "/tmp/mini_elf_lean_srvq29_1.lean:2:2: error: Type mismatch\n  h hp\nhas type\n  False\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "5ea0741002133c83fb4ff5456549d0a9a1d431f6ea120cfa3d5367780989c3f1": {
+    "elapsed_ms": 446.88843499170616,
+    "error": "/tmp/mini_elf_lean_nbf9vp4l.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_nbf9vp4l.lean:2:10: error(lean.invalidField): Invalid field `elim`: The environment does not contain `Function.elim`, so it is not possible to project the field `elim` from an expression\n  h\nof type `a \u2192 False`",
+    "success": false
+  },
+  "6000d5da506de7f50fa6cef14b1b3250923a5e28ff0ad399d65ae51eb4774c7e": {
+    "elapsed_ms": 403.44096600892954,
+    "error": null,
+    "success": true
+  },
+  "601bfdc5192cec39cf965e4eb4d66d958f3d9bdb7ae60bfb895a214270989c49": {
+    "elapsed_ms": 439.3991789838765,
+    "error": "/tmp/mini_elf_lean_w_mmz3ja.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  x \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "6381c555fa660722a06b46eafba478b631f8f93b62315c25277b65e098f79298": {
+    "elapsed_ms": 417.1630320197437,
+    "error": "/tmp/mini_elf_lean_rsml5jwc.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\na c : Prop\nhp : a\nhnp : \u00aca\n\u22a2 c",
+    "success": false
+  },
+  "64276e257febb61dd3483ced82258d2d72573de9845b8a8d598a3e88eb6c26ed": {
+    "elapsed_ms": 374.7058279986959,
+    "error": "/tmp/mini_elf_lean_5gm3bs1s.lean:2:10: error: Application type mismatch: The argument\n  h hp\nhas type\n  False\nbut is expected to have type\n  x\nin the application\n  h (h hp)",
+    "success": false
+  },
+  "64468c1437071b861ab125a2af290857be6023d2fd2c7895659169abe0d0a61a": {
+    "elapsed_ms": 416.61256400402635,
+    "error": "/tmp/mini_elf_lean_q2poftwe.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnphnp`",
+    "success": false
+  },
+  "6455a178ed439588aab1d71d156de5d1a865247955b91045ae6e1312f2f3f311": {
+    "elapsed_ms": 398.3464539924171,
+    "error": "/tmp/mini_elf_lean_5h_srnkg.lean:2:2: error: Type mismatch\n  hnp hp\nhas type\n  False\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "660d5e7a4386c72056e0f961b1e12df9554eca8cd97d93419688c3c86a9a0fb9": {
+    "elapsed_ms": 414.18130401871167,
+    "error": null,
+    "success": true
+  },
+  "6cc100258090774e21048020e71adcb35c771eed02705f9918e2a9cd0caed89f": {
+    "elapsed_ms": 446.97849301155657,
+    "error": "/tmp/mini_elf_lean_59bazvby.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nx y : Prop\nhp : x\nhnp : \u00acx\n\u22a2 y",
+    "success": false
+  },
+  "6da6fb760f1416c6e31d314a2e79347f725fcc270e4588a2e0d10ffa01188a4b": {
+    "elapsed_ms": 383.0722509883344,
+    "error": "/tmp/mini_elf_lean_ofu6_5cq.lean:2:2: error: Type mismatch\n  fun hp => hnp\nhas type\n  \u2200 (hp : ?m.2), \u00acx\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "6e6a9b3921b72e43e93151cfbbd2998a2baab02a8955509c129b3f9e832c6593": {
+    "elapsed_ms": 380.51863000146113,
+    "error": "/tmp/mini_elf_lean_pjc4kvgb.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_pjc4kvgb.lean:2:10: error(lean.invalidField): Invalid field `elim`: The environment does not contain `Function.elim`, so it is not possible to project the field `elim` from an expression\n  h\nof type `x \u2192 False`",
+    "success": false
+  },
+  "6f2d3173ad8e2a494285f6abef0e0e49faec872bdeb70543d1bc0bb44e8fcbd1": {
+    "elapsed_ms": 507.9504809982609,
+    "error": "/tmp/mini_elf_lean_gd37uxtt.lean:2:8: error: Function expected at\n  hnp hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  hnp",
+    "success": false
+  },
+  "7a3e3088eb9c373e3eb545ee0bb3ea7524a03aaa95137279304c59826b765d5a": {
+    "elapsed_ms": 372.7119780087378,
+    "error": "/tmp/mini_elf_lean_1hmzqnvh.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\na b : Prop\nhp : a\nhnp : \u00aca\n\u22a2 b",
+    "success": false
+  },
+  "7d6cb4712e67c4a9cab473cd98e8fed4623b7244aa672f436af0a880c869e88b": {
+    "elapsed_ms": 467.72830601548776,
+    "error": null,
+    "success": true
+  },
+  "7f98f30dbd9c6d73a4198db90f9658b93b341a5a122600a099f9f6252c38ceab": {
+    "elapsed_ms": 393.9150609949138,
+    "error": "/tmp/mini_elf_lean_jmh5rzwl.lean:4:0: error: unexpected end of input",
+    "success": false
+  },
+  "7fe389d425b44b2704e48f84215f211b816d3cbd28517404eba5df2fbcdcb1c4": {
+    "elapsed_ms": 396.95277900318615,
+    "error": "/tmp/mini_elf_lean_2hodrd6z.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "812f4fc1dfdbcc354e3efbc789fd8505d3284d1b4b6c4cc8b131d64286f26335": {
+    "elapsed_ms": 422.40370699437335,
+    "error": "/tmp/mini_elf_lean_spp75rcs.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np r : Prop\nhp : p\nhnp : \u00acp\n\u22a2 r",
+    "success": false
+  },
+  "84a77a79b967bc672ceef65691c4e94968a3ffc2083b4c424abd3ab831e1b58d": {
+    "elapsed_ms": 120101.93788597826,
+    "error": "timeout",
+    "success": false
+  },
+  "88045465f51b143905dd1d1cdf900e5b31820b9aba8c6203884bc97d48112bec": {
+    "elapsed_ms": 392.6497540087439,
+    "error": "/tmp/mini_elf_lean__q454adz.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean__q454adz.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "8ec907ba3908bfe1f75293b3f136f82b7d11387291dbc1be42415d18dce13258": {
+    "elapsed_ms": 445.70034500793554,
+    "error": null,
+    "success": true
+  },
+  "91d8aa6d442c9b7adc408233b5e5b3cb4bcadc040851157d1c629b58bd2874c4": {
+    "elapsed_ms": 455.5301289947238,
+    "error": "/tmp/mini_elf_lean_hg9hgmuv.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  a \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "92f5f9955211756f1ab0b60f07aa278d2c9b42b032c55e5c430b0016b563f5b9": {
+    "elapsed_ms": 438.54962798650376,
+    "error": null,
+    "success": true
+  },
+  "93c845a2a607dee18a2c2573b4f293dcd024782966a98000d8a27393a9ab8a9b": {
+    "elapsed_ms": 507.88678700337186,
+    "error": null,
+    "success": true
+  },
+  "94d1240174a89e26801736d2771b776792fff239657c18ac69810d524028e376": {
+    "elapsed_ms": 399.0954250039067,
+    "error": "/tmp/mini_elf_lean_kc4kqjwy.lean:2:8: error: Function expected at\n  h hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  h",
+    "success": false
+  },
+  "9616f4c85eb0d3347b63516089aa03c9c6df3961888d2435a14b98ccea75e005": {
+    "elapsed_ms": 458.674402005272,
+    "error": "/tmp/mini_elf_lean_lm2n3ty8.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hpfalse`",
+    "success": false
+  },
+  "9649f95f250cc461ab06c1f038ca1618f126f3fa88da1ea287e64eb2ff8ab753": {
+    "elapsed_ms": 430.6071580213029,
+    "error": "/tmp/mini_elf_lean_eedib7gi.lean:3:0: error: unexpected end of input; expected ')'\n/tmp/mini_elf_lean_eedib7gi.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "9b5bd83b2c5c7443fae72807d130da489af0dbec2ef4b6ed23b6bbd56b913a5d": {
+    "elapsed_ms": 438.401930994587,
+    "error": "/tmp/mini_elf_lean_q9h1xmr5.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Prop\nhp : p\nhnp : \u00acp\n\u22a2 q",
+    "success": false
+  },
+  "9b885dbbede6dc2e10b2d2fbf96eb2f8ccdb70d1223ab05a947e329ffbe0026e": {
+    "elapsed_ms": 385.3406769922003,
+    "error": "/tmp/mini_elf_lean_65gyrl_r.lean:2:27: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "9c65fdb2cda357dcfc3d14f1c350961c11ceee4a054b696f725985f16cf2c7f1": {
+    "elapsed_ms": 437.30232198140584,
+    "error": "/tmp/mini_elf_lean_ggvddjzb.lean:2:8: error: Function expected at\n  hnp hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  hnp",
+    "success": false
+  },
+  "9d497f06c7a49dd7318335db9b510c40db32f37632308ffbd804928cdab74b95": {
+    "elapsed_ms": 421.5012270142324,
+    "error": "/tmp/mini_elf_lean_ejv4v2sh.lean:2:2: error: Type mismatch\n  hnp hp\nhas type\n  False\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "a0c96b9c5b087dc7c2e940652b904dfc823d22332fc6b3dc85228f0451d0fffd": {
+    "elapsed_ms": 428.8101750134956,
+    "error": "/tmp/mini_elf_lean_gu73873x.lean:2:8: error: Function expected at\n  hnp hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  hnp",
+    "success": false
+  },
+  "a5d3dd1f1bb8a6256946a86dcf01be6b0e7e17fcf7f864004fdbd29aa534546c": {
+    "elapsed_ms": 388.4477789979428,
+    "error": "/tmp/mini_elf_lean_cwtrlcn0.lean:2:2: error: Type mismatch\n  fun hp => hp\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  r",
+    "success": false
+  },
+  "a656936e63529926ccf81b67b2d76e36a9734437e198f3bcbe3d1b9af7db01be": {
+    "elapsed_ms": 394.18478900915943,
+    "error": "/tmp/mini_elf_lean_2sin43wl.lean:2:2: error: Type mismatch\n  h hp\nhas type\n  False\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "abfe59f76581901ac442c9a9e2763d885cbea95f269638df017c1336cd20ea73": {
+    "elapsed_ms": 418.98475898779,
+    "error": "/tmp/mini_elf_lean_p518du5q.lean:2:2: error: Type mismatch\n  h hp\nhas type\n  False\nbut is expected to have type\n  q",
+    "success": false
+  },
+  "adce810db410372f5deff63084087f9762f97238c5f2438611e48ad44c5acaf0": {
+    "elapsed_ms": 414.9750659998972,
+    "error": "/tmp/mini_elf_lean_i6wsm_gv.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\nx y : Prop\nhp : x\nhnp : \u00acx\n\u22a2 y",
+    "success": false
+  },
+  "adff64ec5c65b585d3b6d06c4526631446ff86e1dab2d11a07a6fc4a24d756be": {
+    "elapsed_ms": 392.58682902436703,
+    "error": "/tmp/mini_elf_lean_k6hzr3db.lean:2:2: error: Type mismatch\n  fun hp => absurd hp hnp\nhas type\n  (hp : a) \u2192 ?m.5 hp\nbut is expected to have type\n  c",
+    "success": false
+  },
+  "afb6cf1f0dbb62a731fa05990edd909bff1e46407ae662d64639972504d874ff": {
+    "elapsed_ms": 428.87368498486467,
+    "error": "/tmp/mini_elf_lean_qvj3apjq.lean:2:19: error: Application type mismatch: The argument\n  h\nhas type\n  p \u2192 False\nbut is expected to have type\n  False\nin the application\n  False.elim h",
+    "success": false
+  },
+  "b5f9badea4df4545bfee6575d738f59f6a47e361bed31f1baf0c419fa6a0489a": {
+    "elapsed_ms": 382.8398849873338,
+    "error": "/tmp/mini_elf_lean_yqpxh185.lean:2:8: error: Function expected at\n  h hp\nbut this term has type\n  False\n\nNote: Expected a function because this term is being applied to the argument\n  h",
+    "success": false
+  },
+  "b9a8ab63e7153bc62afa6ee725119bde9a3cc6bd8cfc234b4cff003a69189c6a": {
+    "elapsed_ms": 449.4514770049136,
+    "error": "/tmp/mini_elf_lean__pjgy54j.lean:2:26: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "bbdcdf8f8660c17ba01c10353fe8710d84962a3285acea7ea907d497ba09c511": {
+    "elapsed_ms": 401.18503899429925,
+    "error": "/tmp/mini_elf_lean_gd07ycue.lean:2:14: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "bcfda622cff703e800f587b7103261a25eb34b52fc6225ec7d11fd0d3be36986": {
+    "elapsed_ms": 429.8823720018845,
+    "error": null,
+    "success": true
+  },
+  "bf4af5f246ae758b0591098f268b09f6ad81ff0fbb8b3ebd51df7126ce3f2e18": {
+    "elapsed_ms": 383.34411301184446,
+    "error": "/tmp/mini_elf_lean_v23bum31.lean:2:2: error: Type mismatch\n  fun hp => absurd hp\nhas type\n  (hp : ?m.2) \u2192 \u00ac?m.2 \u2192 ?m.5 hp\nbut is expected to have type\n  b",
+    "success": false
+  },
+  "ce717a4a5452d1892189b35c4a7ba8d380c5ac8a184e7abff802df23fecfabc8": {
+    "elapsed_ms": 386.02754700696096,
+    "error": "/tmp/mini_elf_lean_hctzoe3n.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "cf3f96cb77ad9c7f0eaf181d89c9d0dad77a3c96844e1ed89cd0264ecc130f93": {
+    "elapsed_ms": 486.27459100680426,
+    "error": "/tmp/mini_elf_lean_6opba7vw.lean:2:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce\n\np q : Prop\nhp : p\nhnp : \u00acp\n\u22a2 q",
+    "success": false
+  },
+  "d25fe98b26f67d216b24ca3349d71aa8bee4b5f775ffb478b8cea6db5fb6ba48": {
+    "elapsed_ms": 394.39518298604526,
+    "error": "/tmp/mini_elf_lean_dk4ej2xe.lean:2:9: error(lean.unknownIdentifier): Unknown identifier `hpfalse`",
+    "success": false
+  },
+  "d862a1a5b37df1012711b351a2ec7d3f64eb44997ad1c43d4d7794ff30497544": {
+    "elapsed_ms": 387.63467100216076,
+    "error": "/tmp/mini_elf_lean_vmspal_8.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "d99df71313ad4b1d07f6414b840f78887c0fa225e3b4bcea7bc8cf878b897589": {
+    "elapsed_ms": 376.71874099760316,
+    "error": "/tmp/mini_elf_lean_xut8p43k.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnphnp`",
+    "success": false
+  },
+  "dad2a2faae2cb8e04c302d41e5db074c4a364a7e56b69ea0c9ac813434d234a7": {
+    "elapsed_ms": 375.29689498478547,
+    "error": "/tmp/mini_elf_lean_riztd4y7.lean:2:26: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  },
+  "e3c286493d59390510b26635fc79d53e6a98e61ef1adadb142be388a2ff2fb3e": {
+    "elapsed_ms": 409.107369981939,
+    "error": "/tmp/mini_elf_lean_56_yzm9d.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'\n/tmp/mini_elf_lean_56_yzm9d.lean:2:10: error(lean.invalidField): Invalid field `elim`: The environment does not contain `Function.elim`, so it is not possible to project the field `elim` from an expression\n  h\nof type `p \u2192 False`",
+    "success": false
+  },
+  "f20bcdc74aa270c50997925cd05a38a67649e26f21e83eeaac1712a1f9b7bcf0": {
+    "elapsed_ms": 392.5723640131764,
+    "error": "/tmp/mini_elf_lean_2c2w1pow.lean:3:0: error: unexpected end of input; expected ')', ',' or ':'",
+    "success": false
+  },
+  "f33b85d03a8a2e8e5920c3b3e8d0e8ca9f95584b4d5cbe77d899307d6877f998": {
+    "elapsed_ms": 421.77593597443774,
+    "error": "/tmp/mini_elf_lean_esypbnom.lean:2:2: error: Type mismatch\n  fun hp => hnp\nhas type\n  \u2200 (hp : ?m.2), \u00acx\nbut is expected to have type\n  y",
+    "success": false
+  },
+  "f4a7e57da4ef967bfc14d825412583b6de75876b59ca96ade5ea0cd7d4153059": {
+    "elapsed_ms": 396.2956989998929,
+    "error": "/tmp/mini_elf_lean_f5awa7cf.lean:2:18: error(lean.unknownIdentifier): Unknown identifier `hnphnp`",
+    "success": false
+  },
+  "f9f53eda774832b1957a88f2c385340e403e0672024ef8075b142bf45ec537ab": {
+    "elapsed_ms": 373.52706099045463,
+    "error": "/tmp/mini_elf_lean_k_ucm2a7.lean:2:16: error: Invalid field notation: Identifier or numeral expected",
+    "success": false
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "config": "abstract",
+  "n_test_theorems": 13,
+  "pass@1": 0.15384615384615385,
+  "pass@5": 0.38461538461538464,
+  "pass@10": 0.38461538461538464,
+  "MRR": 0.2692307692307692,
+  "n_no_candidate_verified": 8,
+  "no_verify_reason": {
+    "v29_fs_inter_comm_2": "other",
+    "v29_fs_subset_inter_2": "unknown_identifier",
+    "v29_fs_union_subset_2": "parse_error",
+    "v29_logic_and_symm_2": "other",
+    "v29_logic_contrapose_2": "unknown_identifier",
+    "v29_logic_false_elim_2": "parse_error",
+    "v29_nat_add_assoc_2": "unknown_identifier",
+    "v29_nat_add_comm_2": "unknown_identifier"
+  },
+  "failure_taxonomy": {
+    "unknown_identifier": 51,
+    "type_mismatch": 18,
+    "other": 25,
+    "parse_error": 25
+  },
+  "per_category": {
+    "finset": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic": {
+      "n": 3,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat": {
+      "n": 3,
+      "pass@1": 0.3333333333333333,
+      "pass@5": 0.3333333333333333,
+      "pass@10": 0.3333333333333333
+    }
+  },
+  "per_family": {
+    "finset::inter_comm": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::subset_inter": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "finset::union_subset": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "function::comp_app": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::append_nil": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::map_id": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "list::reverse_reverse": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    },
+    "logic::and_symm": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "logic::contrapose": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "logic::false_elim": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat::add_assoc": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat::add_comm": {
+      "n": 1,
+      "pass@1": 0.0,
+      "pass@5": 0.0,
+      "pass@10": 0.0
+    },
+    "nat::add_zero": {
+      "n": 1,
+      "pass@1": 1.0,
+      "pass@5": 1.0,
+      "pass@10": 1.0
+    }
+  }
+}
