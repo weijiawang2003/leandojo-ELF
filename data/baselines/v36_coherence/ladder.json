@@ -1,0 +1,85 @@
+{
+  "baseline_v35": {
+    "sampler": "v35_continuous_selfcond",
+    "model": "/home/wangw/code/ELFMath/data/models/v35_flow_model",
+    "n_probe_rows": 124,
+    "n_samples_per_row": 16,
+    "steps": 8,
+    "per_token_gold_recovery": 0.3564287156923031,
+    "exact_seq_recovery_rate": 0.0030241935483870967,
+    "head_correct_body_wrong_rate": 0.47731854838709675,
+    "mean_pairwise_jaccard": 0.2474682384562412
+  },
+  "n_train_rows": 3689,
+  "probe_rows": 80,
+  "probe_samples": 8,
+  "probe_steps": 8,
+  "cells": [
+    {
+      "id": "d3_D128_ce0.2_ep50",
+      "depth": 3,
+      "width": 128,
+      "ce": 0.2,
+      "epochs": 50,
+      "discrete": false,
+      "primary": "v35",
+      "params": 1002368,
+      "best_val_fm": 0.832836,
+      "epochs_run": 33,
+      "early_stopped": true,
+      "timed_out": false,
+      "runtime_seconds": 429.8,
+      "metrics_v35_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.35781968920921703,
+        "exact_seq_recovery_rate": 0.009375,
+        "head_correct_body_wrong_rate": 0.5171875,
+        "mean_pairwise_jaccard": 0.23812369218895965
+      },
+      "metrics_v36_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.353046089198333,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.59375,
+        "mean_pairwise_jaccard": 0.15254093297915505
+      }
+    },
+    {
+      "id": "d3_D128_ce1.0_ep50",
+      "depth": 3,
+      "width": 128,
+      "ce": 1.0,
+      "epochs": 50,
+      "discrete": false,
+      "primary": "v35",
+      "params": 1002368,
+      "best_val_fm": 0.858869,
+      "epochs_run": 33,
+      "early_stopped": true,
+      "timed_out": false,
+      "runtime_seconds": 427.4,
+      "metrics_v35_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3489993401251383,
+        "exact_seq_recovery_rate": 0.009375,
+        "head_correct_body_wrong_rate": 0.553125,
+        "mean_pairwise_jaccard": 0.2044227933452436
+      },
+      "metrics_v36_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.34835894427946973,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.5984375,
+        "mean_pairwise_jaccard": 0.13656093683831344
+      }
+    }
+  ]
+}
