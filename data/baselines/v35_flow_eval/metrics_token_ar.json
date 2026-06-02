@@ -1,0 +1,61 @@
+{
+  "baseline": "token_ar",
+  "retrieval_mode": "token_ar(beam=10)",
+  "n_examples": 24,
+  "n_theorems": 24,
+  "small_sample_warning": false,
+  "k_values": [
+    1,
+    5,
+    10
+  ],
+  "top_k": 10,
+  "split_diagnostics": {
+    "n_train_examples": 3689,
+    "n_eval_examples": 24,
+    "n_train_theorems": 1567,
+    "n_eval_theorems": 24,
+    "theorem_intersection": []
+  },
+  "exact_match": {
+    "top1_exact": 0.375,
+    "top1_exact_count": 9,
+    "topk_any_verified": {
+      "1": {
+        "rate": 0.8333333333333334,
+        "count": 20
+      },
+      "5": {
+        "rate": 0.875,
+        "count": 21
+      },
+      "10": {
+        "rate": 0.875,
+        "count": 21
+      }
+    }
+  },
+  "oracle": {
+    "rows_with_verified_in_corpus": 24,
+    "rows_with_verified_in_corpus_rate": 1.0
+  },
+  "lean_verification": {
+    "pass_at_k": {
+      "1": {
+        "rate": 0.875,
+        "count": 21
+      },
+      "5": {
+        "rate": 0.9166666666666666,
+        "count": 22
+      },
+      "10": {
+        "rate": 0.9166666666666666,
+        "count": 22
+      }
+    },
+    "tactics_total": 236,
+    "tactics_verified": 65,
+    "cache_size": 0
+  }
+}

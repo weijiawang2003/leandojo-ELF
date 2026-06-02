@@ -1,0 +1,119 @@
+{
+  "tier": "mathlib",
+  "n_test_theorems": 24,
+  "n_train_rows": 3689,
+  "vocab_size": 377,
+  "sampler": {
+    "n_samples": 32,
+    "steps": 8,
+    "cfg_weight": 2.0,
+    "sde": false
+  },
+  "verifier": "TrustedMathlibVerifier (confirm=True, sound+complete)",
+  "baselines": {
+    "retrieval": {
+      "mode": "char-ngram",
+      "profile": {
+        "distinct@5": 1.0,
+        "mean_pairwise_jaccard@5": 0.21983874343249346,
+        "distinct@10": 1.0,
+        "mean_pairwise_jaccard@10": 0.20993759528977782,
+        "novel_verified@10": {
+          "novel_verified_rate": 0.0,
+          "n_novel_verified": 0,
+          "n_rows": 24,
+          "examples": []
+        }
+      },
+      "pass_at_k": {
+        "1": 0.5,
+        "5": 0.625,
+        "10": 0.625
+      },
+      "top1_exact": 0.4583333333333333
+    },
+    "token_ar": {
+      "mode": "token_ar(beam=10)",
+      "profile": {
+        "distinct@5": 1.0,
+        "mean_pairwise_jaccard@5": 0.271885732731321,
+        "distinct@10": 1.0,
+        "mean_pairwise_jaccard@10": 0.30569083773434264,
+        "novel_verified@10": {
+          "novel_verified_rate": 0.2916666666666667,
+          "n_novel_verified": 7,
+          "n_rows": 24,
+          "examples": [
+            "v26_option_map_id2 :: rcases c1 <;> rfl",
+            "v27_logic_imp_trans :: intros hp; exact c4 (c3 hp)",
+            "v27_nat_two_mul :: refine Nat.two_mul c0",
+            "v28_fs_subset_union_left_0 :: intro x hx; exact Finset.mem_union.mpr (Or.inl hx)",
+            "v28_set_mem_inter_right_2 :: exact And.right c4",
+            "v29_fs_mem_inter_left_1 :: apply (Finset.mem_inter.mp c4).1",
+            "v29_fs_subset_inter_0 :: exact Finset.subset_inter c4 c5"
+          ]
+        }
+      },
+      "pass_at_k": {
+        "1": 0.875,
+        "5": 0.9166666666666666,
+        "10": 0.9166666666666666
+      },
+      "top1_exact": 0.375
+    },
+    "mini_elf_v35": {
+      "mode": "flow_v35(samples=32,steps=8,cfg=2.0,self_cond=True,sde=False)",
+      "profile": {
+        "distinct@5": 1.0,
+        "mean_pairwise_jaccard@5": 0.23632561652681286,
+        "distinct@10": 1.0,
+        "mean_pairwise_jaccard@10": 0.24439742956754842,
+        "novel_verified@10": {
+          "novel_verified_rate": 0.0,
+          "n_novel_verified": 0,
+          "n_rows": 24,
+          "examples": []
+        }
+      },
+      "pass_at_k": {
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "top1_exact": 0.0
+    }
+  },
+  "flow_invalid_decode_rate_mean": 0.0,
+  "step_sensitivity": {
+    "1": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 31.75,
+      "pass@10": 0.0
+    },
+    "2": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 32.0,
+      "pass@10": 0.0
+    },
+    "4": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 32.0,
+      "pass@10": 0.0
+    },
+    "8": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 32.0,
+      "pass@10": 0.0
+    },
+    "16": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 32.0,
+      "pass@10": 0.0
+    },
+    "32": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 32.0,
+      "pass@10": 0.0
+    }
+  }
+}

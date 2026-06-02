@@ -1,0 +1,227 @@
+{
+  "invalid_decode_rate_mean": 0.0,
+  "per_prompt": [
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v26_nat_le_refl2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v26_logic_imp_self2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v26_option_map_id2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v26_nat_min_le_left2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v25_list_nil_append",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v25_option_some_isSome",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v26w_self_subset_self_union",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v26w_inter_subset_left_union",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v27_set_mem_singleton",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v27_logic_imp_trans",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v27_nat_two_mul",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_fs_mem_union_left_1",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_fs_subset_union_left_0",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_ord_min_le_right_0",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_list_reverse_reverse_1",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_set_subset_union_right_2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_set_mem_union_of_left_2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_logic_and_self_iff2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_ord_nat_succ_le_succ_0",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_ord_nat_zero_le_0",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v28_set_mem_inter_right_2",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v29_fs_mem_inter_left_1",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v29_set_union_comm_subset_0",
+      "n_returned": 10
+    },
+    {
+      "n_seeds": 32,
+      "n_invalid_decode": 0,
+      "invalid_decode_rate": 0.0,
+      "n_distinct_raw": 32,
+      "n_distinct_valid": 32,
+      "theorem_name": "v29_fs_subset_inter_0",
+      "n_returned": 10
+    }
+  ],
+  "calibration_freq_to_pverify": {
+    "1": {
+      "n": 768,
+      "p_verify": 0.0
+    }
+  }
+}

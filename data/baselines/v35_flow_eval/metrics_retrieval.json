@@ -1,0 +1,61 @@
+{
+  "baseline": "retrieval",
+  "retrieval_mode": "char-ngram",
+  "n_examples": 24,
+  "n_theorems": 24,
+  "small_sample_warning": false,
+  "k_values": [
+    1,
+    5,
+    10
+  ],
+  "top_k": 10,
+  "split_diagnostics": {
+    "n_train_examples": 3689,
+    "n_eval_examples": 24,
+    "n_train_theorems": 1567,
+    "n_eval_theorems": 24,
+    "theorem_intersection": []
+  },
+  "exact_match": {
+    "top1_exact": 0.4583333333333333,
+    "top1_exact_count": 11,
+    "topk_any_verified": {
+      "1": {
+        "rate": 0.5,
+        "count": 12
+      },
+      "5": {
+        "rate": 0.625,
+        "count": 15
+      },
+      "10": {
+        "rate": 0.625,
+        "count": 15
+      }
+    }
+  },
+  "oracle": {
+    "rows_with_verified_in_corpus": 24,
+    "rows_with_verified_in_corpus_rate": 1.0
+  },
+  "lean_verification": {
+    "pass_at_k": {
+      "1": {
+        "rate": 0.5,
+        "count": 12
+      },
+      "5": {
+        "rate": 0.625,
+        "count": 15
+      },
+      "10": {
+        "rate": 0.625,
+        "count": 15
+      }
+    },
+    "tactics_total": 150,
+    "tactics_verified": 49,
+    "cache_size": 0
+  }
+}

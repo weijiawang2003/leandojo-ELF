@@ -1,0 +1,61 @@
+{
+  "baseline": "mini_elf_v35",
+  "retrieval_mode": "flow_v35(samples=32,steps=8,cfg=2.0,self_cond=True,sde=False)",
+  "n_examples": 24,
+  "n_theorems": 24,
+  "small_sample_warning": false,
+  "k_values": [
+    1,
+    5,
+    10
+  ],
+  "top_k": 10,
+  "split_diagnostics": {
+    "n_train_examples": 3689,
+    "n_eval_examples": 24,
+    "n_train_theorems": 1567,
+    "n_eval_theorems": 24,
+    "theorem_intersection": []
+  },
+  "exact_match": {
+    "top1_exact": 0.0,
+    "top1_exact_count": 0,
+    "topk_any_verified": {
+      "1": {
+        "rate": 0.0,
+        "count": 0
+      },
+      "5": {
+        "rate": 0.0,
+        "count": 0
+      },
+      "10": {
+        "rate": 0.0,
+        "count": 0
+      }
+    }
+  },
+  "oracle": {
+    "rows_with_verified_in_corpus": 24,
+    "rows_with_verified_in_corpus_rate": 1.0
+  },
+  "lean_verification": {
+    "pass_at_k": {
+      "1": {
+        "rate": 0.0,
+        "count": 0
+      },
+      "5": {
+        "rate": 0.0,
+        "count": 0
+      },
+      "10": {
+        "rate": 0.0,
+        "count": 0
+      }
+    },
+    "tactics_total": 240,
+    "tactics_verified": 0,
+    "cache_size": 0
+  }
+}

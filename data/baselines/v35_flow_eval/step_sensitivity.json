@@ -1,0 +1,32 @@
+{
+  "1": {
+    "invalid_decode_rate": 0.0,
+    "mean_distinct_valid": 31.75,
+    "pass@10": 0.0
+  },
+  "2": {
+    "invalid_decode_rate": 0.0,
+    "mean_distinct_valid": 32.0,
+    "pass@10": 0.0
+  },
+  "4": {
+    "invalid_decode_rate": 0.0,
+    "mean_distinct_valid": 32.0,
+    "pass@10": 0.0
+  },
+  "8": {
+    "invalid_decode_rate": 0.0,
+    "mean_distinct_valid": 32.0,
+    "pass@10": 0.0
+  },
+  "16": {
+    "invalid_decode_rate": 0.0,
+    "mean_distinct_valid": 32.0,
+    "pass@10": 0.0
+  },
+  "32": {
+    "invalid_decode_rate": 0.0,
+    "mean_distinct_valid": 32.0,
+    "pass@10": 0.0
+  }
+}

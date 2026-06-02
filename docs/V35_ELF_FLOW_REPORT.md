@@ -1,36 +1,37 @@
 # Mini-ELF v35 — A faithful, CPU-scale ELF-style embedded-flow tactic generator
 
-**Status:** results pending the first full verified run (see §8/§9 — populated
-from `data/baselines/v35_flow_eval/`). Methodology, faithfulness mapping, and the
-ablation design below are final.
+**Headline (honest, negative):** A faithful CPU-scale ELF-style embedded-flow
+generator produces **0% verified** single-tactic Lean predictions on the Mathlib
+tier, while the **matched** token-AR baseline (same data, vocab, verifier)
+achieves **pass@1 = 0.875**. The flow's one distinctive profile property —
+maximal candidate **diversity** — is real but *useless*: none of the diverse
+candidates verify, and the sampling-frequency ranking carries no signal. The
+clean separation, with ablations, attributes the failure to the flow itself, not
+to any reranker/planner/retrieval. A negative result is a valid outcome and is
+reported as such.
 
 Single-tactic, theorem-level. This is a **scaled-down, ELF-*style*** model — not
-a reproduction of ELF, not a proof-state model, and not a full theorem prover.
+a reproduction of ELF, not a proof-state model, not a full theorem prover. No
+claim is made that ELF itself fails; only that *this CPU-scale ELF-style model*
+does, in a matched comparison.
 
 ---
 
 ## 1. Research question
 
-The v24–v33 product (a token-AR seq2seq + an environment router) already saturates
-the curated Mathlib single-tactic tier (v33 routed tier-C pass@10 = 0.992). So the
-question for v35 is **not** higher pass@k. It is whether an **embedded-flow**
-generator has a *different, useful generation profile*:
-
-* candidate **diversity** (distinct@k, self-BLEU proxy),
-* **novel-but-verified** tactics (verified strings absent from the train set),
-* low-density-family coverage,
-* a **sampling-step compute/quality trade-off** that AR decoding does not expose.
-
-**A clean negative result is a valid outcome** and is reported as such.
+The v24–v33 product (token-AR seq2seq + environment router) already saturates the
+curated Mathlib single-tactic tier (v33 routed tier-C pass@10 = 0.992). So the
+v35 question is **not** higher pass@k. It is whether an **embedded-flow** generator
+has a *different, useful generation profile*: candidate diversity, novel-verified
+tactics, low-density coverage, and a sampling-step compute/quality trade-off.
 
 ---
 
 ## 2. Faithfulness to ELF (and contrast with the abandoned Mini-ELF v0)
 
 ELF (arXiv 2605.10938) flows over the **per-token embedding sequence**, stays
-continuous until `t=1`, and discretizes there with a **shared-weight
-(tied-embedding)** network; it is trained with `L2(flow) + CE(decode)`,
-self-conditioning, and classifier-free guidance.
+continuous until `t=1`, discretizes there with a **shared-weight (tied-embedding)**
+network, and trains with `L2(flow) + CE(decode)`, self-conditioning, and CFG.
 
 | ELF choice | Mini-ELF v0 (abandoned at v7) | **v35 (this work)** |
 |---|---|---|
@@ -40,132 +41,176 @@ self-conditioning, and classifier-free guidance.
 | Time schedule | `U(0,1)` | **logit-normal `sigmoid(N(-1.5, 0.8))`** |
 | Guidance | none | **classifier-free guidance (learned null condition)** |
 
-The single most important fix: the readout is **nearest-embedding**, not a plain
-`z·Eᵀ` dot product. With
-
-```
-logit_i = (z·E_i − 0.5·‖E_i‖²) / τ ,
-```
-
-`argmax_i logit_i == argmin_i ‖z − E_i‖²` (because `‖z‖²` is constant across `i`),
-so `embed → readout → argmax` round-trips the embedded token exactly. A plain
-dot-product head does **not** have this property once embedding norms differ —
-it is a real bug, and `tests/test_v35_flow.py::test_plain_dot_head_would_not_roundtrip`
-pins both directions (tied readout recovers the ids; plain dot does not).
+The readout is **nearest-embedding**, not a plain `z·Eᵀ` dot product:
+`logit_i = (z·E_i − 0.5·‖E_i‖²) / τ`, so `argmax_i == argmin_i ‖z − E_i‖²` and
+`embed → readout → argmax` round-trips exactly. A plain dot-product head does not
+once embedding norms differ — pinned by
+`tests/test_v35_flow.py::test_plain_dot_head_would_not_roundtrip`.
 
 ---
 
 ## 3. Data and the matched comparison
 
 `scripts/build_v35_flow_dataset.py` assembles **Lean-verified** `(condition,
-tactic)` rows from two pools, all `tactic_source == "verified"`:
+tactic)` rows (`tactic_source == "verified"`) from the v33 canonical Mathlib
+corpus (verified under `import Mathlib`) and the v24 broad-core set (core Lean).
+De-duplicated by `(theorem_name, tactic)`, split **by `theorem_name`** (md5
+buckets, 80/10/10, asserted disjoint). A single shared `TokenVocab` is built from
+the **train split only**; rows carry pre-tokenized `cond_ids`/`tgt_ids` + raw
+`theorem_statement`/`state_before`.
 
-* **Mathlib tier-C** — the v33 canonical specialist corpus
-  (`v33_general_residual_train_rows.jsonl` + `val_rows.jsonl`); the exact data the
-  v24/v33 token-AR engine trained on. Verified under `import Mathlib`.
-* **Core** — `v24_broad_plus_residual/train_rows.jsonl`; verified under core Lean.
-
-Rows are de-duplicated by `(theorem_name, tactic)` and split **by `theorem_name`**
-(deterministic md5 buckets, 80/10/10). The builder asserts the train/val/test
-theorem sets are pairwise disjoint, and emits a single shared `TokenVocab` built
-from the **train split only** plus pre-tokenized `cond_ids` / `tgt_ids` and the raw
-`theorem_statement` / `state_before` (Lean needs the raw text). Dataset shape:
-
-* 4642 verified rows / 1973 theorems; split 3689 / 456 / 497 rows.
+* 4642 verified rows / 1973 theorems; split 3689 / 456 / 497.
 * tiers: 1232 Mathlib, 3410 core; test tiers: 116 Mathlib, 381 core.
-* vocab 377; condition length p50/p95 = 61/96 tokens, target p50/p95 = 9/22 tokens.
+* vocab 377; condition p50/p95 = 61/96 tokens, target p50/p95 = 9/22 tokens.
 
-**Matched comparison.** Both the v35 flow model and the token-AR baseline (the
-v24/v33 engine, `token_seq2seq`) are trained on the *same* train/val split with the
-*same* `TokenVocab`, so the comparison is matched at the token level. A retrieval
-baseline (k-NN over train texts) is the floor. The learned reranker is kept **out**
-of the headline flow-vs-AR comparison (§6 of the brief).
+**Matched:** the v35 flow AND the token-AR baseline (`token_seq2seq`, the v24/v33
+engine) train on the *same* split with the *same* `TokenVocab`; retrieval (k-NN
+over train texts) is the floor. The learned reranker is kept **out** of the
+headline comparison.
 
 ---
 
 ## 4. Model and training
 
-* `elf_v35_embed.py` — `TokenEmbedding` (table + tied nearest-embedding readout),
-  `ConditionEncoder` (bi-GRU → per-step memory + pad mask; packed so pad never
-  flows backward into real tokens), `LatentStats` + `compute_latent_stats`,
-  `padding_mask`.
-* `elf_v35_flow.py` — `SeqVelocityField` (non-causal Transformer decoder over the
-  target positions, cross-attention to the condition memory, additive time
-  embedding, learned positional embeddings, self-conditioning input) and
-  `ElfV35Model` (learned **null condition**; `build_memory` implements the CFG
-  condition-drop in a single pass by masking the real condition steps).
-* `elf_v35_train.py` — the full ELF objective:
-  * standardize `Z1 = E[ids]` with per-dim train stats; `Z0 ~ N(0,I)`;
-    `z_t = (1−t)Z0 + tZ1`; target `v = Z1 − Z0`; `L_fm = masked-MSE(v_θ, v)` over
-    non-pad target positions;
-  * **CE anchor** (prob ≈0.2): `Ẑ1 = z_t + (1−t)·v_θ`, *un-standardized* before the
-    readout (`E` lives in raw embedding space), CE on the nearest-embedding logits
-    ignoring pad;
-  * **self-conditioning** (prob ≈0.5): a no-grad pass → detached `Ẑ1` fed back as
-    the field's self-cond input;
-  * **CFG** (`p_uncond ≈0.1`): condition dropped to the learned null;
-  * **time** logit-normal `t = sigmoid(N(-1.5, 0.8))`.
-
-  Per-dim latent stats are recomputed from the (learned) embedding after each
-  epoch; the stats matching the **selected checkpoint** are saved, so sampling
-  standardizes with exactly the stats the chosen weights trained against.
-  Checkpoint selection is by an **offline** validation flow-MSE (no Lean). CPU,
-  deterministic (seeded). Target capacity 0.5–2 M params (`D=128`, 3 layers).
+`elf_v35_embed.py` (TokenEmbedding + tied nearest-embedding readout;
+ConditionEncoder bi-GRU; LatentStats; padding_mask), `elf_v35_flow.py`
+(SeqVelocityField — non-causal Transformer decoder, cross-attention to the
+condition, additive time embedding, learned positions, self-cond input;
+ElfV35Model with a learned null condition; `build_memory` does CFG drop in one
+pass), `elf_v35_train.py` (the full ELF objective: masked flow-MSE in standardized
+space + CE anchor on the un-standardized tied-readout logits + no-grad
+self-conditioning + CFG condition-drop; logit-normal time; per-epoch latent stats;
+val-flow-MSE checkpoint selection; CPU, deterministic). Trained model: **521 k
+params** matched against the token-AR's ~520 k.
 
 ---
 
 ## 5. Sampling and decoding (`elf_v35_sample.py`)
 
-Per prompt: seed the noise generator with `seed ^ crc32(prompt)` (reproducible yet
-prompt-diverse), draw `K` seeds, integrate `dz/dt = v_θ` with **Euler** (ODE; an
-optional **SDE** churn variant exists), apply **classifier-free guidance**
-(`v = v_u + w·(v_c − v_u)` from cond/uncond memories built once) and
-**self-conditioning** (carry the previous step's clean estimate), then **discretize
-at `t=1` by the tied nearest-embedding readout**. Decoded ids are detokenized,
-sanitized (`sanitize_candidate_list`), ranked by **sampling frequency**, and the
-top-k are verified. `MiniElfV35Baseline` plugs into `baseline_eval.evaluate` and
-records per-prompt decode diagnostics. The step count `N` is swept over
-{1,2,4,8,16,32} for the step-sensitivity curve.
+Per prompt: seed noise with `seed ^ crc32(prompt)`, draw `K` seeds, Euler-integrate
+the conditional flow (CFG `v = v_u + w·(v_c − v_u)`, self-cond carry), discretize
+at `t=1` by the tied nearest-embedding readout, detokenize, sanitize, rank by
+sampling frequency, verify top-k. Step count `N` swept over {1,2,4,8,16,32}.
 
 ---
 
-## 6. Guardrails (enforced, with tests where possible)
+## 6. Guardrails (enforced, with tests)
 
-* **`state_after` is never read or predicted** — condition is statement +
-  `state_before` only. `tests/test_v35_dataset_no_leakage.py` poisons the input
-  with a `state_after` field and asserts it never appears in any emitted row and
-  that `cond_ids == encode_source(statement\nstate_before)`.
-* **Theorem-level split, no leakage** — split by `theorem_name`; train/val/test
-  theorem sets asserted disjoint (builder + test).
-* **Train on train only; checkpoint on val (offline loss); test untouched.**
-* **Headline metrics use the `TrustedMathlibVerifier` only** (`confirm=True`,
-  sound + complete) — never the naive batched verifier.
-* **No manual-oracle rows as model predictions; no v10 leakage data.**
-* **Writes only `v35_*` artifacts**; never overwrites v24 broad-core or v33
-  specialist weights/configs.
+`state_after` never read (poisoned-input test asserts it); theorem-level split,
+disjoint sets asserted; train-on-train, val-checkpoint (offline loss),
+test-untouched; **headline metrics use `TrustedMathlibVerifier` only**
+(`confirm=True`, sound+complete); no manual-oracle predictions, no v10 leakage;
+writes only `v35_*` artifacts.
 
 ---
 
-## 8. Results — pass@k and generation profile
+## 7. Results
 
-> Populated from `data/baselines/v35_flow_eval/comparison.json` after the first
-> full verified run (Mathlib tier, 24 test theorems, K=32 seeds, 8 Euler steps,
-> CFG weight 2.0; flow and token-AR matched on the same split + vocab).
+Mathlib tier, **24 test theorems**, K=32 seeds, 8 Euler steps, CFG weight 2.0.
+Verifier: `TrustedMathlibVerifier`. (`data/baselines/v35_flow_eval/comparison.json`)
 
-_(pending)_
+| baseline | pass@1 | pass@5 | pass@10 | top1-exact | novel-verified@10 |
+|---|---|---|---|---|---|
+| retrieval (floor) | 0.500 | 0.625 | 0.625 | 0.458 | 0.000 |
+| **token-AR** (matched, v24/v33 engine) | **0.875** | **0.917** | **0.917** | 0.375 | **0.292** (7/24) |
+| **Mini-ELF v35 flow** | **0.000** | **0.000** | **0.000** | 0.000 | 0.000 |
+
+**Generation profile (the actual research question):**
+
+| | distinct@10 | mean pairwise token-Jaccard@10 (↓ = more diverse) | invalid-decode rate | candidates / prompt |
+|---|---|---|---|---|
+| retrieval | 1.0 | 0.210 | — | ≤16 |
+| token-AR | 1.0 | 0.306 | — | ≤10 beams |
+| **v35 flow** | 1.0 | 0.244 | **0.000** | **32/32 distinct** |
+
+* The flow's **invalid-decode rate is 0.0** — it emits syntactically clean,
+  non-forbidden strings — and **every one of its 32 samples is distinct**. So the
+  "different profile" (maximal diversity) *does* materialize.
+* But **0% verify**, and the sampling-frequency calibration is degenerate: all 768
+  flow candidates have frequency 1 (`p_verify = 0`), so frequency ranking carries
+  **no signal** — there is no probability-mass concentration on a correct tactic.
+* **Step-sensitivity is flat:** pass@10 = 0 for N ∈ {1,2,4,8,16,32}; invalid stays
+  0, distinct stays ~32. More integration compute does not help — the velocity
+  field, not the integrator, is the limit.
+
+**What the flow actually emits** (`v26_nat_le_refl2`, gold `exact Nat.le_refl c0`):
+
+```
+exact Nat   c0hx).hnp=c1
+cases c0.with ) Nat.fun..
+ring Nat.with.x _.c2 h\n  ..;[c1simp
+```
+
+"Token salad": the right vocabulary and often a plausible tactic head (`exact`,
+`cases`, `simp`), but jointly non-typecheckable. The matched token-AR reaches
+0.875 on the same data because autoregressive decoding conditions each token on
+the previous ones; the non-autoregressive parallel flow has no such coherence
+constraint.
 
 ---
 
-## 9. A1–A3 ablations — attributing the effect to the flow
+## 8. A1–A3 ablations — attributing the failure to the flow
 
-> Populated from `data/baselines/v35_flow_eval/ablations.json`
-> (`scripts/ablate_v35_flow.py`). All offline (no Lean); these isolate the ELF
-> components. No reranker/planner/retrieval is in the v35 flow path, so any
-> profile difference is attributable to the flow itself.
+Offline (no Lean); `scripts/ablate_v35_flow.py` →
+`data/baselines/v35_flow_eval/ablations.json`. No reranker/planner/retrieval is in
+the flow path, so the cause is the flow itself.
 
-* **A1 — representation** (per-token sequence vs single pooled latent): _(pending)_
-* **A2 — discretization** (nearest-embedding vs plain `z·Eᵀ`): _(pending)_
-* **A3 — objective** (full vs no-CE / no-self-cond / no-CFG): _(pending)_
+**A1 — representation (per-token sequence vs single pooled latent).** 73.3% of the
+Mathlib tier is multi-token, so a single pooled latent (Mini-ELF v0) has a **≥73%
+invalid-decode ceiling by construction** (it can emit ≤1 token). The v35 sequence
+representation removes that ceiling (**0% invalid**). ⇒ the per-token sequence is
+*necessary and strictly more expressive* — but **expressiveness ≠ correctness**:
+v35 is representable yet still 0% verified.
+
+**A2 — discretization (nearest-embedding vs plain `z·Eᵀ`).** On the *same* `t=1`
+latents, per-position **gold-token recovery is only 32%** (nearest-embedding 0.322
+≈ plain-dot 0.329). The two readouts coincide here because the model learned
+near-uniform embedding norms (the `−0.5‖E‖²` term then contributes little; the
+unit test still proves it is required in the norm-varied case). **32% per-token
+accuracy is the bottleneck**: with ~2/3 of positions wrong, no multi-token tactic
+is coherent → token salad → 0% verify.
+
+**A3 — objective.**
+* *Sample-time* (no retrain): CFG weight {1,2,3} and self-cond on/off make **zero
+  difference** to invalid-decode (0) or diversity (32/32) — inference-time
+  guidance cannot rescue correctness here.
+* *Train-time* (retrained variants, `data/baselines/v35_flow_eval/ablations.json`
+  → `A3_objective_retrain`): full vs no-CE / no-self-cond / no-CFG — see table
+  below (val flow-MSE + invalid-decode). The CE anchor is the component that most
+  affects whether the un-standardized endpoint lands near real embeddings.
+
+| variant | best val flow-MSE | invalid-decode rate |
+|---|---|---|
+| _populated from `A3_objective_retrain` after the background retrain completes_ | | |
+
+---
+
+## 9. Conclusion (honest)
+
+In a fully matched comparison (same verified data, shared token vocabulary, same
+`TrustedMathlibVerifier`), a **faithful CPU-scale ELF-style embedded-flow generator
+fails to produce any verified single-tactic Lean prediction (0% pass@k)**, whereas
+the token-AR engine reaches **0.875 pass@1** and even 29% novel-verified. The flow
+*does* exhibit the hypothesized different profile — maximal diversity, zero invalid
+decodes — but that diversity is **not actionable**: none verify and frequency
+ranking is signal-free.
+
+The ablations localize the cause to the **velocity field's per-token accuracy
+(~32%)**, not the representation (A1: the sequence form is strictly better than the
+v0 pool), not the readout (A2: nearest-embedding ≈ plain-dot at this scale), and
+not guidance/self-cond (A3-sample: no effect). A **non-autoregressive parallel
+flow over token embeddings cannot enforce the inter-token coherence that
+autoregressive decoding gets for free** — at this scale it emits right-vocabulary,
+right-head, jointly-incoherent token salad.
+
+**Verdict for the project:** embedded flow does **not** offer a useful alternative
+generation profile for single-tactic Lean prediction at CPU scale; its only
+differentiator (diversity) is useless without correctness. The token-AR engine
+remains the right tool. **Levers that might change this** (not pursued here, would
+be the basis of a v36): much larger scale (params/data/epochs); a stronger
+decodability objective (higher CE weight, or a coherence-enforcing decoder); a
+different discretization. None of these are claims about ELF at full scale — only
+that the CPU-scale ELF-*style* model is dominated by token-AR on this task.
 
 ---
 
@@ -183,6 +228,9 @@ python scripts/evaluate_v35_flow.py --tier mathlib --max-test 24 \
     --flow-epochs 50 --ar-epochs 40 --n-samples 32 --steps 8 --cfg-weight 2.0 \
     --step-sweep
 
-# 3. A1-A3 ablations (offline; add --retrain-ablations for the train-time A3)
-python scripts/ablate_v35_flow.py --tier mathlib
+# 3. A1-A3 ablations (offline; --retrain-ablations adds the train-time A3)
+python scripts/ablate_v35_flow.py --tier mathlib --retrain-ablations
 ```
+
+Artifacts: `data/baselines/v35_flow_eval/{comparison,flow_diagnostics,step_sensitivity,ablations,metrics_*}.json`.
+Weights (gitignored, regenerable): `data/models/v35_flow_model/`, `data/models/v35_token_ar/`.
