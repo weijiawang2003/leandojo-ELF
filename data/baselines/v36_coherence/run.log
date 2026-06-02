@@ -1,0 +1,2 @@
+2026-06-02 04:04:00,499 INFO probe: 124 mathlib val rows; model=/home/wangw/code/ELFMath/data/models/v35_flow_model
+2026-06-02 04:04:09,833 INFO v35 BASELINE: per_token=0.356 exact_seq=0.003 head_body=0.477 jaccard=0.2474682384562412

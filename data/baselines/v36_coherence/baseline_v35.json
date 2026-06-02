@@ -1,0 +1,11 @@
+{
+  "sampler": "v35_continuous_selfcond",
+  "model": "/home/wangw/code/ELFMath/data/models/v35_flow_model",
+  "n_probe_rows": 124,
+  "n_samples_per_row": 16,
+  "steps": 8,
+  "per_token_gold_recovery": 0.3564287156923031,
+  "exact_seq_recovery_rate": 0.0030241935483870967,
+  "head_correct_body_wrong_rate": 0.47731854838709675,
+  "mean_pairwise_jaccard": 0.2474682384562412
+}
