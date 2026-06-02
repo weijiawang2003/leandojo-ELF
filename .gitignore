@@ -37,7 +37,8 @@ examples/leandojo_mini_repo/
 
 # v34 packaging — large / regenerable / noisy artifacts (kept on disk, not tracked).
 # Raw per-candidate eval output (the metrics/summary JSON is the committed result).
-**/predictions.jsonl
+# Covers predictions.jsonl and val_predictions.jsonl at any depth.
+*predictions.jsonl
 data/predictions/
 # Tokenized corpora + splits — regenerable from data/seeds via build_*.py.
 data/processed/
