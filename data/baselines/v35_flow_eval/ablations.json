@@ -1,0 +1,66 @@
+{
+  "tier": "mathlib",
+  "A1_representation": {
+    "n_rows": 240,
+    "single_token_fraction": 0.26666666666666666,
+    "multi_token_fraction": 0.7333333333333334,
+    "pooled_decode_ceiling_invalid_rate": 0.7333333333333334,
+    "note": "A single pooled latent (Mini-ELF v0) decodes to <=1 token, so every multi-token verified tactic is undecodable; the sequence flow has no such ceiling. v0 measured ~42% invalid decodes on its toy set."
+  },
+  "A2_discretization": {
+    "n_probe": 200,
+    "nearest_embedding": {
+      "gold_token_recovery": 0.3190376569037657,
+      "invalid_decode_rate": 0.0
+    },
+    "plain_dot_product": {
+      "gold_token_recovery": 0.34048117154811713,
+      "invalid_decode_rate": 0.0
+    },
+    "note": "Same t=1 latents decoded two ways; only the readout changes (the -0.5||E_i||^2 term)."
+  },
+  "A3_objective_sample_time": {
+    "cfg_weight=1.0": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "cfg_weight=2.0": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "cfg_weight=3.0": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "self_cond=off": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "self_cond=on": {
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    }
+  },
+  "A3_objective_retrain": {
+    "full": {
+      "best_val_fm": 0.832836,
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "no_ce": {
+      "best_val_fm": 0.786714,
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "no_selfcond": {
+      "best_val_fm": 0.817499,
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    },
+    "no_cfg": {
+      "best_val_fm": 0.827234,
+      "invalid_decode_rate": 0.0,
+      "mean_distinct_valid": 16.0
+    }
+  }
+}

@@ -163,25 +163,36 @@ representation removes that ceiling (**0% invalid**). ⇒ the per-token sequence
 v35 is representable yet still 0% verified.
 
 **A2 — discretization (nearest-embedding vs plain `z·Eᵀ`).** On the *same* `t=1`
-latents, per-position **gold-token recovery is only 32%** (nearest-embedding 0.322
-≈ plain-dot 0.329). The two readouts coincide here because the model learned
-near-uniform embedding norms (the `−0.5‖E‖²` term then contributes little; the
-unit test still proves it is required in the norm-varied case). **32% per-token
-accuracy is the bottleneck**: with ~2/3 of positions wrong, no multi-token tactic
-is coherent → token salad → 0% verify.
+latents, per-position **gold-token recovery is only ~32%** (nearest-embedding
+0.319, plain-dot 0.340 — statistically indistinguishable, within the noise of the
+probe). The two readouts coincide here because the model learned near-uniform
+embedding norms, so the `−0.5‖E‖²` term contributes little; the unit test still
+proves the term is *required* in the norm-varied case, the model just never
+exploits that regime. **~32% per-token accuracy is the bottleneck**: with ~2/3 of
+positions wrong, no multi-token tactic is coherent → token salad → 0% verify.
 
 **A3 — objective.**
 * *Sample-time* (no retrain): CFG weight {1,2,3} and self-cond on/off make **zero
   difference** to invalid-decode (0) or diversity (32/32) — inference-time
   guidance cannot rescue correctness here.
-* *Train-time* (retrained variants, `data/baselines/v35_flow_eval/ablations.json`
-  → `A3_objective_retrain`): full vs no-CE / no-self-cond / no-CFG — see table
-  below (val flow-MSE + invalid-decode). The CE anchor is the component that most
-  affects whether the un-standardized endpoint lands near real embeddings.
+* *Train-time* (retrained variants at 30 epochs, `A3_objective_retrain`): full vs
+  no-CE / no-self-cond / no-CFG.
 
-| variant | best val flow-MSE | invalid-decode rate |
-|---|---|---|
-| _populated from `A3_objective_retrain` after the background retrain completes_ | | |
+| variant | best val flow-MSE | invalid-decode rate | pass@k |
+|---|---|---|---|
+| full (L2 + CE + self-cond + CFG) | 0.833 | 0.000 | 0 |
+| − CE anchor | **0.787** (lowest) | 0.000 | 0 |
+| − self-conditioning | 0.817 | 0.000 | 0 |
+| − CFG | 0.827 | 0.000 | 0 |
+
+  **The decisive finding:** dropping the CE anchor gives the *lowest* flow-MSE
+  (0.787 < 0.833) yet still verifies nothing — minimizing velocity error and
+  producing decodable token sequences are **misaligned objectives**. The CE anchor
+  competes with (slightly raises) flow-MSE precisely because it pulls the endpoint
+  toward exact embeddings, and even so it is not strong enough to make decodes
+  coherent. Self-cond and CFG barely move val flow-MSE (0.817 / 0.827 vs 0.833).
+  No ELF objective component rescues correctness at this scale — confirming the
+  bottleneck is the velocity field's per-token accuracy, not the objective mix.
 
 ---
 
