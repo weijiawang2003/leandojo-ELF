@@ -1,9 +1,0 @@
-{
-  "counts": {
-    "train": 66,
-    "val": 23,
-    "test": 20
-  },
-  "drops": {},
-  "uses_state_after": false
-}

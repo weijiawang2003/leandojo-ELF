@@ -1,1 +1,0 @@
-{"theorem_name": "v10_instantiate_forall_nat_eq_7", "theorem_statement": "(h : ∀ k : Nat, k = k) : 7 = 7", "state_before": "h : ∀ k : Nat, k = k\n⊢ 7 = 7", "tactic": "exact h 7", "family": "nat_eq_7", "required_operation": "instantiate_forall", "corpus_source": "redundancy_corpus", "tactic_source": "verified", "split": "test", "regime": "redundancy_family_holdout/nat_eq_7"}

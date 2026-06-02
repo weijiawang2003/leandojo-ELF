@@ -1,9 +1,0 @@
-2026-05-31 00:57:06,143 INFO v22 exists plan: 168 theorems
-2026-05-31 00:57:06,354 INFO warmup success=True
-2026-05-31 00:58:39,125 INFO v22 exists corpus: planned=168 verified=471/471 name/triple drops=0/0
-2026-05-31 00:58:39,126 INFO   exists_intro_witness verified=360/360
-2026-05-31 00:58:39,126 INFO   exists_eq_witness verified=16/16
-2026-05-31 00:58:39,126 INFO   exists_reconstruct_var verified=8/8
-2026-05-31 00:58:39,126 INFO   exists_relabel verified=45/45
-2026-05-31 00:58:39,126 INFO   exists_elim_prop verified=18/18
-2026-05-31 00:58:39,126 INFO   exists_compose verified=24/24

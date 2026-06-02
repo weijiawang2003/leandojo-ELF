@@ -1,1 +1,0 @@
-{"theorem_name": "v10_rewrite_eq_mul_one", "theorem_statement": "(x y : Nat) (h : x = y) : x * 1 = y * 1", "state_before": "x y : Nat\nh : x = y\n⊢ x * 1 = y * 1", "tactic": "rw [h]", "family": "mul_one", "required_operation": "rewrite_eq", "corpus_source": "redundancy_corpus", "tactic_source": "verified", "split": "test", "regime": "redundancy_family_holdout/mul_one"}

@@ -1,9 +1,0 @@
-{
-  "held_operation": "rewrite_eq",
-  "n_train_rows": 588,
-  "n_test_rows": 5,
-  "n_train_theorems": 268,
-  "n_test_theorems": 5,
-  "no_leakage_assertion": "passed",
-  "no_held_operation_in_train_assertion": "passed"
-}

@@ -34,3 +34,18 @@ verification_cache.json
 
 # External example repo (its own git repo; manage/clone separately).
 examples/leandojo_mini_repo/
+
+# v34 packaging — large / regenerable / noisy artifacts (kept on disk, not tracked).
+# Raw per-candidate eval output (the metrics/summary JSON is the committed result).
+**/predictions.jsonl
+data/predictions/
+# Tokenized corpora + splits — regenerable from data/seeds via build_*.py.
+data/processed/
+# Build / training / eval stdout.
+*.log
+# Model weights — regenerable via train_v*.py (not metadata-only, so not tracked).
+*.pt
+*.pth
+# Local Claude Code session state (agents/skills under .claude/ remain tracked).
+.claude/projects/
+scheduled_tasks.lock

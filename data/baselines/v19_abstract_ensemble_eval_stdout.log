@@ -1,9 +1,0 @@
-/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
-  cpu = _conversion_method_template(device=torch.device("cpu"))
-2026-05-30 18:33:49,475 INFO loaded 48 v18 seeds
-2026-05-30 18:33:49,496 INFO panel: 2 models loaded (abstract_only=False)
-2026-05-30 18:33:49,882 INFO warmup: success=True elapsed_ms=385.3
-2026-05-30 18:52:51,731 INFO   raw pass@1=0.083 pass@5=0.146 pass@10=0.271 no_verify=35 unresolved=210
-2026-05-30 18:52:51,732 INFO   rule pass@1=0.125 pass@5=0.312 pass@10=0.562 no_verify=21 unresolved=158
-2026-05-30 18:52:51,734 INFO   policy pass@1=0.146 pass@5=0.312 pass@10=0.438 no_verify=27 unresolved=190
-2026-05-30 18:52:51,737 INFO V19 ABSTRACT EVAL DONE
