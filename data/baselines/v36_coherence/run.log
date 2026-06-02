@@ -29,3 +29,11 @@
 2026-06-02 04:30:12,360 INFO cell d3_D128_ce1.0_ep50: params=1002368 val_fm=0.859 run=427s timed_out=False | primary(v35) per_tok=0.349 exact=0.009
 2026-06-02 04:30:12,360 INFO === cell d3_D128_ce4.0_ep50 (3/13) ===
 2026-06-02 04:30:12,360 INFO === cell d3_D128_ce4.0_ep50 (3/13) ===
+2026-06-02 04:38:07,797 INFO cell d3_D128_ce4.0_ep50: params=1002368 val_fm=0.855 run=468s timed_out=False | primary(v35) per_tok=0.331 exact=0.000
+2026-06-02 04:38:07,797 INFO cell d3_D128_ce4.0_ep50: params=1002368 val_fm=0.855 run=468s timed_out=False | primary(v35) per_tok=0.331 exact=0.000
+2026-06-02 04:38:07,797 INFO === cell d6_D128_ce1.0_ep50 (4/13) ===
+2026-06-02 04:38:07,797 INFO === cell d6_D128_ce1.0_ep50 (4/13) ===
+2026-06-02 04:51:03,976 INFO cell d6_D128_ce1.0_ep50: params=1598720 val_fm=0.861 run=762s timed_out=False | primary(v35) per_tok=0.346 exact=0.000
+2026-06-02 04:51:03,976 INFO cell d6_D128_ce1.0_ep50: params=1598720 val_fm=0.861 run=762s timed_out=False | primary(v35) per_tok=0.346 exact=0.000
+2026-06-02 04:51:03,977 INFO === cell d3_D256_ce1.0_ep50 (5/13) ===
+2026-06-02 04:51:03,977 INFO === cell d3_D256_ce1.0_ep50 (5/13) ===

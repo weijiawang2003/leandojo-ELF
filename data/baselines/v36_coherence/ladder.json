@@ -80,6 +80,72 @@
         "head_correct_body_wrong_rate": 0.5984375,
         "mean_pairwise_jaccard": 0.13656093683831344
       }
+    },
+    {
+      "id": "d3_D128_ce4.0_ep50",
+      "depth": 3,
+      "width": 128,
+      "ce": 4.0,
+      "epochs": 50,
+      "discrete": false,
+      "primary": "v35",
+      "params": 1002368,
+      "best_val_fm": 0.854961,
+      "epochs_run": 36,
+      "early_stopped": true,
+      "timed_out": false,
+      "runtime_seconds": 467.6,
+      "metrics_v35_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3306800418074686,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.4390625,
+        "mean_pairwise_jaccard": 0.2444765546454442
+      },
+      "metrics_v36_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3283921225970148,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.353125,
+        "mean_pairwise_jaccard": 0.15850925607164207
+      }
+    },
+    {
+      "id": "d6_D128_ce1.0_ep50",
+      "depth": 6,
+      "width": 128,
+      "ce": 1.0,
+      "epochs": 50,
+      "discrete": false,
+      "primary": "v35",
+      "params": 1598720,
+      "best_val_fm": 0.860641,
+      "epochs_run": 36,
+      "early_stopped": true,
+      "timed_out": false,
+      "runtime_seconds": 762.1,
+      "metrics_v35_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3456876808923922,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.5109375,
+        "mean_pairwise_jaccard": 0.22660593586210714
+      },
+      "metrics_v36_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.33719828070960584,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.4890625,
+        "mean_pairwise_jaccard": 0.16810058773079845
+      }
     }
   ]
 }
