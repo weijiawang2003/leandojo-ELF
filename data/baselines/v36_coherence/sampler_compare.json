@@ -1,0 +1,105 @@
+{
+  "model": "/home/wangw/code/ELFMath/data/models/v35_flow_model",
+  "by_steps": {
+    "1": {
+      "v35_continuous": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 1,
+        "per_token_gold_recovery": 0.4065967274572341,
+        "exact_seq_recovery_rate": 0.0030241935483870967,
+        "head_correct_body_wrong_rate": 0.7207661290322581,
+        "mean_pairwise_jaccard": 0.32260466674529165
+      },
+      "v36_iterative": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 1,
+        "per_token_gold_recovery": 0.4065967274572341,
+        "exact_seq_recovery_rate": 0.0030241935483870967,
+        "head_correct_body_wrong_rate": 0.7207661290322581,
+        "mean_pairwise_jaccard": 0.32260466674529165
+      }
+    },
+    "4": {
+      "v35_continuous": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 4,
+        "per_token_gold_recovery": 0.36285036729094583,
+        "exact_seq_recovery_rate": 0.0030241935483870967,
+        "head_correct_body_wrong_rate": 0.5186491935483871,
+        "mean_pairwise_jaccard": 0.26079427627812357
+      },
+      "v36_iterative": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 4,
+        "per_token_gold_recovery": 0.35940782554421674,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.5584677419354839,
+        "mean_pairwise_jaccard": 0.1465604027380955
+      }
+    },
+    "8": {
+      "v35_continuous": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3564287156923031,
+        "exact_seq_recovery_rate": 0.0030241935483870967,
+        "head_correct_body_wrong_rate": 0.47731854838709675,
+        "mean_pairwise_jaccard": 0.2474682384562412
+      },
+      "v36_iterative": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3646752803906969,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.6330645161290323,
+        "mean_pairwise_jaccard": 0.16187296801906678
+      }
+    },
+    "16": {
+      "v35_continuous": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 16,
+        "per_token_gold_recovery": 0.352753614949597,
+        "exact_seq_recovery_rate": 0.0030241935483870967,
+        "head_correct_body_wrong_rate": 0.46018145161290325,
+        "mean_pairwise_jaccard": 0.24496193775560093
+      },
+      "v36_iterative": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 16,
+        "per_token_gold_recovery": 0.364950783334645,
+        "exact_seq_recovery_rate": 0.0025201612903225806,
+        "head_correct_body_wrong_rate": 0.6315524193548387,
+        "mean_pairwise_jaccard": 0.18035206339080598
+      }
+    },
+    "32": {
+      "v35_continuous": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 32,
+        "per_token_gold_recovery": 0.35159755365459416,
+        "exact_seq_recovery_rate": 0.0030241935483870967,
+        "head_correct_body_wrong_rate": 0.4526209677419355,
+        "mean_pairwise_jaccard": 0.24480835384701416
+      },
+      "v36_iterative": {
+        "n_probe_rows": 124,
+        "n_samples_per_row": 16,
+        "steps": 32,
+        "per_token_gold_recovery": 0.3667097342691069,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.6542338709677419,
+        "mean_pairwise_jaccard": 0.21071806439101945
+      }
+    }
+  }
+}
