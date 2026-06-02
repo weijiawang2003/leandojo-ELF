@@ -146,6 +146,39 @@
         "head_correct_body_wrong_rate": 0.4890625,
         "mean_pairwise_jaccard": 0.16810058773079845
       }
+    },
+    {
+      "id": "d3_D256_ce1.0_ep50",
+      "depth": 3,
+      "width": 256,
+      "ce": 1.0,
+      "epochs": 50,
+      "discrete": false,
+      "primary": "v35",
+      "params": 3774208,
+      "best_val_fm": 0.641871,
+      "epochs_run": 31,
+      "early_stopped": false,
+      "timed_out": true,
+      "runtime_seconds": 914.0,
+      "metrics_v35_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.35116604097951065,
+        "exact_seq_recovery_rate": 0.0046875,
+        "head_correct_body_wrong_rate": 0.5578125,
+        "mean_pairwise_jaccard": 0.22364105656371244
+      },
+      "metrics_v36_sampler": {
+        "n_probe_rows": 80,
+        "n_samples_per_row": 8,
+        "steps": 8,
+        "per_token_gold_recovery": 0.341494707784509,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.4984375,
+        "mean_pairwise_jaccard": 0.11045370120693998
+      }
     }
   ]
 }
