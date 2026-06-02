@@ -70,6 +70,15 @@ class ElfV35TrainConfig:
     use_selfcond: bool = True
     use_ce: bool = True
     use_cfg: bool = True
+    # v36 budget controls (defaults None preserve exact v35 behavior):
+    # early-stop on val flow-MSE after `patience` non-improving epochs; hard
+    # wall-clock cap `max_seconds` (a cell exceeding it stops and is flagged).
+    patience: Optional[int] = None
+    max_seconds: Optional[float] = None
+    # v36: train with DISCRETE self-conditioning (snap the self-cond clean
+    # estimate to the nearest token embeddings, analog-bits style). Default False
+    # = v35 continuous self-cond. The canonical fix the iterative sampler needs.
+    discrete_selfcond: bool = False
 
     def to_jsonable(self) -> Dict[str, Any]:
         return asdict(self)
@@ -159,6 +168,11 @@ def compute_losses(
         with torch.no_grad():
             v0 = model.field(z_t, t, memory, mem_pad, None)
             z1_hat = (z_t + (1.0 - t3) * v0).detach()
+            if cfg.discrete_selfcond:
+                # snap the clean estimate to the nearest token embeddings so the
+                # model self-conditions on a committed DISCRETE hypothesis.
+                ids_hat = model.embed.readout_ids(unstandardize(z1_hat, mean, std))
+                z1_hat = standardize(model.embed.embed(ids_hat), mean, std).detach()
         use_sc = (torch.rand(B, generator=generator, device=device) < cfg.p_selfcond)
         self_cond = z1_hat * use_sc.view(B, 1, 1).float()
 
@@ -284,6 +298,9 @@ def train(
     train_log: List[Dict[str, Any]] = []
     perm = torch.randperm(len(train_rows), generator=g).tolist()
     t0 = time.perf_counter()
+    no_improve = 0
+    early_stopped = False
+    timed_out = False
 
     for epoch in range(cfg.epochs):
         model.train()
@@ -323,11 +340,21 @@ def train(
             log_fn(rec)
 
         select = val_fm if val_rows else (ep_fm / max(n_batches, 1))
-        if select < best_val:
+        if select < best_val - 1e-6:
             best_val = select
             best_state = copy.deepcopy({k: v.detach().clone() for k, v in model.state_dict().items()})
             best_stats = stats
             best_epoch = epoch
+            no_improve = 0
+        else:
+            no_improve += 1
+
+        if cfg.patience is not None and no_improve >= cfg.patience:
+            early_stopped = True
+            break
+        if cfg.max_seconds is not None and (time.perf_counter() - t0) >= cfg.max_seconds:
+            timed_out = True
+            break
 
     model.load_state_dict(best_state)
     model.eval()
@@ -338,6 +365,9 @@ def train(
         "n_parameters": int(sum(p.numel() for p in model.parameters() if p.requires_grad)),
         "best_epoch": best_epoch,
         "best_val_fm": round(best_val, 6),
+        "epochs_run": len(train_log),
+        "early_stopped": early_stopped,
+        "timed_out": timed_out,
         "selected_by": "offline val flow-MSE (no Lean)" if val_rows else "last/train-fm (no val)",
         "runtime_seconds": round(time.perf_counter() - t0, 1),
         "uses_state_after": False,
