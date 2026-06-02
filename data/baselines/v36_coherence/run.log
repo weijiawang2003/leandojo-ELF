@@ -69,3 +69,9 @@
 2026-06-02 06:24:50,063 INFO cell d6_D128_ce1.0_ep50_disc: params=1598720 val_fm=0.854 run=699s timed_out=False | primary(v36) per_tok=0.345 exact=0.000
 2026-06-02 06:24:50,063 INFO === cell d3_D256_ce1.0_ep150_disc (13/13) ===
 2026-06-02 06:24:50,063 INFO === cell d3_D256_ce1.0_ep150_disc (13/13) ===
+2026-06-02 06:40:15,367 INFO cell d3_D256_ce1.0_ep150_disc: params=3774208 val_fm=0.622 run=909s timed_out=True | primary(v36) per_tok=0.336 exact=0.000
+2026-06-02 06:40:15,367 INFO cell d3_D256_ce1.0_ep150_disc: params=3774208 val_fm=0.622 run=909s timed_out=True | primary(v36) per_tok=0.336 exact=0.000
+2026-06-02 06:40:15,368 INFO BEST cell=d3_D128_ce0.2_ep50 sampler=v35 per_tok=0.358 exact=0.009 | GATE FIRED=False
+2026-06-02 06:40:15,368 INFO BEST cell=d3_D128_ce0.2_ep50 sampler=v35 per_tok=0.358 exact=0.009 | GATE FIRED=False
+2026-06-02 06:40:15,368 INFO ladder DONE: 13 cells, 8677s total
+2026-06-02 06:40:15,368 INFO ladder DONE: 13 cells, 8677s total
