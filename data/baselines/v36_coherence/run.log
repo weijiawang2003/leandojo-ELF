@@ -49,3 +49,7 @@
 2026-06-02 05:29:38,986 INFO cell d3_D128_ce1.0_ep150: params=1002368 val_fm=0.859 run=434s timed_out=False | primary(v35) per_tok=0.349 exact=0.009
 2026-06-02 05:29:38,986 INFO === cell d6_D128_ce4.0_ep150 (8/13) ===
 2026-06-02 05:29:38,986 INFO === cell d6_D128_ce4.0_ep150 (8/13) ===
+2026-06-02 05:42:39,559 INFO cell d6_D128_ce4.0_ep150: params=1598720 val_fm=0.854 run=766s timed_out=False | primary(v35) per_tok=0.344 exact=0.000
+2026-06-02 05:42:39,559 INFO cell d6_D128_ce4.0_ep150: params=1598720 val_fm=0.854 run=766s timed_out=False | primary(v35) per_tok=0.344 exact=0.000
+2026-06-02 05:42:39,559 INFO === cell d3_D256_ce4.0_ep150 (9/13) ===
+2026-06-02 05:42:39,559 INFO === cell d3_D256_ce4.0_ep150 (9/13) ===
