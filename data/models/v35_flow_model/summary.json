@@ -1,0 +1,28 @@
+{
+  "n_train_rows": 3689,
+  "n_val_rows": 456,
+  "n_parameters": 1002368,
+  "best_epoch": 24,
+  "best_val_fm": 0.832836,
+  "selected_by": "offline val flow-MSE (no Lean)",
+  "runtime_seconds": 679.0,
+  "uses_state_after": false,
+  "uses_manual_oracle": false,
+  "train_config": {
+    "epochs": 50,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "seed": 0,
+    "p_selfcond": 0.5,
+    "p_ce": 0.2,
+    "p_uncond": 0.1,
+    "ce_weight": 0.2,
+    "time_p_mean": -1.5,
+    "time_p_std": 0.8,
+    "use_selfcond": true,
+    "use_ce": true,
+    "use_cfg": true
+  }
+}
