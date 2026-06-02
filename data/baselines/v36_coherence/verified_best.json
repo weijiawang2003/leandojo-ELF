@@ -1,0 +1,16 @@
+{
+  "ran_lean": false,
+  "reason": "gate_not_fired",
+  "gate": {
+    "fired": false,
+    "thresholds": {"per_token_gold_recovery>=": 0.60, "exact_seq_recovery_rate>=": 0.10},
+    "best_offline_per_token_gold_recovery": 0.35781968920921703,
+    "best_offline_exact_seq_recovery_rate": 0.009375,
+    "best_offline_config": "d3_D128_ce0.2_ep50 (v35 sampler)",
+    "v35_baseline_per_token": 0.3564287156923031,
+    "v35_baseline_exact_seq": 0.0030241935483870967
+  },
+  "negative_confirmation": "No offline ladder config (13 cells: depth{3,6} x width{128,256} x ce{0.2,1,4} x epochs{50,150}, continuous AND discrete self-cond) reached per_token_gold_recovery>=0.60 or exact_seq_recovery_rate>=0.10. Best per-token = 0.358 (the cheapest config; statistically at the v35 baseline 0.356) and best exact-seq = 0.9%. Exact-sequence recovery never crosses ~1%, so a matched verified pass@k cannot move off 0. The §5 Lean run is therefore skipped by design; the offline result is decisive.",
+  "lean_env_available": true,
+  "note": "The Mathlib scratch env + TrustedMathlibVerifier(confirm=True) are available, but the verified run is intentionally NOT invoked because the offline gate is negative (running Lean on candidates with ~0% exact-sequence recovery would only re-confirm 0% pass@k at real Lean cost)."
+}

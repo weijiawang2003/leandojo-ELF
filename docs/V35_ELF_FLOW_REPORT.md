@@ -223,6 +223,14 @@ decodability objective (higher CE weight, or a coherence-enforcing decoder); a
 different discretization. None of these are claims about ELF at full scale — only
 that the CPU-scale ELF-*style* model is dominated by token-AR on this task.
 
+> **v36 update (probe of these levers — see `docs/V36_COHERENCE_PROBE_REPORT.md`):**
+> a coherence-enforcing iterative/discrete sampler and a 13-cell scale·objective
+> ladder (params 1.0M→6.1M, epochs 50→150, ce_weight 0.2→4.0, discrete
+> self-conditioning) leave per-token recovery flat at 0.32–0.36 and exact-seq <1%,
+> *even as* they cut train flow-MSE ~25% — flow-MSE is decoupled from coherence, so
+> the gap is fundamental at CPU scale. The decodability/scale levers are now
+> falsified here; only an off-CPU-scale regime remains unprobed.
+
 ---
 
 ## 10. Reproduction
