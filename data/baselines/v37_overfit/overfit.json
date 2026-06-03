@@ -200,6 +200,47 @@
         "head_correct_body_wrong_rate": 0.7593344155844156,
         "mean_pairwise_jaccard": 0.37753559138017573
       }
+    },
+    {
+      "id": "M16_ep800_D256",
+      "M": 16,
+      "epochs": 800,
+      "width": 256,
+      "n_theorems": 16,
+      "n_rows": 36,
+      "params": 3774208,
+      "train_flow_mse": 0.428421,
+      "epochs_run": 800,
+      "timed_out": false,
+      "runtime_seconds": 264.2,
+      "train_per_token_gold_recovery": 0.5270297177368056,
+      "train_exact_seq_recovery": 0.07118055555555555,
+      "metrics_cfg1": {
+        "n_probe_rows": 36,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.4722865162799491,
+        "exact_seq_recovery_rate": 0.012152777777777778,
+        "head_correct_body_wrong_rate": 0.71875,
+        "mean_pairwise_jaccard": 0.25034125637096355
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 36,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.5270297177368056,
+        "exact_seq_recovery_rate": 0.07118055555555555,
+        "head_correct_body_wrong_rate": 0.765625,
+        "mean_pairwise_jaccard": 0.3162256440228253
+      }
     }
-  ]
+  ],
+  "verdict": {
+    "best_train_exact_seq_recovery": 0.5546875,
+    "best_train_per_token_gold_recovery": 0.6717881944444444,
+    "architecture_limit": false,
+    "generalization_limit": false,
+    "note": "architecture_limit: the flow cannot memorize coherent tactics even on its own training rows (gap is fundamental, not just held-out). generalization_limit: it fits train but fails the v36 held-out (~0.34). Neither flag set = intermediate; read the table.",
+    "v35_v36_heldout_per_token_ref": 0.356
+  }
 }
