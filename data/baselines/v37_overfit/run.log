@@ -1,0 +1,26 @@
+/home/wangw/code/ELFMath/.venv/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:362: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+2026-06-02 19:30:54,852 INFO mathlib train rows=992, theorems=400
+2026-06-02 19:30:54,852 INFO mathlib train rows=992, theorems=400
+2026-06-02 19:30:54,852 INFO === M4_ep200_D128: 4 theorems, 8 rows ===
+2026-06-02 19:30:54,852 INFO === M4_ep200_D128: 4 theorems, 8 rows ===
+2026-06-02 19:31:11,489 INFO M4_ep200_D128: rows=8 params=1002368 train_mse=1.215 epochs_run=200 | TRAIN per_tok=0.454 exact=0.164 (head_body cfg1=0.398)
+2026-06-02 19:31:11,489 INFO M4_ep200_D128: rows=8 params=1002368 train_mse=1.215 epochs_run=200 | TRAIN per_tok=0.454 exact=0.164 (head_body cfg1=0.398)
+2026-06-02 19:31:11,490 INFO === M4_ep800_D128: 4 theorems, 8 rows ===
+2026-06-02 19:31:11,490 INFO === M4_ep800_D128: 4 theorems, 8 rows ===
+2026-06-02 19:32:08,360 INFO M4_ep800_D128: rows=8 params=1002368 train_mse=0.350 epochs_run=800 | TRAIN per_tok=0.672 exact=0.555 (head_body cfg1=0.477)
+2026-06-02 19:32:08,360 INFO M4_ep800_D128: rows=8 params=1002368 train_mse=0.350 epochs_run=800 | TRAIN per_tok=0.672 exact=0.555 (head_body cfg1=0.477)
+2026-06-02 19:32:08,360 INFO === M16_ep200_D128: 16 theorems, 36 rows ===
+2026-06-02 19:32:08,360 INFO === M16_ep200_D128: 16 theorems, 36 rows ===
+2026-06-02 19:32:47,988 INFO M16_ep200_D128: rows=36 params=1002368 train_mse=1.119 epochs_run=200 | TRAIN per_tok=0.432 exact=0.076 (head_body cfg1=0.644)
+2026-06-02 19:32:47,988 INFO M16_ep200_D128: rows=36 params=1002368 train_mse=1.119 epochs_run=200 | TRAIN per_tok=0.432 exact=0.076 (head_body cfg1=0.644)
+2026-06-02 19:32:47,989 INFO === M16_ep800_D128: 16 theorems, 36 rows ===
+2026-06-02 19:32:47,989 INFO === M16_ep800_D128: 16 theorems, 36 rows ===
+2026-06-02 19:35:15,666 INFO M16_ep800_D128: rows=36 params=1002368 train_mse=0.539 epochs_run=800 | TRAIN per_tok=0.558 exact=0.141 (head_body cfg1=0.788)
+2026-06-02 19:35:15,666 INFO M16_ep800_D128: rows=36 params=1002368 train_mse=0.539 epochs_run=800 | TRAIN per_tok=0.558 exact=0.141 (head_body cfg1=0.788)
+2026-06-02 19:35:15,668 INFO === M64_ep200_D128: 64 theorems, 154 rows ===
+2026-06-02 19:35:15,668 INFO === M64_ep200_D128: 64 theorems, 154 rows ===
+2026-06-02 19:37:56,532 INFO M64_ep200_D128: rows=154 params=1002368 train_mse=0.896 epochs_run=200 | TRAIN per_tok=0.395 exact=0.009 (head_body cfg1=0.652)
+2026-06-02 19:37:56,532 INFO M64_ep200_D128: rows=154 params=1002368 train_mse=0.896 epochs_run=200 | TRAIN per_tok=0.395 exact=0.009 (head_body cfg1=0.652)
+2026-06-02 19:37:56,533 INFO === M64_ep800_D128: 64 theorems, 154 rows ===
+2026-06-02 19:37:56,533 INFO === M64_ep800_D128: 64 theorems, 154 rows ===

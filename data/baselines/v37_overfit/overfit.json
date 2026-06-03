@@ -1,0 +1,172 @@
+{
+  "design": "OVERFIT CONTROL \u2014 train==probe (no held-out, no early stopping); val==train by design.",
+  "data": "Mathlib-tier v35 train rows; subsets nested by md5(theorem_name).",
+  "n_mathlib_train_rows": 992,
+  "records": [
+    {
+      "id": "M4_ep200_D128",
+      "M": 4,
+      "epochs": 200,
+      "width": 128,
+      "n_theorems": 4,
+      "n_rows": 8,
+      "params": 1002368,
+      "train_flow_mse": 1.215158,
+      "epochs_run": 200,
+      "timed_out": false,
+      "runtime_seconds": 15.0,
+      "train_per_token_gold_recovery": 0.4536458333333334,
+      "train_exact_seq_recovery": 0.1640625,
+      "metrics_cfg1": {
+        "n_probe_rows": 8,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.4307291666666666,
+        "exact_seq_recovery_rate": 0.09375,
+        "head_correct_body_wrong_rate": 0.3984375,
+        "mean_pairwise_jaccard": 0.12874983378889626
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 8,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.4536458333333334,
+        "exact_seq_recovery_rate": 0.1640625,
+        "head_correct_body_wrong_rate": 0.34375,
+        "mean_pairwise_jaccard": 0.19666337465444608
+      }
+    },
+    {
+      "id": "M4_ep800_D128",
+      "M": 4,
+      "epochs": 800,
+      "width": 128,
+      "n_theorems": 4,
+      "n_rows": 8,
+      "params": 1002368,
+      "train_flow_mse": 0.349933,
+      "epochs_run": 800,
+      "timed_out": false,
+      "runtime_seconds": 56.0,
+      "train_per_token_gold_recovery": 0.6717881944444444,
+      "train_exact_seq_recovery": 0.5546875,
+      "metrics_cfg1": {
+        "n_probe_rows": 8,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.6267361111111112,
+        "exact_seq_recovery_rate": 0.328125,
+        "head_correct_body_wrong_rate": 0.4765625,
+        "mean_pairwise_jaccard": 0.5607818116319955
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 8,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.6717881944444444,
+        "exact_seq_recovery_rate": 0.5546875,
+        "head_correct_body_wrong_rate": 0.3984375,
+        "mean_pairwise_jaccard": 0.6502611830231313
+      }
+    },
+    {
+      "id": "M16_ep200_D128",
+      "M": 16,
+      "epochs": 200,
+      "width": 128,
+      "n_theorems": 16,
+      "n_rows": 36,
+      "params": 1002368,
+      "train_flow_mse": 1.118894,
+      "epochs_run": 200,
+      "timed_out": false,
+      "runtime_seconds": 35.2,
+      "train_per_token_gold_recovery": 0.43212754676466164,
+      "train_exact_seq_recovery": 0.0763888888888889,
+      "metrics_cfg1": {
+        "n_probe_rows": 36,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.4114205264341134,
+        "exact_seq_recovery_rate": 0.019097222222222224,
+        "head_correct_body_wrong_rate": 0.6440972222222222,
+        "mean_pairwise_jaccard": 0.2288156337709908
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 36,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.43212754676466164,
+        "exact_seq_recovery_rate": 0.0763888888888889,
+        "head_correct_body_wrong_rate": 0.5711805555555556,
+        "mean_pairwise_jaccard": 0.28156371819318254
+      }
+    },
+    {
+      "id": "M16_ep800_D128",
+      "M": 16,
+      "epochs": 800,
+      "width": 128,
+      "n_theorems": 16,
+      "n_rows": 36,
+      "params": 1002368,
+      "train_flow_mse": 0.538831,
+      "epochs_run": 800,
+      "timed_out": false,
+      "runtime_seconds": 143.1,
+      "train_per_token_gold_recovery": 0.558273661661909,
+      "train_exact_seq_recovery": 0.140625,
+      "metrics_cfg1": {
+        "n_probe_rows": 36,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.48241888508532516,
+        "exact_seq_recovery_rate": 0.008680555555555556,
+        "head_correct_body_wrong_rate": 0.7881944444444444,
+        "mean_pairwise_jaccard": 0.30520424028776705
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 36,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.558273661661909,
+        "exact_seq_recovery_rate": 0.140625,
+        "head_correct_body_wrong_rate": 0.7517361111111112,
+        "mean_pairwise_jaccard": 0.41531097208589035
+      }
+    },
+    {
+      "id": "M64_ep200_D128",
+      "M": 64,
+      "epochs": 200,
+      "width": 128,
+      "n_theorems": 64,
+      "n_rows": 154,
+      "params": 1002368,
+      "train_flow_mse": 0.895648,
+      "epochs_run": 200,
+      "timed_out": false,
+      "runtime_seconds": 142.1,
+      "train_per_token_gold_recovery": 0.39471402453252985,
+      "train_exact_seq_recovery": 0.008928571428571428,
+      "metrics_cfg1": {
+        "n_probe_rows": 154,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.3747678597295187,
+        "exact_seq_recovery_rate": 0.002029220779220779,
+        "head_correct_body_wrong_rate": 0.6517857142857143,
+        "mean_pairwise_jaccard": 0.2262750765366825
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 154,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.39471402453252985,
+        "exact_seq_recovery_rate": 0.008928571428571428,
+        "head_correct_body_wrong_rate": 0.6956168831168831,
+        "mean_pairwise_jaccard": 0.23240286980502106
+      }
+    }
+  ]
+}
