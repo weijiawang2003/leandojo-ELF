@@ -24,3 +24,7 @@
 2026-06-02 19:37:56,532 INFO M64_ep200_D128: rows=154 params=1002368 train_mse=0.896 epochs_run=200 | TRAIN per_tok=0.395 exact=0.009 (head_body cfg1=0.652)
 2026-06-02 19:37:56,533 INFO === M64_ep800_D128: 64 theorems, 154 rows ===
 2026-06-02 19:37:56,533 INFO === M64_ep800_D128: 64 theorems, 154 rows ===
+2026-06-02 19:47:07,219 INFO M64_ep800_D128: rows=154 params=1002368 train_mse=0.464 epochs_run=800 | TRAIN per_tok=0.412 exact=0.000 (head_body cfg1=0.709)
+2026-06-02 19:47:07,219 INFO M64_ep800_D128: rows=154 params=1002368 train_mse=0.464 epochs_run=800 | TRAIN per_tok=0.412 exact=0.000 (head_body cfg1=0.709)
+2026-06-02 19:47:07,220 INFO === M16_ep800_D256: 16 theorems, 36 rows ===
+2026-06-02 19:47:07,220 INFO === M16_ep800_D256: 16 theorems, 36 rows ===

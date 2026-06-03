@@ -167,6 +167,39 @@
         "head_correct_body_wrong_rate": 0.6956168831168831,
         "mean_pairwise_jaccard": 0.23240286980502106
       }
+    },
+    {
+      "id": "M64_ep800_D128",
+      "M": 64,
+      "epochs": 800,
+      "width": 128,
+      "n_theorems": 64,
+      "n_rows": 154,
+      "params": 1002368,
+      "train_flow_mse": 0.463684,
+      "epochs_run": 800,
+      "timed_out": false,
+      "runtime_seconds": 532.5,
+      "train_per_token_gold_recovery": 0.41204757465068487,
+      "train_exact_seq_recovery": 0.0,
+      "metrics_cfg1": {
+        "n_probe_rows": 154,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.37864250499472735,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.7086038961038961,
+        "mean_pairwise_jaccard": 0.3975991029716924
+      },
+      "metrics_cfg2": {
+        "n_probe_rows": 154,
+        "n_samples_per_row": 16,
+        "steps": 8,
+        "per_token_gold_recovery": 0.41204757465068487,
+        "exact_seq_recovery_rate": 0.0,
+        "head_correct_body_wrong_rate": 0.7593344155844156,
+        "mean_pairwise_jaccard": 0.37753559138017573
+      }
     }
   ]
 }
