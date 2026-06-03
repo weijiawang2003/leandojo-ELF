@@ -231,6 +231,15 @@ that the CPU-scale ELF-*style* model is dominated by token-AR on this task.
 > the gap is fundamental at CPU scale. The decodability/scale levers are now
 > falsified here; only an off-CPU-scale regime remains unprobed.
 
+> **v37 update (overfit control — see `docs/V37_OVERFIT_CONTROL_REPORT.md`):** the
+> incoherence is sharpened from "architecture can't represent coherence" to a
+> **sample-efficiency limit**. Trained to overfit a tiny train subset, the flow
+> *does* reproduce exact, Lean-verified multi-token tactics (M=4/800ep: train
+> exact-seq 0.55, 5/5 verify), but exact-seq collapses 0.55→0.14→0.00 as the train
+> set grows 4→16→64 theorems — it cannot fit even its own training data at scale,
+> and more width does not help. So the ~0.34 floor is the average-L2 hedge a
+> sample-inefficient flow settles into, not a representational ceiling.
+
 ---
 
 ## 10. Reproduction

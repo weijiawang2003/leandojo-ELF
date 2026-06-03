@@ -9,6 +9,13 @@ discrete self-conditioning, sampler steps 1→32 — and exact-sequence recovery
 never exceeds **0.9%**. The verification gate did not fire, so the Lean run was
 skipped by design. At CPU scale the gap is **fundamental**, not a tuning issue.
 
+> **v37 sharpening (`docs/V37_OVERFIT_CONTROL_REPORT.md`):** the overfit control
+> shows this is a **sample-efficiency limit**, not a representational one — the
+> flow reproduces exact Lean-verified tactics when overfitting M=4 theorems (train
+> exact-seq 0.55) but collapses to 0.00 by M=64 on its own training data. The
+> held-out 0.32–0.36 floor is the average-L2 hedge of a sample-inefficient flow,
+> not an architecture that "cannot represent coherence."
+
 The single most important new fact: **flow-MSE is decoupled from coherence.** The
 D=256 cells drive validation flow-MSE far *down* (0.62–0.74 vs the D=128 cells'
 0.83–0.86) yet recover the *same* ~0.34 of tokens — minimizing the training
@@ -135,11 +142,13 @@ training flow-MSE by ~25%. That decoupling — better flow-matching, identical
 discrete coherence — is the crux: a non-autoregressive flow over token embeddings
 has no mechanism coupling per-position predictions, and at this scale that
 coupling does not emerge from capacity, training time, the CE anchor, discrete
-self-conditioning, or iterative refinement. The gap is fundamental here. The
-token-AR engine (which gets inter-token coherence for free) remains the right
-tool; the only remaining unfalsified lever is a regime far outside CPU scale
-(orders of magnitude more params/data, where flow LLMs begin to work) — out of
-scope for this project.
+self-conditioning, or iterative refinement. The gap is fundamental here — and the
+v37 overfit control pins down *why*: it is a **sample-efficiency limit** (the flow
+memorizes a few tactics coherently but cannot fit even its own training set beyond
+~16 theorems), not a representational one. The token-AR engine (which gets
+inter-token coherence for free) remains the right tool; the only remaining
+unfalsified lever is a regime far outside CPU scale (orders of magnitude more
+params/data, where flow LLMs begin to work) — out of scope for this project.
 
 ---
 
