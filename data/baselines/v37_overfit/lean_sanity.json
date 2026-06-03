@@ -1,0 +1,40 @@
+{
+  "model": "v37 M=4/800/D128 (reproduced, seed 0)",
+  "n_exact_reproductions_on_train": 5,
+  "n_verified_checked": 5,
+  "n_verified_ok": 5,
+  "all_verified": true,
+  "results": [
+    {
+      "theorem_name": "v27_logic_and_self_iff",
+      "tactic": "exact and_self_iff",
+      "success": true,
+      "error": null
+    },
+    {
+      "theorem_name": "v27_logic_and_self_iff",
+      "tactic": "tauto",
+      "success": true,
+      "error": null
+    },
+    {
+      "theorem_name": "v28_ord_le_total_1",
+      "tactic": "exact le_total c1 c2",
+      "success": true,
+      "error": null
+    },
+    {
+      "theorem_name": "v32_fs_empty_inter_subset_st",
+      "tactic": "intro x hx; exact absurd (Finset.mem_inter.mp hx).1 (by simp)",
+      "success": true,
+      "error": null
+    },
+    {
+      "theorem_name": "v28_list_map_id_1",
+      "tactic": "exact List.map_id c1",
+      "success": true,
+      "error": null
+    }
+  ],
+  "note": "Confirms exact-sequence recovery corresponds to genuinely Lean-valid tactics: the flow's exact reproductions are real, verified tactics, not a metric artifact."
+}
