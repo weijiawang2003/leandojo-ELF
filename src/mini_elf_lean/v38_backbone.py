@@ -53,7 +53,7 @@ class V38Config:
     max_cond_len: int = 96
     max_tgt_len: int = 32
     time_dim: int = 128
-    readout_tau: float = 0.5
+    readout_tau: float = 1.0   # argmax (flow decode) is tau-invariant; 1.0 stabilizes AR/MDLM CE
     pad_id: int = 0
     bos_id: int = 1
     eos_id: int = 2
@@ -114,6 +114,7 @@ class V38Trunk(nn.Module):
         super().__init__()
         self.cfg = cfg
         self.tok_emb = nn.Embedding(cfg.table_size, cfg.d_model)
+        nn.init.normal_(self.tok_emb.weight, std=0.02)   # standard small init (tied readout stability)
         self.pos_emb = nn.Parameter(torch.zeros(1, cfg.max_seq_len, cfg.d_model))
         nn.init.normal_(self.pos_emb, std=0.02)
         self.time_mlp = nn.Sequential(nn.Linear(cfg.time_dim, cfg.d_model), nn.SiLU(),
