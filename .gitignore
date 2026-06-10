@@ -51,3 +51,8 @@ data/processed/
 # Local Claude Code session state (agents/skills under .claude/ remain tracked).
 .claude/projects/
 scheduled_tasks.lock
+
+# v39 raw downloads + large corpora (commit generators + fingerprints instead)
+data/v39/_raw/
+data/v39/corpora/
+outputs/v39/**/snapshots/
