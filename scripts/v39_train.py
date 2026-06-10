@@ -100,14 +100,23 @@ def gen_kw_for(family: str, *, cfg_weight: float = 2.0) -> Dict[str, Any]:
 # ------------------------- cheap dev metrics ------------------------- #
 
 @torch.no_grad()
-def val_loss(model, val_rows, vocab, cfg, device, bs=256, n_rep=1) -> float:
+def val_loss(model, val_rows, vocab, cfg, device, bs=64, n_rep=1, max_rows=512) -> float:
+    """bf16 autocast + small batch + capped #rows: keeps the big-vocab readout off the
+    VRAM ceiling (the 55k-vocab logits tensor is the memory spike at eval time)."""
     model.eval()
     tot, n = 0.0, 0
+    rows = val_rows[:max_rows]
+    ac = device == "cuda"
     for _ in range(n_rep):
-        for s in range(0, len(val_rows), bs):
-            b = make_batch(val_rows[s:s + bs], vocab, max_cond_len=cfg.max_cond_len,
+        for s in range(0, len(rows), bs):
+            b = make_batch(rows[s:s + bs], vocab, max_cond_len=cfg.max_cond_len,
                            max_tgt_len=cfg.max_tgt_len, device=device)
-            tot += float(model.loss(b).item()); n += 1
+            if ac:
+                with torch.autocast("cuda", dtype=torch.bfloat16):
+                    l = model.loss(b)
+            else:
+                l = model.loss(b)
+            tot += float(l.item()); n += 1
     return tot / max(n, 1)
 
 
