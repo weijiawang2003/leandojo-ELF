@@ -13,6 +13,22 @@
 | 922  | 229 | 0.744 | 0.637 | 0.055 | 0.689 | 0.107 |
 | 461  | 458 | 0.574 | 0.520 | 0.006 | 0.568 | 0.055 |
 
+## Fairness correction — flow at its best (1-step) sampler
+The table above evaluated dev exact-seq with a 16-step sampler for all families. E1/H4 showed
+flow is a **1-step** model, so 16 steps unfairly buries it. Re-evaluated at flow's best (1 step):
+| U | epochs | AR | MDLM | FLOW (1-step) | FLOW (16-step) | AR−FLOW(1-step) |
+|---|--------|----|----|----|----|----|
+| 461  | 458 | 0.574 | 0.520 | **0.128** | 0.005 | 0.446 |
+| 922  | 229 | 0.744 | 0.637 | 0.105 | 0.044 | 0.639 |
+| 1844 | 115 | 0.789 | 0.561 | 0.083 | 0.016 | 0.706 |
+| 3689 | 61  | 0.873 | 0.570 | **0.064** | 0.033 | 0.809 |
+
+Even at its best sampler, flow is **4.5–13× below AR at every U** and never crosses MDLM. Note the
+**flow line slopes the wrong way**: flow *decreases* with more unique data (0.128→0.064) because at
+matched budget more U = fewer epochs, and flow rides on *epochs/memorization*, not data diversity
+(consistent with v37). So as U falls / epochs rise, flow improves AND AR degrades — the gap shrinks
+from both ends — yet flow stays an order of magnitude behind. Fair plot: `crossover_trackA_fair.png`.
+
 ## Reading — H2 = **REFUTED** (with an important caveat)
 
 The AR−FLOW gap *does* shrink monotonically as U falls / epochs rise (0.832 → 0.568), which

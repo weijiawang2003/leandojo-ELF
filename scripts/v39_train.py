@@ -180,6 +180,10 @@ def train_cell(*, family: str, scale: str, train_rows, val_rows, dev_rows, vocab
     ckpt_steps = sorted({max(1, round(f * total_steps)) for f in ckpt_fracs} | {total_steps})
     npar = count_params(model)
     gkw = gen_kw_for(family)
+    # family-appropriate dev sampler: flow is a few-step model (E1/H4); MDLM needs many
+    # unmasking steps; AR ignores steps. Evaluating each at a good setting keeps the
+    # crossover comparison fair (16-step-for-all undersells flow).
+    dev_gen_steps = {"flow": 1, "mdlm": 16, "ar": 1}.get(family, gen_steps)
     g = torch.Generator(device="cpu"); g.manual_seed(seed)
 
     metrics: List[Dict[str, Any]] = []
@@ -211,7 +215,7 @@ def train_cell(*, family: str, scale: str, train_rows, val_rows, dev_rows, vocab
             if step in ckpt_steps:
                 vl = val_loss(model, val_rows, vocab, cfg, device)
                 dm = dev_metrics(model, dev_rows, vocab, cfg, golds, device,
-                                 n_dev=dev_n, K=K_dev, steps=gen_steps, gen_kw=gkw)
+                                 n_dev=dev_n, K=K_dev, steps=dev_gen_steps, gen_kw=gkw)
                 tps = tokens / max(time.perf_counter() - t0, 1e-6)
                 rec = {"cell": cell_id, "family": family, "scale": scale,
                        "U": len(train_rows), "params": npar, "step": step, "total_steps": total_steps,
