@@ -16,7 +16,7 @@ on 121k LeanDojo pairs plus five hypothesis tests.
 |----|-----------|---------|-------------|
 | **H1** | flow escapes token-salad at ≥30M + ≥64K unique pairs + x-pred | **REFUTED** | Track B U=121k (30M, x-pred): flow dev exact-seq **0.000** ≤ 0.02. Flow per-token *highest* (0.363 > AR 0.288) yet exact-seq 0 at every U≥16k; flat across scale while AR/MDLM climb. |
 | **H2** | flow/MDLM closes on / beats AR as data shrinks (matched budget) | **REFUTED (flow); MDLM≈AR** | flow 4.5–13× below AR at every U; gap "shrinks" only via AR degradation + flow's epoch-memorization. MDLM within 0.05–0.30 of AR. |
-| **H3** | at matched K, flow yields more *distinct verified* tactics than AR | **REFUTED** | distinct-verified/thm: AR **2.92** vs FLOW **0.625** |
+| **H3** | at matched K, flow yields more *distinct verified* tactics than AR | **REFUTED** | distinct-verified/thm: AR **2.92** vs FLOW **0.625**; and (v39b ensemble) flow solves a **strict subset** of AR's theorems — **0 unique solves, 0 coverage of AR's 2 misses** even at K=48; "novel discoveries" do not survive audit (V39_06) |
 | **H4** | flow keeps ≥90% of 32-step pass@1 at ≤8 steps | **SUPPORTED (twist: fewer is better)** | 8-step retention **1.19**; flow exact-seq 1-step 0.278 → 32-step 0.095 |
 | **H5** | flow repairs AR's failed candidates (≥5% recovered) | **REFUTED** | flow-repair rescued **0/3** AR-failed theorems (0%) |
 
@@ -24,17 +24,27 @@ on 121k LeanDojo pairs plus five hypothesis tests.
 
 ## 2. Headline verified pass@k (24-theorem Mathlib tier, TrustedMathlibVerifier confirm=True)
 
-| family | params | sampler | **pass@1** | **pass@5** | **pass@10** | novel-verified |
-|--------|--------|---------|--------|--------|---------|------|
-| **AR**   | 25.8M | full decode | 0.833 | 0.917 | 0.917 | 1 |
-| **MDLM** | 25.8M | 16-step | **0.875** | 0.917 | 0.917 | 1 |
-| **FLOW** | 26.6M | 16-step (naive default) | 0.292 | 0.500 | 0.500 | 0 |
-| **FLOW** | 26.6M | **1-step (honest best)** | **0.542** | **0.833** | **0.833** | **2** |
+All n=24; Wilson 95% CIs in brackets (wide — see §2a).
+| family | params | sampler | **pass@1** | **pass@5** | **pass@10** |
+|--------|--------|---------|--------|--------|---------|
+| **AR**   | 25.8M | full decode | 0.833 [0.64,0.93] | 0.917 [0.74,0.98] | 0.917 [0.74,0.98] |
+| **MDLM** | 25.8M | 16-step | **0.875** [0.69,0.96] | 0.917 [0.74,0.98] | 0.917 [0.74,0.98] |
+| **FLOW** | 26.6M | 16-step (naive default) | 0.292 [0.15,0.49] | 0.500 [0.31,0.69] | 0.500 [0.31,0.69] |
+| **FLOW** | 26.6M | **1-step (honest best)** | **0.542** [0.35,0.72] | **0.833** [0.64,0.93] | **0.833** [0.64,0.93] |
 
-**The three-number story of continuous flow:** v35 (v-prediction) = **0.000** → v39 x-pred @16-step =
-0.50 pass@10 → v39 x-pred @1-step = **0.83 pass@10 + 2 novel discoveries**. x-prediction plus the
-*correct* (1-step) sampler closes most of the pass@10 gap to AR/MDLM (0.83 vs 0.92), but flow's
-pass@1 (0.54) stays well below AR/MDLM (0.83–0.88): flow needs many samples to land its hit.
+**The rescue arc has TWO distinct causes — never compress it to "0.000 → 0.833":**
+1. **x-prediction** (vs v35's v-prediction): v35 = **0.000** → v39 x-pred @16-step = **0.500** pass@10.
+2. **the 1-step sampler** (vs the naive 16-step default): @16-step 0.500 → @1-step **0.833** pass@10.
+Both are needed; attributing the full lift to "x-pred at scale" would be wrong. x-pred removes the
+zero; few-step sampling does the rest.
+
+**§2a — the gap is within noise at n=24.** AR pass@10 [0.74,0.98] and FLOW@1 pass@10 [0.64,0.93]
+overlap heavily; the headline pass@10 difference is **not statistically resolvable** on 24 theorems.
+The load-bearing evidence against flow is therefore the **per-theorem coverage** analysis (V39_06),
+not the point aggregates: flow solves a **strict subset** of AR's theorems with **zero unique solves**,
+and the "2 novel discoveries" credited in earlier drafts **do not survive audit** — they are found by
+AR/MDLM too, or are whitespace variants of train tactics (V39_06 §3). The proposer recommendation is
+withdrawn accordingly (§9).
 
 ## 3. Crossover (Track A, matched 3e7-token budget, dev exact-seq, flow at best 1-step)
 | U | epochs | AR | MDLM | FLOW |
@@ -92,12 +102,17 @@ stringent for *all* families here; but flow being *pinned at 0* while strictly *
 metric despite better per-token* is a clean, scale-robust refutation. Plot: `scale_trackB.png`.
 
 ## 7. Limitations
-- **One night, one seed (3407).** Preliminary evidence, not a benchmark.
+- **One night; training seed 3407 + a FLOW headline replication at seed 4242 (v39b §5).** Preliminary
+  evidence, not a benchmark. n=24 verified tier ⇒ **wide Wilson CIs** (±~0.15–0.19); aggregate pass@k
+  gaps between flow and AR are within noise (the coverage analysis, not the aggregates, is decisive).
 - **24-theorem verified tier** + theorem-level verification only (LeanDojo `run_tac` blocked; no
   `state_after` claims). Track B is judged on dev exact-seq, not Lean (distribution/vocab mismatch).
+- **Track B dev metrics are computed on the first 160 of 1,599 held-out dev theorems** (K=4 samples ⇒
+  **640 generated samples** per cell), not the full dev pool — a cheap training-time proxy.
 - **30M params**, ≤121k unique pairs — well below the ELF arXiv scale; "ELF-*style*", not a repro.
 - Block/semi-AR (BD3-LM) decoding not implemented (E3 out of scope).
-- Flow's headline at 1-step was found by a post-hoc sampler sweep; not separately seed-replicated.
+- **Reproducibility note:** Track B was relaunched once at batch 96 after its 55k-vocab `val_loss`
+  pushed VRAM to 15.4/16 GB (fix in commit `c9ddfaa`); 0 cells were lost (resumable orchestrator).
 
 ## 8. What would change my mind (one next experiment per hypothesis)
 - **H1:** train flow at U≥256k / ≥100M for ≥several epochs; if dev exact-seq climbs past ~0.3 it's a
@@ -114,8 +129,11 @@ metric despite better per-token* is a clean, scale-robust refutation. Plot: `sca
 2. **If pivoting off AR, pivot to MDLM, not continuous flow.** Masked discrete diffusion over the same
    trunk/vocab is AR-competitive (pass@1 0.875) and coherent at every data scale; continuous
    embedding-space flow is not, at this scale.
-3. **Continuous flow is a 1-step, diversity/novelty instrument, not a precision one.** If kept, run it
-   at 1 step (best + fastest) and use it as a *novel-candidate proposer* feeding an AR/MDLM+Lean
-   verifier — not as a standalone generator.
+3. **~~Continuous flow as a 1-step novel-candidate proposer~~ — WITHDRAWN (v39b).** The v39b ensemble
+   audit shows flow solves a **strict subset** of AR's theorems with **zero unique solves**, covers
+   **neither** of AR's 2 misses (even at K=48), and makes **no genuine out-of-train discovery** (its
+   "novel" verifications are whitespace variants of train tactics; the truly-novel ones are found by
+   AR/MDLM too). At this scale flow proposes nothing AR/MDLM don't already find — it has **no ensemble
+   value**. Run flow at 1 step only if studying the method itself, not as a component of a prover.
 4. **Do not invest further in many-step embedded-flow sampling or AR-draft flow-repair** at CPU/30M
    scale; both are clean negatives. The open door is scale (H1) and a coherence mechanism (H2 §8).

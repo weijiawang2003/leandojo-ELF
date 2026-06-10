@@ -43,8 +43,10 @@ standard proof-state→tactic prediction (the state carries the goal). `state_af
   dev 1.06%** — clean.
 - **Decontamination: 0 dropped** — the 24-tier uses synthetic theorem names (`v26_…`) that do
   not collide with real Mathlib `full_name`s; guardrail 5 satisfied with zero loss.
-- U-ladder = nested subsets **{4000, 16000, 64000, 121345}** (30× span). Dev = the 1,599
-  held-out LeanDojo theorems (disjoint from train).
+- U-ladder = nested subsets **{4000, 16000, 64000, 121345}** (30× span). Dev pool = the 1,599
+  held-out LeanDojo theorems (disjoint from train). **Training-time dev metrics use the first 160 of
+  the 1,599 dev theorems × K=4 samples = 640 generated samples** per cell (a cheap proxy, not the full
+  dev pool); reported exact-seq / per-token are over those 640 samples.
 
 **Fingerprints** (`data/v39/corpora/leandojo/fingerprints.json`):
 train sha256 `caaf2e31…`, dev sha256 `954670b6…`, n_train 121,345, n_dev 1,599, vocab 55,303.
