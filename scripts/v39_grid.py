@@ -147,6 +147,13 @@ def main(argv=None) -> int:
                     for m in res["metrics"]:
                         f.write(json.dumps({**m, "tag": c["tag"], "corpus": ctag}) + "\n")
                 fm = res["final"]
+                if not res.get("completed", True):
+                    log(f"  [{i+1}/{len(cells)}] *** WARNING {cid} INCOMPLETE: {res['achieved_steps']}/"
+                        f"{res['total_steps']} steps (time cap) — UNMATCHED budget, exclude from comparison")
+                    with metrics_path.open("a", encoding="utf-8") as f:
+                        f.write(json.dumps({"cell": cid, "tag": c["tag"], "status": "INCOMPLETE",
+                                            "achieved_steps": res["achieved_steps"],
+                                            "total_steps": res["total_steps"]}) + "\n")
                 log(f"  [{i+1}/{len(cells)}] DONE {cid} ({res['elapsed_s']:.0f}s, {res['npar']/1e6:.1f}M) "
                     f"val={fm.get('val_loss')} exact={fm.get('dev_exact_seq')} "
                     f"pertok={fm.get('dev_per_token')} distinct={fm.get('dev_distinct_mean')}")

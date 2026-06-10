@@ -224,6 +224,7 @@ def train_cell(*, family: str, scale: str, train_rows, val_rows, dev_rows, vocab
                 break
     elapsed = time.perf_counter() - t0
     tps = tokens / max(elapsed, 1e-6)
+    completed = step >= total_steps  # B1 guard: surface time-cap truncation (unmatched budget)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     snap_dir = out_dir / "snapshots"; snap_dir.mkdir(parents=True, exist_ok=True)
@@ -240,13 +241,15 @@ def train_cell(*, family: str, scale: str, train_rows, val_rows, dev_rows, vocab
         "vocab_size": len(vocab), "ckpt_fracs": list(ckpt_fracs), "gen_steps": gen_steps,
         "K_dev": K_dev, "dev_n": dev_n, "family_kw": family_kw, "device": device,
         "measured_tok_per_s": round(tps, 1), "elapsed_s": round(elapsed, 1),
+        "achieved_steps": step, "completed": completed,
         "n_val": len(val_rows), "n_dev": len(dev_rows), "snapshot": str(snap_path),
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"), **(extra_meta or {}),
     }
     (cfg_dir / f"{cell_id}.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
     final = metrics[-1] if metrics else {}
     return {"cell": cell_id, "metrics": metrics, "final": final, "config": config,
-            "snapshot": str(snap_path), "npar": npar, "elapsed_s": round(elapsed, 1)}
+            "snapshot": str(snap_path), "npar": npar, "elapsed_s": round(elapsed, 1),
+            "completed": completed, "achieved_steps": step, "total_steps": total_steps}
 
 
 __all__ = ["train_cell", "dev_metrics", "val_loss", "make_cfg", "build_model", "cosine_lr",
