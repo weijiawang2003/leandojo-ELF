@@ -1,0 +1,19 @@
+{
+  "H3": {
+    "ar": {
+      "distinct_verified_per_theorem": 2.917,
+      "total_distinct_candidates": 6.75
+    },
+    "flow": {
+      "distinct_verified_per_theorem": 0.625,
+      "total_distinct_candidates": 64.92
+    },
+    "H3_supported": false,
+    "lean_seconds": 26.4
+  },
+  "E4_throughput_tactics_per_s": {
+    "flow@8": 177.4,
+    "flow@16": 88.5,
+    "ar": 420.1
+  }
+}
