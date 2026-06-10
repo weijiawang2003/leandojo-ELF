@@ -1,0 +1,26 @@
+{
+  "config": "v39_leandojo_trackB",
+  "source": "LeanDojo Benchmark 4 random split (Zenodo 15382959)",
+  "cond_cap": 128,
+  "tac_cap": 40,
+  "min_count": 2,
+  "max_cond_len": 128,
+  "max_tgt_len": 40,
+  "vocab_size": 55303,
+  "n_train": 121345,
+  "n_dev": 1599,
+  "train_drops": {
+    "cond_long": 190877,
+    "tac_long": 8769,
+    "dup": 563
+  },
+  "dev_drops": {
+    "cond_long": 2514,
+    "tac_long": 118
+  },
+  "oov_train": 0.00206,
+  "oov_dev": 0.01056,
+  "decontam_tier_names": 24,
+  "uses_state_after": false,
+  "note": "theorem_statement := full_name; build_input_text=full_name\\nstate_before; verified-eval is Track A only (distribution mismatch)."
+}

@@ -1,0 +1,7 @@
+{
+  "train_sha256": "caaf2e31f7304fee3cc8ee93ebb71fbff9c68adc925f642bd908b960b16a4bc2",
+  "dev_sha256": "954670b68d0e5777e1ff02d5ec37ac4d15b66cfbc242c411c27375c9c81dc07e",
+  "n_train": 121345,
+  "n_dev": 1599,
+  "vocab_size": 55303
+}
