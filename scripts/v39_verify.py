@@ -85,6 +85,9 @@ def main(argv=None):
 
     results = []
     out_path = Path(args.out) if args.out else (OUT / args.run / "verified.json")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    if args.detail_dir:
+        Path(args.detail_dir).mkdir(parents=True, exist_ok=True)
     t0 = time.perf_counter()
     for sp in snaps:
         snap = torch.load(sp, map_location="cpu", weights_only=False)
