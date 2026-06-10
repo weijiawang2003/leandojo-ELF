@@ -141,7 +141,7 @@ def _toks(s): return frozenset(t.text for t in tokenize(s) if t.kind is not Toke
 
 @torch.no_grad()
 def eval_checkpoint(model, state, test_tier, vocab, cfg, golds, train_tactics, *,
-                    K, steps, device, verifier=None, gen_kw=None) -> Dict[str, Any]:
+                    K, steps, device, verifier=None, gen_kw=None, return_detail=False):
     model.load_state_dict({k: v.to(device) for k, v in state.items()})
     model.eval()
     gen_kw = gen_kw or {}
@@ -149,6 +149,7 @@ def eval_checkpoint(model, state, test_tier, vocab, cfg, golds, train_tactics, *
     pred_topk: Dict[str, List[str]] = {}
     cand_items: Dict[Tuple[str, str], str] = {}
     name2stmt = {}
+    vmap: Dict[Tuple[str, str], bool] = {}   # bound even when verifier is None (for return_detail)
     for r in test_tier:
         text_name = r["theorem_name"]; name2stmt[text_name] = r["theorem_statement"]
         cond = cond_ids_for(r, vocab, max_cond_len=cfg.max_cond_len, device=device)
@@ -179,7 +180,6 @@ def eval_checkpoint(model, state, test_tier, vocab, cfg, golds, train_tactics, *
     }
     if verifier is not None:
         items = [(nm, name2stmt[nm], tac) for (nm, tac) in cand_items]
-        vmap = {}
         if items:
             for x in verifier.verify_many(items, confirm=True):
                 vmap[(x.theorem_name, x.tactic)] = x.success
@@ -192,6 +192,13 @@ def eval_checkpoint(model, state, test_tier, vocab, cfg, golds, train_tactics, *
         metrics["pass_at_k"] = passk
         metrics["novel_verified_count"] = novel
         metrics["n_candidates_verified"] = len(items)
+    if return_detail:
+        detail = {
+            "pred_topk": pred_topk,                                    # name -> [top-10 tactics]
+            "vmap": {f"{n}\x1f{t}": bool(v) for (n, t), v in vmap.items()},  # "name\x1ftactic" -> verified
+            "name2stmt": name2stmt, "K": K, "steps": steps, "n_theorems": len(pred_topk),
+        }
+        return metrics, detail
     return metrics
 
 

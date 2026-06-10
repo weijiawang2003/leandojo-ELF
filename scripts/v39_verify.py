@@ -27,11 +27,33 @@ from mini_elf_lean.v38_backbone import V38Config
 from mini_elf_lean.v38_data import load_dataset, mathlib_test_tier, gold_lookup
 from v38_matrix_eval import eval_checkpoint, get_verifier, build_model
 
+from v39_train import git_sha
+
 OUT = ROOT / "outputs" / "v39"
 
 
 def gen_kw_for(family, cfg_weight=2.0):
     return {"cfg_weight": cfg_weight, "self_cond": True} if family == "flow" else {}
+
+
+def build_detail(raw, train_tactics, meta):
+    """Assemble per-theorem detail from eval_checkpoint's raw pred_topk + vmap, and
+    recompute pass@k / novel FROM the detail so they can be regression-checked against
+    the aggregate path (which is never touched)."""
+    vmap = raw["vmap"]                                # "name\x1ftactic" -> verified
+    theorems = []
+    for name, topk in raw["pred_topk"].items():
+        cands = []
+        for t in topk[:10]:
+            ver = bool(vmap.get(f"{name}\x1f{t}", False))
+            cands.append({"tactic": t, "verified": ver, "novel": ver and (t not in train_tactics)})
+        theorems.append({"name": name, "solved": any(c["verified"] for c in cands),
+                         "k_samples": raw["K"], "topk": cands})
+    n = max(len(theorems), 1)
+    agg = {f"pass@{kk}": sum(any(c["verified"] for c in th["topk"][:kk]) for th in theorems) / n
+           for kk in (1, 5, 10)}
+    agg["novel"] = sum(c["novel"] for th in theorems for c in th["topk"])
+    return {**meta, "n_theorems": len(theorems), "aggregate_from_detail": agg, "theorems": theorems}
 
 
 def main(argv=None):
@@ -42,6 +64,7 @@ def main(argv=None):
     ap.add_argument("--gen-steps", type=int, default=16)
     ap.add_argument("--no-verify", action="store_true")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--detail-dir", default=None, help="write per-theorem detail JSON per snapshot")
     args = ap.parse_args(argv)
     dev = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -68,12 +91,30 @@ def main(argv=None):
         cfg = V38Config.from_dict(snap["cfg"])
         family = snap["family"]
         model = build_model(family, cfg, **(snap.get("family_kw") or {})).to(dev)
-        m = eval_checkpoint(model, snap["state_dict"], test_tier, vocab, cfg, golds, train_tactics,
-                            K=args.K, steps=args.gen_steps, device=dev, verifier=verifier,
-                            gen_kw=gen_kw_for(family))
+        ec = eval_checkpoint(model, snap["state_dict"], test_tier, vocab, cfg, golds, train_tactics,
+                             K=args.K, steps=args.gen_steps, device=dev, verifier=verifier,
+                             gen_kw=gen_kw_for(family), return_detail=bool(args.detail_dir))
+        m, raw = ec if args.detail_dir else (ec, None)
         rec = {"cell": sp.stem, "family": family, "params": sum(p.numel() for p in model.parameters()), **m}
         results.append(rec)
         out_path.write_text(json.dumps(results, indent=2), encoding="utf-8")
+        if args.detail_dir and raw is not None:
+            ddir = Path(args.detail_dir); ddir.mkdir(parents=True, exist_ok=True)
+            gk = gen_kw_for(family)
+            meta = {"model_id": sp.stem, "family": family, "steps": args.gen_steps,
+                    "cfg_weight": gk.get("cfg_weight"), "gen_seed": 0, "K": args.K,
+                    "git_sha": git_sha(), "snapshot": str(sp)}
+            detail = build_detail(raw, train_tactics, meta)
+            # regression gate: aggregates recomputed from detail must equal the aggregate path
+            af = detail["aggregate_from_detail"]; pk = m.get("pass_at_k", {})
+            mism = [f"pass@{k}: detail {af[f'pass@{k}']} vs agg {float(pk.get(str(k), 0)):.6f}"
+                    for k in (1, 5, 10) if abs(af[f"pass@{k}"] - float(pk.get(str(k), 0))) > 1e-6]
+            if af["novel"] != m.get("novel_verified_count", af["novel"]):
+                mism.append(f"novel: detail {af['novel']} vs agg {m.get('novel_verified_count')}")
+            detail["aggregate_matches_path"] = not mism
+            if mism:
+                print(f"  *** DETAIL MISMATCH {sp.stem}: {mism}")
+            (ddir / f"{sp.stem}_s{args.gen_steps}.json").write_text(json.dumps(detail, indent=2), encoding="utf-8")
         pk = m.get("pass_at_k", {})
         print(f"  [{sp.stem}] pass@1={pk.get('1')} pass@5={pk.get('5')} pass@10={pk.get('10')} "
               f"exact={m['exact_seq_recovery_rate']:.3f} pertok={m['per_token_gold_recovery']:.3f} "
