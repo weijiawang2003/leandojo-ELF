@@ -14,7 +14,7 @@ on 121k LeanDojo pairs plus five hypothesis tests.
 
 | ID | Hypothesis | Verdict | Key numbers |
 |----|-----------|---------|-------------|
-| **H1** | flow escapes token-salad at ≥30M + ≥64K unique pairs + x-pred | **see Track B §6** | Track A U=3689: flow dev exact-seq 0.064 (1-step) vs AR 0.873; Track B U=121k: _filled below_ |
+| **H1** | flow escapes token-salad at ≥30M + ≥64K unique pairs + x-pred | **REFUTED** | Track B U=121k (30M, x-pred): flow dev exact-seq **0.000** ≤ 0.02. Flow per-token *highest* (0.363 > AR 0.288) yet exact-seq 0 at every U≥16k; flat across scale while AR/MDLM climb. |
 | **H2** | flow/MDLM closes on / beats AR as data shrinks (matched budget) | **REFUTED (flow); MDLM≈AR** | flow 4.5–13× below AR at every U; gap "shrinks" only via AR degradation + flow's epoch-memorization. MDLM within 0.05–0.30 of AR. |
 | **H3** | at matched K, flow yields more *distinct verified* tactics than AR | **REFUTED** | distinct-verified/thm: AR **2.92** vs FLOW **0.625** |
 | **H4** | flow keeps ≥90% of 32-step pass@1 at ≤8 steps | **SUPPORTED (twist: fewer is better)** | 8-step retention **1.19**; flow exact-seq 1-step 0.278 → 32-step 0.095 |
@@ -62,8 +62,34 @@ coherence. Flow's high candidate diversity (distinct 26–32 vs AR 4–11) does 
 verified diversity (distinct-verified 0.6 vs 2.9). Flow's one genuine edge: it surfaces 2–3
 **out-of-train** verified tactics (novel) that AR/MDLM rarely do.
 
-## 6. Scale arm (Track B / LeanDojo, 121,345 pairs, 30M, own dev set) — H1
-_[Filled on Track B completion — dev exact-seq at U∈{4k,16k,64k,121k} for AR/MDLM/FLOW; H1 verdict.]_
+## 6. Scale arm (Track B / LeanDojo, 121,345 pairs, 30M, own dev set) — H1 = **REFUTED**
+Matched 3e7-token budget across all 12 cells (all `completed=True`, 1860/1860 steps); dev = 1,599
+held-out **novel** LeanDojo theorems (theorem-disjoint, real Mathlib — far harder than Track A's
+template-similar dev). Family-appropriate dev sampler (flow 1-step, MDLM 16-step, AR full).
+
+| U | epochs | AR ex / pt | MDLM ex / pt | FLOW ex / pt |
+|---|--------|-----------|-------------|-------------|
+| 4,000   | 44.3 | 0.000 / 0.271 | 0.000 / 0.266 | 0.002 / 0.368 |
+| 16,000  | 11.1 | 0.005 / 0.295 | 0.013 / 0.241 | 0.000 / 0.363 |
+| 64,000  | 2.8  | 0.011 / 0.294 | 0.013 / 0.267 | 0.000 / 0.363 |
+| 121,345 | 1.5  | 0.013 / 0.288 | **0.016** / 0.221 | **0.000** / 0.363 |
+
+**H1 REFUTED.** At the largest U (121k ≥ 64k), 30M, x-prediction: **flow dev exact-seq = 0.000 ≤ 0.02.**
+Three robust observations:
+1. **Flow's exact-seq is flat at 0 across the entire 30× data range** (and exactly 0.000 at every
+   U≥16k), while AR/MDLM *climb* with data (0.000→0.013/0.016) — more data helps the discrete
+   generators, not flow. Scale does not rescue flow.
+2. **Flow has the *highest* per-token gold recovery (0.363, vs AR 0.288, MDLM 0.221)** yet the lowest
+   exact-seq — the coherence gap is total. Flow predicts each token's embedding best (parallel
+   prediction, no autoregressive error compounding) but never assembles a jointly-valid tactic. This
+   is the cleanest statement of the failure mechanism in the whole v35–v39 line.
+3. **The data/epoch tradeoff cannot rescue flow:** it is ~0 at *both* ends — 44 epochs on 4k pairs
+   (0.002) and 1.5 epochs on 121k pairs (0.000). Neither memorization nor diversity coverage helps.
+
+Caveat: at matched budget the largest cells see only 1.5 epochs, so AR/MDLM are also undertrained on
+this hard novel-Mathlib task (exact-seq 0.013–0.016, barely above the 0.02 line). The exact-seq bar is
+stringent for *all* families here; but flow being *pinned at 0* while strictly *worse on the joint
+metric despite better per-token* is a clean, scale-robust refutation. Plot: `scale_trackB.png`.
 
 ## 7. Limitations
 - **One night, one seed (3407).** Preliminary evidence, not a benchmark.
