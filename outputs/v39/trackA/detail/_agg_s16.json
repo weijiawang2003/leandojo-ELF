@@ -1,0 +1,47 @@
+[
+  {
+    "cell": "headline_ar_30M_U3689",
+    "family": "ar",
+    "params": 25807872,
+    "per_token_gold_recovery": 0.6086463373228078,
+    "exact_seq_recovery_rate": 0.8003472222222222,
+    "head_correct_body_wrong_rate": 0.1840277777777778,
+    "pass_at_k": {
+      "1": 0.8333333333333334,
+      "5": 0.9166666666666666,
+      "10": 0.9166666666666666
+    },
+    "novel_verified_count": 1,
+    "n_candidates_verified": 90
+  },
+  {
+    "cell": "headline_flow_30M_U3689",
+    "family": "flow",
+    "params": 26595328,
+    "per_token_gold_recovery": 0.5993447105273086,
+    "exact_seq_recovery_rate": 0.1371527777777778,
+    "head_correct_body_wrong_rate": 0.7881944444444444,
+    "pass_at_k": {
+      "1": 0.2916666666666667,
+      "5": 0.5,
+      "10": 0.5
+    },
+    "novel_verified_count": 0,
+    "n_candidates_verified": 235
+  },
+  {
+    "cell": "headline_mdlm_30M_U3689",
+    "family": "mdlm",
+    "params": 25807872,
+    "per_token_gold_recovery": 0.5901803121816909,
+    "exact_seq_recovery_rate": 0.7864583333333334,
+    "head_correct_body_wrong_rate": 0.20833333333333334,
+    "pass_at_k": {
+      "1": 0.875,
+      "5": 0.9166666666666666,
+      "10": 0.9166666666666666
+    },
+    "novel_verified_count": 1,
+    "n_candidates_verified": 75
+  }
+]

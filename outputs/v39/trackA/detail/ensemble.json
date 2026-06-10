@@ -1,0 +1,247 @@
+{
+  "n_theorems": 24,
+  "solved_counts": {
+    "AR": 22,
+    "AR@K48": 22,
+    "MDLM": 22,
+    "FLOW@1": 20,
+    "FLOW@2": 19,
+    "FLOW@4": 15,
+    "FLOW@8": 13,
+    "FLOW@16": 12
+  },
+  "solve_matrix": [
+    {
+      "theorem": "v25_list_nil_append",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v25_option_some_isSome",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v26_logic_imp_self2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v26_nat_le_refl2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v26_nat_min_le_left2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v26_option_map_id2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v26w_inter_subset_left_union",
+      "AR": false,
+      "MDLM": false,
+      "FLOW@1": false,
+      "FLOW@2": false
+    },
+    {
+      "theorem": "v26w_self_subset_self_union",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v27_logic_imp_trans",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": false
+    },
+    {
+      "theorem": "v27_nat_two_mul",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v27_set_mem_singleton",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_fs_mem_union_left_1",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_fs_subset_union_left_0",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_list_reverse_reverse_1",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_logic_and_self_iff2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_ord_min_le_right_0",
+      "AR": false,
+      "MDLM": false,
+      "FLOW@1": false,
+      "FLOW@2": false
+    },
+    {
+      "theorem": "v28_ord_nat_succ_le_succ_0",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_ord_nat_zero_le_0",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_set_mem_inter_right_2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_set_mem_union_of_left_2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v28_set_subset_union_right_2",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": false
+    },
+    {
+      "theorem": "v29_fs_mem_inter_left_1",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": false,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v29_fs_subset_inter_0",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": true,
+      "FLOW@2": true
+    },
+    {
+      "theorem": "v29_set_union_comm_subset_0",
+      "AR": true,
+      "MDLM": true,
+      "FLOW@1": false,
+      "FLOW@2": false
+    }
+  ],
+  "unions_pass_at_10": {
+    "AR": 0.9166666666666666,
+    "AR@K48 (2x budget, AR-alone)": 0.9166666666666666,
+    "AR \u222a FLOW@1": 0.9166666666666666,
+    "AR \u222a FLOW@2": 0.9166666666666666,
+    "AR \u222a MDLM": 0.9166666666666666,
+    "AR \u222a MDLM \u222a FLOW@1": 0.9166666666666666,
+    "all-four (AR,MDLM,FLOW@1,FLOW@2)": 0.9166666666666666
+  },
+  "ar_misses": [
+    "v26w_inter_subset_left_union",
+    "v28_ord_min_le_right_0"
+  ],
+  "ar_miss_coverage": {
+    "v26w_inter_subset_left_union": [],
+    "v28_ord_min_le_right_0": []
+  },
+  "ar_K48_solves_misses": [],
+  "unique_solves": {
+    "AR": [],
+    "MDLM": [],
+    "FLOW@1": [],
+    "FLOW@2": []
+  },
+  "novel_audit": [
+    {
+      "theorem": "v29_fs_subset_inter_0",
+      "tactic": "exact Finset.subset_inter c4 c5",
+      "found_by": [
+        "AR",
+        "AR@K48",
+        "MDLM",
+        "FLOW@1",
+        "FLOW@2",
+        "FLOW@4"
+      ],
+      "verdict": "TRULY NOVEL (min edit-distance 4 to nearest train tactic)"
+    },
+    {
+      "theorem": "v28_fs_subset_union_left_0",
+      "tactic": "apply Finset.subset_union_left",
+      "found_by": [
+        "AR@K48"
+      ],
+      "verdict": "TRULY NOVEL (min edit-distance 5 to nearest train tactic)"
+    },
+    {
+      "theorem": "v25_option_some_isSome",
+      "tactic": "simp [ ]",
+      "found_by": [
+        "FLOW@1",
+        "FLOW@2"
+      ],
+      "verdict": "near-variant (min edit-distance 2 to train)"
+    },
+    {
+      "theorem": "v26_logic_imp_self2",
+      "tactic": "intro h; exact   h",
+      "found_by": [
+        "FLOW@2"
+      ],
+      "verdict": "trivial: normalized-equals a train tactic"
+    }
+  ]
+}

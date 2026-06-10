@@ -1,0 +1,1318 @@
+{
+  "model_id": "headline_flow_30M_U3689",
+  "family": "flow",
+  "steps": 2,
+  "cfg_weight": 2.0,
+  "gen_seed": 0,
+  "K": 24,
+  "git_sha": "645dd182bfcd5675a91e73a976671a6990b3759a",
+  "snapshot": "/home/wangw/code/ELFMath/outputs/v39/trackA/snapshots/headline_flow_30M_U3689.pt",
+  "n_theorems": 24,
+  "aggregate_from_detail": {
+    "pass@1": 0.3333333333333333,
+    "pass@5": 0.6666666666666666,
+    "pass@10": 0.7916666666666666,
+    "novel": 3
+  },
+  "theorems": [
+    {
+      "name": "v26_nat_le_refl2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Nat.c0 c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.le_refl c0",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.c0 c0 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact le_rfl",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact le_rfl.c0 c0",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v26_logic_imp_self2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "intro h; exact h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro h; exact > h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun   =h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun _ => h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun h => h",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun hexact=> h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exactexacth hid h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro h; exact   h",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "intro h; exacth  h",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v26_option_map_id2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases c1 <;> rfl",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "cases c1 <;> simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp c1 <;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp c1 <;> simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases c1.<;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Bool.\u25b8 succ simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact congrArg.< > rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp List.<;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp c1.< > rfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v26_nat_min_le_left2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Nat.le_refl c0 c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.le_refl c0 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.c1 c0 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.le_refl c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.le_refl c0 c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.le_refl c1 c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.mul_comm c0 c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v25_list_nil_append",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact List.nil_append c1",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp List.nil_append c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.nil_append c1 c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.nil_append c1 c2 c3",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.nil_append c1 rfl c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.nil_append c1.c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.nil_append.c1 c1",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v25_option_some_isSome",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rw",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases c1 <;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases c1 <;> simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases c1;<",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact c1.<;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rfl [ rw",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw c1.<;c1 simp rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ ]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp c1.] c1 simp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v26w_self_subset_self_union",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Or.inl c4",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.> c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.. , c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl c4 1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl c4 c4.)\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl c4.c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.intro c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Orc4inl c4c51",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v26w_inter_subset_left_union",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Set.h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.union_subset",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.x",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun h   => inl.1.h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun h h => inl.h h.h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun h h =Or.inl.h 1exacth;h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun h hexact >.inl.hhh.h=h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun x h =>.inl.h h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact x h; exact h.inl.h1h hhh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x h; exact Or.1.h. ;h",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v27_set_mem_singleton",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "cases < <;> rfl < hn  \u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases Set.mem_union_left > rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases;Set.< > c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.. \u27e8 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.1 c1 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.elim mpr rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.inl mpr rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.left intro rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.mem_union_left > rfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v27_logic_imp_trans",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "intro hp; exact c4 ( (hp)hp)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro hp; exact c4 (c3 hp)hp)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro hp; exact c4 c4 (hp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun    c4 (  hp)c2)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun hp  > c4 (hp)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun hp => c4 (c3 ()",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun hp => c4 (hp)hp)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun; exact=c4 (c3 c3 hp)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro fun hpexact > c4 (hp hp))hnq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro fun hpexact=c4 (  hp hp)",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v27_nat_two_mul",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.mul_comm c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.mul_comm c0 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.ring c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.zero_add c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.zero_add c0 rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.hpq c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.ring c0 rfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_fs_mem_union_left_1",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Finset.mem_union.mpr (Or.inl c4)",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.mem_union.c2 (Or.inl c4)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [c4]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.mem_union c2 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.mem_union.( (Or.inl c4)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.mem_union.mpr (Or.inl c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.mem_union.mpr (Or.inr c4)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact [c4].] (Or.inl c4)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp Finset.].c2 c4Or.inl c4)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp Finset.].mpr (Or.inl c4)",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_fs_subset_union_left_0",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Finset.mem_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset mem_union; exact Finset.mem_union.. (Orhinrhinl.inr.inl inl.h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset..; exact Finset.mem_union.Or  Orinl.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.hpq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.mem_union; exact Finset.mem_union.mpr)(Or.inr.inl inl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_union_left",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "intro Finset hx; exact Finset.mem_union.Orinl.Or)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro Finset mem_union; exact Finset.mem_union.. (Or.inl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro Finset mem_union; exact Finset.mem_union.mpr (Or)inr1inl(",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro Finset mem_union; exact Finset.mem_union.mpr (Or.inl.h)",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_ord_min_le_right_0",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact min_le_left c1 c2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact min_comm c1 c2",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_list_reverse_reverse_1",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.<;c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.d c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.\u25b8.c1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp List.<;> simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases List.<;> rfl..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.< c1 simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.<;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact List.<;> simp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_set_subset_union_right_2",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact fun hx   => inrhxOr h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun x hx => Or.hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro Set.subset_union_left; exact Or.inr.h Orinlinl.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x h; exact Or.inl inl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x h; exact Or.inr h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx   ;Or  hxinl Or",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx; exact  exact hxhx h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx; exact Or. .Or.Or.inl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx; exact Or.Or exact Or",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx; exact Or.Or hx",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_set_mem_union_of_left_2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Or.inl c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl c2 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inl c4",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.inl c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.mem_union_left c2 c4",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.mem_union_left c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact  .  c4 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.inlc4c2 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.mem_union_left c2 c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Set.inl c2 c4",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_logic_and_self_iff2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "constructor",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp <",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor <",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor < > > h <;> ;> false;>sup_comm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor < > intro h <;",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor <;> > h .;> ;",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor <;> > h <;",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor <;> intro",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "constructor <;> intro h <;> <",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_ord_nat_succ_le_succ_0",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Nat.( c2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact (.succ_le_succ   )1 c2)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.(\u00b7",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.11c2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.hng c2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.succ_le_succ c2",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.succ_le_succ c2Iff(1c2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact [.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "omega Nat.( c2 ( c2symm1",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_ord_nat_zero_le_0",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Nat.le_refl c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.0 c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.c0 c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.\u00b7 c0",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Nat.\u00b7 c0 rfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v28_set_mem_inter_right_2",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact c4.2",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact c4.right",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact Or.2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact c4..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact c4.1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact c4.2rightc4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact c4.right.c4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact \u27e8.,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact \u27e8c42",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v29_fs_mem_inter_left_1",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact (Finset.mem_inter.mp c4).2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (Finset.mem_inter.mp c4).1",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact (.. c4mp c4).1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (.. c4mp c4).2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (..mem_inter.mp c4).)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (..mem_inter.mp c4).1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (..mem_inter.mp c4).2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (Finset. .1 c4).2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (Finset. c4mp c4).2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact (Finset.mem_inter.1 c4).2",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v29_set_union_comm_subset_0",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact fun x    Or.inl Or Or.Or.Or.inl.inlinl Or h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun x h => ;>elim Or",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun x hx => inl.hx Or.inl.Or",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact fun x hx => inlhx. Or.inl.hx.inl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact x hx hx|=>.elimhxOr inr.inl.h.Or.h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact x hx;hx =Or.elim.exact h.Or",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact x x; exact Or.elimhxOr inr.hx.inr.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x (; exact h.elim Or Or.inl.h.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx; exact > ; hx h.Or hx.Or h;.. hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro x hx; exact >.inl inl hinrOr",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "v29_fs_subset_inter_0",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact Finset.hx c4exact (c4. .mem_inter by .).1.) 1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter c4  (Finset.Finset,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter c4 c5",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "exact Finset.subset_inter c4 c5(c4.  .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter c4 c5(c4.c4 mp, ).1.).by false hr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter c4 c5c4c5.  )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter c4exact Finsetc4.c4,hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter.c4exact (c4.mem_inter.mp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_inter;c4exact (c5.c4.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact Finset.subset_interh exactc5c4c4.c4.",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    }
+  ],
+  "aggregate_matches_path": true
+}

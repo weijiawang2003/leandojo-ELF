@@ -1,0 +1,17 @@
+[
+  {
+    "cell": "headline_ar_30M_U3689",
+    "family": "ar",
+    "params": 25807872,
+    "per_token_gold_recovery": 0.613598345219822,
+    "exact_seq_recovery_rate": 0.8064236111111112,
+    "head_correct_body_wrong_rate": 0.1762152777777778,
+    "pass_at_k": {
+      "1": 0.8333333333333334,
+      "5": 0.9166666666666666,
+      "10": 0.9166666666666666
+    },
+    "novel_verified_count": 2,
+    "n_candidates_verified": 94
+  }
+]
