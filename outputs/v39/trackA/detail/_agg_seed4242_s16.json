@@ -1,0 +1,17 @@
+[
+  {
+    "cell": "headline_flow_30M_U3689",
+    "family": "flow",
+    "params": 26595328,
+    "per_token_gold_recovery": 0.5938548283370587,
+    "exact_seq_recovery_rate": 0.18055555555555555,
+    "head_correct_body_wrong_rate": 0.7378472222222222,
+    "pass_at_k": {
+      "1": 0.375,
+      "5": 0.5,
+      "10": 0.5833333333333334
+    },
+    "novel_verified_count": 0,
+    "n_candidates_verified": 220
+  }
+]

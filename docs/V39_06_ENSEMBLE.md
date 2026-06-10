@@ -63,7 +63,26 @@ pass@10 gap is not statistically resolvable at n=24. The *coverage* analysis (§
 zero unique solves) is the load-bearing evidence, not the point aggregates.
 
 ## 5. Seed replication (FLOW headline, seed 3407 vs 4242)
-_[Filled on Phase-3 completion — pass@{1,5,10} at steps {1,16} for both seeds + decision-rule outcome.]_
+Retrained FLOW only at the identical headline config (30M, U=3689, 1e8-token budget), seed 3407 → 4242,
+nothing else changed; verified at steps {1,16}, K=24.
+
+| sampler | seed 3407 | seed 4242 | mean |
+|---------|-----------|-----------|------|
+| FLOW@1 pass@1  | 0.542 | 0.500 | **0.521** |
+| FLOW@1 pass@5  | 0.833 | 0.833 | **0.833** |
+| FLOW@1 pass@10 | 0.833 | 0.833 | **0.833** |
+| FLOW@16 pass@1  | 0.292 | 0.375 | 0.333 |
+| FLOW@16 pass@10 | 0.500 | 0.583 | 0.542 |
+
+**Pre-registered decision rule — outcomes:**
+1. *1-step > 16-step on pass@10 in seed 2?* **YES** (0.833 > 0.583), and in seed 1 (0.833 > 0.500) →
+   **"fewer-steps-is-better" CONFIRMED across 2/2 seeds.**
+2. *seed-2 FLOW@1 pass@10 ≥ 0.75?* **YES** (0.833) → **headline STANDS; report the mean, not the max.**
+   FLOW@1 **pass@10 = 0.833 in both seeds** (mean 0.833), pass@1 **mean 0.521** (range 0.500–0.542).
+3. *seed-2 < 0.625?* No → no downgrade.
+
+The 1-step pass@10 is **identical (0.833) across both seeds** — the headline is unusually stable for
+n=24. The pass@1 varies (0.50–0.54), consistent with the wide Wilson CIs (§4).
 
 ## 6. Verdict update
 - **H3 / "flow as a novel-candidate proposer": STRUCK.** Flow covers neither AR miss, has zero unique

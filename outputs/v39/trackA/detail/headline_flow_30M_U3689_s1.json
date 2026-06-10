@@ -5,7 +5,7 @@
   "cfg_weight": 2.0,
   "gen_seed": 0,
   "K": 24,
-  "git_sha": "645dd182bfcd5675a91e73a976671a6990b3759a",
+  "git_sha": "489ba2ec8565c79c751370113468605b33e3c718",
   "snapshot": "/home/wangw/code/ELFMath/outputs/v39/trackA/snapshots/headline_flow_30M_U3689.pt",
   "n_theorems": 24,
   "aggregate_from_detail": {
