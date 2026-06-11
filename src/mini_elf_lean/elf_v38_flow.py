@@ -31,10 +31,14 @@ class FlowModel(nn.Module):
     def __init__(self, cfg: V38Config, *, freeze_emb: bool = True, noise_scale: float = 2.0,
                  cfg_drop: float = 0.1, p_ce: float = 0.2, ce_weight: float = 0.2,
                  p_selfcond: float = 0.5, time_p_mean: float = -1.5, time_p_std: float = 0.8,
-                 predict: str = "x") -> None:
+                 predict: str = "x", unit_norm_emb: bool = False) -> None:
         super().__init__()
         self.cfg = cfg
         self.trunk = V38Trunk(cfg)
+        if unit_norm_emb:  # v40 H9: max-separation geometry — rows on the unit sphere so the
+            with torch.no_grad():  # tied readout becomes a pure cosine (||E||² constant), cleaner 1-step snap
+                w = self.trunk.tok_emb.weight
+                w.copy_(torch.nn.functional.normalize(torch.randn_like(w), dim=-1))
         self.in_proj = nn.Linear(2 * cfg.d_model, cfg.d_model)   # [z_t ; self_cond] → D
         self.x_head = nn.Linear(cfg.d_model, cfg.d_model)
         self.noise_scale = noise_scale
