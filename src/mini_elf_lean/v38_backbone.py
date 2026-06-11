@@ -81,6 +81,7 @@ class V38Config:
 
 
 SCALE_PRESETS = {
+    "10M":  dict(d_model=256, n_layers=4, n_heads=4),   # v41 plan generators (~10M w/ small plan task)
     "30M":  dict(d_model=512, n_layers=8, n_heads=8),
     "100M": dict(d_model=768, n_layers=12, n_heads=12),
     "200M": dict(d_model=1024, n_layers=16, n_heads=16),
