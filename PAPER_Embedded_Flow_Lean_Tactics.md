@@ -139,6 +139,28 @@ The exit rule (H6–H9 all fail) was **not** triggered (H7 passed), but every ar
 flow non-competitive (0–1/44 verified). The geometry refutation localizes the failure to single-shot
 embedding decoding, not data, object, or lattice geometry.
 
+## 4c. V41 addendum — LPSF: plan-level flow, grounded and verified
+
+We then tested the original bet: flow generates a compact **typed proof plan** (`head(LEMMA,HYP,…)`,
+≤8 steps, 59-token lattice), a shared AR **grounder** expands each step to a concrete tactic, Lean
+verifies end-to-end on the v40 real-Mathlib tiers. Pre-registered H11–H15.
+
+- **Grounder ceiling 0.267** (gold-plan greedy pass@1, premise-selection-limited); **causality control
+  passes** (corrupted-plan 0.022 ≪ 0.267 — the grounder uses the plan).
+- **A data-quality catch was decisive:** the batched verifier was poisoned by malformed grounded
+  candidates and under-reported tier-dev to 0.000; **isolated verification** corrected it, and the sound
+  numbers match tier-final. Reported batched results in this regime are lower bounds.
+- **The LPSF pipeline is competitive with direct generation:** plan-AR pass@10 0.44 ≈ direct-AR 0.42;
+  plan-flow 0.33–0.44 ≈ plan-AR. The K=24-plan e2e *exceeds* the single-plan greedy ceiling.
+- **H13 — flow's first genuine verified value:** flow's diverse plans ground to **1–3 verified proofs
+  per seed/tier that AR misses**, and direct-AR re-verified *isolated* solves **0/6** of them — sound,
+  not a batched artifact. But it **misses the two-seed stability bar** (seed 4242 weaker), so H13 fails
+  strictly. **H14 REFUTED** — flow's *typed-plan* exact-seq ratio is 0.02–0.04 (v40's head-only-plan
+  success was representation-specific); flow's value is **diversity-via-grounding**, not plan accuracy.
+- **Exit rule (close flow if H12 ∧ H13 both fail) did NOT fire** — flow is competitive and adds genuine
+  (if seed-unstable) diversity. V42 = **scale up LPSF** with a premise-selection grounder, more seeds for
+  stability, and a coarser plan; the flow thread stays open — LPSF is the first place flow earned its keep.
+
 ## 5. Limitations
 One night; seeds 3407 (+ a FLOW replication at 4242); n=24 verified tier ⇒ wide CIs (aggregate
 flow-vs-AR gaps within noise); 30M params, ≤121k pairs (far below ELF scale); theorem-level

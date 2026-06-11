@@ -26,6 +26,7 @@ never a positive label until Lean accepts it.
 > and a real-Mathlib tier: H6/H8/H9 refuted, H7 supported (small), **H10 supported (MDLM≈AR, AR+MDLM
 > complementary 27/44)**, and a plan-level probe shows flow reaches **64% of AR at the plan abstraction**
 > → V41 = LPSF. See `docs/V40_FINAL_REPORT.md`, `PAPER_Embedded_Flow_Lean_Tactics.md`.
+> > **v41** (`v41-lpsf`) tested LPSF (plan-level flow + grounder + Lean): the LPSF pipeline is competitive with direct generation, and flow shows its FIRST genuine verified value — 1-3 unique verified solves AR misses (isolated-confirmed) — though it misses the two-seed stability bar (H13). Flow's typed-plan exact-seq stays low (H14 refuted); value is diversity-via-grounding. Exit rule NOT fired; V42 = scale up LPSF. See `docs/V41_FINAL_REPORT.md`.
 
 - [x] Verifier-filtered pipeline (propose → sanitize → Lean-verify → trace)
 - [x] Backends: `mock`, `manual-file`, **`lean-cli` (real, theorem-level)**
