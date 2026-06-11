@@ -20,6 +20,13 @@ never a positive label until Lean accepts it.
 
 ## Current status
 
+> **Research line (v35–v40):** embedded-flow vs MDLM vs AR for Lean generation. v39/v39B closed
+> token-level continuous flow (coherence gap; MDLM AR-competitive) — `docs/V39_FINAL_REPORT.md`.
+> **v40** (`v40-elf-objects`) extended to whole-proof objects, decoders (block/snap-repair), geometry,
+> and a real-Mathlib tier: H6/H8/H9 refuted, H7 supported (small), **H10 supported (MDLM≈AR, AR+MDLM
+> complementary 27/44)**, and a plan-level probe shows flow reaches **64% of AR at the plan abstraction**
+> → V41 = LPSF. See `docs/V40_FINAL_REPORT.md`, `PAPER_Embedded_Flow_Lean_Tactics.md`.
+
 - [x] Verifier-filtered pipeline (propose → sanitize → Lean-verify → trace)
 - [x] Backends: `mock`, `manual-file`, **`lean-cli` (real, theorem-level)**
 - [x] LeanDojo: tracing + initial `TacticState` work; **`run_tac` blocked
