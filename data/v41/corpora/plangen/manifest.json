@@ -1,0 +1,17 @@
+{
+  "vocab_size": 32193,
+  "n_train": 45357,
+  "n_dev": 606,
+  "config": "v41_plangen",
+  "max_cond_len": 256,
+  "max_tgt_len": 56,
+  "oov_train": 0.0,
+  "plan_lattice_tokens": 59,
+  "lenL_dist": {
+    "1": 23522,
+    "2": 14648,
+    "3": 5140,
+    "4": 1638,
+    "5": 409
+  }
+}

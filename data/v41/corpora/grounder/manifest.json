@@ -1,0 +1,9 @@
+{
+  "vocab_size": 32193,
+  "n_train": 79530,
+  "n_dev": 1081,
+  "config": "v41_grounder",
+  "max_cond_len": 288,
+  "max_tgt_len": 48,
+  "oov_train": 0.00096
+}
