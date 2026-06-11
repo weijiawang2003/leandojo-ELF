@@ -8,11 +8,11 @@
       "tier": "tier_dev",
       "n_tier": 45,
       "pass_at_k": {
-        "1": 0.044444444444444446,
-        "5": 0.06666666666666667,
-        "10": 0.08888888888888889
+        "1": 0.022222222222222223,
+        "5": 0.044444444444444446,
+        "10": 0.044444444444444446
       },
-      "solved": 4,
+      "solved": 2,
       "novel": 0
     },
     {
@@ -25,10 +25,10 @@
       "pass_at_k": {
         "1": 0.0,
         "5": 0.0,
-        "10": 0.0
+        "10": 0.1111111111111111
       },
-      "solved": 0,
-      "novel": 0
+      "solved": 5,
+      "novel": 3
     },
     {
       "label": "plan_flow_4242",
@@ -39,11 +39,11 @@
       "n_tier": 45,
       "pass_at_k": {
         "1": 0.022222222222222223,
-        "5": 0.022222222222222223,
-        "10": 0.022222222222222223
+        "5": 0.06666666666666667,
+        "10": 0.1111111111111111
       },
-      "solved": 1,
-      "novel": 1
+      "solved": 5,
+      "novel": 2
     },
     {
       "label": "plan_mdlm",
@@ -53,30 +53,39 @@
       "tier": "tier_dev",
       "n_tier": 45,
       "pass_at_k": {
-        "1": 0.044444444444444446,
-        "5": 0.1111111111111111,
-        "10": 0.13333333333333333
+        "1": 0.08888888888888889,
+        "5": 0.15555555555555556,
+        "10": 0.15555555555555556
       },
-      "solved": 6,
-      "novel": 3
+      "solved": 7,
+      "novel": 8
     }
   ],
   "solved_sets": {
     "plan_ar": [
-      "Mathlib.Tactic.Ring.div_congr",
-      "Matrix.lieConj_symm_apply",
-      "PNat.eq_one_of_lt_two",
-      "concaveOn_id"
+      "Finset.sigma_nonempty",
+      "Mathlib.Tactic.Ring.div_congr"
     ],
-    "plan_flow_3407": [],
+    "plan_flow_3407": [
+      "Matrix.lieConj_symm_apply",
+      "catalan_two",
+      "concaveOn_id",
+      "div_div_self",
+      "sup_himp_self_left"
+    ],
     "plan_flow_4242": [
+      "SignType.pos_iff",
+      "inf_eq_right",
+      "le_map_inv_iff",
+      "mul_lt_iff_lt_one_right'",
       "sq_lt_one_iff_abs_lt_one"
     ],
     "plan_mdlm": [
       "List.nil_bagInter",
-      "Matrix.lieConj_symm_apply",
+      "LocallyLipschitz.mul",
       "Option.bnot_isNone",
       "SignType.pos_iff",
+      "inf_eq_right",
       "le_map_inv_iff",
       "sq_lt_one_iff_abs_lt_one"
     ]
