@@ -16,7 +16,7 @@ changed something v39 proved decisive; none re-ran v39's loser.
 | **H7** | block/semi-AR decode > plain 1-step | dev-exact ≥ 1.5× FLOW@1 at NFE≤8 | **SUPPORTED** | block_nb8 **0.0033 = 4.0×** 0.0008 — but absolute ≈10× below AR; per-token unchanged |
 | **H8** | snap-repair > 1-step | dev-exact > 1.10× FLOW@1 (any R) | **REFUTED** | all R/t cells **0.0000** |
 | **H9** | frozen/max-sep geometry lifts flow | unit-norm/scratch dev-exact ratio ≥ 1.5 | **REFUTED** | ratio **1.0** (unit-norm 0.0008 = scratch 0.0008); per-token 0.329 ≈ 0.323 |
-| **H10** | MDLM ≈ AR on real-Mathlib whole-proofs | MDLM within 1 theorem of AR (tier-final) | _[Phase 7 — filling]_ | tier-dev: AR 19/45 vs MDLM 16/45 (−3) |
+| **H10** | MDLM ≈ AR on real-Mathlib whole-proofs | MDLM within 1 theorem of AR (tier-final) | **SUPPORTED** | tier-final: AR 20/44 vs MDLM **19/44** (−1, within criterion); MDLM pass@1 0.318 > AR 0.295 |
 
 **Global exit rule:** triggered iff **H6–H9 all fail**. Final tally: **H6 REFUTED, H7 SUPPORTED, H8
 REFUTED, H9 REFUTED** — 3 of 4 fail, but **H7 met its pre-registered criterion** (block decode 4× off
@@ -58,7 +58,20 @@ abstraction level, i.e. LPSF). See V40_05.
 (best per discrete family), **FLOW@1** whole-proof (best flow sampler), **FLOW block_nb8** (best Phase-3
 coherence mechanism). No H9 geometry finalist (refuted). Verified ONCE on tier-final (44 real-Mathlib
 theorems, K=24, top-10), priority AR > MDLM > FLOW.
-_[Phase 7 — tier-final numbers + Wilson CIs filling.]_
+
+| model | pass@1 | pass@5 | **pass@10** (Wilson 95%) | solved | multi-tactic |
+|-------|--------|--------|---------|--------|------|
+| **AR** | 0.295 | 0.409 | **0.455** [0.32, 0.60] | 20/44 | 4 |
+| **MDLM** | **0.318** | 0.364 | 0.432 [0.30, 0.58] | 19/44 | 3 |
+| **FLOW@1** | 0.000 | 0.000 | 0.023 [0.00, 0.12] | 1/44 | 0 |
+
+**H10 SUPPORTED:** MDLM (19) is within 1 theorem of AR (20) and *beats* AR at pass@1 — AR-competitive on
+real-Mathlib whole proofs. CIs overlap heavily (AR≈MDLM within noise at n=44). **Coverage (v39B lesson —
+coverage > aggregates):** AR-only **8**, MDLM-only **7**, both 12 → **AR∪MDLM = 27/44 (0.614)** ≫ either
+alone. The two discrete generators are **complementary**, not subset — a real ensemble. **FLOW**: 1/44,
+and its single solve is also found by MDLM ⇒ **zero ensemble value** (as in v39B). FLOW block_nb8 was not
+tier-verified (decode path not wired to the Lean harness; its dev-exact 0.0033 ≈ 0 makes ~0 verified the
+near-certain outcome). Detail: `outputs/v40/wholeproof/detail_finaltier/`.
 
 ## 7. Limitations
 One seed (3407); 30M params; real-Mathlib tiers n=44–45 (wide CIs); **gold-compile-rate 13.7%** (version
@@ -76,7 +89,8 @@ Justified only by tonight's numbers:
   level** vs ~2–7% at the token level. Continuous flow's home is the **plan/abstraction** object. V41 =
   **LPSF-full**: a plan-flow emitting a tactic-head skeleton, each head expanded by an AR/MDLM tactic head
   + Lean verifier. This is the one direction with a positive coherence signal.
-- **MDLM remains the discrete substrate** for the token/tactic level (AR-competitive on v39 single
-  tactics; on whole-proofs it trails AR by 3 theorems on tier-dev — see H10 / §6).
+- **MDLM is a first-class discrete substrate, and AR+MDLM are complementary:** on tier-final MDLM is
+  within 1 of AR (and beats it at pass@1), and **AR∪MDLM solves 27/44 vs 20 alone** (each covers ~7–8 the
+  other misses). A discrete **AR+MDLM ensemble** is a cheap, real win worth productionizing now.
 - If a *flow* token-level effort is ever revived, only **semi-AR block decoding** (H7) showed any lift,
   and only 4× off a near-zero floor — not worth it over LPSF.

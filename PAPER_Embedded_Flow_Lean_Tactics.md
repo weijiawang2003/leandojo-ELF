@@ -111,23 +111,62 @@ head has no decode-time mechanism to enforce inter-token agreement; high samplin
 discrete posterior over the same trunk, does not exhibit the gap — implicating **continuous embedding
 space**, not non-autoregression per se.
 
+## 4b. V40 addendum — object, decoder, geometry, plan (real Mathlib)
+
+We then varied the three levers v39 left open — generation **object**, decode-time **coherence**
+mechanism, and embedding **geometry** — on a **real-Mathlib** tier (LeanDojo Benchmark 4 test split,
+whole proofs reconstructed as `example stmt := by <newline-joined tactics>`; two disjoint tiers
+tier-dev/tier-final of 45/44 theorems, gold-compile-rate 13.7% under version skew; tier-final touched
+once). Pre-registered hypotheses H6–H10:
+
+- **H6 (whole-proof object) — REFUTED.** Generating a whole proof made flow *relatively worse*:
+  flow/AR dev-exact ratio **0.023** (vs v39's token-level 0.073), and **0 verified whole proofs** on real
+  Mathlib (AR pass@10 0.45). The longer the structured object, the more an absent inter-token-coherence
+  mechanism costs.
+- **H7 (block/semi-AR decode) — SUPPORTED (small).** Conditioning each block on the snapped prefix lifts
+  joint coherence 4× (dev-exact 0.0008→0.0033) with per-token unchanged — isolating inter-token coupling
+  as the addressable gap — but still ~10× below AR.
+- **H8 (snap-repair) — REFUTED** (collapses to 0.0). **H9 (max-separation geometry) — REFUTED** (unit-norm
+  frozen embeddings give *identical* 0.0008, ruling geometry out as the cause).
+- **H10 (MDLM ≈ AR on real Mathlib) — SUPPORTED.** tier-final: MDLM 19/44 within 1 of AR 20/44, and MDLM
+  *beats* AR at pass@1 (0.318 vs 0.295). Coverage: AR-only 8, MDLM-only 7 → **AR∪MDLM 27/44** — the two
+  discrete generators are complementary. FLOW: 1/44, zero ensemble value.
+- **Plan-level probe (constructive).** Factoring proofs to a tactic-**head plan**, flow reaches **64% of
+  AR's plan exact-seq** (ratio 0.643) — vs 0.023–0.073 at the token level. The coherence gap is a monotone
+  function of object granularity; continuous flow's home is the **plan/abstraction** level (LPSF).
+
+The exit rule (H6–H9 all fail) was **not** triggered (H7 passed), but every arm leaves token/whole-proof
+flow non-competitive (0–1/44 verified). The geometry refutation localizes the failure to single-shot
+embedding decoding, not data, object, or lattice geometry.
+
 ## 5. Limitations
 One night; seeds 3407 (+ a FLOW replication at 4242); n=24 verified tier ⇒ wide CIs (aggregate
 flow-vs-AR gaps within noise); 30M params, ≤121k pairs (far below ELF scale); theorem-level
 verification only (no `run_tac`/`state_after`); Track B dev metrics on 640 samples (160 of 1,599 dev
-theorems × K=4); block/semi-AR decoding not implemented. A reproducibility relaunch (Track B batch-96,
-`c9ddfaa`) lost no cells.
+theorems × K=4). V40 adds real-Mathlib tiers (n=44–45, gold-compile-rate 13.7% under version skew, so
+tiers skew single-tactic) and one machine-night per phase; whole-proof statements are reconstructed from
+the first proof state, not source-extracted. A reproducibility relaunch (Track B batch-96, `c9ddfaa`)
+lost no cells.
 
 ## 6. Conclusion
-At this scale, **continuous embedded flow is not the tool** for verified Lean tactic generation:
-x-prediction and 1-step sampling make it non-trivial, but it stays behind AR, fails to scale, and adds
-no verified coverage AR lacks. **MDLM** — masked discrete diffusion over the identical trunk and vocab
-— *is* AR-competitive and is the alternative worth scaling. The open scientific questions are whether
-≥100M params / ≥256k pairs change the scale verdict (H1) and whether a decode-time inter-token
-coherence mechanism (a learned head, or a discrete-consistency loss) can close the gap.
+At ≤30M scale, across **objects** (single tactic, whole proof, plan), **decoders** (1-step, 16-step,
+block/semi-AR, snap-repair), and **geometries** (scratch, max-separation), **continuous token-level
+embedded flow is not the tool** for verified Lean generation: it stays behind AR, fails to scale, fails
+the object change (0–1/44 verified whole proofs on real Mathlib), and adds no verified coverage AR lacks.
+The failure is intrinsic to single-shot embedding decoding — geometry (H9) and more data (H1) do not move
+it; only semi-AR block conditioning (H7) helps, and only 4× off a near-zero floor.
+
+Two positives stand. (1) **MDLM** — masked discrete diffusion over the identical trunk — is
+AR-competitive (v39 single tactics; real-Mathlib whole proofs within 1 theorem of AR and beating it at
+pass@1), and **AR+MDLM are complementary** (union 27/44 vs 20 alone) — a discrete ensemble worth
+productionizing. (2) **The plan abstraction is where continuous flow belongs:** flow reaches 64% of AR's
+exact-seq at the tactic-head-plan level vs 2–7% at the token level. The warranted next step is **LPSF** —
+a plan-flow emitting a tactic skeleton, each head expanded by an AR/MDLM head + Lean verifier — not more
+token-level flow.
 
 ## Reproducibility
-Branch `v39-scale-matrix`. Code: `scripts/v39_{train,grid,build_leandojo,analyze,verify,ext_*}.py`,
-`scripts/v39b_ensemble.py`. Per-cell `config.json` (seed, git SHA, data fingerprint, measured tok/s);
-metrics JSONL; per-theorem verification detail under `outputs/v39/trackA/detail/`. Phase reports
-`docs/V39_00`–`V39_06`, `docs/V39_FINAL_REPORT.md`.
+Branches `v39-scale-matrix` (v39/v39B) and `v40-elf-objects` (V40). Code: `scripts/v39_*`,
+`scripts/v39b_ensemble.py`, `scripts/v40_{wholeproof,build_tiers,build_corpus,verify,coherence,geometry,
+plan_probe}.py`. Per-cell `config.json` (seed, git SHA, fingerprint, tok/s); metrics JSONL; per-theorem
+verification detail under `outputs/v3{9,40}/.../detail*/`. Reports `docs/V39_*`, `docs/V40_00`–`V40_05`,
+`docs/V39_FINAL_REPORT.md`, `docs/V40_FINAL_REPORT.md`.

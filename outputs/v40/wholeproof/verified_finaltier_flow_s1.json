@@ -1,0 +1,22 @@
+[
+  {
+    "label": "flow_s1",
+    "cell": "scale_flow_30M_U45820",
+    "family": "flow",
+    "tier": "tier_final",
+    "steps": 1,
+    "cfg_weight": 2.0,
+    "n_tier": 44,
+    "multi_tactic_verified": 0,
+    "per_token_gold_recovery": 0.33628514933637216,
+    "exact_seq_recovery_rate": 0.0,
+    "head_correct_body_wrong_rate": 0.2784090909090909,
+    "pass_at_k": {
+      "1": 0.0,
+      "5": 0.0,
+      "10": 0.022727272727272728
+    },
+    "novel_verified_count": 1,
+    "n_candidates_verified": 440
+  }
+]

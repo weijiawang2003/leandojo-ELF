@@ -1,0 +1,2383 @@
+{
+  "model_id": "ar",
+  "family": "ar",
+  "steps": 16,
+  "cfg_weight": 2.0,
+  "tier": "tier_final",
+  "K": 24,
+  "git_sha": "c080c3b5e7f2c2e653b0dbc2295fdef0497d2b82",
+  "snapshot": "outputs/v40/wholeproof/snapshots/scale_ar_30M_U45820.pt",
+  "n_theorems": 44,
+  "aggregate_from_detail": {
+    "pass@1": 0.29545454545454547,
+    "pass@5": 0.4090909090909091,
+    "pass@10": 0.45454545454545453,
+    "novel": 11
+  },
+  "theorems": [
+    {
+      "name": "smul_nonneg'",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simpa only [zero_smul] using smul_le_smul_of_nonneg_right ha hb",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [eval_C] using a\u2081 (coe_le ha hb)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [mul_zero] using smul_le_smul_of_nonneg_right ha hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [one_smul] using Finpartition.centerMass ha hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [one_smul] using smul_comm a ha (\u2022 x)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [one_smul] using smul_le_smul_of_nonneg_right ha hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [smul_zero] using smul_le_smul_of_nonneg_right ha hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [zero_smul] using ReflTransGen. ha hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [zero_smul] using add_mul hb a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [zero_smul] using coe_mk ha a",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "leOnePart_le_one'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ichildren, lowerBounds]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [id, coe_singleton]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ne_comm, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [neg_eq_iff_eq_neg, \u2190 accPt_principal_iff_clusterPt, inv_div, hasseDeriv_apply]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u03c8_zero, Subtype.coe_set_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [IsBounded, closure_ball (a := id)]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Multifork (pow_right n)]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [edist_pi_def]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [le_def]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "invOf_lt_zero",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [aestronglyMeasurable]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_pow]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [eval_finset_sum]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [hN]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [inter_iUnion]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [isRotated_append, \u2190 mul_le_mul_left (NNReal.expGrowthSup_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [le_coe_toNNReal]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [le_iff_eq_or_lt]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [lt_iff_le_and_ne]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WithBot.bot_lt_iff_ne_bot",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases x <;> simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "le_antisymm ?_ map_zero x\nrw [or_iff_not_imp_left, h\u03c7]\ninsertNone",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain h| x := x <;> simp [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [WithBot.codisjoint_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [and_iff_right le_rfl]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "finrank_euclideanSpace",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "classical simp\n  rw [\u2190 Module.lift_natCast, Fintype.map_extend_nhdsWithin]\nrw [isDenseInducing_coe, iInter_plift_down, mul_le_mul_left']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "classical simp [jointly_surjective, h']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "classical simp only [encard_le_one_iff, Basis.ofEquivFun, Basis.exists_succ_iterate_of_le]\nsimp only [mod_one, Finite.coe_symm_mk, Matrix.IsSl2Triple]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert Fintype.wordProd",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "delta Matrix.\u2190 LinearMap.if\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have := Classical.decEq \u03d5\nrw [c., inst_1, Basis.Abelian.term_of_ne_zero C.nontrivial,\n  Module.neg_add, Algebra.finrank_eq_card_basis F.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "norm_cast",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine Fintype.card_coe _ ?_\nintro\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine Submodule.mem_map..symm ?_\nsimp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "continuous_descPochhammer_eval",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply List.eLpNorm'_eq_lintegral_enorm\nintros\napply \nrw []\napply binaryRec_eq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "conv_lhs =>\n  rw [\u2190 (integral_comp_mul_right Summable.mul_right_inj' ha\u2080 norm_cast).eq_iff]\nfun_prop fun a ha \u21a6 (le_iff_val_le_val IsBounded _).trans_lt a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction' n with n ih\ndsimp [uM]\nexact (Hom. _).comp n ofReal_natCast n\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases bot_mem.fun_prop\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine ( _ fun a \u21a6 ?_).mp (@.mpr a) fun a | a =>.pow_le_pow_right a.absolutelyContinuous_of_le",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine (uniqueBaseOn ( _).2 ?_).mpr (RBColor n - 1)\ncontrapose!.\u03c0\nexact add_eq_right _ _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [AlgEquiv.inv_def]\napply hp'\nrw []\napply image_singleton",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [MvPolynomial.Ico_insert_right]\nrw [not_and_or, trace]\nexact (normSeminorm _ _).symm\nrw [not_iff_not.2 (rightInv _ _)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [NNReal.coe_injective, NNReal.IntFractPair.unitary_conjugate, add_def]\nintros\napply balance1\nrefine (parallelComp_apply.comp ?_ (IsWF.P_f_naturality_assoc.comp WithLp.pow_le_one_iff_of_nonneg).",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [RCLike.toLeftMovesToPGame_symm_ltp.hh]\nexact ENNReal.congr_of_eventuallyEq (orderEmbOfFin_apply and_iff_left_of_imp fun r => Algebra.bihimp_comm) (coe_Icc variableChange_a\u2082 hg)",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Int.sign_eq_ediv_abs'",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [az]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "exact @Int. _ _ a _ (Nat.part_eq_empty.out * _ hle) (Nat. _)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [CharacterModule, forall_gt_imp_ge_iff_le_of_dense]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [prime_iff_prime_int.eq, lim_eq_lim_im_add_lim_re]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u21be, hurwitzZetaOdd_neg]\nring1",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ProjectiveSpectrum.i]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Substructure.\u03b9]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [chainBotCoeff, WittVector.tensorEqualizerAux]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [closure_Ioi]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [compl_empty, mul_div_cancel_left\u2080 a (\u2080 a)]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Nat.add_succ_lt_add",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "apply _root_.PEquiv.blimsup\n_ b.not_even_two_mul_add_one\nrw [Nat.H2]\nrwa [mul_assoc, Nat.integral_sin_pow_mul_cos_pow_odd]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases b <;> conjugateEquiv_symm_id <;> CotangentSpace.affineLocally_iff_affineOpens_le",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert  _ hab using 1 <;> simp_all",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert  hab c using 1 <;> exact Nat.prodIsoProd",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert Int.w' (Nat.lt_succ_iff.2 hab)\n  <;> omega",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert eq_of_forall_le_iff d hab := bitwise_diff hab\nrw [id_comp, MonoidHom.closedBall]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert zero_ne_one 2 div_lt_iff_lt_mul (b + 1) hab\nrw [zero_add, subset_trans, two_mul, add_right_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "galRestrictHom 2 hlt <;> simp_all",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have := sup hab h\u2083\nrwa [Nat.birthday, f, bit_val] at Subring at hab\nexact true.2 H",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inv_mul_cancel_comm_assoc",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [mul_comm, inv_mul_cancel_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 smul_eq_mul, mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_assoc, inv_mul_cancel, mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_assoc, mul_inv_cancel, mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm, blocksFun, inv_mul_cancel_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm, eq_mul_inv_iff_mul_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm, inv_mul_cancel_right]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm, mk''_eq_mk]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm, nonsingular_smul, neg_neg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 inv_div, coe_union, ha, mul_comm]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "div_le_one_of_neg",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ChartedSpace, leadingCoeff_ne_zero, hnot_inf_distrib hb, preimage_univ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsEquivalence,  hb]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ModularForm.cast_mul,  hb, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [NNRat.infinitesimal_neg]\nexact legendreSym.toPNat' hb a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [biSup_add hb, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [bot_mul hb, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_eq_mul_inv, mul_neg_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_lt_iff\u2080 hb, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [fastGrowing_def hb, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hVy hb, one_mul]\nexact hj'",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Finset.isUnit_iff_singleton_aux",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": ", hs.compl_Ici\nsimp only [range_coe, exists_prop]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, relrank_inf_mul_relrank]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [DyckWord.QuasiIsoAt, addZ_smul]\nexact nat_mul_eq_of_eq_zero (abs_nonneg a)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.Quotient.eq'']\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [adjoin_union]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [card_ne_zero a, maxPowDiv]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_range, degree_C]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [dist_comm]\nexact \u27e8, forall_congr' fun a \u21a6 Left.count_apply_infinite a mem_filter.1 \u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_eq_mul_inv, compProd_posterior_eq_swap_comp]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [exactAt_iff_isZero_homology]\nsimp only [aesop, (finite_univ : _root_.\u2115 a)MulOneClass (prod_mono a)]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "upperBounds_closure",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ContinuousSqrt, \u2190 exp_nonneg, inv_mul_cancel_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsClosedBelow, sublists]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ModelType.CovBy, RankOne.injEq, zero_ne_one', Std.continuous_const.toFinsupp_monomial]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [iSup_and', \u2190 eRk_eq_encard, vsub_vadd_eq_vsub_sub, sq_nonneg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [nhds_prod_eq, , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [trans_eq, compr\u2082, SetCoe.forall]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [upperBounds, StrictConvex, and_congr_left_iff]\nexact fun _ h \u21a6 \u0394 h.mono (sin_sq) 4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u03a8_ofNat, sections, inverse]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [Ioo, \ud835\udce1, sin_sub_sin]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [e2, FiberFunctor, smul_add, sub_zero]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "AddLECancellable.tsub_eq_iff_eq_add_of_le",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [add_comm, hb.aeval_zero, hb.IsSkewAdjoint]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, hb.completedHurwitzZetaOdd, hb.isTopologicalAddGroup, hb.u_open, hb.hX]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, hb.map_frobenius hb, hb.equivFin]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, hb.one_right]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, hb.piTensorHomMap, hb.coeff_eq_zero_of_lt_weightedOrder hb]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, hb.preBeth]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm]\nexact hb.mul_ratCast hb.symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm]\nexact hb.of_inv.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm]\nexact hd.ofMatrix hb h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hb.Iic_union_Ioi, hb.get_cons_succ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inv_mul_lt_one_iff_lt",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [inv_mul_cancel]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 mul_lt_mul_iff_right b, one_mul, inv_mul_cancel_right]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_inv_cancel]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_one]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 mul_lt_mul_iff_right b, div_eq_mul_inv, by_cases,image2_swap]\nexact h_le.HasEval.dvd_mul_right _ _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 mul_lt_mul_iff_right b, div_eq_mul_inv, inv_mul_cancel_right]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 mul_lt_mul_iff_right b, h, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 mul_lt_mul_iff_right b, inv_mul_cancel_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 nonempty_Ico, inv_mul_cancel, one_mul]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "PartialEquiv.refl_restr_target",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [CliqueFree, inter_comm, Set.ScottContinuousOn, comap_inf]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [HasWeakSheafify]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [IsMeasurableRatCDF.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [LinearIsometry]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [SupClosed]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [core]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [dist_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [div_eq_mul_one_div, continuous]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [fixedBy, Set.eq_univ_iff_forall, and_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [hpos]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Fin.edist_append_eq_max_edist",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rcases x with \u27e8y, y\u27e9 <;> simp [Fin.map_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Fin.gramSchmidt]\ndsimp only []\nsplit_ifs <;> adjoin_union\nrw []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw []\ncases x <;> disjoint_erase_comm _ y <;> simp [forall_congr_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [isStronglyAtomic_dual_iff_is_stronglyCoatomic]\ncases i <;> simp [Type.le_iff_le]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm]\nexact NormedAddTorsor _ i",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [quotKerEquivOfSurjective, ]\ncases x <;> dsimp <;> ExponentExists]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [reduce, Fintype.u1, add_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u03bb_ i, Fin.inclusion_injective i.uniformContinuous, ]\nsimp [add_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 PreservesLimitPair]\nrefine Fin.ext fun y => ?_\nrw [true_and, IsUnramified hy]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 add_top]\nsimp [add_sub_cancel_left]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsUnit.isUnit_iff_mulRight_bijective",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [\u2190 mul_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [mul_assoc]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 inv_inv x]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 mul_assoc, \u2190 SkewMonoidAlgebra]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 mul_assoc, \u2190 abs_norm.inv]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 mul_assoc, \u2190 h.emultiplicity_eq_multiplicity]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 mul_assoc, \u2190 mul_assoc, h.eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 mul_assoc]\nrfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SimpleGraph.Walk.mem_edges_toSubgraph",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [, Sym2.eq_swap]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [, Fin.ext_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [LHom]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [NonUnitalNonAssocRing, Set.subset_def]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [Sym2.map_mclosure, floor_lt, Sym2.eq_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Vector.cpow, NonUnitalNormedRing.mem_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [adjoint, Matrix.\u03b9_map, Function.comap, or_comm, eq_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [and_congr, \u27e8_, \u2039h, coe_comp, Subtype.range_coe_subtype, exists_prop]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [cthickening]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [delete_eq_self_iff]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Disjoint.sup_sdiff_cancel_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "refine le_antisymm ?_ (sup_empty _ b) <;> rw [expect, odd_one, h] <;> simpa",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine le_trans ?_ ( h) (ofNat_le.mpr h)\nrw [sign_apply, ord_card_le h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h.mem_singleton_iff, sup_bot_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [insert_eq, bot_sup_eq, h.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [insert_eq, sdiff_self, h.indep, Grothendieck]\nexact h.symm.trans (rintro rfl| rfl)\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [insert_eq_of_mem, sup_bot_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [min_comm, Finite.AddCommGroup h.UX, Orthonormal.sdiff_self]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mker, h.sdiff_eq_left, h_lim]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [sup_assoc, LinearOrder.self_add_star' a b, h.ne, 1, by rw [norm_conj]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [sup_comm, ComplexShape.smul_neg, h.symm_iff]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Fin.left_distrib_aux",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "omega",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "norm_cast",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "Content",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_of_lt_of_le ( ( \u2022 a i) (b - toCocone))\nsimpa using repr_reindex c x",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "gcongr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "max'\nhdeg\nrw [add_assoc]\nexact (starRingEnd n hc).symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "norm_cast\napply target_eq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa [rwa [mul_succ, mul_add, add_assoc, add_comm b, add_comm b] using IsStronglyCoatomic orderOf_pow Q n",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [mul_add, add_comm, mul_comm, mul_comm, IsSumSq.mul_comm] using or_iff_right_of_imp HasEqualizers n",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "neg_one_mul",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_one]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Filter.HasBasis.eventually_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [hl.mem_iff, hl.natAbs, inter_comm, (l := l _).replicate,\n  \u2046, hl.CommRing]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [hl.topologicalSpace, hl.mem_iff, completeSpace_coe_iff_isComplete]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [(R.iteratedDeriv _).coe_nnreal_ennreal_nndist.1]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [(hl.@.mem_iff.{_} _).equivPullbackObj, hl.finite_univ, card_compl,\n  tendsto_bot]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [(hl.extend c).mem_iff, not_and, @hM l]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [(hl.mem_iff.{_|_}).mem_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [(hl.shape _).mem_iff, l.toENat_cardinalMk]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [(hl.tendsto_principal.mp hl).inter]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [@and_comm (p := x), (hl _).isInducing.tendsto_map_of_tendsto_of_continuous]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [Filter.Eventually, hl.dense_image]\nrfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "one_lt_oneLePart",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [Dep, natDegree_map_eq_of_injective ha ]\nexact cancel_mono <|  ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [HA.app_one_eq_\u03b9_comp_right]\nexact coeFn_mk a ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsDedekindDomain.divInt_le_divInt ha]\nexact  ha.neg",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsGrothendieckAbelian]\nexact  ha.iterate",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ae_restrict_eq ha.ne]\nexact Set.hasFPowerSeriesWithinAt_univ.2 ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [arrow_mk_iso_iff ha.Ici_inter_Iio]\nexact  _ _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [blimsup_eq_limsup]\ncoeff_add_monomial_mul a ha]\nassumption",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [cantorFunctionAux, \u2190 and_not_self_iff, ha]\nsimp [coeff_trunc, ha]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [compl_mem ha.entries_insert]\nexact .trans_lt F.let",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [forall_congr_right, ha.Comon_.]\nsimp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "FractionalIdeal.coeIdeal_eq_one",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, L.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, aeval_C]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsFractionRing.closure_eq, mk'_apply]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsFractionRing.eq_iff, eq_bot_iff, Units.le_def]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsUnit., ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [MDifferentiable., QuadraticMap.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [UniqueFactorizationMonoid.doublyStochastic, , map_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_mapRingHom, Set.image2_union_left, map_natCast, RingHom.mem_range, Algebra.iSup_le_iff]\nexact IsLocalization.span_singleton_generator _ _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [edist, ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "codisjoint_inf_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [R\u2081.rel, inf_idem]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [codisjoint_iff, , inf_comm, castLE]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [codisjoint_iff, , inf_comm, exists_congr fun c => HasCokernel subset_ground]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [codisjoint_iff, \u2190 Ico_subset_Ici_self.symm.toEnd_apply_apply, \u2190 Finsupp.,\n  \u2190 rule_sets \u03b1.functor]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [codisjoint_iff, \u2190 replaceHead, disjoint_iff_inf_le, \u2190 Ioi_union_left, \u2190 _reverse]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [codisjoint_iff, \u2190 zero_\u03c4\u2081 a b, \u2190 pow_iterate _ f,\n  mk_fintype]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [inf_assoc, ]\nsimp only [codisjoint_iff, le_antisymm_iff, toCLM, le_antisymm_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [prod_eq_inf, coe_map, Subtype.ext_iff, \u2190 Set. (Option.PosSemidef not_iff_not.mpr hab).surjective.coe_lt_coe]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [start, le_antisymm_iff, inv_inj, \u2190 verschiebungFun]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 mem_closure_iff, , isUnit_iff_isUnit_det]\nsimp only [one_mul, Submodule.range_mkQ, lift_relrank_comap_comap_eq_lift_relrank_inf, Set.NonAssocRing, Set.singleton_subset_iff]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "AddChar.coe_prod",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext\nexact le_sSup <| fun _ _ \u21a6 leadingCoeff.symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [0.smul_smul, (Function.Function.Embedding.h_dim]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.Nontrivial, Finset.coe_univ, \u2190 Finset.zero_def, Finset.pb.pow_exponent_eq_one,\n  Finset.pointReflection_midpoint_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.degree_modByMonic_lt, SetLike.prod, MvPolynomial.take, Finset.neg_mem_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.finset_sum_apply, Finset.push_pull', lt_omega0, ofSection]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.le_opNorm, Finsupp.add_image_prod]\nsimp only [ofEpiOfIsIsoOfMono', lex, clog_of_one_le_right, Finsupp.prod_ite_eq']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.prod, Finset.mem_support_iff, mem_iff_get, sum_const, ,\n  Finset.prod_map]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.prod, Finset.of_mul_of, \u2190 Finset.monomial_def, Finset.prod_const]\nexact  fun _ => rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.prod, Finset.partialSups_apply, Finset.preimage_symm, ,\n  Function.Embedding.aestronglyMeasurable_prod' (Seminorm.hasBasis_nhds \u03b9)]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.prod, Finset.prod_apply, Finset.natDegree_add_le_iff_left]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WithTop.sum_lt_top",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [allEq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_subset]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [eq_univ_iff_forall, ENNReal.mem_iSup]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ite_true]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [not_and]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [rank]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [symm_hom]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [univ_nonempty]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [and_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [comap_map]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Rep.\u03c1_inv_self_apply",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [\u2190 (Commute.commute_X s).eq, Module.End.coe_top]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 LinearMap.comp_assoc, bind\u2082, RingHom.id_comp, right_distrib]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 eq_add_of_sub_eq g x, \u2190 lintegral_mono g g, MonoidHom.map_smul]\nsimp only [mul_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 even_two, hf\u2081.eq_iff, map_smul, , inv_def, inv_mul_cancel, one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 map_mul _ ((g x).whiskerLeft_id g, \u2190 map_mul, SetLike.map_val]\nexact inv_ne_zero (g.map g))",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 map_mul, A.zpow_sub, lintegral_sum_measure]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 map_mul, card_eq_fintype_card, Module.HasDerivedCategory.index]\ncongr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 map_mul, forall_const]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 map_mul, inv_mul_cancel_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 map_mul, map_sSup', AlgHom.coe_comp]\nsimp [lift, AlgHom.natDegree_le_of_degree_le, Function.comp_apply]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "RingHom.map_dotProduct",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [dotProduct, Finset.mul_sum]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [dotProduct, Finset.sum_mul, add_mul]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [dotProduct, Finset.sum_mul]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp only [cross_apply, prod_const]\nrefine Finset.coe_one.1 (Fintype.inv_mem <| congr_arg _) ?_ Finset.Faithful.mp m\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [dotProduct, BijOn, PGame.op_zero, Finset.s.iff_self]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [dotProduct, CategoryTheory.Ici, i.oangle_neg_orientation_eq_neg, mul_nonneg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [dotProduct, Fin.add_le_add_iff_right, Fintype.card_fin, mulVec, orthonormal_iff_ite, dotProduct, zero,\n  sq_eq_zero_iff, implies_true]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [dotProduct, Finset.Fin.range_id, i', ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [dotProduct, Finset.f, inclusion, finset_sum_apply, choose_spec, average_eq, mem_of_mem_nhds]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [dotProduct, IsBlock, quot_sub, killingCompl_top_eq_bot]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Mathlib.Tactic.PNatToNat.coe_lt_coe",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp only [\u2190 ]\napply rev_rev",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [\u2190 not_le, \u2190 Nat.convolution_eq_right' n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [\u2190 not_le, \u2190 length_eq_zero_iff, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [\u2190 not_lt, \u2190 sort, Nat.conj_mem, .FinitePresentation]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SzemerediRegularity.le_stepBound",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "decide",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "positivity",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "norm_num",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "apply hb\u2080\nexact (Nat.zero_le _).le\nrw [Nat.one_mul]\nexact  _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact_mod_cast zero_lt_two",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have : NeZero 0 1 : sub_eq_iff_eq_add'inner_map_map= 0 / 0\nsimp [this]\nsimpa [this]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "hom_ext n <;> norm_cast",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "mul_le_mul q (n : rpow_mul tsub_add_cancel_of_le)\nrw [hj]\nintrov <;> norm_num",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "nontriviality R\nsimp [lowerBounds]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "norm_cast",
+          "verified": true,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsVisible.rfl",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [step]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [dist_eq_re_im, norm_of_nonneg CompactSpace, zsmul_mem, mod, \u2190 sqrt_one]\nexact  _ _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hdvd.constr_pow_aeval]\nexact (OrderEmbedding.hp_ne_top (r := f)).choose_spec",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [CokernelCofork]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Cone]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [FreeMonoid.spanningCoe]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [HasPointwiseLeftKanExtension]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [IsVisible, push]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [PerfectRing]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [TProd, hsur]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "ONote.NFBelow.snd",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2083\u27e9 := h\nexact \u27e8\u27e8_, h\u2081\u27e9\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2083\u27e9 := h\nexact \u27e8_, h\u2081\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2083\u27e9 := h\nexact \u27e8_, \u27e8h\u2081, h\u2082\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, hy, h\u2083\u27e9 := h\nexact \u27e8_, h\u2082\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, coeff_mk\u27e9 := h\nexact \u27e8_, fun _ \u21a6 disjoint_iff_inter_eq_empty.1 h\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2082\u27e9 := h\nexact sq_sqrt",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2083\u27e9 := h\nexact Or.inl \u27e8h\u2081, h\u2082\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2083\u27e9 := h\nexact frontier_prod_eq.1 h\u2081",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082, h\u2083\u27e9 := h\nexact \u27e8_, h\u2080\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain - | \u27e8h\u2081, h\u2082\u27e9 := h\nexact \u27e8\u27e8_, \u27e8\u27e8_\u27e9, h\u2081\u27e9\u27e9\u27e9",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Mathlib.Tactic.Ring.inv_congr",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [\u2190  a b]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Imp.symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [a.b]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [a]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [aesop",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_image, GeneralizedBooleanAlgebra]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [e, \u2190 mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [inv_inv]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [linarith [mod_def, \u2190 mul_assoc]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "lt_geom",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (IsCircuit.mp h).trans_lt (cast_smul_eq_nsmul (b hc) h).letensorHom\nintro m hf h\nrw [eval\u2082_mul, not_lt]\nnorm_cast",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (IsInducing.eq.trans_lt hc).not_lt\napply \u03c7.cpow (enum _ _ _ h).le\nsimp only [convolution_def]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (IsSquare.measurable_id'' hn).trans_le ( _ _ h)\n  (Lagrange.sameRay_comm (dom_inv h) _)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Primrec. hn). h\nintros\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (card_range m).surjective_iff\nrw [\u2190 ne_eq, \u03b1\u1d52\u1d48 _ h, mem_powersetCard_univ]\nexact sbtw_midpoint_of_ne _ (period_eq_minimalPeriod h _ hc)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (comap_bot _ _ h).trans\nsimp [_root_.ne_of_gt (pow_pos hn _ _), cone]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (eq_id_of_isIso n j h).trans FormalMultilinearSeries.mgf _ <| \u27e8n, rfl\u27e9 _\nintros\nexact mem_ker hn _ hn",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (getLast_cons (c\nexact (AddGroupFilterBasis.eq_of_mem_uIcc_of_mem_uIcc _ hn).2 (refine hI.val  c ?_))",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (himp_inf_distrib (c h) _ hz).mono <| SplitEpi.ne _ \u27e8eq_or_ne _\u27e9\nexact (rpow_eq_pow hn _ hn).symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (hkm hn). hn _\n  <| \u2208 s h\nrintro \u27e8c, rfl\u27e9\nexact Nat.Compares h hp h2",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "HasDerivAt.comp_hasFDerivAt_of_eq",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [hy] at hh\nexact hh. x hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hy] at hh\u2082\nexact hh. x hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hy] at hh\nexact hh. x hh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (hh\u2082..comp x hf).comp x hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert (h.\u03b8' x hf).range_eq_map.comp x hf\next x\napply hg.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hy] at h\nexact derivWithin.cons x hf x hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hy] at hg\nexact hh\u2082.comp x hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hy] at hh\nexact covBy_succ x hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hy] at hh\nexact hfg.comp x hf",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Nat.le_avg_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (Nat.find_le h).trans\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.AtLeastTwo Nat.succ)\nsimp [*]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.Icc_eq_cons_Ioc .trans Nat.find_spec\nexact Fin.cast_eq_zero_iff a h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.LiftRelAux.trans_le h)\nsimp [uniformity_eq_comap_nhds_one_swapped, Nat.add_sub_cancel_right]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.cast_def).trans\nnot_lt.2\napply Nat.le_succ",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.cons_erase h1).isCoprime_iff_gcd_eq_one\nexact Nat.changeLevel h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.dpow_mul h).trans\nsinh_half_dist",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.eqToHom h.trans\nsimp +arith h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.mapQ Nat.le_succ _).2\nsimp [Fin.ofNat_ne_zero]\nsplit <;> simp_all",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (Nat.min.lt_div_iff_mul_lt' _).trans\ngcongr",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Finset.toRight_inter",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext x\nsimp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "ext y\nsimp",
+          "verified": true,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Ideal.pow_mem_of_pow_mem",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "let m := congr_arg M fun m ha => s <;> simpa using ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain rfl | hn := eq_or_ne n 0\nsimpa\nsimpa using h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases (refl _) h with \u27e8d, rfl\u27e9\nhave := h rfl\nexact h\u03c6.out_eq m",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases Finset.eq_empty_or_nonempty with rfl | hn\nexact contextual h hn\nexact hA (irreducible_iff_prime.mono ha.is_lt)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases n with - | i\ncontradiction\nexact ha.pow n\nrwa [mem_sup_iff] at hk",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Nat.add_comm, hf, ha.u\u2080 h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Nat.cast_ofNat] at *\nexact iInf_range h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Nat.hCK ha h, pow_zero]\nrw [pow_succ, \u2190 Nat.pow_succ, prod_add, DiscreteUniformity.tsum_mul_left]\nexact hX h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Nat.lift_\u03b9_apply] at h\nsimpa only [MulAction.apply_inv_self, ha,\n  Finset.not_nontrivial_iff] using h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Nat.pointwise_vadd_eq_map, Nat.mk_eq_mk_iff] at h\nexact _root_.v\u2081.mapDomain_comp _ h",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "map_inv_lt_iff",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  f]\nsimp only [EquivLike.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "haveI := Classical.decEq homEquiv f\nhaveI := \u207b\u00b9 \u226b f.disjoint_sdiff_self_left\nexact (Subgraph.ge_iff.2 \u2115).symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "haveI := f.le_iff_forall_lf.symm f\nsimp only []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  f]\nexact (DFunLike.ext_iff f _).symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  f]\nsimp only [EquivLike.add_eq_left, mem_range]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  f]\nsimp only [logb, Set.mem_univ, injective_id]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 c\u2081\u2082 f, \u2190 forall_and]\nexact Subtype.val_injective.eq_iff",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 preserves_map \u03c8 (unique (IsCountablyGenerated hasBasis_uniformity biSup_prod hab)]\nexact yoneda.'(h.surjective.le_iff_le _)).symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 qExpansionFormalMultilinearSeries f]\nsimp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsNilpotent.pow_succ",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "Int.ofReal_pow (\u03b8 := n) (by simpa) using hx\nsimpa",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply descFactorial_zero.\nrw [not_iff_not, \u2190 H.HasDerivWithinAt, \u2190 hx, iterate_le_of_map_le]\nexact \u27e8zero_le_one, (not_le _).2 hx\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply map_iInf\u2082_le <;> eLpNorm_congr_ae <;> gcongr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply monotone\nrw [\u2190 coeff_zero_eq_eval_zero]\nrw [ x, congr_arg MvPolynomial.update_self x hx]\nassumption",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases n <;> simp [_root_.fin, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases n <;> simp_all",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "cases n with\ncases add_mul => simp_all [\u2190 Nat.two_mul, _root_.pow_zero, IsRegular.ne']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert Nat.mul_mem_mul hx using 2\nrw [Nat.hmn]\nexact Surjective. hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "inv_mul_cancel_left\u2080 (Nat.exp_lt_exp.left hx) hx\nsimpa [hn.complete, hn.hXI] using hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain hx | hx := eq_or_ne n 0\nrw [Finset.ker_eq_bot]\nexact  hx n\nrw [hx]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "LocalizedModule.mk_cancel_common_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [mul_smul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "congr with _\nsimp only [generateFrom_iUnion_memPartition, logDeriv, \u2190 add_smul, mul_comm, mul_assoc, parentD_eq, mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [*]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [LocalizedModule.sub_sub_cancel, mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [_root_.smul_add, \u2190 mul_comm \u03b9]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_left_comm, mul_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_mul, add_mul, pow_add _ _ _ _ (s.2.edist_zero_eq_enorm), add_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_mul, mul_add, mul_comm _ (x : _) (x := _), add_comm (by aesop)eq]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_mul, \u2190 smul_eq_mul, \u2190 Submonoid.smul_def]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_sub_cancel_left]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Finset.sum_int_mod",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [Finset.sum, Multiset.map_map]\nrfl",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.prod, Multiset.map_map]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction s using Finset.induction <;> simp [Nat.sdiff_val, *]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases s with \u27e8s, rfl\u27e9\nsimp [mul_add, inv_zpow]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, Multiset.map_map]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.cast_intCast]\napply bind\nsimp only [AddEquiv.symm_apply_apply]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.house, Multiset.map_map]\nsimp [Multiset.map_range]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.prod, closure_univ, Multiset.map_map, \u2190 Multiset.map_map,\n  Multiset.map_map]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.secondInter]\nexact congr_arg le_iSup (fun i => f x)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset.sum, Multiset.sum_apply]\nrfl",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsUnit.mul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rintro \u27e8a, rfl\u27e9\nexact mul_comm _ a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8b, hb\u27e9 \u27e8b, hb\u27e9\nexact Units.congr_fun hb \u27e8a, rwa [\u2190 mul_assoc, ha\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8r, rfl\u27e9\nexact \u27e8r = reflection_apply_root\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, hc\u27e9\nexact Units.mk'_spec (\u27e8iSup_eq_zero.1 hr\u2081) _, hr\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, rfl\u27e9\nexact Units.Structure _ (cons_append N)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, rfl\u27e9\nexact Units.inv_mul _ _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, rfl\u27e9\nexact Units.map _ \u27e8u, rfl\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, rfl\u27e9\nexact Units.rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, rfl\u27e9\nexact div_eq_mul_inv b u u u",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8u, rfl\u27e9\nexact u.isUnit",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    }
+  ],
+  "aggregate_matches_path": true
+}

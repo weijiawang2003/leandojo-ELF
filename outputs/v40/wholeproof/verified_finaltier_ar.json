@@ -1,0 +1,22 @@
+[
+  {
+    "label": "ar",
+    "cell": "scale_ar_30M_U45820",
+    "family": "ar",
+    "tier": "tier_final",
+    "steps": 16,
+    "cfg_weight": 2.0,
+    "n_tier": 44,
+    "multi_tactic_verified": 4,
+    "per_token_gold_recovery": 0.4494204634453405,
+    "exact_seq_recovery_rate": 0.10700757575757576,
+    "head_correct_body_wrong_rate": 0.5085227272727273,
+    "pass_at_k": {
+      "1": 0.29545454545454547,
+      "5": 0.4090909090909091,
+      "10": 0.45454545454545453
+    },
+    "novel_verified_count": 11,
+    "n_candidates_verified": 411
+  }
+]

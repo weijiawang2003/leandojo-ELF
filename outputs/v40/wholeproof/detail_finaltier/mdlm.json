@@ -1,0 +1,2393 @@
+{
+  "model_id": "mdlm",
+  "family": "mdlm",
+  "steps": 16,
+  "cfg_weight": 2.0,
+  "tier": "tier_final",
+  "K": 24,
+  "git_sha": "c080c3b5e7f2c2e653b0dbc2295fdef0497d2b82",
+  "snapshot": "outputs/v40/wholeproof/snapshots/scale_mdlm_30M_U45820.pt",
+  "n_theorems": 44,
+  "aggregate_from_detail": {
+    "pass@1": 0.3181818181818182,
+    "pass@5": 0.36363636363636365,
+    "pass@10": 0.4318181818181818,
+    "novel": 29
+  },
+  "theorems": [
+    {
+      "name": "smul_nonneg'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simpa only [*] using _root_.hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [Sym2] using krullDim hb ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [add_apply] using  hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [add_apply] using compl hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [add_zsmul] using h.h\u2080",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [ball] using Symbol hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [contDiffOn_iff_continuousOn_differentiableOn] using hb.sq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [div_eq_mul_inv] using differentialsRelations ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [div_eq_mul_inv] using hb hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa only [div_eq_mul_inv] using hb.b",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "leOnePart_le_one'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [RatFunc, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [addCases_right]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [cfc_algebraMap]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [dvd_mul_right, nat_lt_aleph0]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [fderiv_zero_of_not_differentiableAt]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [formPerm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ne', div_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [odd_iff, homologyMap_comp]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [pos_iff_ne_zero]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "invOf_lt_zero",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [Angle]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [card_eq_fintype_card]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_toReal]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [eq_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ext_from_iff] mk_eq_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [not_imp_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [v\u2081]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 ExpGrowth] eval_map]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 by]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 card, restrict_union\u2080]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WithBot.bot_lt_iff_ne_bot",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "dsimp [hom_inv_id_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_le_add_right]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_iff_le_not_le]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [FloorDiv]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Ico_succ_right_eq_insert_Ico]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Ioo]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [IsSuccPrelimit]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [MeasurableSpace]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [a\u2081_of_isCharTwoJNeZeroNF]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [cast_one]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "finrank_euclideanSpace",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [toInvSubmonoid]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "continuous_descPochhammer_eval",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "aesop_cat",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "c\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [PreservesLimitsOfShape]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [parts]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [sum_neg_distrib]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [tensorLeftHomEquiv]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Int.sign_eq_ediv_abs'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [sub_eq_add_neg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Numeric,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [abv]\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [cast_natAbs]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [cast_natCast]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_eq_mul_inv]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [id_comp]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [integral]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [inter_eq_left, neg_pos]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [omega]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Nat.add_succ_lt_add",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "decide",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "algebraize",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "fun_prop",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "gcongr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "hg",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "h\u2082",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "linarith",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "map_congr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "pt",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inv_mul_cancel_comm_assoc",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [mul_one]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "rw [powersetCard]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\nfun_prop",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [RightCancelMonoid]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [completedCosZeta_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [div_eq_mul_inv",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [div_eq_mul_inv]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [enorm]",
+          "verified": true,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "div_le_one_of_neg",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ ha,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [@, expSeries_apply_eq_div' hb]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Sub one_ne_zero, h_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [floor_intCast]\nexact hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [generator hc, hb]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hr] at hb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [inv_lt_zero,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt, zero_add]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mem_range ha, hl]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_comm, three_ne_zero hb]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Finset.isUnit_iff_singleton_aux",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "rw [AList, exists_prop]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [eq_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [not_even_iff_odd, sub_eq_zero]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [not_forall, forall_congr'.mul_le_mul_left]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Set.restrict_apply]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [Set]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [SignType, zmod]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_nonempty, le_antisymm_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_top]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "upperBounds_closure",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsUniformGroup, interior_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [inferInstance, V\u2080]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190.Gamma_ofReal, inter_univ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [, map_eq_image]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Field]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [HasDerivWithinAt]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [LeftHomologyData, gi]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Neg]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [Set, _eq_some_iff]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "AddLECancellable.tsub_eq_iff_eq_add_of_le",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [PosMulReflectLE, \u2190 h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, lt_trichotomy map_pow]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [add_comm, not_frequently h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [cast_le, eta]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [const_apply, image_source_eq_target hb]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_eq_mul_inv, dif_pos h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [finite_iUnion, h.x]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h, ha]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h, sameRay_comm le_max_left]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inv_mul_lt_one_iff_lt",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [one_mul]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "rw [\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [H\u2082]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [contextual",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [direction_affineSpan]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_irrefl]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [one_mul, mk'_spec]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [one_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [sub_self]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 MulOpposite]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "PartialEquiv.refl_restr_target",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Pseudoelement]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coeFn_comp_toFiniteMeasure_eq_coeFn]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_neg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [con]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [delete_dep_iff]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [forall_mem_range]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [image]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [midpoint_eq_center]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Fin.edist_append_eq_max_edist",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "hS []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_compl, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_def, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ [nth_rw]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Absorbs,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Associative]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [card_ord]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [completeTheory, smul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [evalEval]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsUnit.isUnit_iff_mulRight_bijective",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ succ_pred",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [and_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_eq_mul_inv]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mem_div, \u2205]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [one_mul]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SimpleGraph.Walk.mem_edges_toSubgraph",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [coeffs]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Disjoint.sup_sdiff_cancel_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [inter_comm, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [CommMonoid, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Injective, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [List, inter_univ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [achart, coe_pow]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_Ico, G\u2080]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_Ioo, forall_eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [disjoint_iff, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hd2, h']",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Fin.left_distrib_aux",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [add_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [degree_eq_weight_one]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coe_Ico]\nexact h2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [inv_smul_smul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [left_distrib]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "rw [range_succ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [AddMonoidAlgebra]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [trans_lt]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ENNReal]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_assoc]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "neg_one_mul",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Filter.HasBasis.eventually_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp only [, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [, sum_mul familyOfElements]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [DecidableLE, Finset.mul_sum]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [MeasurableMul, a']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [and_assoc, image_singleton]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [by_cases, sSup_image]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [card_add, vadd hi",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [degree, funext_iff.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [h1, nhds_eq_uniformity]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [image_symm, exp_mul_I]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "one_lt_oneLePart",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ha]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ha]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [basisSets tsum_fintype, ha]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [det_fin_two, hb]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h_one, measurable_const]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [leadingCoeff, neg_neg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [sin_eq_zero_iff, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [sq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Finpartition, Y']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 Ici_inter_Iic, I\u2081\u2082]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "FractionalIdeal.coeIdeal_eq_one",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rfl",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [AnalyticAt]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [h\u03b6]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [integral_const] 4",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [mem_inf]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [prod_erase_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u03a8]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "v",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "codisjoint_inf_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ .linarith, mem_def]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [LocalizedModule.ha, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ModEq, closedPoint]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [NumberField, eq_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ae_of_all, zero_lt_two]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [coeff_eq_zero, Ico]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [erw, Unit]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [g\u2082, lift_self_apply]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [isBase_iff_maximal_indep, and_assoc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [m0, bot_lt_iff_ne_bot]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "AddChar.coe_prod",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [, zero_mul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [AddCommMonoid]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ae_restrict_eq, coe_inj]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [fa,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [forall_swap, V\u2081]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hc\u2081, simp_rw]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [mul_right_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u03c6, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [E']",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [LowerSemicontinuousAt]",
+          "verified": true,
+          "novel": true
+        }
+      ]
+    },
+    {
+      "name": "WithTop.sum_lt_top",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Filter]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [MonoidWithZero]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [Multiset]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [X\u2082]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [castSucc]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [dropWhile]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [expect]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [fderiv]",
+          "verified": true,
+          "novel": true
+        }
+      ]
+    },
+    {
+      "name": "Rep.\u03c1_inv_self_apply",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\naesop",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [algebraMap_apply]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [eq]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [le_add_right]",
+          "verified": true,
+          "novel": true
+        }
+      ]
+    },
+    {
+      "name": "RingHom.map_dotProduct",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [End, hg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Matrix]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Unique]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [coe_inj]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [contDiffOn_univ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [dotProduct,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [eq_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [eq_iff_true_of_subsingleton]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [eq_self_iff_true]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [erase_eq]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Mathlib.Tactic.PNatToNat.coe_lt_coe",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [FunctorToTypes]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ModelType]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [intro]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [source]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [zero_f]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SzemerediRegularity.le_stepBound",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "decide",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "norm_num",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "omega",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "positivity",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "append_eq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "card_Ioo_eq_card_Icc_sub_two",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "fun_prop",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intros",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_mul_inv_iff\u2080",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsVisible.rfl",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply rfl\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "funext rfl\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nexact",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lift_natCast]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, \u2245]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Differential, hdisj, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Lists', coeff_erase]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [average_eq_integral, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [image_inter, mem_smul_set]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_iff_le_and_ne, inv_injective]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "ONote.NFBelow.snd",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply h\nexact o.pred_eq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases h\nexact degree_mul' two_smul",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "coeff []",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext1 h\nexact h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext1 h\nexact h.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "funext h\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [h]\u22a2",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Mathlib.Tactic.Ring.inv_congr",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [exp_add]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [map_smul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [neg_smul]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [CondIndepSet]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [H]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [IsPeriodicPt]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [MvPolynomial]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [PEquiv]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [add_comm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [assumption]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "lt_geom",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "omega",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "decide",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "Int",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "IsRoot",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "coe_lt_coe_iff",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "gcongr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "le",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "linarith",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "HasDerivAt.comp_hasFDerivAt_of_eq",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [GrothendieckTopology] using 2\napply of_comp hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Iso]\nexact o.id_comp.closure_eq B hx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [K]\nexact  ho hx hf.ofHom",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [[] at reverse\nexact hg.gaugeRescale",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [derivative_pow]\nexact h.add hg.neg",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [dist_eq_norm]\nexact hf. shiftEquiv' - hy",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [dist_eq_norm]\nexact hf.hg.colim hg",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [div_eq_mul_inv]\nexact hf.neg.W' x hy",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [fderiv_eq]\nexact h. hg.elim_inr",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [gcdA]\nexact  hx x hy hy",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Nat.le_avg_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "decide",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "omega",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "aesop",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ae_dirac_eq",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact_mod_cast",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "hn",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "linarith",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Finset.toRight_inter",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nsimp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "cases s\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases x\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\ni\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nsubst\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext 1\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext axsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext e\nsimp",
+          "verified": true,
+          "novel": true
+        }
+      ]
+    },
+    {
+      "name": "Ideal.pow_mem_of_pow_mem",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rwa [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa [ h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa [h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa usinghh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [h.h'f]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [h.isBigO_iff.h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rwa [size_to_nat h, h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "map_inv_lt_iff",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "rw [bsup]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [haveI]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [DecidableLT]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [IsSeparable]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [ShortComplex]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp []",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [continuousWithinAt_univ]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [id]",
+          "verified": true,
+          "novel": false
+        },
+        {
+          "tactic": "simp [id_eq]",
+          "verified": true,
+          "novel": true
+        }
+      ]
+    },
+    {
+      "name": "IsNilpotent.pow_succ",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases rfl\nexact ofReal_one",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert hx.zero\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "filter_upwards [ ]\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "funext h\nrfl rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro rfl\nexact one_mem.hz",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro x\nrfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nexact hn'",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ g\u2084]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [IsBigOWith, addValuationDef]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [PUnit hx.ne']",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "LocalizedModule.mk_cancel_common_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\n[",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\ncoe_rpow",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [C_mul_X_pow_eq_monomial]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [IsInvertedBy]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [R\u2070]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [def]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [eq_iff_true_of_subsingleton",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Finset.sum_int_mod",
+      "solved": true,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases mem_filter <;> rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [himp_inf_self map_zero, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [BilinForm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [EqvGen]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Finset Lex]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Finset e_\u03b7\u2082]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Finset.ofReal_neg]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Finset]",
+          "verified": true,
+          "novel": true
+        },
+        {
+          "tactic": "simp [Icc_toDual]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [Multiset.range_coe]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsUnit.mul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply 4 a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply rfl\nexact IsRightRegular",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply rpow_add_natCast\nexact arrowMap",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "contrapose update_of_ne exact map_extend_symm_nhdsWithin",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert SetLike\n n",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact [",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact congr_fun\nexact Complex",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact inv_preimage 1 _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro\nexact",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    }
+  ],
+  "aggregate_matches_path": true
+}
