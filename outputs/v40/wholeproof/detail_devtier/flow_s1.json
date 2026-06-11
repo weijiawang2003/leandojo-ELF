@@ -1,0 +1,2585 @@
+{
+  "model_id": "flow_s1",
+  "family": "flow",
+  "steps": 1,
+  "cfg_weight": 2.0,
+  "tier": "tier_dev",
+  "K": 24,
+  "git_sha": "16287ee7c7c2858ec84939e6057e1011bdae85ec",
+  "snapshot": "outputs/v40/wholeproof/snapshots/scale_flow_30M_U45820.pt",
+  "n_theorems": 45,
+  "aggregate_from_detail": {
+    "pass@1": 0.0,
+    "pass@5": 0.0,
+    "pass@10": 0.0,
+    "novel": 0
+  },
+  "theorems": [
+    {
+      "name": "Finset.sigma_nonempty",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [=",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190   ,    , , ,,,,  ]]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,  .  lt_norm_sub_of_not_sameRay   ,   ,,,  ,,.]   , .,, ]   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  , ,    lt_norm_sub_of_not_sameRay  ,  , ], ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  .   ,  .>  ,  .  , , ,,]] , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190, , , ,,  ,] ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [  lt_norm_sub_of_not_sameRay,  , lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  , ..,,, ,,    .   ,\nlt_norm_sub_of_not_sameRay ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ ,   , lt_norm_sub_of_not_sameRay     lt_norm_sub_of_not_sameRay ,  .[      ] ,,    , ]\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ , ,, ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ , lt_norm_sub_of_not_sameRay  , ,\n.]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "sq_lt_one_iff_abs_lt_one",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   ,    ,lt_norm_sub_of_not_sameRay . , , , , ,   ,  ),]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , using (            lt_norm_sub_of_not_sameRay  ],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ ,           , ,   ,  ,,] ,    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay, ,  , ,],,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay\n,   ] :     .    ,    ,]  ,      lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, , ,       ,\n      ,,,,,   ,  ]  ,  ]]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ,, . , , , , ,,           ]\n    ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, . , :\n    ,,,,, lt_norm_sub_of_not_sameRay   ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, ,, , , . ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  , ,  ,,\nsimp",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "not_lt_iff_le_imp_le",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   ,\n ,   ,,  , ,]      ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,   ,   ,    lt_norm_sub_of_not_sameRay    ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [  ,         , lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,   > lt_norm_sub_of_not_sameRay     , ,     ,] ] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,       ,          ,     ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [lt_norm_sub_of_not_sameRay,  , ,,  .,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190            ,       ,        ,   ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,    , ,   , lt_norm_sub_of_not_sameRay  , ]    ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,  ]]   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  , ,    , lt_norm_sub_of_not_sameRay ,        ,  , ,  ] , ]\n]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "irrational_ratCast_div_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [                     , lt_norm_sub_of_not_sameRay  , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay  ,, , lt_norm_sub_of_not_sameRay   ,    ,,  ,    ,]]    ]]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,     ,  .   ]   ],.  ,     ]   .]  ],]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,           , , , ]  ,   ] .     ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , ,  ,      ,lt_norm_sub_of_not_sameRay ..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, , lt_norm_sub_of_not_sameRay,  ,      , lt_norm_sub_of_not_sameRay  ,   ,)] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, ,,   , <  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, ,     ,   , ,    .,,  ,,  ,,, , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, , ,    , .,,] ] , ,    , , ] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, lt_norm_sub_of_not_sameRay,\n ,, .  ] ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WeakSpace.isOpen_of_isOpen",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "have \u27e8   .  .  , \u27e8  \u27e9      .\n           .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have \u27e8   \u27e8\n , lt_norm_sub_of_not_sameRay  .\n       .            )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have \u27e8 ,      :\nexact   _ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay    .                )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8\n, ,  lt_norm_sub_of_not_sameRay .  \n  ..   \n   .        val_one_eq_one_mod     )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8   .     span_union   ..   (     lt_norm_sub_of_not_sameRay)\n)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8 ,\n    .    .    (",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8 , lt_norm_sub_of_not_sameRay  =            val_one_eq_one_mod..       ) .]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine [\u2190  ,   ] exact. lt_norm_sub_of_not_sameRay\n    .  \n)    (. ..)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine \u27e8\n  exact   (   ) (.      ( ..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , . . span_union span_union\n    exact lt_norm_sub_of_not_sameRay    .  lt_norm_sub_of_not_sameRay  .",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Matrix.posDef_intCast_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay :   ,      , utf8Len [ , .   ,,  ]    ,  ] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       lt_norm_sub_of_not_sameRay      .] ,      ,        ,,_) ])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,          . .  lt_norm_sub_of_not_sameRay     . ,    lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay, ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,    ],]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,   , ,    , lt_norm_sub_of_not_sameRay ,   ,      ,   ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ . , ,   , .   ,   val_one_eq_one_mod   .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [lt_norm_sub_of_not_sameRay   ,  ,  lt_norm_sub_of_not_sameRay  , (  , ..   ] ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay,\n   ,  ,  ,   ,,,  ,,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, \u2190],  , . lt_norm_sub_of_not_sameRay  ], .    ,  , , ]],]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Subgroup.coe_zpow",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply [ , val_one_eq_one_mod             ,     , ,\n,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       lt_norm_sub_of_not_sameRay     , ,..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [    ,    simp (\nlt_norm_sub_of_not_sameRay    ,rw, )(     , ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , ,    . ,    ,]     ]  lt_norm_sub_of_not_sameRay ] ,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,\n         lt_norm_sub_of_not_sameRay .    ,   ,lt_norm_sub_of_not_sameRay. ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,      utf8Len       .lt_norm_sub_of_not_sameRay,. ,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,    ,,     ,         ,          .. ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , .\n  lt_norm_sub_of_not_sameRay, ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay  ,      ,,\u2190 [     ]  . ,.\n] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , rfl (   . ,     ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "toIcoDiv_sub_zsmul'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [\n,   ,  , lt_norm_sub_of_not_sameRay      ,      ,      ]   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay. ,  ,  , ,    , ,,  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [  lt_norm_sub_of_not_sameRay      , ]   ,.       , ],,     ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,        ,    ] , ] ]\n]] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,   lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay   ,     ]) [   ],]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,       ],  ,  ,   lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , ,       , ,  . ,  ,    , , ]  ], ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ ,       lt_norm_sub_of_not_sameRay        ,  ,  ,, ,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ,   ,  ,      ,  , , ,   ,    ,  lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, \u2190] ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Nat.le_mul_self",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "obtain n   .   ,    ].              val_one_eq_one_mod  .      lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8 , ,       )                   lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw (utf8Len   _ val_one_eq_one_mod\n                  lt_norm_sub_of_not_sameRay val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n            .  \n    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [             [\n  lt_norm_sub_of_not_sameRay           ,utf8Lenval_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [      , lt_norm_sub_of_not_sameRay,\n (    .\n ,    ]\n      lt_norm_sub_of_not_sameRay val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , , , val_one_eq_one_mod  lt_norm_sub_of_not_sameRay        ,   (    (lt_norm_sub_of_not_sameRay  )   ) utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ]               ]\n)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ] exact  (                  val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [  lt_norm_sub_of_not_sameRay   val_one_eq_one_mod\n         ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "catalan_two",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases [ .   lt_norm_sub_of_not_sameRay rw simp [,\n , \n   . ,, \n] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases [ <",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext ( :   < > val_one_eq_one_modrw    ,       ,   ,  ,      ].",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext : < ext simp [  rw       .  , ,    lt_norm_sub_of_not_sameRay  .]lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , [ , \u2190 [\n, , , ,[ ,,       \n]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x , simp [  ,\n. , lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ,. ,      ,    ]lt_norm_sub_of_not_sameRay\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n  ,   , ,  , \n        ,   ,    ,,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay,\n ., lt_norm_sub_of_not_sameRay    \n,   ,]lt_norm_sub_of_not_sameRay.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,  ,      , lt_norm_sub_of_not_sameRay\n. .  , ,, ,]lt_norm_sub_of_not_sameRay   ,, ]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "OrderIso.isSimpleOrder_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases \u27e8 ,   ,    ,, ,,    . , ,\n  ,  ,]   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     ,    .      .\n,   .. lt_norm_sub_of_not_sameRay     lt_norm_sub_of_not_sameRay ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ .lt_norm_sub_of_not_sameRay,     _.lt_norm_sub_of_not_sameRay   ,.  ,..,,     ,]] ]  .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [\n> , , ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, , ,   ,   lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, , . ,,      ,, . ]]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, ]\n, .  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram \u2190, lt_norm_sub_of_not_sameRay  ,  lt_norm_sub_of_not_sameRay ,, ., ,  .   ] ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,   ..",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WithZero.le_max_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   ,    ,  ,     , ,          ,, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,  , , lt_norm_sub_of_not_sameRay.     ,     ,  ,       ,] lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,           ,\nlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,    ,     , ,   ]\n  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,,   lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ,   ,        ], ],  ,] simp]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay, ,\n,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay] ,, , , , lt_norm_sub_of_not_sameRay ,         ]    ]  rw)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , simp [\n   ,  ,     ,  ]  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190      ,    , (  ,lt_norm_sub_of_not_sameRay     ,    ,, ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Matrix.lieConj_symm_apply",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext rw [ , h, ,, , lt_norm_sub_of_not_sameRay,,, , .  ] ],  ,    ]]] h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       , lt_norm_sub_of_not_sameRay  .  ,h ,  , h h     ,    ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     ,\n[     ,,]]h  ]     , h    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,   ,       ,   lt_norm_sub_of_not_sameRay    val_one_eq_one_mod .  h   , h    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , ,       ,    , ,      ,   h  , ,]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ] h   ,.   ]lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ]]],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , h h]  h   .,h     h ,], ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [  lt_norm_sub_of_not_sameRay h,   , ,.      h,] .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h, lt_norm_sub_of_not_sameRay,   ,  , ]  ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Option.bnot_isNone",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply ext ,  .    >   lt_norm_sub_of_not_sameRay ,,,,      , ,]  lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases [\n, ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext ( [ , lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , , ,  ,.\n , ] rfl ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext a [         , \u2190     ,,,  .    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext only simp [ lt_norm_sub_of_not_sameRay,, ,, ,,  ,,, , .,],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp > > ,        ]    ]    ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext \u27e8 , ,] simp       ,     ,]  , ,  ,  .  ,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n.     = lt_norm_sub_of_not_sameRay              lt_norm_sub_of_not_sameRay \n  ,,,\n  lt_norm_sub_of_not_sameRay ]    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,  ,  ., ,  ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "sup_himp_self_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext [     ,                                 , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , lt_norm_sub_of_not_sameRay   ,      , ,     ],,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ < ,         >           ,  ]  ,\n   ]] \n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext span_union , lt_norm_sub_of_not_sameRay     lt_norm_sub_of_not_sameRay               ,        ]     ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x   simp     ,                   ,     ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,    ,   ,,,    , ]        , ],,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay  ,, , val_one_eq_one_mod       , , h    ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay   ,     , , , , ,  ,  ]. ,],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay  ,,  lt_norm_sub_of_not_sameRay ,,   ,   , ,,, , ]\n], ],",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "smul_neg_iff_of_pos_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   ,    ,\n  ]lt_norm_sub_of_not_sameRay          lt_norm_sub_of_not_sameRay       ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , ,             lt_norm_sub_of_not_sameRay     ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,  lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay        , , , ,   . ],] ], ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,            lt_norm_sub_of_not_sameRay ,,] ],       ],] ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,, , ,  . ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, utf8Len ,  .,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay[ , lt_norm_sub_of_not_sameRay, ,     lt_norm_sub_of_not_sameRay\n   ], \n ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190    , ,     , ,      ] ],  ,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,       val_one_eq_one_mod    , val_one_eq_one_mod  ,,,   ] ]  ]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inf_eq_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [          ,,       lt_norm_sub_of_not_sameRay ,  ,    ,   ,      ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,   ,   , , , ,   ],   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,  ,     ,  , lt_norm_sub_of_not_sameRay ,,   ,  ,,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,, , ,             ,] , ,  ]]  ] ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,\u2190 , ,         ,    ,    h ]   ], ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [             , lt_norm_sub_of_not_sameRay ,    ,   ,      ,     ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ,\n, lt_norm_sub_of_not_sameRay    ,,   ,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190        ,    ,, ,         ,      ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190    ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190   ,   lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "vsub_sub_vsub_comm",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext (     lt_norm_sub_of_not_sameRay   [  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay                 ]] , lt_norm_sub_of_not_sameRay,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x lt_norm_sub_of_not_sameRay , < [      ,\n     ,   , ],]lt_norm_sub_of_not_sameRay,]   ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw (   . , val_one_eq_one_mod         , ,  ,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nlt_norm_sub_of_not_sameRay         rw\n      ,  ,           ]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     ,      ,, lt_norm_sub_of_not_sameRay  ,  ,   lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,              , .     , ]]  lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,           , ,       , ,, ,  , ]]] ]]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,     ,, rw  , lt_norm_sub_of_not_sameRay   , ,     ,  ,.] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , (  ,  ,        lt_norm_sub_of_not_sameRay   ,    ,lt_norm_sub_of_not_sameRay   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay,      ,    ., , ,, , ,]  , ],",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsConjRoot.add_algebraMap",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "have :=    lt_norm_sub_of_not_sameRay\n  \n val_one_eq_one_mod lt_norm_sub_of_not_sameRay ,           h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8h, lt_norm_sub_of_not_sameRay                 h ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nh h   h    ,       h      hlt_norm_sub_of_not_sameRayh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [               h       lt_norm_sub_of_not_sameRay    .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   .\n.  ,         h  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   lt_norm_sub_of_not_sameRay       ]     (    . . exact h  h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,\n                   lt_norm_sub_of_not_sameRay  )  .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , [ ,    .\n lt_norm_sub_of_not_sameRay               .  ] )\n h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ . (\n  span_union lt_norm_sub_of_not_sameRay    h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram  ,\n  .             \n      lt_norm_sub_of_not_sameRay  h   ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "List.nil_bagInter",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext (\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay     lt_norm_sub_of_not_sameRay , [    .,            ,]] ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [   , simp   [  lt_norm_sub_of_not_sameRay\n[   [lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , ,  _  , ,\n ,        lt_norm_sub_of_not_sameRay] .]  ] \nlt_norm_sub_of_not_sameRay]]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ ]\n, lt_norm_sub_of_not_sameRay \n    lt_norm_sub_of_not_sameRay\n  , (       \n. , ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay span_union\nlt_norm_sub_of_not_sameRay [       \n ,    \n   lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,  .    ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp , simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp lt_norm_sub_of_not_sameRay simp lt_norm_sub_of_not_sameRay\n            \n   simp   lt_norm_sub_of_not_sameRay ] \n].",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,\n,     ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   .\n    lt_norm_sub_of_not_sameRay  ,   ,  , , , lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ . , lt_norm_sub_of_not_sameRay  ,\n   ,  ,    ,.",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SignType.pos_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases only [ < ,\n ,,    ,,, ,,,      ,  , ,]lt_norm_sub_of_not_sameRay]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     , YoungDiagram (        lt_norm_sub_of_not_sameRay\n   [    , .   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,   ,  ,      lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,    ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,, , ,     ,   ]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ .,   ,,    ,]   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ]\nusing [   ,.  , ,   ,   ,   lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay,  , ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ,   ]\n    ,   ,   ,  , .\n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190     ,  ,       ,   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "mul_left_comm",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   , ,  ,  ,   ,  ,      ,] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , \u2190 ,    , , ,      ]lt_norm_sub_of_not_sameRay,,  ,  ,.   , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   . ,        ,,   ,\n,    ,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,     ,     , lt_norm_sub_of_not_sameRay     rw",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,     , ,  , ,    ,   ,,   ,     ], ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,    ,  ,   ,  , ,, ,, ,[]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay ,  , lt_norm_sub_of_not_sameRay  , ,     ,        ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,, ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ , ,    ,, ,     ,,   , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ , , ,      ,     , ,      ,        ,]]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "LocallyLipschitz.mul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext [   ]  hf  hf hf\nsimp.  hf lieCharpoly hf      .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext only hf , hf hf              .   . hf]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x\nexact ] [ hf hf   hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x [   , hf     hf   , hf     hf        hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine x     exact       lt_norm_sub_of_not_sameRay   .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ]   ] hf hf             hf   ,        hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram. .         hf                      ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 (. hf hf             , )\n       hf  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw lt_norm_sub_of_not_sameRay ]\nspan_union , .  .    hf       hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ ]\n  hf using       ( hf       hf    hf hf",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "dotProduct_sub",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (\n    , [      , , lt_norm_sub_of_not_sameRay ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases [ , ,  ,  ,  ,,  ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [\nrw [ ,   ,   ,   \n   ,  ,],. ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ ] > , lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, , ,,  ]  ], ].",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext only [\n  ,    ,   lt_norm_sub_of_not_sameRay,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp , [    lt_norm_sub_of_not_sameRay\n ,  ,     ,  ]],],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp [     _ ,  , ,  ,    , ]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp only > <   ,           , ,    ]     , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext val_one_eq_one_mod < >       ,         lt_norm_sub_of_not_sameRay , ,   ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "AddCommGroup.ModEq.trans",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay n   ,   lt_norm_sub_of_not_sameRay     ,   ,   ,        ]] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [               lt_norm_sub_of_not_sameRay  ,  ,  ,    ,  ,   ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       , ,       ,,\n, lt_norm_sub_of_not_sameRay,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,               , ]],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , ,  ,              ,    ]  ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ] lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay   re\u2082\u2081 ,   ,   ,  ,,,,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,             ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,  ,     ]\n      ,    ,,   ,,]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,, lt_norm_sub_of_not_sameRay  ,       , lt_norm_sub_of_not_sameRay ],    ,, , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ] lt_norm_sub_of_not_sameRay ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Cardinal.ciSup_mul_ciSup",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext [ [ ,   ,,      lt_norm_sub_of_not_sameRay   [ ]        .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext only [ ,  , . lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext \u27e8   ,           lt_norm_sub_of_not_sameRay ,     lt_norm_sub_of_not_sameRay ,,\n,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     ,    ,]           lt_norm_sub_of_not_sameRay\n, ,,, , ]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [  ,  ,    _       lt_norm_sub_of_not_sameRay   ( ,       ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,            lt_norm_sub_of_not_sameRay\n  ,  ,   .     ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw []\n.      ,    .    \n    \n       , \n.   ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ , ( lt_norm_sub_of_not_sameRay.\n ] ]lt_norm_sub_of_not_sameRay, ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ , ,     ]     lt_norm_sub_of_not_sameRay\n,    ] lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay,   ]]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [ , ,  ,      , ,    ,      ,  , ,f    lt_norm_sub_of_not_sameRay  ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "FiniteMultiplicity.one_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [\n, ,   ,   val_one_eq_one_mod ,],.],  ,  .,   ,,]],, ,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,           ,\n,    ,         ],[,  ] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , :    =   ,     ) .       ,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,   ] , ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay   ,       , ,   <]           , , ]] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ < ,     ,  , ,    lt_norm_sub_of_not_sameRay      , lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, lt_norm_sub_of_not_sameRay     ,,            ,], ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram.lt_norm_sub_of_not_sameRay, val_one_eq_one_mod        ,]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inv_lt'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [     ,   ,.    ,,      , )     ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,      ,,     , ,  ,  , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,     ,   \u2190 ,     ,   ,  utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,,  ,    , ,     ,    utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , .       , , ,    ,   ,  ] ,  ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ : ,      lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay       lt_norm_sub_of_not_sameRay        .    ],,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ , ,                  . ,,  ,  ,    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, ,  ,    span_union ,  ,    , . ,,,,        ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, ,  , lt_norm_sub_of_not_sameRay, ,    ,,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190              ,,   ,   ,  ,    . ]lt_norm_sub_of_not_sameRay,]]]]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "le_max_of_sq_le_mul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw :        exactlt_norm_sub_of_not_sameRay   exact span_union         hlt_norm_sub_of_not_sameRay.h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [           span_union ]      )\nh h h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     h h exact h h       .hh      hh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , using\n           \n   h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,\n exact        h   h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] , h  .    )\n   h       h  h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] [\nh h  \nh  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] ] span_union         .     lt_norm_sub_of_not_sameRay    val_one_eq_one_mod\n h     h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [=      lt_norm_sub_of_not_sameRay =\n      h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h]\n]   , ( span_union ( )      h            h  h",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "sdiff_le_iff'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay   ,,\n ,   lt_norm_sub_of_not_sameRay     ,]  \n,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,       ,     ,  ,,,        , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,               ,   ,  ,    ,lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,     ,.lt_norm_sub_of_not_sameRay ,   ,   . ,     ,  ]] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,    ,   ,   ,   ,       ,,] ,]\n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , ,   ,]  ,, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ,    ] ,, ]  ,  ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , \u2190   ,   ,     , ,   ]     ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, \u2190] ] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, lt_norm_sub_of_not_sameRay                   , lt_norm_sub_of_not_sameRay      ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190     ]  ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "emultiplicity_map_eq",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext [   , ,    .  ] , ,   , ,      , lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ [ , \u2190\n    , , lt_norm_sub_of_not_sameRay ]     ] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ lt_norm_sub_of_not_sameRay         ,      ,     ,.     ,   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext f [ lt_norm_sub_of_not_sameRay [   ,          ] ,  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n, . ,  ,   lt_norm_sub_of_not_sameRay ,    ,   ,    ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       ,     , ,   , ]       ]   lt_norm_sub_of_not_sameRay     ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,       lt_norm_sub_of_not_sameRay         ,         lt_norm_sub_of_not_sameRay ]  ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,     ,  , lt_norm_sub_of_not_sameRay    ][ ,. ]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "mul_lt_iff_lt_one_right'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ , , ,  ,   ]    ,, ,   ,, ,.,  ,  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,,  ,     ] ,  ,     ]      ,    ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,,  ,    , ,]  ,]  ,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,,  ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ , lt_norm_sub_of_not_sameRay   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190   lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay  , ,,   ,     .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,   ,   ,    , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay, ,     ..  , , ,   ,, ]   ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, , ,      , ,]  ,] ,,  ,] ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "MulRingNorm.isPowMul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases [\nrw [ , \u2190 ,                   .    utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay\nsimp [ , ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,                  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [  lt_norm_sub_of_not_sameRay    [ ,  . ,\n,,    ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,   .val_one_eq_one_mod  ,                     ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay, ] lt_norm_sub_of_not_sameRay,  ],, ]   ,    ] ,] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] , [         ,      , ,,  ,    ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] , [    ,          lt_norm_sub_of_not_sameRay        . ,   ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [YoungDiagram, \u2190   val_one_eq_one_mod , ,  , lt_norm_sub_of_not_sameRay ,  ,  ,]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "ContinuousMultilinearMap.le_mul_prod_of_opNorm_le_of_le",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply [ [     lt_norm_sub_of_not_sameRay\n      ).",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "derivative_X_pow span_union lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay span_union\n    .          . )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay : .\n        lt_norm_sub_of_not_sameRay exact_        utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nlt_norm_sub_of_not_sameRay span_union      (       .     )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [                    . val_one_eq_one_mod lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ( .\n (",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] , using\nlt_norm_sub_of_not_sameRay \n  lt_norm_sub_of_not_sameRay     )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] ] exact   (          .   exact       ) val_one_eq_one_mod. .)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] span_union      .  lt_norm_sub_of_not_sameRay    .  (       _ .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp only [                .        lt_norm_sub_of_not_sameRay     lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "le_map_inv_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [   , lt_norm_sub_of_not_sameRay      ,     ,            lt_norm_sub_of_not_sameRay,\n ]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,   ,  ,, ] ] ,   ],   ]] ,],  ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [ , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190          , lt_norm_sub_of_not_sameRay     , ,   ,            ] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190      \u2190 ] ,,     ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190     . , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190   ,,        ]      ,  ,,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,         ,       , ,,\n ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,   ] ]   hf   ,   , .  ,,   ]. ],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  ,  ,  ,             .",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "pow_add_pow_le'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply [ ]\n val_one_eq_one_mod exact   val_one_eq_one_mod       (  \n            ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain only [\n  \n          )  (",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain only [     ] ]         ,         val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ] [ (   )   ( val_one_eq_one_mod           (",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,\n    (       [       \n     ] )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,  ]\n        (       ]val_one_eq_one_mod   )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ha      val_one_eq_one_mod val_one_eq_one_mod val_one_eq_one_mod      )\n\n  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ]   ]   ] (   ]    val_one_eq_one_mod    val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay] at val_one_eq_one_mod\n           )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [simpa        (     val_one_eq_one_mod   )     val_one_eq_one_mod    simpa]  ) ).)",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Codisjoint.map_orderIso",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "exact [   lt_norm_sub_of_not_sameRay\nexact         val_one_eq_one_mod    .   ha\n     )]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8       \u27e9            .  ].   )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n] ] lt_norm_sub_of_not_sameRay   at hf  ( val_one_eq_one_mod          .  f    .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [                 .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ]\n      lt_norm_sub_of_not_sameRay         exact val_one_eq_one_mod  (val_one_eq_one_mod  .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ]   using (     )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,     .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ]   ] exact ]     (           val_one_eq_one_mod   val_one_eq_one_mod  ])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] span_union ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [.  ]   =\n      val_one_eq_one_mod     exact       ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "div_div_self",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "ext\nrw [ .lt_norm_sub_of_not_sameRay, a  ,,   ,,  simp ] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [\n, , lt_norm_sub_of_not_sameRay, ,  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [   , utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [           , ,    ,    ,val_one_eq_one_mod ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     lt_norm_sub_of_not_sameRay\n   ,     lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ,        ,    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   rw       ,   .   .\n ,    ,    [ , ,] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ,            ,,    ,  lt_norm_sub_of_not_sameRay]  ] ,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,     , .    ,           .]   )    lt_norm_sub_of_not_sameRay] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay  ,        ,.,   ,\n .] ,  ]]lt_norm_sub_of_not_sameRay,].",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , [       ,   ,\n    , . , ,  ]] ]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Int.mod_coprime",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases [\nrw [    ,]]     ,  , ,.   .     ,   ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw  [ ,   lt_norm_sub_of_not_sameRay,,.    lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n,   , , ,.      , ] ,   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n] , [., ,  , ., ,   ,,] ]]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [           , , ,  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,   , lt_norm_sub_of_not_sameRay     ,\n  ,]  ,,   ] ]_]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,  ,  ,   ,     ,   , ,, .   , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , , ,  ] ],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , , lt_norm_sub_of_not_sameRay, .] ] ,   , ] ,,] ]  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay     ,   ,lt_norm_sub_of_not_sameRay, ,,  ],   , , , .",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "HasStrictFDerivAt.abs_of_neg",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert [ ] ] hf\n       )   hf(     hf  hf  .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,    hf    .   hf       . .hf)  .hf )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ]     using   hf hf hf f\nhf hf       .hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   hf          span_union        hf..   utf8Len   hf ] hfhf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ] hf  x        hf hf    hf     ) hfhf    ) )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [hf hf  ( x hf   hf   hf\n        (   val_one_eq_one_mod )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190      )   span_union (   hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  exact (   . .hf span_union hf\n    hfhf     )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa [   hf   (  (  (    .)    hf     hf         )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simpa [ ] ]     (   val_one_eq_one_mod                   .",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "PositiveLinearMap.apply_le_of_isSelfAdjoint",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "derivative_X_pow x\n] .     x   lt_norm_sub_of_not_sameRay (",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nexact       ( .      )     \n   lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\nval_one_eq_one_mod \n  ] lt_norm_sub_of_not_sameRay x",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       hx         ( ).f   val_one_eq_one_mod.   )) .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     exact\n(",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [    f  f  lt_norm_sub_of_not_sameRay ]  .     .\n    utf8Len",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ,\n      ].",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,\n             .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , exact       (]\n     \n          f   )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , lt_norm_sub_of_not_sameRay       (\n )    (",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SimpleGraph.exists_walk_of_edist_eq_coe",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply [ , lt_norm_sub_of_not_sameRay  rw simp\n [     \n\n   , lt_norm_sub_of_not_sameRay .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases [\n, h]     ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext h\nlt_norm_sub_of_not_sameRay [ , [ ,  ,     .,]    \nlt_norm_sub_of_not_sameRay]\n  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext h < > rfl\n   \n  \n , , .       ,  ]   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext h simp [ , val_one_eq_one_mod  h  ,h , .lt_norm_sub_of_not_sameRay ]\n] ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext h simp [ [ >  .]     h,      ],\n  \nh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay   [ hsimp\n\n lt_norm_sub_of_not_sameRay       . \n h,    h lt_norm_sub_of_not_sameRay  ]  ..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay simp\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.   \n \n    , h\nlt_norm_sub_of_not_sameRay   .] ,.  \n   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRayhh , simp\n h \n\n[ lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay ] . h .lt_norm_sub_of_not_sameRayh \n,h.h ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRayhrw [\n .  . ,       h  ,\n. lt_norm_sub_of_not_sameRay   ,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "concaveOn_id",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [ ,                lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       , ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [       , using ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   (\n       ,     ]  ,lt_norm_sub_of_not_sameRay   ]    ]]     ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ] ,   lt_norm_sub_of_not_sameRay\n            ,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , ,    ,    lt_norm_sub_of_not_sameRay\n     lt_norm_sub_of_not_sameRay               ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , span_union\n                      ,    ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ]\n, ,  ,          ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ ]       .    ,                  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190       ]        ]  .  ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Mathlib.Tactic.Ring.div_congr",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases x , lt_norm_sub_of_not_sameRay  ,    ,,       ,, ,  ]  ]  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [   , [          ,   ,, ,   ,]] ,, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , ,    ,      ,  .   ],,   ],    ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , >       [ ,   , lt_norm_sub_of_not_sameRay   ,,           ,]]],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ , lt_norm_sub_of_not_sameRay             ,  ,          ]  ]], lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ < , , ,    ,      ,,, ] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ <;, ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x , h simp [ ,   ,     ,       lt_norm_sub_of_not_sameRay ,   ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [     ]       .\n          ,    , ,]  ]]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , (     ,      ,  ,        ,  lt_norm_sub_of_not_sameRay   ]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "PNat.eq_one_of_lt_two",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases [\nrw [ ,, ,   ,,   , ,     ,,   ,,   ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nsimp , [.,\n, , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext :   :        ,, lt_norm_sub_of_not_sameRay      utf8Len   ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [ < [ simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext simp [ , simp [ .   ] ,] ,\n,\n,]   ]   ,] simp\n ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n,     ,.    \n,   ,  ,       ,,  utf8Len  ,] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n, \u2190,           ,lt_norm_sub_of_not_sameRay   ,         , \n[lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [         , simp,[\n, , ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [   ] using   lt_norm_sub_of_not_sameRay   [ , ] ] ,,            ]simp] ])]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [  (  ,  .   lt_norm_sub_of_not_sameRay,   ,,  ,lt_norm_sub_of_not_sameRay\n    , ,    ]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    }
+  ],
+  "aggregate_matches_path": true
+}

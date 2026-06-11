@@ -1,0 +1,2585 @@
+{
+  "model_id": "flow_s16",
+  "family": "flow",
+  "steps": 16,
+  "cfg_weight": 2.0,
+  "tier": "tier_dev",
+  "K": 24,
+  "git_sha": "16287ee7c7c2858ec84939e6057e1011bdae85ec",
+  "snapshot": "outputs/v40/wholeproof/snapshots/scale_flow_30M_U45820.pt",
+  "n_theorems": 45,
+  "aggregate_from_detail": {
+    "pass@1": 0.0,
+    "pass@5": 0.0,
+    "pass@10": 0.0,
+    "novel": 0
+  },
+  "theorems": [
+    {
+      "name": "Finset.sigma_nonempty",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay fun lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRayval_one_eq_one_mod ? lt_norm_sub_of_not_sameRay.\nFinsetlt_norm_sub_of_not_sameRaysymm\n  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay>[ha lt_norm_sub_of_not_sameRay.,lt_norm_sub_of_not_sameRaysimplt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay]\nlt_norm_sub_of_not_sameRay \n lt_norm_sub_of_not_sameRayFinset]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [= lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRayFinset.]  =lt_norm_sub_of_not_sameRay\n_:lt_norm_sub_of_not_sameRay.  ,.  lt_norm_sub_of_not_sameRay,Finsetlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,.,. ]\nlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,  ,lt_norm_sub_of_not_sameRay\n  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n  FinsetFinset.,FinsetFinsetlt_norm_sub_of_not_sameRay Finset ,, ,,.\nsimp, ][",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 (.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaySet ha.>lt_norm_sub_of_not_sameRay Finset fun.lt_norm_sub_of_not_sameRay = .\n  ,Finset]lt_norm_sub_of_not_sameRay,(, symm\nexactlt_norm_sub_of_not_sameRay) .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay s, map ha,Finsetlt_norm_sub_of_not_sameRay ,,lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay\nha[ Natlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay]),lt_norm_sub_of_not_sameRay 1lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay, \u2190 lt_norm_sub_of_not_sameRay  i\nFinsetlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay i,Finset\nlt_norm_sub_of_not_sameRay \n. lt_norm_sub_of_not_sameRayFinsetFinset ),Finsetlt_norm_sub_of_not_sameRayhaFinset]ss lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [lt_norm_sub_of_not_sameRay.i ?lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n   \u2190  lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay .[\n  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ]slt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay=]usingilt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay Finsetlt_norm_sub_of_not_sameRayFinset,lt_norm_sub_of_not_sameRay . ,.,] symm\u2190[lt_norm_sub_of_not_sameRay\n\u2190 ,Finset] , lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRayrfllt_norm_sub_of_not_sameRay\nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 , lt_norm_sub_of_not_sameRay. Finset,,Finset .Finsetlt_norm_sub_of_not_sameRay ,Finset. Finset\n  \u2190Finset,,   ,\n[]simp ,lt_norm_sub_of_not_sameRay]s",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp [\u2190 lt_norm_sub_of_not_sameRay,\nlt_norm_sub_of_not_sameRay fun\nrw i*[ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [\n]lt_norm_sub_of_not_sameRay ,FinsetFinset Finset,s FinsetFinset ,.] lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "sq_lt_one_iff_abs_lt_one",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "obtain \u27e8val_one_eq_one_mod, (val_one_eq_one_mod a (,): R lt_norm_sub_of_not_sameRay=. rflsymm lt_norm_sub_of_not_sameRay\napply?  lt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRay alt_norm_sub_of_not_sameRaysymma]ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine \u27e8a lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay |\nrw [lt_norm_sub_of_not_sameRay, symm lt_norm_sub_of_not_sameRay  \u2190, .  , alt_norm_sub_of_not_sameRaysymmsymmlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm,symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, ,  ,\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,. lt_norm_sub_of_not_sameRay  ) (,lt_norm_sub_of_not_sameRay, \n]lt_norm_sub_of_not_sameRay , symm2lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [a, lt_norm_sub_of_not_sameRay, a : = lt_norm_sub_of_not_sameRay symm span_union,  0lt_norm_sub_of_not_sameRay   \u2190,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayR\n   lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRay symmsymm]span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, (= lt_norm_sub_of_not_sameRay :\n. :lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay(alt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRaysymm)  \u2190 ,,symm)] \nsymmsymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, :==val_one_eq_one_mod Finset lt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRay symm  (* lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay:. lt_norm_sub_of_not_sameRay  )]lt_norm_sub_of_not_sameRay\n] symma",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay  ,lt_norm_sub_of_not_sameRay.,\n  ,.,, lt_norm_sub_of_not_sameRay.  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay] symm\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm . symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay.val_one_eq_one_mod, lt_norm_sub_of_not_sameRay .,\n   .a _a \n  ,lt_norm_sub_of_not_sameRaySet(,, symm ,\n,) ,]]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, symm, , lt_norm_sub_of_not_sameRay, .lt_norm_sub_of_not_sameRay,\n  .with , lt_norm_sub_of_not_sameRay, ,,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRay], symmlt_norm_sub_of_not_sameRaysymmsymma ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, val_one_eq_one_mod ]\n: exact\nlt_norm_sub_of_not_sameRay >lt_norm_sub_of_not_sameRay= lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  [ ,:lt_norm_sub_of_not_sameRay.,lt_norm_sub_of_not_sameRay .() symmsymm isymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "not_lt_iff_le_imp_le",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert val_one_eq_one_mod ?  (, [ lt_norm_sub_of_not_sameRayval_one_eq_one_mod(  ,a,   b :|blt_norm_sub_of_not_sameRay  , (lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,)lt_norm_sub_of_not_sameRay]symma lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain val_one_eq_one_mod ha ha := hb b\na val_one_eq_one_mod  withsymm at balt_norm_sub_of_not_sameRay \n simpbb\na  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,,alt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8val_one_eq_one_mod, hb\u27e9hb, a b val_one_eq_one_modhba ( exact (amul_lt_mul_iff_right symm, lt_norm_sub_of_not_sameRayb lt_norm_sub_of_not_sameRay) b,lt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay symmrwa",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [> a, b, ,hb b.b b:hbbg <  ba2symm | symmRsymmval_one_eq_one_mod , hb| lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [a, b b g]\nb hb hb lt_norm_sub_of_not_sameRay [ *R  simpsymm|  ab hb,Finset lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay  val_one_eq_one_mod, funba hb\n 1 val_one_eq_one_mod ,a< . ,g hbb val_one_eq_one_mod  ]>a= ,rintro",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod a=val_one_eq_one_mod : | , b Finset hhb(  , ,,lt_norm_sub_of_not_sameRay alt_norm_sub_of_not_sameRay  symmb,symm lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, NonUnitalAlgHom]\nb h.b lt_norm_sub_of_not_sameRay[ b ,   bval_one_eq_one_mod  , lt_norm_sub_of_not_sameRay ,\nrw =lt_norm_sub_of_not_sameRaysymm,,symm,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod b b (b fun b b =>a< )\n  _ symmval_one_eq_one_modsymm)symm(symm    symma] symmsymmre\u2082\u2081",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod lt_norm_sub_of_not_sameRay(]\nsymm   hb.  b YoungDiagram= val_one_eq_one_modb   ) lt_norm_sub_of_not_sameRayhsymm >[ a  ha]],lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "irrational_ratCast_div_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "intro x simp\n[, lt_norm_sub_of_not_sameRay g, ,lt_norm_sub_of_not_sameRay0hx ,lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay , .\n,,,]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay?,  \n lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayintro[ \u2190 ,\n  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay    [simplt_norm_sub_of_not_sameRay,]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, val_one_eq_one_mod.lt_norm_sub_of_not_sameRay, ,lt_norm_sub_of_not_sameRay.\n  , lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,\n]lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay )  span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [g g (,\n  lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRayR.0lt_norm_sub_of_not_sameRay \n  lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay  ,)lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay .span_union  symm]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, \u2190, 0dsimplt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,  Finsetlt_norm_sub_of_not_sameRay,,.lt_norm_sub_of_not_sameRay,  , lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.g,\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay(.lt_norm_sub_of_not_sameRay val_one_eq_one_mod,lt_norm_sub_of_not_sameRay,.lt_norm_sub_of_not_sameRay,, )lt_norm_sub_of_not_sameRay, ,lt_norm_sub_of_not_sameRay .],symmlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, hx\nlt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay . symm=lt_norm_sub_of_not_sameRay[lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysymmsimplt_norm_sub_of_not_sameRay, ]lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay,symm  ,\n  < lt_norm_sub_of_not_sameRay,\n  lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay],lt_norm_sub_of_not_sameRay \n  val_one_eq_one_modlt_norm_sub_of_not_sameRay,span_union span_unionval_one_eq_one_mod,  slt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, g: (lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay .),\n  \n  \n  lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,, lt_norm_sub_of_not_sameRay   ,lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay),]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_modlt_norm_sub_of_not_sameRay\n, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.hb, lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay,) (,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,,\n  , ,  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WeakSpace.isOpen_of_isOpen",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply  :.val_one_eq_one_mod  g map b.span_union\nR symm lt_norm_sub_of_not_sameRay\n.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  (span_unionlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ( symmsymm).span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert (val_one_eq_one_mod.lt_norm_sub_of_not_sameRay ?lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaymap\nexact |  lt_norm_sub_of_not_sameRay ) lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ( ..lt_norm_sub_of_not_sameRay  \nsymm)1symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert : ? (val_one_eq_one_mod =:\nexact lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay) lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayusing=  Set.  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm .(lt_norm_sub_of_not_sameRay (symmlt_norm_sub_of_not_sameRay\nsymm )span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert \u27e8val_one_eq_one_mod val_one_eq_one_mod.val_one_eq_one_mod ?\u27e9 , \u27e8 .\u27e9lt_norm_sub_of_not_sameRay symmsymm \u27e8.\nsymmlt_norm_sub_of_not_sameRayexactlt_norm_sub_of_not_sameRay\nxlt_norm_sub_of_not_sameRay  \n  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay \n.symmintro\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext \u27e8val_one_eq_one_mod, lt_norm_sub_of_not_sameRay\u27e9 , \u2190span_union  0lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRayat .span_union   ,lt_norm_sub_of_not_sameRay\u27e8x lt_norm_sub_of_not_sameRay .rflspan_union\u27e9\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have :\u2190 ?).span_union\n? _ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay \u27e8 fun exactlt_norm_sub_of_not_sameRay=(.\u27e8  lt_norm_sub_of_not_sameRaysymm\nlt_norm_sub_of_not_sameRay  )lt_norm_sub_of_not_sameRay=lt_norm_sub_of_not_sameRayhs \u27e9x",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro \u27e8pexact lt_norm_sub_of_not_sameRay\n\u27e9  lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\nsymm (.lt_norm_sub_of_not_sameRay ... lt_norm_sub_of_not_sameRay )1\nlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay.:))(",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro \u27e8val_one_eq_one_mod,?val_one_eq_one_mod\u27e9 \u27e8 exact lt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\u27e9)symm lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n2.lt_norm_sub_of_not_sameRay. )(lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay. .] span_unionlt_norm_sub_of_not_sameRay\n  )symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8fun, val_one_eq_one_mod  Rwith:Set ? (.\nlt_norm_sub_of_not_sameRay 1 lt_norm_sub_of_not_sameRay symmlt_norm_sub_of_not_sameRay>). (lt_norm_sub_of_not_sameRayexact\n) lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.symm .)span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8lt_norm_sub_of_not_sameRay, fun  = : (\n  Set lt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ) .)lt_norm_sub_of_not_sameRay.:have .lt_norm_sub_of_not_sameRaysymm\nspan_union",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Matrix.posDef_intCast_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "have := (val_one_eq_one_mod = := R)R\n: 1 : 2 n  :=2 Rn,) symmR.symm ,]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine lt_norm_sub_of_not_sameRayR.symmval_one_eq_one_mod >  =\n   .lt_norm_sub_of_not_sameRay\n symm symmR ]R.lt_norm_sub_of_not_sameRayR =R   \n,_) Rsymmlt_norm_sub_of_not_sameRaysymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\n  , \u2190 R.R, .\n  \u2190.Rsymmsymm . lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay,. symm ,(,lt_norm_sub_of_not_sameRay, .,.].symmsymm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ lt_norm_sub_of_not_sameRay.R, ,R\n( \u2190 lt_norm_sub_of_not_sameRayR  RsymmR)   =R,  ,2 ,,,n\n)]span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay,\n   \u2190  ,R ,.with symm,,  ,,.  ,\n  , \n  ,symm] ],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay R R\n  R \u2190 with.\nsimp    [,RR, ,Rn.Nat symm \n  .symm symm]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay  = R.R   R\n  (R2R ,symm.)R  Setsymmsymm .,R, symmn ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay[R] lt_norm_sub_of_not_sameRay R.. R symm R n  =.RRRRR.symmR .\nFinset ], symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay]\n  .  RR rintro\n \nR.R.R.symm R R . symm., [symm ,\u2190,<symmsymm rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 R\n  R nsymmR . .,  ,,.symm,\n  .  RR R R] withsymm Rval_one_eq_one_modn]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Subgroup.coe_zpow",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert : : \u27e8val_one_eq_one_mod= val_one_eq_one_mod lt_norm_sub_of_not_sameRay\n[lt_norm_sub_of_not_sameRaysimp ] span_union .( .span_unionsymm lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayspan_union  span_unionlt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRay(span_union )symm ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert val_one_eq_one_mod.val_one_eq_one_mod  <val_one_eq_one_mod.[\nrw lt_norm_sub_of_not_sameRay\n]\n[.. lt_norm_sub_of_not_sameRaysimplt_norm_sub_of_not_sameRay[lt_norm_sub_of_not_sameRay  ., symm   |symm.]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert x :n val_one_eq_one_mod val_one_eq_one_mod lt_norm_sub_of_not_sameRay\nR.span_union rflspan_union | span_union neg_le.span_union span_union,.[]span_unionlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,. lt_norm_sub_of_not_sameRay.symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext \u27e8val_one_eq_one_mod, [, val_one_eq_one_mod(.val_one_eq_one_mod..  n]val_one_eq_one_modlt_norm_sub_of_not_sameRay\n).2 symmlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ( )[span_union rwlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRayspan_unionlt_norm_sub_of_not_sameRay \n)]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases val_one_eq_one_mod.lt_norm_sub_of_not_sameRay x\nval_one_eq_one_mod ]n[ lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay  , lt_norm_sub_of_not_sameRay = lt_norm_sub_of_not_sameRay .symm\u2190  ,lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,., lt_norm_sub_of_not_sameRay,,lt_norm_sub_of_not_sameRaysymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine n n.n : 0with\n_ ?..span_union val_one_eq_one_mod;ha symm , ( ]lt_norm_sub_of_not_sameRaysymm[.lt_norm_sub_of_not_sameRay\nsymmlt_norm_sub_of_not_sameRay  \n,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay\nsymm (lt_norm_sub_of_not_sameRay val_one_eq_one_mod   n n lt_norm_sub_of_not_sameRay,) .)lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n  ,symm]]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, (lt_norm_sub_of_not_sameRay val_one_eq_one_modsymm)|symmsymm  (. symm..span_union) span_union .lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.symm].(lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.\n ..symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod  | n1 simp\n(\nval_one_eq_one_mod 1 []rwlt_norm_sub_of_not_sameRay )(span_union  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,span_unionlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay,symm ]symm)span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,\n  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay (.\u2190.with) lt_norm_sub_of_not_sameRayval_one_eq_one_mod ]1]. .lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n\n,\nsimp symm[.]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "toIcoDiv_sub_zsmul'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "dsimp [lt_norm_sub_of_not_sameRay., lt_norm_sub_of_not_sameRay.0, ?.\n   lt_norm_sub_of_not_sameRay,, symm  ,;lt_norm_sub_of_not_sameRay,  \u2190,  ,, \n.,,,span_union]psymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [val_one_eq_one_mod, lt_norm_sub_of_not_sameRay, ,not_gtFinite p,Finite.lt_norm_sub_of_not_sameRay,  , ]lt_norm_sub_of_not_sameRay\n  Finitespan_unionrw [ < | \nspan_union symm]symmFinitesymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRay]\nintro\n: fun  | symm|span_union.  amap\n symm, p,.span_unionp, span_union,p  ,symm ]harfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay p\u2190 ? bmap?\nFinite Finite\n[ ,.rwlt_norm_sub_of_not_sameRayFinite   [,Finite],,[lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay p pabsorbs_iff_eventually_nhdsNE_zeroh]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain p  b | map.= lt_norm_sub_of_not_sameRay span_union _ simp ,only.,\nsymm [pspan_union, symm Finitelt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases p  symmp using b  _ pa(. , pspan_union\u27e9p  p ,pspan_union>  p ppspan_union]symm)derivative_X_powderivative_X_pow",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay , p][card_coe Finite ?   , rwsimp p]) [Finite  ,\n]lt_norm_sub_of_not_sameRay span_union  span_union lt_norm_sub_of_not_sameRayderivative_X_pow ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay b, lt_norm_sub_of_not_sameRay map.](lt_norm_sub_of_not_sameRay a\nb [ symmp, symm  lt_norm_sub_of_not_sameRayspan_union,.  lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRaysymmsymm) ]p",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b map, span_union b b span_union cspan_union., symm 0\n_] lt_norm_sub_of_not_sameRaysimpaderivative_X_pow , derivative_X_pow span_union[ ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay Finset,symm.  a Finite \u2190\nlt_norm_sub_of_not_sameRay. ,  ,,symmspan_unionp, , symm span_union\n,span_union.span_union]symm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Nat.le_mul_self",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply  n\nrcases \u27e8hb val_one_eq_one_mod val_one_eq_one_mod|lt_norm_sub_of_not_sameRay  ( .)val_one_eq_one_modn\nlt_norm_sub_of_not_sameRay  exact,  \n val_one_eq_one_mod) val_one_eq_one_modval_one_eq_one_mod lt_norm_sub_of_not_sameRay symmlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply val_one_eq_one_mod val_one_eq_one_mod n\nval_one_eq_one_mod  symmval_one_eq_one_mod <val_one_eq_one_modn\nval_one_eq_one_mod val_one_eq_one_mod>val_one_eq_one_mod ,\n   val_one_eq_one_modnexact*simp< \n\n val_one_eq_one_modval_one_eq_one_mod*  symm rfl>",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "by_cases := val_one_eq_one_mod i n val_one_eq_one_mod,val_one_eq_one_mod\nval_one_eq_one_mod(val_one_eq_one_mod  <.\nn,val_one_eq_one_mod simp ]\n val_one_eq_one_modNatval_one_eq_one_mod  val_one_eq_one_mod nval_one_eq_one_mod   val_one_eq_one_modlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "by_cases n : Nat val_one_eq_one_mod\nsymm(* (  rw)  <val_one_eq_one_modval_one_eq_one_mod (val_one_eq_one_mod  val_one_eq_one_mod\nsymm val_one_eq_one_mod[ )val_one_eq_one_mod lt_norm_sub_of_not_sameRayval_one_eq_one_mod]val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases n val_one_eq_one_mod\nval_one_eq_one_mod val_one_eq_one_mod ;(  Nat val_one_eq_one_mod lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay val_one_eq_one_mod Nat*n lt_norm_sub_of_not_sameRay\nsymm symm val_one_eq_one_mod,n symm )symmval_one_eq_one_mod.lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert nwith (val_one_eq_one_mod val_one_eq_one_mod\nn n.simp Nat lt_norm_sub_of_not_sameRay Nat\n1 0 ][rw]  atval_one_eq_one_mod   val_one_eq_one_mod_,lt_norm_sub_of_not_sameRayNat Natsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "n n with with val_one_eq_one_mod.val_one_eq_one_mod ,\nNatn.* val_one_eq_one_mod] symm\n ,val_one_eq_one_mod)exact val_one_eq_one_modval_one_eq_one_mod .   val_one_eq_one_mod|() symmval_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases nval_one_eq_one_mod, symm\nval_one_eq_one_mod*\nsymm\nrw Nat ( [val_one_eq_one_mod[\n(rw*, lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayNat).,] , , \n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases \u27e8n, rfl\u27e9 hbval_one_eq_one_mod ( )val_one_eq_one_mod  NatNatrw\n[ val_one_eq_one_mod rw\n ]lt_norm_sub_of_not_sameRayval_one_eq_one_mod  [val_one_eq_one_mod\nval_one_eq_one_mod val_one_eq_one_mod Nat]\nval_one_eq_one_modlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine (val_one_eq_one_mod val_one_eq_one_mod _ hb symm val_one_eq_one_mod=Nat)\n\n* |symm| .  (  0  symmlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.1lt_norm_sub_of_not_sameRayn) simpasymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "catalan_two",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases s lt_norm_sub_of_not_sameRay b R rw\nlt_norm_sub_of_not_sameRay [ofUnitHomlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRayb.  *_lt_norm_sub_of_not_sameRay \nlt_norm_sub_of_not_sameRay( lt_norm_sub_of_not_sameRay . lt_norm_sub_of_not_sameRaysymmre\u2082\u2081lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay .)symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases span_union;: b > x < lt_norm_sub_of_not_sameRay,. 0hb  = *hlt_norm_sub_of_not_sameRay*b\n lt_norm_sub_of_not_sameRayexactlt_norm_sub_of_not_sameRay\u27e9symmlt_norm_sub_of_not_sameRay  )<lt_norm_sub_of_not_sameRay \u27e9\u27e8",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, span_union |0?=.\nlt_norm_sub_of_not_sameRay exact lt_norm_sub_of_not_sameRayre\u2082\u2081symm s)\n. lt_norm_sub_of_not_sameRay(re\u2082\u2081: lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n,lt_norm_sub_of_not_sameRay]_re\u2082\u2081.lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [lt_norm_sub_of_not_sameRay]\nsimp [bb ,,h lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRayrintrolt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay\n.=\n  lt_norm_sub_of_not_sameRay0lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay. ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay][",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext a\nrwa [b, \u2190 lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay]\n[lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay ( lt_norm_sub_of_not_sameRay .\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRay .\nlt_norm_sub_of_not_sameRay].Perfection",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay\nb y [span_union ,b?.lt_norm_sub_of_not_sameRay] lt_norm_sub_of_not_sameRay simp\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayrintro .  ,symm<re\u2082\u2081\u2190lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay re\u2082\u2081Ioo_succ_right_eq_Ioc_of_not_isMax",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay : ( <\n> *rw lt_norm_sub_of_not_sameRay;lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay[(.(lt_norm_sub_of_not_sameRayre\u2082\u2081 lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay). ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  hlt_norm_sub_of_not_sameRay\n.lt_norm_sub_of_not_sameRay h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext s : ext\nspan_union \nR rw<lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay b.dsimp lt_norm_sub_of_not_sameRay b  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  \n)lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n)s 2]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have hval_one_eq_one_mod ?i :b.\n)lt_norm_sub_of_not_sameRay.\nlt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n  dsimp [\n,  lt_norm_sub_of_not_sameRay,]lt_norm_sub_of_not_sameRay.rwalt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay _.lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro intro\nb = :? val_one_eq_one_mod  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay span_unionR R.>dsimpofUnitHom ,<,lt_norm_sub_of_not_sameRay[re\u2082\u2081 \n [lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay\nre\u2082\u2081 exact",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "OrderIso.isSimpleOrder_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases \u27e8?,  ,symm  ,\u27e9span_union,,f. symm.\n  ,span_unionsymmlt_norm_sub_of_not_sameRay.\n  ,,lt_norm_sub_of_not_sameRay,span_union  lt_norm_sub_of_not_sameRayYoungDiagramlt_norm_sub_of_not_sameRay,.  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have :=  fval_one_eq_one_mod f.lt_norm_sub_of_not_sameRay.\nrw  [ .\n[ frfl..(lt_norm_sub_of_not_sameRaysymm ( .lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  symmsymm2))",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have f s,  =:\n f. lt_norm_sub_of_not_sameRay symm.withlt_norm_sub_of_not_sameRay\n.=\n  ,symm )   symm. symm ,addXYZ_smul symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "i a <;> s b :\nrw;? [*_   * ,lt_norm_sub_of_not_sameRay],>symm \n[lt_norm_sub_of_not_sameRay.f]symm.symmsymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine lt_norm_sub_of_not_sameRay : funb ?=>   _ <lt_norm_sub_of_not_sameRay) fun:lt_norm_sub_of_not_sameRay\nsymm  lt_norm_sub_of_not_sameRay . span_union span_union \nh.span_union> symm])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine \u27e8?: = lt_norm_sub_of_not_sameRay\nonly.simp\u2190[ ,  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,\u2190 , , lt_norm_sub_of_not_sameRay,f lt_norm_sub_of_not_sameRay\n  .lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [,  lt_norm_sub_of_not_sameRay,\n  . span_union, ,,Finsetlt_norm_sub_of_not_sameRay .symm0 lt_norm_sub_of_not_sameRay ,,,   ,\n  lt_norm_sub_of_not_sameRay]simplt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay  ]val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, ,\n  val_one_eq_one_mod f , span_union fun Finset _ ?\nlt_norm_sub_of_not_sameRay addXYZ_smul ( ss),.lt_norm_sub_of_not_sameRay, rfl, flt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, g\nsymm, ?with \n  ,2., symmlt_norm_sub_of_not_sameRay . span_union symm   (,lt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRay.s)]symm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay x s\nspan_union R lt_norm_sub_of_not_sameRay.R  lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay , ?.\u2190lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay\n    ,span_union ,\n symm]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "WithZero.le_max_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [,  val_one_eq_one_mod,,c  c.c , <,\nc c | lt_norm_sub_of_not_sameRayg<,\n]>  ,span_union simpsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Set.val_one_eq_one_mod, hb, c\n, cneg_le.,hb,  bclt_norm_sub_of_not_sameRay ,\nFinsetac  Finset,,,.s,  symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay symm, symmSet \u2190val_one_eq_one_mod ,.c,symm b * <\n];>val_one_eq_one_mod  [lt_norm_sub_of_not_sameRay< < bval_one_eq_one_mod symmsymmsymm]Finset",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay symm, \u2190.val_one_eq_one_mod.c., ,, ,c neg_le  val_one_eq_one_mod,.  )\n \n  ]( asymm,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,\n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, (val_one_eq_one_mod val_one_eq_one_mod , c.b b,,   val_one_eq_one_mod lt_norm_sub_of_not_sameRay[]\n,lt_norm_sub_of_not_sameRay],\n\u2190)lt_norm_sub_of_not_sameRay],exact lt_norm_sub_of_not_sameRay symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, NonUnitalAlgHomval_one_eq_one_modb xlt_norm_sub_of_not_sameRay ,, c \u2190, .\nc,c rwlt_norm_sub_of_not_sameRay[,Finset ], ,,,,,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b :,(val_one_eq_one_mod val_one_eq_one_modc  ( val_one_eq_one_mod b_  Set)\n( lt_norm_sub_of_not_sameRay_val_one_eq_one_mod]val_one_eq_one_mod  .lt_norm_sub_of_not_sameRay) \n symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b] val_one_eq_one_mod |,span_union= s c ,   bFinseta(val_one_eq_one_modcval_one_eq_one_mod\nbblt_norm_sub_of_not_sameRayrw) a,symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, val_one_eq_one_mod] ,:val_one_eq_one_mod. ,c   ab.Finset, c,rw span_unionFinset , \u2190(lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay [ ]]\n)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay] simp [\nonly  ,[ ,c  clt_norm_sub_of_not_sameRay,\u2190 ]  ,\n.,,,,b   n,,,],]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Matrix.lieConj_symm_apply",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (lt_norm_sub_of_not_sameRay RRval_one_eq_one_mod  R[ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  ,SetR (   R.lt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRayh  lt_norm_sub_of_not_sameRay,.symm)symm\n   symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nrw [lt_norm_sub_of_not_sameRay, h, hlt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay,.R , \u2190  ,, ,  , ,  ,,,hNatlt_norm_sub_of_not_sameRay]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases lt_norm_sub_of_not_sameRayval_one_eq_one_mod[lt_norm_sub_of_not_sameRay.R R,   R lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay R] symmh.exact .lt_norm_sub_of_not_sameRayR     .symm).symmrw\n,symm2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Nat.h, lt_norm_sub_of_not_sameRay, ,,, lt_norm_sub_of_not_sameRay,\n  lt_norm_sub_of_not_sameRay.h , Rh  (     \u2190 symm, h)h, n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Nat.with, \u2190 symm,lt_norm_sub_of_not_sameRayR R,  .lt_norm_sub_of_not_sameRayR ,with0 lt_norm_sub_of_not_sameRay, ,   h symmlt_norm_sub_of_not_sameRaysymm.\n] 2]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [h, lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay R R,\n  R  ,  (span_union lt_norm_sub_of_not_sameRay   .\n , [)lt_norm_sub_of_not_sameRay   h]]h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay   g _ ( h atR  nh)) ,R with\n  . symmsymmsymmsymm ]symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay h, \u2190  ,  ,]lt_norm_sub_of_not_sameRay span_union\nspan_union \u2190\u2190 ] lt_norm_sub_of_not_sameRay \nspan_union .lt_norm_sub_of_not_sameRay [simpsymmspan_unionlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, (val_one_eq_one_mod  lt_norm_sub_of_not_sameRay,.) R.symm symm,, R, .symm symmh   ] _n",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, symm.h]with h. .,symm   symmlt_norm_sub_of_not_sameRayh ,\n,   ,n ,   [,]symm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Option.bnot_isNone",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply a | lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysymm : =lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm lt_norm_sub_of_not_sameRay\n0lt_norm_sub_of_not_sameRayrw<  span_unionlt_norm_sub_of_not_sameRay[\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRays,. symm,]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply ext |val_one_eq_one_mod \u27e8 :  >*  lt_norm_sub_of_not_sameRay = ,,symmlt_norm_sub_of_not_sameRay\nspan_union. simp.\u27e9\na lt_norm_sub_of_not_sameRaywith,lt_norm_sub_of_not_sameRay[symmlt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply ha.lt_norm_sub_of_not_sameRay > < [ a.h Finset\n  .*)symmlt_norm_sub_of_not_sameRaysymm  < (>hsymm exact simp lt_norm_sub_of_not_sameRay |]alt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "by_cases lt_norm_sub_of_not_sameRay ? : span_union 1\nrw g(s,[lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay , ,symmNat  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\u2190 lt_norm_sub_of_not_sameRay.\n.]lt_norm_sub_of_not_sameRayhaha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases val_one_eq_one_mod\nval_one_eq_one_mod a \u27e8val_one_eq_one_mod _\u27e9\n _aa;  [ lt_norm_sub_of_not_sameRaya, lt_norm_sub_of_not_sameRay s  ,]symm.lt_norm_sub_of_not_sameRay ,symm(symmsymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert a.symmlt_norm_sub_of_not_sameRay.?, lt_norm_sub_of_not_sameRay * Finset\n[ \u2190 lt_norm_sub_of_not_sameRay.,] lt_norm_sub_of_not_sameRayFinset  .[lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay\n\nlt_norm_sub_of_not_sameRay ] ,,symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay\nsimp only [lt_norm_sub_of_not_sameRay, ,lt_norm_sub_of_not_sameRay ,.lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay.,lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n   , ,.lt_norm_sub_of_not_sameRay,symm, ]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext rw [lt_norm_sub_of_not_sameRay |.;a\nrintro\u27e8c ,a  R\nbsymm.rcases (lt_norm_sub_of_not_sameRay .),symm lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysymmsymm.]symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext rw [val_one_eq_one_mod] at lt_norm_sub_of_not_sameRay rintro\nsymm >lt_norm_sub_of_not_sameRay. **Finset,  <symma R  \nlt_norm_sub_of_not_sameRay;symmsymm..haspan_unionlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction val_one_eq_one_mod lt_norm_sub_of_not_sameRay = a with>lt_norm_sub_of_not_sameRay\n*symmlt_norm_sub_of_not_sameRay\na rfl [ rwlt_norm_sub_of_not_sameRay \n,symmrw.[\n ]h,lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay],",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "sup_himp_self_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply lt_norm_sub_of_not_sameRayval_one_eq_one_mod val_one_eq_one_mod, val_one_eq_one_mod, a lt_norm_sub_of_not_sameRay*a,symm[ span_union rwYoungDiagram\n\n   , , , lt_norm_sub_of_not_sameRay,, \u2190 lt_norm_sub_of_not_sameRay,].]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases b <  : >;< = >;b  ;>[bsimp bh lt_norm_sub_of_not_sameRay*  b\n>  simpsymmh\n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction b b b symm < |;  <\n> >>simp[  >[lt_norm_sub_of_not_sameRay *symm, not_gtlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaybsymm, ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases val_one_eq_one_mod b b (|\u27e8 , val_one_eq_one_mod\n   usingval_one_eq_one_modconvert\nlt_norm_sub_of_not_sameRay symmblt_norm_sub_of_not_sameRay\u27e9lt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay \n fun,lt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases with a b fun h <;b b\n>\nh  [*h, < h symm,*,] a symm_  ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine (lt_norm_sub_of_not_sameRay_ fun | a  a _ val_one_eq_one_mod simp ab?[]\n,, lt_norm_sub_of_not_sameRay   ,lt_norm_sub_of_not_sameRayval_one_eq_one_mod,_ .neg_le ]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine val_one_eq_one_mod b b_ a= val_one_eq_one_mod symm\n(\n lt_norm_sub_of_not_sameRaysymm |  (glt_norm_sub_of_not_sameRayb lt_norm_sub_of_not_sameRay=)symmspan_union  simpsymm  ) symm span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro\na , val_one_eq_one_mod, b,b lt_norm_sub_of_not_sameRayb ,,symm,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay[   \nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,, lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay,,, , ]]a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, \u2190 lt_norm_sub_of_not_sameRay a,,, b,Rlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay; a\n  blt_norm_sub_of_not_sameRay \n symm,  ] [,,] ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b, rfl s * a>val_one_eq_one_mod| a  ,b  ,blt_norm_sub_of_not_sameRay]   b lt_norm_sub_of_not_sameRay\n .exactsymmlt_norm_sub_of_not_sameRay\n,symm ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "smul_neg_iff_of_pos_left",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "by_cases lt_norm_sub_of_not_sameRay , g, := b a [ lt_norm_sub_of_not_sameRay halt_norm_sub_of_not_sameRay  ,span_union ,,.,, ,,.., ,,symm\n]lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod (g g g ha b )=:\n   lt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRay,b ,[ symmlt_norm_sub_of_not_sameRay] ha, lt_norm_sub_of_not_sameRaya]hasymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, g\u2190 ,\nlt_norm_sub_of_not_sameRayb]a \nglt_norm_sub_of_not_sameRay[ lt_norm_sub_of_not_sameRay , ha   lt_norm_sub_of_not_sameRay]   ,,symm,,] )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay,  val_one_eq_one_mod  b ,with hbsymm  FinsetR, ? ,\u2190lt_norm_sub_of_not_sameRay . hb,symm .Set,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ( hbsymm .lt_norm_sub_of_not_sameRay )\nR lt_norm_sub_of_not_sameRayha(lt_norm_sub_of_not_sameRayha hb ,lt_norm_sub_of_not_sameRay )   lt_norm_sub_of_not_sameRayspan_unionhb]( span_union hasymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b, ,symmlt_norm_sub_of_not_sameRay [ha,    ,R.halt_norm_sub_of_not_sameRay(,lt_norm_sub_of_not_sameRayha ], lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay)\n,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, gb g symm , Set lt_norm_sub_of_not_sameRayR.\n  lt_norm_sub_of_not_sameRayR ,symm symm]2span_union=\n,lt_norm_sub_of_not_sameRay  ,.\n  ,[ .]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay  ,, R,\n  , lt_norm_sub_of_not_sameRayRR span_union,,b ,  lt_norm_sub_of_not_sameRay ,,   ][,\nlt_norm_sub_of_not_sameRay]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRayhb.  (lt_norm_sub_of_not_sameRay: g g\n*.,,lt_norm_sub_of_not_sameRay  , halt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  [,  ,]]ha]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, Set, , lt_norm_sub_of_not_sameRay,ha,lt_norm_sub_of_not_sameRay ghb haat ]  hb,lt_norm_sub_of_not_sameRay,ha,,   .lt_norm_sub_of_not_sameRay  ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inf_eq_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "a bfun val_one_eq_one_mod b a b ,, 0 lt_norm_sub_of_not_sameRay[* b , YoungDiagram.lt_norm_sub_of_not_sameRay\nbspan_union hb lt_norm_sub_of_not_sameRay ,blt_norm_sub_of_not_sameRaysymmlt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction val_one_eq_one_mod b val_one_eq_one_mod\ncases val_one_eq_one_mod|<   ;>b|>,|. * rw [*bsymmval_one_eq_one_mod,  val_one_eq_one_mod  , lt_norm_sub_of_not_sameRay]][",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases b <b| b a\nb =val_one_eq_one_modb  ,symmb  ,hb ,val_one_eq_one_mod a  blt_norm_sub_of_not_sameRay* ,\n ][,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b, b]\nb | bsymmb,,   hbb *|  <., b\u2190* , val_one_eq_one_mod  symm],]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b, val_one_eq_one_mod,, b val_one_eq_one_mod. rw, bb,, a lt_norm_sub_of_not_sameRay  rw,,]\u2190[   ,  ,],\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b.b ,,  ,val_one_eq_one_mod ,\u27e9b aahb\u2190 val_one_eq_one_mod,,b   ], , abhb],rw\n],mul_lt_mul_iff_right",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay (val_one_eq_one_mod val_one_eq_one_mod.b |>] _\n| a * , rfllt_norm_sub_of_not_sameRayhb   |  bsymm  bb re\u2082\u2081\nh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, a, bb , val_one_eq_one_mod hb = b:bb   hb 1 (,lt_norm_sub_of_not_sameRay [\n  ]rwsymmlt_norm_sub_of_not_sameRay ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, \u2190 b]<symm simp> |;(\nb=b    a[ <;)symm]  ,ha,val_one_eq_one_mod*symmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod b b b b  <  ;>,  =*a _  h*b   b, b lt_norm_sub_of_not_sameRay ]symm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "vsub_sub_vsub_comm",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (val_one_eq_one_mod val_one_eq_one_modval_one_eq_one_modrw val_one_eq_one_mod lt_norm_sub_of_not_sameRay\nrw,lt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRay ,  \u2190lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay \n  \nlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,] lt_norm_sub_of_not_sameRay ,\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply lt_norm_sub_of_not_sameRay\nval_one_eq_one_mod val_one_eq_one_mod| : val_one_eq_one_mod  rw\n[ lt_norm_sub_of_not_sameRay.symm., ,_     lt_norm_sub_of_not_sameRay   , ;, symm]symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_norm_sub_of_not_sameRayval_one_eq_one_mod, val_one_eq_one_modval_one_eq_one_mod lt_norm_sub_of_not_sameRayval_one_eq_one_mod ,, rw lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay\n  [ , lt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay] lt_norm_sub_of_not_sameRay\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [val_one_eq_one_mod, val_one_eq_one_mod, :=|  lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\u2190,  ,1,  ,lt_norm_sub_of_not_sameRay ]simp \nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext val_one_eq_one_mod val_one_eq_one_mod with val_one_eq_one_mod\n>;< ) ( val_one_eq_one_modlt_norm_sub_of_not_sameRayval_one_eq_one_mod    \n  lt_norm_sub_of_not_sameRay, , ,.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,]\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine lt_norm_sub_of_not_sameRay val_one_eq_one_mod val_one_eq_one_mod () | _lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,,  ,\n   lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay,,  lt_norm_sub_of_not_sameRay  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, lt_norm_sub_of_not_sameRay (, lt_norm_sub_of_not_sameRay ),lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay]\nlt_norm_sub_of_not_sameRay [ \n\n lt_norm_sub_of_not_sameRay ) .lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  , lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay only   lt_norm_sub_of_not_sameRay,[  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay    , ,\n  ,,lt_norm_sub_of_not_sameRay, , ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, ]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay\n  alt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay    ,,\u2190 \n  derivative_X_pow,lt_norm_sub_of_not_sameRay simp] lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, val_one_eq_one_mod val_one_eq_one_mod(lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, . lt_norm_sub_of_not_sameRay]  lt_norm_sub_of_not_sameRay \n, lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay,, symmsymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "IsConjRoot.add_algebraMap",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (val_one_eq_one_mod lt_norm_sub_of_not_sameRay () lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,)..lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay exactlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.( lt_norm_sub_of_not_sameRay\nexact.    ()hsymm symmsymmspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay | ha ha lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay (using ... .lt_norm_sub_of_not_sameRayexact lt_norm_sub_of_not_sameRay  hlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay h  lt_norm_sub_of_not_sameRaysymm])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "by_cases lt_norm_sub_of_not_sameRay : hlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n   symmhlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n. apply ] span_union[rw ,lt_norm_sub_of_not_sameRay.  lt_norm_sub_of_not_sameRay, .h lt_norm_sub_of_not_sameRay]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert := lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay..lt_norm_sub_of_not_sameRay symm\nlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRayxspan_union \n[  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ? .. h,\n] symmsymmsymm.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert :=(.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay., \n span_union  : span_union  lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay x ,h].",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have :=: x.lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n=  \nexact,lt_norm_sub_of_not_sameRay\n    lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ]at  lt_norm_sub_of_not_sameRay2, \n .,symmexacthspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro \u27e8val_one_eq_one_mod:lt_norm_sub_of_not_sameRay, .lt_norm_sub_of_not_sameRay(  lt_norm_sub_of_not_sameRay\n )]=lt_norm_sub_of_not_sameRay . ) h((lt_norm_sub_of_not_sameRay exact  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  )symm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay (val_one_eq_one_mod.lt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay)\nx lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay x lt_norm_sub_of_not_sameRay.[ \n\n rw . ]   ,symm[\nh.lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8val_one_eq_one_mod, val_one_eq_one_mod\u27e9 : lt_norm_sub_of_not_sameRay.  (lt_norm_sub_of_not_sameRay  funlt_norm_sub_of_not_sameRay(  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n )[lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.h lt_norm_sub_of_not_sameRay.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases s lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay *(h   )_lt_norm_sub_of_not_sameRay (span_unionlt_norm_sub_of_not_sameRay.   lt_norm_sub_of_not_sameRayxlt_norm_sub_of_not_sameRay   _span_union\nlt_norm_sub_of_not_sameRay,symmh,[  using]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "List.nil_bagInter",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "by_cases rintro |rfl>.0 ?lt_norm_sub_of_not_sameRay _ ?lt_norm_sub_of_not_sameRay<, \u2190 ,lt_norm_sub_of_not_sameRay:.  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay, symmlt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay\napply\n ,lt_norm_sub_of_not_sameRay]\nsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay 0= 0  lt_norm_sub_of_not_sameRayFinset.lt_norm_sub_of_not_sameRaysymm  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay,\n[]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,\n\n ]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay with \u27e8lt_norm_sub_of_not_sameRay,  Rlt_norm_sub_of_not_sameRay>lt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRay \u27e9rw\n,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRay ,\n lt_norm_sub_of_not_sameRay,.symm.. ]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nsimp y lt_norm_sub_of_not_sameRay [?, [lt_norm_sub_of_not_sameRaysimp\nonly ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay ,h lt_norm_sub_of_not_sameRay\n\nlt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay[]] ,hlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nintro lt_norm_sub_of_not_sameRayspan_union\nsimp R lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay (.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n.lt_norm_sub_of_not_sameRay) exact]\n; .lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay * simp\nsymm [\n]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay   [symmlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay \n  simpsymm,.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysymm.lt_norm_sub_of_not_sameRay,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay_fun ?_: _lt_norm_sub_of_not_sameRay[\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay ? fun 0symm, . lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay \nlt_norm_sub_of_not_sameRay]symmlt_norm_sub_of_not_sameRaysymmsimplt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay with lt_norm_sub_of_not_sameRay\nsimp?, [ lt_norm_sub_of_not_sameRaysymmlt_norm_sub_of_not_sameRaycases,,\u2190\nlt_norm_sub_of_not_sameRay.  convert lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.,.]  lt_norm_sub_of_not_sameRay\n symmlt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have lt_norm_sub_of_not_sameRay :? val_one_eq_one_mod.Rlt_norm_sub_of_not_sameRay rfl rw\nlt_norm_sub_of_not_sameRay [\nsymmsymm.symm ?]lt_norm_sub_of_not_sameRay \n lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay (simplt_norm_sub_of_not_sameRay.  symm.)symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay convert\nwith\nsymm lt_norm_sub_of_not_sameRay.[ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay\n(.[\u2190  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay),symmlt_norm_sub_of_not_sameRay ]lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SignType.pos_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay val_one_eq_one_mod a lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, with\n,,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\u27e9   lt_norm_sub_of_not_sameRay, ., ,,hlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ lt_norm_sub_of_not_sameRaya using val_one_eq_one_mod ( lt_norm_sub_of_not_sameRay,)lt_norm_sub_of_not_sameRay * only\nlt_norm_sub_of_not_sameRaysimp][g  \nlt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay _)2  lt_norm_sub_of_not_sameRay, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [a]\nrwa [val_one_eq_one_moda ,.*0< symm Finset PreservesSheafification  val_one_eq_one_mod,  ,*a val_one_eq_one_mod,  , val_one_eq_one_modlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay re\u2082\u2081]a",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay symmlt_norm_sub_of_not_sameRay val_one_eq_one_mod\n\u2190.*\nh [ rw lt_norm_sub_of_not_sameRay\nNatsymm*lt_norm_sub_of_not_sameRay[  1  >lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRaywith ]\nlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay,  a(hbh) ,val_one_eq_one_modval_one_eq_one_mod\n   , * :,hlt_norm_sub_of_not_sameRay  ,]lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay   ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRay,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay =\nlt_norm_sub_of_not_sameRay simp\nrwlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay symm   lt_norm_sub_of_not_sameRaysymmlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay alt_norm_sub_of_not_sameRay .\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [simp[symmha]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, a g\n val_one_eq_one_mod  > val_one_eq_one_mod0b  ,lt_norm_sub_of_not_sameRay*|lt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay h_  lt_norm_sub_of_not_sameRaysymmre\u2082\u2081lt_norm_sub_of_not_sameRay[ ,\u27e9]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay,  0hb| symmFinsetsymm  a hbFinset( a,lt_norm_sub_of_not_sameRay, . ..., lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRayNat]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay.LowerSemicontinuousOn, lt_norm_sub_of_not_sameRay.hbg.Finsethb, ,.g.  Finset,ahb  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysimplt_norm_sub_of_not_sameRay\n.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay symm, lt_norm_sub_of_not_sameRay a,a\n]lt_norm_sub_of_not_sameRay\nsymm ,h\nsymmh.lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay1\nlt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRay,.symmsymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "mul_left_comm",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rcases c withval_one_eq_one_modb , b b b lt_norm_sub_of_not_sameRay = c .*\nb, (, , blt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay )b  ,symm\u27e9]val_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b, b, val_one_eq_one_mod ,.c,bc ,a , lt_norm_sub_of_not_sameRay, ,, ,[lt_norm_sub_of_not_sameRay b , ,,\n\n,]],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b.lt_norm_sub_of_not_sameRay.b,   bc  .a ( c b c\nval_one_eq_one_mod  lt_norm_sub_of_not_sameRay *]lt_norm_sub_of_not_sameRay  c| )bb",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, ,lt_norm_sub_of_not_sameRayYoungDiagram ,,b ,  ,\n  \n]b, [ ,. val_one_eq_one_mod\nFinsetlt_norm_sub_of_not_sameRay , _lt_norm_sub_of_not_sameRay,,,,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, c c,  , _hbb c*  ,.\ncab, , lt_norm_sub_of_not_sameRay]simp ,[\n simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, * c cwithb, a  b0,lt_norm_sub_of_not_sameRay b fun,hb lt_norm_sub_of_not_sameRay Set.lt_norm_sub_of_not_sameRay ,b] lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, , b, b  ,b.c ,  ,  _ s,. ,b, , s,\n,[lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, , lt_norm_sub_of_not_sameRay,val_one_eq_one_modb c _ b, ],,\nconly[ lt_norm_sub_of_not_sameRay ,b[ c],, , ,Nat]]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ,, ,symm\u2190 \u2190cval_one_eq_one_mod ]\n , Finsetb, .,[ FinsetFinset ,  ,, ]],\n,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, _ a b, *  ,lt_norm_sub_of_not_sameRayb  c Finsetb c, ,,symmc ,b,  ,neg_le ,a ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "LocallyLipschitz.mul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert  hf fun ( hfrflSet.x | lt_norm_sub_of_not_sameRay [\nlt_norm_sub_of_not_sameRay  .lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaysymm) ,lt_norm_sub_of_not_sameRay ((  n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert (x).lt_norm_sub_of_not_sameRay hf.using\n=   lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay)slt_norm_sub_of_not_sameRay.> x hfhflt_norm_sub_of_not_sameRay funlt_norm_sub_of_not_sameRay  (lt_norm_sub_of_not_sameRay )lt_norm_sub_of_not_sameRay]Set\nhfx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x\nlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay [ symm (   (lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay x x(hf)symm xlt_norm_sub_of_not_sameRay hf1  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.symm] .)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x [lt_norm_sub_of_not_sameRay x, lt_norm_sub_of_not_sameRay.with.x lt_norm_sub_of_not_sameRay [\nf\n  hflt_norm_sub_of_not_sameRay] symm lt_norm_sub_of_not_sameRay, ,  lt_norm_sub_of_not_sameRay symmhf. lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayhf]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "f  _\nexact b .| .  ?.symm lt_norm_sub_of_not_sameRay fun  (hf lt_norm_sub_of_not_sameRay..Finsetspan_unionspan_union _lt_norm_sub_of_not_sameRay usinghfsymm.)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro\nexact ?\nlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay * lt_norm_sub_of_not_sameRay\n) hf.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay _ , x  \n ,[lt_norm_sub_of_not_sameRayx(  lt_norm_sub_of_not_sameRaysymm)]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases x with val_one_eq_one_mod lt_norm_sub_of_not_sameRay [ lt_norm_sub_of_not_sameRay symm\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay _ a lt_norm_sub_of_not_sameRay]symm.symm  lt_norm_sub_of_not_sameRay\nexactspan_unionlt_norm_sub_of_not_sameRay. hx, symm hfhglt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine x lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.apply\nlt_norm_sub_of_not_sameRay symm lt_norm_sub_of_not_sameRay symm\n. .lt_norm_sub_of_not_sameRay( \nexact x  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  x) xspan_unionlt_norm_sub_of_not_sameRay\n, )]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.symmsymm lt_norm_sub_of_not_sameRay.? lt_norm_sub_of_not_sameRay.hf\nlt_norm_sub_of_not_sameRay _ <.f.with hasymm. hahahaha  n](symm )symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRayhf lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay f hf lt_norm_sub_of_not_sameRay with\nobtainlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay  |lt_norm_sub_of_not_sameRay hfx  ,\nsymm ,span_union  \nhfsymmlt_norm_sub_of_not_sameRay].",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "dotProduct_sub",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (lt_norm_sub_of_not_sameRay\n? lt_norm_sub_of_not_sameRay>  [span_unionrfl _  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.using)lt_norm_sub_of_not_sameRay span_union lt_norm_sub_of_not_sameRay  . lt_norm_sub_of_not_sameRay [simp\nlt_norm_sub_of_not_sameRay \n]]Setlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply lt_norm_sub_of_not_sameRay> ?* symm\nsimp only [? * \nsimplt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay,.[ .,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay] ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases i ?\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,(lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay \nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRaysimp\n ],  ][lt_norm_sub_of_not_sameRay,.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nrw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay]hb.lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay simplt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay [ lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay,,,,    \u2190  ],,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay\nfun with with span_union|lt_norm_sub_of_not_sameRay * , span_union,lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n ]  lt_norm_sub_of_not_sameRaysimp\nsimp;. symmlt_norm_sub_of_not_sameRay. .,[ lt_norm_sub_of_not_sameRay ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay\nrw [lt_norm_sub_of_not_sameRay, hb]\n.lt_norm_sub_of_not_sameRayofUnitHom, [ lt_norm_sub_of_not_sameRay \u27e8 , lt_norm_sub_of_not_sameRay,.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,.]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext \u27e8\nlt_norm_sub_of_not_sameRay i lt_norm_sub_of_not_sameRay? \n,lt_norm_sub_of_not_sameRayrw.[ lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,\nlt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay\n  \u27e9.lt_norm_sub_of_not_sameRay,,  .\n] lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction\nsimp only [ <>  > _;  ( simplt_norm_sub_of_not_sameRaywith*,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay    ]<    span_union span_unionspan_unionlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro lt_norm_sub_of_not_sameRay [val_one_eq_one_mod]\nlt_norm_sub_of_not_sameRay \u2190 lt_norm_sub_of_not_sameRay s., \u2190 lt_norm_sub_of_not_sameRay?lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay_,lt_norm_sub_of_not_sameRay. lt_norm_sub_of_not_sameRayspan_union  lt_norm_sub_of_not_sameRay], lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ? \u27e8? ??\u27e9\nspan_union lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay \n lt_norm_sub_of_not_sameRayspan_union simp\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay[,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "AddCommGroup.ModEq.trans",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply a | b p p\np a p a p   ,ppp,,p  pa  ppp\n] \nsimp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert b with p, :b0p   =: aspan_union p b p ;  ,,span_unionpb,p  pp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert p a p p\np p simpp[ ,   p,p  pp ,p, , p pp]\n ppp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "p [\u2190 p, p, p  p,, , p\u2190p.p  , , pppFinsetp,,p  ,p]p",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases [lt_norm_sub_of_not_sameRay]\np p p| _,   pp\u2190\n  ]bpp[\npp pp,  ,p \nppp]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases n p simp\nb [ \u2190 ,,  pp   ] p,( p .)pp,pp , pp ]p",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases p\nwith with a n p withp, p,p p ,pp  simp  [].\n]pp\n[\np]p",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases p a (val_one_eq_one_mod b ap) | rw\np pp ,[,  p,p\u2190  ,b]psimpa\n  p p",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b , b, p]p   rw [\np, p]p Natsymmrw\n .pp  hpsymmp][p]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay  , p p,   pp.:(p p p p [\np)p [p  p,pa]pp]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Cardinal.ciSup_mul_ciSup",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply \u27e8val_one_eq_one_mod lt_norm_sub_of_not_sameRay i lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay i lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay i.lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\n[ [\nsimp ]\u27e9\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysimp  lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert  val_one_eq_one_mod  ?\nlt_norm_sub_of_not_sameRay >* [lt_norm_sub_of_not_sameRay rw\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay \n( lt_norm_sub_of_not_sameRay . lt_norm_sub_of_not_sameRay< lt_norm_sub_of_not_sameRay, \nspan_unionlt_norm_sub_of_not_sameRay) span_union _simpf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp\nlt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay ,] \nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayi . \n _i_( lt_norm_sub_of_not_sameRay ).lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,,]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [val_one_eq_one_mod, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRayf  _\n lt_norm_sub_of_not_sameRay\n\nlt_norm_sub_of_not_sameRay, ,] lt_norm_sub_of_not_sameRay [ _lt_norm_sub_of_not_sameRay,.lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]  _ lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp only [lt_norm_sub_of_not_sameRay, span_union, fdsimp,lt_norm_sub_of_not_sameRay  span_unionspan_union\u27e8  ,\u27e8,.Finsetspan_unionspan_union.  ]\n,span_union\u27e9,, \u27e9\u27e9span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have i : lt_norm_sub_of_not_sameRay (_= )?lt_norm_sub_of_not_sameRay  .lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay simp i\nlt_norm_sub_of_not_sameRay,_\n ,\nlt_norm_sub_of_not_sameRay\n  [ lt_norm_sub_of_not_sameRay,] lt_norm_sub_of_not_sameRay] span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases val_one_eq_one_mod> i ?val_one_eq_one_mod i , lt_norm_sub_of_not_sameRay\n  ,,.. lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay?lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRayexact \n ] lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRayval_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8val_one_eq_one_mod, lt_norm_sub_of_not_sameRay\u27e9val_one_eq_one_mod\nval_one_eq_one_mod\nonly span_union lt_norm_sub_of_not_sameRay ?.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n  \n\n lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay \nspan_union lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay [ lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, val_one_eq_one_mod< _ _fun> \u27e8\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay_<exact span_unionspan_union ]val_one_eq_one_mod   \n_val_one_eq_one_mod span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\u2190 ,lt_norm_sub_of_not_sameRay ,]lt_norm_sub_of_not_sameRayi>lt_norm_sub_of_not_sameRay ?   (   _ lt_norm_sub_of_not_sameRayi> lt_norm_sub_of_not_sameRayval_one_eq_one_mod, lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay])",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "FiniteMultiplicity.one_right",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply ha <lt_norm_sub_of_not_sameRayval_one_eq_one_mod > [  lt_norm_sub_of_not_sameRay  symm\nlt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay rwalt_norm_sub_of_not_sameRay *[ rwasymm,. simplt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayhasymm lt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRayhalt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_norm_sub_of_not_sameRay ?val_one_eq_one_mod val_one_eq_one_mod.haval_one_eq_one_mod symm\nlt_norm_sub_of_not_sameRay\nsimp lt_norm_sub_of_not_sameRay [ ,,lt_norm_sub_of_not_sameRay\nha,  \nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayha,lt_norm_sub_of_not_sameRay\n].simp",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert rwlt_norm_sub_of_not_sameRay[lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, val_one_eq_one_mod val_one_eq_one_mod, ,]ha.hb,hbwith lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaysymm,.\n  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]symmlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine lt_norm_sub_of_not_sameRay\nrefine lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay _?rw\n][lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay symm\n] [lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay,.] lt_norm_sub_of_not_sameRayha\n,.symm,lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [0lt_norm_sub_of_not_sameRayval_one_eq_one_mod, ha, lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay0.symm.,\n,lt_norm_sub_of_not_sameRay. ] , lt_norm_sub_of_not_sameRay\n=lt_norm_sub_of_not_sameRay haa,[simp  lt_norm_sub_of_not_sameRay ,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  hahahblt_norm_sub_of_not_sameRay hb ha, _lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay hb lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay ha\nlt_norm_sub_of_not_sameRay  span_union lt_norm_sub_of_not_sameRayexactsymm symmlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, 0] at(| ha a lt_norm_sub_of_not_sameRay ( [ ) ,lt_norm_sub_of_not_sameRay   span_union )  ,,a,]lt_norm_sub_of_not_sameRay\u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod]\n* [symm.lt_norm_sub_of_not_sameRay val_one_eq_one_mod   aha,  =simp symmlt_norm_sub_of_not_sameRay symm]\nlt_norm_sub_of_not_sameRaysymm.lt_norm_sub_of_not_sameRay[ .,,symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod] val_one_eq_one_mod\nha lt_norm_sub_of_not_sameRay (( |neg_le\nha lt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRaysymm lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRayrcases  hasymm(),symmsymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, ha hb]ha haFinset  span_union*ha R 0 \u2190 rwaha, Finsetspan_unionfunhaha,   halt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm,]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "inv_lt'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply val_one_eq_one_mod a\nval_one_eq_one_mod ( hb.symm lt_norm_sub_of_not_sameRay )lt_norm_sub_of_not_sameRay b rw symm b lt_norm_sub_of_not_sameRay ]=[ \n  lt_norm_sub_of_not_sameRayspan_unionlt_norm_sub_of_not_sameRay<lt_norm_sub_of_not_sameRaysymm ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert val_one_eq_one_mod  ? a bsymm >rw val_one_eq_one_mod\n,\n? lt_norm_sub_of_not_sameRay ?\u2190b, )lt_norm_sub_of_not_sameRay   \n,[\nlt_norm_sub_of_not_sameRay  ],lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain h=: symm\n  =(:val_one_eq_one_mod[ [ a(b ) b lt_norm_sub_of_not_sameRay)(lt_norm_sub_of_not_sameRaysymm]   .lt_norm_sub_of_not_sameRaysymm\n\n[lt_norm_sub_of_not_sameRaysymm]symm lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8val_one_eq_one_mod, \u2190[\n: Finset b a,Set., slt_norm_sub_of_not_sameRay|,\n  lt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay.symmlt_norm_sub_of_not_sameRay \n  .,lt_norm_sub_of_not_sameRay.symm,,lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ , \u2190 b]\nha lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay , [ lt_norm_sub_of_not_sameRay , g s, .lt_norm_sub_of_not_sameRay,,lt_norm_sub_of_not_sameRaysymm,symm.symmsymmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, val_one_eq_one_mod lt_norm_sub_of_not_sameRay, c\n   _., span_unionlt_norm_sub_of_not_sameRay   aalt_norm_sub_of_not_sameRay.\u2190,,,symm symm\u2190 , , \u2190 ,symm]span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [, \u2190 , lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ,,   lt_norm_sub_of_not_sameRay\u2190.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n  ,lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay span_union,rwa, .symm ],",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.b  blt_norm_sub_of_not_sameRaysymm , ,,   lt_norm_sub_of_not_sameRay **\u2190lt_norm_sub_of_not_sameRayb, lt_norm_sub_of_not_sameRay  ,.lt_norm_sub_of_not_sameRaysymm,, ] symm]h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b]val_one_eq_one_mod.Set  ,val_one_eq_one_modb, ,lt_norm_sub_of_not_sameRay\u2190\n  lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay\u2190.Set lt_norm_sub_of_not_sameRay\n,lt_norm_sub_of_not_sameRay \n\u2190 [ , lt_norm_sub_of_not_sameRay]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, bb ,a glt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n[ b  ,lt_norm_sub_of_not_sameRay , lt_norm_sub_of_not_sameRay] ,[.,\u2190.\n ,symm ,symm]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "le_max_of_sq_le_mul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert a ( val_one_eq_one_mod rfl symm val_one_eq_one_mod \u27e8 *.)val_one_eq_one_mod usinglt_norm_sub_of_not_sameRay)(a b . lt_norm_sub_of_not_sameRay\nhsimpa\nsymm\nexact. [ lt_norm_sub_of_not_sameRaysymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert b | bval_one_eq_one_mod b\n\n :bval_one_eq_one_mod  : symm\nh. lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  \nhat lt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay. symm)span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert \u27e8val_one_eq_one_mod val_one_eq_one_mod. hbval_one_eq_one_mod b ( symm symm\n\nsymm.] hb  cb .lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayspan_union lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay )(   symm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have := b b ()lt_norm_sub_of_not_sameRayval_one_eq_one_mod _ exact *\nlt_norm_sub_of_not_sameRay\n b 1hlt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay h  ( lt_norm_sub_of_not_sameRayhlt_norm_sub_of_not_sameRay) symm h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have :=:  bval_one_eq_one_mod g.symm (bc) symm :val_one_eq_one_mod )\nh symm   usinghlt_norm_sub_of_not_sameRay simpa  .symmlt_norm_sub_of_not_sameRaysymm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, h, h ]c) c b.\u2190.hb ( lt_norm_sub_of_not_sameRay 2,  ,clt_norm_sub_of_not_sameRay,,.a symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, val_one_eq_one_mod val_one_eq_one_mod symm\nrw ]\n[ lt_norm_sub_of_not_sameRayc symmh]  \n= exact.  , lt_norm_sub_of_not_sameRay symm\n.,symmsymmsymm.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, \u2190 b *, b b= .lt_norm_sub_of_not_sameRayrwab  a  YoungDiagram bsymm\nphexactlt_norm_sub_of_not_sameRay.span_union h symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay]\nb h *.  * b]\n lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [  lt_norm_sub_of_not_sameRay  hsymm with   ] symmh hh symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod lt_norm_sub_of_not_sameRay]\n* hb =lt_norm_sub_of_not_sameRay\nhb     h]\nsimpa   are\u2082\u2081with.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [with withsymmhaah]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "sdiff_le_iff'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "dsimp [val_one_eq_one_mod]\nbsymm b [val_one_eq_one_mod.( , b),b  .alt_norm_sub_of_not_sameRayc\n    lt_norm_sub_of_not_sameRay_val_one_eq_one_mod  lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay] ,.\u27e9symm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8val_one_eq_one_mod, a: := val_one_eq_one_mod b b\nsimp  ,,hb ( bclt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay,,) lt_norm_sub_of_not_sameRay, .\u27e9  ]lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [bval_one_eq_one_mod,.val_one_eq_one_mod c\n]  \nc lt_norm_sub_of_not_sameRay ?blt_norm_sub_of_not_sameRay   blt_norm_sub_of_not_sameRay exact\n lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay Finset> lt_norm_sub_of_not_sameRay,,lt_norm_sub_of_not_sameRaysymm ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, Finset \u2190  val_one_eq_one_mod, val_one_eq_one_mod bca span_unionval_one_eq_one_mod, b \u2190,Finset    lt_norm_sub_of_not_sameRay,] b,,, symm]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b\n] val_one_eq_one_mod c Finset>b   b lt_norm_sub_of_not_sameRayclt_norm_sub_of_not_sameRay [val_one_eq_one_mod>,\u2190rwalt_norm_sub_of_not_sameRay\u2190\n   simpsymmb]\nsymmlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, bb hb]c\nval_one_eq_one_mod using lt_norm_sub_of_not_sameRay bsimp , c ,c[   Finset lt_norm_sub_of_not_sameRay,,lt_norm_sub_of_not_sameRayb,  ], ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, val_one_eq_one_mod  b \u2190  ,b\u2190lt_norm_sub_of_not_sameRay  span_union\u2190\n  :\u2190, Set   s,Finset]\n, ,Finset ]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, val_one_eq_one_mod symm, c lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n,lt_norm_sub_of_not_sameRay  simp abha c cFinset, ,,lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay]a ,lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, \u2190 lt_norm_sub_of_not_sameRay, \u2190 \u2190, \u2190 Finsetlt_norm_sub_of_not_sameRay\n]a lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaya\n,.\n,  ,slt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay,,]using",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, \u2190 lt_norm_sub_of_not_sameRay.b, b b  bb ,lt_norm_sub_of_not_sameRayc , ,,lt_norm_sub_of_not_sameRay\u27e8,val_one_eq_one_modlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay symm\n  , ,val_one_eq_one_modlt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "emultiplicity_map_eq",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert\nexact lt_norm_sub_of_not_sameRay.b Set symm =val_one_eq_one_mod 2 val_one_eq_one_mod lt_norm_sub_of_not_sameRay  a= , [,> lt_norm_sub_of_not_sameRay hb,at ] ,symm\n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext a  a, b val_one_eq_one_mod b.exact\n] lt_norm_sub_of_not_sameRay\nb   symm lt_norm_sub_of_not_sameRay asymma  \nhsymm .withlt_norm_sub_of_not_sameRayhsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay with a symm <lt_norm_sub_of_not_sameRay>;simp a lt_norm_sub_of_not_sameRay * [ with\n*]lt_norm_sub_of_not_sameRaywith,   lt_norm_sub_of_not_sameRay  span_unionh,] symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain lt_norm_sub_of_not_sameRay = :b :val_one_eq_one_mod f = ? lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaywithrfl\nsymm |with.h   symm, symm,] f[symm ]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases f <val_one_eq_one_mod[, lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay val_one_eq_one_mod a.lt_norm_sub_of_not_sameRay , [ a lt_norm_sub_of_not_sameRayFinsetlt_norm_sub_of_not_sameRay .   val_one_eq_one_mod lt_norm_sub_of_not_sameRay,,symm\n: ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine  b_ ?*val_one_eq_one_mod,?\n  ? only lt_norm_sub_of_not_sameRay\n[ lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n.  , \nlt_norm_sub_of_not_sameRayspan_union][lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw []val_one_eq_one_modg\n* with\nlt_norm_sub_of_not_sameRay [ *\n,,haf   _ ? ,   .lt_norm_sub_of_not_sameRaysymm(,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ])  \u27e9",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, symm, p a   haFinsetfun >.symm ()f fwithFinset,symm lt_norm_sub_of_not_sameRay.. ,fsymm ]p]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, val_one_eq_one_mod, , lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay 2ofUnitHom ,\n] a symm  Finset,   .f  ,=[ simpa,,symm]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.val_one_eq_one_mod, *, ] at b\nhb lt_norm_sub_of_not_sameRay\n[\u2190*\n  ]lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay  g \u2190   ,a,",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "mul_lt_iff_lt_one_right'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [ lt_norm_sub_of_not_sameRay,, b, b ,.b\n  b g  \n b,,Set  ] b1,val_one_eq_one_modb   Finset,symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b, \u2190 val_one_eq_one_mod, =:val_one_eq_one_mod (val_one_eq_one_mod = = lt_norm_sub_of_not_sameRay [lt_norm_sub_of_not_sameRayaba,, lt_norm_sub_of_not_sameRay ,)symm, h symm ]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay,   , , [b\u2190 lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay[,, lt_norm_sub_of_not_sameRayb ,\u2190 b.,\n  lt_norm_sub_of_not_sameRay,\n   lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay,  symm:b,.val_one_eq_one_mod lt_norm_sub_of_not_sameRay. symmbblt_norm_sub_of_not_sameRaybsymm,],\nb .  2 symm\n,,lt_norm_sub_of_not_sameRay.symmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b, b , YoungDiagram.Nat lt_norm_sub_of_not_sameRay ,,b [  b   bhab ],,, lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b, b, ,.bbb  *.,    ,,lt_norm_sub_of_not_sameRaya, ,symm  ]symm]lt_norm_sub_of_not_sameRaybb)b",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, b, val_one_eq_one_mod, a ( symm lt_norm_sub_of_not_sameRay>bsymmlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay g b   =b ,lt_norm_sub_of_not_sameRayb  , lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay, _, b]\nb [bonly ,b\u2190 .,lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay,b,, ,,  ],lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay.?,]b   ,\n   .val_one_eq_one_mod,,lt_norm_sub_of_not_sameRayFinset symm  , lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay ,,,, \u2190 \n  ,,]\nh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod, b\n  symm.b, val_one_eq_one_mod (bb).]\nhb  \na , symmlt_norm_sub_of_not_sameRayab .symmlt_norm_sub_of_not_sameRaysimp\n symm[]symm]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "MulRingNorm.isPowMul",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "by_cases :=:  val_one_eq_one_mod.lt_norm_sub_of_not_sameRay =: lt_norm_sub_of_not_sameRay.   lt_norm_sub_of_not_sameRay\n,\nexactlt_norm_sub_of_not_sameRay    ]lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay   ,,  , lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases n\nrw [lt_norm_sub_of_not_sameRay, \u2190 lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm  Finset at\n] [    f \n].    ,,,exact ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert\nsimp with\nlt_norm_sub_of_not_sameRay with  lt_norm_sub_of_not_sameRay,  x[, symm lt_norm_sub_of_not_sameRay., lt_norm_sub_of_not_sameRayrw\n.\n   (]   lt_norm_sub_of_not_sameRay,)n\nn]ChooseBasisIndex",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert : nval_one_eq_one_mod val_one_eq_one_mod]\nexpect fun 0 *._\nval_one_eq_one_mod exact\n[ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay flt_norm_sub_of_not_sameRay_ ( ]\u2190 simp)lt_norm_sub_of_not_sameRay  using",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [val_one_eq_one_mod]\nsymm R( IsIntegral lt_norm_sub_of_not_sameRay\nf lt_norm_sub_of_not_sameRayx ha.)symm ,(  _)      lt_norm_sub_of_not_sameRay .s) symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp only [lt_norm_sub_of_not_sameRay, ] * lt_norm_sub_of_not_sameRay\n* , ,n rfl,.\n_Finsetlt_norm_sub_of_not_sameRay.n;  ,n]  ,[ ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro val_one_eq_one_mod b  val_one_eq_one_mod.0  ,lt_norm_sub_of_not_sameRayha *\n lt_norm_sub_of_not_sameRay  0 n  lt_norm_sub_of_not_sameRay |span_union < symm ( lt_norm_sub_of_not_sameRayspan_union   span_union])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ n symm*g,  ,.rintro   (n (,)slt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,(\nspan_union lt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [.lt_norm_sub_of_not_sameRay, val_one_eq_one_mod, ] simp\nlt_norm_sub_of_not_sameRay ]\nsimp\n \nlt_norm_sub_of_not_sameRay[lt_norm_sub_of_not_sameRay rw\n Finset [ ,, lt_norm_sub_of_not_sameRay,.,,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, \u2190 , f    lt_norm_sub_of_not_sameRay ,0val_one_eq_one_mod\n  halt_norm_sub_of_not_sameRay,\nha ,lt_norm_sub_of_not_sameRay  Finset.],",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "ContinuousMultilinearMap.le_mul_prod_of_opNorm_le_of_le",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "( usingval_one_eq_one_mod.lt_norm_sub_of_not_sameRay. val_one_eq_one_mod (ha lt_norm_sub_of_not_sameRay  )_ ( lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay_i )  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayi\nb ,  span_unionspan_unionspan_union]\nspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply (val_one_eq_one_modi  lt_norm_sub_of_not_sameRay  i ? )lt_norm_sub_of_not_sameRay i f.b i\n\n( lt_norm_sub_of_not_sameRayexact. )lt_norm_sub_of_not_sameRay (lt_norm_sub_of_not_sameRayiusing)symm )span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "by_cases :  ? i(ival_one_eq_one_mod i val_one_eq_one_mod i i\nlt_norm_sub_of_not_sameRay   i )[  \u2190lt_norm_sub_of_not_sameRay  ,span_unioni. ] span_unionfspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp only [lt_norm_sub_of_not_sameRay._ i(  ] _lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay  YoungDiagram=\nlt_norm_sub_of_not_sameRay. val_one_eq_one_mod i\n  span_union   span_unionspan_unionval_one_eq_one_modsymmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine (fun symmval_one_eq_one_mod NonUnitalAlgHom symm val_one_eq_one_mod _ symm.i lt_norm_sub_of_not_sameRay neg_le span_union lt_norm_sub_of_not_sameRay.  (symmi(   val_one_eq_one_modspan_union) symm)LowerSemicontinuousOn",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine :val_one_eq_one_mod.flt_norm_sub_of_not_sameRay(val_one_eq_one_mod  lt_norm_sub_of_not_sameRay  val_one_eq_one_mod_lt_norm_sub_of_not_sameRay\nwith exact_ _  \n   _(__ , .exact,.symmval_one_eq_one_mod",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine lt_norm_sub_of_not_sameRay val_one_eq_one_mod\nval_one_eq_one_mod NonUnitalAlgHom span_union\nval_one_eq_one_mod ( symm _   span_union _(neg_le span_union_ _   span_union.,().symm _",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod ((lt_norm_sub_of_not_sameRay)lt_norm_sub_of_not_sameRay f\n_lt_norm_sub_of_not_sameRay\n _:  span_union span_union. span_union i   ]span_union  span_union )",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod]\nrefine 1 val_one_eq_one_mod only lt_norm_sub_of_not_sameRay.i\n[]lt_norm_sub_of_not_sameRay_.()(val_one_eq_one_mod (  .lt_norm_sub_of_not_sameRay ]) ) isymm symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod] at  f ( \u2190 lt_norm_sub_of_not_sameRay.i)val_one_eq_one_mod. span_union\nlt_norm_sub_of_not_sameRay exact span_union    ()span_union.span_union.span_union",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "le_map_inv_iff",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay b, symm, symm , . ,,,, \u2190\n  lt_norm_sub_of_not_sameRay \n ,,\u2190  ,lt_norm_sub_of_not_sameRay b,lt_norm_sub_of_not_sameRay,\n ,simp]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, val_one_eq_one_mod symm, symm,\n  \u2190 symmlt_norm_sub_of_not_sameRay .,, . .\n ,alt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm, .val_one_eq_one_mod .,,lt_norm_sub_of_not_sameRay symm ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay]\nrefine  [,lt_norm_sub_of_not_sameRayval_one_eq_one_mod  .g=lt_norm_sub_of_not_sameRay g ( using lt_norm_sub_of_not_sameRay)  with _\n[simp b, lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod  val_one_eq_one_mod g f\u2190\n] |\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ? lt_norm_sub_of_not_sameRay \nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay symm[a,lt_norm_sub_of_not_sameRay  simp\n ]symmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod, val_one_eq_one_mod | 0 , _ ]\nlt_norm_sub_of_not_sameRay [ \u2190\n lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay],lt_norm_sub_of_not_sameRay.,  lt_norm_sub_of_not_sameRay ] symm, ,",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod].val_one_eq_one_mod val_one_eq_one_mod .g(_ fun | a\n   hlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  , lt_norm_sub_of_not_sameRay\n simp, , [symm, symm]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 fval_one_eq_one_mod val_one_eq_one_mod.symm= , .symm lt_norm_sub_of_not_sameRay ,symm\u2190 ,  .\u2190\n [ lt_norm_sub_of_not_sameRay, ],symm,,symm. symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay ?, g.lt_norm_sub_of_not_sameRay]\nlt_norm_sub_of_not_sameRay [\u27e9simp)   ,, ,alt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay \u2190 .,lt_norm_sub_of_not_sameRay2 ,,2. symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay val_one_eq_one_mod\n\u2190 ] val_one_eq_one_mod,  [b lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRayspan_union lt_norm_sub_of_not_sameRay,,\n  ,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay]symm ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190 lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRay., = YoungDiagram   _,span_unionFinset, [ \u2190 ,,,\u2190lt_norm_sub_of_not_sameRay  , ,], lt_norm_sub_of_not_sameRay]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "pow_add_pow_le'",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply ha val_one_eq_one_mod | | | rwa\n| b ha;  <n0 ()a\n * \n  |* exactsymm|,  symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert ( :val_one_eq_one_mod symmsymm\n\nsymm\nNat * symm b  R) ,( hbspan_union symm R . span_unionval_one_eq_one_mod  symm)symmsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert (val_one_eq_one_mod val_one_eq_one_mod b b) b\nsymm.hbval_one_eq_one_modexact val_one_eq_one_mod a]with\n \n[  Natatval_one_eq_one_mod symm ha .symmval_one_eq_one_mod)ha]]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert b using *  hbhb ( |nsymm  )val_one_eq_one_modsymm[hb     val_one_eq_one_mod\nlt_norm_sub_of_not_sameRay  symm]lt_norm_sub_of_not_sameRay (val_one_eq_one_mod\nspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert n using val_one_eq_one_mod symm ()a ) hb hn rintro\n* * ,,b symm (  val_one_eq_one_mod han_symm  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert n | b symm hb *Finset :    ,hb,_   0( | ha\nval_one_eq_one_modval_one_eq_one_modsymm)symm   )bha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert val_one_eq_one_mod [val_one_eq_one_mod] simpa using (  hb ) a symm * Finset bRval_one_eq_one_mod.R  ()\nval_one_eq_one_modsimpa   )symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert val_one_eq_one_mod with  b:  < 0* simpa\n b*[    ( symmsymm h( ) symmasymmsymm) symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rintro \u27e8val_one_eq_one_modg with * val_one_eq_one_mod )  (|  exactRRsymm( n _ symm\n val_one_eq_one_mod\nsymm )( ) hasymm symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod] R\nb hb | *  , bnR \nsymmn symm,   ( *bsymm symmsymmsymm) ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Codisjoint.map_orderIso",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases lt_norm_sub_of_not_sameRay (? b f  hab  span_union ha R b.lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay ha  fFinset symm\nha )span_union span_unionsymmsymm.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_norm_sub_of_not_sameRay  ? bhaval_one_eq_one_mod\n val_one_eq_one_mod lt_norm_sub_of_not_sameRayexact ]\nha * lt_norm_sub_of_not_sameRay\n[ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n \n span_unionf span_unionrwlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert only [val_one_eq_one_mod, lt_norm_sub_of_not_sameRay symm .ha < f\n= symm |span_unionspan_union, (span_union .  ha exact)span_unionb, lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert \u27e8fun aval_one_eq_one_mod f:\u27e9 (fsymm)ha   haha .ha\nha.  c)  symmspan_union haha  a.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact with b lt_norm_sub_of_not_sameRay.\nsymm.val_one_eq_one_mod lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay:  (ha   . lt_norm_sub_of_not_sameRay\nha\n lt_norm_sub_of_not_sameRayexactlt_norm_sub_of_not_sameRay ),lt_norm_sub_of_not_sameRay.symm,lt_norm_sub_of_not_sameRay\n]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro only [val_one_eq_one_mod]\nat ha symm .lt_norm_sub_of_not_sameRay span_union ha   \n [halt_norm_sub_of_not_sameRay,] symm[ rw\n\n ,].\nsymmha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro with val_one_eq_one_mod\nh bfspan_union ha g\nspan_union lt_norm_sub_of_not_sameRay\n?\n .(     lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay_)) lt_norm_sub_of_not_sameRay h\n[",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain a | val_one_eq_one_mod val_one_eq_one_mod : lt_norm_sub_of_not_sameRay= ha b[using\n,span_union\n span_unionf exact lt_norm_sub_of_not_sameRay  (symm  . lt_norm_sub_of_not_sameRaysymm ).]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8g, ha\u27e9rfl, ,span_unionf (   = exactspan_uniona\n    =span_union ) x  ha?\u27e9   using",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases ha b bb.b <span_union. exact\n]span_union[ ha , ha.Set   ha |span_union span_union symm ,hasymm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "div_div_self",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "by_cases h := _*\nval_one_eq_one_mod * simp * , [lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay h ]aa  ,,\na,, ,lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp only [lt_norm_sub_of_not_sameRay] R dsimp\nsimp [lt_norm_sub_of_not_sameRayR ,, symm ,*lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, .a ,, ,]\n   usinga\n_",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "intro val_one_eq_one_mod with\nrw\u27e8 _ \u27e8symma, alt_norm_sub_of_not_sameRay*  \u27e9>s\n\u2190a  * .awith lt_norm_sub_of_not_sameRay[ ,lt_norm_sub_of_not_sameRay,, symm\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "lt_norm_sub_of_not_sameRay\nrw [?.alt_norm_sub_of_not_sameRay a lt_norm_sub_of_not_sameRay\nh ?\nrwlt_norm_sub_of_not_sameRaysymm simp ]lt_norm_sub_of_not_sameRay[< lt_norm_sub_of_not_sameRay _\n\nlt_norm_sub_of_not_sameRay_,lt_norm_sub_of_not_sameRay ]][symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain ha b val_one_eq_one_modval_one_eq_one_mod :=. =R\n a[*\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay],exact lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.  lt_norm_sub_of_not_sameRaya(at.  symmsymm symmh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases lt_norm_sub_of_not_sameRay with _ n lt_norm_sub_of_not_sameRay simp\nlt_norm_sub_of_not_sameRay [,only..lt_norm_sub_of_not_sameRay,R   lt_norm_sub_of_not_sameRaysymmlt_norm_sub_of_not_sameRaysymm symmsymm(._ .symm,.symm,symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine (lt_norm_sub_of_not_sameRay _ ?fun0 a lt_norm_sub_of_not_sameRaya?, a  ,a  a,halt_norm_sub_of_not_sameRay,  [\nh,]   [lt_norm_sub_of_not_sameRay,lt_norm_sub_of_not_sameRay ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine \u27e8val_one_eq_one_mod\u27e9val_one_eq_one_mod a a 1 fun _ [)  a > asymm? 1\nlt_norm_sub_of_not_sameRayasimp\n,rw symm\n ],lt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay,  :0 lt_norm_sub_of_not_sameRay  , a =0 a a\n[ ,lt_norm_sub_of_not_sameRay . ,,,symm lt_norm_sub_of_not_sameRay, ,]lt_norm_sub_of_not_sameRayFinset",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRay ,,a[\u2190 a\nR lt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRay h *\n.]lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay) symmsymmhalt_norm_sub_of_not_sameRaysymm ]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Int.mod_coprime",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "cases h\nrw [i \u2190 lt_norm_sub_of_not_sameRay,b    b,.hb,\u2190span_union.  ,.span_union symm.lt_norm_sub_of_not_sameRay,hb. ,,hb]hasymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert  b \u2190.symm b,simp.Set [ simpa.(\nabba a)\u2190 val_one_eq_one_mod ,symm.val_one_eq_one_mod. blt_norm_sub_of_not_sameRayb symmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert b b b val_one_eq_one_mod ( ab b,  val_one_eq_one_mod.,symm( b brwalt_norm_sub_of_not_sameRay\n [,val_one_eq_one_modlt_norm_sub_of_not_sameRayexact .]symmhb\n ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases b <;> b Nat.rw,[\n,Nat  c\u2190, b  val_one_eq_one_modNat.]symmsymm. val_one_eq_one_mod[.symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ b.b, \u2190 b  ,b  \u2190]b\n \nval_one_eq_one_mod b.  ,val_one_eq_one_mod ][,hbbsymmlt_norm_sub_of_not_sameRayNat symm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [Finset, b b]0 ,  b [ hbb*,,\n  ,  lt_norm_sub_of_not_sameRayb,symm ,.lt_norm_sub_of_not_sameRay.symmlt_norm_sub_of_not_sameRay.,symm].symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b,  , bbb,a,  , b, b b  hb,\u2190 ,b\n ]b symm.,symm]lt_norm_sub_of_not_sameRay.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [b, b.b.= | .,g\ng  a bblt_norm_sub_of_not_sameRaybb; ,.  ,, Natsymm.,\nbsymmsymm]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay b, b, b] hb\na b \u2190.bb. , ,,symm. lt_norm_sub_of_not_sameRay , blt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay symm, ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, \u2190 b, .val_one_eq_one_mod \u2190lt_norm_sub_of_not_sameRay,. ,b 2b ,lt_norm_sub_of_not_sameRayb[  ,symmb._Set a].b.symm",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "HasStrictFDerivAt.abs_of_neg",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert 1 : lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nf.( ?(.).lt_norm_sub_of_not_sameRay symm(symm\n  . )(symm\n  hf.(.lt_norm_sub_of_not_sameRay ) Setx.hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_norm_sub_of_not_sameRay hf lt_norm_sub_of_not_sameRay f with\nlt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRay with lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ) hf.( lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay   hflt_norm_sub_of_not_sameRay] .hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_norm_sub_of_not_sameRay with hf (xlt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay.? hf.hf | lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay (x  )  hf   symm)lt_norm_sub_of_not_sameRay)symmusing]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert using  with lt_norm_sub_of_not_sameRay ) (. x\n  hg f\n?   lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\n. lt_norm_sub_of_not_sameRayhf\n[_ simpahf_lt_norm_sub_of_not_sameRaysymm ]symmxsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "exact lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay f:lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay =.  [xlt_norm_sub_of_not_sameRay . \n .lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay_f  ]\n  .",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases [, lt_norm_sub_of_not_sameRay (lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay .., | Finset lt_norm_sub_of_not_sameRay with\nlt_norm_sub_of_not_sameRayspan_union.)( .hf ) )exact hf",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod lt_norm_sub_of_not_sameRay]\n(lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.hf.hf ..lt_norm_sub_of_not_sameRay\n  .(( .    )lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayx)  hfhf)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod, lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.Finset.lt_norm_sub_of_not_sameRay.] hf.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay f\nhf (.lt_norm_sub_of_not_sameRay  .  (symm    .:fsymm)",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [\u2190  lt_norm_sub_of_not_sameRay )lt_norm_sub_of_not_sameRay]\nexact lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay (  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay.f)lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay .)(2",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "simp_rw [ lt_norm_sub_of_not_sameRayhf ] exact\nlt_norm_sub_of_not_sameRay(lt_norm_sub_of_not_sameRay.( x.(f)  . )xx  ,)lt_norm_sub_of_not_sameRay ((.?symm .) )",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "PositiveLinearMap.apply_le_of_isSelfAdjoint",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply (hx val_one_eq_one_modval_one_eq_one_mod hx hx  ?val_one_eq_one_mod rw\n]val_one_eq_one_mod[\nval_one_eq_one_mod   span_union.    .symmhx ]()span_union])span_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply f f\nhx val_one_eq_one_mod IsIntegralIsIntegral hx x hxlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay symm\nlt_norm_sub_of_not_sameRay span_union   span_unionhx ] \n val_one_eq_one_modhx span_union])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert  (fun val_one_eq_one_mod |hx(IsIntegral), val_one_eq_one_mod val_one_eq_one_mod (lt_norm_sub_of_not_sameRay).fhx  lt_norm_sub_of_not_sameRay.span_unionspan_union )) .\n..hxsimpa\nsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert hx (val_one_eq_one_mod.val_one_eq_one_mod val_one_eq_one_mod\n  IsIntegralwith .hx .\nhxx)lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay span_union   span_unionhx hx hxhxx",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert \u27e8val_one_eq_one_modval_one_eq_one_modval_one_eq_one_mod ? :(lt_norm_sub_of_not_sameRayhx() . lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay with.   span_unionlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n|()  lt_norm_sub_of_not_sameRayspan_unionspan_union ) ]symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "obtain \u27e8hxhx val_one_eq_one_mod val_one_eq_one_mod\nexact =\n  \nhx[]\n  convert x lt_norm_sub_of_not_sameRay exactlt_norm_sub_of_not_sameRay  \n.]val_one_eq_one_mod  YoungDiagram) \n.symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine val_one_eq_one_mod val_one_eq_one_mod.val_one_eq_one_mod x _ val_one_eq_one_mod.hx span_union.val_one_eq_one_mod (  span_unionha , hx span_unionhxspan_union  span_union .span_union  ]hxsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw []\nrefineSetwith IsIntegral val_one_eq_one_mod val_one_eq_one_mod _symm.hx() lt_norm_sub_of_not_sameRay x( \n ( .2_ .().symmsymmf) f",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod ha]fexact hx ha\n(lt_norm_sub_of_not_sameRay.. hx)xval_one_eq_one_mod].lt_norm_sub_of_not_sameRay..   .rflsymm.lt_norm_sub_of_not_sameRay..\n symmsymmconvert ]f",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod hx]lt_norm_sub_of_not_sameRay val_one_eq_one_modhx val_one_eq_one_mod IsIntegral x\nval_one_eq_one_modlt_norm_sub_of_not_sameRay exact (\n()symmhx      _span_union hxh)symmsymm hx",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "SimpleGraph.exists_walk_of_edist_eq_coe",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "apply [val_one_eq_one_mod, lt_norm_sub_of_not_sameRay\u27e9\nrw simp\n?[lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRay]\n\n lt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay>lt_norm_sub_of_not_sameRay.rwa [ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay exact]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "apply lt_norm_sub_of_not_sameRay\nsimp \u27e8lt_norm_sub_of_not_sameRay, h \u27e9\n\n. ?h..\n  lt_norm_sub_of_not_sameRay_lt_norm_sub_of_not_sameRay h.simp lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay simp[[  \nlt_norm_sub_of_not_sameRay]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaysymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "by_cases lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay : lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay h lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay \n lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay)   lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRayhlt_norm_sub_of_not_sameRayexacth  .lt_norm_sub_of_not_sameRay symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert val_one_eq_one_mod with ? symmlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\u27e9\n .lt_norm_sub_of_not_sameRayhh\n  symmlt_norm_sub_of_not_sameRay. h  rw[  lt_norm_sub_of_not_sameRay ]\nlt_norm_sub_of_not_sameRay h",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay, map maphb (lt_norm_sub_of_not_sameRay.h lt_norm_sub_of_not_sameRay   p\n lt_norm_sub_of_not_sameRay\nlt_norm_sub_of_not_sameRay.. symm lt_norm_sub_of_not_sameRay..lt_norm_sub_of_not_sameRaysymm h h lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nlt_norm_sub_of_not_sameRay.simp\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.  lt_norm_sub_of_not_sameRay\n=lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay [ h\nlt_norm_sub_of_not_sameRay  lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay..\n_symm\nlt_norm_sub_of_not_sameRay ] symm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext h\nsimp [lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRay,.lt_norm_sub_of_not_sameRay\nh\nlt_norm_sub_of_not_sameRay .ext lt_norm_sub_of_not_sameRay[]\nsimplt_norm_sub_of_not_sameRay  \nlt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaysymmsymm. h\nh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\nwith.symm lt_norm_sub_of_not_sameRay hsimp\n? ? lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay> . \n hlt_norm_sub_of_not_sameRay|\nlt_norm_sub_of_not_sameRay rfl lt_norm_sub_of_not_sameRaysymmwithsymm.symm..",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext p fun;b symm [;?.* symm\nlt_norm_sub_of_not_sameRay ] simp\n [\nlt_norm_sub_of_not_sameRay>]lt_norm_sub_of_not_sameRay]  lt_norm_sub_of_not_sameRay . symm symmsymmhsymm",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext x <;simp [h* ,lt_norm_sub_of_not_sameRay ,    [.span_union ,lt_norm_sub_of_not_sameRayh   at ]    ,   ,hlt_norm_sub_of_not_sameRayhspan_union",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "concaveOn_id",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "by_cases s b :\ny  a  ?\n? > .  lt_norm_sub_of_not_sameRay[lt_norm_sub_of_not_sameRay=,a\n  ],,hx   ],   IsIntegral",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert [val_one_eq_one_mod lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay, hblt_norm_sub_of_not_sameRay\n]?[simp_rw) \nIsIntegral  \nexact b.lt_norm_sub_of_not_sameRay_] [   .<(symm\nsymm]])",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert lt_norm_sub_of_not_sameRay> | b\ns b lt_norm_sub_of_not_sameRayNonUnitalAlgHom [  :, lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay ?s ]\n  lt_norm_sub_of_not_sameRayrwalt_norm_sub_of_not_sameRay\n[]  ,  ]span_unionspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert only [y,  , lt_norm_sub_of_not_sameRay, b  b,b , lt_norm_sub_of_not_sameRay ,\nhs, ,lt_norm_sub_of_not_sameRay ,,][ Set hs,]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [val_one_eq_one_mod]\nrwa : , lt_norm_sub_of_not_sameRay [  rwlt_norm_sub_of_not_sameRay \na , simp lt_norm_sub_of_not_sameRay]hxlt_norm_sub_of_not_sameRay    ,,[ lt_norm_sub_of_not_sameRay,   ]decompose_mul",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp only [lt_norm_sub_of_not_sameRay hs]s\n? \n> [ b IsIntegral\n] b\nat]symm  \n,   \nsimpa_ \n[ hs s",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "refine lt_norm_sub_of_not_sameRay :lt_norm_sub_of_not_sameRay\n  lt_norm_sub_of_not_sameRay exact lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay _ lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay,    lt_norm_sub_of_not_sameRay a   , lt_norm_sub_of_not_sameRay \nlt_norm_sub_of_not_sameRay]\nlt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayspan_union",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [ [? y hb b\n]\n lt_norm_sub_of_not_sameRay , ? lt_norm_sub_of_not_sameRay  ,hs[  ] using,  , ,, . ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod, ? ?bb, hs.\nlt_norm_sub_of_not_sameRay\nb ](.lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay usingb lt_norm_sub_of_not_sameRay,  lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  \n]symm, symmhs",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [val_one_eq_one_mod]\nb lt_norm_sub_of_not_sameRay  , lt_norm_sub_of_not_sameRay hs  SemistandardYoungTableau ) hs\nlt_norm_sub_of_not_sameRay[ ]hx,lt_norm_sub_of_not_sameRay  , , . .\n,,]]]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "Mathlib.Tactic.Ring.div_congr",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "convert val_one_eq_one_mod b :lt_norm_sub_of_not_sameRay  val_one_eq_one_mod [a,, span_union   *0[, lt_norm_sub_of_not_sameRay hh  lt_norm_sub_of_not_sameRay, ]lt_norm_sub_of_not_sameRayrfl\n[.] ]ha",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext [lt_norm_sub_of_not_sameRay, h bb  _ val_one_eq_one_moda rw ]\n [rwlt_norm_sub_of_not_sameRay, ]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayFinset  .lt_norm_sub_of_not_sameRay ,[],rw,\n Finite",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext a | b <;0 b rw  b,0 [*,*Finset * , span_union lt_norm_sub_of_not_sameRay,cc,val_one_eq_one_mod].re\u2082\u2081 ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext val_one_eq_one_mod <;> [ *b, *0\n\u2190*]*, .][ lt_norm_sub_of_not_sameRay\n,].val_one_eq_one_modval_one_eq_one_mod\n[ symmval_one_eq_one_modlt_norm_sub_of_not_sameRay symm,,]lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction s\nwith >. b0 b [ simp\n ;]*b*  ,, b\u2190lt_norm_sub_of_not_sameRay   lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay  ,,symm],.",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction x <;> | *bbsimp> simp *;[;b \u2190\n[ ] ,*,\n  , lt_norm_sub_of_not_sameRay,  ],]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases val_one_eq_one_mod with x\nsimp [ only [ ,lt_norm_sub_of_not_sameRay0 span_unionlt_norm_sub_of_not_sameRay,, ,   .a ,, ,lt_norm_sub_of_not_sameRay]  ,,,] ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [a, b] 0c. lt_norm_sub_of_not_sameRay, lt_norm_sub_of_not_sameRay]\n[\nrw [ ]symmlt_norm_sub_of_not_sameRay] lt_norm_sub_of_not_sameRay ,, .,[symm lt_norm_sub_of_not_sameRay,]]]rfl",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay val_one_eq_one_mod, 0 b, = val_one_eq_one_modval_one_eq_one_mod , b\nbspan_union[   < b   lt_norm_sub_of_not_sameRay span_union  symm,]symmsymmh",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rw [lt_norm_sub_of_not_sameRay, (] lt_norm_sub_of_not_sameRay rfl| ab   *\n,blt_norm_sub_of_not_sameRay Rlt_norm_sub_of_not_sameRay  0]  \u2190|s s[,| hcont]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    },
+    {
+      "name": "PNat.eq_one_of_lt_two",
+      "solved": false,
+      "k_samples": 24,
+      "topk": [
+        {
+          "tactic": "by_cases n2n\n: val_one_eq_one_mod = 0b [ >];symm simp0>\n<\n  * <* .*\nNat(* exact)symmn",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases lt_norm_sub_of_not_sameRay\nn lt_norm_sub_of_not_sameRay simp\ngglt_norm_sub_of_not_sameRay val_one_eq_one_mod val_one_eq_one_modgsimp )\n .lt_norm_sub_of_not_sameRay .Nat  Natsymm.(lt_norm_sub_of_not_sameRayIsIntegrallt_norm_sub_of_not_sameRay Natlt_norm_sub_of_not_sameRay)\n]Nat",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "cases n\nrw [val_one_eq_one_mod,val_one_eq_one_mod lt_norm_sub_of_not_sameRay val_one_eq_one_mod ,, lt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRay\n  with.* lt_norm_sub_of_not_sameRay ,lt_norm_sub_of_not_sameRaysymm \n,lt_norm_sub_of_not_sameRaysymmlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay\n]symm.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "convert\nlt_norm_sub_of_not_sameRayval_one_eq_one_mod:\nlt_norm_sub_of_not_sameRay NatNatlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay.| \n lt_norm_sub_of_not_sameRay?*lt_norm_sub_of_not_sameRay , .,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay exact  \n[lt_norm_sub_of_not_sameRay \nlt_norm_sub_of_not_sameRay  h] lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "dsimp [lt_norm_sub_of_not_sameRay val_one_eq_one_modNat?  *with\n\nsimplt_norm_sub_of_not_sameRay.lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay\nval_one_eq_one_mod val_one_eq_one_mod [(n(lt_norm_sub_of_not_sameRay ) ]Nat lt_norm_sub_of_not_sameRay ,symmlt_norm_sub_of_not_sameRay  ]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "ext\nsimp only [val_one_eq_one_modrw0lt_norm_sub_of_not_sameRay , ,?val_one_eq_one_mod  ,\n]lt_norm_sub_of_not_sameRay   simplt_norm_sub_of_not_sameRaysymmlt_norm_sub_of_not_sameRay .lt_norm_sub_of_not_sameRaysymm,.lt_norm_sub_of_not_sameRay.\n]Natn 2lt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "have :=  := val_one_eq_one_mod by_cases=  val_one_eq_one_mod0 Nat 0 hb\n n< *\nNatre\u2082\u2081*lt_norm_sub_of_not_sameRaysimp\n[,lt_norm_sub_of_not_sameRay\n introlt_norm_sub_of_not_sameRay.\n]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction\nexact lt_norm_sub_of_not_sameRay\n0 simp [*[0* *\nlt_norm_sub_of_not_sameRay] >  \n*\n,lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRayIsIntegralsymm[lt_norm_sub_of_not_sameRaysymm simp, ]\nlt_norm_sub_of_not_sameRay",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "induction lt_norm_sub_of_not_sameRay n;n cases Nat\nb val_one_eq_one_mod <  val_one_eq_one_mod1;   *:<.  =>h  * ,** .,h]",
+          "verified": false,
+          "novel": false
+        },
+        {
+          "tactic": "rcases h n n val_one_eq_one_mod\nval_one_eq_one_mod lt_norm_sub_of_not_sameRay simp\n[\nlt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay ,][   lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay*\n[simp symm]lt_norm_sub_of_not_sameRaylt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay lt_norm_sub_of_not_sameRay]",
+          "verified": false,
+          "novel": false
+        }
+      ]
+    }
+  ],
+  "aggregate_matches_path": true
+}

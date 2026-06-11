@@ -1,0 +1,22 @@
+[
+  {
+    "label": "mdlm",
+    "cell": "scale_mdlm_30M_U45820",
+    "family": "mdlm",
+    "tier": "tier_dev",
+    "steps": 16,
+    "cfg_weight": 2.0,
+    "n_tier": 45,
+    "multi_tactic_verified": 4,
+    "per_token_gold_recovery": 0.26640515089726213,
+    "exact_seq_recovery_rate": 0.008333333333333333,
+    "head_correct_body_wrong_rate": 0.375,
+    "pass_at_k": {
+      "1": 0.28888888888888886,
+      "5": 0.3333333333333333,
+      "10": 0.35555555555555557
+    },
+    "novel_verified_count": 14,
+    "n_candidates_verified": 411
+  }
+]
