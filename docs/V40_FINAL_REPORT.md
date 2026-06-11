@@ -46,11 +46,19 @@ structure. The one constructive lever for continuous flow is semi-AR decoding; e
 ## 4. Geometry (H9)
 _[Phase 4 — unit-norm frozen embeddings vs scratch, matched budget; filling.]_
 
-## 5. Plan-level probe (LPSF-lite)
-_[Phase 5 — does the per-token-vs-exact-seq coherence gap vanish at the plan abstraction? filling.]_
+## 5. Plan-level probe (LPSF-lite) — the gap closes at the plan abstraction
+flow/AR exact-seq ratio by object granularity: **plan 0.643** ≫ single-tactic 0.073 ≫ whole-proof 0.023.
+At the plan level (head sequence, mean 1.74 heads) flow reaches **64% of AR's plan exact-seq** (0.085 vs
+0.132; per-token 0.537 > 0.505). The coherence gap is a monotone function of *object granularity*, not a
+fixed property of flow — the single positive signal for *where* continuous flow belongs (the plan/
+abstraction level, i.e. LPSF). See V40_05.
 
 ## 6. Real-Mathlib verified headline (tier-final)
-_[Phase 7 — finalists named, verified ONCE on tier-final, with Wilson CIs; filling.]_
+**Finalists named before verifying** (tier-final touched exactly once): **AR** and **MDLM** whole-proof
+(best per discrete family), **FLOW@1** whole-proof (best flow sampler), **FLOW block_nb8** (best Phase-3
+coherence mechanism). No H9 geometry finalist (refuted). Verified ONCE on tier-final (44 real-Mathlib
+theorems, K=24, top-10), priority AR > MDLM > FLOW.
+_[Phase 7 — tier-final numbers + Wilson CIs filling.]_
 
 ## 7. Limitations
 One seed (3407); 30M params; real-Mathlib tiers n=44–45 (wide CIs); **gold-compile-rate 13.7%** (version
@@ -59,8 +67,16 @@ reconstructed from the first proof state (`state_to_example`), not source-extrac
 limit), full-set evaluated; block-decode verified on dev-exact only (decode path not wired to the Lean
 tier). Honest negatives stand on the pre-registered criteria.
 
-## 8. Recommendation for V41
-_[Filling after H9/H10 — one of: MDLM-scaling / LPSF-full / archive-flow, justified only by tonight's
-numbers. Current lean: the object/decoder/geometry sweep shows continuous flow's gap is intrinsic to
-single-shot embedding decoding; MDLM is the AR-competitive substrate; block/semi-AR is the only flow
-lever worth a follow-up.]_
+## 8. Recommendation for V41 — **build LPSF (plan-level flow)**
+Justified only by tonight's numbers:
+- **Archive token/whole-proof continuous flow as a competitive generator:** 0 verified on real Mathlib;
+  the object change (H6), max-separation geometry (H9), and iterative snap-repair (H8) all failed; the
+  gap is intrinsic to single-shot embedding decoding, not data/object/geometry.
+- **The plan probe (§5) is the warranted next build:** flow reaches **64% of AR's exact-seq at the plan
+  level** vs ~2–7% at the token level. Continuous flow's home is the **plan/abstraction** object. V41 =
+  **LPSF-full**: a plan-flow emitting a tactic-head skeleton, each head expanded by an AR/MDLM tactic head
+  + Lean verifier. This is the one direction with a positive coherence signal.
+- **MDLM remains the discrete substrate** for the token/tactic level (AR-competitive on v39 single
+  tactics; on whole-proofs it trails AR by 3 theorems on tier-dev — see H10 / §6).
+- If a *flow* token-level effort is ever revived, only **semi-AR block decoding** (H7) showed any lift,
+  and only 4× off a near-zero floor — not worth it over LPSF.
