@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "name": "FLOW@1",
+      "kind": "baseline",
+      "nfe": 1,
+      "dev_exact": 0.0008143322475570033,
+      "dev_pertok": 0.32304971568740176
+    },
+    {
+      "name": "block_nb4_spb1",
+      "kind": "H7",
+      "nfe": 4,
+      "dev_exact": 0.0016286644951140066,
+      "dev_pertok": 0.3235227141716592
+    },
+    {
+      "name": "block_nb4_spb2",
+      "kind": "H7",
+      "nfe": 8,
+      "dev_exact": 0.0012214983713355048,
+      "dev_pertok": 0.2675470282893014
+    },
+    {
+      "name": "block_nb8_spb1",
+      "kind": "H7",
+      "nfe": 8,
+      "dev_exact": 0.003257328990228013,
+      "dev_pertok": 0.31369388585156543
+    },
+    {
+      "name": "block_nb8_spb2",
+      "kind": "H7",
+      "nfe": 16,
+      "dev_exact": 0.003257328990228013,
+      "dev_pertok": 0.26526139968851314
+    },
+    {
+      "name": "snaprepair_R1_t0.2",
+      "kind": "H8",
+      "nfe": 2,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.289561951583558
+    },
+    {
+      "name": "snaprepair_R1_t0.4",
+      "kind": "H8",
+      "nfe": 2,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.31064818466093286
+    },
+    {
+      "name": "snaprepair_R2_t0.2",
+      "kind": "H8",
+      "nfe": 3,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.2778647239392611
+    },
+    {
+      "name": "snaprepair_R2_t0.4",
+      "kind": "H8",
+      "nfe": 3,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.30673017922736645
+    },
+    {
+      "name": "snaprepair_R3_t0.2",
+      "kind": "H8",
+      "nfe": 4,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.273979977682254
+    },
+    {
+      "name": "snaprepair_R3_t0.4",
+      "kind": "H8",
+      "nfe": 4,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.30500764461325164
+    }
+  ],
+  "verdict": {
+    "FLOW@1_dev_exact": 0.0008143322475570033,
+    "H7_best_nfe<=8": {
+      "name": "block_nb8_spb1",
+      "kind": "H7",
+      "nfe": 8,
+      "dev_exact": 0.003257328990228013,
+      "dev_pertok": 0.31369388585156543
+    },
+    "H7_criterion": ">=1.5x FLOW@1",
+    "H7_verdict": "SUPPORTED",
+    "H8_best": {
+      "name": "snaprepair_R1_t0.2",
+      "kind": "H8",
+      "nfe": 2,
+      "dev_exact": 0.0,
+      "dev_pertok": 0.289561951583558
+    },
+    "H8_criterion": ">=1.10x FLOW@1",
+    "H8_verdict": "REFUTED"
+  }
+}
