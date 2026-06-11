@@ -1,0 +1,137 @@
+{
+  "results": [
+    {
+      "label": "plan_ar",
+      "family": "ar",
+      "steps": 16,
+      "cfg_w": 2.0,
+      "tier": "tier_final",
+      "n_tier": 44,
+      "pass_at_k": {
+        "1": 0.18181818181818182,
+        "5": 0.36363636363636365,
+        "10": 0.38636363636363635
+      },
+      "solved": 17,
+      "novel": 13
+    },
+    {
+      "label": "plan_flow_3407",
+      "family": "flow",
+      "steps": 1,
+      "cfg_w": 2.0,
+      "tier": "tier_final",
+      "n_tier": 44,
+      "pass_at_k": {
+        "1": 0.06818181818181818,
+        "5": 0.3409090909090909,
+        "10": 0.4090909090909091
+      },
+      "solved": 18,
+      "novel": 8
+    },
+    {
+      "label": "plan_flow_4242",
+      "family": "flow",
+      "steps": 1,
+      "cfg_w": 2.0,
+      "tier": "tier_final",
+      "n_tier": 44,
+      "pass_at_k": {
+        "1": 0.09090909090909091,
+        "5": 0.20454545454545456,
+        "10": 0.3409090909090909
+      },
+      "solved": 15,
+      "novel": 6
+    },
+    {
+      "label": "plan_mdlm",
+      "family": "mdlm",
+      "steps": 16,
+      "cfg_w": 2.0,
+      "tier": "tier_final",
+      "n_tier": 44,
+      "pass_at_k": {
+        "1": 0.06818181818181818,
+        "5": 0.25,
+        "10": 0.2727272727272727
+      },
+      "solved": 12,
+      "novel": 9
+    }
+  ],
+  "solved_sets": {
+    "plan_ar": [
+      "AddChar.coe_prod",
+      "Finset.isUnit_iff_singleton_aux",
+      "Finset.sum_int_mod",
+      "Finset.toRight_inter",
+      "FractionalIdeal.coeIdeal_eq_one",
+      "Mathlib.Tactic.PNatToNat.coe_lt_coe",
+      "Mathlib.Tactic.Ring.inv_congr",
+      "RingHom.map_dotProduct",
+      "SimpleGraph.Walk.mem_edges_toSubgraph",
+      "SzemerediRegularity.le_stepBound",
+      "WithBot.bot_lt_iff_ne_bot",
+      "WithTop.sum_lt_top",
+      "finrank_euclideanSpace",
+      "invOf_lt_zero",
+      "inv_mul_cancel_comm_assoc",
+      "map_inv_lt_iff",
+      "neg_one_mul"
+    ],
+    "plan_flow_3407": [
+      "AddChar.coe_prod",
+      "Finset.isUnit_iff_singleton_aux",
+      "Finset.sum_int_mod",
+      "Finset.toRight_inter",
+      "IsVisible.rfl",
+      "Mathlib.Tactic.PNatToNat.coe_lt_coe",
+      "PartialEquiv.refl_restr_target",
+      "Rep.\u03c1_inv_self_apply",
+      "RingHom.map_dotProduct",
+      "SimpleGraph.Walk.mem_edges_toSubgraph",
+      "WithTop.sum_lt_top",
+      "codisjoint_inf_right",
+      "finrank_euclideanSpace",
+      "invOf_lt_zero",
+      "inv_mul_cancel_comm_assoc",
+      "inv_mul_lt_one_iff_lt",
+      "neg_one_mul",
+      "upperBounds_closure"
+    ],
+    "plan_flow_4242": [
+      "AddChar.coe_prod",
+      "Finset.isUnit_iff_singleton_aux",
+      "Finset.sum_int_mod",
+      "FractionalIdeal.coeIdeal_eq_one",
+      "IsNilpotent.pow_succ",
+      "IsVisible.rfl",
+      "Rep.\u03c1_inv_self_apply",
+      "RingHom.map_dotProduct",
+      "SimpleGraph.Walk.mem_edges_toSubgraph",
+      "WithTop.sum_lt_top",
+      "invOf_lt_zero",
+      "inv_mul_cancel_comm_assoc",
+      "inv_mul_lt_one_iff_lt",
+      "neg_one_mul",
+      "upperBounds_closure"
+    ],
+    "plan_mdlm": [
+      "AddChar.coe_prod",
+      "Finset.isUnit_iff_singleton_aux",
+      "Finset.sum_int_mod",
+      "IsVisible.rfl",
+      "PartialEquiv.refl_restr_target",
+      "SimpleGraph.Walk.mem_edges_toSubgraph",
+      "SzemerediRegularity.le_stepBound",
+      "WithBot.bot_lt_iff_ne_bot",
+      "WithTop.sum_lt_top",
+      "finrank_euclideanSpace",
+      "map_inv_lt_iff",
+      "neg_one_mul"
+    ]
+  },
+  "lean_s": 179.0
+}

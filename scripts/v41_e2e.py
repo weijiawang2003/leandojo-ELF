@@ -31,6 +31,17 @@ def _san(s):
     cl, _ = sanitize_candidate_list([s]); return cl[0] if cl else ""
 
 
+def well_formed(p):
+    """Drop syntactically-broken grounded proofs (unbalanced delimiters) that poison the
+    batched verifier's confirm loop. A broken proof can't verify anyway, so this loses nothing."""
+    if not p or not p.strip():
+        return False
+    for o, c in (("(", ")"), ("[", "]"), ("{", "}"), ("⟨", "⟩")):
+        if p.count(o) != p.count(c):
+            return False
+    return True
+
+
 def step_str(step):
     h, a = step
     return f"{h} ( {' , '.join(a)} )"
@@ -135,6 +146,7 @@ def main():
     ap.add_argument("--plan-corpus", default=str(ROOT / "data/v41/corpora/plangen"))
     ap.add_argument("--K", type=int, default=24)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--chunk", type=int, default=0, help="verify in chunks of N (1=isolated, avoids batch poison)")
     ap.add_argument("--detail-dir", default=None)
     args = ap.parse_args()
     dev = "cuda" if torch.cuda.is_available() else "cpu"
@@ -164,11 +176,18 @@ def main():
         cand_by_name, items = {}, set()
         name2stmt = {t["full_name"]: t["statement"] for t in tier}
         for nm, proofs in cand.items():
-            ranked = Counter(p for p in proofs if p).most_common(10)
+            ranked = Counter(p for p in proofs if well_formed(p)).most_common(10)
             cand_by_name[nm] = ranked
             for c, _ in ranked:
                 items.add((nm, name2stmt[nm], c))
-        vmap = {(x.theorem_name, x.tactic): x.success for x in verifier.verify_many(list(items), confirm=True)}
+        items = list(items)
+        if args.chunk and args.chunk < len(items):  # isolated/small-batch verify avoids cross-candidate poison
+            vmap = {}
+            for s in range(0, len(items), args.chunk):
+                for x in verifier.verify_many(items[s:s + args.chunk], confirm=True):
+                    vmap[(x.theorem_name, x.tactic)] = x.success
+        else:
+            vmap = {(x.theorem_name, x.tactic): x.success for x in verifier.verify_many(items, confirm=True)}
         pk, novel = passk_from(cand_by_name, vmap, train_proofs)
         solved = {nm for nm, ranked in cand_by_name.items() if any(vmap.get((nm, c)) for c, _ in ranked)}
         detail_solved[label] = sorted(solved)

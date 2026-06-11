@@ -1,0 +1,142 @@
+{
+  "results": [
+    {
+      "label": "plan_ar",
+      "family": "ar",
+      "steps": 16,
+      "cfg_w": 2.0,
+      "tier": "tier_dev",
+      "n_tier": 45,
+      "pass_at_k": {
+        "1": 0.2222222222222222,
+        "5": 0.4,
+        "10": 0.4444444444444444
+      },
+      "solved": 20,
+      "novel": 24
+    },
+    {
+      "label": "plan_flow_3407",
+      "family": "flow",
+      "steps": 1,
+      "cfg_w": 2.0,
+      "tier": "tier_dev",
+      "n_tier": 45,
+      "pass_at_k": {
+        "1": 0.044444444444444446,
+        "5": 0.28888888888888886,
+        "10": 0.4444444444444444
+      },
+      "solved": 20,
+      "novel": 14
+    },
+    {
+      "label": "plan_flow_4242",
+      "family": "flow",
+      "steps": 1,
+      "cfg_w": 2.0,
+      "tier": "tier_dev",
+      "n_tier": 45,
+      "pass_at_k": {
+        "1": 0.022222222222222223,
+        "5": 0.17777777777777778,
+        "10": 0.3333333333333333
+      },
+      "solved": 15,
+      "novel": 12
+    },
+    {
+      "label": "plan_mdlm",
+      "family": "mdlm",
+      "steps": 16,
+      "cfg_w": 2.0,
+      "tier": "tier_dev",
+      "n_tier": 45,
+      "pass_at_k": {
+        "1": 0.1111111111111111,
+        "5": 0.26666666666666666,
+        "10": 0.26666666666666666
+      },
+      "solved": 12,
+      "novel": 13
+    }
+  ],
+  "solved_sets": {
+    "plan_ar": [
+      "FiniteMultiplicity.one_right",
+      "Finset.sigma_nonempty",
+      "List.nil_bagInter",
+      "LocallyLipschitz.mul",
+      "Mathlib.Tactic.Ring.div_congr",
+      "Matrix.lieConj_symm_apply",
+      "Matrix.posDef_intCast_iff",
+      "Nat.le_mul_self",
+      "Option.bnot_isNone",
+      "SignType.pos_iff",
+      "Subgroup.coe_zpow",
+      "WithZero.le_max_iff",
+      "catalan_two",
+      "concaveOn_id",
+      "div_div_self",
+      "inf_eq_right",
+      "le_map_inv_iff",
+      "mul_lt_iff_lt_one_right'",
+      "sq_lt_one_iff_abs_lt_one",
+      "toIcoDiv_sub_zsmul'"
+    ],
+    "plan_flow_3407": [
+      "FiniteMultiplicity.one_right",
+      "Finset.sigma_nonempty",
+      "List.nil_bagInter",
+      "Matrix.lieConj_symm_apply",
+      "MulRingNorm.isPowMul",
+      "Option.bnot_isNone",
+      "SignType.pos_iff",
+      "Subgroup.coe_zpow",
+      "WithZero.le_max_iff",
+      "catalan_two",
+      "concaveOn_id",
+      "div_div_self",
+      "dotProduct_sub",
+      "inf_eq_right",
+      "irrational_ratCast_div_iff",
+      "le_map_inv_iff",
+      "mul_lt_iff_lt_one_right'",
+      "sq_lt_one_iff_abs_lt_one",
+      "sup_himp_self_left",
+      "toIcoDiv_sub_zsmul'"
+    ],
+    "plan_flow_4242": [
+      "FiniteMultiplicity.one_right",
+      "Finset.sigma_nonempty",
+      "List.nil_bagInter",
+      "LocallyLipschitz.mul",
+      "Option.bnot_isNone",
+      "SignType.pos_iff",
+      "Subgroup.coe_zpow",
+      "WithZero.le_max_iff",
+      "catalan_two",
+      "concaveOn_id",
+      "inf_eq_right",
+      "le_map_inv_iff",
+      "mul_lt_iff_lt_one_right'",
+      "sdiff_le_iff'",
+      "sq_lt_one_iff_abs_lt_one"
+    ],
+    "plan_mdlm": [
+      "List.nil_bagInter",
+      "LocallyLipschitz.mul",
+      "Matrix.lieConj_symm_apply",
+      "Matrix.posDef_intCast_iff",
+      "Nat.le_mul_self",
+      "Option.bnot_isNone",
+      "SignType.pos_iff",
+      "dotProduct_sub",
+      "inf_eq_right",
+      "le_map_inv_iff",
+      "mul_lt_iff_lt_one_right'",
+      "sq_lt_one_iff_abs_lt_one"
+    ]
+  },
+  "lean_s": 6871.0
+}
