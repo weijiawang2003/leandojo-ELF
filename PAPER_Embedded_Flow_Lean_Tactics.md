@@ -123,9 +123,9 @@ once). Pre-registered hypotheses H6–H10:
   flow/AR dev-exact ratio **0.023** (vs v39's token-level 0.073), and **0 verified whole proofs** on real
   Mathlib (AR pass@10 0.45). The longer the structured object, the more an absent inter-token-coherence
   mechanism costs.
-- **H7 (block/semi-AR decode) — SUPPORTED (small).** Conditioning each block on the snapped prefix lifts
-  joint coherence 4× (dev-exact 0.0008→0.0033) with per-token unchanged — isolating inter-token coupling
-  as the addressable gap — but still ~10× below AR.
+- **H7 (block/semi-AR decode) — SUPPORTED but Fisher-fragile.** Conditioning each block on the snapped
+  prefix lifts joint coherence 4× (dev-exact 0.0008→0.0033, raw 8 vs 2 hits / 2456, Fisher p≈0.054) with
+  per-token unchanged — isolating inter-token coupling as the addressable gap — but still ~10× below AR.
 - **H8 (snap-repair) — REFUTED** (collapses to 0.0). **H9 (max-separation geometry) — REFUTED** (unit-norm
   frozen embeddings give *identical* 0.0008, ruling geometry out as the cause).
 - **H10 (MDLM ≈ AR on real Mathlib) — SUPPORTED.** tier-final: MDLM 19/44 within 1 of AR 20/44, and MDLM

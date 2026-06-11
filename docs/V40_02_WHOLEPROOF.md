@@ -13,8 +13,12 @@ not a mid-proof single tactic. Dev = 614 held-out novel-theorem pairs (full-set 
 
 ## H6 (object) — **REFUTED**
 *Criterion:* flow/AR whole-proof dev-exact ratio ≥ 0.146 (2× v39's token-level 0.073).
-*Result:* **0.0008 / 0.0346 = 0.023** — not only below 0.146, it is **~3× worse** than v39's token-level
-ratio. The object change made flow **relatively worse**: assembling a coherent whole multi-tactic
+*Result:* **0.0008 / 0.0346 = 0.023** (final/matched-budget checkpoint) — not only below 0.146, it is
+**~3× worse** than v39's token-level ratio. **Non-monotone caveat:** flow's dev exact-seq peaks **early** —
+at the 25% checkpoint flow=0.0033, AR=0.0114 → ratio **0.289 (> 0.146)** — then *collapses* to 0.0008 by
+100% (v37 overfit pattern). H6's pre-registered metric is the matched-budget checkpoint ⇒ REFUTED stands,
+but had it been judged at flow's peak it would have passed. The object change made flow **relatively
+worse** at convergence: assembling a coherent whole multi-tactic
 proof punishes the inter-token-coherence gap *more* than a single tactic does. Flow's per-token (0.323)
 is again as high as AR's (0.320) with maximal distinct (32) — the same "salad" signature, now on a
 longer object.

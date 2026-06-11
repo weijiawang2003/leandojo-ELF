@@ -15,7 +15,9 @@ blocks, future blocks masked (key-padding). NFE = n_blocks × steps-per-block.
 | block nb8 spb2 | 16 | 0.0033 | 0.265 |
 
 *Criterion:* best (NFE≤8) ≥ 1.5× FLOW@1. *Result:* `block_nb8_spb1` = **0.0033 = 4.0× the 0.0008
-baseline** → **SUPPORTED.** Mechanistically meaningful: block decoding lifts **joint** coherence
+baseline** → **SUPPORTED, but Fisher-fragile:** in raw counts this is **8 vs 2** exact hits out of 2,456
+samples (Fisher exact p≈0.054 — marginally non-significant). Treat the 4× as suggestive, not
+established. Mechanistically meaningful nonetheless: block decoding lifts **joint** coherence
 (exact-seq 4×) while **per-token is unchanged** (0.31 ≈ 0.32) — i.e. conditioning each block on the
 snapped prefix supplies exactly the inter-token coupling the bidirectional one-shot head lacks (the
 BD3-LM thesis, confirmed in miniature).
