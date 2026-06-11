@@ -1,0 +1,37 @@
+{
+  "cell": "geom_flow_unitnorm",
+  "family": "flow",
+  "scale": "30M",
+  "U": 45820,
+  "params": 38773760,
+  "token_budget": 150000000.0,
+  "total_steps": 3855,
+  "warmup": 77,
+  "batch_size": 128,
+  "base_lr": 0.0003,
+  "seq_len": 304,
+  "seed": 3407,
+  "git_sha": "9602ba9083f16c94a19819477b72b9ff1b6fa2e9",
+  "data_fingerprint": "df94fc65b28742df25d8e56c2e7015eea4e47c9f4ac441daba17423b1893b979",
+  "vocab_size": 23987,
+  "ckpt_fracs": [
+    1.0
+  ],
+  "gen_steps": 16,
+  "K_dev": 4,
+  "dev_n": 614,
+  "family_kw": {
+    "unit_norm_emb": true
+  },
+  "device": "cuda",
+  "measured_tok_per_s": 171116.6,
+  "elapsed_s": 876.6,
+  "achieved_steps": 3855,
+  "completed": true,
+  "n_val": 614,
+  "n_dev": 614,
+  "snapshot": "/home/wangw/code/ELFMath/outputs/v40/geometry/snapshots/geom_flow_unitnorm.pt",
+  "timestamp": "2026-06-10T23:17:41",
+  "phase": "P4_geometry",
+  "geometry": "unit_norm_frozen"
+}

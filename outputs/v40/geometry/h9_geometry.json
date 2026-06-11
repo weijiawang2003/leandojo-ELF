@@ -1,0 +1,11 @@
+{
+  "unit_norm_dev_exact": 0.0008,
+  "unit_norm_dev_pertok": 0.3292,
+  "scratch_dev_exact": 0.0008,
+  "scratch_dev_pertok": 0.323,
+  "ratio_unit_over_scratch": 1.0,
+  "H9_criterion": ">=1.5x",
+  "H9_verdict": "REFUTED",
+  "geometry": "unit_norm_frozen vs scratch_default_init",
+  "budget": 150000000.0
+}
