@@ -1,0 +1,17 @@
+{
+  "source": "LeanDojo Benchmark 4 random/test",
+  "gold_compile_rate": 0.1365,
+  "n_convertible_verified": 652,
+  "n_compiled": 89,
+  "compiled_by_bucket": {
+    "1": 64,
+    "2-3": 24,
+    "4+": 1
+  },
+  "n_tier_dev": 45,
+  "n_tier_final": 44,
+  "cond_cap": 256,
+  "proof_cap": 48,
+  "seed": 3407,
+  "note": "tier-final touched exactly once (Phase 7). Whole-proof example reconstruction from first state_before; version skew (v4.19 bench vs v4.30 scratch) limits compile rate."
+}

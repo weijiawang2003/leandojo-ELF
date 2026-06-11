@@ -56,3 +56,6 @@ scheduled_tasks.lock
 data/v39/_raw/
 data/v39/corpora/
 outputs/v39/**/snapshots/
+outputs/v40/**/snapshots/
+data/v40/corpora/
+data/v40/_raw/

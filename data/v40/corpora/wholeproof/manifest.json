@@ -1,0 +1,32 @@
+{
+  "config": "v40_wholeproof",
+  "source": "LeanDojo Benchmark 4 random/train+val",
+  "max_cond_len": 256,
+  "max_tgt_len": 48,
+  "vocab_size": 23987,
+  "n_train": 45820,
+  "n_dev": 614,
+  "min_count": 2,
+  "train_drops": {
+    "proof_long": 26808,
+    "cond_long": 1917,
+    "unconvertible": 1672,
+    "contam": 1
+  },
+  "dev_drops": {
+    "proof_long": 358,
+    "cond_long": 24,
+    "unconvertible": 19
+  },
+  "oov_train": 0.00393,
+  "oov_dev": 0.0085,
+  "decontam_names": 113,
+  "uses_state_after": false,
+  "mean_n_tactics_train": 1.66,
+  "multi_tactic_frac_train": 0.446,
+  "u_ladder": [
+    8000,
+    32000,
+    45820
+  ]
+}

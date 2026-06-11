@@ -61,7 +61,8 @@ def load_corpus(corpus_dir: Optional[str]):
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
-    ap.add_argument("--run", default="trackA", help="subdir under outputs/v39 for this run")
+    ap.add_argument("--run", default="trackA", help="subdir under --out-base for this run")
+    ap.add_argument("--out-base", default=str(OUT), help="base output dir (default outputs/v39)")
     ap.add_argument("--corpus-dir", default=None, help="prebuilt corpus dir (Track B); default=v35")
     ap.add_argument("--scale", default="30M")
     ap.add_argument("--families", default="ar,mdlm,flow")
@@ -81,7 +82,7 @@ def main(argv=None) -> int:
     args = ap.parse_args(argv)
 
     dev = "cuda" if torch.cuda.is_available() else "cpu"
-    out = OUT / args.run; out.mkdir(parents=True, exist_ok=True)
+    out = Path(args.out_base) / args.run; out.mkdir(parents=True, exist_ok=True)
     metrics_path = out / "matrix_metrics.jsonl"
     log = print
     deadline = time.perf_counter() + args.budget_hours * 3600
