@@ -54,3 +54,31 @@ bankable two-seed union gain (the H13 bar); (3) **plan representation** — H14 
 steps hurt flow; test a coarser (head-mostly) plan to keep flow's lattice small while retaining
 groundability. MDLM remains the discrete token-level substrate; AR+plan-AR are complementary.
 **Do not close the flow thread** — LPSF is the first place it earned its keep.
+
+---
+
+## V42 correction (verifier re-baseline + uniques audit, 2026-06-12)
+
+V42 fixed four batched-verifier defect classes (`docs/V42_01_VERIFIER_FIX.md`), regenerated v41's
+candidates GPU-faithfully (deterministic 44/44 — they ARE v41's candidates; plans+proofs now
+persisted), and re-verified everything mode-symmetrically (`bisect-batched` == isolation).
+
+- **H11 "SUPPORTED (marginal)" is RETRACTED → exactly TIED on dev.** The +1 compared isolated
+  plan-AR (20) against the *under-counted batched* direct-AR (19); sound direct-AR is **20/45**.
+  Final stays 17 vs 20 (−3).
+- **H12 unchanged (BORDERLINE):** dev 1.00 / 0.75; final now 1.18 / 0.88 — tier-final *favors*
+  flow: plan-flow-3407 = **20/44 (0.455)**, up from the batched 18/44 (+2 sound recoveries).
+- **H13 numbers confirmed sound, narrative corrected.** Uniques over iso-{direct-AR ∪ plan-AR}:
+  seed 3407 +2 dev / +3 final (PASS), seed 4242 +1 dev / +2 final (FAIL dev) — same verdict
+  structure; the 0/6 direct-AR recheck is now a committed artifact
+  (`outputs/v42/rebase/v41_uniques_directAR_recheck.json`). **But the proof-level audit
+  (`docs/V42_03_UNIQUES_AUDIT.md`) refutes the "strategic diversity" framing: all unique solves
+  are 1-step `simp` variants** (bare `simp` ×4) from `simp(NONE)`/`simp(LEMMA)` plans — flow wins
+  where plans require zero grounding decisions while plan-AR mode-collapses to gold-shaped plans
+  the weak grounder can't fill. Value = *diversity toward simplicity*, not strategy.
+- **Ceiling 0.267 verbatim** (sound); causality holds (corrupted 0.067). Beam-2 grounding lifts
+  it to **0.311** — still < 0.35, so the exit-rule fallback leg (weak-grounder conditionality)
+  remains active. **Exit-rule status unchanged: not fired.**
+- V42 P4 follow-ups: **H16 SUPPORTED both seeds** (head-only plans: flow/AR exact-seq ratio at
+  L=2 = 0.60/0.55 vs typed 0.03/0.00 — H14's collapse was *tokenization*, not abstraction);
+  H17 (3-seed H13) in `docs/V42_04_LPSF_NEXT.md`.

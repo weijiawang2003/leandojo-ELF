@@ -105,3 +105,19 @@ Justified only by tonight's numbers:
   tier-unstable; **confirm with seed-2 + both tiers before productionizing**, don't ship on one tier.
 - If a *flow* token-level effort is ever revived, only **semi-AR block decoding** (H7) showed any lift,
   and only 4× off a near-zero floor — not worth it over LPSF.
+
+---
+
+## V42 correction (verifier re-baseline, 2026-06-12)
+
+V42 found four defect classes in the batched verifier (chunk timeout, parse desync, multi-line-
+statement attribution shift, maxErrors flood — see `docs/V42_01_VERIFIER_FIX.md`) and re-verified
+every number above in `bisect-batched` mode (proven == one-per-file isolation; agreement 102/102).
+
+- **Direct-AR tier-dev: 0.422 (19/45, batched-legacy) → 0.444 (20/45, bisect)** — one recovery
+  (`Mathlib.Tactic.Ring.div_congr`, a genuine `subst_vars; rfl`, demoted by the attribution shift
+  that `concaveOn_id`'s multi-line statement caused). Tier-dev AR∪MDLM union 20 → **21**.
+- **Everything else above survives verbatim:** dev MDLM 16/45, dev flow 0/45, final AR 20/44,
+  final MDLM 19/44, final flow 1/44 (the degenerate `rw []`), final union 27/44 (+7) — zero
+  candidate flips. **H6 and H10 verdicts unchanged.**
+- Full old→new table: `docs/V42_02_REBASELINE.md`; artifacts: `outputs/v42/rebase/*_v42iso.json`.
