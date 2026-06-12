@@ -1,0 +1,1 @@
+{"cell": "scale_flow_10M_U45357", "family": "flow", "scale": "10M", "U": 45357, "params": 11777024, "step": 2504, "total_steps": 2504, "frac": 1.0, "tokens": 99818472, "epochs": 7.05, "val_loss": 0.1098, "lr": 3e-05, "tok_per_s": 768739.9, "dev_exact_seq": 0.0016, "dev_per_token": 0.7004, "dev_distinct_mean": 29.875, "dev_n_samples": 640, "tag": "scale", "corpus": "plangen"}

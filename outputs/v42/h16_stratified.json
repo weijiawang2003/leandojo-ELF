@@ -1,0 +1,97 @@
+{
+ "git_sha": "68d6706",
+ "K": 4,
+ "device": "cuda",
+ "cells": {
+  "head_ar_3407": {
+   "family": "ar",
+   "snapshot": "outputs/v42/headplan_s3407/snapshots/scale_ar_10M_U45820.pt",
+   "corpus": "data/v40/corpora/headplan",
+   "exact_seq": {
+    "1": 0.5935483870967742,
+    "2": 0.23857868020304568,
+    "3+": 0.018691588785046728
+   },
+   "n": {
+    "1": 310,
+    "2": 197,
+    "3+": 107
+   }
+  },
+  "head_flow_3407": {
+   "family": "flow",
+   "snapshot": "outputs/v42/headplan_s3407/snapshots/scale_flow_10M_U45820.pt",
+   "corpus": "data/v40/corpora/headplan",
+   "exact_seq": {
+    "1": 0.4774193548387097,
+    "2": 0.14213197969543148,
+    "3+": 0.0
+   },
+   "n": {
+    "1": 310,
+    "2": 197,
+    "3+": 107
+   }
+  },
+  "head_flow_4242": {
+   "family": "flow",
+   "snapshot": "outputs/v42/headplan_s4242/snapshots/scale_flow_10M_U45820.pt",
+   "corpus": "data/v40/corpora/headplan",
+   "exact_seq": {
+    "1": 0.4838709677419355,
+    "2": 0.1319796954314721,
+    "3+": 0.0
+   },
+   "n": {
+    "1": 310,
+    "2": 197,
+    "3+": 107
+   }
+  },
+  "typed_ar_3407": {
+   "family": "ar",
+   "snapshot": "outputs/v41/plangen_s3407/snapshots/scale_ar_10M_U45357.pt",
+   "corpus": "data/v41/corpora/plangen",
+   "exact_seq": {
+    "1": 0.3967741935483871,
+    "2": 0.14720812182741116,
+    "3+": 0.020202020202020204
+   },
+   "n": {
+    "1": 310,
+    "2": 197,
+    "3+": 99
+   }
+  },
+  "typed_flow_3407": {
+   "family": "flow",
+   "snapshot": "outputs/v41/plangen_s3407/snapshots/scale_flow_10M_U45357.pt",
+   "corpus": "data/v41/corpora/plangen",
+   "exact_seq": {
+    "1": 0.03225806451612903,
+    "2": 0.005076142131979695,
+    "3+": 0.0
+   },
+   "n": {
+    "1": 310,
+    "2": 197,
+    "3+": 99
+   }
+  },
+  "typed_flow_4242": {
+   "family": "flow",
+   "snapshot": "outputs/v41/plangen_s4242/snapshots/scale_flow_10M_U45357.pt",
+   "corpus": "data/v41/corpora/plangen",
+   "exact_seq": {
+    "1": 0.05161290322580645,
+    "2": 0.0,
+    "3+": 0.0
+   },
+   "n": {
+    "1": 310,
+    "2": 197,
+    "3+": 99
+   }
+  }
+ }
+}
