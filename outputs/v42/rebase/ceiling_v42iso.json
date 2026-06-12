@@ -1,0 +1,51 @@
+{
+  "ceiling_pass1": 0.26666666666666666,
+  "ceiling_hits": 12,
+  "n": 45,
+  "corrupted_pass1": 0.06666666666666667,
+  "corrupted_hits": 3,
+  "plan_causal": true,
+  "temperature": 0.05,
+  "samples": [
+    {
+      "name": "Finset.sigma_nonempty",
+      "grounded": "simp [Finset.ext_iff]",
+      "verified": true
+    },
+    {
+      "name": "sq_lt_one_iff_abs_lt_one",
+      "grounded": "simpa only [\u2190 not_le, ] using",
+      "verified": false
+    },
+    {
+      "name": "not_lt_iff_le_imp_le",
+      "grounded": "simp [subset_def, and_comm]",
+      "verified": false
+    },
+    {
+      "name": "irrational_ratCast_div_iff",
+      "grounded": "simp [div_eq_mul_inv]",
+      "verified": true
+    },
+    {
+      "name": "WeakSpace.isOpen_of_isOpen",
+      "grounded": "simpa [] using  \ud835\udd5c \ud835\udd5c \ud835\udd5c \ud835\udd5c \ud835\udd5c \ud835\udd5c x",
+      "verified": false
+    },
+    {
+      "name": "Matrix.posDef_intCast_iff",
+      "grounded": "simp",
+      "verified": true
+    },
+    {
+      "name": "Subgroup.coe_zpow",
+      "grounded": "dsimp",
+      "verified": true
+    },
+    {
+      "name": "toIcoDiv_sub_zsmul'",
+      "grounded": "rw [add_comm, , add_comm]",
+      "verified": false
+    }
+  ]
+}
