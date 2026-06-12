@@ -50,6 +50,25 @@ MATHLIB_IMPORT = "import Mathlib"
 _DIAG_RE = re.compile(r"^(?P<path>.+?):(?P<line>\d+):(?P<col>\d+): (?P<kind>error|warning)\b(?P<rest>.*)$")
 
 
+def _is_parse_class(msg: Optional[str]) -> bool:
+    """True iff a diagnostic is a parser/lexer-class error — the only class that
+    can desync Lean's command boundaries and make batched attribution lie
+    (skipped declarations, leaked errors, eaten sentinels). Elaboration errors
+    ("unknown identifier", "type mismatch", "unsolved goals", ...) occur on a
+    successfully parsed declaration and cannot affect any other candidate.
+    The message body (after the "error: " prefix) of a parser error starts with
+    "unexpected ..."; lexer poison contains "unterminated ..."; "timeout" marks
+    a whole-chunk subprocess timeout (every verdict in that chunk is untrusted)."""
+    if not msg:
+        return False
+    m = msg.lower()
+    body = m.split("error:", 1)[1].lstrip() if "error:" in m else m
+    return (body.startswith("unexpected")
+            or "unterminated comment" in m
+            or "unterminated string" in m
+            or m == "timeout")
+
+
 @dataclass
 class CandidateVerdict:
     """Per-candidate verification result from a batch."""
@@ -222,6 +241,15 @@ class BatchMathlibVerifier:
 
     def _verify_chunk(self, items: Sequence[Tuple[str, str, str]]
                       ) -> List[CandidateVerdict]:
+        return self._verify_chunk_ex(items)[0]
+
+    def _verify_chunk_ex(self, items: Sequence[Tuple[str, str, str]]
+                         ) -> Tuple[List[CandidateVerdict], bool]:
+        """Like :meth:`_verify_chunk` but also returns ``file_suspect``: True iff
+        this compile produced any parser/lexer-class diagnostic (desync-capable —
+        attribution across the whole file is then untrustworthy) or timed out.
+        Computed over ALL raw diagnostics, including ones not attributed to any
+        candidate (e.g. before the first start or past the last range)."""
         source, ranges = self._render(items)
         fh = tempfile.NamedTemporaryFile(
             mode="w", suffix=".lean", prefix="v26_mathlib_batch_",
@@ -254,10 +282,11 @@ class BatchMathlibVerifier:
             if timed_out:
                 return [CandidateVerdict(idx, items[i][0], items[i][1], items[i][2],
                                          False, "timeout")
-                        for i, (idx, _s, _e) in enumerate(ranges)]
+                        for i, (idx, _s, _e) in enumerate(ranges)], True
             stdout = proc.stdout or ""
             stderr = proc.stderr or ""
             diags = self._parse_diagnostics(fh.name, stdout, stderr)
+            file_suspect = any(_is_parse_class(msg) for _ln, msg in diags)
 
             starts = [start for (_idx, start, _end) in ranges]  # strictly increasing
             attributed = self._attribute(starts, diags)
@@ -268,7 +297,7 @@ class BatchMathlibVerifier:
                 err = self._pick_error(attributed[i])
                 out.append(CandidateVerdict(idx, name, stmt, tactic,
                                             err is None, err))
-            return out
+            return out, file_suspect
         finally:
             if os.environ.get("MINI_ELF_LEAN_KEEP_TEMP", "") in ("", "0", "false", "False"):
                 try:
@@ -329,6 +358,61 @@ class BatchMathlibVerifier:
         else:
             logger.warning("verify_many: confirm did not converge in %d rounds", max_rounds)
         return verdicts
+
+    def verify_many_bisect(self, items: Sequence[Tuple[str, str, str]]
+                           ) -> List[CandidateVerdict]:
+        """Batched verification that provably equals one-candidate-per-file
+        isolation on ANY input mix, including malformed candidates (v42 fix for
+        the confirm-loop false-negative bug).
+
+        Trust rule: a batch verdict set is accepted iff its compile produced NO
+        parser/lexer-class diagnostic and no timeout (:func:`_is_parse_class`).
+        Parse-clean files cannot desync — every declaration elaborates at its
+        own range, so attribution equals isolation. A suspicious batch is split:
+        candidates whose own attributed error is parse-class are quarantined and
+        verified as singletons (= isolated ground truth, and the only way a
+        parse-broken candidate ever gets its verdict); the remaining candidates
+        are re-batched (a victim whose range got a leaked/garbled diagnostic, or
+        that was silently skipped, re-elaborates cleanly there). If partitioning
+        cannot shrink the set (all-suspect / no-suspect-but-file-suspicious /
+        whole-chunk timeout), halve instead. Every emitted verdict therefore
+        comes from a parse-clean batch or a singleton file. Termination: each
+        recursion strictly shrinks the set, bottoming out at singletons."""
+        if not items:
+            return []
+        out: List[Optional[CandidateVerdict]] = [None] * len(items)
+        self.n_bisect_splits = 0
+
+        def solve(idxs: List[int]) -> None:
+            if not idxs:
+                return
+            if len(idxs) > self.batch_size:
+                mid = len(idxs) // 2
+                solve(idxs[:mid]); solve(idxs[mid:])
+                return
+            verdicts, suspect = self._verify_chunk_ex([items[i] for i in idxs])
+            if len(idxs) == 1 or not suspect:
+                for j, i in enumerate(idxs):
+                    v = verdicts[j]
+                    out[i] = CandidateVerdict(i, v.theorem_name, v.statement,
+                                              v.tactic, v.success, v.error)
+                return
+            self.n_bisect_splits += 1
+            quarantine = [i for j, i in enumerate(idxs)
+                          if _is_parse_class(verdicts[j].error)]
+            qset = set(quarantine)
+            clean = [i for i in idxs if i not in qset]
+            if quarantine and clean:
+                for i in quarantine:
+                    solve([i])
+                solve(clean)
+            else:
+                mid = len(idxs) // 2
+                solve(idxs[:mid]); solve(idxs[mid:])
+
+        solve(list(range(len(items))))
+        assert all(v is not None for v in out)
+        return out  # type: ignore[return-value]
 
     def verify_one(self, theorem_name: str, statement: str, tactic: str
                    ) -> Dict[str, object]:

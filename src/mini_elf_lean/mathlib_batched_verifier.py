@@ -96,12 +96,30 @@ class TrustedMathlibVerifier(BatchMathlibVerifier):
     is a no-op on candidate sets without lexer poisoning (e.g. real model beams),
     so it never alters previously reported numbers."""
 
+    #: v42: verification mode provenance ("bisect-batched" since the v42 fix).
+    VERIFY_MODE = "bisect-batched"
+
     def verify_many(self, items, *, confirm: bool = True, max_rounds: int = 8):
+        """v42: routed through :meth:`verify_many_bisect`, which provably equals
+        one-candidate-per-file isolation on any input mix. The historical
+        confirm-loop path (v27–v41) is kept as :meth:`verify_many_legacy`; it is
+        sound for *well-formed* candidate sets but produces FALSE NEGATIVES when
+        the batch contains malformed (parse-broken) candidates — model-grounded
+        proofs being the discovered case (v41): a parse-desynced recheck batch
+        misattributes errors to genuine passes and ``confirm`` demotes them
+        permanently (it never re-promotes), and a whole-chunk subprocess timeout
+        fails every candidate in the chunk at once."""
         if not confirm:
             raise UnsafeVerifierError(
                 "TrustedMathlibVerifier requires confirm=True (iterative "
                 "success-confirmation); confirm=False is the unsound path."
             )
+        return self.verify_many_bisect(items)
+
+    def verify_many_legacy(self, items, *, max_rounds: int = 8):
+        """The pre-v42 trusted path (confirm loop + lex-poison rescue). Kept ONLY
+        for the v42 regression test and old-vs-new comparisons. Do not use for
+        reported metrics on model-grounded candidates."""
         verdicts = super().verify_many(items, confirm=True, max_rounds=max_rounds)
         return self._rescue_false_negatives(items, verdicts)
 
