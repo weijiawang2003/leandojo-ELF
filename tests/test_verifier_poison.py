@@ -157,6 +157,40 @@ def test_bisect_equals_isolated_on_mixed_60():
 
 
 # --------------------------------------------------------------------------- #
+# (iv) Attribution shift: a MULTI-LINE STATEMENT used to be appended as ONE
+#      bookkeeping line, silently shifting every later range in the file —
+#      every later diagnostic was misattributed (false POSITIVES and false
+#      negatives, with zero parse diagnostics). Found live in v42: the one
+#      tier-dev statement with an embedded newline (concaveOn_id) made garbage
+#      candidates "verify" in v40's batched run.
+# --------------------------------------------------------------------------- #
+@lean_only
+def test_multiline_statements_do_not_shift_attribution():
+    # 8 consecutive candidates sharing a 3-physical-line statement: under the old
+    # bookkeeping each adds +2 of cumulative range shift, so tail diagnostics land
+    # whole candidates away. Recorded old-code behavior (old _render + legacy):
+    # ml_2/ml_4/ml_6 ('simp [h]', genuine passes) and good_tail ('exact h') all
+    # DEMOTED — and on the real v40 tier-dev data the same shift produced false
+    # POSITIVES (garbage candidates "verified"). The fixed render + bisect must
+    # match gold isolation exactly.
+    ml_stmt = "(a b : Nat)\n    (h : a = b)\n    : a + 0 = b"
+    batch = [(f"ml_{i}", ml_stmt, "simp [h]" if i % 2 == 0 else "exact garbage_id")
+             for i in range(8)]
+    batch += [
+        ("false_tail_1", "(n : Nat) : n + 1 = n", "rfl"),
+        ("good_tail", "(p : Prop) (h : p) : p", "exact h"),
+        ("false_tail_2", "(n : Nat) : n = n + 2", "simp"),
+    ]
+    v = TrustedMathlibVerifier(SCRATCH, core=True, timeout=120)
+    g = GoldMathlibVerifier(SCRATCH, core=True, timeout=120)
+    bi = {x.theorem_name: x.success for x in v.verify_many(batch, confirm=True)}
+    go = {x.theorem_name: x.success for x in g.verify_many(batch)}
+    assert bi == go, f"attribution shift: {bi} vs gold {go}"
+    assert go["good_tail"] and go["ml_0"]
+    assert not go["false_tail_1"] and not go["false_tail_2"] and not go["ml_1"]
+
+
+# --------------------------------------------------------------------------- #
 # (iii) The old lexer-poison classes are still handled by both paths
 # --------------------------------------------------------------------------- #
 @lean_only

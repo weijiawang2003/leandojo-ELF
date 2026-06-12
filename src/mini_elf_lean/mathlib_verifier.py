@@ -170,8 +170,15 @@ class BatchMathlibVerifier:
         ranges: List[Tuple[int, int, int]] = []
         for idx, (_name, stmt, tactic) in enumerate(items):
             start = len(lines) + 1  # 1-indexed line of the `example` header
-            lines.append(f"example {stmt} := by")
-            body = tactic.splitlines() or [tactic]
+            # v42: a statement may itself span lines (LeanDojo pretty-printing).
+            # Append PHYSICAL lines (split exactly on '\n', matching the final
+            # join) so line-range bookkeeping never drifts: one multi-line
+            # statement used to shift every later range in the file, silently
+            # misattributing every later diagnostic (false positives AND false
+            # negatives downstream — the v40/v41 tier-dev poison).
+            for hl in f"example {stmt} := by".split("\n"):
+                lines.append(hl)
+            body = tactic.split("\n") or [tactic]
             for bl in body:
                 lines.append("  " + bl)
             end = len(lines)  # last line of this candidate's block

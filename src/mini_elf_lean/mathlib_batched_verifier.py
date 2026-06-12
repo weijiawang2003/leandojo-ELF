@@ -177,8 +177,9 @@ class NaiveBatchMathlibVerifier(BatchMathlibVerifier):
         ranges: List[Tuple[int, int, int]] = []
         for idx, (_name, stmt, tactic) in enumerate(items):
             start = len(lines) + 1
-            lines.append(f"example {stmt} := by")
-            body = tactic.splitlines() or [tactic]
+            for hl in f"example {stmt} := by".split("\n"):  # exact physical lines (v42)
+                lines.append(hl)
+            body = tactic.split("\n") or [tactic]
             for bl in body:
                 lines.append("  " + bl)
             end = len(lines)
