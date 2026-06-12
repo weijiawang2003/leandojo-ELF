@@ -110,8 +110,10 @@ def gen_kw(family, cfg_w=2.0):
 
 
 @torch.no_grad()
-def source_candidates(plan_model, pcfg, pvocab, grounder, gcfg, gvocab, tier, dev, *, K, steps, family, cfg_w=2.0):
-    """Return name -> list of (proof_candidate) (K grounded proofs, may dedupe later)."""
+def source_candidates(plan_model, pcfg, pvocab, grounder, gcfg, gvocab, tier, dev, *, K, steps, family, cfg_w=2.0,
+                      plans_out=None):
+    """Return name -> list of (proof_candidate) (K grounded proofs, may dedupe later).
+    If ``plans_out`` is a dict, also record name -> [plan_str] (v42: persistence)."""
     out = {}
     for t in tier:
         name, stmt = t["full_name"], t["statement"]
@@ -123,6 +125,8 @@ def source_candidates(plan_model, pcfg, pvocab, grounder, gcfg, gvocab, tier, de
         plans = [p for p in plans if p] or [[("simp", ["NONE"])]]
         proofs = ground_plans_batched(grounder, stmt, plans, gvocab, gcfg, dev)
         out[name] = proofs
+        if plans_out is not None:
+            plans_out[name] = [plan_to_str(p) for p in plans]
     return out
 
 
@@ -170,8 +174,10 @@ def main():
         pcfg = V38Config.from_dict(psnap["cfg"])
         pmodel = build_model(family, pcfg, **(psnap.get("family_kw") or {})).to(dev)
         pmodel.load_state_dict({k: v.to(dev) for k, v in psnap["state_dict"].items()}); pmodel.eval()
+        plans_rec = {}
         cand = source_candidates(pmodel, pcfg, pvocab, grounder, gcfg, gvocab, tier, dev,
-                                  K=args.K, steps=steps, family=family, cfg_w=cfg_w)
+                                  K=args.K, steps=steps, family=family, cfg_w=cfg_w,
+                                  plans_out=plans_rec)
         # freq-rank deduped proofs per theorem, verify top-10
         cand_by_name, items = {}, set()
         name2stmt = {t["full_name"]: t["statement"] for t in tier}
@@ -191,6 +197,16 @@ def main():
         pk, novel = passk_from(cand_by_name, vmap, train_proofs)
         solved = {nm for nm, ranked in cand_by_name.items() if any(vmap.get((nm, c)) for c, _ in ranked)}
         detail_solved[label] = sorted(solved)
+        if args.detail_dir:  # v42: persist plans/proofs/verdicts (was dead code in v41)
+            dd = Path(args.detail_dir); dd.mkdir(parents=True, exist_ok=True)
+            mode = "isolated" if args.chunk == 1 else (f"chunk{args.chunk}" if args.chunk
+                                                       else getattr(verifier, "VERIFY_MODE", "bisect-batched"))
+            (dd / f"{label}.json").write_text(json.dumps({
+                "label": label, "family": family, "tier": Path(args.tier).stem, "K": args.K,
+                "steps": steps, "cfg_w": cfg_w, "verify_mode": mode,
+                "plans": plans_rec, "proofs": cand,
+                "ranked": {nm: [c for c, _ in ranked] for nm, ranked in cand_by_name.items()},
+                "vmap": {f"{n}\x1f{t}": bool(v) for (n, t), v in vmap.items()}}))
         rec = {"label": label, "family": family, "steps": steps, "cfg_w": cfg_w, "tier": Path(args.tier).stem,
                "n_tier": len(tier), "pass_at_k": pk, "solved": len(solved), "novel": novel}
         results.append(rec)
