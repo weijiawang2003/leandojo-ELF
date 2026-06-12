@@ -59,6 +59,23 @@ makes 24-tier Lean verification inapplicable).
 top-10 → verified pass@{1,5,10}. Per-theorem detail (which candidate verified) is persisted for
 ensemble analysis.
 
+### 2.x Verifier soundness: bisection-confirmed batching (V42)
+
+Batched whole-file verification (one `import Mathlib` file, many `example` declarations, errors
+attributed by line range) is fast but trusts that the file elaborated the way the bookkeeping
+assumes. Model-generated candidates violate that in four ways we identified and now control for:
+(i) a chunk-level subprocess timeout fails every candidate in the file at once; (ii) parse-broken
+candidates desync Lean's command boundaries (skipped declarations, leaked diagnostics); (iii) a
+multi-line statement shifts every later line range unless ranges count physical lines; (iv) Lean
+aborts elaboration after `maxErrors` diagnostics, silently leaving later candidates unelaborated
+(false *successes*). Our protocol: a batch verdict set is accepted **iff** its compile produced no
+parser/lexer-class diagnostic, no abort, and a normal exit; otherwise parse-suspect candidates are
+quarantined to one-candidate-per-file isolation and the remainder re-batched — provably equal to
+full isolation on any input mix (property-tested; 102/102 agreement on stratified real candidates;
+`tests/test_verifier_poison.py`). Every verification artifact carries a `verify_mode` provenance
+tag. All v39–v41 headline numbers were re-derived under this protocol (V42); changed values are
+noted where they occur.
+
 ## 3. Results
 
 **3.1 Matched matrix + crossover (Track A, dev exact-seq).** AR scales cleanly with data (0.574→0.873);
@@ -160,6 +177,35 @@ verifies end-to-end on the v40 real-Mathlib tiers. Pre-registered H11–H15.
 - **Exit rule (close flow if H12 ∧ H13 both fail) did NOT fire** — flow is competitive and adds genuine
   (if seed-unstable) diversity. V42 = **scale up LPSF** with a premise-selection grounder, more seeds for
   stability, and a coarser plan; the flow thread stays open — LPSF is the first place flow earned its keep.
+
+## 4d. V42 addendum — verifier soundness re-baseline; the uniques audited
+
+V42 re-verified **every** v39–v41 headline under the sound protocol of §2.x (mode-symmetric,
+candidates regenerated bit-faithfully where unpersisted — generation is deterministic on the
+training device).
+
+- **What survives verbatim:** the v39 24-tier headline (22/24 AR, 22/24 MDLM, 20/24 FLOW@1 — zero
+  candidate flips); v40's H6 (flow whole-proof **0/45 dev, 1/44 final** — the token-level flow
+  negative is *not* a verifier artifact) and H10 (final AR 20/44, MDLM 19/44, **union 27/44**
+  verbatim); v41's e2e cells (all reproduce; plan-flow-3407 tier-final *rises* 18→**20**/44);
+  the grounder ceiling (0.267; beam-2 lifts it to 0.311, still < 0.35) and plan-causality.
+- **What changes:** v40 dev direct-AR 19→**20**/45 (one attribution-shift victim recovered), so
+  v41's H11 "+1 for planning" is retracted — **planning is exactly tied with direct generation on
+  dev** (and −3 on final). H13's union gains stand *numerically* (3407: +2 dev/+3 final; 4242:
+  +1 dev/+2 final; direct-AR solves 0/6 of them — now a committed artifact), but the proof-level
+  audit **refutes the "strategic diversity" narrative: every unique solve is a one-step `simp`
+  variant** (bare `simp` ×4) produced from `simp(NONE)`/`simp(LEMMA)` plans. Mechanism: plan-AR
+  mode-collapses to gold-shaped multi-step plans that the premise-selection-limited grounder
+  cannot fill (it even emits junk-arg `simp [, ]`), while flow's low-fidelity short plans demand
+  zero grounding decisions. **Flow's H13 value = diversity toward simplicity under a weak
+  grounder** — falsifiable: a premise-selection grounder should shrink or invert it.
+- **H16 (the H14 confound resolved):** with **head-only** plans (one token per step), flow/AR
+  exact-seq at L=2 is **0.60 / 0.55** (seeds 3407/4242) vs **0.03 / 0.00** for typed plans —
+  H14's collapse was *tokenization*, not a failure of plan-level abstraction. v40's 0.643 was
+  real. LPSF-v2's plan representation should be coarse (head-mostly), with argument selection
+  pushed into the grounder.
+- **H17 (H13 at three seeds, tier-dev):** seed 7331 result in `docs/V42_04_LPSF_NEXT.md`
+  (criterion: union gain ≥ +2 in ≥ 2/3 seeds).
 
 ## 5. Limitations
 One night; seeds 3407 (+ a FLOW replication at 4242); n=24 verified tier ⇒ wide CIs (aggregate
