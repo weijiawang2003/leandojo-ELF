@@ -69,5 +69,15 @@ sha256(imports ⊕ statement ⊕ tactic) → verdict JSONL; only trusted-mode ve
 
 ## 4. Real-data demonstration + agreement validation
 
-*(appended when the Phase-1 runs complete: flow_s1 chunk re-check vs singletons; n=100 stratified
-bisect-vs-isolated agreement across v40/v41 sources)*
+**Real-data demonstration.** The v40 dev flow_s1 chunk that produced 22 maxErrors false
+positives under the first (broken) bisect now yields **0 TRUE verdicts**, each quarantined
+verdict matching its singleton compile (86 invocations — the price of soundness on
+garbage-dominated data). The legacy path's real-data evidence is the committed v41 intermediates
+themselves: plan-AR 0.089 / plan-flow 0.000 batched on tier-dev vs 0.444 isolated on identical
+candidates.
+
+**Agreement validation (`outputs/v42/agreement.json`): 102/102 = 100%**, seeded sample
+stratified over six sources (17 each: v40 dev AR / MDLM / flow_s1, v40 final AR, v41 dev
+plan-flow RAW-ranked incl. malformed grounded proofs, v41 final plan-AR), bisect-batched vs
+one-per-file isolation, cache-free both legs. Bisect was also *faster* than isolation on this
+mixed sample (282 s vs 463 s); on parse-clean batches the speedup is ~the batch size.
