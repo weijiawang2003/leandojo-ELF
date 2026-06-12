@@ -24,10 +24,34 @@ for p in (str(ROOT / "src"), str(ROOT / "scripts")):
 
 import torch
 
+import torch as _torch
+
 from mini_elf_lean.v38_backbone import V38Config
 from mini_elf_lean.token_seq2seq_dataset import TokenVocab
 from v38_matrix_eval import build_model
-from v41_e2e import source_candidates, well_formed
+from v41_e2e import ground_plans_batched, parse_plan_str, well_formed, gen_kw
+from v41_plan_factorize import plan_to_str
+
+
+@_torch.no_grad()
+def source_candidates_with_plans(plan_model, pcfg, pvocab, grounder, gcfg, gvocab, tier, dev,
+                                 *, K, steps, family, cfg_w=2.0):
+    """v41_e2e.source_candidates, but ALSO returns the decoded plans per proof
+    (the uniques audit needs plan+proof pairs; v41 never persisted either)."""
+    proofs_out, plans_out = {}, {}
+    for t in tier:
+        name, stmt = t["full_name"], t["statement"]
+        cids = pvocab.encode_source(stmt)[:pcfg.max_cond_len]
+        cids = cids + [pcfg.pad_id] * (pcfg.max_cond_len - len(cids))
+        cond = _torch.tensor([cids], dtype=_torch.long, device=dev)
+        ids = plan_model.generate(cond, n_samples=K, steps=steps, prompt=name, device=dev,
+                                  **gen_kw(family, cfg_w))
+        plans = [parse_plan_str(pvocab.decode_target(ids[k].tolist())) for k in range(ids.size(0))]
+        plans = [p for p in plans if p] or [[("simp", ["NONE"])]]
+        proofs = ground_plans_batched(grounder, stmt, plans, gvocab, gcfg, dev)
+        proofs_out[name] = proofs
+        plans_out[name] = [plan_to_str(p) for p in plans]
+    return proofs_out, plans_out
 
 
 def git_sha() -> str:
@@ -68,11 +92,13 @@ def main() -> int:
         pcfg = V38Config.from_dict(psnap["cfg"])
         pmodel = build_model(family, pcfg, **(psnap.get("family_kw") or {})).to(dev)
         pmodel.load_state_dict({k: v.to(dev) for k, v in psnap["state_dict"].items()}); pmodel.eval()
-        cand = source_candidates(pmodel, pcfg, pvocab, grounder, gcfg, gvocab, tier, dev,
-                                 K=args.K, steps=steps, family=family, cfg_w=cfg_w)
+        cand, plans = source_candidates_with_plans(pmodel, pcfg, pvocab, grounder, gcfg, gvocab,
+                                                   tier, dev, K=args.K, steps=steps,
+                                                   family=family, cfg_w=cfg_w)
         rec = {"label": label, "family": family, "steps": steps, "cfg_w": cfg_w,
                "tier": tier_stem, "K": args.K, "git_sha": git_sha(),
                "grounder": args.grounder, "snapshot": snap_path,
+               "plans": plans,
                "proofs": {nm: proofs for nm, proofs in cand.items()},
                "ranked_raw": {nm: [c for c, _ in Counter(p for p in proofs if p.strip()).most_common(10)]
                               for nm, proofs in cand.items()},
