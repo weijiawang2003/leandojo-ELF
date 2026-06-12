@@ -5859,3 +5859,249 @@
 {"h": "be20083823c7580ec99fc93c0c60455458faee825235ca020f7c5997062f1ffe", "ok": false, "err": "error: : unexpected token ','; expected term"}
 {"h": "691ea740769bf9b8e0af1210bb744990bb97fc06b74103ada0bc7ad6ec29ebd5", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `a`"}
 {"h": "a9930334c50fe772d9d36a2ab373923a35af149c6adb90831bfc82aa2d00fc50", "ok": false, "err": "error: : Tactic `assumption` failed"}
+{"h": "709db4cef1ea2bee18083a4ef7fbe04ea1c0c9bd421dad401052465dee6730fc", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "f5b11e3142da3a0a6553ebaa35234fe13895109d75bc92c760685fc344f25048", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "5c9e1a72a451b2c45d51cf619e318e1e16cca0d68c66a3a90fa4cdf1d0766508", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "12806bdd608695c7ce062ec8e2605ef23d67091cbe2b3d78a6115ef739e2f083", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "1b6728b6e5227509459b1a161da281a00fe1711aa0882df7a1d91695190966af", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "690e4f1a908b6e3cbccd0c70c52d6c7e860a7cc5d419b49cf5388b8b6df4bc06", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "e7a77d6a45a2e3625179d23fbaec72ef1df5a8f7a64e8adee7b28e4f5de356dc", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "7157ef17f72f532c33210239a096f27d045b0b4ce29f63c3d626d1cf7fc2f869", "ok": false, "err": "error: : Invalid simp theorem: Expected a proposition, but found"}
+{"h": "ad8584772a841eca5b38ba44b90262457dcb6f1e6bc5d6342092066187eb20be", "ok": true, "err": null}
+{"h": "d0254ba6f468755b2d848858e4e5da01f00e6391aed2de6609b2d18916da8bea", "ok": false, "err": "error: : Application type mismatch: The last"}
+{"h": "0fee756a3873bbca0808614a2831fede29bc271b91a6e7337a146c2bde929812", "ok": false, "err": "error: : Tactic `cases` failed: major premise type is not an inductive type"}
+{"h": "af7ab64298919da61700fb47ded0962914ac166c2e64d1860bbb91942055c957", "ok": false, "err": "error: : Application type mismatch: The argument"}
+{"h": "4c562d5d7c25c464441206aaef70d3d4f7c3f96e76ae5475c7b3416ba31b8e97", "ok": false, "err": "error: : Invalid simp theorem: Expected a proposition, but found"}
+{"h": "cae351fcce5526874802911b67683b3674c8d51fb55ed27783a75d78989c5e0e", "ok": false, "err": "error: : Invalid `\u2190` modifier: Cannot be applied to a rule that rewrites to `True`"}
+{"h": "81b513e6c0e481ea32b1da2024ef9d0ee7fa30bc93bf8d83b55f2a9cacc4cada", "ok": false, "err": "error: : Application type mismatch: The last"}
+{"h": "154c22fe5b9b5df45436437b5b2b6fca7e60e9925c73eb1b6c2df6129e227601", "ok": false, "err": "error: : Invalid simp theorem: Expected a proposition, but found"}
+{"h": "b194e9070d97441e08c7ed928df30ddff6dacbc60ab4134e34e566f897e9b9bc", "ok": false, "err": "error: : Invalid simp theorem: Expected a proposition, but found"}
+{"h": "2647fb58d9112b6c041e6c56a3e55861f563df1af165d92cbd12828abf7ad6cd", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "810127ce0639bdfe3d1b098c73d672ce16eb1b530d87e560d9c584b51207afbf", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "fd4da4773d929ab02f0935bdf0b51939f7704fd902814d579b87b3ed404a365e", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Pi.coe_le_coe`"}
+{"h": "16be2dc4cb569104d0328227aa29560a8970259fbb65961eda328a72375b20bb", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "5b6cdca8bd15ca71357ffcf53bcabeec656bdac77b6a61000fef4167ef50dea3", "ok": false, "err": "error: (lean.invalidField): Invalid field `eq`: The environment does not contain `Exists.eq`, so it is not possible to project the field `eq` from an expression"}
+{"h": "e6ab217e97570965b4cac1a49441e341e64b5db3135b174feddb40366d681735", "ok": false, "err": "error: (lean.invalidField): Invalid field `eq`: The environment does not contain `Exists.eq`, so it is not possible to project the field `eq` from an expression"}
+{"h": "bfdeaeaf446f4f7ec20b011263a5658a115ae63fa1932f235508a197c0a9216a", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "b3f4b7887bf18dc633e1479721a11d35c174647260c16a7ec7c6864b07751a1a", "ok": false, "err": "error: (lean.invalidField): Invalid field `symm`: The environment does not contain `Exists.symm`, so it is not possible to project the field `symm` from an expression"}
+{"h": "26958bb056a28c6568207fefbaa4669e3d9c6510f33d7ed6eb7bf3a3ed588550", "ok": false, "err": "error: (lean.invalidField): Invalid field `symm`: The environment does not contain `Exists.symm`, so it is not possible to project the field `symm` from an expression"}
+{"h": "4438d34dbfee23e6998855f2bdeef49bc55f74fbf1b8aca349d46aa3f10a7d1b", "ok": false, "err": "error: (lean.invalidField): Invalid field `symm`: The environment does not contain `Exists.symm`, so it is not possible to project the field `symm` from an expression"}
+{"h": "83bd7fc9b895ae2eec24afd9a424da7b72923f520f6eabb3eb5d8664b7e597b2", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "c5927287d9b48215d01959b224cb42257c55fdffc2e2e6341af34c08027116a3", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "b10cd6c0b617c6aab50cb6671e329432525c303f9dc7ebd26a174adaee8fc3b2", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "31618550487879f04e7d6ccd9417119ad46a3a6c67d1327b2661eef7adb4ef52", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "884258d46bfe17a0205a5e4e410b374124915bcab9309011c95b7245fd30b53b", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "bc4390b814591ca0f837edb043f897748107c4fb1f551a49379889319d28f6b0", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `hg.neg`"}
+{"h": "497b41462e3e80b6eb3a7344a699dd6a84f9b675902f7a39b55d4ec48d7e2a0f", "ok": false, "err": "error: : Function expected at"}
+{"h": "de7dfc001787eb821989e490dbe9614816dec7839187bd83cd606fdacc1f7c9f", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `hg.neg`"}
+{"h": "a41e62343f51f297cf1b7a9faf7c39fac3cabe4b661dd4a5ac5dfb77cf7e585c", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "be8e37f522ec329ad553db25f4ddd79696a898e3adb3d27aa164be65b02367ff", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "4727a019f032255816b82f2d73defa11b2473231d263795c932cc0d55d59be44", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "6df8e30938f778eb0b1b27ed09dc02349f7014134dff791d4f2a9bcdcd432e87", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "825ac67b4e940d3dcfe4a1048b792c3bdd24baa921fb0f555b9e25b764930d97", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "1e38c15841ed4987eb040c1ab9268bbe5a9f705c6272f123951ba4ab4e56c401", "ok": false, "err": "error: : Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression"}
+{"h": "8b6a91b4ff39a5163c102df5b92bb13fc8392e4259874407d04506e156967c7c", "ok": false, "err": "error: : gcongr did not make progress"}
+{"h": "5b19a45fbf7400912f0017e7e486125b274478ca1ab16dde8a125f92f83dc9fe", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "bf76f7f5cbd46b12db9fc22d7d1329f551f9e82d68bdd73ea74098573f997106", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "426fade91213666acc4c69f7ff560a8f2968470a244e6b1ced89567a94ffbbf2", "ok": false, "err": "error: (lean.invalidField): Invalid field `pow`: The environment does not contain `Eq.pow`, so it is not possible to project the field `pow` from an expression"}
+{"h": "f2a16a5a75c19cb56919c1c65d340bba7620503ba72b13716b3d3b8dc160227a", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "b93e56818b69fd4432d4c25834fa5f48b4191bdbb59f6f99818ae371732790ba", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "8dd52df1f1fa4fd011c36173ea7a04752fa8e05fa3f945a88980eba1dc32032b", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "99dcccd4f2a69bcfd5ece154b93016252218555d7ff40ec94574b453078a90a5", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "7b5a1bdf220ee1f794c10c64610976e3702723ba00559521b27aa5791d6b8656", "ok": false, "err": "error: : Invalid `\u2190` modifier: Cannot be applied to a rule that rewrites to `True`"}
+{"h": "8cc0e462e822987dfcaf24122c160dd8974015fe107cd889b2a99de8196cf4a9", "ok": false, "err": "error: : Type mismatch: After simplification, term"}
+{"h": "d6c18d4c8cecfdba0074b31e76fe045c5b13bd586734cee2c7383833b18a7406", "ok": false, "err": "error: : Invalid `\u2190` modifier: Cannot be applied to a rule that rewrites to `True`"}
+{"h": "baf723a81392111c818e02ac6eeae70445f47d2fd76d79bdc4644fe08d352837", "ok": false, "err": "error: (lean.invalidField): Invalid field `eq`: The environment does not contain `Eq.eq`, so it is not possible to project the field `eq` from an expression"}
+{"h": "4ec88743ac80d002184d1642da0225dadd90a26498cd30b8778b87117f43b0ea", "ok": false, "err": "error: : Invalid field notation: Identifier or numeral expected"}
+{"h": "f2fcabf0c26a60f1d084fcaf7586277fd9415eb4ed6d0db9773f059895b68fac", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "413e552e0acbb18e603b5fd02108d247a5744c566e41b8d83630ddc94030e4fa", "ok": false, "err": "error: : unsolved goals"}
+{"h": "7bb48911e53185c31f6204287161abb83b7a2723ff54ee863dcc85017e470a06", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "ee6cfe0ed6ecca7d72c5fd77ee9890a90619e602972a29b3bcf943f901fe8178", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "3a2daa876f65a40c97351e1db6e18c1bc16a58bb0799c97382b5febb03669bb2", "ok": false, "err": "error: : tactic 'aesop' failed, made no progress"}
+{"h": "c4b718d9756438b042439978168626dac6f411dd40e6f3bb5bce081d91ebf682", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "b8e192bb2e5ba4a784392bc1dbd53ea330f2c80ff62df1491c38833f3bd6eaa4", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `memLp_one_iff_integrable`"}
+{"h": "a4151d29c1708fe7961499ca10563743b607efb6f1cb5b9fa41c1fca40a9dbf4", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "c526804db5cfe99ea507cf647db2a422d47c27aeb18699f4384566a83c04023b", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `memLp_one_iff_integrable`"}
+{"h": "add57b82c382973a4b18715f603d0a6bc9c0cc544dd20c732caa95a90d010264", "ok": false, "err": "error: (lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression"}
+{"h": "d3550add4442b1417b10ede7cb6a750476472a836671f2d911261cc6d9ba08ae", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "aebc10de0936317e66069055ec17668c1d3220e49fc2e00a954fda7f9e9b935b", "ok": false, "err": "error: : Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression"}
+{"h": "c532a918d4ce5dac31b8fa001e2b92de14cb5cbc4464dde53ff45fc071a79074", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "20857b0137c74cb5e0b9e5dde869c240ec17ef16eb6e7e61fdada1ba9b0b7b02", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "9e66c3f2130d99b662869cef29650ff35be4c88c0438c7149b3b8e6e400867a1", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a value of type"}
+{"h": "faa18901fd32a63c83bd8fe3577ad94b1891de999055281f0c840d4068e6162a", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a value of type"}
+{"h": "c9f86faba5a1867c81e973d245f161a63c81efc16b096ea03373df2efc967a6f", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a value of type"}
+{"h": "743106c66e988051d4ac51341bda3fa98020732f999469a7983dbec36918d02d", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a value of type"}
+{"h": "ef8b36eb4a9132684d22412f947810fe2e2599a79ca3b9783828609f0c0fa983", "ok": false, "err": "error: : Invalid argument: Variable `h` is not a proposition or let-declaration"}
+{"h": "82d52bef6d4d30998872bd61f87857fe3bc23cea9d175dabe047c26aff2b5618", "ok": false, "err": "error: (lean.invalidField): Invalid field `eq_iff`: The environment does not contain `Quot.lift.eq_iff`, so it is not possible to project the field `eq_iff` from an expression"}
+{"h": "0bba62cad7a8209bba7330b00dde6adf803fd36bf1c09e77e885b83a8f47bc54", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "7d268885d57f999f62d6d3c25673f45c5b585e57a7c88df4fcd8eb5091394d03", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "cb2432f421d2ae05a3d01579e6ec3c0d10bd0f8379c984b244416d35faf2c360", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `\u03b1`"}
+{"h": "20e83fb4e91b1f7ac1693fb8270ed570e93f34c4b90d6dc0ba7005082dfeca00", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown constant `Nat.zero_apply`"}
+{"h": "b58180c26ba3ca57fe386ec13244c51e1204ae246b24e82e6217139458427c11", "ok": true, "err": null}
+{"h": "ca91916da0af2c4180901ded68f3c0826165b6f4104eb5c83aac340747d88ba0", "ok": false, "err": "error: (lean.invalidField): Invalid field `out`: The environment does not contain `Nat.le.out`, so it is not possible to project the field `out` from an expression"}
+{"h": "cd406988faada1eedaee0b7bc0fa4c1e5b2cdf7e4087809b804825df881e00c6", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `hn` is a proof of"}
+{"h": "ad6ced988a985d661a5d1128320f474e72afb563d12ccfaf046a09e94c80bda4", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "3f53da51f69e39cace34ac5099f7fefe4d570852d880302d635b4056f6c34c1d", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "21c3634f116faf7cb8b64de9b09cc0cc7651d6c8372bcaec9764a2f8cba92d16", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "75cc01860669f71ecc3fcb0e7eb7459cdb0be4539fae3d901175221c41cc73d4", "ok": true, "err": null}
+{"h": "ec8f2e0f17949837698de29d9caff3db2c87014598f0c38f56de8e90bfa5e0f8", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `hn` is a proof of"}
+{"h": "9cadf9c7e6d725603b559b784a5d2aff1e6776d5b4c56174f2071df081e0f2ac", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `hn` is a proof of"}
+{"h": "a312e0b5820aa9062f18712d84562b6329a3a2674a4a54b14b5f1d89cd9f39ce", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "973a23b667b397e19bad5243306bafa56b908867f60b3abd8b102fdbee4b5c04", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "3aaaa93bd964727fd4186c0ef708fcae5e85aab07091520c1b43391ed1281b23", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "7c776e9871ea72f3ecba3574bdc04a69d410fc561dc744f0a585349364433fcc", "ok": false, "err": "error: : No applicable symmetry lemma found for"}
+{"h": "88c3db90a7d2d918c285b9ddc70f5f75897fe9115e55e5312b8247e6732835f5", "ok": false, "err": "error: : gcongr did not make progress"}
+{"h": "df3a6565a47a5eae34aab183b29e74d5d690692f73b1c79a8301cb9fc645685e", "ok": false, "err": "error: : unknown tactic"}
+{"h": "6cad1f14e329d80455fab501596a65e02c11e41b9f8acf4e6321b31dabcecffc", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "2255f76fb3cb52e1603ad2fc329ff12ae64347d24b50c31cf8da63e26b829da9", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "c4e9360c31f56006ac75eb88694a15f990ba76e17cb9e73994e9ed5748bf14a5", "ok": false, "err": "error: : unexpected token ','; expected term"}
+{"h": "c751d95f70efca0b8eec1af093e6bed81da00bbe5a31c1b033e8ee77358868da", "ok": false, "err": "error: : Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression"}
+{"h": "9e95d45aba541725e7e7ebcf966d5fd427f5b8484c549707ae9100824af167d8", "ok": false, "err": "error: (lean.invalidField): Invalid field `prop`: The environment does not contain `Option.prop`, so it is not possible to project the field `prop` from an expression"}
+{"h": "0e0e7f6594bfc34f26473031ad4c77861e90300a6522342d8861ab52fc165469", "ok": false, "err": "error: : Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression"}
+{"h": "972a3c96541a5a97d4c79dc57ecad27ec52feb0d87a16230f9c6c7d4948fdf4b", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "5289049c5608e75dfd14cf1108b2e3cfb3e64febb7704377e85594635b0335ed", "ok": false, "err": "error: : Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression"}
+{"h": "99d9705be93771ca51aa128b09f8ca0d542404c62d06706b036a7c527e59a8fa", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `leval_apply`"}
+{"h": "64d1c58c5c24bdac1352437b59ba2169d3814b7c81c1fc80c8834195f79126ad", "ok": false, "err": "error: (lean.invalidField): Invalid field `eq_iff`: The environment does not contain `RelIso.eq_iff`, so it is not possible to project the field `eq_iff` from an expression"}
+{"h": "32f1613f06aacd62b3fd9a17fe2dfbae0ae84c1cb263c3e253afac5fe9cc011a", "ok": false, "err": "error: : Invalid simp theorem: Expected a proposition, but found"}
+{"h": "b6cab32c287d831c9db49d43b8fb7c2e9f87188e6ed80ec21ddcd6f10043213f", "ok": false, "err": "error: : Application type mismatch: The argument"}
+{"h": "0b6a2dc6d2df2630328e7c4211af93be02b97d290aae227571abf9c455888ad7", "ok": false, "err": "error: (lean.invalidField): Invalid field `eq_iff`: The environment does not contain `RelIso.eq_iff`, so it is not possible to project the field `eq_iff` from an expression"}
+{"h": "9246e881912c76176665eabb5aaa76ec1ad9227140f067f859ade249da551597", "ok": false, "err": "error: : Tactic `rewrite` failed: motive is not type correct:"}
+{"h": "4840ad1f3b7af40283b5247d1dcb302ff727cbd01f95dc9c84eb8b42b2626db7", "ok": false, "err": "error: : Tactic `rewrite` failed: motive is not type correct:"}
+{"h": "f364bc4dc0dd90a404a8e72e37842c34636294d06d80ca19da2e090d154c4d07", "ok": false, "err": "error: : Tactic `rewrite` failed: motive is not type correct:"}
+{"h": "94a63f64c885eba34500a95c0334888c530ea670e1fa85b7e87e1111816ae8e7", "ok": false, "err": "error: : Tactic `rewrite` failed: motive is not type correct:"}
+{"h": "e99d53e468ba46c27e1fe35bed22c53d6e3aa18c3b475e42f2d5d1c0e87782c6", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `insert_of_not_mem`"}
+{"h": "72fa28ab899adf1f92eff5fe0422103301ce35b98d50c7da8aba82db984244de", "ok": false, "err": "error: : unexpected token '\u2218'; expected term"}
+{"h": "aff8b90f907e14a630d02415afa0ba962259f44c46e859a819f966f35ee2efe8", "ok": false, "err": "error: : unexpected token ':='; expected ')', ',' or ':'"}
+{"h": "2e8ba821fc828453d50b5fee1d123a192533a437b19c2a7bc6f102a9dbb03708", "ok": false, "err": "error: (lean.invalidField): Invalid field `disintegrate`: The environment does not contain `Eq.disintegrate`, so it is not possible to project the field `disintegrate` from an expression"}
+{"h": "53c9ff285ae035b7ff4f3aee79322a1c76f46dc3def60643223fbce5d03928f2", "ok": false, "err": "error: : Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression"}
+{"h": "761f17733b3e45e55e73093f34f22d4b8ea5e09d2cfe384d657a07f00ab99275", "ok": false, "err": "error: : Type mismatch: After simplification, term"}
+{"h": "8ef0878e2f105614474e52693a84b48ee4b18dafd042888d331073924ca8b013", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `hy.neg`"}
+{"h": "c76f2e76355a7fcc1362cda9732bbdd98c43cf949c5ee1874135ff6e24084ffe", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "bddf22d9757ca9527c8bdac4e8fb891af155676653c342f739394506aedf67cd", "ok": false, "err": "error: : Invalid field notation: Identifier or numeral expected"}
+{"h": "214a7d341ec59b157eba7226273525c6f269377f1a040b5bfb039cb87f34638c", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "cd70207e5536e93490e87aef480f98ff436565d15a8900e075c34eee54fe6923", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "85f18eddf9066b30fa7a7762e57f82f67f72823e15fddaa69fff0823abb9ccbc", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "82e93d340f2d7ea4ae9f32bfde1a845c21e81c29c78e3f69ba995f73f3e8528e", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "b6e7ceabbf82ac89a3bba2532d4a3b4899290e1793fec1d38069d6e39404e2ad", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "c21602ead8dc3785543f38b699f96ae109db88c4610b972de7d6c63b978da2c2", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "8736bb57c56c598cc279a94c1fc9439a9033cd8168c9514a0a127b1ab321d0e3", "ok": false, "err": "error: : unsolved goals"}
+{"h": "9874ca6a5c4521bb1f626fb31141cec6b6b630ff5b7e78f577fd4b19dc286022", "ok": false, "err": "error: : This extensionality tactic only applies to equalities, not"}
+{"h": "9bec4a6107ad5b9e3992f4e8db02d6eeca5b768c16a96b42b31f41df26dffb40", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "5994305ae4e57d83dc3b23058f4cf6c47ca15e615559e736590a46ed64b74dc1", "ok": false, "err": "error: : This extensionality tactic only applies to equalities, not"}
+{"h": "0a45ad288a399f70b45ab260c54d991099ddc18f0edeaa0152eefa6f930ee46d", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "4b104e7e20e52d12d1aefef8ee0f10f8ca31db57095ccf47bc4a864583194fa7", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "bda1e7e9f598d5494cbc4e48e9a6d33df3cdb721a1c32244c8e08b972c8216da", "ok": false, "err": "error: : unexpected token '\u2190'; expected ']'"}
+{"h": "3f0c592448084d0e101f01a1e5fcdd6fe57f8765b29d325733ab69963b4c2f6b", "ok": false, "err": "error: : Invalid argument: Variable `H` is not a proposition or let-declaration"}
+{"h": "914105cae44d67017017626e48599b9aa38d540b43c1d84ef3980414ceb3e771", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "433af6abbcef68e65c93de0235740338208cc8c6f6128db1bb791c6c078a0166", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `H` is a value of type"}
+{"h": "2c34f3fe96a35c7e32c1117bc87b1ac2ab24962f59c8c9ea9395638130d7026e", "ok": true, "err": null}
+{"h": "ca4119ba1f77a62a69b5f2e5a6f82cc2a42061b4fac3664bb4df77bb9bd30a5d", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `H` is a value of type"}
+{"h": "706ac2a0b709a9353f6961604a3fa3c1b3166d6baea1a9b7371278ed777d6ba0", "ok": false, "err": "error: : Invalid argument: Variable `H` is not a proposition or let-declaration"}
+{"h": "85719e8b422908d7d303cdc22c63238b265786c98857223429c0dc5c2fee199d", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `exact`"}
+{"h": "219e9eddefdd8edee865626b07d05923200c17e438239cff35196c444deeb0a2", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `hU.closure_eq`"}
+{"h": "b54885d5a3f08df2b1e7c31ad9be3b6fc1c78be923b004749c3003f5d5a6add8", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "67112803abebbc192be4b537466cfd2ea1c401461718ee502954bdeaecb4767b", "ok": false, "err": "error: (lean.invalidField): Invalid field `disintegrate`: The environment does not contain `Exists.disintegrate`, so it is not possible to project the field `disintegrate` from an expression"}
+{"h": "36f3dfa89f1ed7135b7ec569220676588c715551c0709f90cbfbd3d0c5d6eae8", "ok": false, "err": "error: : Function expected at"}
+{"h": "08b08a4e4fbf791e74dfd6a445522628ef2be10dc87a598236595651fc4190c2", "ok": false, "err": "error: : unexpected token ':='; expected ')', ',' or ':'"}
+{"h": "77f9fee67e9f1298a7757eb006855c6642a69422d7425e99d36d35e2514b338d", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "08059e959314fdb89fee3a200ab8e150da8d69f4f4f88989088e3c1ad5e08727", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "ca07424713f2fe2347e5caa490094b82151c8539679a8ab970134aa96a24ff33", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "9c1facf6a224d956ef13f491405350c55b463a130d72408c3a2ca97d37a439be", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ici_inter_Iio`"}
+{"h": "fe3cd4f18110954552c309b515a478c81a5ce57cdb1184feee31046196ab5771", "ok": true, "err": null}
+{"h": "3f0822b3924c5489d4c400cc898769ed98837833c242ce2737bc4f0c48f60901", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ioi_inter_Iio`"}
+{"h": "ca6630d83cff1f2ac5d5a2943643dc61ffdc84bd83bddf50a53ba3601edd73e3", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "b536e79097b5a8a89aa371cd7e91140929839a0b23f7e5eae1ac4a06e6707e4a", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "60ed3d7a7c105c439697947375a79e0843a3484fc9eb6e8e4b9fa178d84496c0", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "742bd5541db7c35c9a8bc7c1b26efb8aa2a0394332ff8992d6c08614898a29ef", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "30e766d50d4344f3979ff0ea2bb13f0d3868cc5dae26aa7cf1bafb2a12e8d059", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "713fc27cc9827d1a0bc647016b11d6f472f916872bfd8001eab60b0f2ed5c8f8", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "1d64d05904c9cb3e6bf3a057f77248dcc63a68c5e47e1cbe75a56c033e7204c9", "ok": false, "err": "error: : Invalid field notation: Identifier or numeral expected"}
+{"h": "f2643ffce912ed76b37f26c2c6aab19c1b55cb4f6871e34e9af0f5665bba3440", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "109a550da2a7ea07d3199a95b8a7f08f1d2698cff28e9265df94f31d8b220228", "ok": false, "err": "error: : Application type mismatch: The argument"}
+{"h": "52317398fb8eeeefb90fa3ea5801b1850872e023e9a2093a6faf1e73cd754b4d", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "ee6a445d193d728c555daf117613147d2631f396ef0ea1a97e5f7e1712a6e126", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "9d0d799ea9d25c3d7e63feeb4b42e497fd2136cddd3b741eaaefe80599918117", "ok": false, "err": "error: : Invalid argument: Variable `a` is not a proposition or let-declaration"}
+{"h": "497463cd5fbbc22ff0429afa963d9f0beaa33bb90e365a8dd271727a9abf78a2", "ok": false, "err": "error: : unexpected token '\u2190'; expected ']'"}
+{"h": "51f4dba128ea80758a1589904d00bf8920d6d4455d3e8722bed7f85f9869e1ec", "ok": false, "err": "error: : unsolved goals"}
+{"h": "663713cab5f95dd65eabe33fbc988361420ff7d022d1b96123597bea119ddb99", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "52066f434905199ed27b24c48697374bce3ede592e8c3180ef821609eceb3444", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "521a1cbc01b44e6a33263e3bbfd75dad645ef166604902aa535a76e9170db109", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "d6d239f79e3ddfd1b9622e6b8baf46c7a8cb8b1979496a961492b048708ed9fe", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "114e58c1acd7ec858d43a8e17a9c5170b9e41f4e00264b30fe5b448a95ac3b9b", "ok": false, "err": "error: : unsolved goals"}
+{"h": "c041c04d89aa1abe56659172f81d88bff27d96bf298306d9afdbb1f7c4b5500f", "ok": false, "err": "error: : unexpected token ':='; expected ')', ',' or ':'"}
+{"h": "df63c5121fdd7bbb4192f97bd4b0655b24cee628eba33b4ea0c1bbc69842f873", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "1012547d4d9b1ddd6a48a17e00758461ace80168e928ee00d0b2e245eb99f222", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "adcfe0ca74c2a00fba09ce7e3dc0d3ad616a5797511febaad7e1a478c1b26e3b", "ok": false, "err": "error: : A placeholder `_` cannot be used where a function is expected"}
+{"h": "1cc57755bd510f076ce9d4a513bf3680129c88a161450b4fafc9f2fc11f2c72f", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ioi_inter_Iic`"}
+{"h": "f0b0bfbd10d1725e001cfdd6395b008bf3c2396cecfb635c9767088147110a75", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ioi_inter_Iic`"}
+{"h": "e94d410018301f265ca5fa075fff29f0851ab618120eabb4a7bf1846f5f7b95b", "ok": false, "err": "error: : unexpected token ':='; expected ')', ',' or ':'"}
+{"h": "47e56c30a13125675e2cfb64f380ccd16300a1d8ca2187e06626482e1581829f", "ok": true, "err": null}
+{"h": "f56e485b2044675fdee5a67600a5369eaf6aeaec6137f9e1fb588f516ffc049a", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "c4772feca7bffffa70d666d373520b28d651bed9f7f49b8be1eaf228672d2dc6", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ici_inter_Iio`"}
+{"h": "f3cf0aecd7768d90c94aadd270f0a0438185808af2029fd0254cf3c7b6cb14de", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "7704296e2e6bfdcfa761533727a883b2d622b89981ca7f3ea29b38551afa5656", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "4e28bda671843d9b3c90c425d91d45db7ef6cdde4ac68c95d3e8a56fcce83ccd", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ici_inter_Iic`"}
+{"h": "9bd6f83eea5ad9f21d6fc617bb382943cb13a03d525afa4d6546e181af1ee35c", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "c857316dad039bd21580a98ca31fda563f308bfd9c9364229079b24a9013f458", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown identifier `Ici_inter_Iic`"}
+{"h": "d0037d3d26120df040ff858b814a016f8bc95c693afc517955a824c60ab1b6ac", "ok": false, "err": "error: : unexpected token '\u21a6'; expected term"}
+{"h": "88e8b904fc92d1e87826213ac5151784648e5fdf25a5640429d233ba5a7ed11b", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "6645533cd80e857abbb9acb4191f2b82f6a4092f82bed91001815a6120e32549", "ok": false, "err": "error: (lean.unknownIdentifier): Unknown constant `Rat.ext_iff.mp`"}
+{"h": "00d3de4e9be4107b33f9c0a7551f606e6184f1a40ca4c7161428eeb2231c4116", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "c457a7a8a320c4b789a93a5dc455189f4d246ced03dbe3f5e9c9e1a0181d6a3f", "ok": true, "err": null}
+{"h": "5ade8e83102492443532ab842b2930aab6c312073104c084b099445e0834a2e4", "ok": false, "err": "error: (lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression"}
+{"h": "639647c22a57b2b208193f53d7e29eb5c1a0d5c69e7ff3755f61a7f6a6152e5e", "ok": false, "err": "error: : No goals to be solved"}
+{"h": "9703b14254fb69cdf56c3cb99ef8d649817302c409044ac48d16bf7f6ea47ad0", "ok": false, "err": "error: (lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression"}
+{"h": "c390153a4732f5c36a14af50c2ba7ac78d50ad847648403b66781d1251c16538", "ok": false, "err": "error: : Type mismatch: After simplification, term"}
+{"h": "563794db1d9c30c44c284f32c9ff4b88da02f59170a9c4c55370d31608e2af51", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a proof of"}
+{"h": "15aa7c2be71409b77dcf738f74270f85fd609687d54622f2489f86c8e692ddec", "ok": false, "err": "error: : A placeholder `_` cannot be used where a function is expected"}
+{"h": "e1abbfff41358898e8d94516e9de0eab655a9271dfb14fe8f0369f67834ec9a2", "ok": false, "err": "error: : unsolved goals"}
+{"h": "fd4a16cad09d5bed21ba13e12ecd4e1e164d1206f26cbe09691b13bf4228ebb1", "ok": false, "err": "error: : Type mismatch: After simplification, term"}
+{"h": "943359530cc661887dffb0cadc0b140c6918bb4abebcb629a719fb08cefcc80c", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a proof of"}
+{"h": "c44920d2ae39caaefc3c7604b2d33908bbbfe3563974a668d814369bcdc63583", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "24ba726e6ca9f86359420bd9d9970f323fce4d33f28ee332ec8854ad86e328ee", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `h` is a proof of"}
+{"h": "4879e567938b6f83339710ba189e61f7018655c18d1d6f716f7cde747c899d7d", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "4aaafa49b9edbc0cb4afba61019ac2c00211a1e45d842a214d30685a9314eeb4", "ok": false, "err": "error: : gcongr did not make progress"}
+{"h": "27a9065b340c70f91213af527075e51f7a44d399e7d0ae40ccf47e3ca8656ee5", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "1db8145d3a6abbdd52755201602c4b74125474af5b20c6cb509b9adb395b6ae5", "ok": false, "err": "error: : not a positivity goal"}
+{"h": "174411ec921bdff2396306719f350279b0237de7dc1a96b0e76b358f43334fc2", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "856d6ea6cfe2886afffe9b05d2c4a38584e3268f0f019edec4108afb7886e125", "ok": false, "err": "error: : Type mismatch"}
+{"h": "1de9a391505f4c3725797a95e749fc31b54d9e5207325c06ffa25ee83f910c28", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "a6691a671d3443d4cb8ce8c143c4e5d39176142ba9acc974096329954be4c5fc", "ok": false, "err": "error: : unexpected token 'using'; expected term"}
+{"h": "d0cc8b1a2ef2819890b36c197af163a739e66b976c1da237813cb1955eba24e0", "ok": false, "err": "error: : unexpected token '*'; expected '(', '+', '-' or term"}
+{"h": "b461e106abba772841b6f8f0b3e5113321cb03dbcc14a85d0bdc9f66b3654357", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "b0a9fe6fd5c544d8f42e8b9d5f9e4ebd395a010f06da3ad7cd9b0c49137932f2", "ok": false, "err": "error: : gcongr did not make progress"}
+{"h": "bd4edb1b14d6fa491a53e12101afa1036a66ac5cc3b5471ef9f64547b16cb03e", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "94b04217b324098e6eb4961522f3e82530f6e7a60dd0024338a60129a78cbd53", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "16b8d377a8603f205f5f5d8916fb58dda63026eb378e0e4a5ca9cbf028c28cd8", "ok": false, "err": "error: : Function expected at"}
+{"h": "175c45aca86267658290d085226275ce0a42103dfd7ff7735a3211212a774acd", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "e6ce85a8098158ea1ae0362546a667da26754ff5bbcf076162eb36a121b8b82d", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "3516f873e734ea0f0a0df732081821ebf023cd677454209acbcfb3adeddd439a", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "a51d71477c9f9c6b197b8674e4f6997d66373d9cd635bcc59d93cbd8c3fd01e5", "ok": false, "err": "error: : unexpected token 'example'; expected term"}
+{"h": "39868e9580bc0ba688a799d0483c0a4ffc15e73300334b3bebae0ed9e17d65fc", "ok": false, "err": "error: : unknown tactic"}
+{"h": "b8fc6fcb39d4a3aaf680c1fd8c6135db15cee80167da40230c9e918120045a2e", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "49d35c509b588fda99544db3eb2ef3fb1ab7e62d0c4982cf0382eef802f74960", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "bbdd22d18ea4eebc727722e3ae6e600b09b4b1e084477003383fb9aa82b5575a", "ok": false, "err": "error: : `push Not` made no progress on the goal"}
+{"h": "3246a135f1788721c2426c677bee141a06ee343a92260a9a8e8c9a2e681c9f30", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "75306bf1e11d887bb38066e107b0d8c82b545d76d24ddb670b05a1113998f900", "ok": false, "err": "error: : unsolved goals"}
+{"h": "5b19ab1e926feca58ec36eb88c1710627387137fc9b8c204d12b82f373a18701", "ok": false, "err": "error: : Tactic `assumption` failed"}
+{"h": "41e5a15e856bdf912fac62b2dfa1b7363942ff4d052bd4131ad73e6f18bbaa0c", "ok": false, "err": "error: : unsolved goals"}
+{"h": "3d4d6060236f9ab3c5da68c04ba56a7b8e14d29121b756b80df194b3ceab4640", "ok": false, "err": "error: : Invalid field notation: Identifier or numeral expected"}
+{"h": "23a2783526b6c663442d25ab9e973744a0dc2b5d3d65fb90c5d1e69703cf88d8", "ok": false, "err": "error: : Invalid `\u2190` modifier: Cannot be applied to a rule that rewrites to `True`"}
+{"h": "f689c5d442c726848bb999264c2013ce2174c89a5e46d6c78dd5053614f7650c", "ok": false, "err": "error: : Invalid `\u2190` modifier: Cannot be applied to a rule that rewrites to `True`"}
+{"h": "c28bf29b620600a203173341bb07d8d2c8166807c7010c924228460c3566827b", "ok": false, "err": "error: (lean.synthInstanceFailed): failed to synthesize instance of type class"}
+{"h": "6b80ed875190e8880167551370638f8f74db0a5bb6a47420dc6b8b1464459dc7", "ok": true, "err": null}
+{"h": "802b515d1a2f43ac76c92618f90692b5a742470cccb5603fd51c3cb291df7454", "ok": false, "err": "error: : unsolved goals"}
+{"h": "01f7eaafc4867bfbc740040f636b6b7291a4157dd0c482598d0c28c32476ce8b", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "f5449145f865e1f417f7076fe13679a182dcdcfa275fea27ec73fa8ebb7d5f57", "ok": false, "err": "error: : gcongr did not make progress"}
+{"h": "bb5f88be08edc61f2014a0f164a9c5ec91be3d5f6c212575ac214afa7e20ae06", "ok": false, "err": "error: : `simp` made no progress"}
+{"h": "80856683f3c2abf93ea2ad1f83dfa002484da62d2d79f830fc0c423a233c2d9f", "ok": true, "err": null}
+{"h": "1a446334b840c3eda3bc11e2678c8e9f05110eb5971e0e0ee36b28a21d8967e7", "ok": false, "err": "error: : Tactic `rewrite` failed: Did not find an occurrence of the pattern"}
+{"h": "e9aa88c0ca14262aef30055099951e57e804b98a49a422df7239cab835de1b7c", "ok": false, "err": "error: : unexpected token '+'; expected ')', '_', '\u2191', '\u21a5', '\u21d1', identifier or term"}
+{"h": "c063e5062c39f0db3fefc52430c0c37de41a8fef75769000079e20c12822a67a", "ok": false, "err": "error: : Invalid rewrite argument: Expected an equality or iff proof or definition name, but `hp` is a proof of"}
+{"h": "c51da0775a672a5c844794bc746600ab830839943ba8b5ff6509292d2e17230a", "ok": false, "err": "error: : Function expected at"}
+{"h": "378ecc1ae577ee6f14da8bbe5ea50e9bfc860f2ec12d40221c4635674c672a73", "ok": false, "err": "error: : unsolved goals"}
+{"h": "a844f0450a8e6f9ac0e21170d85e71875a8a70b48d89c1f3f2c8d645b90d24d9", "ok": false, "err": "error: : omega could not prove the goal:"}
+{"h": "84a052184e8e41cfd0bb1be55682462674aa779a19a3addfa79e6331e3d0ee41", "ok": false, "err": "error: : unsolved goals"}
+{"h": "44e0f92a006ec35a5276d461ba747053b665bba51b2060b5cf911318a8acffbe", "ok": false, "err": "error: : No applicable extensionality theorem found for type"}
+{"h": "5ac99b36fc158977dbc86a52541f4b55fd94611dbe46797279938c756d23df68", "ok": false, "err": "error: : unsolved goals"}
+{"h": "cb26ab02fe2e842520426f71d72d8447c49e678c491c06dd8055c34da9fc076a", "ok": false, "err": "error: : `simp` made no progress"}
