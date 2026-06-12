@@ -70,10 +70,9 @@ def test_parse_class_predicate():
 # --------------------------------------------------------------------------- #
 def _slow_valid(n: int):
     """A genuinely valid candidate whose kernel evaluation takes ~n/8000 s
-    (calibrated: N=6000 ≈ 1.0 s, N=12000 ≈ 1.8 s per singleton file; the
-    in-file marginal cost is lower, hence the N=12000 class in the timeout
-    reproducer — 12 of them ≈ 18 s in one file vs the 8 s chunk timeout,
-    while each singleton stays ≈ 2 s ≪ 8 s)."""
+    (calibrated: N=20000 ≈ 2.0 s per singleton file, 24 of them ≈ 17 s in one
+    file vs the 8 s chunk timeout, while each singleton stays ≈ 2 s ≪ 8 s —
+    >2× margin on both sides of the timeout)."""
     s = n * (n - 1) // 2
     return (f"slow{n}", f": (List.range {n}).foldl Nat.add 0 = {s}",
             "set_option maxRecDepth 1000000 in decide")
@@ -110,7 +109,7 @@ def test_timeout_chunk_demotes_goods_on_legacy_but_not_bisect():
     # 12 slow-valid candidates (~1 s each) + goods; chunk wall-clock far exceeds
     # the 6 s timeout, but every singleton is far below it.
     v = TrustedMathlibVerifier(SCRATCH, core=True, timeout=8)
-    batch = [_slow_valid(12000 + i) for i in range(12)] + list(GOODS)
+    batch = [_slow_valid(20000 + 100 * i) for i in range(24)] + list(GOODS)
     legacy = v.verify_many_legacy(batch)
     # the WHOLE chunk times out -> every candidate, including the trivially-good
     # ones, is falsely failed (this is the v41 under-reporting bug)
@@ -120,7 +119,7 @@ def test_timeout_chunk_demotes_goods_on_legacy_but_not_bisect():
     by_name = {x.theorem_name: x for x in fixed}
     for nm, _s, _t in GOODS:
         assert by_name[nm].success, f"bisect failed known-good {nm}: {by_name[nm].error}"
-    for nm in (f"slow{12000 + i}" for i in range(12)):
+    for nm in (f"slow{20000 + 100 * i}" for i in range(24)):
         assert by_name[nm].success, f"bisect failed slow-valid {nm}: {by_name[nm].error}"
 
 
@@ -129,7 +128,7 @@ def test_trusted_default_path_is_bisect():
     # TrustedMathlibVerifier.verify_many must route through bisect now: the same
     # timeout batch verifies fine via the public API.
     v = TrustedMathlibVerifier(SCRATCH, core=True, timeout=8)
-    batch = [_slow_valid(12100 + i) for i in range(12)] + list(GOODS)
+    batch = [_slow_valid(30000 + 100 * i) for i in range(24)] + list(GOODS)
     out = v.verify_many(batch, confirm=True)
     assert all(x.success for x in out)
 
@@ -188,6 +187,30 @@ def test_multiline_statements_do_not_shift_attribution():
     assert bi == go, f"attribution shift: {bi} vs gold {go}"
     assert go["good_tail"] and go["ml_0"]
     assert not go["false_tail_1"] and not go["false_tail_2"] and not go["ml_1"]
+
+
+# --------------------------------------------------------------------------- #
+# (v) maxErrors flood: Lean aborts elaboration after `maxErrors` (default 100)
+#     diagnostics — "maximum number of errors … reached, exiting" — so every
+#     candidate after the abort line silently got NO diagnostic and was a false
+#     SUCCESS (found live in v42: 22 token-salad flow candidates "verified" in
+#     one v40 chunk). Fixed three ways: -DmaxErrors=100000 at invocation, the
+#     abort diagnostic is parse-class (suspect), and abnormal exits are suspect.
+# --------------------------------------------------------------------------- #
+@lean_only
+def test_error_flood_does_not_create_false_successes():
+    flood = [(f"junk_{i}", "(n : Nat) : n = n", f"unknown_tactic_xyz{i}")
+             for i in range(60)]  # ≥120 diagnostics: 2 per candidate
+    tail = [("false_tail", "(n : Nat) : n + 3 = n", "rfl"),
+            ("good_tail", "(p : Prop) (h : p) : p", "exact h")]
+    batch = flood + tail
+    v = TrustedMathlibVerifier(SCRATCH, core=True, timeout=120)
+    g = GoldMathlibVerifier(SCRATCH, core=True, timeout=120)
+    bi = {x.theorem_name: x.success for x in v.verify_many(batch, confirm=True)}
+    go = {x.theorem_name: x.success for x in g.verify_many(batch)}
+    assert bi == go, f"flood mismatch vs gold: { {k: (bi[k], go[k]) for k in bi if bi[k] != go[k]} }"
+    assert not bi["false_tail"] and bi["good_tail"]
+    assert not any(bi[f"junk_{i}"] for i in range(60))
 
 
 # --------------------------------------------------------------------------- #

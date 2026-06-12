@@ -62,10 +62,13 @@ def _is_parse_class(msg: Optional[str]) -> bool:
     if not msg:
         return False
     m = msg.lower()
-    body = m.split("error:", 1)[1].lstrip() if "error:" in m else m
+    # diagnostics render as "error: : unexpected token …" (the kind prefix plus
+    # Lean's own leading colon) — strip BOTH, or startswith never fires (v42 bug)
+    body = m.split("error:", 1)[1].lstrip(" \t:") if "error:" in m else m
     return (body.startswith("unexpected")
             or "unterminated comment" in m
             or "unterminated string" in m
+            or "maximum number of errors" in m  # maxErrors abort: rest of file NOT elaborated
             or m == "timeout")
 
 
@@ -272,8 +275,13 @@ class BatchMathlibVerifier:
                 env.pop("LEAN_PATH", None)
             t0 = time.perf_counter()
             try:
+                # -DmaxErrors: Lean's default (100) ABORTS elaboration mid-file on
+                # garbage-heavy batches — every candidate after the abort line got
+                # no diagnostic and was a silent false success (v42 discovery).
+                # Raising it keeps whole-file elaboration; the abort diagnostic is
+                # additionally treated as parse-class in case the cap is ever hit.
                 proc = subprocess.run(
-                    [self.lean_bin, fh.name],
+                    [self.lean_bin, "-DmaxErrors=100000", fh.name],
                     capture_output=True, text=True, timeout=self.timeout, env=env,
                 )
                 timed_out = False
@@ -293,7 +301,13 @@ class BatchMathlibVerifier:
             stdout = proc.stdout or ""
             stderr = proc.stderr or ""
             diags = self._parse_diagnostics(fh.name, stdout, stderr)
-            file_suspect = any(_is_parse_class(msg) for _ln, msg in diags)
+            # untrusted compile: any desync-capable diagnostic, an abnormal exit
+            # (0 = clean, 1 = ordinary diagnostics; anything else = crash), or a
+            # panic — in all of these, candidates later in the file may simply
+            # never have been elaborated (silent false successes).
+            file_suspect = (any(_is_parse_class(msg) for _ln, msg in diags)
+                            or proc.returncode not in (0, 1)
+                            or "PANIC" in stderr or "PANIC" in stdout)
 
             starts = [start for (_idx, start, _end) in ranges]  # strictly increasing
             attributed = self._attribute(starts, diags)
