@@ -43,3 +43,8 @@ shots than one greedy gold plan, so the grounder did not cap the pipeline.
 **The exit rule (H12 ∧ H13 both cleanly fail) does NOT fire:** flow is competitive and adds genuine (if
 seed-unstable) diversity. The flow thread stays **open**. (Proof-level audit of the unique solves —
 strategic vs simp-lottery — was not done; the e2e did not persist candidate proofs, a logged gap.)
+
+> **V42 correction:** see `docs/V41_FINAL_REPORT.md` §"V42 correction" and
+> `docs/V42_02_REBASELINE.md`. Sound numbers: direct-AR dev = 20/45 (H11 +1 retracted → tied);
+> plan-flow-3407 final = 20/44; all other cells reproduce. The unique solves are sound but are
+> 1-step simp variants (`docs/V42_03_UNIQUES_AUDIT.md`), not strategic diversity.

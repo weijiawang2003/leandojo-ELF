@@ -27,3 +27,6 @@ and reported as "under a weak (premise-selection-limited) grounder." A stronger 
 augmented premise selection) is the prerequisite for a clean LPSF test — the V42 implication.
 
 Artifact: `outputs/v41/ceiling.json` (greedy ceiling + causality + sample grounded proofs).
+
+> **V42 re-measure (sound verifier):** ceiling 0.267 verbatim, corrupted-plan 0.067 (causality
+> holds). Beam-2 grounding: ceiling 0.311 (`outputs/v42/rebase/ceiling_beam2_v42iso.json`).
