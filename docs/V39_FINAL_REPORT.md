@@ -139,3 +139,12 @@ metric despite better per-token* is a clean, scale-robust refutation. Plot: `sca
    value**. Run flow at 1 step only if studying the method itself, not as a component of a prover.
 4. **Do not invest further in many-step embedded-flow sampling or AR-draft flow-repair** at CPU/30M
    scale; both are clean negatives. The open door is scale (H1) and a coherence mechanism (H2 §8).
+
+---
+
+## V42 spot audit (2026-06-12)
+
+The v42 verifier re-baseline (`docs/V42_02_REBASELINE.md`) re-verified the persisted 24-tier
+headline topk (AR s16 / MDLM s16 / FLOW@1) in sound `bisect-batched` mode: **22/24, 22/24,
+20/24 — identical to the reported .917/.917/.833, zero candidate flips.** The v39 headline is
+confirmed verbatim (`outputs/v42/rebase/v39_24tier_spot_v42iso.json`).
