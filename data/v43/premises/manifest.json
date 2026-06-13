@@ -1,0 +1,8 @@
+{
+ "source": "/home/wangw/code/ELFMath/data/v39/_raw/leandojo_benchmark_4/corpus.jsonl",
+ "n_files": 8137,
+ "n_unique_premises": 241757,
+ "n_indexed": 241756,
+ "avgdl": 21.56,
+ "vocab": 46725
+}
