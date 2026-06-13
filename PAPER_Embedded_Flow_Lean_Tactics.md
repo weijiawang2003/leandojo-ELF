@@ -246,6 +246,39 @@ is the productionizable ensemble. (Full coarse-AR/MDLM e2e union and seed-7331/t
 dropped for verification-time budget; flow's 0 gain over a plan-AR-inclusive base already entails 0
 ensemble value, and A1 supplies the tier-final closure.)
 
+## 4f. V44 addendum — discrete proving on a hard tier: retrieval vs generation
+
+With flow closed, V44 built the discrete keeper into a system and asked V43's open question — *how
+much of Lean proving is premise retrieval vs tactic generation?* — on a **non-simp-closable hard
+tier**. Constructing the tier was itself a result: of the 2000-theorem LeanDojo B4 test split, only
+**9.9%** have a gold proof that recompiles under our pinned toolchain (version skew), and **91%** of
+those are closable by `{simp,simp_all,aesop}` — so non-trivial *and* cleanly-formalizable theorems
+are ~1% of the pool (final tier **n=52**). Strikingly, **43/52 (83%)** of the hard tier is closed by
+`exact?` alone — Lean's premise-search tactic — so these theorems are *premise-addressable for
+search*.
+
+The spine is the **gold-premise oracle decomposition**: a premise-conditioned AR and MDLM (30M),
+generating under {no-premise, BM25-retrieved, gold-premise} conditioning (gold = the premise *names*
+from the gold proof, never the tactic). On hard_dev (n=26):
+
+- **none 0/26, retrieved (BM25) 0/26, gold-oracle 1/26** for both AR and MDLM — while **`exact?`
+  solves 18/26.**
+- A conditioning control confirms the generators *can* use premises (AR exact-seq 0.000→0.137
+  in-distribution with gold), so the tiny hard-tier gain is **not** a confound.
+
+**The pre-registered surprise branch fired: the wall on hard theorems is generation-given-premises,
+not retrieval.** Even handed the exact gold premise, a 30M generator emits the verifying tactic for
+1/26, whereas unification *search* (`exact?`) closes 18/26 — the **18-vs-1 gap is the generation
+wall** (knowing a lemma's name ≠ producing the tactic that applies it). Realistic retrieval is *also*
+weak (BM25 recall@10 0.10; a from-scratch dense dual-encoder ≈0, R1 falsifier met), so retrieved =
+none — but fixing retrieval cannot help a generator whose gold-oracle is already 1/26. The AR∪MDLM
+ensemble is 1/26 on the hard tier (E1 falsifier met) — v40's 27/44 complementarity was automation of
+the simp-closable majority. This **refines V43**: premise knowledge is necessary (V43's 0.267 mixed-
+tier ceiling) but *far from sufficient* on genuinely hard theorems. The implication is to invest in
+**tactic execution / proof search** (unification-driven `exact?`/`apply`, hammer-style) fed by a
+**pretrained-LM retriever**, not in larger token generators (the gold-oracle ceiling says generator
+scale won't move the hard tier) — generator scaling (E2/E3) was dropped for exactly this reason.
+
 ## 5. Limitations
 One night; seeds 3407 (+ a FLOW replication at 4242); n=24 verified tier ⇒ wide CIs (aggregate
 flow-vs-AR gaps within noise); 30M params, ≤121k pairs (far below ELF scale); theorem-level
