@@ -28,6 +28,10 @@ TRAIN_POOL = ROOT / "data/v39/_raw/leandojo_benchmark_4/random/train.json"
 WIDE = ["simp", "simp_all", "aesop", "norm_num", "omega", "rfl", "tauto", "decide",
         "simp_all [*]", "aesop?", "exact?", "norm_num [*]", "simp only []",
         "constructor <;> simp", "intro <;> simp"]
+# "hard" = not closable by STANDARD automation. exact?/omega/decide are special-purpose
+# search/decision procedures (exact? alone closes ~80% — it is essentially premise retrieval),
+# so the hardness filter is the core simp/aesop set; the wide sweep is still recorded for audit.
+CORE = ["simp", "simp_all", "aesop"]
 
 
 def git_sha() -> str:
@@ -102,23 +106,27 @@ def main() -> int:
     print(f"gold-compiling: {len(compiling)}/{len(cands)} = {len(compiling)/max(len(cands),1):.1%} "
           f"({time.time()-t0:.0f}s)")
 
-    # Step 2: simp-closability of the compiling set (drop closable)
+    # Step 2: closability of the compiling set. Filter on CORE (standard automation);
+    # record WIDE hits too for audit (incl. exact?/omega — the special-purpose closers).
     t1 = time.time()
     simp_items = [(c["full_name"], c["statement"], tac) for c in compiling for tac in WIDE]
     simp_v = cached_verify(verifier, simp_items, cache)
     hard, closable = [], []
     for c in compiling:
-        hits = [tac for tac in WIDE if simp_v.get((c["full_name"], tac))]
-        c["simp_hits"] = hits
-        (closable if hits else hard).append(c)
-    print(f"non-simp-closable (HARD): {len(hard)}/{len(compiling)} "
-          f"(closable {len(closable)}) ({time.time()-t1:.0f}s)")
+        wide_hits = [tac for tac in WIDE if simp_v.get((c["full_name"], tac))]
+        core_hits = [tac for tac in CORE if simp_v.get((c["full_name"], tac))]
+        c["core_hits"] = core_hits
+        c["wide_hits"] = wide_hits
+        (closable if core_hits else hard).append(c)
+    n_wide_closable = sum(1 for c in compiling if c["wide_hits"])
+    print(f"HARD (not CORE-closable): {len(hard)}/{len(compiling)} | wide-closable {n_wide_closable} "
+          f"({time.time()-t1:.0f}s)")
 
     out_dir = Path(args.out_dir); out_dir.mkdir(parents=True, exist_ok=True)
-    # split hard into dev/test (test touched once); keep premises + proof
+    # split hard into dev/test (test touched once); keep premises + proof + wide-hit audit
     hard_sorted = sorted(hard, key=lambda c: c["full_name"])
     for c in hard_sorted:
-        c.pop("simp_hits", None)
+        c.pop("core_hits", None)
     n = len(hard_sorted)
     half = n // 2
     dev, test = hard_sorted[:half], hard_sorted[half:]
@@ -128,18 +136,26 @@ def main() -> int:
     with (out_dir / "hard_test.jsonl").open("w") as f:
         for c in test:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
+    # closer-by-tactic counts on the compiling set (the retrieval signal: exact? ≫ simp)
+    closer_counts = {tac: sum(1 for c in compiling if simp_v.get((c["full_name"], tac))) for tac in WIDE}
+    n_exact_only = sum(1 for c in hard if simp_v.get((c["full_name"], "exact?")))
     audit = {"verify_mode": "bisect-batched", "git_sha": git_sha(), "pool": str(POOL),
+             "hardness_filter": "not closable by {simp, simp_all, aesop}",
              "scanned": len(cands), "gold_compiling": len(compiling),
              "gold_compile_rate": round(len(compiling) / max(len(cands), 1), 4),
-             "non_simp_closable": len(hard), "simp_closable": len(closable),
-             "simp_closability_rate": round(len(closable) / max(len(compiling), 1), 4),
+             "hard_not_core_closable": len(hard), "core_closable": len(closable),
+             "core_closability_rate": round(len(closable) / max(len(compiling), 1), 4),
+             "wide_closable": sum(1 for c in compiling if c["wide_hits"]),
+             "closer_counts": closer_counts,
+             "hard_but_exact_solvable": n_exact_only,
              "n_dev": len(dev), "n_test": len(test),
              "avg_premises_hard": round(sum(len(c["premises"]) for c in hard) / max(len(hard), 1), 2),
              "avg_n_tactics_hard": round(sum(c["n_tactics"] for c in hard) / max(len(hard), 1), 2),
              "lean_s": round(verifier.total_lean_seconds, 1)}
     (out_dir / "audit.json").write_text(json.dumps(audit, indent=1))
     print(f"HARD TIER: dev={len(dev)} test={len(test)} | gold-compile {audit['gold_compile_rate']:.1%} "
-          f"| simp-closable {audit['simp_closability_rate']:.1%} | avg premises {audit['avg_premises_hard']}")
+          f"| core-closable {audit['core_closability_rate']:.1%} | hard-but-exact? {n_exact_only}/{len(hard)} "
+          f"| avg premises {audit['avg_premises_hard']}")
     print("->", out_dir)
     return 0
 
