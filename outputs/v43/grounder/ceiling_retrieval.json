@@ -1,0 +1,32 @@
+{
+ "verify_mode": "bisect-batched",
+ "git_sha": "e347154",
+ "tier": "tier_dev",
+ "n_planned": 45,
+ "K": 24,
+ "topn": 24,
+ "retrieval_ceiling_pass1": 0.2,
+ "retrieval_ceiling_passK": 0.2222,
+ "ceiling_pass1_hits": 9,
+ "ceiling_passK_hits": 10,
+ "corrupted_pass1": 0.0222,
+ "corrupted_passK": 0.0444,
+ "v42_reference": {
+  "neural_greedy": 0.267,
+  "neural_beam2": 0.311
+ },
+ "lean_s": 2964.7,
+ "wall_s": 2960.4,
+ "solved_names_passK": [
+  "Finset.sigma_nonempty",
+  "Matrix.posDef_intCast_iff",
+  "Nat.le_mul_self",
+  "Subgroup.coe_zpow",
+  "WithZero.le_max_iff",
+  "concaveOn_id",
+  "dotProduct_sub",
+  "inf_eq_right",
+  "irrational_ratCast_div_iff",
+  "sq_lt_one_iff_abs_lt_one"
+ ]
+}
