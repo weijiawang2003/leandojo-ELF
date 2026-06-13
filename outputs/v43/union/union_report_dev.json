@@ -1,0 +1,106 @@
+{
+ "tier": "tier_dev",
+ "sizes": {
+  "direct_ar": 20,
+  "plan_ar": 20,
+  "simp3": 24,
+  "wide": 42,
+  "base_core": 25,
+  "base_simp": 27,
+  "base_wide": 42
+ },
+ "sources": {
+  "coarse_flow_3407": {
+   "solved": 14,
+   "gain_over_base_core": 0,
+   "uniq_core": [],
+   "gain_over_base_simp": 0,
+   "uniq_simp": [],
+   "gain_over_base_wide": 0,
+   "uniq_wide": []
+  },
+  "coarse_flow_4242": {
+   "solved": 14,
+   "gain_over_base_core": 2,
+   "uniq_core": [
+    "MulRingNorm.isPowMul",
+    "sup_himp_self_left"
+   ],
+   "gain_over_base_simp": 0,
+   "uniq_simp": [],
+   "gain_over_base_wide": 0,
+   "uniq_wide": []
+  }
+ },
+ "D1_ensemble": {
+  "3407": {
+   "ar": 0,
+   "ar_mdlm": 0,
+   "ar_mdlm_flow": 14,
+   "flow_adds_over_ar_mdlm": [
+    "Codisjoint.map_orderIso",
+    "Finset.sigma_nonempty",
+    "Matrix.lieConj_symm_apply",
+    "Matrix.posDef_intCast_iff",
+    "Option.bnot_isNone",
+    "WithZero.le_max_iff",
+    "concaveOn_id",
+    "div_div_self",
+    "dotProduct_sub",
+    "inf_eq_right",
+    "le_map_inv_iff",
+    "mul_lt_iff_lt_one_right'",
+    "sq_lt_one_iff_abs_lt_one",
+    "toIcoDiv_sub_zsmul'"
+   ]
+  },
+  "4242": {
+   "ar": 0,
+   "ar_mdlm": 0,
+   "ar_mdlm_flow": 14,
+   "flow_adds_over_ar_mdlm": [
+    "Codisjoint.map_orderIso",
+    "Finset.sigma_nonempty",
+    "MulRingNorm.isPowMul",
+    "Option.bnot_isNone",
+    "SignType.pos_iff",
+    "WithZero.le_max_iff",
+    "concaveOn_id",
+    "inf_eq_right",
+    "irrational_ratCast_div_iff",
+    "le_map_inv_iff",
+    "mul_lt_iff_lt_one_right'",
+    "sq_lt_one_iff_abs_lt_one",
+    "sup_himp_self_left",
+    "toIcoDiv_sub_zsmul'"
+   ]
+  }
+ },
+ "A2_verdict": {
+  "flow_gains_over_base_simp": [
+   [
+    "coarse_flow_3407",
+    0
+   ],
+   [
+    "coarse_flow_4242",
+    0
+   ]
+  ],
+  "flow_gains_over_base_wide": [
+   [
+    "coarse_flow_3407",
+    0
+   ],
+   [
+    "coarse_flow_4242",
+    0
+   ]
+  ],
+  "n_seeds_ge2_over_simp": 0,
+  "n_seeds_ge2_over_wide": 0,
+  "bar": "gain >= +2 in >= 2/3 seeds",
+  "A2_passes_over_simp_base": false,
+  "A2_passes_over_wide_base": false
+ }
+}

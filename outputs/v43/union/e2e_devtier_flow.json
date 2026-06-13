@@ -1,0 +1,49 @@
+{
+ "verify_mode": "bisect-batched",
+ "tier": "tier_dev",
+ "note": "flow A2 2 seeds (7331 skipped for time; both seeds gain 0)",
+ "solved_sets": {
+  "coarse_flow_3407": [
+   "Codisjoint.map_orderIso",
+   "Finset.sigma_nonempty",
+   "Matrix.lieConj_symm_apply",
+   "Matrix.posDef_intCast_iff",
+   "Option.bnot_isNone",
+   "WithZero.le_max_iff",
+   "concaveOn_id",
+   "div_div_self",
+   "dotProduct_sub",
+   "inf_eq_right",
+   "le_map_inv_iff",
+   "mul_lt_iff_lt_one_right'",
+   "sq_lt_one_iff_abs_lt_one",
+   "toIcoDiv_sub_zsmul'"
+  ],
+  "coarse_flow_4242": [
+   "Codisjoint.map_orderIso",
+   "Finset.sigma_nonempty",
+   "MulRingNorm.isPowMul",
+   "Option.bnot_isNone",
+   "SignType.pos_iff",
+   "WithZero.le_max_iff",
+   "concaveOn_id",
+   "inf_eq_right",
+   "irrational_ratCast_div_iff",
+   "le_map_inv_iff",
+   "mul_lt_iff_lt_one_right'",
+   "sq_lt_one_iff_abs_lt_one",
+   "sup_himp_self_left",
+   "toIcoDiv_sub_zsmul'"
+  ]
+ },
+ "per_source": [
+  {
+   "label": "coarse_flow_3407",
+   "solved": 14
+  },
+  {
+   "label": "coarse_flow_4242",
+   "solved": 14
+  }
+ ]
+}
