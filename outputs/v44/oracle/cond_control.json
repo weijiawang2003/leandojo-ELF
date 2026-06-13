@@ -1,0 +1,18 @@
+{
+ "n": 300,
+ "k": 4,
+ "cells": {
+  "ar": {
+   "family": "ar",
+   "exact_none": 0.0,
+   "exact_gold": 0.1367,
+   "gold_minus_none": 0.1367
+  },
+  "mdlm": {
+   "family": "mdlm",
+   "exact_none": 0.0,
+   "exact_gold": 0.0,
+   "gold_minus_none": 0.0
+  }
+ }
+}
