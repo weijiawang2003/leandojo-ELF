@@ -114,7 +114,7 @@ def main():
             print(f"step {step}/{args.steps} loss {loss.item():.4f} ({time.time()-t0:.0f}s)")
 
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
-    torch.save({"cfg": cfg.to_dict(), "state_dict": {k: v.cpu() for k, v in model.state_dict().items()},
+    torch.save({"cfg": cfg.__dict__, "state_dict": {k: v.cpu() for k, v in model.state_dict().items()},
                 "proj_dim": args.proj, "shared": False, "vocab_dir": str(Path(args.corpus))},
                out / "dual_encoder.pt")
 
