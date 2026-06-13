@@ -1,0 +1,843 @@
+{
+ "verify_mode": "bisect-batched",
+ "git_sha": "bd75c8b",
+ "tactic_set": "wide",
+ "tactics": [
+  "simp",
+  "simp_all",
+  "aesop",
+  "norm_num",
+  "omega",
+  "rfl",
+  "tauto",
+  "decide",
+  "simp_all [*]",
+  "aesop?",
+  "exact?",
+  "norm_num [*]",
+  "simp only []",
+  "constructor <;> simp",
+  "intro <;> simp"
+ ],
+ "tiers": {
+  "tier_dev": {
+   "n": 45,
+   "solved_simp3": [
+    "Codisjoint.map_orderIso",
+    "FiniteMultiplicity.one_right",
+    "Finset.sigma_nonempty",
+    "List.nil_bagInter",
+    "Mathlib.Tactic.Ring.div_congr",
+    "Matrix.lieConj_symm_apply",
+    "Matrix.posDef_intCast_iff",
+    "MulRingNorm.isPowMul",
+    "Nat.le_mul_self",
+    "Option.bnot_isNone",
+    "SignType.pos_iff",
+    "SimpleGraph.exists_walk_of_edist_eq_coe",
+    "Subgroup.coe_zpow",
+    "WithZero.le_max_iff",
+    "concaveOn_id",
+    "div_div_self",
+    "dotProduct_sub",
+    "inf_eq_right",
+    "irrational_ratCast_div_iff",
+    "le_map_inv_iff",
+    "mul_lt_iff_lt_one_right'",
+    "sq_lt_one_iff_abs_lt_one",
+    "sup_himp_self_left",
+    "toIcoDiv_sub_zsmul'"
+   ],
+   "n_simp3": 24,
+   "solved_wide": [
+    "Cardinal.ciSup_mul_ciSup",
+    "Codisjoint.map_orderIso",
+    "FiniteMultiplicity.one_right",
+    "Finset.sigma_nonempty",
+    "HasStrictFDerivAt.abs_of_neg",
+    "IsConjRoot.add_algebraMap",
+    "List.nil_bagInter",
+    "LocallyLipschitz.mul",
+    "Mathlib.Tactic.Ring.div_congr",
+    "Matrix.lieConj_symm_apply",
+    "Matrix.posDef_intCast_iff",
+    "MulRingNorm.isPowMul",
+    "Nat.le_mul_self",
+    "Option.bnot_isNone",
+    "OrderIso.isSimpleOrder_iff",
+    "PNat.eq_one_of_lt_two",
+    "PositiveLinearMap.apply_le_of_isSelfAdjoint",
+    "SignType.pos_iff",
+    "SimpleGraph.exists_walk_of_edist_eq_coe",
+    "Subgroup.coe_zpow",
+    "WeakSpace.isOpen_of_isOpen",
+    "WithZero.le_max_iff",
+    "catalan_two",
+    "concaveOn_id",
+    "div_div_self",
+    "dotProduct_sub",
+    "emultiplicity_map_eq",
+    "inf_eq_right",
+    "inv_lt'",
+    "irrational_ratCast_div_iff",
+    "le_map_inv_iff",
+    "le_max_of_sq_le_mul",
+    "mul_left_comm",
+    "mul_lt_iff_lt_one_right'",
+    "not_lt_iff_le_imp_le",
+    "pow_add_pow_le'",
+    "sdiff_le_iff'",
+    "smul_neg_iff_of_pos_left",
+    "sq_lt_one_iff_abs_lt_one",
+    "sup_himp_self_left",
+    "toIcoDiv_sub_zsmul'",
+    "vsub_sub_vsub_comm"
+   ],
+   "n_wide": 42,
+   "per_theorem": {
+    "Finset.sigma_nonempty": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "sq_lt_one_iff_abs_lt_one": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "not_lt_iff_le_imp_le": [
+     "exact?"
+    ],
+    "irrational_ratCast_div_iff": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "WeakSpace.isOpen_of_isOpen": [
+     "exact?"
+    ],
+    "Matrix.posDef_intCast_iff": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "Subgroup.coe_zpow": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "rfl",
+     "tauto",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "simp only []",
+     "constructor <;> simp"
+    ],
+    "toIcoDiv_sub_zsmul'": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "Nat.le_mul_self": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "catalan_two": [
+     "exact?"
+    ],
+    "OrderIso.isSimpleOrder_iff": [
+     "exact?"
+    ],
+    "WithZero.le_max_iff": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "rfl",
+     "tauto",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "simp only []",
+     "constructor <;> simp"
+    ],
+    "Matrix.lieConj_symm_apply": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "Option.bnot_isNone": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "sup_himp_self_left": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "smul_neg_iff_of_pos_left": [
+     "exact?"
+    ],
+    "inf_eq_right": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "vsub_sub_vsub_comm": [
+     "exact?"
+    ],
+    "IsConjRoot.add_algebraMap": [
+     "exact?"
+    ],
+    "List.nil_bagInter": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "rfl",
+     "tauto",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "SignType.pos_iff": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "mul_left_comm": [
+     "exact?"
+    ],
+    "LocallyLipschitz.mul": [
+     "exact?"
+    ],
+    "dotProduct_sub": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "AddCommGroup.ModEq.trans": [],
+    "Cardinal.ciSup_mul_ciSup": [
+     "exact?"
+    ],
+    "FiniteMultiplicity.one_right": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "inv_lt'": [
+     "exact?"
+    ],
+    "le_max_of_sq_le_mul": [
+     "exact?"
+    ],
+    "sdiff_le_iff'": [
+     "exact?"
+    ],
+    "emultiplicity_map_eq": [
+     "exact?"
+    ],
+    "mul_lt_iff_lt_one_right'": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "MulRingNorm.isPowMul": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "ContinuousMultilinearMap.le_mul_prod_of_opNorm_le_of_le": [],
+    "le_map_inv_iff": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "pow_add_pow_le'": [
+     "exact?"
+    ],
+    "Codisjoint.map_orderIso": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "div_div_self": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "Int.mod_coprime": [],
+    "HasStrictFDerivAt.abs_of_neg": [
+     "exact?"
+    ],
+    "PositiveLinearMap.apply_le_of_isSelfAdjoint": [
+     "exact?"
+    ],
+    "SimpleGraph.exists_walk_of_edist_eq_coe": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "norm_num [*]"
+    ],
+    "concaveOn_id": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "tauto",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "intro <;> simp"
+    ],
+    "Mathlib.Tactic.Ring.div_congr": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "norm_num [*]"
+    ],
+    "PNat.eq_one_of_lt_two": [
+     "exact?"
+    ]
+   }
+  },
+  "tier_final": {
+   "n": 44,
+   "solved_simp3": [
+    "AddChar.coe_prod",
+    "Finset.isUnit_iff_singleton_aux",
+    "Finset.sum_int_mod",
+    "Finset.toRight_inter",
+    "FractionalIdeal.coeIdeal_eq_one",
+    "Int.sign_eq_ediv_abs'",
+    "IsNilpotent.pow_succ",
+    "IsVisible.rfl",
+    "Mathlib.Tactic.PNatToNat.coe_lt_coe",
+    "Mathlib.Tactic.Ring.inv_congr",
+    "PartialEquiv.refl_restr_target",
+    "Rep.\u03c1_inv_self_apply",
+    "SimpleGraph.Walk.mem_edges_toSubgraph",
+    "SzemerediRegularity.le_stepBound",
+    "WithTop.sum_lt_top",
+    "codisjoint_inf_right",
+    "finrank_euclideanSpace",
+    "invOf_lt_zero",
+    "inv_mul_cancel_comm_assoc",
+    "inv_mul_lt_one_iff_lt",
+    "map_inv_lt_iff",
+    "neg_one_mul",
+    "one_lt_oneLePart",
+    "upperBounds_closure"
+   ],
+   "n_simp3": 24,
+   "solved_wide": [
+    "AddChar.coe_prod",
+    "AddLECancellable.tsub_eq_iff_eq_add_of_le",
+    "Disjoint.sup_sdiff_cancel_left",
+    "Filter.HasBasis.eventually_iff",
+    "Fin.edist_append_eq_max_edist",
+    "Finset.isUnit_iff_singleton_aux",
+    "Finset.sum_int_mod",
+    "Finset.toRight_inter",
+    "FractionalIdeal.coeIdeal_eq_one",
+    "HasDerivAt.comp_hasFDerivAt_of_eq",
+    "Ideal.pow_mem_of_pow_mem",
+    "Int.sign_eq_ediv_abs'",
+    "IsNilpotent.pow_succ",
+    "IsVisible.rfl",
+    "Mathlib.Tactic.PNatToNat.coe_lt_coe",
+    "Mathlib.Tactic.Ring.inv_congr",
+    "Nat.add_succ_lt_add",
+    "Nat.le_avg_right",
+    "ONote.NFBelow.snd",
+    "PartialEquiv.refl_restr_target",
+    "Rep.\u03c1_inv_self_apply",
+    "RingHom.map_dotProduct",
+    "SimpleGraph.Walk.mem_edges_toSubgraph",
+    "SzemerediRegularity.le_stepBound",
+    "WithBot.bot_lt_iff_ne_bot",
+    "WithTop.sum_lt_top",
+    "codisjoint_inf_right",
+    "continuous_descPochhammer_eval",
+    "div_le_one_of_neg",
+    "finrank_euclideanSpace",
+    "invOf_lt_zero",
+    "inv_mul_cancel_comm_assoc",
+    "inv_mul_lt_one_iff_lt",
+    "leOnePart_le_one'",
+    "lt_geom",
+    "map_inv_lt_iff",
+    "neg_one_mul",
+    "one_lt_oneLePart",
+    "smul_nonneg'",
+    "upperBounds_closure"
+   ],
+   "n_wide": 40,
+   "per_theorem": {
+    "smul_nonneg'": [
+     "exact?"
+    ],
+    "leOnePart_le_one'": [
+     "exact?"
+    ],
+    "invOf_lt_zero": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "WithBot.bot_lt_iff_ne_bot": [
+     "exact?"
+    ],
+    "finrank_euclideanSpace": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "continuous_descPochhammer_eval": [
+     "exact?"
+    ],
+    "Int.sign_eq_ediv_abs'": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "Nat.add_succ_lt_add": [
+     "omega",
+     "exact?"
+    ],
+    "inv_mul_cancel_comm_assoc": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "div_le_one_of_neg": [
+     "exact?"
+    ],
+    "Finset.isUnit_iff_singleton_aux": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "upperBounds_closure": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "AddLECancellable.tsub_eq_iff_eq_add_of_le": [
+     "exact?"
+    ],
+    "inv_mul_lt_one_iff_lt": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "PartialEquiv.refl_restr_target": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "Fin.edist_append_eq_max_edist": [
+     "exact?"
+    ],
+    "IsUnit.isUnit_iff_mulRight_bijective": [],
+    "SimpleGraph.Walk.mem_edges_toSubgraph": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "Disjoint.sup_sdiff_cancel_left": [
+     "exact?"
+    ],
+    "Fin.left_distrib_aux": [],
+    "neg_one_mul": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "Filter.HasBasis.eventually_iff": [
+     "exact?"
+    ],
+    "one_lt_oneLePart": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "FractionalIdeal.coeIdeal_eq_one": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "rfl",
+     "tauto",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "simp only []",
+     "constructor <;> simp"
+    ],
+    "codisjoint_inf_right": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "AddChar.coe_prod": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "WithTop.sum_lt_top": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "Rep.\u03c1_inv_self_apply": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "norm_num [*]"
+    ],
+    "RingHom.map_dotProduct": [
+     "exact?"
+    ],
+    "Mathlib.Tactic.PNatToNat.coe_lt_coe": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "rfl",
+     "tauto",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "simp only []",
+     "constructor <;> simp"
+    ],
+    "SzemerediRegularity.le_stepBound": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "omega",
+     "tauto",
+     "decide",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "IsVisible.rfl": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "rfl",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "intro <;> simp"
+    ],
+    "ONote.NFBelow.snd": [
+     "exact?"
+    ],
+    "Mathlib.Tactic.Ring.inv_congr": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "norm_num [*]"
+    ],
+    "lt_geom": [
+     "exact?"
+    ],
+    "HasDerivAt.comp_hasFDerivAt_of_eq": [
+     "exact?"
+    ],
+    "Nat.le_avg_right": [
+     "exact?"
+    ],
+    "Finset.toRight_inter": [
+     "aesop",
+     "aesop?",
+     "exact?"
+    ],
+    "Ideal.pow_mem_of_pow_mem": [
+     "exact?"
+    ],
+    "map_inv_lt_iff": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "exact?",
+     "norm_num [*]",
+     "constructor <;> simp"
+    ],
+    "IsNilpotent.pow_succ": [
+     "simp_all",
+     "aesop",
+     "aesop?",
+     "exact?",
+     "norm_num [*]"
+    ],
+    "LocalizedModule.mk_cancel_common_left": [],
+    "Finset.sum_int_mod": [
+     "simp",
+     "simp_all",
+     "aesop",
+     "norm_num",
+     "aesop?",
+     "norm_num [*]"
+    ],
+    "IsUnit.mul": []
+   }
+  }
+ },
+ "v42_flow_uniques": {
+  "tier_dev": [
+   "MulRingNorm.isPowMul",
+   "sup_himp_self_left",
+   "sdiff_le_iff'"
+  ],
+  "tier_final": [
+   "Rep.\u03c1_inv_self_apply",
+   "codisjoint_inf_right",
+   "upperBounds_closure"
+  ]
+ },
+ "comparison": {
+  "tier_dev": {
+   "direct_ar": 20,
+   "plan_ar": 20,
+   "base_union": 25,
+   "flow_uniques": [
+    "MulRingNorm.isPowMul",
+    "sdiff_le_iff'",
+    "sup_himp_self_left"
+   ],
+   "flow_uniques_caught_by_simp3": [
+    "MulRingNorm.isPowMul",
+    "sup_himp_self_left"
+   ],
+   "flow_uniques_caught_by_wide": [
+    "MulRingNorm.isPowMul",
+    "sdiff_le_iff'",
+    "sup_himp_self_left"
+   ],
+   "simp3_uniques_over_base": [
+    "MulRingNorm.isPowMul",
+    "sup_himp_self_left"
+   ],
+   "wide_uniques_over_base": [
+    "Cardinal.ciSup_mul_ciSup",
+    "HasStrictFDerivAt.abs_of_neg",
+    "IsConjRoot.add_algebraMap",
+    "MulRingNorm.isPowMul",
+    "OrderIso.isSimpleOrder_iff",
+    "PNat.eq_one_of_lt_two",
+    "PositiveLinearMap.apply_le_of_isSelfAdjoint",
+    "WeakSpace.isOpen_of_isOpen",
+    "emultiplicity_map_eq",
+    "inv_lt'",
+    "le_max_of_sq_le_mul",
+    "not_lt_iff_le_imp_le",
+    "pow_add_pow_le'",
+    "sdiff_le_iff'",
+    "smul_neg_iff_of_pos_left",
+    "sup_himp_self_left",
+    "vsub_sub_vsub_comm"
+   ],
+   "base_plus_simp3": 27,
+   "base_plus_wide": 42
+  },
+  "tier_final": {
+   "direct_ar": 20,
+   "plan_ar": 17,
+   "base_union": 25,
+   "flow_uniques": [
+    "Rep.\u03c1_inv_self_apply",
+    "codisjoint_inf_right",
+    "upperBounds_closure"
+   ],
+   "flow_uniques_caught_by_simp3": [
+    "Rep.\u03c1_inv_self_apply",
+    "codisjoint_inf_right",
+    "upperBounds_closure"
+   ],
+   "flow_uniques_caught_by_wide": [
+    "Rep.\u03c1_inv_self_apply",
+    "codisjoint_inf_right",
+    "upperBounds_closure"
+   ],
+   "simp3_uniques_over_base": [
+    "Rep.\u03c1_inv_self_apply",
+    "codisjoint_inf_right",
+    "one_lt_oneLePart",
+    "upperBounds_closure"
+   ],
+   "wide_uniques_over_base": [
+    "AddLECancellable.tsub_eq_iff_eq_add_of_le",
+    "Disjoint.sup_sdiff_cancel_left",
+    "Filter.HasBasis.eventually_iff",
+    "Fin.edist_append_eq_max_edist",
+    "HasDerivAt.comp_hasFDerivAt_of_eq",
+    "Ideal.pow_mem_of_pow_mem",
+    "Nat.le_avg_right",
+    "ONote.NFBelow.snd",
+    "Rep.\u03c1_inv_self_apply",
+    "codisjoint_inf_right",
+    "continuous_descPochhammer_eval",
+    "div_le_one_of_neg",
+    "leOnePart_le_one'",
+    "lt_geom",
+    "one_lt_oneLePart",
+    "upperBounds_closure"
+   ],
+   "base_plus_simp3": 29,
+   "base_plus_wide": 41
+  }
+ },
+ "wall_s": 1187.2,
+ "lean_s": 1229.2,
+ "cache": {
+  "hits": 0,
+  "misses": 1335
+ }
+}
