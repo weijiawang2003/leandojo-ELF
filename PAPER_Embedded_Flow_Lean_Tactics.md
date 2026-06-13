@@ -207,6 +207,45 @@ training device).
 - **H17 (H13 at three seeds, tier-dev):** seed 7331 result in `docs/V42_04_LPSF_NEXT.md`
   (criterion: union gain ≥ +2 in ≥ 2/3 seeds).
 
+## 4e. V43 addendum — LPSF closes under real controls (the flow thread ends)
+
+V42 left one falsifiable prediction: flow's plan-level "diversity" value would dissolve once a
+**simp baseline** and a **premise-selection grounder** were present. V43 built both (pre-registered
+hypotheses A1–A3, B1–B2, C1–C2, D1–D4; ≥3 seeds; simp/aesop + direct-AR columns in every union
+table) and the prediction holds three independent ways.
+
+- **A1 (cheapest, no training): the flow uniques are simp-bias.** A trivial `simp`/`aesop` sweep
+  catches **all 6** V42 flow-unique theorems (bare `simp` alone catches 5/6, `exact?` the 6th; all
+  isolation-confirmed). A 15-tactic trivial sweep solves **42/45 dev, 40/44 final** — the
+  LeanDojo-derived tiers are overwhelmingly simp-closable, and the trained generators *miss* most of
+  what the zero-training baseline gets free. The pre-registered close-out leg fires: flow's verified
+  value was **diversity toward simplicity**.
+- **A3 (the grounder): no buildable grounder lifts the wall.** A BM25 premise-selection grounder
+  over 241k Mathlib premises has gold-plan ceiling **0.20** — *below* the V42 neural grounder
+  (0.267), far under 0.35. Lexical retrieval surfaces topical but not exact gold premises; the wall
+  is dense/semantic premise selection. So there is no "strong grounder" for flow to benefit from.
+- **A2 (the decision): flow's union gain is 0.** With coarse plans + the retrieval grounder, flow's
+  verified gain over `{direct-AR ∪ plan-AR ∪ simp}` is **0 in both seeds** (bar: ≥+2 in ≥2/3) →
+  close.
+- **B1 (mechanism, textbook):** on coarse plans flow's **per-token accuracy ≈ AR** (0.80 vs 0.83)
+  but its **exact-sequence rate is 20–25× worse** (0.019 vs 0.42) — the joint-vs-marginal failure
+  of single-shot continuous decoding, isolated cleanly on Lean plans.
+- **C1 (sharpens H16):** flow/AR exact-seq ratio at L=2 is head-only **0.60**, coarse **0.038**,
+  full-typed **0.034**. The head-only competitiveness V42 read as "abstraction" is a **sequence-
+  length** effect (a length-1 head plan is ~1 token, where joint = marginal); adding *any* per-step
+  argument structure — even a single generic `ARG` — collapses flow, and that is exactly when a plan
+  becomes groundable. **There is no granularity that is both flow-competitive and groundable.**
+- **B2:** at the plan level the discrete ladder is AR > MDLM ≫ flow (exact-seq 0.42/0.25/0.019 @L1;
+  MDLM collapses by L2). The whole-proof MDLM≈AR complementarity does not transfer to short plans.
+
+**Verdict: the flow thread (v35→v43) closes as a mechanism-grounded negative.** Continuous embedded
+flow earns no verified value a trivial baseline lacks, at any object, decoder, geometry, or plan
+granularity — the cause is the joint-vs-marginal limit of single-shot decoding (B1), invariant to
+abstraction (C1). The standing positive remains **discrete**: AR and MDLM model the joint; AR∪MDLM
+is the productionizable ensemble. (Full coarse-AR/MDLM e2e union and seed-7331/tier-final e2e were
+dropped for verification-time budget; flow's 0 gain over a plan-AR-inclusive base already entails 0
+ensemble value, and A1 supplies the tier-final closure.)
+
 ## 5. Limitations
 One night; seeds 3407 (+ a FLOW replication at 4242); n=24 verified tier ⇒ wide CIs (aggregate
 flow-vs-AR gaps within noise); 30M params, ≤121k pairs (far below ELF scale); theorem-level
@@ -224,13 +263,24 @@ the object change (0–1/44 verified whole proofs on real Mathlib), and adds no 
 The failure is intrinsic to single-shot embedding decoding — geometry (H9) and more data (H1) do not move
 it; only semi-AR block conditioning (H7) helps, and only 4× off a near-zero floor.
 
-Two positives stand. (1) **MDLM** — masked discrete diffusion over the identical trunk — is
+One positive stands. **MDLM** — masked discrete diffusion over the identical trunk — is
 AR-competitive (v39 single tactics; real-Mathlib whole proofs within 1 theorem of AR and beating it at
 pass@1), and **AR+MDLM are complementary** (union 27/44 vs 20 alone) — a discrete ensemble worth
-productionizing. (2) **The plan abstraction is where continuous flow belongs:** flow reaches 64% of AR's
-exact-seq at the tactic-head-plan level vs 2–7% at the token level. The warranted next step is **LPSF** —
-a plan-flow emitting a tactic skeleton, each head expanded by an AR/MDLM head + Lean verifier — not more
-token-level flow.
+productionizing.
+
+The plan-abstraction hypothesis — that flow's home is the plan level — was the warranted next step
+after v40 (flow reached 64% of AR's *head-plan* exact-seq vs 2–7% at the token level), and v41–v43
+tested it to exhaustion. It does **not** survive (V43, §4e). The head-plan competitiveness was a
+**sequence-length** artifact, not abstraction: any groundable plan representation (carrying per-step
+arguments) collapses flow to the token-level ratio, and the only competitive representation
+(head-only) carries no arguments to ground. Under a simp baseline, flow's "unique" verified solves
+are all simp-closable; under a premise-selection grounder its union gain is zero. **The continuous
+embedded-flow line is therefore closed across the full ladder — token, whole-proof, and plan — as a
+mechanism-grounded negative** (the joint-vs-marginal limit of single-shot decoding, invariant to
+granularity). The warranted next step is **not** more flow at any level, but scaling the discrete
+substrates (AR, MDLM) with a *dense/semantic* premise-selection retriever — the measured wall on
+verified Lean generation — and evaluating on tiers filtered to exclude trivially `simp`-closable
+theorems, which all prior tiers were dominated by.
 
 ## Reproducibility
 Branches `v39-scale-matrix` (v39/v39B) and `v40-elf-objects` (V40). Code: `scripts/v39_*`,
