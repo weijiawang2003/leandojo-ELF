@@ -71,3 +71,10 @@ data/v43/corpora/coarseplan/train.jsonl
 data/v43/corpora/coarseplan/dev.jsonl
 outputs/v43/**/snapshots/*.pt
 outputs/v43/**/vcache.jsonl
+
+# v44 heavy artifacts — regenerable (deterministic on .venv-gpu)
+data/v44/corpora/**/train.jsonl
+data/v44/corpora/**/dev.jsonl
+outputs/v44/**/snapshots/*.pt
+outputs/v44/**/vcache.jsonl
+outputs/v44/retriever/*.pt
