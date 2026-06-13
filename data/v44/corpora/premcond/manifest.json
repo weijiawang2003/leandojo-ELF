@@ -1,0 +1,12 @@
+{
+  "config": "v44_premcond",
+  "vocab_size": 40455,
+  "n_train": 46258,
+  "n_dev": 619,
+  "max_cond_len": 320,
+  "max_tgt_len": 48,
+  "max_prem": 12,
+  "prem_dropout_train": 0.15,
+  "oov_train": 0.00071,
+  "avg_prem_train": 2.2
+}
