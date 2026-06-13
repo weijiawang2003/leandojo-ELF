@@ -65,3 +65,9 @@ data/v41/corpora/
 # v43 premise index — 49MB, deterministic; rebuild via scripts/v43_build_premise_index.py
 data/v43/premises/bm25.json
 data/v43/premises/premises.json
+
+# v43 heavy artifacts — regenerable (deterministic on .venv-gpu), fingerprinted
+data/v43/corpora/coarseplan/train.jsonl
+data/v43/corpora/coarseplan/dev.jsonl
+outputs/v43/**/snapshots/*.pt
+outputs/v43/**/vcache.jsonl
