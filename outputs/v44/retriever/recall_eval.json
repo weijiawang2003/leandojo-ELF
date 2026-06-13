@@ -1,0 +1,25 @@
+{
+ "git_sha": "f61f49c",
+ "n": 44,
+ "ks": [
+  1,
+  5,
+  10,
+  20
+ ],
+ "bm25": {
+  "recall@1": 0.0152,
+  "recall@5": 0.0824,
+  "recall@10": 0.1013,
+  "recall@20": 0.1089,
+  "mrr": 0.0853
+ },
+ "dense": {
+  "recall@1": 0.0,
+  "recall@5": 0.0,
+  "recall@10": 0.0,
+  "recall@20": 0.0142,
+  "mrr": 0.0032
+ },
+ "R1_dense_beats_bm25_recall@10": false
+}
