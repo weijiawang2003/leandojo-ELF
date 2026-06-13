@@ -24,7 +24,6 @@ import torch.nn.functional as F
 from mini_elf_lean.v38_backbone import V38Config, SCALE_PRESETS
 from mini_elf_lean.token_seq2seq_dataset import TokenVocab
 from mini_elf_lean.retriever_dense import DualEncoder
-from mini_elf_lean.grounder_retrieval import BM25Retriever
 
 RAW = ROOT / "data/v39/_raw/leandojo_benchmark_4/random"
 PREM = ROOT / "data/v43/premises"
@@ -71,12 +70,13 @@ def main():
     model = DualEncoder(cfg, proj_dim=args.proj).to(dev)
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
 
-    # premise text for the encoder = the premise name string (the camelCase-aware vocab covers it);
-    # BM25 supplies hard negatives.
-    bm25 = BM25Retriever()
+    # premise text for the encoder = the premise name string (the camelCase-aware vocab covers it).
+    # Negatives: in-batch + cheap RANDOM premises from the pool (per-batch BM25 hard-negs were the
+    # CPU bottleneck — 96k pure-Python retrievals; in-batch+random is the standard fast DPR setup).
+    all_prem_names = json.loads((PREM / "premises.json").read_text())["names"]
 
     pairs = build_pairs("train", args.max_pairs)
-    print(f"train pairs: {len(pairs)} | vocab {len(vocab)} | scale {args.scale}")
+    print(f"train pairs: {len(pairs)} | vocab {len(vocab)} | scale {args.scale} | premise-pool {len(all_prem_names)}")
 
     def enc_ids(text, cap):
         c = vocab.encode_source(text)[:cap]
@@ -88,11 +88,13 @@ def main():
         idx = [random.randrange(len(pairs)) for _ in range(bs)]
         states = [pairs[i][0] for i in idx]
         prems = [pairs[i][1] for i in idx]
-        # hard negatives: BM25 top premises for each state that are not the gold
+        posset = set(prems)
+        # cheap random negatives from the global premise pool (free; no BM25 scan)
         neg = []
-        for st, gp in zip(states, prems):
-            cands = [c for c in bm25.retrieve(st, topn=args.hard_neg + 3) if c != gp][:args.hard_neg]
-            neg.extend(cands)
+        while len(neg) < args.hard_neg * bs:
+            cand = all_prem_names[random.randrange(len(all_prem_names))]
+            if cand not in posset:
+                neg.append(cand)
         q = torch.tensor([enc_ids(s, QCAP) for s in states], dtype=torch.long, device=dev)
         allp = prems + neg
         p = torch.tensor([enc_ids(x, PCAP) for x in allp], dtype=torch.long, device=dev)
